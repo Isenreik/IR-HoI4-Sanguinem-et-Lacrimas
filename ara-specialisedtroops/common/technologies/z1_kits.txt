@@ -61,8 +61,6 @@ technologies = {
 			}
 		}
 
-		custom_trigger_tooltip = {}
-
   }
 
 	desert_kit2_technology = {
@@ -251,7 +249,7 @@ technologies = {
 	    }
 
 			dependencies = { tech_support = 1	}
-			dependencies = { mechanised_infantry2 = 1	}
+			dependencies = { mechanised_infantry = 1	}
 
 	  }
 

@@ -75,16 +75,8 @@ spriteTypes = {
   SpriteType = {    name = "GFX_unit_jungle_support_icon_medium"		texturefile = "gfx//interface//counters//divisions_large//support_unit_logistics_company_icon.dds"		noOfFrames = 2  }
   SpriteType = {    name = "GFX_jungle_kit_icon_medium"		texturefile = "gfx//interface//technologies//support_equipment_1.dds"  }
 
-  SpriteType = {    name = "GFX_winter_kit_technology_medium"		texturefile = "gfx//interface//technologies//support_equipment_1.dds"  }
+  SpriteType = {    name = "GFX_winter_kit_technology_medium"		texturefile = "gfx//interface//technologies//tech_logistics_company.dds"  }
   SpriteType = {    name = "GFX_winter_kit2_technology_medium"		texturefile = "gfx//interface//technologies//tech_logistics_company2.dds"  }
-  SpriteType = {    name = "GFX_unit_winter_support_icon_medium"		texturefile = "gfx//interface//counters//divisions_large//support_unit_logistics_company_icon.dds"		noOfFrames = 2  }
-  SpriteType = {    name = "GFX_winter_kit_icon_medium"		texturefile = "gfx//interface//technologies//support_equipment_1.dds"  }
-
-  SpriteType = { name = "GFX_winter_kit_technology_medium"    texturefile = "gfx/interface/technologies/mechanized_equipment_2.dds"  }
-  SpriteType = { name = "GFX_GER_winter_kit_technology_medium"    texturefile = "gfx/interface/technologies/GER_mechanized_equipment_2.dds"  }
-  SpriteType = { name = "GFX_JAP_winter_kit_technology_medium"    texturefile = "gfx/interface/technologies/JAP_mechanized_equipment_2.dds"  }
-  SpriteType = { name = "GFX_SOV_winter_kit_technology_medium"    texturefile = "gfx/interface/technologies/SOV_mechanized_equipment_2.dds"  }
-  SpriteType = { name = "GFX_ENG_winter_kit_technology_medium"    texturefile = "gfx/interface/technologies/tfv_shared1_mechanized_equipment_2.dds"  }
 
   ## amphibious mech
 

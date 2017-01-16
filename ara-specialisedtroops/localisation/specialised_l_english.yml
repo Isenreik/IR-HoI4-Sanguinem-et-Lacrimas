@@ -125,3 +125,14 @@ paratrooper_glider_desc:0 "These larger and special gliders can bring in proper 
 
 glider_technology:0 "Gliders"
 glider_technology_desc:0 "With the use of large gliders, we can land entire platoons and even vehicles behind the enemy lines."
+
+##Airborne gliders
+
+SPECIALISED_TITLE_kits_support:0 "SPECIALISED CLIMATE EQUIPMENT"
+kits_technology_desc:0 "This specialised equipment encompass small modifications to existing weapons and vehicles or specialised transporters for harsh climates. This equipment will improve the combat effectiveness of our troops using them."
+
+desert_kit_1:0 "Desert Equipment"
+desert_kit_1_desc:0 "WIP"
+
+desert_kit_2:0 "Improved Desert Equipment"
+desert_kit_2_desc:0 "WIP"

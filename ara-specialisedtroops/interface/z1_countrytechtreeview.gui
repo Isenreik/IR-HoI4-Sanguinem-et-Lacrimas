@@ -3238,7 +3238,7 @@ guiTypes = {
 					iconType = {
 						name ="winter_kits_bg"
 						spriteType = "GFX_winter_kits_bg"
-						position = { x=1700 y=33 }
+						position = { x=1710 y=33 }
 					}
 
 					## Titles
@@ -3282,6 +3282,19 @@ guiTypes = {
 						Orientation = "UPPER_LEFT"
 					}
 
+					instantTextBoxType = {
+						name = "specialised_subtitle_kits_support"
+						position = { x = 1950 y = 35 }
+						textureFile = ""
+						font = "hoi_22tech"
+						borderSize = {x = 0 y = 4}
+						text = "SPECIALISED_TITLE_kits_support"
+						maxWidth = 400
+						maxHeight = 122
+						format = center
+						Orientation = "UPPER_LEFT"
+					}
+
 					## Description below title
 
 					instantTextBoxType = {
@@ -3318,6 +3331,19 @@ guiTypes = {
 						borderSize = {x = 0 y = 4}
 						text = "glider_technology_desc"
 						maxWidth = 250
+						maxHeight = 122
+						format = center
+						Orientation = "UPPER_LEFT"
+					}
+
+					instantTextBoxType = {
+						name = "kits_support_desc"
+						position = { x = 1890 y = 70 }
+						textureFile = ""
+						font = "hoi_20b"
+						borderSize = {x = 0 y = 4}
+						text = "kits_technology_desc"
+						maxWidth = 560
 						maxHeight = 122
 						format = center
 						Orientation = "UPPER_LEFT"
@@ -3410,7 +3436,7 @@ guiTypes = {
 
 						instantTextBoxType = {
 								name = "crime_year2"
-								position = { x = 20 y = 20 }
+								position = { x = 22 y = 20 }
 								textureFile = ""
 								font = "hoi_36header"
 								borderSize = { x = 0 y = 0}
@@ -3422,7 +3448,7 @@ guiTypes = {
 						}
 						instantTextBoxType = {
 								name = "crime_year3"
-								position = { x = 20 y = 130 }
+								position = { x = 22 y = 130 }
 								textureFile = ""
 								font = "hoi_36header"
 								borderSize = { x = 0 y = 0}
@@ -3434,7 +3460,7 @@ guiTypes = {
 						}
 						instantTextBoxType = {
 								name = "crime_year4"
-								position = { x = 20 y = 250 }
+								position = { x = 22 y = 250 }
 								textureFile = ""
 								font = "hoi_36header"
 								borderSize = { x = 0 y = 0}
@@ -3446,7 +3472,7 @@ guiTypes = {
 						}
 						instantTextBoxType = {
 								name = "crime_year5"
-								position = { x = 20 y = 370 }
+								position = { x = 22 y = 370 }
 								textureFile = ""
 								font = "hoi_36header"
 								borderSize = { x = 0 y = 0}
@@ -3458,7 +3484,7 @@ guiTypes = {
 						}
 						instantTextBoxType = {
 								name = "crime_year6"
-								position = { x = 20 y = 490 }
+								position = { x = 22 y = 490 }
 								textureFile = ""
 								font = "hoi_36header"
 								borderSize = { x = 0 y = 0}
@@ -3655,7 +3681,7 @@ guiTypes = {
 
 						instantTextBoxType = {
 								name = "kits_year1"
-								position = { x = 17 y = 20 }
+								position = { x = 30 y = 20 }
 								textureFile = ""
 								font = "hoi_36header"
 								borderSize = { x = 0 y = 0}
@@ -3667,7 +3693,7 @@ guiTypes = {
 						}
 						instantTextBoxType = {
 								name = "kits_year2"
-								position = { x = 17 y = 140 }
+								position = { x = 30 y = 140 }
 								textureFile = ""
 								font = "hoi_36header"
 								borderSize = { x = 0 y = 0}
@@ -3679,7 +3705,7 @@ guiTypes = {
 						}
 						instantTextBoxType = {
 								name = "kits_year3"
-								position = { x = 17 y = 260 }
+								position = { x = 30 y = 260 }
 								textureFile = ""
 								font = "hoi_36header"
 								borderSize = { x = 0 y = 0}
@@ -3691,7 +3717,7 @@ guiTypes = {
 						}
 						instantTextBoxType = {
 								name = "kits_year4"
-								position = { x = 17 y = 380 }
+								position = { x = 30 y = 380 }
 								textureFile = ""
 								font = "hoi_36header"
 								borderSize = { x = 0 y = 0}
