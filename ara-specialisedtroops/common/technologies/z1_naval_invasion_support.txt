@@ -1,0 +1,218 @@
+technologies = {
+
+	@1940 = 0
+	@1942 = 2
+	@1943 = 4
+  @1944 = 6
+
+  @first_row = -3
+  @second_row = 1
+  @third_row = 5
+
+	amphibious_mech_technology = {
+
+    enable_equipments = {
+      amphibious_mech_vehicle_1
+    }
+
+    enable_subunits = {
+      amphibious_mech_unit
+    }
+
+    dependencies = { mechanised_infantry = 1	}
+
+		path = {
+			leads_to_tech = light_tank_amphibious_tech_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1940
+
+		folder = {
+			name = specialised_folder
+			position = { x = @first_row y = @1940 }
+		}
+
+		categories = {
+			cat_mechanized_equipment
+      naval_equipment
+			tp_tech
+		}
+
+		ai_will_do = {
+			factor = 0.5
+		}
+
+	}
+
+  light_tank_amphibious_tech_1 = {
+
+    enable_equipments = {
+      light_tank_amphibious_equipment_1
+    }
+
+    enable_subunits = {
+      light_tank_amphibious_unit
+    }
+
+    dependencies = { improved_light_tank = 1	}
+
+		path = {
+			leads_to_tech = light_tank_amphibious_tech_2
+			research_cost_coeff = 1
+		}
+
+    path = {
+			leads_to_tech = amphibious_mech_technology_2
+			research_cost_coeff = 1
+		}
+
+    path = {
+			leads_to_tech = medium_tank_amphibious_tech_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1942
+
+		folder = {
+			name = specialised_folder
+			position = { x = @second_row y = @1942 }
+		}
+
+		categories = {
+			cat_light_armor
+      naval_equipment
+			tp_tech
+		}
+
+		ai_will_do = {
+			factor = 0.5
+		}
+
+	}
+
+  light_tank_amphibious_tech_2 = {
+
+    enable_equipments = {
+      light_tank_amphibious_equipment_2
+    }
+
+    dependencies = { advanced_light_tank = 1	}
+
+		research_cost = 1.5
+		start_year = 1943
+
+		folder = {
+			name = specialised_folder
+			position = { x = @second_row y = @1943 }
+		}
+
+		categories = {
+			cat_light_armor
+      naval_equipment
+			tp_tech
+		}
+
+		ai_will_do = {
+			factor = 0.5
+		}
+
+	}
+
+  amphibious_mech_technology_2 = {
+
+    enable_equipments = {
+      amphibious_mech_vehicle_2
+    }
+
+    dependencies = { mechanised_infantry2 = 1	}
+
+		research_cost = 1.5
+		start_year = 1943
+
+		folder = {
+			name = specialised_folder
+			position = { x = @first_row y = @1943 }
+		}
+
+		categories = {
+      cat_mechanized_equipment
+      naval_equipment
+      tp_tech
+		}
+
+		ai_will_do = {
+			factor = 0.5
+		}
+
+	}
+
+  medium_tank_amphibious_tech_1 = {
+
+    enable_equipments = {
+      medium_tank_amphibious_equipment_1
+    }
+
+    enable_subunits = {
+      medium_tank_amphibious_unit
+    }
+
+    dependencies = { improved_medium_tank = 1	}
+
+		path = {
+			leads_to_tech = medium_tank_amphibious_tech_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.8
+		start_year = 1943
+
+		folder = {
+			name = specialised_folder
+			position = { x = @third_row y = @1943 }
+		}
+
+		categories = {
+			cat_medium_armor
+      naval_equipment
+			tp_tech
+		}
+
+		ai_will_do = {
+			factor = 0.5
+		}
+
+	}
+
+  medium_tank_amphibious_tech_2 = {
+
+    enable_equipments = {
+      medium_tank_amphibious_equipment_2
+    }
+
+    dependencies = { advanced_medium_tank = 1	}
+
+		research_cost = 1.8
+		start_year = 1944
+
+		folder = {
+			name = specialised_folder
+			position = { x = @third_row y = @1944 }
+		}
+
+		categories = {
+			cat_medium_armor
+      naval_equipment
+			tp_tech
+		}
+
+		ai_will_do = {
+			factor = 0.5
+		}
+
+	}
+
+
+}
