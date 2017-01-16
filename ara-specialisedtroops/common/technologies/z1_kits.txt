@@ -61,6 +61,7 @@ technologies = {
 			}
 		}
 
+		custom_trigger_tooltip = {}
 
   }
 
@@ -92,7 +93,7 @@ technologies = {
 
   }
 
-	#Jungle kit
+	####### Jungle Kit
 
 	jungle_kit_technology = {
 
@@ -177,17 +178,10 @@ technologies = {
 
   }
 
-	# winter kit
+	####### Winter Kit
+	## Fucking hell I tried it all...but global modifier it must be it seems
 
 		winter_kit_technology = {
-
-			enable_equipments = {
-				winter_kit_1
-			}
-
-			enable_subunits = {
-				winter_support
-			}
 
 	    path = {
 	      leads_to_tech = winter_kit2_technology
@@ -195,12 +189,16 @@ technologies = {
 	    }
 
 	    research_cost = 1.5
-	    start_year = 1939
+	    start_year = 1941
 
 	    folder = {
 	      name = specialised_folder
 	      position = { x = @third_row y = @1941 }
 	    }
+
+			modifier = {
+				 winter_attrition_factor = -0.25
+			}
 
 	    categories = {
 				support_tech
@@ -237,17 +235,17 @@ technologies = {
 			}
 
 	    ai_will_do = {
-	      factor = 0
+	      factor = 1
 				modifier = {
-					factor = 1
+					factor = 3
 					tag = FIN
 				}
 				modifier = {
-					factor = 1
+					factor = 2
 					tag = NOR
 				}
 				modifier = {
-					factor = 1
+					factor = 2
 					tag = SWE
 				}
 	    }
@@ -260,11 +258,11 @@ technologies = {
 		winter_kit2_technology = {
 
 			modifier = {
-				 winter_attrition_factor = -0.1
+				 winter_attrition_factor = -0.25
 			}
 
 	    research_cost = 1
-	    start_year = 1940
+	    start_year = 1942
 
 	    folder = {
 	      name = specialised_folder
