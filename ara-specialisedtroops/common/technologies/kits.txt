@@ -1,0 +1,284 @@
+technologies = {
+
+@1939 = 0
+@1940 = 2
+@1941 = 4
+@1942 = 6
+
+@first_row = -3
+@second_row = 1
+@third_row = 4
+
+	####### Desert Kit
+
+	desert_kit_technology = {
+
+		enable_equipments = {
+			desert_kit_1
+		}
+
+		enable_subunits = {
+			desert_support
+		}
+
+    path = {
+      leads_to_tech = desert_kit2_technology
+      research_cost_coeff = 1
+    }
+
+		dependencies = { tech_support = 1	}
+
+    research_cost = 1.5
+    start_year = 1939
+
+    folder = {
+      name = specialised_folder
+      position = { x = @first_row y = @1939 }
+    }
+
+    categories = {
+			support_tech
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+
+		allow = {
+			OR = {
+				any_owned_state = { is_on_continent = africa	}
+				any_owned_state = { is_on_continent = middle_east	}
+				any_owned_state = { region = 153	} #northern india
+				any_owned_state = { region = 137	} #western steppe
+				any_owned_state = { region = 145	} #central asia
+				any_owned_state = { region = 144	} #western china
+				any_owned_state = { region = 152	} #central steppes
+				any_owned_state = { region = 156	} #australia
+				any_owned_state = { region = 119	} #south west
+				any_owned_state = { region = 118	} #westcoast
+				any_owned_state = { region = 123	} #mexico
+				any_owned_state = { region = 35	} #south america
+			}
+		}
+
+
+  }
+
+	desert_kit2_technology = {
+
+		desert_support = {
+			desert = {
+				defence = 0.15
+				attack = 0.1
+	      movement = 0.15
+			}
+		}
+
+    research_cost = 1
+    start_year = 1940
+
+    folder = {
+      name = specialised_folder
+      position = { x = @first_row y = @1940 }
+    }
+
+    categories = {
+			support_tech
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+
+  }
+
+	#Jungle kit
+
+	jungle_kit_technology = {
+
+		enable_equipments = {
+			jungle_kit_1
+		}
+
+		enable_subunits = {
+			jungle_support
+		}
+
+    path = {
+      leads_to_tech = jungle_kit2_technology
+      research_cost_coeff = 1
+    }
+
+    research_cost = 1.5
+    start_year = 1939
+
+    folder = {
+      name = specialised_folder
+      position = { x = @second_row y = @1939 }
+    }
+
+    categories = {
+			support_tech
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+
+		dependencies = { tech_support = 1	}
+
+		allow = {
+			OR = {
+				any_owned_state = { is_on_continent = south_america	}
+				any_owned_state = { region = 140	} #sub saharan
+				any_owned_state = { region = 17	} #east africa
+				any_owned_state = { region = 139	} #south africa
+				any_owned_state = { region = 17	} #east africa
+				any_owned_state = { region = 31	} #south india
+				any_owned_state = { region = 143	} #eastern india
+				any_owned_state = { region = 142	} #south east asia
+				any_owned_state = { region = 158	} #sunda islands
+				any_owned_state = { region = 159	} #bornea
+				any_owned_state = { region = 160	} #phillipines
+				any_owned_state = { region = 93	} #java
+				any_owned_state = { region = 167	} #new genua
+				any_owned_state = { region = 83	} #soloman islands
+			}
+		}
+
+
+  }
+
+	jungle_kit2_technology = {
+
+		jungle_support = {
+			jungle = {
+				defence = 0.15
+				attack = 0.1
+				movement = 0.15
+			}
+		}
+
+    research_cost = 1
+    start_year = 1940
+
+    folder = {
+      name = specialised_folder
+      position = { x = @second_row y = @1940 }
+    }
+
+    categories = {
+			support_tech
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+
+  }
+
+	# winter kit
+
+		winter_kit_technology = {
+
+			enable_equipments = {
+				winter_kit_1
+			}
+
+			enable_subunits = {
+				winter_support
+			}
+
+	    path = {
+	      leads_to_tech = winter_kit2_technology
+	      research_cost_coeff = 1
+	    }
+
+	    research_cost = 1.5
+	    start_year = 1939
+
+	    folder = {
+	      name = specialised_folder
+	      position = { x = @third_row y = @1941 }
+	    }
+
+	    categories = {
+				support_tech
+	    }
+
+			allow = {
+	      OR = {
+	        any_owned_state = { is_on_continent = europe	}
+					any_owned_state = { region = 121	} #canada
+					any_owned_state = { region = 122	} #canada
+					any_owned_state = { region = 118	} #westcoast
+					any_owned_state = { region = 120	} #centralus
+					any_owned_state = { region = 117	} #eastcoast
+					any_owned_state = { region = 35	} #south america
+					any_owned_state = { region = 128	} #northern south america
+					any_owned_state = { region = 150	} #arctic russia
+					any_owned_state = { region = 147	} #northern sibiria
+					any_owned_state = { region = 14	} #transurals
+					any_owned_state = { region = 138	} #ural region
+					any_owned_state = { region = 40	} #transvolga
+					any_owned_state = { region = 151	} #western siberia
+					any_owned_state = { region = 149	} #eastern siberia
+					any_owned_state = { region = 148	} #russia far east
+					any_owned_state = { region = 154	} #homeislands
+					any_owned_state = { region = 137	} #western steppe
+					any_owned_state = { region = 136	} #great steppe
+					any_owned_state = { region = 162	} #Afghanistan
+					any_owned_state = { region = 146	} #himalayas
+					any_owned_state = { region = 152	} #centra lsteppes
+					any_owned_state = { region = 155	} #manchuria
+					any_owned_state = { region = 33	} #alaska
+					any_owned_state = { region = 36	} #greenland
+	      }
+			}
+
+	    ai_will_do = {
+	      factor = 0
+				modifier = {
+					factor = 1
+					tag = FIN
+				}
+				modifier = {
+					factor = 1
+					tag = NOR
+				}
+				modifier = {
+					factor = 1
+					tag = SWE
+				}
+	    }
+
+			dependencies = { tech_support = 1	}
+			dependencies = { mechanised_infantry2 = 1	}
+
+	  }
+
+		winter_kit2_technology = {
+
+			modifier = {
+				 winter_attrition_factor = -0.1
+			}
+
+	    research_cost = 1
+	    start_year = 1940
+
+	    folder = {
+	      name = specialised_folder
+	      position = { x = @third_row y = @1942 }
+	    }
+
+	    categories = {
+				support_tech
+	    }
+
+	    ai_will_do = {
+	      factor = 1
+	    }
+
+	  }
+
+}

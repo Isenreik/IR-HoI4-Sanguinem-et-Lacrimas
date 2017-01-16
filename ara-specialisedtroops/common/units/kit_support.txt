@@ -1,0 +1,160 @@
+sub_units = {
+
+  desert_support = {
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		active = no
+
+		type = {
+			infantry
+			support
+		}
+
+		group = support
+
+		categories = {
+			category_support_battalions
+			category_army
+		}
+
+
+		combat_width = 0
+
+		#Size Definitions
+		max_strength = 2
+		max_organisation = 20
+		default_morale = 0.3
+		manpower = 250
+		training_time = 120
+
+		#Misc Abilities
+		weight = 0.1
+		supply_consumption = 0.03
+		can_be_parachuted = yes
+
+		# Important Ability
+		supply_consumption_factor = -0.02
+
+    desert = {
+      defence = 0.15
+      attack = 0.05
+      movement = 0.1
+		}
+
+		essential = {
+			support_equipment
+      desert_kit
+		}
+
+		need = {
+			support_equipment = 5
+			desert_kit = 20
+		}
+
+	}
+
+  jungle_support = {
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		active = no
+
+		type = {
+			infantry
+			support
+		}
+
+		group = support
+
+		categories = {
+			category_support_battalions
+			category_army
+		}
+
+
+		combat_width = 0
+
+		#Size Definitions
+		max_strength = 2
+		max_organisation = 20
+		default_morale = 0.3
+		manpower = 250
+		training_time = 120
+
+		#Misc Abilities
+		weight = 0.1
+		supply_consumption = 0.03
+		can_be_parachuted = yes
+
+		# Important Ability
+		supply_consumption_factor = -0.02
+
+    jungle = {
+			defence = 0.15
+			attack = 0.05
+			movement = 0.1
+		}
+
+		essential = {
+			support_equipment
+      jungle_kit
+		}
+
+		need = {
+			support_equipment = 5
+			jungle_kit = 20
+		}
+
+	}
+
+  winter_support = {
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		active = no
+
+		type = {
+			infantry
+			support
+		}
+
+		group = support
+
+		categories = {
+			category_support_battalions
+			category_army
+		}
+
+		combat_width = 0
+
+		#Size Definitions
+		max_strength = 3
+		max_organisation = 25
+		default_morale = 0.3
+		manpower = 250
+		training_time = 120
+
+		#Misc Abilities
+		weight = 0.1
+		supply_consumption = 0.03
+		can_be_parachuted = no
+
+		# Important Ability
+		supply_consumption_factor = -0.02
+
+    winter_attrition_factor = -0.5
+
+		essential = {
+			support_equipment
+      winter_kit
+		}
+
+		need = {
+			support_equipment = 5
+			winter_kit = 10
+		}
+
+	}
+
+}

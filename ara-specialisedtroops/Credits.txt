@@ -1,0 +1,11 @@
+glider_equipment
+http://www.gaetanmarie.com/category/illustrations/world-war-ii/cg-4-waco/
+http://arnhemjim.blogspot.ca/2011/09/general-aircraft-gal-4950-hamilcar.html
+
+criminal_tech_bg
+https://en.wikipedia.org/wiki/Political_commissar#/media/File:RIAN_archive_543_A_battalion_commander.jpg
+
+airborne_glider_bg
+https://en.wikipedia.org/wiki/General_Aircraft_Hamilcar#/media/File:M22_locust_06.jpg
+
+naval_invasion_support_bg
