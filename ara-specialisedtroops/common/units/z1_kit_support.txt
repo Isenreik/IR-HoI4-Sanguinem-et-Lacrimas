@@ -143,7 +143,9 @@ sub_units = {
 		# Important Ability
 		supply_consumption_factor = -0.02
 
-    winter_attrition_factor = -0.5
+    modifier = {
+			winter_attrition_factor = -0.5
+		}
 
 		essential = {
 			support_equipment
