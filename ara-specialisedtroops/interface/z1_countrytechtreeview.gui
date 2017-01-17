@@ -3224,7 +3224,7 @@ guiTypes = {
 					iconType = {
 						name ="airborne_glider_bg"
 						spriteType = "GFX_airborne_glider_bg"
-						position = { x=1420 y=33 }
+						position = { x=1425 y=33 }
 					}
 
 					iconType = {
@@ -3489,6 +3489,18 @@ guiTypes = {
 								font = "hoi_36header"
 								borderSize = { x = 0 y = 0}
 								text = "1941"
+								maxWidth = 100
+								maxHeight = 32
+								format = left
+								Orientation = "UPPER_LEFT"
+						}
+						instantTextBoxType = {
+								name = "crime_year7"
+								position = { x = 22 y = 610 }
+								textureFile = ""
+								font = "hoi_36header"
+								borderSize = { x = 0 y = 0}
+								text = "1942"
 								maxWidth = 100
 								maxHeight = 32
 								format = left

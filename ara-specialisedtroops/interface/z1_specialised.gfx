@@ -25,6 +25,11 @@ spriteTypes = {
     textureFile = "gfx//interface//tech_landdoctrine_researched_item_bg.dds"
   }
 
+  spriteType = {
+    name = "GFX_technology_specialised_folder_small_branch_item_bg"
+    textureFile = "gfx//interface//tech_doctrine_branch_item_bg.dds"
+  }
+
   frameAnimatedSpriteType = {
     name = "GFX_technology_specialised_folder_small_currently_researching_item_bg"
     texturefile = "gfx//interface//tech_doctrine_researching_anim_strip.dds"
@@ -75,8 +80,8 @@ spriteTypes = {
   SpriteType = {    name = "GFX_unit_jungle_support_icon_medium"		texturefile = "gfx//interface//counters//divisions_large//support_unit_logistics_company_icon.dds"		noOfFrames = 2  }
   SpriteType = {    name = "GFX_jungle_kit_icon_medium"		texturefile = "gfx//interface//technologies//support_equipment_1.dds"  }
 
-  SpriteType = {    name = "GFX_winter_kit_technology_medium"		texturefile = "gfx//interface//technologies//tech_logistics_company.dds"  }
-  SpriteType = {    name = "GFX_winter_kit2_technology_medium"		texturefile = "gfx//interface//technologies//tech_logistics_company2.dds"  }
+  SpriteType = {    name = "GFX_winter_kit_technology_medium"		texturefile = "gfx//interface//technologies//winterkit_1.dds"  }
+  SpriteType = {    name = "GFX_winter_kit2_technology_medium"		texturefile = "gfx//interface//technologies//winterkit_2.dds"  }
 
   ## amphibious mech
 

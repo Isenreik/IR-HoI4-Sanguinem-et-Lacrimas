@@ -1,0 +1,111 @@
+## by Araxiel - original script do not steel
+## Leads to an error message on game startup due to duplace entries (one in the base game, one here), but it still works. This file will override only the "category" value. Everything else stays the same.
+
+sub_units = {
+
+	## Artillery
+
+	light_sp_artillery_brigade = {
+
+		categories = {
+			category_spg_armor
+			category_line_artillery
+		}
+	}
+
+	medium_sp_artillery_brigade = {
+
+		categories = {
+			category_spg_armor
+			category_line_artillery
+		}
+	}
+
+	heavy_sp_artillery_brigade = {
+		categories = {
+			category_spg_armor
+			category_line_artillery
+		}
+	}
+
+	super_heavy_sp_artillery_brigade = {
+		categories = {
+			category_spg_armor
+			category_line_artillery
+		}
+	}
+
+	modern_sp_artillery_brigade = {
+		categories = {
+			category_spg_armor
+			category_line_artillery
+		}
+	}
+
+	##Tank Destroyers
+
+	light_tank_destroyer_brigade = {
+			categories = {
+				category_spat_armor
+			}
+	}
+
+	medium_tank_destroyer_brigade = {
+			categories = {
+				category_spat_armor
+		}
+	}
+
+	heavy_tank_destroyer_brigade = {
+			categories = {
+				category_spat_armor
+		}
+	}
+
+	super_heavy_tank_destroyer_brigade = {
+			categories = {
+			category_spat_armor
+		}
+	}
+
+	modern_tank_destroyer_brigade = {
+			categories = {
+			category_spat_armor
+		}
+	}
+
+	## AA
+
+	light_sp_anti_air_brigade = {
+			categories = {
+				category_spaa_armor
+			}
+	}
+
+	medium_sp_anti_air_brigade = {
+			categories = {
+				category_spaa_armor
+			}
+	}
+
+	heavy_sp_anti_air_brigade = {
+			categories = {
+				category_spaa_armor
+			}
+	}
+
+	super_heavy_sp_anti_air_brigade = {
+			categories = {
+				category_spaa_armor
+			}
+	}
+
+	modern_sp_anti_air_brigade = {
+			categories = {
+				category_spaa_armor
+			}
+	}
+
+	## Stuff 'n shit
+
+}

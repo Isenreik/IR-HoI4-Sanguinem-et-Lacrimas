@@ -1,0 +1,9 @@
+## by Araxiel - original script do not steel
+## this simply adds new categories, without altering the original one
+
+sub_unit_categories = {
+
+	category_spg_armor
+	category_spaa_armor
+	category_spat_armor
+}

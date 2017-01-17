@@ -9,6 +9,10 @@ airborne_glider_bg
 https://en.wikipedia.org/wiki/General_Aircraft_Hamilcar#/media/File:M22_locust_06.jpg
 
 naval_invasion_support_bg
+http://2ndarmoredamphibianbattalion.com/saipan/
 
 kits_bg
 https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-268-0180-03,_Russland,_Soldaten_auf_Halbkettenfahrzeug.jpg
+
+winterkit_1 & _2
+http://www.tanks-encyclopedia.com
