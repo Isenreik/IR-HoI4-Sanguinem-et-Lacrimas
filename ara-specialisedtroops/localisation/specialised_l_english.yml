@@ -23,11 +23,11 @@ criminal_technology3_desc:0 "Our prison system will refine and further their inv
 
 criminal_technology4:0 "Prison Labour Camps"
 criminal_technology4_short:0 "Prison Labour Camps"
-criminal_technology4_desc:0 "Our undesirables shall be send to work camps to mine for our glorious nation's warmachine.\n§YOnly available for Fascists and Communists!§!"
+criminal_technology4_desc:0 "Our undesirables shall be send to work camps to mine for our glorious nation's war machine.\n§YOnly available for Fascists and Communists!§!"
 
 penal_technology:0 "Send Them To The Front!"
 penal_technology_short:0 "Send Them To The Front!"
-penal_technology_desc:0 "Give criminals a chance to redeem themselves through frontline service. Let them fight for their country and attone for their crimes.\n§YOnly available during war!\n\n§!"
+penal_technology_desc:0 "Give criminals a chance to redeem themselves through front-line service. Let them fight for their country and atone for their crimes.\n§YOnly available during war!\n\n§!"
 
 penal_technology2:0 "Penal Battalions"
 penal_technology2_short:0 "Penal Battalions"
@@ -40,14 +40,14 @@ penal_technology3_short:0 "Improved Penal Battalions"
 penal_technology3_desc:0 "Improve our officers' abilities to commandeer our country's deplorable subjects and further incorporate penal battalions into the army structure.\n§YOnly available during war for Fascists and Communists!\n\n§!"
 
 penals:0 "Penal Battalion"
-penals_desc:0 "Criminals, political opponents, degenerates, subversives and other undesirables forced to fight on the frontlines."
+penals_desc:0 "Criminals, political opponents, degenerates, subversives and other undesirables forced to fight on the front lines."
 
 commissars:0 "Commissar Detachment"
 commissars_desc:0 "These political commissars are determined to push their men to their limits and beyond in the name of the state. No quarter shall be given."
 
 commissar_technology:0 "Commissars"
 commissar_technology_short:0 "Commissars"
-commissar_technology_desc:0 "Specialised officers will be able to be delpoyed to the frontlines. These barrier troops are fervently loyal to the party and the cause and will motivate their men to be the same, by any means necessary.\n§YOnly available for Fascists and Communists!\n\n§!"
+commissar_technology_desc:0 "Specialised officers will be able to be deployed to the front lines. These barrier troops are fervently loyal to the party and the cause and will motivate their men to be the same, by any means necessary.\n§YOnly available for Fascists and Communists!\n\n§!"
 
 commissar_technology2:0 "Commissar Schools"
 commissar_technology2_short:0 "Commissar Schools"
@@ -85,7 +85,7 @@ light_tank_amphibious_equipment_2_desc:0 "Our light duplex-drive tanks can furth
 
 amphibious_mech_vehicle_2:0 "Tracked Landing Vehicles"
 amphibious_mech_vehicle_2_short:0 "LVT"
-amphibious_mech_vehicle_2_desc:0 "These amphibious armored troop transporters can carry soldiers and small vehicles, support infantry in combat and act as landing crafts all at the same time. They are a force to be reckoned with even outside of the water."
+amphibious_mech_vehicle_2_desc:0 "These amphibious armoured troop transporters can carry soldiers and small vehicles, support infantry in combat and act as landing crafts all at the same time. They are a force to be reckoned with even outside of the water."
 
 medium_tank_amphibious_equipment_1:0 "Amphibious Medium Tank"
 medium_tank_amphibious_equipment_1_short:0 "Medium DD Tank"
@@ -96,9 +96,9 @@ medium_tank_amphibious_equipment_2_short:0 "Adv. M/DD Tank"
 medium_tank_amphibious_equipment_2_desc:0 "Further improvements in our floatation technology and further integration with troop transport ships lets us deploy our advanced medium tanks across water."
 
 amphibious_mech_unit:0 "Mechanized Marines"
-amphibious_mech_unit_desc:0 "Armored infantry landing transportation."
+amphibious_mech_unit_desc:0 "Armoured infantry landing transportation."
 light_tank_amphibious_unit:0 "Amphibious Light Tanks"
-light_tank_amphibious_unit_desc:0 "Amphibious lightly armored landing tanks."
+light_tank_amphibious_unit_desc:0 "Amphibious lightly armoured landing tanks."
 medium_tank_amphibious_unit:0 "Amphibious Medium Tanks"
 medium_tank_amphibious_unit_desc:0 "Medium landing tanks can do almost any job."
 
@@ -125,3 +125,32 @@ paratrooper_glider_desc:0 "These larger and special gliders can bring in proper 
 
 glider_technology:0 "Gliders"
 glider_technology_desc:0 "With the use of large gliders, we can land entire platoons and even vehicles behind the enemy lines."
+
+##Airborne gliders
+
+SPECIALISED_TITLE_kits_support:0 "SPECIALISED CLIMATE EQUIPMENT"
+kits_technology_desc:0 "This specialised equipment encompass small modifications to existing weapons and vehicles or specialised transporters for harsh climates. This equipment will improve the combat effectiveness of our troops using them."
+
+desert_kit_1:0 "Desert Equipment"
+desert_kit_1_desc:0 "Equipment doesn't like sand. It's coarse and rough and irritating and it gets everywhere. With small and specialised modifications delivered to our existing vehicles and weapons, we can increase their reliability and optimise their supply usage using dedicated training and tactics for the desert climate. However, these special adaptations help little outside of deserts and actually work as a detriment when fighting in other climates.\n§YOnly available for nations that own appropriate territory!\nIncreases Desert combat Breakthrough and Defence.\n\n§!"
+
+desert_kit2_technology:0 "Improved Desert Equipment"
+desert_kit2_technology_desc:0 "Further improvements in tactics, logistics and equipment allows our designated desert divisions to expand on their fighting capabilities in the unforgiving desert sands.\n§YFurther increases Desert combat Breakthrough and Defence.\n\n§!"
+
+desert_support:0 "Desert Support Company"
+desert_support_desc:0 "This special support company encompasses everything a division needs to dedicate combat in desert environments. It contains specialised logistic vehicles, training and deliveries of modifications for existing weapons and vehicles.\n\n§!"
+
+jungle_kit_1:0 "Jungle Equipment"
+jungle_kit_1_desc:0 "This equipment and special training was designed to support the unwelcoming humid climate found in jungles. Using specialised equipment and dedicated tactics appropriate for jungle warfare, troops assigned with these company while improve their capabilities while fighting in jungle terrain. However, these special adaptations help little outside of the jungle and actually work as a detriment when fighting in other climates.\n§YOnly available for nations that own appropriate territory!\n\n§!"
+
+jungle_kit2_technology:0 "Improved Jungle Equipment"
+jungle_kit2_technology_desc:0 "Further improvements in tactics, logistics and equipment allows our designated jungle divisions to expand on their fighting capabilities in the treacherous rainforest.\n\n§!"
+
+jungle_support:0 "Jungle Support Company"
+jungle_support_desc:0 "This special support company encompasses everything a division needs to dedicate combat in jungle environments. It contains specialised logistic vehicles, training and deliveries of modifications for existing weapons and vehicles.\n\n§!"
+
+winter_kit_technology:0 "Winter Equipment"
+winter_kit_technology_desc:0 "This equipment and special training was designed to help out our troops during the cold winter. This means specialised vehicles using tracks and skis being given to our logistic companies and frontline troops during winter. Further, this winter equipment includes skis and appropriate training for dedicated mountaineer divisions.\n§YOnly available for nations that own appropriate territory!\n\n§!"
+
+jungle_kit2_technology:0 "Improved Winter Equipment"
+jungle_kit2_technology_desc:0 "Further improvements in tactics, logistics and equipment allows our troops to expand on their fighting capabilities in the cold winter months.\n\n§!"

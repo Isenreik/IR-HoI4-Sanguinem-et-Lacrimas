@@ -1,0 +1,61 @@
+equipments = {
+
+	desert_kit = {
+		is_archetype = yes
+		picture = archetype_desert_kit_equipment
+		is_buildable = no
+		type = {
+			infantry
+		}
+		group_by = archetype
+
+		interface_category = interface_category_land
+
+		reliability = 0.8
+
+		#Space taken in convoy
+		lend_lease_cost = 2
+
+		build_cost_ic = 4
+		resources = {
+			aluminium = 2
+			steel = 1
+      oil = 1
+		}
+	}
+
+	desert_kit_1 = {
+		archetype = desert_kit
+		priority = 20
+	}
+
+	jungle_kit = {
+		is_archetype = yes
+		picture = archetype_desert_kit_equipment
+		is_buildable = no
+		type = {
+			infantry
+		}
+		group_by = archetype
+
+		interface_category = interface_category_land
+
+		reliability = 0.8
+
+		#Space taken in convoy
+		lend_lease_cost = 2
+
+		build_cost_ic = 4
+		resources = {
+			aluminium = 2
+			steel = 1
+      rubber = 1
+		}
+	}
+
+	jungle_kit_1 = {
+		archetype = jungle_kit
+		priority = 20
+	}
+
+}
