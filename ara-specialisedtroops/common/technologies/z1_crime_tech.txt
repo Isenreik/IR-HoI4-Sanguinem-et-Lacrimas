@@ -9,7 +9,8 @@ technologies = {
 
 	criminal_technology = {
 
-		industrial_capacity_factory = 0.025
+		industrial_capacity_factory = 0.045
+		production_speed_buildings_factor = 0.02
 
 		path = {
 			leads_to_tech = penal_technology
@@ -43,6 +44,7 @@ technologies = {
 	criminal_technology2 = {
 
 		industrial_capacity_factory = 0.1
+		production_speed_buildings_factor = 0.02
 
 		research_cost = 1.5
 		start_year = 1936
@@ -83,6 +85,7 @@ technologies = {
 	criminal_technology3 = {
 
 		industrial_capacity_factory = 0.1
+		production_speed_buildings_factor = 0.02
 
 		research_cost = 1.5
 		start_year = 1941

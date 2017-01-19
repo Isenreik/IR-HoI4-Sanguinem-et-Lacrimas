@@ -277,9 +277,23 @@ technologies = {
 				support_tech
 	    }
 
-	    ai_will_do = {
+			ai_will_do = {
 	      factor = 1
+				modifier = {
+					factor = 3
+					tag = FIN
+				}
+				modifier = {
+					factor = 2
+					tag = NOR
+				}
+				modifier = {
+					factor = 2
+					tag = SWE
+				}
 	    }
+
+			dependencies = { mechanised_infantry2 = 1	}
 
 	  }
 

@@ -5,18 +5,15 @@ spriteTypes = {
 
   SpriteType = {
 		name = "GFX_unit_category_spg_armor"
-		texturefile = "gfx//interface//counters//divisions_large//unit_medium_tank_artillery_icon.dds"
-		noOfFrames = 2
+		texturefile = "gfx//category_all_SPAG.dds"
 	}
   SpriteType = {
     name = "GFX_unit_category_spaa_armor"
-    texturefile = "gfx//interface//counters//divisions_large//unit_medium_tank_antiair_icon.dds"
-    noOfFrames = 2
+		texturefile = "gfx//category_all_spaa.dds"
   }
   SpriteType = {
     name = "GFX_unit_category_spat_armor"
-    texturefile = "gfx//interface//counters//divisions_large//unit_medium_tank_at_icon.dds"
-    noOfFrames = 2
+		texturefile = "gfx//category_all_spat.dds"
   }
 
 }

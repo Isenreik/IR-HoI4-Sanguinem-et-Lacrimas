@@ -68,11 +68,17 @@ amphibious_LT_subtitle_TT:0 "These are amphibious versions of our light tanks."
 amphibious_MT_subtitle_lable:0 "Amphibious Tanks"
 amphibious_MT_subtitle_TT:0 "These are amphibious versions of our medium tanks."
 
+amphibious_mech_vehicle:0 "Amphibious Mechanized"
 amphibious_mech_vehicle_desc:0 "These are converted versions of our troop transporters that let our marines ride right up to the shore or through rivers and embark under supporting fire. It also means they can drive right through swamps without fear of getting stuck."
 amphibious_mech_vehicle_1:0 "Amphibious Vehicles"
 amphibious_mech_vehicle_1_short:0 "LCM"
 amphibious_mech_vehicle_1_desc:0 "These are converted versions of our troop transporters that let our marines ride right up to the shore or through rivers and embark under supporting fire. It also means they can drive right through swamps without fear of getting stuck."
 
+amphibious_mech_vehicle_2:0 "Tracked Landing Vehicles"
+amphibious_mech_vehicle_2_short:0 "LVT"
+amphibious_mech_vehicle_2_desc:0 "These amphibious armoured troop transporters can carry soldiers and small vehicles, support infantry in combat and act as landing crafts all at the same time. They are a force to be reckoned with even outside of the water."
+
+light_tank_amphibious_equipment_1:0 "Light Amphibious Tank"
 light_tank_amphibious_equipment_desc:0 "Through a small conversation, our light tanks should be able to swim through the water for a short period of time. This means that during naval invasions, they can be deployed by transport ships in safety near shore and drive up the beach by themselves. Other than that, such ability will also be mighty useful crossing rivers and get around swamps without fear of getting stuck in the mud."
 
 light_tank_amphibious_equipment_1:0 "Amphibious Tank"
@@ -83,9 +89,7 @@ light_tank_amphibious_equipment_2:0 "Advanced DD Tank"
 light_tank_amphibious_equipment_2_short:0 "Adv. DD Tank"
 light_tank_amphibious_equipment_2_desc:0 "Our light duplex-drive tanks can further help our marines during landing operation."
 
-amphibious_mech_vehicle_2:0 "Tracked Landing Vehicles"
-amphibious_mech_vehicle_2_short:0 "LVT"
-amphibious_mech_vehicle_2_desc:0 "These amphibious armoured troop transporters can carry soldiers and small vehicles, support infantry in combat and act as landing crafts all at the same time. They are a force to be reckoned with even outside of the water."
+medium_tank_amphibious_equipment:0 "Amphibious Medium Tank"
 
 medium_tank_amphibious_equipment_1:0 "Amphibious Medium Tank"
 medium_tank_amphibious_equipment_1_short:0 "Medium DD Tank"
@@ -152,5 +156,5 @@ jungle_support_desc:0 "This special support company encompasses everything a div
 winter_kit_technology:0 "Winter Equipment"
 winter_kit_technology_desc:0 "This equipment and special training was designed to help out our troops during the cold winter. This means specialised vehicles using tracks and skis being given to our logistic companies and frontline troops during winter. Further, this winter equipment includes skis and appropriate training for dedicated mountaineer divisions.\n§YOnly available for nations that own appropriate territory!\n\n§!"
 
-jungle_kit2_technology:0 "Improved Winter Equipment"
-jungle_kit2_technology_desc:0 "Further improvements in tactics, logistics and equipment allows our troops to expand on their fighting capabilities in the cold winter months.\n\n§!"
+winter_kit2_technology:0 "Improved Winter Equipment"
+winter_kit2_technology_desc:0 "Further improvements in tactics, logistics and equipment allows our troops to expand on their fighting capabilities in the cold winter months.\n\n§!"
