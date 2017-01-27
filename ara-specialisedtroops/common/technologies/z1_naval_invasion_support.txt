@@ -20,6 +20,7 @@ technologies = {
     }
 
     dependencies = { mechanised_infantry = 1	}
+		dependencies = { marines = 1	}
 
 		path = {
 			leads_to_tech = light_tank_amphibious_tech_1
@@ -36,7 +37,8 @@ technologies = {
 
 		categories = {
 			cat_mechanized_equipment
-      naval_equipment
+			motorized_equipment
+			infantry_tech
 			tp_tech
 		}
 
@@ -82,8 +84,8 @@ technologies = {
 		}
 
 		categories = {
+			armor
 			cat_light_armor
-      naval_equipment
 			tp_tech
 		}
 
@@ -100,6 +102,7 @@ technologies = {
     }
 
     dependencies = { advanced_light_tank = 1	}
+		dependencies = { marines2 = 1	}
 
 		research_cost = 1.5
 		start_year = 1943
@@ -110,8 +113,8 @@ technologies = {
 		}
 
 		categories = {
+			armor
 			cat_light_armor
-      naval_equipment
 			tp_tech
 		}
 
@@ -128,6 +131,7 @@ technologies = {
     }
 
     dependencies = { mechanised_infantry2 = 1	}
+		dependencies = { marines2 = 1	}
 
 		research_cost = 1.5
 		start_year = 1943
@@ -138,9 +142,10 @@ technologies = {
 		}
 
 		categories = {
-      cat_mechanized_equipment
-      naval_equipment
-      tp_tech
+			cat_mechanized_equipment
+			motorized_equipment
+			infantry_tech
+			tp_tech
 		}
 
 		ai_will_do = {
@@ -160,6 +165,7 @@ technologies = {
     }
 
     dependencies = { improved_medium_tank = 1	}
+		dependencies = { marines2 = 1	}
 
 		path = {
 			leads_to_tech = medium_tank_amphibious_tech_2
@@ -175,8 +181,8 @@ technologies = {
 		}
 
 		categories = {
+			armor
 			cat_medium_armor
-      naval_equipment
 			tp_tech
 		}
 
@@ -203,8 +209,8 @@ technologies = {
 		}
 
 		categories = {
+			armor
 			cat_medium_armor
-      naval_equipment
 			tp_tech
 		}
 

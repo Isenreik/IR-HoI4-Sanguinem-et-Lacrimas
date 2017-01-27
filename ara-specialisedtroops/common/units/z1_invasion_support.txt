@@ -113,6 +113,8 @@ sub_units = {
 		weight = 1
 		supply_consumption = 0.2
 
+    recon = 0.1
+
 		#Tanks are awesome - I agree
 		soft_attack = 0.5
 

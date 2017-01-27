@@ -88,33 +88,33 @@ equipments = {
 		interface_category = interface_category_armor
 
 		upgrades = {
-      tank_reliability_upgrade
-      tank_engine_upgrade
-      tank_armor_upgrade
-      tank_gun_upgrade
-    }
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_gun_upgrade
+		}
 
 		#Misc Abilities
-		maximum_speed = 8
+		maximum_speed = 9
 		reliability = 0.6
 
 		#Defensive Abilities
-		defense = 4
-		breakthrough = 2
-		hardness = 0.5
-		armor_value = 5
+		defense = 4.5
+		breakthrough = 36
+		hardness = 0.7
+		armor_value = 25
 
 		#Offensive Abilities
-		soft_attack = 42
-		hard_attack = 0.5
-		ap_attack = 4
+		soft_attack = 17
+		hard_attack = 8
+		ap_attack = 40
 		air_attack = 0
 
-		build_cost_ic = 9
+		build_cost_ic = 10
 		resources = {
 			oil = 1
 			steel = 3
-      rubber = 1
+      rubber = 2
 		}
 
 	}
@@ -136,20 +136,24 @@ equipments = {
 
 		#Misc Abilities
 		maximum_speed = 10
+		reliability = 0.6
 
 		#Defensive Abilities
-		defense = 5
-		breakthrough = 2.5
-		armor_value = 10
+		defense = 5.5
+		breakthrough = 46
+		hardness = 0.7
+		armor_value = 25
 
 		#Offensive Abilities
-		soft_attack = 55
-		hard_attack = 1
+		soft_attack = 18
+		hard_attack = 8
+		ap_attack = 45
+		air_attack = 0
 
-		build_cost_ic = 10
+		build_cost_ic = 11
 		resources = {
 			steel = 4
-			oil = 1
+			oil = 2
       rubber = 2
 		}
 	}
@@ -260,25 +264,25 @@ equipments = {
       }
 
   		#Misc Abilities
-  		maximum_speed = 8
+  		maximum_speed = 10
   		reliability = 0.6
 
   		#Defensive Abilities
-  		defense = 4
-  		breakthrough = 2
-  		hardness = 0.5
-  		armor_value = 5
+  		defense = 5
+  		breakthrough = 39
+  		hardness = 0.7
+  		armor_value = 25
 
   		#Offensive Abilities
-  		soft_attack = 42
-  		hard_attack = 0.5
-  		ap_attack = 4
+  		soft_attack = 17
+  		hard_attack = 8
+  		ap_attack = 40
   		air_attack = 0
 
-  		build_cost_ic = 9
+  		build_cost_ic = 10
   		resources = {
-  			oil = 1
-  			steel = 3
+  			oil = 2
+  			steel = 4
         aluminium = 1
   		}
 

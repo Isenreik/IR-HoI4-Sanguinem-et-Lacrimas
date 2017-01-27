@@ -70,15 +70,15 @@ amphibious_MT_subtitle_TT:0 "These are amphibious versions of our medium tanks."
 
 amphibious_mech_vehicle:0 "Amphibious Mechanized"
 amphibious_mech_vehicle_desc:0 "These are converted versions of our troop transporters that let our marines ride right up to the shore or through rivers and embark under supporting fire. It also means they can drive right through swamps without fear of getting stuck."
-amphibious_mech_vehicle_1:0 "Amphibious Vehicles"
+amphibious_mech_vehicle_1:0 "Amphibious Vehicle"
 amphibious_mech_vehicle_1_short:0 "LCM"
 amphibious_mech_vehicle_1_desc:0 "These are converted versions of our troop transporters that let our marines ride right up to the shore or through rivers and embark under supporting fire. It also means they can drive right through swamps without fear of getting stuck."
 
-amphibious_mech_vehicle_2:0 "Tracked Landing Vehicles"
+amphibious_mech_vehicle_2:0 "Tracked Landing Vehicle"
 amphibious_mech_vehicle_2_short:0 "LVT"
 amphibious_mech_vehicle_2_desc:0 "These amphibious armoured troop transporters can carry soldiers and small vehicles, support infantry in combat and act as landing crafts all at the same time. They are a force to be reckoned with even outside of the water."
 
-light_tank_amphibious_equipment_1:0 "Light Amphibious Tank"
+light_tank_amphibious_equipment:0 "Light Amphibious Tank"
 light_tank_amphibious_equipment_desc:0 "Through a small conversation, our light tanks should be able to swim through the water for a short period of time. This means that during naval invasions, they can be deployed by transport ships in safety near shore and drive up the beach by themselves. Other than that, such ability will also be mighty useful crossing rivers and get around swamps without fear of getting stuck in the mud."
 
 light_tank_amphibious_equipment_1:0 "Amphibious Tank"
@@ -89,13 +89,13 @@ light_tank_amphibious_equipment_2:0 "Advanced DD Tank"
 light_tank_amphibious_equipment_2_short:0 "Adv. DD Tank"
 light_tank_amphibious_equipment_2_desc:0 "Our light duplex-drive tanks can further help our marines during landing operation."
 
-medium_tank_amphibious_equipment:0 "Amphibious Medium Tank"
+medium_tank_amphibious_equipment:0 "Medium Amphibious Tank"
 
-medium_tank_amphibious_equipment_1:0 "Amphibious Medium Tank"
+medium_tank_amphibious_equipment_1:0 "Medium Amphibious Tank"
 medium_tank_amphibious_equipment_1_short:0 "Medium DD Tank"
 medium_tank_amphibious_equipment_1_desc:0 "Using special exhaust pipes and floatation devices, our medium tanks can swim over short distances and directly support our marines during a naval assault and beyond."
 
-medium_tank_amphibious_equipment_2:0 "Advanced Medium Duplex Drive Tank"
+medium_tank_amphibious_equipment_2:0 "Adv. M/DD Tank"
 medium_tank_amphibious_equipment_2_short:0 "Adv. M/DD Tank"
 medium_tank_amphibious_equipment_2_desc:0 "Further improvements in our floatation technology and further integration with troop transport ships lets us deploy our advanced medium tanks across water."
 
@@ -110,10 +110,12 @@ medium_tank_amphibious_unit_desc:0 "Medium landing tanks can do almost any job."
 
 SPECIALISED_TITLE_airborne_support:0 "AIRBORN GLIDERS"
 
+glider_equipment:0 "Cargo Gliders"
 glider_equipment_1:0 "Cargo Gliders"
 glider_equipment_1_desc:0 "These larger gliders can bring in proper supplies and even small vehicles along with our paratroopers."
 glider_equipment_desc:0 "These larger gliders can bring in proper supplies and even small vehicles along with our paratroopers."
 
+glider_tank_equipment:0 "Glider Tank"
 glider_tank_equipment_1:0 "Glider Tank"
 glider_tank_equipment_1_short:0 "Light Glider Tank"
 glider_tank_equipment_1_desc:0 "This light tank can be deployed from accompanied large, specially build gliders."
@@ -136,7 +138,7 @@ SPECIALISED_TITLE_kits_support:0 "SPECIALISED CLIMATE EQUIPMENT"
 kits_technology_desc:0 "This specialised equipment encompass small modifications to existing weapons and vehicles or specialised transporters for harsh climates. This equipment will improve the combat effectiveness of our troops using them."
 
 desert_kit_1:0 "Desert Equipment"
-desert_kit_1_desc:0 "Equipment doesn't like sand. It's coarse and rough and irritating and it gets everywhere. With small and specialised modifications delivered to our existing vehicles and weapons, we can increase their reliability and optimise their supply usage using dedicated training and tactics for the desert climate. However, these special adaptations help little outside of deserts and actually work as a detriment when fighting in other climates.\n§YOnly available for nations that own appropriate territory!\nIncreases Desert combat Breakthrough and Defence.\n\n§!"
+desert_kit_1_desc:0 "\nEquipment doesn't like sand. It's coarse and rough and irritating and it gets everywhere. With small and specialised modifications delivered to our existing vehicles and weapons, we can increase their reliability and optimise their supply usage using dedicated training and tactics for the desert climate. However, these special adaptations help little outside of deserts and actually work as a detriment when fighting in other climates.\n§YOnly available for nations that own appropriate territory!\nIncreases Desert combat Breakthrough and Defence.\n\n§!"
 
 desert_kit2_technology:0 "Improved Desert Equipment"
 desert_kit2_technology_desc:0 "Further improvements in tactics, logistics and equipment allows our designated desert divisions to expand on their fighting capabilities in the unforgiving desert sands.\n§YFurther increases Desert combat Breakthrough and Defence.\n\n§!"
@@ -145,7 +147,7 @@ desert_support:0 "Desert Support Company"
 desert_support_desc:0 "This special support company encompasses everything a division needs to dedicate combat in desert environments. It contains specialised logistic vehicles, training and deliveries of modifications for existing weapons and vehicles.\n\n§!"
 
 jungle_kit_1:0 "Jungle Equipment"
-jungle_kit_1_desc:0 "This equipment and special training was designed to support the unwelcoming humid climate found in jungles. Using specialised equipment and dedicated tactics appropriate for jungle warfare, troops assigned with these company while improve their capabilities while fighting in jungle terrain. However, these special adaptations help little outside of the jungle and actually work as a detriment when fighting in other climates.\n§YOnly available for nations that own appropriate territory!\n\n§!"
+jungle_kit_1_desc:0 "\nThis equipment and special training was designed to support the unwelcoming humid climate found in jungles. Using specialised equipment and dedicated tactics appropriate for jungle warfare, troops assigned with these company while improve their capabilities while fighting in jungle terrain. However, these special adaptations help little outside of the jungle and actually work as a detriment when fighting in other climates.\n§YOnly available for nations that own appropriate territory!\n\n§!"
 
 jungle_kit2_technology:0 "Improved Jungle Equipment"
 jungle_kit2_technology_desc:0 "Further improvements in tactics, logistics and equipment allows our designated jungle divisions to expand on their fighting capabilities in the treacherous rainforest.\n\n§!"
@@ -154,7 +156,7 @@ jungle_support:0 "Jungle Support Company"
 jungle_support_desc:0 "This special support company encompasses everything a division needs to dedicate combat in jungle environments. It contains specialised logistic vehicles, training and deliveries of modifications for existing weapons and vehicles.\n\n§!"
 
 winter_kit_technology:0 "Winter Equipment"
-winter_kit_technology_desc:0 "This equipment and special training was designed to help out our troops during the cold winter. This means specialised vehicles using tracks and skis being given to our logistic companies and frontline troops during winter. Further, this winter equipment includes skis and appropriate training for dedicated mountaineer divisions.\n§YOnly available for nations that own appropriate territory!\n\n§!"
+winter_kit_technology_desc:0 "This equipment and special training was designed to help out our troops during the cold winter. This means specialised vehicles using tracks and skis being given to our logistic companies and frontline troops during winter.\n§YOnly available for nations that own appropriate territory!\n\n§!"
 
 winter_kit2_technology:0 "Improved Winter Equipment"
 winter_kit2_technology_desc:0 "Further improvements in tactics, logistics and equipment allows our troops to expand on their fighting capabilities in the cold winter months.\n\n§!"
