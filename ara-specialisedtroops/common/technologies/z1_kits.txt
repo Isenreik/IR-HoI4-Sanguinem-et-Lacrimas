@@ -6,6 +6,7 @@ technologies = {
 @1942 = 6
 
 @first_row = -3
+@middle_row = -1
 @second_row = 1
 @third_row = 4
 
@@ -17,9 +18,9 @@ technologies = {
 			desert_kit_1
 		}
 
-		enable_subunits = {
-			desert_support
-		}
+		enable_subunits = {			desert_support		}
+
+		desc = "desert_kit1_special_desc"
 
     path = {
       leads_to_tech = desert_kit2_technology
@@ -74,6 +75,17 @@ technologies = {
 	      movement = 0.15
 			}
 		}
+
+		path = {
+			leads_to_tech = heat_kit_technology
+			research_cost_coeff = 1
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = desert_kit2_special_tooltip
+		}
+
+		desc = "desert_kit2_special_desc"
 
     research_cost = 1
     start_year = 1940
@@ -134,10 +146,7 @@ technologies = {
 					OR = {
 									is_on_continent = south_america
 									region = 140		#sub saharan
-									region = 17			#east africa
 									region = 139		#south africa
-									region = 17			#east africa
-									region = 31			#south india
 									region = 143		#eastern india
 									region = 142	  #south east asia
 									region = 158	  #sunda islands
@@ -160,6 +169,16 @@ technologies = {
 				movement = 0.15
 			}
 		}
+
+		path = {
+			leads_to_tech = heat_kit_technology
+			research_cost_coeff = 1
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = jungle_kit2_RESEARCHED
+		}
+		## desc = "jungle_kit2_RESEARCHED"
 
     research_cost = 1
     start_year = 1940
@@ -296,5 +315,66 @@ technologies = {
 			dependencies = { mechanised_infantry2 = 1	}
 
 	  }
+
+		## Heat Kits
+
+		heat_kit_technology = {
+
+	    path = {
+	      leads_to_tech = heat_kit2_technology
+	      research_cost_coeff = 1
+	    }
+
+	    research_cost = 1
+	    start_year = 1940
+
+	    folder = {
+	      name = specialised_folder
+	      position = { x = @middle_row y = @1940 }
+	    }
+
+			modifier = {
+				 heat_attrition_factor = -0.25
+			}
+
+	    categories = {
+				support_tech
+	    }
+
+	    ai_will_do = {
+	      factor = 1
+	    }
+
+	  }
+
+		heat_kit2_technology = {
+
+	    path = {
+	      leads_to_tech = heat_kit2_technology
+	      research_cost_coeff = 1
+	    }
+
+	    research_cost = 1
+	    start_year = 1941
+
+	    folder = {
+	      name = specialised_folder
+	      position = { x = @middle_row y = @1941 }
+	    }
+
+			modifier = {
+				 heat_attrition_factor = -0.25
+			}
+
+	    categories = {
+				support_tech
+	    }
+
+	    ai_will_do = {
+	      factor = 1
+	    }
+
+	  }
+
 
 }
