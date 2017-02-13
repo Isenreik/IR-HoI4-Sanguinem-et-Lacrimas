@@ -1,3 +1,5 @@
+## by Araxiel - original script do not steel
+
 sub_units = {
 
   amphibious_mech_unit = {

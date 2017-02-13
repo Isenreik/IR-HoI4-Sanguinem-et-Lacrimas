@@ -106,6 +106,21 @@ light_tank_amphibious_unit_desc:0 "Amphibious lightly armoured landing tanks."
 medium_tank_amphibious_unit:0 "Amphibious Medium Tanks"
 medium_tank_amphibious_unit_desc:0 "Medium landing tanks can do almost any job."
 
+USA_amphibious_mech_vehicle_1_short:1 "LVT-1 Alligator"
+USA_amphibious_mech_vehicle_2_short:1 "LVT-4 Buffallo-III"
+USA_light_tank_amphibious_equipment_1_short:1 "LVT(A)-1"
+USA_light_tank_amphibious_equipment_2_short:1 "LVT(A)-5"
+USA_medium_tank_amphibious_equipment_1_short:1 "Sherman DD"
+USA_medium_tank_amphibious_equipment_1_short:1 "T20 DD"
+
+ENG_amphibious_mech_vehicle_1_short:1 "DUKW"
+ENG_amphibious_mech_vehicle_2_short:1 "Terrapine"
+ENG_light_tank_amphibious_equipment_1_short:1 "A4E3 L1E3"
+ENG_light_tank_amphibious_equipment_1_short:1 "A4E3 L2E1"
+
+GER_amphibious_mech_vehicle_1_short:1 "Landwasserchlepper"
+GER_amphibious_mech_vehicle_2_short:1 "Landwasserchlepper II"
+
 ##Airborne gliders
 
 SPECIALISED_TITLE_airborne_support:0 "AIRBORN GLIDERS"
@@ -115,10 +130,15 @@ glider_equipment_1:0 "Cargo Gliders"
 glider_equipment_1_desc:0 "These larger gliders can bring in proper supplies and even small vehicles along with our paratroopers."
 glider_equipment_desc:0 "These larger gliders can bring in proper supplies and even small vehicles along with our paratroopers."
 
+ENG_glider_equipment_1:0 "Hamilcar"
+
 glider_tank_equipment:0 "Glider Tank"
 glider_tank_equipment_1:0 "Glider Tank"
 glider_tank_equipment_1_short:0 "Light Glider Tank"
 glider_tank_equipment_1_desc:0 "This light tank can be deployed from accompanied large, specially build gliders."
+
+ENG_glider_tank_equipment_1_short:0 "Tetrarch"
+USA_glider_tank_equipment_1_short:0 "M22 Locust"
 
 glider_tank:0 "Glider Tank Attachment"
 glider_tank_desc:0 "This light tank company can be deployed from accompanied large, specially build gliders and support airborne troops."
@@ -174,3 +194,51 @@ heat_kit_technology_desc:0 "While the heat of the desert can be excruciating, it
 
 heat_kit2_technology:0 "Heat Equipment II"
 heat_kit2_technology_desc:0 "Improvements in our soldier uniforms and modifications to our vehicles fuel mixtures will help them to suffer less failures.\n\n§!"
+
+## Artillery
+radar_aa_1:0 "Computerised AA Director"
+GER_radar_aa_1:0 "Kommandogerät 40"
+radar_aa_1_desc:0 "With the help of the development of electronic computers, our auxiliary predictors can become more precise in calculating the movement of enemy planes, improving hit rate."
+
+radar_aa_2:0 "Integrated Radar"
+radar_aa_2_desc:0 "By directly integrating a radar with the auxiliary predictors, our batteries can get even better readouts of the distance of enemy planes."
+GER_radar_aa_1:0 "Kommandogerät 40/42"
+
+radar_aa_3:0 "Proximity Fuze"
+radar_aa_3_desc:0 "With our integrated radars, we can set up better proximity fuzes. This means that our charge will be less likely to fly past or even through the plane without explosing and instead detonate as close as possible to the enemy aircraft, maximising damage."
+
+airburst_artillery:0 "Airburst Shells"
+airburst_artillery_desc:0 "While airburst shells have been around since the last World War, improving the fuze will allow our shells to explode at the optimal distance of about 10 metres above the ground, showering the enemy position with shrapnel."
+
+rocket_aa_tech_1:0 "Unguided Surface-To-Air Rocket"
+rocket_aa_tech_1_desc:0 "These Fin-stabalised Surface-To-Air rockets with shrapnel charges can be used to supplement our existing anti-air capabilities for both short-range interception and long-range attacks against far-away bombers, without loosing as much accuracy as a standart flak charge."
+ENG_rocket_aa_tech_1:0 "Z Battery"
+GER_rocket_aa_tech_1:0 "Taifun"
+USA_rocket_aa_tech_1:0 "Loki"
+
+railway_artillery_equipment:0 "Railway Artillery"
+railway_artillery_equipment_1:0 "Railway Artillery"
+railway_artillery_equipment_1_desc:0 "Used in the Great War, we can revive railway artillery guns for this one, which will allowing us to create and use absolutely massive guns to obliterate our enemies. The greatest downside of these behemoths though is their production cost and further weaknesses are their very low speed and their enormous supply use."
+GER_railway_artillery_equipment_1:0 "Gustav"
+FRA_railway_artillery_equipment_1:0 "Mle 1870/93 on Schneider carriage"
+ENG_railway_artillery_equipment_1:0 "Sceneshifter"
+
+railway_artillery_unit:0 "Railway Artillery"
+railway_artillery_unit_desc:0 "These absolutely massive guns can obliterate our enemies. The greatest downside of these behemoths though is their production cost and further weaknesses are their very low speed and their enormous supply use."
+
+guided_aa_unit_brigade:0 "Surface-To-Air Missile"
+guided_aa_unit_brigade:0 "Support SAM"
+
+guided_aa_equipment_1:0 "Early SAM"
+guided_aa_equipment_1_desc:0 "These guided Surface-To-Air Missiles are much more accurate and powerful than our old shell-based AA. Using simple radio control manual command to line of sight systems, these missiles still need a lot of manual input. Further, the production of these missiles requires a lot of work and technical components that are not yet readily available, thus making mass-production relatively complicated to tried-and-true AA."
+GER_guided_aa_equipment_1:0 "Wasserfall"
+USA_guided_aa_equipment_1:0 "Nike Ajax"
+SOV_guided_aa_equipment_1:0 "S-25 Berkut"
+ENG_guided_aa_equipment_1:0 "Bloodhound"
+
+guided_aa_equipment_2:0 "SAM"
+guided_aa_equipment_2_desc:0 "These new guided missiles are a great improvement upon our earlier Surface-To-Air Missiles. These improved SAM use radio control for guidance and are guided towards their targets by comparing the returns of the missile and target on a single radar screen. We further refined the production of parts, making it easier to construct the missiles."
+GER_guided_aa_equipment_2:0 "Rheintochter"
+USA_guided_aa_equipment_2:0 "Nike Ajax II"
+SOV_guided_aa_equipment_2:0 "S-75 Dvina"
+ENG_guided_aa_equipment_2:0 "Thunderbird"

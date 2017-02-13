@@ -1,3 +1,5 @@
+## by Araxiel - original script do not steel
+
 spriteTypes = {
 
   ## Main
@@ -201,6 +203,20 @@ spriteTypes = {
 
   SpriteType = { name = "GFX_glider_equipment_icon_medium"		texturefile = "gfx//interface//technologies//cargo_glider_equipment.dds"  }
 
+  ## Arty    -----------------------------------
 
+  SpriteType = { name = "GFX_radar_aa_1_medium"            texturefile = "gfx//interface//technologies//kommandogerat.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_radar_aa_2_medium"            texturefile = "gfx//interface//technologies//kommandogerat_2.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_radar_aa_3_medium"            texturefile = "gfx//interface//technologies//kommandogerat_3.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_airburst_artillery_medium"    texturefile = "gfx//interface//technologies//airburst_artillery.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_rocket_aa_tech_1_medium"      texturefile = "gfx//interface//technologies//rocket_aa_tech_1.dds"    alwaystransparent = yes	}
+
+  SpriteType = { name = "GFX_railway_artillery_tech_medium"              texturefile = "gfx//interface//technologies//railway_gun_equipment.dds"    alwaystransparent = yes	}
+  spriteType = { name = "GFX_unit_railway_artillery_unit_icon_medium"		 textureFile = "gfx/interface/counters/divisions_large/unit_railway_art_icon.dds" noOfFrames = 2 }
+
+  SpriteType = { name = "GFX_unit_guided_aa_unit_brigade_icon_medium"         textureFile = "gfx/interface/counters/divisions_large/unit_missile_AA_icon.dds" noOfFrames = 2 }
+  SpriteType = { name = "GFX_unit_guided_aa_unit_icon_medium"            		 textureFile = "gfx/interface/counters/divisions_large/unit_missile_AA_support_icon.dds" noOfFrames = 2 }
+  SpriteType = { name = "GFX_guided_aa_1_medium"                         texturefile = "gfx//interface//technologies//guided_aa_equipment_1.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_guided_aa_2_medium"                         texturefile = "gfx//interface//technologies//guided_aa_equipment_2.dds"    alwaystransparent = yes	}
 
 }
