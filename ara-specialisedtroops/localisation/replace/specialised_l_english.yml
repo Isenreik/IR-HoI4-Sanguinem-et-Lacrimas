@@ -302,6 +302,7 @@ antitank7_fortbuster:0 "HESH Against Fortifications"
 antitank7_fortbuster_desc:0 "We realised that HESH works great against concrete fortifications."
 antitank7_fortbuster_special_tooltip:0 "Increases Fort Attack for AT-Guns"
 anti_tank_equipment_4:0 "Modern Anti-Tank Gun"
+anti_tank_equipment_4_short:0 "Modern AT Gun"
 anti_tank_equipment_4_desc:0 "Greatly increasing barrel length will result in greater penetration and increased damage."
 
 atgm_1:0 "Early ATGM"
