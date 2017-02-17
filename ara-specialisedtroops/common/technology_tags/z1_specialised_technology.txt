@@ -4,6 +4,8 @@
 technology_categories = {
 	crime_tech
 	glider_tech
+	amphibious_tech
+	guided_missiles
 }
 
 technology_folders = {
