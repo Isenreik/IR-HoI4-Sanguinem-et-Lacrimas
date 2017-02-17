@@ -1,0 +1,117 @@
+## by Araxiel - original script do not steel
+
+spriteTypes = {
+
+  ## Arty    -----------------------------------
+
+  SpriteType = { name = "GFX_radar_aa_1_medium"            texturefile = "gfx//interface//technologies//kommandogerat.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_radar_aa_2_medium"            texturefile = "gfx//interface//technologies//antiair3.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_radar_aa_3_medium"            texturefile = "gfx//interface//technologies//kommandogerat_2.dds"    alwaystransparent = yes	}
+
+  SpriteType = { name = "GFX_aam_tech1_medium"            texturefile = "gfx//interface//technologies//aam_tech1.dds"    alwaystransparent = yes	}
+
+  SpriteType = { name = "GFX_airburst_artillery_medium"    texturefile = "gfx//interface//technologies//airburst_artillery.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_rocket_aa_tech_1_medium"      texturefile = "gfx//interface//technologies//rocket_aa_tech_1.dds"    alwaystransparent = yes	}
+
+  SpriteType = { name = "GFX_antiair6_medium"                  texturefile = "gfx//interface//technologies//equipment//AA_4_axis.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_USA_antiair6_medium"              texturefile = "gfx//interface//technologies//equipment//AA_4_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_ENG_antiair6_medium"              texturefile = "gfx//interface//technologies//equipment//AA_4_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_FRA_antiair6_medium"              texturefile = "gfx//interface//technologies//equipment//AA_4_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_CAN_antiair6_medium"              texturefile = "gfx//interface//technologies//equipment//AA_4_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_NZL_antiair6_medium"              texturefile = "gfx//interface//technologies//equipment//AA_4_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_AST_antiair6_medium"              texturefile = "gfx//interface//technologies//equipment//AA_4_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_SAF_antiair6_medium"              texturefile = "gfx//interface//technologies//equipment//AA_4_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_RAJ_antiair6_medium"              texturefile = "gfx//interface//technologies//equipment//AA_4_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_SOV_antiair6_medium"              texturefile = "gfx//interface//technologies//equipment//AA_4_commies.dds"    alwaystransparent = yes	}
+
+  SpriteType = { name = "GFX_railway_artillery_tech_medium"              texturefile = "gfx//interface//technologies//equipment//railway_gun_equipment.dds"    alwaystransparent = yes	}
+  spriteType = { name = "GFX_unit_railway_artillery_unit_icon_medium"		 textureFile = "gfx/interface/counters/divisions_large/unit_railway_art_icon.dds" noOfFrames = 2 }
+
+  SpriteType = { name = "GFX_unit_guided_aa_unit_brigade_icon_medium"    textureFile = "gfx/interface/counters/divisions_large/unit_missile_AA_icon.dds" noOfFrames = 2 }
+  SpriteType = { name = "GFX_unit_guided_aa_unit_icon_medium"            textureFile = "gfx/interface/counters/divisions_large/unit_missile_AA_support_icon.dds" noOfFrames = 2 }
+  SpriteType = { name = "GFX_guided_aa_1_medium"                         texturefile = "gfx//interface//technologies//equipment//guided_aa_equipment_1.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_guided_aa_2_medium"                         texturefile = "gfx//interface//technologies//equipment//guided_aa_equipment_2.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_ENG_guided_aa_2_medium"                     texturefile = "gfx//interface//technologies//equipment//guided_aa_equipment_2_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_USA_guided_aa_2_medium"                     texturefile = "gfx//interface//technologies//equipment//guided_aa_equipment_2_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_FRA_guided_aa_2_medium"                     texturefile = "gfx//interface//technologies//equipment//guided_aa_equipment_2_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_CAN_guided_aa_2_medium"                     texturefile = "gfx//interface//technologies//equipment//guided_aa_equipment_2_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_NZL_guided_aa_2_medium"                     texturefile = "gfx//interface//technologies//equipment//guided_aa_equipment_2_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_AST_guided_aa_2_medium"                     texturefile = "gfx//interface//technologies//equipment//guided_aa_equipment_2_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_SAF_guided_aa_2_medium"                     texturefile = "gfx//interface//technologies//equipment//guided_aa_equipment_2_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_RAJ_guided_aa_2_medium"                     texturefile = "gfx//interface//technologies//equipment//guided_aa_equipment_2_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_SOV_guided_aa_2_medium"                     texturefile = "gfx//interface//technologies//equipment//guided_aa_equipment_2_comintern.dds"    alwaystransparent = yes	}
+
+  SpriteType = { name = "GFX_ENG_rocket_artillery4_medium"               texturefile = "gfx//interface//technologies//equipment//Rocket_Art_2_ENG.dds"    alwaystransparent = yes	}
+
+  SpriteType = { name = "GFX_artillery6_medium"               texturefile = "gfx//interface//technologies//artillery4.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_artillery8_medium"               texturefile = "gfx//interface//technologies//artillery8.dds"    alwaystransparent = yes	}
+
+  SpriteType = { name = "GFX_artillery7_medium"                  texturefile = "gfx//interface//technologies//equipment//Art_4_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_USA_artillery7_medium"              texturefile = "gfx//interface//technologies//equipment//Art_4_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_ENG_artillery7_medium"              texturefile = "gfx//interface//technologies//equipment//Art_4_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_FRA_artillery7_medium"              texturefile = "gfx//interface//technologies//equipment//Art_4_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_CAN_artillery7_medium"              texturefile = "gfx//interface//technologies//equipment//Art_4_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_NZL_artillery7_medium"              texturefile = "gfx//interface//technologies//equipment//Art_4_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_AST_artillery7_medium"              texturefile = "gfx//interface//technologies//equipment//Art_4_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_SAF_artillery7_medium"              texturefile = "gfx//interface//technologies//equipment//Art_4_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_RAJ_artillery7_medium"              texturefile = "gfx//interface//technologies//equipment//Art_4_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_SOV_artillery7_medium"              texturefile = "gfx//interface//technologies//equipment//Art_4_comintern.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_GER_artillery7_medium"              texturefile = "gfx//interface//technologies//equipment//Art_4_axis.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_JAP_artillery7_medium"              texturefile = "gfx//interface//technologies//equipment//Art_4_axis.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_ITA_artillery7_medium"              texturefile = "gfx//interface//technologies//equipment//Art_4_axis.dds"    alwaystransparent = yes	}
+
+  SpriteType = { name = "GFX_rocket_artillery5_medium"               texturefile = "gfx//interface//technologies//rocket_artillery4.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_rocket_artillery6_medium"               texturefile = "gfx//interface//technologies//rocket_artiller6.dds"    alwaystransparent = yes	}
+
+  SpriteType = { name = "GFX_rocket_artillery7_medium"                  texturefile = "gfx//interface//technologies//equipment//Rocket_Art_3_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_USA_rocket_artillery7_medium"              texturefile = "gfx//interface//technologies//equipment//Rocket_Art_3_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_ENG_rocket_artillery7_medium"              texturefile = "gfx//interface//technologies//equipment//Rocket_Art_3_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_FRA_rocket_artillery7_medium"              texturefile = "gfx//interface//technologies//equipment//Rocket_Art_3_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_CAN_rocket_artillery7_medium"              texturefile = "gfx//interface//technologies//equipment//Rocket_Art_3_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_NZL_rocket_artillery7_medium"              texturefile = "gfx//interface//technologies//equipment//Rocket_Art_3_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_AST_rocket_artillery7_medium"              texturefile = "gfx//interface//technologies//equipment//Rocket_Art_3_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_SAF_rocket_artillery7_medium"              texturefile = "gfx//interface//technologies//equipment//Rocket_Art_3_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_RAJ_rocket_artillery7_medium"              texturefile = "gfx//interface//technologies//equipment//Rocket_Art_3_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_SOV_rocket_artillery7_medium"              texturefile = "gfx//interface//technologies//equipment//Rocket_Art_3_comintern.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_GER_rocket_artillery7_medium"              texturefile = "gfx//interface//technologies//equipment//Rocket_Art_3_axis.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_JAP_rocket_artillery7_medium"              texturefile = "gfx//interface//technologies//equipment//Rocket_Art_3_axis.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_ITA_rocket_artillery7_medium"              texturefile = "gfx//interface//technologies//equipment//Rocket_Art_3_axis.dds"    alwaystransparent = yes	}
+
+  SpriteType = { name = "GFX_motorized_rocket_unit_2_medium"                  texturefile = "gfx//interface//technologies//equipment//mot_rocket_arty_4_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_USA_motorized_rocket_unit_2_medium"              texturefile = "gfx//interface//technologies//equipment//mot_rocket_arty_4_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_ENG_motorized_rocket_unit_2_medium"              texturefile = "gfx//interface//technologies//equipment//mot_rocket_arty_4_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_FRA_motorized_rocket_unit_2_medium"              texturefile = "gfx//interface//technologies//equipment//mot_rocket_arty_4_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_CAN_motorized_rocket_unit_2_medium"              texturefile = "gfx//interface//technologies//equipment//mot_rocket_arty_4_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_NZL_motorized_rocket_unit_2_medium"              texturefile = "gfx//interface//technologies//equipment//mot_rocket_arty_4_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_AST_motorized_rocket_unit_2_medium"              texturefile = "gfx//interface//technologies//equipment//mot_rocket_arty_4_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_SAF_motorized_rocket_unit_2_medium"              texturefile = "gfx//interface//technologies//equipment//mot_rocket_arty_4_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_RAJ_motorized_rocket_unit_2_medium"              texturefile = "gfx//interface//technologies//equipment//mot_rocket_arty_4_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_SOV_motorized_rocket_unit_2_medium"              texturefile = "gfx//interface//technologies//equipment//mot_rocket_arty_4_comintern.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_GER_motorized_rocket_unit_2_medium"              texturefile = "gfx//interface//technologies//equipment//mot_rocket_arty_4_axis.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_JAP_motorized_rocket_unit_2_medium"              texturefile = "gfx//interface//technologies//equipment//mot_rocket_arty_4_axis.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_ITA_motorized_rocket_unit_2_medium"              texturefile = "gfx//interface//technologies//equipment//mot_rocket_arty_4_axis.dds"    alwaystransparent = yes	}
+
+  spriteType = { name = "GFX_subtech_wheel"                            textureFile = "gfx//interface//technologies//subtech_wheel.dds" }
+
+  SpriteType = { name = "GFX_antitank6_medium"                  texturefile = "gfx//interface//technologies//artillery4.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_antitank7_medium"                  texturefile = "gfx//interface//technologies//HESH.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_antitank7_fortbuster_medium"       texturefile = "gfx//interface//technologies//HESH_plus.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_at_rocket1_medium"                 texturefile = "gfx//interface//technologies//at_rocket1.dds"    alwaystransparent = yes	}
+
+  SpriteType = { name = "GFX_antitank8_medium"                  texturefile = "gfx//interface//technologies//equipment//AT_4_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_USA_antitank8_medium"              texturefile = "gfx//interface//technologies//equipment//AT_4_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_ENG_antitank8_medium"              texturefile = "gfx//interface//technologies//equipment//AT_4_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_FRA_antitank8_medium"              texturefile = "gfx//interface//technologies//equipment//AT_4_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_CAN_antitank8_medium"              texturefile = "gfx//interface//technologies//equipment//AT_4_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_NZL_antitank8_medium"              texturefile = "gfx//interface//technologies//equipment//AT_4_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_AST_antitank8_medium"              texturefile = "gfx//interface//technologies//equipment//AT_4_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_SAF_antitank8_medium"              texturefile = "gfx//interface//technologies//equipment//AT_4_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_RAJ_antitank8_medium"              texturefile = "gfx//interface//technologies//equipment//AT_4_allies.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_SOV_antitank8_medium"              texturefile = "gfx//interface//technologies//equipment//AT_4_comintern.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_GER_antitank8_medium"              texturefile = "gfx//interface//technologies//equipment//AT_4_axis.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_JAP_antitank8_medium"              texturefile = "gfx//interface//technologies//equipment//AT_4_axis.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_ITA_antitank8_medium"              texturefile = "gfx//interface//technologies//equipment//AT_4_axis.dds"    alwaystransparent = yes	}
+
+  SpriteType = { name = "GFX_atgm_1_medium"                  texturefile = "gfx//interface//technologies//atgm_1.dds"    alwaystransparent = yes	}
+
+}
