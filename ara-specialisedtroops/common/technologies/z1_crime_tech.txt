@@ -9,7 +9,8 @@ technologies = {
 
 	criminal_technology = {
 
-		industrial_capacity_factory = 0.025
+		industrial_capacity_factory = 0.045
+		production_speed_buildings_factor = 0.02
 
 		path = {
 			leads_to_tech = penal_technology
@@ -34,7 +35,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 1.5
 		}
 
 	}
@@ -43,6 +44,7 @@ technologies = {
 	criminal_technology2 = {
 
 		industrial_capacity_factory = 0.1
+		production_speed_buildings_factor = 0.02
 
 		research_cost = 1.5
 		start_year = 1936
@@ -74,7 +76,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 1.5
 		}
 
 	}
@@ -83,6 +85,7 @@ technologies = {
 	criminal_technology3 = {
 
 		industrial_capacity_factory = 0.1
+		production_speed_buildings_factor = 0.02
 
 		research_cost = 1.5
 		start_year = 1941
@@ -110,7 +113,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 1.5
 		}
 
 	}
@@ -148,7 +151,7 @@ technologies = {
 				}
 
     ai_will_do = {
-      factor = 0
+      factor = 0.5
 
       modifier = {
 				factor = 0.5
@@ -166,7 +169,6 @@ technologies = {
         factor = 3
         has_government = communism
       }
-
     }
 
   }
@@ -212,7 +214,7 @@ technologies = {
 				}
 
     ai_will_do = {
-      factor = 0
+      factor = 0.5
 
       modifier = {
 				factor = 0.5
@@ -223,11 +225,11 @@ technologies = {
 				has_defensive_war = yes
 			}
       modifier = {
-        factor = 3
+        factor = 4
         tag = SOV
       }
       modifier = {
-        factor = 3
+        factor = 4
         has_government = communism
       }
 
@@ -392,7 +394,7 @@ technologies = {
 		}
 
     ai_will_do = {
-      factor = 1
+      factor = 2
     }
 
 	}

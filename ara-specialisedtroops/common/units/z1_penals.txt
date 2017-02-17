@@ -27,7 +27,7 @@ sub_units = {
 
     #Size Definitions
     max_strength = 25
-    max_organisation = 45
+    max_organisation = 60
 		default_morale = 0.3
 		manpower = 1000
 
@@ -37,14 +37,16 @@ sub_units = {
 		weight = 0.5
     supply_consumption = 0.06
 
-    breakthrough = -0.20
-    defense = -0.20
+    breakthrough = -0.3
+    defense = -0.3
 
-    soft_attack = -0.30
-    hard_attack = -0.50
+    ## soft_attack = -0.30
+    ## hard_attack = -0.50
 
-    casualty_trickleback = -0.20
-		experience_loss_factor = 0.10
+    ## casualty_trickleback = -0.20
+		## experience_loss_factor = 0.10
+
+    reliability_factor = -0.10
 
     ##EQUIPMENT_COMBAT_LOSS_FACTOR = 0.5
 
@@ -74,8 +76,8 @@ sub_units = {
 		combat_width = 0
 
 		#Size Definitions
-    max_strength = 10
-		max_organisation = 30
+    max_strength = 5
+		max_organisation = 200
 		default_morale = 0.7
 		manpower = 150
 		training_time = 100
@@ -86,15 +88,15 @@ sub_units = {
 		can_be_parachuted = yes
 
     #nerfs
-    soft_attack = -0.20
-    hard_attack = -0.20
+    soft_attack = 5
+    hard_attack = 5
 
 		# Important Ability
 		suppression_factor = 0.30
     reliability_factor = -0.20
-    breakthrough = -0.20
-    defense = -0.20
-    casualty_trickleback = -0.20
+    breakthrough = -4
+    defense = -3
+    casualty_trickleback = -0.10
 		experience_loss_factor = 0.10
 
 		essential = {

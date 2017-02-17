@@ -1,0 +1,193 @@
+sub_units = {
+
+railway_artillery_unit = {
+  sprite = artillery
+  map_icon_category = infantry
+  priority = 100
+  active = yes
+
+  type = {
+    artillery
+  }
+
+  group = infantry
+
+  categories = {
+    category_army
+    category_line_artillery
+    category_artillery
+  }
+
+	transport = railway_artillery_equipment
+  maximum_speed = 0.2
+
+  combat_width = 6
+
+  manpower = 200
+  need = {
+    railway_artillery_equipment = 1
+  }
+
+  max_strength = 0.6
+  max_organisation = 0
+  default_morale = 0.1
+  training_time = 160
+  weight = 10
+  supply_consumption = 5
+  suppression = 5
+
+  #Line artillery bonuses
+  soft_attack = 0.25
+
+  plains = {
+    movement = -2
+  }
+
+  forest = {
+    attack = -0.1
+    movement = -3
+  }
+
+  hills = {
+    movement = -3
+  }
+
+  mountain = {
+    attack = -0.2
+    movement = -5
+  }
+
+  jungle = {
+    attack = -0.2
+    movement = -7
+  }
+
+  desert = {
+    movement = -10
+  }
+
+  marsh = {
+    movement = -8
+  }
+
+  fort = {
+    attack = 0.8
+  }
+
+  river = {
+    movement = -3
+  }
+
+  amphibious = {
+    attack = -5
+    movement = -10
+  }
+}
+
+guided_aa_unit_brigade = {
+  sprite = infantry
+  map_icon_category = infantry
+  priority = 301
+  active = yes
+  support_brigade = yes
+
+  type = {
+    infantry
+    anti_air
+  }
+
+  group = infantry
+
+  categories = {
+    category_army
+    category_line_artillery
+  }
+
+  combat_width = 1
+
+  #Size Definitions
+  max_organisation = 0
+  default_morale = 0.1
+  max_strength = 0.6
+  manpower = 500
+  training_time = 120
+  weight = 0.5
+
+  supply_consumption = 0.1
+
+  need = {
+    guided_aa_equipment = 25
+  }
+
+  forest = {
+    attack = -0.1
+    movement = -0.1
+  }
+
+  jungle = {
+    attack = -0.2
+    movement = -0.2
+  }
+
+  marsh = {
+    attack = -0.2
+    movement = -0.2
+  }
+
+  river = {
+    attack = -0.2
+    movement = -0.2
+  }
+
+  amphibious = {
+    attack = -0.4
+  }
+}
+
+guided_aa_unit = {
+  sprite = infantry
+  map_icon_category = infantry
+  priority = 0
+  active = yes
+
+  type = {
+    infantry
+    support
+  }
+
+  group = support
+
+  categories = {
+    category_support_battalions
+    category_army
+  }
+
+
+  combat_width = 0
+  training_time = 120
+
+  need = {
+    guided_aa_equipment = 15
+  }
+
+  can_be_parachuted = yes
+
+  #Size Definitions
+  max_strength = 0.2
+  max_organisation = 0
+  default_morale = 0.1
+  manpower = 300
+  weight = 0.1
+
+  supply_consumption = 0.1
+
+  # Support nerfs to combat abilities
+  defense = -0.4
+  breakthrough = -0.4
+  soft_attack = -0.4
+  hard_attack = -0.4
+  air_attack = -0.2
+
+}
+
+}

@@ -1,3 +1,5 @@
+## by Araxiel - original script do not steel
+
 spriteTypes = {
 
   ## Main
@@ -44,7 +46,7 @@ spriteTypes = {
 
   ## End of Icons
 
-  ## Start of Criminal
+  ## Start of Criminal    -----------------------------------
 
   SpriteType = {    name = "GFX_criminal_tech_bg"    texturefile = "gfx//criminal_tech_bg.dds"  }
 
@@ -56,6 +58,7 @@ spriteTypes = {
   SpriteType = {		name = "GFX_penal_technology2_medium"		texturefile = "gfx//interface//technologies//grand_assault.dds"		alwaystransparent = yes	}
   SpriteType = {		name = "GFX_penal_technology3_medium"		texturefile = "gfx//interface//technologies//guerilla_warfare.dds"		alwaystransparent = yes	}
   SpriteType = {		name = "GFX_unit_penals_icon_medium"		texturefile = "gfx//interface//counters//divisions_large//unit_penals_icon.dds"		noOfFrames = 2	}
+  SpriteType = {		name = "GFX_unit_penals_icon_small"		texturefile = "gfx//interface//counters//divisions_small//onmap_unit_penal_icon.dds"		noOfFrames = 2	}
   SpriteType = {		name = "GFX_commissar_technology_medium"		texturefile = "gfx//interface//technologies//human_wave_offensive.dds"    alwaystransparent = yes	}
   SpriteType = {    name = "GFX_commissar_technology2_medium"		texturefile = "gfx//interface//technologies//mass_assault.dds"    alwaystransparent = yes	}
 
@@ -65,93 +68,122 @@ spriteTypes = {
 		noOfFrames = 2
   }
 
-  ## Kits
+  ## Kits                -----------------------------------
 
   SpriteType = {    name = "GFX_winter_kits_bg"    texturefile = "gfx//winter_kits_bg.dds"  }
 
-
-  SpriteType = {    name = "GFX_desert_kit_technology_medium"		texturefile = "gfx//interface//technologies//support_equipment_1.dds"  }
+  SpriteType = {    name = "GFX_desert_kit_technology_medium"		texturefile = "gfx//interface//technologies//support_kits_desert.dds"  }
   SpriteType = {    name = "GFX_desert_kit2_technology_medium"		texturefile = "gfx//interface//technologies//tech_logistics_company2.dds"  }
-  SpriteType = {    name = "GFX_unit_desert_support_icon_medium"		texturefile = "gfx//interface//counters//divisions_large//support_unit_logistics_company_icon.dds"		noOfFrames = 2  }
-  SpriteType = {    name = "GFX_desert_kit_icon_medium"		texturefile = "gfx//interface//technologies//support_equipment_1.dds"  }
+  SpriteType = {    name = "GFX_unit_desert_support_icon_medium"		texturefile = "gfx//interface//counters//divisions_large//support_desert_unit_company_icon.dds"		noOfFrames = 2  }
+  SpriteType = {    name = "GFX_desert_kit_icon_medium"		texturefile = "gfx//interface//technologies//support_kits_desert.dds"  }
 
-  SpriteType = {    name = "GFX_jungle_kit_technology_medium"		texturefile = "gfx//interface//technologies//support_equipment_1.dds"  }
+  SpriteType = {    name = "GFX_jungle_kit_technology_medium"		texturefile = "gfx//interface//technologies//support_kits_jungle.dds"  }
   SpriteType = {    name = "GFX_jungle_kit2_technology_medium"		texturefile = "gfx//interface//technologies//tech_logistics_company2.dds"  }
-  SpriteType = {    name = "GFX_unit_jungle_support_icon_medium"		texturefile = "gfx//interface//counters//divisions_large//support_unit_logistics_company_icon.dds"		noOfFrames = 2  }
-  SpriteType = {    name = "GFX_jungle_kit_icon_medium"		texturefile = "gfx//interface//technologies//support_equipment_1.dds"  }
+  SpriteType = {    name = "GFX_unit_jungle_support_icon_medium"		texturefile = "gfx//interface//counters//divisions_large//support_jungle_unit_company_icon.dds"		noOfFrames = 2  }
+  SpriteType = {    name = "GFX_jungle_kit_icon_medium"		texturefile = "gfx//interface//technologies//support_kits_jungle.dds"  }
 
   SpriteType = {    name = "GFX_winter_kit_technology_medium"		texturefile = "gfx//interface//technologies//winterkit_1.dds"  }
   SpriteType = {    name = "GFX_winter_kit2_technology_medium"		texturefile = "gfx//interface//technologies//winterkit_2.dds"  }
 
-  ## amphibious mech
+  SpriteType = {    name = "GFX_heat_kit_technology_medium"		texturefile = "gfx//interface//technologies//heat_kit_1.dds"  }
+  SpriteType = {    name = "GFX_heat_kit2_technology_medium"		texturefile = "gfx//interface//technologies//heat_kit_2.dds"  }
 
-  spriteType = { name = "GFX_unit_amphibious_mech_unit_icon_medium"		 textureFile = "gfx/interface/counters/divisions_large/unit_mechanized_icon.dds" noOfFrames = 2 }
+  ## amphibious        -----------------------------------
+  ## amphibious mech   -----------
+
+  spriteType = { name = "GFX_unit_amphibious_mech_unit_icon_medium"		 textureFile = "gfx/interface/counters/divisions_large/unit_mechanized_marines_icon.dds" noOfFrames = 2 }
 
   SpriteType = { name = "GFX_amphibious_mech_technology_medium"    texturefile = "gfx/interface/technologies/mechanized_equipment_1.dds"  }
-  SpriteType = { name = "GFX_GER_amphibious_mech_technology_medium"    texturefile = "gfx/interface/technologies/GER_mechanized_equipment_1.dds"  }
-  SpriteType = { name = "GFX_JAP_amphibious_mech_technology_medium"    texturefile = "gfx/interface/technologies/JAP_mechanized_equipment_1.dds"  }
-  SpriteType = { name = "GFX_SOV_amphibious_mech_technology_medium"    texturefile = "gfx/interface/technologies/SOV_mechanized_equipment_1.dds"  }
-  SpriteType = { name = "GFX_ENG_amphibious_mech_technology_medium"    texturefile = "gfx/interface/technologies/tfv_shared1_mechanized_equipment_1.dds"  }
-
   SpriteType = { name = "GFX_amphibious_mech_technology_2_medium"    texturefile = "gfx/interface/technologies/mechanized_equipment_2.dds"  }
-  SpriteType = { name = "GFX_GER_amphibious_mech_technology_2_medium"    texturefile = "gfx/interface/technologies/GER_mechanized_equipment_2.dds"  }
+  SpriteType = { name = "GFX_JAP_amphibious_mech_technology_medium"    texturefile = "gfx/interface/technologies/JAP_mechanized_equipment_1.dds"  }
   SpriteType = { name = "GFX_JAP_amphibious_mech_technology_2_medium"    texturefile = "gfx/interface/technologies/JAP_mechanized_equipment_2.dds"  }
+  SpriteType = { name = "GFX_SOV_amphibious_mech_technology_medium"    texturefile = "gfx/interface/technologies/SOV_mechanized_equipment_1.dds"  }
   SpriteType = { name = "GFX_SOV_amphibious_mech_technology_2_medium"    texturefile = "gfx/interface/technologies/SOV_mechanized_equipment_2.dds"  }
-  SpriteType = { name = "GFX_ENG_amphibious_mech_technology_2_medium"    texturefile = "gfx/interface/technologies/tfv_shared1_mechanized_equipment_2.dds"  }
 
-  ## amphibious light tank
+  SpriteType = { name = "GFX_GER_amphibious_mech_technology_medium"    texturefile = "gfx/interface/technologies/ger_amph_mech1.dds"  }
+  SpriteType = { name = "GFX_GER_amphibious_mech_technology_2_medium"    texturefile = "gfx/interface/technologies/ger_amph_mech2.dds"  }
 
-  spriteType = { name = "GFX_unit_light_tank_amphibious_unit_icon_medium"		 textureFile = "gfx/interface/counters/divisions_large/unit_light_tank_icon.dds" noOfFrames = 2 }
+  # commonwealth
+
+  SpriteType = { name = "GFX_ENG_amphibious_mech_technology_medium"     texturefile = "gfx/interface/technologies/uk_amph_mech1.dds"  }
+  SpriteType = { name = "GFX_CAN_amphibious_mech_technology_medium"      texturefile = "gfx/interface/technologies/uk_amph_mech1.dds"  }
+  SpriteType = { name = "GFX_NZL_amphibious_mech_technology_medium"      texturefile = "gfx/interface/technologies/uk_amph_mech1.dds"  }
+  SpriteType = { name = "GFX_AST_amphibious_mech_technology_medium"      texturefile = "gfx/interface/technologies/uk_amph_mech1.dds"  }
+  SpriteType = { name = "GFX_SAF_amphibious_mech_technology_medium"      texturefile = "gfx/interface/technologies/uk_amph_mech1.dds"  }
+  SpriteType = { name = "GFX_RAJ_amphibious_mech_technology_medium"      texturefile = "gfx/interface/technologies/uk_amph_mech1.dds"  }
+  SpriteType = { name = "GFX_ENG_amphibious_mech_technology_2_medium"    texturefile = "gfx/interface/technologies/uk_amph_mech2.dds"  }
+  SpriteType = { name = "GFX_CAN_amphibious_mech_technology_2_medium"    texturefile = "gfx/interface/technologies/uk_amph_mech2.dds"  }
+  SpriteType = { name = "GFX_NZL_amphibious_mech_technology_2_medium"    texturefile = "gfx/interface/technologies/uk_amph_mech2.dds"  }
+  SpriteType = { name = "GFX_AST_amphibious_mech_technology_2_medium"    texturefile = "gfx/interface/technologies/uk_amph_mech2.dds"  }
+  SpriteType = { name = "GFX_SAF_amphibious_mech_technology_2_medium"    texturefile = "gfx/interface/technologies/uk_amph_mech2.dds"  }
+  SpriteType = { name = "GFX_RAJ_amphibious_mech_technology_2_medium"    texturefile = "gfx/interface/technologies/uk_amph_mech2.dds"  }
+  # US
+  SpriteType = { name = "GFX_USA_amphibious_mech_technology_medium"      texturefile = "gfx/interface/technologies/us_amph_mech1.dds"  }
+  SpriteType = { name = "GFX_USA_amphibious_mech_technology_2_medium"    texturefile = "gfx/interface/technologies/us_amph_mech2.dds"  }
+
+  ## amphibious light tank  -----------
+
+  spriteType = { name = "GFX_unit_light_tank_amphibious_unit_icon_medium"		 textureFile = "gfx/interface/counters/divisions_large/unit_amphibious_light_tank_icon.dds" noOfFrames = 2 }
 
   SpriteType = { name = "GFX_light_tank_amphibious_tech_1_medium"    texturefile = "gfx/interface/technologies/improved_light_tank.dds"  }
-
-  SpriteType = { name = "GFX_ENG_light_tank_amphibious_tech_1_medium"    texturefile = "gfx/interface/technologies/eng_imp_light_tank.dds"  }
   SpriteType = { name = "GFX_FRA_light_tank_amphibious_tech_1_medium"    texturefile = "gfx/interface/technologies/fra_imp_light_tank.dds"  }
   SpriteType = { name = "GFX_GER_light_tank_amphibious_tech_1_medium"    texturefile = "gfx/interface/technologies/ger_imp_light_tank.dds"  }
   SpriteType = { name = "GFX_JAP_light_tank_amphibious_tech_1_medium"    texturefile = "gfx/interface/technologies/jap_imp_light_tank.dds"  }
-  SpriteType = { name = "GFX_SOV_light_tank_amphibious_tech_1_medium"    texturefile = "gfx/interface/technologies/sov_imp_light_tank.dds"  }
   SpriteType = { name = "GFX_ITA_light_tank_amphibious_tech_1_medium"    texturefile = "gfx/interface/technologies/ita_imp_light_tank.dds"  }
-  SpriteType = { name = "GFX_USA_light_tank_amphibious_tech_1_medium"    texturefile = "gfx/interface/technologies/usa_imp_light_tank.dds"  }
+
+  SpriteType = { name = "GFX_SOV_light_tank_amphibious_tech_1_medium"    texturefile = "gfx/interface/technologies/sov_light_amphb_tank.dds"  } ##added
+  SpriteType = { name = "GFX_USA_light_tank_amphibious_tech_1_medium"    texturefile = "gfx/interface/technologies/us_improv_light_amphb_tank.dds"  } ##added
+  #Commonwealth
+  SpriteType = { name = "GFX_ENG_light_tank_amphibious_tech_1_medium"    texturefile = "gfx/interface/technologies/uk_light_amphb_tank.dds"  }
+  SpriteType = { name = "GFX_CAN_light_tank_amphibious_tech_1_medium"    texturefile = "gfx/interface/technologies/uk_light_amphb_tank.dds"  }
+  SpriteType = { name = "GFX_NZL_light_tank_amphibious_tech_1_medium"    texturefile = "gfx/interface/technologies/uk_light_amphb_tank.dds"  }
+  SpriteType = { name = "GFX_AST_light_tank_amphibious_tech_1_medium"    texturefile = "gfx/interface/technologies/uk_light_amphb_tank.dds"  }
+  SpriteType = { name = "GFX_SAF_light_tank_amphibious_tech_1_medium"    texturefile = "gfx/interface/technologies/uk_light_amphb_tank.dds"  }
+  SpriteType = { name = "GFX_RAJ_light_tank_amphibious_tech_1_medium"    texturefile = "gfx/interface/technologies/uk_light_amphb_tank.dds"  }
 
   SpriteType = { name = "GFX_light_tank_amphibious_tech_2_medium"    texturefile = "gfx/interface/technologies/advanced_light_tank.dds"  }
-
-  SpriteType = { name = "GFX_ENG_light_tank_amphibious_tech_2_medium"    texturefile = "gfx/interface/technologies/eng_adv_light_tank.dds"  }
   SpriteType = { name = "GFX_FRA_light_tank_amphibious_tech_2_medium"    texturefile = "gfx/interface/technologies/fra_adv_light_tank.dds"  }
   SpriteType = { name = "GFX_GER_light_tank_amphibious_tech_2_medium"    texturefile = "gfx/interface/technologies/ger_adv_light_tank.dds"  }
   SpriteType = { name = "GFX_JAP_light_tank_amphibious_tech_2_medium"    texturefile = "gfx/interface/technologies/jap_adv_light_tank.dds"  }
   SpriteType = { name = "GFX_SOV_light_tank_amphibious_tech_2_medium"    texturefile = "gfx/interface/technologies/sov_adv_light_tank.dds"  }
   SpriteType = { name = "GFX_ITA_light_tank_amphibious_tech_2_medium"    texturefile = "gfx/interface/technologies/ita_adv_light_tank.dds"  }
-  SpriteType = { name = "GFX_USA_light_tank_amphibious_tech_2_medium"    texturefile = "gfx/interface/technologies/usa_adv_light_tank.dds"  }
+  SpriteType = { name = "GFX_USA_light_tank_amphibious_tech_2_medium"    texturefile = "gfx/interface/technologies/us_adv_light_amphb_tank.dds"  } #added
+  #Commonwealth
+  SpriteType = { name = "GFX_ENG_light_tank_amphibious_tech_2_medium"    texturefile = "gfx/interface/technologies/uk_imp_light_amphb_tank.dds"  }
+  SpriteType = { name = "GFX_CAN_light_tank_amphibious_tech_2_medium"    texturefile = "gfx/interface/technologies/uk_imp_light_amphb_tank.dds"  }
+  SpriteType = { name = "GFX_NZL_light_tank_amphibious_tech_2_medium"    texturefile = "gfx/interface/technologies/uk_imp_light_amphb_tank.dds"  }
+  SpriteType = { name = "GFX_AST_light_tank_amphibious_tech_2_medium"    texturefile = "gfx/interface/technologies/uk_imp_light_amphb_tank.dds"  }
+  SpriteType = { name = "GFX_SAF_light_tank_amphibious_tech_2_medium"    texturefile = "gfx/interface/technologies/uk_imp_light_amphb_tank.dds"  }
+  SpriteType = { name = "GFX_RAJ_light_tank_amphibious_tech_2_medium"    texturefile = "gfx/interface/technologies/uk_imp_light_amphb_tank.dds"  }
 
-  ## amphibious medium tank
+  ## amphibious medium tank -----------
 
-  spriteType = { name = "GFX_unit_medium_tank_amphibious_unit_icon_medium"		 textureFile = "gfx/interface/counters/divisions_large/unit_medium_tank_icon.dds" noOfFrames = 2 }
+  spriteType = { name = "GFX_unit_medium_tank_amphibious_unit_icon_medium"		 textureFile = "gfx/interface/counters/divisions_large/unit_amphibious_medium_tank_icon.dds" noOfFrames = 2 }
 
   SpriteType = { name = "GFX_medium_tank_amphibious_tech_1_medium"    texturefile = "gfx/interface/technologies/improved_medium_tank.dds"  }
-
-  SpriteType = { name = "GFX_ENG_medium_tank_amphibious_tech_1_medium"    texturefile = "gfx/interface/technologies/eng_imp_main_tank.dds"  }
-  SpriteType = { name = "GFX_FRA_medium_tank_amphibious_tech_1_medium"    texturefile = "gfx/interface/technologies/fra_imp_main_tank.dds"  }
-  SpriteType = { name = "GFX_GER_medium_tank_amphibious_tech_1_medium"    texturefile = "gfx/interface/technologies/ger_imp_main_tank.dds"  }
-  SpriteType = { name = "GFX_JAP_medium_tank_amphibious_tech_1_medium"    texturefile = "gfx/interface/technologies/jap_imp_main_tank.dds"  }
-  SpriteType = { name = "GFX_SOV_medium_tank_amphibious_tech_1_medium"    texturefile = "gfx/interface/technologies/sov_imp_main_tank.dds"  }
-  SpriteType = { name = "GFX_ITA_medium_tank_amphibious_tech_1_medium"    texturefile = "gfx/interface/technologies/ita_imp_main_tank.dds"  }
-  SpriteType = { name = "GFX_USA_medium_tank_amphibious_tech_1_medium"    texturefile = "gfx/interface/technologies/usa_imp_main_tank.dds"  }
-
   SpriteType = { name = "GFX_medium_tank_amphibious_tech_2_medium"    texturefile = "gfx/interface/technologies/advanced_medium_tank.dds"  }
 
+  SpriteType = { name = "GFX_ENG_medium_tank_amphibious_tech_1_medium"    texturefile = "gfx/interface/technologies/eng_imp_main_tank.dds"  }
   SpriteType = { name = "GFX_ENG_medium_tank_amphibious_tech_2_medium"    texturefile = "gfx/interface/technologies/eng_adv_main_tank.dds"  }
+  SpriteType = { name = "GFX_FRA_medium_tank_amphibious_tech_1_medium"    texturefile = "gfx/interface/technologies/fra_imp_main_tank.dds"  }
   SpriteType = { name = "GFX_FRA_medium_tank_amphibious_tech_2_medium"    texturefile = "gfx/interface/technologies/fra_adv_main_tank.dds"  }
+  SpriteType = { name = "GFX_GER_medium_tank_amphibious_tech_1_medium"    texturefile = "gfx/interface/technologies/ger_imp_main_tank.dds"  }
   SpriteType = { name = "GFX_GER_medium_tank_amphibious_tech_2_medium"    texturefile = "gfx/interface/technologies/ger_adv_main_tank.dds"  }
+  SpriteType = { name = "GFX_JAP_medium_tank_amphibious_tech_1_medium"    texturefile = "gfx/interface/technologies/jap_imp_main_tank.dds"  }
   SpriteType = { name = "GFX_JAP_medium_tank_amphibious_tech_2_medium"    texturefile = "gfx/interface/technologies/jap_adv_main_tank.dds"  }
+  SpriteType = { name = "GFX_SOV_medium_tank_amphibious_tech_1_medium"    texturefile = "gfx/interface/technologies/sov_imp_main_tank.dds"  }
   SpriteType = { name = "GFX_SOV_medium_tank_amphibious_tech_2_medium"    texturefile = "gfx/interface/technologies/sov_adv_main_tank.dds"  }
+  SpriteType = { name = "GFX_ITA_medium_tank_amphibious_tech_1_medium"    texturefile = "gfx/interface/technologies/ita_imp_main_tank.dds"  }
   SpriteType = { name = "GFX_ITA_medium_tank_amphibious_tech_2_medium"    texturefile = "gfx/interface/technologies/ita_adv_main_tank.dds"  }
-  SpriteType = { name = "GFX_USA_medium_tank_amphibious_tech_2_medium"    texturefile = "gfx/interface/technologies/usa_adv_main_tank.dds"  }
+
+  SpriteType = { name = "GFX_USA_medium_tank_amphibious_tech_1_medium"    texturefile = "gfx/interface/technologies/us_med_amphb_tank.dds"  } ##added
+  SpriteType = { name = "GFX_USA_medium_tank_amphibious_tech_2_medium"    texturefile = "gfx/interface/technologies/us_adv_med_amphb_tank.dds"  }
 
   SpriteType = { name = "GFX_naval_invasion_support_bg"    texturefile = "gfx//naval_invasion_support_bg.dds"  }
 
-  ## airborne support
+  ## airborne support   -----------------------------------
 
-  spriteType = { name = "GFX_unit_paratrooper_glider_icon_medium"		 textureFile = "gfx/interface/counters/divisions_large/unit_paratroop_icon.dds" noOfFrames = 2 }
+  spriteType = { name = "GFX_unit_paratrooper_glider_icon_medium"		 textureFile = "gfx/interface/counters/divisions_large/unit_paratrooper_glider_icon.dds" noOfFrames = 2 }
 
   SpriteType = { name = "GFX_glider_technology_medium"    texturefile = "gfx//interface//technologies//glider_1.dds"    alwaystransparent = yes	}
   SpriteType = { name = "GFX_cargo_glider_technology_medium"    texturefile = "gfx//interface//technologies//cargo_glider_equipment.dds"    alwaystransparent = yes	}
@@ -165,12 +197,26 @@ spriteTypes = {
   SpriteType = { name = "GFX_ITA_glider_tank_technology_medium"    texturefile = "gfx/interface/technologies/ita_adv_light_tank.dds"  }
   SpriteType = { name = "GFX_USA_glider_tank_technology_medium"    texturefile = "gfx/interface/technologies/usa_adv_light_tank.dds"  }
 
-  spriteType = { name = "GFX_unit_glider_tank_icon_medium"		 textureFile = "gfx/interface/counters/divisions_large/unit_light_tank_icon.dds" noOfFrames = 2 }
+  spriteType = { name = "GFX_unit_glider_tank_icon_medium"		 textureFile = "gfx/interface/counters/divisions_large/unit_glider_light_tank_icon.dds" noOfFrames = 2 }
 
   SpriteType = { name = "GFX_airborne_glider_bg"    texturefile = "gfx//airborne_glider_bg.dds"  }
 
   SpriteType = { name = "GFX_glider_equipment_icon_medium"		texturefile = "gfx//interface//technologies//cargo_glider_equipment.dds"  }
 
+  ## Arty    -----------------------------------
 
+  SpriteType = { name = "GFX_radar_aa_1_medium"            texturefile = "gfx//interface//technologies//kommandogerat.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_radar_aa_2_medium"            texturefile = "gfx//interface//technologies//kommandogerat_2.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_radar_aa_3_medium"            texturefile = "gfx//interface//technologies//kommandogerat_3.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_airburst_artillery_medium"    texturefile = "gfx//interface//technologies//airburst_artillery.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_rocket_aa_tech_1_medium"      texturefile = "gfx//interface//technologies//rocket_aa_tech_1.dds"    alwaystransparent = yes	}
+
+  SpriteType = { name = "GFX_railway_artillery_tech_medium"              texturefile = "gfx//interface//technologies//railway_gun_equipment.dds"    alwaystransparent = yes	}
+  spriteType = { name = "GFX_unit_railway_artillery_unit_icon_medium"		 textureFile = "gfx/interface/counters/divisions_large/unit_railway_art_icon.dds" noOfFrames = 2 }
+
+  SpriteType = { name = "GFX_unit_guided_aa_unit_brigade_icon_medium"         textureFile = "gfx/interface/counters/divisions_large/unit_missile_AA_icon.dds" noOfFrames = 2 }
+  SpriteType = { name = "GFX_unit_guided_aa_unit_icon_medium"            		 textureFile = "gfx/interface/counters/divisions_large/unit_missile_AA_support_icon.dds" noOfFrames = 2 }
+  SpriteType = { name = "GFX_guided_aa_1_medium"                         texturefile = "gfx//interface//technologies//guided_aa_equipment_1.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_guided_aa_2_medium"                         texturefile = "gfx//interface//technologies//guided_aa_equipment_2.dds"    alwaystransparent = yes	}
 
 }

@@ -6,6 +6,7 @@ technologies = {
 @1942 = 6
 
 @first_row = -3
+@middle_row = -1
 @second_row = 1
 @third_row = 4
 
@@ -17,9 +18,9 @@ technologies = {
 			desert_kit_1
 		}
 
-		enable_subunits = {
-			desert_support
-		}
+		enable_subunits = {			desert_support		}
+
+		desc = "desert_kit1_special_desc"
 
     path = {
       leads_to_tech = desert_kit2_technology
@@ -28,7 +29,7 @@ technologies = {
 
 		dependencies = { tech_support = 1	}
 
-    research_cost = 1.5
+    research_cost = 1.7
     start_year = 1939
 
     folder = {
@@ -45,22 +46,24 @@ technologies = {
     }
 
 		allow = {
-			OR = {
-				any_owned_state = { is_on_continent = africa	}
-				any_owned_state = { is_on_continent = middle_east	}
-				any_owned_state = { region = 153	} #northern india
-				any_owned_state = { region = 137	} #western steppe
-				any_owned_state = { region = 145	} #central asia
-				any_owned_state = { region = 144	} #western china
-				any_owned_state = { region = 152	} #central steppes
-				any_owned_state = { region = 156	} #australia
-				any_owned_state = { region = 119	} #south west
-				any_owned_state = { region = 118	} #westcoast
-				any_owned_state = { region = 123	} #mexico
-				any_owned_state = { region = 35	} #south america
+				any_state = {
+					is_controlled_by = ROOT
+					OR = {
+									is_on_continent = africa
+									is_on_continent = middle_east
+									region = 153	  #northern india
+									region = 137	  #western steppe
+									region = 145	  #central asia
+									region = 144	  #western china
+									region = 152	  #central steppes
+									region = 156	  #australia
+									region = 119	  #south west
+									region = 118	  #westcoast
+									region = 123	  #mexico
+									region = 35	 		#south america
+					}
 			}
 		}
-
   }
 
 	desert_kit2_technology = {
@@ -73,7 +76,18 @@ technologies = {
 			}
 		}
 
-    research_cost = 1
+		path = {
+			leads_to_tech = heat_kit_technology
+			research_cost_coeff = 1
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = desert_kit2_special_tooltip
+		}
+
+		desc = "desert_kit2_special_desc"
+
+	  research_cost = 1.5
     start_year = 1940
 
     folder = {
@@ -108,7 +122,7 @@ technologies = {
       research_cost_coeff = 1
     }
 
-    research_cost = 1.5
+    research_cost = 1.7
     start_year = 1939
 
     folder = {
@@ -127,25 +141,23 @@ technologies = {
 		dependencies = { tech_support = 1	}
 
 		allow = {
-			OR = {
-				any_owned_state = { is_on_continent = south_america	}
-				any_owned_state = { region = 140	} #sub saharan
-				any_owned_state = { region = 17	} #east africa
-				any_owned_state = { region = 139	} #south africa
-				any_owned_state = { region = 17	} #east africa
-				any_owned_state = { region = 31	} #south india
-				any_owned_state = { region = 143	} #eastern india
-				any_owned_state = { region = 142	} #south east asia
-				any_owned_state = { region = 158	} #sunda islands
-				any_owned_state = { region = 159	} #bornea
-				any_owned_state = { region = 160	} #phillipines
-				any_owned_state = { region = 93	} #java
-				any_owned_state = { region = 167	} #new genua
-				any_owned_state = { region = 83	} #soloman islands
+				any_state = {
+					is_controlled_by = ROOT
+					OR = {
+									is_on_continent = south_america
+									region = 140		#sub saharan
+									region = 139		#south africa
+									region = 143		#eastern india
+									region = 142	  #south east asia
+									region = 158	  #sunda islands
+									region = 159	  #bornea
+									region = 160	  #phillipines
+									region = 93		  #java
+									region = 167	  #new genua
+									region = 83		  #soloman islands
+					}
 			}
 		}
-
-
   }
 
 	jungle_kit2_technology = {
@@ -158,7 +170,17 @@ technologies = {
 			}
 		}
 
-    research_cost = 1
+		path = {
+			leads_to_tech = heat_kit_technology
+			research_cost_coeff = 1
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = jungle_kit2_RESEARCHED
+		}
+		## desc = "jungle_kit2_RESEARCHED"
+
+	  research_cost = 1.5
     start_year = 1940
 
     folder = {
@@ -203,32 +225,35 @@ technologies = {
 	    }
 
 			allow = {
-	      OR = {
-	        any_owned_state = { is_on_continent = europe	}
-					any_owned_state = { region = 121	} #canada
-					any_owned_state = { region = 122	} #canada
-					any_owned_state = { region = 118	} #westcoast
-					any_owned_state = { region = 120	} #centralus
-					any_owned_state = { region = 117	} #eastcoast
-					any_owned_state = { region = 35	} #south america
-					any_owned_state = { region = 128	} #northern south america
-					any_owned_state = { region = 150	} #arctic russia
-					any_owned_state = { region = 147	} #northern sibiria
-					any_owned_state = { region = 14	} #transurals
-					any_owned_state = { region = 138	} #ural region
-					any_owned_state = { region = 40	} #transvolga
-					any_owned_state = { region = 151	} #western siberia
-					any_owned_state = { region = 149	} #eastern siberia
-					any_owned_state = { region = 148	} #russia far east
-					any_owned_state = { region = 154	} #homeislands
-					any_owned_state = { region = 137	} #western steppe
-					any_owned_state = { region = 136	} #great steppe
-					any_owned_state = { region = 162	} #Afghanistan
-					any_owned_state = { region = 146	} #himalayas
-					any_owned_state = { region = 152	} #centra lsteppes
-					any_owned_state = { region = 155	} #manchuria
-					any_owned_state = { region = 33	} #alaska
-					any_owned_state = { region = 36	} #greenland
+					any_state = {
+						is_controlled_by = ROOT
+						OR = {
+										is_on_continent = europe
+										region = 121		#canada
+					 					region = 122		#canada
+										region = 118		#westcoast
+										region = 120		#centralus
+										region = 117	  #eastcoast
+										region = 35			#south america
+										region = 128		#northern south america
+										region = 150		#arctic russia
+										region = 147		#northern sibiria
+										region = 14			#transurals
+										region = 138	  #ural region
+										region = 40			#transvolga
+										region = 151		#western siberia
+										region = 149		#eastern siberia
+										region = 148	  #russia far east
+										region = 154		#homeislands
+										region = 137		#western steppe
+										region = 136		#great steppe
+										region = 162		#Afghanistan
+										region = 146		#himalayas
+										region = 152	  #centra lsteppes
+										region = 155		#manchuria
+										region = 33			#alaska
+										region = 36	  	#greenland
+						}
 	      }
 			}
 
@@ -259,7 +284,7 @@ technologies = {
 				 winter_attrition_factor = -0.25
 			}
 
-	    research_cost = 1
+	    research_cost = 1.2
 	    start_year = 1942
 
 	    folder = {
@@ -271,10 +296,85 @@ technologies = {
 				support_tech
 	    }
 
+			ai_will_do = {
+	      factor = 1
+				modifier = {
+					factor = 3
+					tag = FIN
+				}
+				modifier = {
+					factor = 2
+					tag = NOR
+				}
+				modifier = {
+					factor = 2
+					tag = SWE
+				}
+	    }
+
+			dependencies = { mechanised_infantry2 = 1	}
+
+	  }
+
+		## Heat Kits
+
+		heat_kit_technology = {
+
+	    path = {
+	      leads_to_tech = heat_kit2_technology
+	      research_cost_coeff = 1
+	    }
+
+	    research_cost = 1.5
+	    start_year = 1940
+
+	    folder = {
+	      name = specialised_folder
+	      position = { x = @middle_row y = @1940 }
+	    }
+
+			modifier = {
+				 heat_attrition_factor = -0.25
+			}
+
+	    categories = {
+				support_tech
+	    }
+
 	    ai_will_do = {
 	      factor = 1
 	    }
 
 	  }
+
+		heat_kit2_technology = {
+
+	    path = {
+	      leads_to_tech = heat_kit2_technology
+	      research_cost_coeff = 1
+	    }
+
+	    research_cost = 1.5
+	    start_year = 1941
+
+	    folder = {
+	      name = specialised_folder
+	      position = { x = @middle_row y = @1941 }
+	    }
+
+			modifier = {
+				 heat_attrition_factor = -0.25
+			}
+
+	    categories = {
+				support_tech
+	    }
+
+	    ai_will_do = {
+	      factor = 1
+	    }
+
+	  }
+
 
 }
