@@ -1457,6 +1457,10 @@ technologies = {
 		production_speed_buildings_factor = 0.10
 
 		path = {
+			leads_to_tech = construction7
+			research_cost_coeff = 1
+		}
+		path = {
 			leads_to_tech = excavation6
 			research_cost_coeff = 1
 		}
@@ -1508,6 +1512,97 @@ technologies = {
 		folder = {
 			name = industry_folder
 			position = { x = 2 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 0.5
+				AND = {
+					oil > 0
+					aluminium > 0
+					rubber > 0
+					tungsten > 0
+					steel > 0
+					chromium > 0
+				}
+			}
+
+			modifier = {
+				factor = 0.1
+				AND = {
+					oil > 8
+					aluminium > 8
+					rubber > 8
+					tungsten > 8
+					steel > 8
+					chromium > 8
+				}
+			}
+		}
+	}
+
+	construction7 = {
+
+		production_speed_buildings_factor = 0.10
+
+		path = {
+			leads_to_tech = construction8
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = excavation7
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1947
+
+		categories = {
+			industry
+			construction_tech
+		}
+
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 12 }
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 3
+				date > "1947.1.1"
+			}
+
+			modifier = {
+				factor = 3
+				date > "1947.1.6"
+			}
+		}
+	}
+
+	excavation7 = {
+
+		local_resources_factor = 0.10
+
+		path = {
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1947
+
+		categories = {
+			industry
+			construction_tech
+		}
+
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 12 }
 		}
 
 		ai_will_do = {
