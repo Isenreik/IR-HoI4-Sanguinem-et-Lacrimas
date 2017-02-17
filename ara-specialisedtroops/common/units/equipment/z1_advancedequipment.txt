@@ -17,4 +17,75 @@ anti_air_equipment_4 = {
   }
 }
 
+anti_tank_equipment_4 = {
+  archetype = anti_tank_equipment
+  parent = anti_tank_equipment_3
+  priority = 90
+  visual_level = 2
+
+  hard_attack = 40
+  ap_attack = 138
+
+  build_cost_ic = 8
+  resources = {
+    tungsten = 3
+    steel = 4
+  }
+}
+
+artillery_equipment_4 = {
+  archetype = artillery_equipment
+  parent = artillery_equipment_3
+  priority = 50
+  visual_level = 2
+
+  defense = 20
+  breakthrough = 10
+  soft_attack = 55
+
+  build_cost_ic = 6
+  resources = {
+    tungsten = 1
+    steel = 4
+  }
+}
+
+rocket_artillery_equipment_3 = {
+  archetype = rocket_artillery_equipment
+  parent = rocket_artillery_equipment_2
+  priority = 60
+  visual_level = 1
+
+  defense = 15
+  breakthrough = 20
+  soft_attack = 70
+
+  hard_attack = 10
+  ap_attack = 50
+
+  build_cost_ic = 7
+  resources = {
+    tungsten = 3
+    steel = 1
+  }
+}
+
+motorized_rocket_equipment_2 = {
+  archetype = motorized_rocket_equipment
+  parent = motorized_rocket_equipment_1
+  priority = 60
+  visual_level = 1
+
+  defense = 19
+  breakthrough = 22
+  soft_attack = 70
+
+  build_cost_ic = 14
+  resources = {
+    oil = 1
+    rubber = 1
+    steel = 2
+  }
+}
+
 }

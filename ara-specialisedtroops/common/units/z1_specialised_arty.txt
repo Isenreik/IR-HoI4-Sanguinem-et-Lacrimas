@@ -71,7 +71,7 @@ railway_artillery_unit = {
   }
 
   fort = {
-    attack = 0.8
+    attack = 0.6
   }
 
   river = {

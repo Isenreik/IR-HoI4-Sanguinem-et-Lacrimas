@@ -1,11 +1,8 @@
 ﻿l_english:
 
-specialised_folder:0 "Specialised"
-specialised_folder_desc:0 "Specialised troops, vehicles and support research."
+## criminal
 
 SPECIALISED_TITLE_KITS:0 "SPECIALISED EQUIPMENT KITS"
-
-## criminal
 
 SPECIALISED_TITLE_PENALS:0 "PENAL BATTALIONS & POLITICAL UNITS"
 
@@ -107,7 +104,7 @@ medium_tank_amphibious_unit:0 "Amphibious Medium Tanks"
 medium_tank_amphibious_unit_desc:0 "Medium landing tanks can do almost any job."
 
 USA_amphibious_mech_vehicle_1_short:1 "LVT-1 Alligator"
-USA_amphibious_mech_vehicle_2_short:1 "LVT-4 Buffallo-III"
+USA_amphibious_mech_vehicle_2_short:1 "LVT-4 Water Buffalo"
 USA_light_tank_amphibious_equipment_1_short:1 "LVT(A)-1"
 USA_light_tank_amphibious_equipment_2_short:1 "LVT(A)-5"
 USA_medium_tank_amphibious_equipment_1_short:1 "Sherman DD"
@@ -120,6 +117,9 @@ ENG_light_tank_amphibious_equipment_1_short:1 "A4E3 L2E1"
 
 GER_amphibious_mech_vehicle_1_short:1 "Landwasserchlepper"
 GER_amphibious_mech_vehicle_2_short:1 "Landwasserchlepper II"
+
+SOV_light_tank_amphibious_equipment_1_short:1 "T37A"
+SOV_light_tank_amphibious_equipment_2_short:1 "T-40 Amphibious"
 
 ##Airborne gliders
 
@@ -152,19 +152,19 @@ paratrooper_glider_desc:0 "These larger and special gliders can bring in proper 
 glider_technology:0 "Gliders"
 glider_technology_desc:0 "With the use of large gliders, we can land entire platoons and even vehicles behind the enemy lines."
 
-##Airborne gliders
+##Kits
 
 SPECIALISED_TITLE_kits_support:0 "SPECIALISED CLIMATE EQUIPMENT"
 kits_technology_desc:0 "This specialised equipment encompass small modifications to existing weapons and vehicles or specialised transporters for harsh climates. This equipment will improve the combat effectiveness of our troops using them."
 
 desert_kit_1:0 "Desert Equipment"
 desert_kit_1_desc:0 "\nEquipment doesn't like sand. It's coarse and rough and irritating and it gets everywhere. With small and specialised modifications delivered to our existing vehicles and weapons, we can increase their reliability and optimise their supply usage using dedicated training and tactics for the desert climate. However, these special adaptations help little outside of deserts and actually work as a detriment when fighting in other climates.\n§YOnly available for nations that own appropriate territory!\n\n§!"
-desert_kit1_special_desc:0 "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGives bonuses towards Movement, Breakthrough and Defence in desert enviroments."
+desert_kit1_special_desc:0 "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGives bonuses towards Movement, Breakthrough and Defence in desert environments."
 
 desert_kit2_technology:0 "Improved Desert Equipment"
 desert_kit2_technology_desc:0 "Further improvements in tactics, logistics and equipment and improvements in the elimination process for unfit troops allows our designated desert divisions to expand on their fighting capabilities in the unforgiving desert sands. \n\n§!"
 desert_kit2_special_tooltip:0 "Further increases the bonus towards Movement, Breakthrough and Defence in desert environments for the Desert Support Company."
-desert_kit2_special_desc:0 "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFurther increases the bonus towards Movement, Breakthrough and Defence in desert enviroments for the Desert Support Company."
+desert_kit2_special_desc:0 "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFurther increases the bonus towards Movement, Breakthrough and Defence in desert environments for the Desert Support Company."
 
 desert_kit:0 "Desert Equipment"
 
@@ -184,7 +184,7 @@ jungle_support:0 "Jungle Support Company"
 jungle_support_desc:0 "This special support company encompasses everything a division needs to dedicate combat in jungle environments. It contains specialised logistic vehicles, training and deliveries of modifications for existing weapons and vehicles."
 
 winter_kit_technology:0 "Winter Equipment"
-winter_kit_technology_desc:0 "This equipment and special training was designed to help out our troops during the cold winter. This means specialised vehicles using tracks and skis being given to our logistic companies and frontline troops during winter.\n§YOnly available for nations that own appropriate territory!\n\n§!"
+winter_kit_technology_desc:0 "This equipment and special training was designed to help out our troops during the cold winter. This means specialised vehicles using tracks and skis being given to our logistic companies and front-line troops during winter.\n§YOnly available for nations that own appropriate territory!\n\n§!"
 
 winter_kit2_technology:0 "Improved Winter Equipment"
 winter_kit2_technology_desc:0 "Further improvements in tactics, logistics and equipment allows our troops to expand on their fighting capabilities in the cold winter months.\n\n§!"
@@ -194,51 +194,3 @@ heat_kit_technology_desc:0 "While the heat of the desert can be excruciating, it
 
 heat_kit2_technology:0 "Heat Equipment II"
 heat_kit2_technology_desc:0 "Improvements in our soldier uniforms and modifications to our vehicles fuel mixtures will help them to suffer less failures.\n\n§!"
-
-## Artillery
-radar_aa_1:0 "Computerised AA Director"
-GER_radar_aa_1:0 "Kommandogerät 40"
-radar_aa_1_desc:0 "With the help of the development of electronic computers, our auxiliary predictors can become more precise in calculating the movement of enemy planes, improving hit rate."
-
-radar_aa_2:0 "Integrated Radar"
-radar_aa_2_desc:0 "By directly integrating a radar with the auxiliary predictors, our batteries can get even better readouts of the distance of enemy planes."
-GER_radar_aa_1:0 "Kommandogerät 40/42"
-
-radar_aa_3:0 "Proximity Fuze"
-radar_aa_3_desc:0 "With our integrated radars, we can set up better proximity fuzes. This means that our charge will be less likely to fly past or even through the plane without explosing and instead detonate as close as possible to the enemy aircraft, maximising damage."
-
-airburst_artillery:0 "Airburst Shells"
-airburst_artillery_desc:0 "While airburst shells have been around since the last World War, improving the fuze will allow our shells to explode at the optimal distance of about 10 metres above the ground, showering the enemy position with shrapnel."
-
-rocket_aa_tech_1:0 "Unguided Surface-To-Air Rocket"
-rocket_aa_tech_1_desc:0 "These Fin-stabalised Surface-To-Air rockets with shrapnel charges can be used to supplement our existing anti-air capabilities for both short-range interception and long-range attacks against far-away bombers, without loosing as much accuracy as a standart flak charge."
-ENG_rocket_aa_tech_1:0 "Z Battery"
-GER_rocket_aa_tech_1:0 "Taifun"
-USA_rocket_aa_tech_1:0 "Loki"
-
-railway_artillery_equipment:0 "Railway Artillery"
-railway_artillery_equipment_1:0 "Railway Artillery"
-railway_artillery_equipment_1_desc:0 "Used in the Great War, we can revive railway artillery guns for this one, which will allowing us to create and use absolutely massive guns to obliterate our enemies. The greatest downside of these behemoths though is their production cost and further weaknesses are their very low speed and their enormous supply use."
-GER_railway_artillery_equipment_1:0 "Gustav"
-FRA_railway_artillery_equipment_1:0 "Mle 1870/93 on Schneider carriage"
-ENG_railway_artillery_equipment_1:0 "Sceneshifter"
-
-railway_artillery_unit:0 "Railway Artillery"
-railway_artillery_unit_desc:0 "These absolutely massive guns can obliterate our enemies. The greatest downside of these behemoths though is their production cost and further weaknesses are their very low speed and their enormous supply use."
-
-guided_aa_unit_brigade:0 "Surface-To-Air Missile"
-guided_aa_unit_brigade:0 "Support SAM"
-
-guided_aa_equipment_1:0 "Early SAM"
-guided_aa_equipment_1_desc:0 "These guided Surface-To-Air Missiles are much more accurate and powerful than our old shell-based AA. Using simple radio control manual command to line of sight systems, these missiles still need a lot of manual input. Further, the production of these missiles requires a lot of work and technical components that are not yet readily available, thus making mass-production relatively complicated to tried-and-true AA."
-GER_guided_aa_equipment_1:0 "Wasserfall"
-USA_guided_aa_equipment_1:0 "Nike Ajax"
-SOV_guided_aa_equipment_1:0 "S-25 Berkut"
-ENG_guided_aa_equipment_1:0 "Bloodhound"
-
-guided_aa_equipment_2:0 "SAM"
-guided_aa_equipment_2_desc:0 "These new guided missiles are a great improvement upon our earlier Surface-To-Air Missiles. These improved SAM use radio control for guidance and are guided towards their targets by comparing the returns of the missile and target on a single radar screen. We further refined the production of parts, making it easier to construct the missiles."
-GER_guided_aa_equipment_2:0 "Rheintochter"
-USA_guided_aa_equipment_2:0 "Nike Ajax II"
-SOV_guided_aa_equipment_2:0 "S-75 Dvina"
-ENG_guided_aa_equipment_2:0 "Thunderbird"
