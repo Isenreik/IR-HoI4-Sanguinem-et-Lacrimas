@@ -1,13 +1,14 @@
-# Sanguinem et Lacrimis
+# ![Sanguinem et Lacrimis](https://raw.githubusercontent.com/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis/master/readme-files/sanguinem_title_text.png)
 
-![Isenreik Logo x64](*.png) Isenreik's *Sanguinem et Lacrimis* mod for Paradox Interactive's Hearts of Iron 4
-
-[![Click here to open a new issue](https://www.shareicon.net/data/64x64/2015/09/02/94510_opened_448x512.png)Click here to open a new issue][1]
+![Isenreik Logo x64](https://raw.githubusercontent.com/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis/master/readme-files/Isenreik_logo_x64.png) Isenreik's *Sanguinem et Lacrimis* mod for Paradox Interactive's Hearts of Iron 4
 
 [![Join the Discord Server](https://www.shareicon.net/data/64x64/2016/10/18/844052_media_512x512.png) Join the Discord Server][2]
 
+[![Click here to open a new issue](https://www.shareicon.net/data/64x64/2015/09/02/94510_opened_448x512.png)Click here to open a new issue][1]
+
 ## What does this mod do?
-It adds various types of new units and equipment to the game and expands researchable tech into the late-game years.
+It adds various types of new units and equipment to the game and expands researchable tech into the late-game years.  
+A complete list of changes and new tech-trees can be found in the wiki.
 
 ## When will it be released?
 Probably around mid February. I greatly expanded the scope of this mod, which meant much more work.
