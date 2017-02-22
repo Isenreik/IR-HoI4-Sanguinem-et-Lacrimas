@@ -2,6 +2,22 @@
 
 spriteTypes = {
 
-  
+  SpriteType = { name = "GFX_construction7_medium"                  texturefile = "gfx//interface//technologies//basic_machine_tools.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_construction8_medium"                  texturefile = "gfx//interface//technologies//basic_machine_tools.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_excavation6_medium"                  texturefile = "gfx//interface//technologies//basic_machine_tools.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_excavation7_medium"                  texturefile = "gfx//interface//technologies//basic_machine_tools.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_excavation8_medium"                  texturefile = "gfx//interface//technologies//basic_machine_tools.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_excavation9_medium"                  texturefile = "gfx//interface//technologies//basic_machine_tools.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_excavation10_medium"                  texturefile = "gfx//interface//technologies//basic_machine_tools.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_infrastructure_construction1_medium"                  texturefile = "gfx//interface//technologies//basic_machine_tools.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_infrastructure_construction2_medium"                  texturefile = "gfx//interface//technologies//basic_machine_tools.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_infrastructure_construction3_medium"                  texturefile = "gfx//interface//technologies//basic_machine_tools.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_port_construction1_medium"                  texturefile = "gfx//interface//technologies//basic_machine_tools.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_port_construction2_medium"                  texturefile = "gfx//interface//technologies//basic_machine_tools.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_fort_construction1_medium"                  texturefile = "gfx//interface//technologies//basic_machine_tools.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_fort_construction2_medium"                  texturefile = "gfx//interface//technologies//basic_machine_tools.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_fort_construction3_medium"                  texturefile = "gfx//interface//technologies//basic_machine_tools.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_radar_construction1_medium"                  texturefile = "gfx//interface//technologies//basic_machine_tools.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_radar_construction2_medium"                  texturefile = "gfx//interface//technologies//basic_machine_tools.dds"    alwaystransparent = yes	}
 
 }
