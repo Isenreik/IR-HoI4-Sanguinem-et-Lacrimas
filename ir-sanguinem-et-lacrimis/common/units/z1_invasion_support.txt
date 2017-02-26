@@ -48,7 +48,7 @@ sub_units = {
       amphibious_mech_vehicle
     }
 
-    transport = mechanized_equipment
+    transport = amphibious_mech_vehicle
 
     need = {
       amphibious_mech_vehicle = 50
