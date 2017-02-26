@@ -103,23 +103,23 @@ light_tank_amphibious_unit_desc:0 "Amphibious lightly armoured landing tanks."
 medium_tank_amphibious_unit:0 "Amphibious Medium Tanks"
 medium_tank_amphibious_unit_desc:0 "Medium landing tanks can do almost any job."
 
-USA_amphibious_mech_vehicle_1_short:1 "LVT-1 Alligator"
-USA_amphibious_mech_vehicle_2_short:1 "LVT-4 Water Buffalo"
-USA_light_tank_amphibious_equipment_1_short:1 "LVT(A)-1"
-USA_light_tank_amphibious_equipment_2_short:1 "LVT(A)-5"
-USA_medium_tank_amphibious_equipment_1_short:1 "Sherman DD"
-USA_medium_tank_amphibious_equipment_1_short:1 "T20 DD"
+USA_amphibious_mech_vehicle_1_short:0 "LVT-1 Alligator"
+USA_amphibious_mech_vehicle_2_short:0 "LVT-4 Water Buffalo"
+USA_light_tank_amphibious_equipment_1_short:0 "LVT(A)-1"
+USA_light_tank_amphibious_equipment_2_short:0 "LVT(A)-5"
+USA_medium_tank_amphibious_equipment_1_short:0 "Sherman DD"
+USA_medium_tank_amphibious_equipment_1_short:0 "T20 DD"
 
-ENG_amphibious_mech_vehicle_1_short:1 "DUKW"
-ENG_amphibious_mech_vehicle_2_short:1 "Terrapine"
-ENG_light_tank_amphibious_equipment_1_short:1 "A4E3 L1E3"
-ENG_light_tank_amphibious_equipment_1_short:1 "A4E3 L2E1"
+ENG_amphibious_mech_vehicle_1_short:0 "DUKW"
+ENG_amphibious_mech_vehicle_2_short:0 "Terrapine"
+ENG_light_tank_amphibious_equipment_1_short:0 "A4E3 L1E3"
+ENG_light_tank_amphibious_equipment_1_short:0 "A4E3 L2E1"
 
-GER_amphibious_mech_vehicle_1_short:1 "Landwasserchlepper"
-GER_amphibious_mech_vehicle_2_short:1 "Landwasserchlepper II"
+GER_amphibious_mech_vehicle_1_short:0 "Landwasserchlepper"
+GER_amphibious_mech_vehicle_2_short:0 "Landwasserchlepper II"
 
-SOV_light_tank_amphibious_equipment_1_short:1 "T37A"
-SOV_light_tank_amphibious_equipment_2_short:1 "T-40 Amphibious"
+SOV_light_tank_amphibious_equipment_1_short:0 "T37A"
+SOV_light_tank_amphibious_equipment_2_short:0 "T-40 Amphibious"
 
 ##Airborne gliders
 

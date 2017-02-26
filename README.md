@@ -1,10 +1,14 @@
 # ![Sanguinem et Lacrimis](https://raw.githubusercontent.com/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis/master/readme-files/sanguinem_title_text.png)
 
-![Isenreik Logo x64](https://raw.githubusercontent.com/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis/master/readme-files/Isenreik_logo_x64.png) Isenreik's *Sanguinem et Lacrimis* mod for Paradox Interactive's Hearts of Iron 4
+![Isenreik Logo x64](https://raw.githubusercontent.com/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis/master/readme-files/Isenreik_logo_x64.png) Isenreik's *Sanguinem et Lacrimis* mod for Paradox Interactive's [![Paradox_Logo_32](https://www.hscripts.com/freeimages/logos/game-developer/paradox-interactive/paradox-interactive-logo-32.gif)] Hearts of Iron 4
 
 [![Join the Discord Server](https://www.shareicon.net/data/64x64/2016/10/18/844052_media_512x512.png) Join the Discord Server][2]
 
 [![Click here to open a new issue](https://www.shareicon.net/data/64x64/2015/09/02/94510_opened_448x512.png)Click here to open a new issue][1]
+
+[![Steam Thumbnail](https://raw.githubusercontent.com/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis/master/readme-files/thumbnail-coming-soon.gif) Go to the Steam Workshop page of this mod][3]
+
+[![Steam Thumbnail x64](https://forumcontent.paradoxplaza.com/public/paradox/banners/pdxlogo.png) Go to the related Paradox Plaza thread][4]
 
 ## What does this mod do?
 It adds various types of new units and equipment to the game and expands researchable tech into the late-game years.  
@@ -26,3 +30,5 @@ Well, I can't really stop anyone from doing that. It's also not really an issue,
 
 [1]:https://github.com/Araxiel/HoI4-Ara-SpecTroops/issues/new
 [2]:https://discord.gg/7KQwR2x
+[3]:https://raw.githubusercontent.com/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis/master/readme-files/thumbnail-coming-soon.gif
+[4]:https://forum.paradoxplaza.com/forum/index.php
