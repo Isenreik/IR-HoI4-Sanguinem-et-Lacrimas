@@ -69,8 +69,8 @@ artillery_equipment_4_desc:0 "Improvements in loading mechanisms and carriage to
 artillery8:0 "Semi-Automatic Breech"
 artillery8_desc:0 "A semi-automatic breech will greatly help with the reloading process"
 
-ENG_rocket_artillery_equipment_2_short:1 "RP-3 HE/SAP \"Land-Mattress\""
-ENG_rocket_artillery_equipment_2:1 "RP-3 High Explosive/Semi Armor-Piercing \"Land-Mattress\""
+ENG_rocket_artillery_equipment_2_short:0 "RP-3 HE/SAP \"Land-Mattress\""
+ENG_rocket_artillery_equipment_2:0 "RP-3 High Explosive/Semi Armor-Piercing \"Land-Mattress\""
 
 rocket_artillery5:0 "Case-Bonded Grain"
 rocket_artillery5_desc:0 "Using a case-bonded grain, we can reduce the size and the weight of our rockets and thus increase range and speed."
