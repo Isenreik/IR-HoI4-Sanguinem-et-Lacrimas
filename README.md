@@ -1,6 +1,6 @@
 # ![Sanguinem et Lacrimis](https://raw.githubusercontent.com/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis/master/readme-files/sanguinem_title_text.png)
 
-![Isenreik Logo x64](https://raw.githubusercontent.com/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis/master/readme-files/Isenreik_logo_x64.png) Isenreik's *Sanguinem et Lacrimis* mod for Paradox Interactive's [![Paradox_Logo_32](https://www.hscripts.com/freeimages/logos/game-developer/paradox-interactive/paradox-interactive-logo-32.gif)] Hearts of Iron 4
+![Isenreik Logo x64](https://raw.githubusercontent.com/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis/master/readme-files/Isenreik_logo_x64.png) Isenreik's *Sanguinem et Lacrimis* mod for Paradox Interactive's [<img src="https://forumcontent.paradoxplaza.com/public/paradox/banners/pdxlogo.png" alt="paradox_logo" style="width: 17px;"/>] Hearts of Iron 4
 
 &ensp; | Useful Links
 ------------ | -------------
