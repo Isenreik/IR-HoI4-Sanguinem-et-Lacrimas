@@ -37,8 +37,7 @@ railway_artillery_equipment = {
     ap_attack = 5
     air_attack = 0
 
-
-    maximum_speed = 0.1
+    maximum_speed = 1
 
     build_cost_ic = 220
     resources = {
