@@ -39,40 +39,32 @@ railway_artillery_unit = {
     attack = -0.1
     movement = -0.5
   }
-
   hills = {
     movement = -0.5
   }
-
   mountain = {
     attack = -0.2
     movement = -0.8
   }
-
   jungle = {
     attack = -0.2
     movement = -0.8
   }
-
   desert = {
     movement = -0.8
   }
-
   marsh = {
     movement = -0.7
   }
-
   fort = {
     attack = 0.7
   }
   urban = {
     attack = 0.6
   }
-
   river = {
     movement = -0.6
   }
-
   amphibious = {
     attack = -5
     movement = -5
