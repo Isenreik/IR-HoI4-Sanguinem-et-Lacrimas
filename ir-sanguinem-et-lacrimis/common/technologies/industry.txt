@@ -9,6 +9,10 @@ technologies = {
 	@con_1953 = 18
 	@con_1955 = 20
 
+	@fac_1937 = 4
+	@fac_1939 = 6
+	@fac_1941 = 8
+	@fac_1943 = 10
 	@fac_1945 = 12
 	@fac_1947 = 14
 	@fac_1949 = 16
@@ -84,6 +88,10 @@ technologies = {
 			leads_to_tech = advanced_machine_tools
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = naval_production1
+			research_cost_coeff = 1
+		}
 
 		research_cost = 1.5
 		start_year = 1937
@@ -124,6 +132,10 @@ technologies = {
 
 		path = {
 			leads_to_tech = assembly_line_production
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = naval_production2
 			research_cost_coeff = 1
 		}
 
@@ -167,6 +179,10 @@ technologies = {
 		#	leads_to_tech = improved_machine_tools
 		#	research_cost_coeff = 1
 		#}
+		path = {
+			leads_to_tech = naval_production3
+			research_cost_coeff = 1
+		}
 
 		path = {
 			leads_to_tech = flexible_line
@@ -1909,60 +1925,6 @@ technologies = {
 		}
 	}
 
-	port_construction1 = {
-
-		production_speed_naval_base_factor = 0.1
-
-		research_cost = 1.6
-		start_year = 1947
-
-		categories = {
-			industry
-			construction_tech
-		}
-
-		path = {
-			leads_to_tech = port_construction2
-			research_cost_coeff = 1
-		}
-
-		folder = {
-			name = industry_folder
-			position = { x = @port_construction y = @con_1947 }
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	port_construction2 = {
-
-		production_speed_naval_base_factor = 0.1
-
-		research_cost = 1.6
-		start_year = 1949
-
-		categories = {
-			industry
-			construction_tech
-		}
-
-		path = {
-			leads_to_tech = construction7
-			research_cost_coeff = 1
-		}
-
-		folder = {
-			name = industry_folder
-			position = { x = @port_construction y = @con_1949 }
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
 	fort_construction1 = {
 
 		production_speed_bunker_factor = 0.1
@@ -2105,6 +2067,88 @@ technologies = {
 	}
 
 	## -- Production Lines --------
+
+	naval_production1 = {
+
+		industrial_capacity_dockyard = 0.1
+		production_speed_naval_base_factor = 0.1
+		desc = "naval_production_special_desc"
+
+		research_cost = 1.6
+		start_year = 1937
+
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = @fac_1937 }
+		}
+
+		ai_will_do = {
+			factor = 4
+		}
+		ai_research_weights = {
+			battleship = 1.5
+			cruiser = 1.0
+			carrier = 1.5
+		}
+
+		categories = {
+			industry
+		}
+	}
+
+	naval_production2 = {
+
+		industrial_capacity_dockyard = 0.1
+		production_speed_naval_base_factor = 0.1
+
+		research_cost = 1.6
+		start_year = 1939
+
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = @fac_1939 }
+		}
+
+		ai_will_do = {
+			factor = 4
+		}
+		ai_research_weights = {
+			battleship = 1.5
+			cruiser = 1.0
+			carrier = 1.5
+		}
+
+		categories = {
+			industry
+		}
+	}
+
+	naval_production3 = {
+
+		industrial_capacity_dockyard = 0.1
+		production_speed_naval_base_factor = 0.1
+
+		research_cost = 1.6
+		start_year = 1941
+
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = @fac_1941 }
+		}
+
+		ai_will_do = {
+			factor = 4
+		}
+		ai_research_weights = {
+			battleship = 1.5
+			cruiser = 1.0
+			carrier = 1.5
+		}
+
+		categories = {
+			industry
+		}
+	}
 
 	flexible_line2 = {
 
