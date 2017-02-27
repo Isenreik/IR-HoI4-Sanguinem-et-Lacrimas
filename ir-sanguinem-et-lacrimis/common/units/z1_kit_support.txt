@@ -37,8 +37,8 @@ sub_units = {
 		supply_consumption_factor = -0.02
 
     desert = {
-      defence = 0.15
       attack = 0.05
+      defence = 0.15
       movement = 0.1
 		}
 

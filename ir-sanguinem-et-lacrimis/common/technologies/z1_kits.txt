@@ -20,7 +20,7 @@ technologies = {
 
 		enable_subunits = {			desert_support		}
 
-		desc = "desert_kit1_special_desc"
+		# desc = "desert_kit1_special_desc"
 
     path = {
       leads_to_tech = desert_kit2_technology
@@ -69,6 +69,9 @@ technologies = {
 	desert_kit2_technology = {
 
 		desert_support = {
+
+			max_organisation = 5
+
 			desert = {
 				defence = 0.15
 				attack = 0.1
@@ -81,11 +84,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		on_research_complete = {
-			custom_effect_tooltip = desert_kit2_special_tooltip
-		}
-
-		desc = "desert_kit2_special_desc"
+		on_research_complete = {			custom_effect_tooltip = desert_kit2_special_tooltip		}
+		# desc = "desert_kit2_special_desc"
 
 	  research_cost = 1.5
     start_year = 1940
@@ -163,6 +163,9 @@ technologies = {
 	jungle_kit2_technology = {
 
 		jungle_support = {
+
+			max_organisation = 5
+			
 			jungle = {
 				defence = 0.15
 				attack = 0.1
