@@ -159,12 +159,12 @@ kits_technology_desc:0 "This specialised equipment encompass small modifications
 
 desert_kit_1:0 "Desert Equipment"
 desert_kit_1_desc:0 "\nEquipment doesn't like sand. It's coarse and rough and irritating and it gets everywhere. With small and specialised modifications delivered to our existing vehicles and weapons, we can increase their reliability and optimise their supply usage using dedicated training and tactics for the desert climate. However, these special adaptations help little outside of deserts and actually work as a detriment when fighting in other climates.\n§YOnly available for nations that own appropriate territory!\n\n§!"
-desert_kit1_special_desc:0 "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGives bonuses towards Movement, Breakthrough and Defence in desert environments."
+# desert_kit1_special_desc:0 "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGives bonuses towards Movement, Breakthrough and Defence in desert environments."
 
 desert_kit2_technology:0 "Improved Desert Equipment"
 desert_kit2_technology_desc:0 "Further improvements in tactics, logistics and equipment and improvements in the elimination process for unfit troops allows our designated desert divisions to expand on their fighting capabilities in the unforgiving desert sands. \n\n§!"
-desert_kit2_special_tooltip:0 "Further increases the bonus towards Movement, Breakthrough and Defence in desert environments for the Desert Support Company."
-desert_kit2_special_desc:0 "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFurther increases the bonus towards Movement, Breakthrough and Defence in desert environments for the Desert Support Company."
+desert_kit2_special_tooltip:0 "Increases Movement, Breakthrough and Defence"
+# desert_kit2_special_desc:0 "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFurther increases the bonus towards Movement, Breakthrough and Defence in desert environments for the Desert Support Company."
 
 desert_kit:0 "Desert Equipment"
 
@@ -178,7 +178,7 @@ jungle_kit_1_desc:0 "\nThis equipment and special training was designed to suppo
 
 jungle_kit2_technology:0 "Improved Jungle Equipment"
 jungle_kit2_technology_desc:0 "Further improvements in tactics, logistics and equipment allows our designated jungle divisions to expand on their fighting capabilities in the treacherous rainforest.\n\n§!"
-jungle_kit2_RESEARCHED:0 "Further increases the bonus towards Movement, Breakthrough and Defence in jungle environments for the Jungle Support Company."
+jungle_kit2_RESEARCHED:0 "Increases Movement, Breakthrough and Defence"
 
 jungle_support:0 "Jungle Support Company"
 jungle_support_desc:0 "This special support company encompasses everything a division needs to dedicate combat in jungle environments. It contains specialised logistic vehicles, training and deliveries of modifications for existing weapons and vehicles."

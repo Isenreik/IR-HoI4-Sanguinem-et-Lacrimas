@@ -2,6 +2,46 @@
 
 spriteTypes = {
 
-  
+  SpriteType = { name = "GFX_construction6_medium"                  texturefile = "gfx//interface//technologies//construction6.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_construction7_medium"                  texturefile = "gfx//interface//technologies//construction7.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_construction8_medium"                  texturefile = "gfx//interface//technologies//construction8.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_construction9_medium"                  texturefile = "gfx//interface//technologies//construction9.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_construction10_medium"                 texturefile = "gfx//interface//technologies//construction10.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_excavation6_medium"                  texturefile = "gfx//interface//technologies//excavation1.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_excavation7_medium"                  texturefile = "gfx//interface//technologies//excavation2.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_excavation8_medium"                  texturefile = "gfx//interface//technologies//excavation3.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_excavation9_medium"                  texturefile = "gfx//interface//technologies//excavation4.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_excavation10_medium"                 texturefile = "gfx//interface//technologies//excavation5.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_infrastructure_construction1_medium"                  texturefile = "gfx//interface//technologies//infrastructure_construction1.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_infrastructure_construction2_medium"                  texturefile = "gfx//interface//technologies//infrastructure_construction2.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_infrastructure_construction3_medium"                  texturefile = "gfx//interface//technologies//infrastructure_construction3.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_infrastructure_construction4_medium"                  texturefile = "gfx//interface//technologies//infrastructure_construction4.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_fort_construction1_medium"                  texturefile = "gfx//interface//technologies//fortification_construction1.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_fort_construction2_medium"                  texturefile = "gfx//interface//technologies//fortification_construction2.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_fort_construction3_medium"                  texturefile = "gfx//interface//technologies//fortification_construction3.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_fort_construction4_medium"                  texturefile = "gfx//interface//technologies//fortification_construction4.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_special_construction1_medium"                  texturefile = "gfx//interface//technologies//special_construction1.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_special_construction2_medium"                  texturefile = "gfx//interface//technologies//special_construction2.dds"    alwaystransparent = yes	}
+
+  SpriteType = { name = "GFX_radar_construction1_medium"                  texturefile = "gfx//interface//technologies//radar_construction1.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_radar_construction2_medium"                  texturefile = "gfx//interface//technologies//radar_construction2.dds"    alwaystransparent = yes	}
+
+  SpriteType = { name = "GFX_flexible_line2_medium"                       texturefile = "gfx//interface//technologies//flexible_line2.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_flexible_line3_medium"                       texturefile = "gfx//interface//technologies//flexible_line3.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_streamlined_line2_medium"                    texturefile = "gfx//interface//technologies//streamlined_line2.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_streamlined_line3_medium"                    texturefile = "gfx//interface//technologies//streamlined_line3.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_production_line1_medium"                  texturefile = "gfx//interface//technologies//assembly_line_production2.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_production_line2_medium"                  texturefile = "gfx//interface//technologies//assembly_line_production3.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_production_line3_medium"                  texturefile = "gfx//interface//technologies//production_line3.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_naval_production1_medium"                    texturefile = "gfx//interface//technologies//naval_production1.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_naval_production2_medium"                    texturefile = "gfx//interface//technologies//naval_production2.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_naval_production3_medium"                    texturefile = "gfx//interface//technologies//naval_production3.dds"    alwaystransparent = yes	}
+
+  SpriteType = { name = "GFX_concentrated_industry6_medium"                 texturefile = "gfx//interface//technologies//concentrated_industry5.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_dispersed_industry6_medium"                    texturefile = "gfx//interface//technologies//dispersed_industry5.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_factories_production1_medium"                    texturefile = "gfx//interface//technologies//factories_production1.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_factories_production2_medium"                    texturefile = "gfx//interface//technologies//factories_production2.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_factories_production3_medium"                    texturefile = "gfx//interface//technologies//factories_production3.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_factories_production4_medium"                    texturefile = "gfx//interface//technologies//factories_production4.dds"    alwaystransparent = yes	}
 
 }
