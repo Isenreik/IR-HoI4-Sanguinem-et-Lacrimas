@@ -4,6 +4,8 @@ railway_artillery_unit = {
   sprite = artillery
   map_icon_category = infantry
   priority = 150
+  active = yes
+  support_brigade = yes
 
   type = {
     artillery

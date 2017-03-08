@@ -1817,6 +1817,8 @@ technologies = {
 
 		research_cost = 1
 
+		dependencies = { antitank3 = 1 }
+
 		start_year = 1943
 
 		folder = {
@@ -1881,11 +1883,6 @@ technologies = {
 		folder = {
 			name = artillery_folder
 			position = { x = @at_missile_row y = @1951 }
-		}
-
-		path = {
-			leads_to_tech = at_rocket3
-			research_cost_coeff = 1
 		}
 
 		ai_will_do = {
