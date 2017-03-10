@@ -1,0 +1,15 @@
+technologies = {
+
+@1939 = 0
+@1940 = 2
+@1941 = 4
+@1942 = 6
+
+@first_row = -3
+@middle_row = -1
+@second_row = 1
+@third_row = 4
+
+#bureau
+
+}
