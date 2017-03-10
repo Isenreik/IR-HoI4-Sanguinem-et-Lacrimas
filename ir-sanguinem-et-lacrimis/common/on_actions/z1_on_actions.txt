@@ -1,0 +1,11 @@
+on_actions = {
+
+  on_declare_war = {
+    effect = {
+
+      country_event = { id = chemical_warfare.5 days = 2}
+
+    }
+  }
+
+}

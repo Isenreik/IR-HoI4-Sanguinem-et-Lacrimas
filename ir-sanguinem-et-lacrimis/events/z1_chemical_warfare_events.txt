@@ -1,0 +1,149 @@
+﻿add_namespace = chemical_warfare
+
+##chemical_warfare started
+country_event = {
+	id = chemical_warfare.1
+	title = chemical_warfare.1.t
+	desc = chemical_warfare.1.d
+	picture = GFX_report_event_election_vote
+
+	fire_only_once = yes
+  is_triggered_only = yes
+
+	option = {
+		name = chemical_warfare.1.a
+
+		news_event = { id = chemical_warfare.4 days = 1 }
+
+		every_country = {
+			limit = {
+				OR = {
+					has_government = democratic
+					AND = {
+						is_neighbor_of = ROOT
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+			}
+			add_opinion_modifier = { target = ROOT modifier = chemical_warfare_started }
+		}
+		every_country = {
+			limit = {
+				has_war_with = ROOT
+			}
+			add_opinion_modifier = { target = ROOT modifier = chemical_warfare_started_war }
+		}
+
+		add_national_unity = -0.02
+		set_country_flag = uses_chemical_weapons
+		ROOT = { save_global_event_target_as = chemical_warfare_starter }
+	}
+
+}
+
+##chemical_warfare accepted
+country_event = {
+	id = chemical_warfare.2
+	title = chemical_warfare.2.t
+	desc = chemical_warfare.2.d
+	picture = GFX_report_event_election_vote
+
+	fire_only_once = yes
+  is_triggered_only = yes
+
+	option = {
+		name = chemical_warfare.2.a
+
+		every_country = {
+			limit = {
+				has_war_with = ROOT
+			}
+			add_opinion_modifier = { target = ROOT modifier = chemical_warfare_started_war }
+			}
+		add_national_unity = -0.02
+		set_country_flag = uses_chemical_weapons
+	}
+
+}
+
+##chemical_warfare ww1 participants
+country_event = {
+	id = chemical_warfare.3
+	title = chemical_warfare.3.t
+	desc = chemical_warfare.3.d
+
+	hidden = yes
+  is_triggered_only = yes
+
+	immediate = {
+		#if = {
+			#limit = {
+			#	ROOT = {
+			#		OR = {
+			#			original_tag = FRA
+			#			original_tag = ENG
+			#			original_tag = USA
+			#			original_tag = ITA
+			#			original_tag = GER
+			#		}
+			#	}
+			#}
+			set_technology  = {
+				gas_blue_cross = 1
+				gas_green_cross = 1
+				gas_yellow_cross = 1
+				simple_gasmasks = 1
+			}
+		#}
+	}
+
+	option = {
+		name = chemical_warfare.3.a
+	}
+
+}
+
+# news event
+news_event = {
+	id = chemical_warfare.4
+	picture = GFX_news_event_nuke
+	title = chemical_warfare.4.t
+	desc = chemical_warfare.4.d
+
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		set_global_flag = chemical_warfare_activated
+	}
+
+	option = {
+		name = chemical_warfare.4.a
+	}
+}
+
+
+# declaring war while using chemical weapons
+country_event = {
+	id = chemical_warfare.5
+	title = chemical_warfare.5.t
+	desc = chemical_warfare.5.d
+	picture = GFX_report_event_election_vote
+
+	hidden = yes
+
+	is_triggered_only = yes
+	trigger = {
+		ROOT = {
+			has_country_flag = uses_chemical_weapons
+		}
+	}
+
+	option = {
+		name = chemical_warfare.5.a
+
+		add_opinion_modifier = { target = FROM modifier = chemical_warfare_war }
+	}
+
+}

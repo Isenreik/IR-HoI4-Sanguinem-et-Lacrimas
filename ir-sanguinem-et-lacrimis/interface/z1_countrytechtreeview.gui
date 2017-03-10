@@ -4015,6 +4015,342 @@ guiTypes = {
 
 				}	##	END FOLDER
 
+				##	START bureau Folder
+				containerWindowType = {
+							name = "bureau_folder"
+							position = { x=0 y=47 }
+							size = { width = 100%% height = 100%% }
+							margin = { top = 13 left = 13 bottom = 24 right = 25}
+							drag_scroll = { left middle }
+							##verticalScrollbar = "right_vertical_slider"
+							horizontalScrollbar = "bottom_horizontal_slider"
+
+							background = {
+								name = "Background"
+								quadTextureSprite ="GFX_tiled_window_2b_border"
+							}
+
+							containerWindowType = {
+								name = "size_filler"
+								position = { x=0 y=0 }
+								size = { width = 2100 height = 100% }
+							}
+
+
+							iconType = {
+								name ="chemical_tech_bg"
+								spriteType = "GFX_chemical_tech_bg"
+								position = { x=59 y=33 } ## x=85
+							}
+
+							iconType = {
+								name ="officers_tech_bg"
+								spriteType = "GFX_officers_tech_bg"
+								position = { x=1075 y=33 }
+							}
+
+							iconType = {
+								name ="civilian_bureau_tech_bg"
+								spriteType = "GFX_civilian_bureau_tech_bg"
+								position = { x=1575 y=33 }
+							}
+
+							iconType = {
+								name = "highlight_grand_battle_plan"
+								spriteType = "GFX_tutorial_research_small_item_icon_glow"
+								position = { x=2245 y=291}
+								hide = yes
+								alwaystransparent = yes
+							}
+
+							## Titles
+
+							instantTextBoxType = {
+								name = "tactics_subtitle_chemical"
+								position = { x = 330 y = 35 }
+								textureFile = ""
+								font = "hoi_22tech"
+								borderSize = {x = 0 y = 4}
+								text = "SPECIALISED_TITLE_CHEMICAL"
+								maxWidth = 400
+								maxHeight = 122
+								format = center
+								Orientation = "UPPER_LEFT"
+							}
+
+							instantTextBoxType = {
+								name = "tactics_subtitle_officers"
+								position = { x = 850 y = 35 }
+								textureFile = ""
+								font = "hoi_22tech"
+								borderSize = {x = 0 y = 4}
+								text = "tactics_TITLE_OFFICERS"
+								maxWidth = 400
+								maxHeight = 122
+								format = center
+								Orientation = "UPPER_LEFT"
+							}
+
+							instantTextBoxType = {
+								name = "tactics_subtitle_civilian"
+								position = { x = 1370 y = 35 }
+								textureFile = ""
+								font = "hoi_22tech"
+								borderSize = {x = 0 y = 4}
+								text = "tactics_TITLE_civilian"
+								maxWidth = 400
+								maxHeight = 122
+								format = center
+								Orientation = "UPPER_LEFT"
+							}
+
+							## Description below title
+
+							instantTextBoxType = {
+								name = "tactics_subtitle_chemical_desc"
+								position = { x = 280 y = 70 }
+								textureFile = ""
+								font = "hoi_20b"
+								borderSize = {x = 0 y = 4}
+								text = "chemical_technology_desc"
+								maxWidth = 550
+								maxHeight = 122
+								format = center
+								Orientation = "UPPER_LEFT"
+							}
+
+							instantTextBoxType = {
+								name = "tactics_subtitle_officers_tech_desc"
+								position = { x = 800 y = 70 }
+								textureFile = ""
+								font = "hoi_20b"
+								borderSize = {x = 0 y = 4}
+								text = "OFFICERS_TECH_DESC"
+								maxWidth = 550
+								maxHeight = 122
+								format = center
+								Orientation = "UPPER_LEFT"
+							}
+
+							instantTextBoxType = {
+								name = "tactics_subtitle_civilian_tech_desc"
+								position = { x = 1435 y = 70 }
+								textureFile = ""
+								font = "hoi_20b"
+								borderSize = {x = 0 y = 4}
+								text = "civilian_technology_desc"
+								maxWidth = 250
+								maxHeight = 122
+								format = center
+								Orientation = "UPPER_LEFT"
+							}
+
+							## Subtitles
+
+							instantTextBoxType = {
+								name = "chemical_ammo_subtitle1"
+								position = { x = 415 y = 220 }
+								textureFile = ""
+								font = "hoi_22tech"
+								borderSize = {x = 0 y = 4}
+								text = "chemical_ammo_subtitle1_label"
+								maxWidth = 200
+								maxHeight = 122
+								format = center
+								Orientation = "UPPER_LEFT"
+								pdx_tooltip = "chemical_ammo_subtitle1_tt"
+							}
+
+							instantTextBoxType = {
+								name = "chemical_incendiary_subtitle"
+								position = { x = 720 y = 180 }
+								textureFile = ""
+								font = "hoi_22tech"
+								borderSize = {x = 0 y = 4}
+								text = "chemical_incendiary_subtitle_label"
+								maxWidth = 100
+								maxHeight = 222
+								format = center
+								Orientation = "UPPER_LEFT"
+								pdx_tooltip = "chemical_incendiary_subtitle_tt"
+							}
+
+							instantTextBoxType = {
+								name = "amphibious_LT_subtitle"
+								position = { x = 950 y = 220 }
+								textureFile = ""
+								font = "hoi_22tech"
+								borderSize = {x = 0 y = 4}
+								text = "amphibious_LT_subtitle_label"
+								maxWidth = 250
+								maxHeight = 122
+								format = center
+								Orientation = "UPPER_LEFT"
+								pdx_tooltip = "amphibious_LT_subtitle_TT"
+							}
+
+							instantTextBoxType = {
+								name = "amphibious_MT_subtitle"
+								position = { x = 1220 y = 340 }
+								textureFile = ""
+								font = "hoi_22tech"
+								borderSize = {x = 0 y = 4}
+								text = "amphibious_MT_subtitle_lable"
+								maxWidth = 150
+								maxHeight = 122
+								format = center
+								Orientation = "UPPER_LEFT"
+								pdx_tooltip = "amphibious_MT_subtitle_TT"
+							}
+
+							## Gridbox
+
+							gridboxtype = {
+								name = "chemical_warfare_tech_tree"
+								position = { x=50 y=172 }
+								size = { width = 920 height = 900 }
+								slotsize = { width=60 height= 60 }
+								format = "UP"
+
+								background = {
+									name = "Background"
+									quadTextureSprite ="GFX_fullborder_tiled"
+									position = { x=0 y=-150 }
+								}
+							}
+
+							gridboxtype = {
+								name = "chemical_white_p_technology_tree"
+								position = { x=180 y=172 }
+								size = { width = 520 height = 900 }
+								slotsize = { width=60 height= 60 }
+								format = "UP"
+							}
+
+							## criminal years
+
+							containerWindowType = {
+								name = "chemical_techtree_stripes"
+								position = { x=55 y=172 }
+								size = {
+									width = 520 height = 200
+									min = { width = 100%% height = 100%% }
+								}
+								clipping = no
+
+								instantTextBoxType = {
+										name = "chemical_year1"
+										position = { x = 22 y = 20 }
+										textureFile = ""
+										font = "hoi_36header"
+										borderSize = { x = 0 y = 0}
+										text = "1916"
+										maxWidth = 100
+										maxHeight = 32
+										format = left
+										Orientation = "UPPER_LEFT"
+								}
+								instantTextBoxType = {
+										name = "chemical_year2"
+										position = { x = 22 y = 130 }
+										textureFile = ""
+										font = "hoi_36header"
+										borderSize = { x = 0 y = 0}
+										text = "1917"
+										maxWidth = 100
+										maxHeight = 32
+										format = left
+										Orientation = "UPPER_LEFT"
+								}
+								instantTextBoxType = {
+										name = "chemical_year3"
+										position = { x = 22 y = 250 }
+										textureFile = ""
+										font = "hoi_36header"
+										borderSize = { x = 0 y = 0}
+										text = "1936"
+										maxWidth = 100
+										maxHeight = 32
+										format = left
+										Orientation = "UPPER_LEFT"
+								}
+								instantTextBoxType = {
+										name = "chemical_year4"
+										position = { x = 22 y = 370 }
+										textureFile = ""
+										font = "hoi_36header"
+										borderSize = { x = 0 y = 0}
+										text = "1938"
+										maxWidth = 100
+										maxHeight = 32
+										format = left
+										Orientation = "UPPER_LEFT"
+								}
+								instantTextBoxType = {
+										name = "chemical_year5"
+										position = { x = 22 y = 490 }
+										textureFile = ""
+										font = "hoi_36header"
+										borderSize = { x = 0 y = 0}
+										text = "1939"
+										maxWidth = 100
+										maxHeight = 32
+										format = left
+										Orientation = "UPPER_LEFT"
+								}
+								instantTextBoxType = {
+										name = "chemical_year6"
+										position = { x = 22 y = 610 }
+										textureFile = ""
+										font = "hoi_36header"
+										borderSize = { x = 0 y = 0}
+										text = "1942"
+										maxWidth = 100
+										maxHeight = 32
+										format = left
+										Orientation = "UPPER_LEFT"
+								}
+
+							}
+
+							gridboxtype = {
+								name = "officers_technology_tree"
+								position = { x=2570 y=172 }
+								size = { width = 850 height = 900 }
+								slotsize = { width=60 height= 60 }
+								format = "UP"
+
+								background = {
+									name = "Background"
+									quadTextureSprite ="GFX_fullborder_tiled"
+									position = { x=0 y=-150 }
+								}
+							}
+
+							gridboxtype = {
+								name = "civilian_bureau_technology_tree"
+								position = { x=3420 y=172 }
+								size = { width = 280 height = 900 }
+								slotsize = { width=60 height= 60 }
+								format = "UP"
+
+								background = {
+									name = "Background"
+									quadTextureSprite ="GFX_fullborder_tiled"
+									position = { x=0 y=-150 }
+								}
+							}
+
+							iconType = {
+								name = "highlight_specialised_1"
+								spriteType = "GFX_tutorial_research_small_item_icon_glow"
+								position = { x=135 y=170}
+								hide = yes
+								alwaystransparent = yes
+							}
+
+						}	##	END FOLDER
+
 		## Folder Tabs
 
 		containerWindowType = {
@@ -4148,7 +4484,13 @@ guiTypes = {
 				quadTextureSprite = "GFX_specialised_folder_tab"
 				frame = 1
 				clicksound = click_default
-
+			}
+			buttonType = {
+				position = { x = 1200 y = 0 }
+				name = "bureau_folder_tab"
+				quadTextureSprite = "GFX_bureau_folder_tab"
+				frame = 1
+				clicksound = click_default
 			}
 
 
@@ -5159,7 +5501,95 @@ guiTypes = {
 			format = right
 		}
 
-	} 	##	END FOLDER ITEM
+	} 	##	END FOLDER SPECIALISED ITEM
+
+	##	START BUREAU ITEM
+
+	containerWindowType = {
+		name = "techtree_bureau_folder_small_item"
+		position = { x=0 y=0 }
+		size = { width = 72 height = 72 }
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+
+		iconType = {
+			name = "Icon"
+			position = { x=3 y=3 }
+			spriteType = "GFX_technology_medium"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "bonus_icon"
+			position = { x=3 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 17 y = -22 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 4 y = 4}
+			text = "lol boat"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+		}
+	}
+
+	containerWindowType = {
+		name = "techtree_bureau_folder_item"
+		position = { x=-55 y=0 }
+		size = { width = 204 height = 72 }
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+
+		instantTextBoxType = {
+			name = "Name"
+			position = { x = 3 y = -1 }
+			textureFile = ""
+			font = "hoi_20bs"
+			borderSize = {x = 4 y = 4}
+			text = "Lortespasserkanon"
+			maxWidth = 166
+			maxHeight = 20
+			fixedsize = yes
+			format = left
+		}
+
+		iconType = {
+			name = "Icon"
+			position = { x=85 y=50 }
+			spriteType = "GFX_technology_medium"
+			centerposition = yes
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "bonus_icon"
+			position = { x=115 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 129 y = -22 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 4 y = 4}
+			text = "bang bang klik"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+		}
+
+	} 	##	END FOLDER BUREAU ITEM
 
 	containerWindowType = {
 		name = "techtree_xor_item"

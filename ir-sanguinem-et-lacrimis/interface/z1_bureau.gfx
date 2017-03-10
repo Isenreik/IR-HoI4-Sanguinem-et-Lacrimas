@@ -1,0 +1,27 @@
+## by Araxiel - original script do not steel
+
+spriteTypes = {
+
+  SpriteType = { name = "GFX_chemical_tech_bg"           texturefile = "gfx//criminal_tech_bg.dds"  }
+  SpriteType = { name = "GFX_officers_tech_bg"           texturefile = "gfx//criminal_tech_bg.dds"  }
+  SpriteType = { name = "GFX_civilian_bureau_tech_bg"    texturefile = "gfx//criminal_tech_bg.dds"  }
+
+  SpriteType = { name = "GFX_chemical_warfare_tech_medium"              texturefile = "gfx//interface//technologies//naval_production1.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_simple_gasmasks_medium"                    texturefile = "gfx//interface//technologies//naval_production1.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_gasmask_training_medium"                   texturefile = "gfx//interface//technologies//naval_production1.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_impregnated_gasmask_medium"                texturefile = "gfx//interface//technologies//naval_production1.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_advanced_filters_medium"                   texturefile = "gfx//interface//technologies//naval_production1.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_gas_blue_cross_medium"                       texturefile = "gfx//interface//technologies//naval_production1.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_gas_blue_cross2_medium"                      texturefile = "gfx//interface//technologies//naval_production1.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_gas_green_cross_medium"                      texturefile = "gfx//interface//technologies//naval_production1.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_gas_green_cross2_medium"                     texturefile = "gfx//interface//technologies//naval_production1.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_gas_yellow_cross_medium"                     texturefile = "gfx//interface//technologies//naval_production1.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_gas_yellow_cross2_medium"                    texturefile = "gfx//interface//technologies//naval_production1.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_chemical_strat_bombing_medium"           texturefile = "gfx//interface//technologies//naval_production1.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_chemical_tac_bombing_medium"             texturefile = "gfx//interface//technologies//naval_production1.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_chemical_white_p_technology_medium"      texturefile = "gfx//interface//technologies//naval_production1.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_napalm_tech_medium"                      texturefile = "gfx//interface//technologies//naval_production1.dds"    alwaystransparent = yes	}
+
+  SpriteType = { name = "GFX_tactic_prepare_gas_attack_medium"                      texturefile = "gfx//interface//technologies//naval_production1.dds"    alwaystransparent = yes	}
+
+}
