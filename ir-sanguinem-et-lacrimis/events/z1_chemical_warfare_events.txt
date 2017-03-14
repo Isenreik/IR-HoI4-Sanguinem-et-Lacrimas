@@ -5,7 +5,7 @@ country_event = {
 	id = chemical_warfare.1
 	title = chemical_warfare.1.t
 	desc = chemical_warfare.1.d
-	picture = GFX_report_event_election_vote
+	picture = GFX_report_event_ast_parliament_house
 
 	fire_only_once = yes
   is_triggered_only = yes
@@ -46,7 +46,7 @@ country_event = {
 	id = chemical_warfare.2
 	title = chemical_warfare.2.t
 	desc = chemical_warfare.2.d
-	picture = GFX_report_event_election_vote
+	picture = GFX_report_event_ast_parliament_house
 
 	fire_only_once = yes
   is_triggered_only = yes
@@ -129,7 +129,7 @@ country_event = {
 	id = chemical_warfare.5
 	title = chemical_warfare.5.t
 	desc = chemical_warfare.5.d
-	picture = GFX_report_event_election_vote
+	picture = GFX_report_event_ast_parliament_house
 
 	hidden = yes
 

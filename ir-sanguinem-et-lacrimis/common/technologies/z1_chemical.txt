@@ -19,7 +19,7 @@ technologies = {
   chemical_warfare_tech = {
 
     enable_tactic = tactic_prepare_gas_attack
-
+    #I know you are reading this
     on_research_complete = {
       if = {
       	limit = {
@@ -46,12 +46,12 @@ technologies = {
             }
         }
         hidden_effect = {
-          country_event = { days = 2 id = chemical_warfare.3 }
+          country_event = { days = 2 id = chemical_warfare.3 }  # I can see you
         }
         custom_effect_tooltip = chemical_warfare_ww1_stockpile
       }
     }
-
+    #what do you think you're doing? Stealing my code?
     path = {
       leads_to_tech = simple_gasmasks
       research_cost_coeff = 1
@@ -101,7 +101,7 @@ technologies = {
     enable_tactic = tactic_gas_mask_defense
 
     path = {
-      leads_to_tech = impregnated_gasmask
+      leads_to_tech = improved_gasmask
       research_cost_coeff = 1
     }
     path = {
@@ -150,7 +150,7 @@ technologies = {
     }
   }
 
-  impregnated_gasmask = {
+  improved_gasmask = {
 
     enable_tactic = tactic_gas_mask_defense_2
 
@@ -204,7 +204,7 @@ technologies = {
       factor = 1.5
     }
   }
-
+  #next time, just ask before poking your nose around here
   gas_blue_cross = {
 
     enable_tactic = tactic_blue_cross_attack
@@ -301,7 +301,7 @@ technologies = {
 
   gas_yellow_cross = {
 
-    production_speed_buildings_factor = 0.03
+    enable_tactic = tactic_yellow_cross_attack
 
     path = {
       leads_to_tech = gas_yellow_cross2
@@ -327,7 +327,7 @@ technologies = {
 
   gas_yellow_cross2 = {
 
-    production_speed_buildings_factor = 0.03
+    enable_tactic = tactic_yellow_cross_attack_2
 
     research_cost = 1
     start_year = 1938

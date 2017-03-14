@@ -2,26 +2,45 @@
 
 spriteTypes = {
 
-  SpriteType = { name = "GFX_chemical_tech_bg"           texturefile = "gfx//criminal_tech_bg.dds"  }
-  SpriteType = { name = "GFX_officers_tech_bg"           texturefile = "gfx//criminal_tech_bg.dds"  }
-  SpriteType = { name = "GFX_civilian_bureau_tech_bg"    texturefile = "gfx//criminal_tech_bg.dds"  }
+  SpriteType = { name = "GFX_chemical_tech_bg"           texturefile = "gfx//chemical_warfare_bg.dds"  }
+  SpriteType = { name = "GFX_officers_tech_bg"           texturefile = "gfx//officers_bg.dds"  }
+  SpriteType = { name = "GFX_civilian_bureau_tech_bg"    texturefile = "gfx//rationing_bg.dds"  }
 
-  SpriteType = { name = "GFX_chemical_warfare_tech_medium"              texturefile = "gfx//interface//technologies//naval_production1.dds"    alwaystransparent = yes	}
-  SpriteType = { name = "GFX_simple_gasmasks_medium"                    texturefile = "gfx//interface//technologies//naval_production1.dds"    alwaystransparent = yes	}
-  SpriteType = { name = "GFX_gasmask_training_medium"                   texturefile = "gfx//interface//technologies//naval_production1.dds"    alwaystransparent = yes	}
-  SpriteType = { name = "GFX_impregnated_gasmask_medium"                texturefile = "gfx//interface//technologies//naval_production1.dds"    alwaystransparent = yes	}
-  SpriteType = { name = "GFX_advanced_filters_medium"                   texturefile = "gfx//interface//technologies//naval_production1.dds"    alwaystransparent = yes	}
-  SpriteType = { name = "GFX_gas_blue_cross_medium"                       texturefile = "gfx//interface//technologies//naval_production1.dds"    alwaystransparent = yes	}
-  SpriteType = { name = "GFX_gas_blue_cross2_medium"                      texturefile = "gfx//interface//technologies//naval_production1.dds"    alwaystransparent = yes	}
-  SpriteType = { name = "GFX_gas_green_cross_medium"                      texturefile = "gfx//interface//technologies//naval_production1.dds"    alwaystransparent = yes	}
-  SpriteType = { name = "GFX_gas_green_cross2_medium"                     texturefile = "gfx//interface//technologies//naval_production1.dds"    alwaystransparent = yes	}
-  SpriteType = { name = "GFX_gas_yellow_cross_medium"                     texturefile = "gfx//interface//technologies//naval_production1.dds"    alwaystransparent = yes	}
-  SpriteType = { name = "GFX_gas_yellow_cross2_medium"                    texturefile = "gfx//interface//technologies//naval_production1.dds"    alwaystransparent = yes	}
-  SpriteType = { name = "GFX_chemical_strat_bombing_medium"           texturefile = "gfx//interface//technologies//naval_production1.dds"    alwaystransparent = yes	}
-  SpriteType = { name = "GFX_chemical_tac_bombing_medium"             texturefile = "gfx//interface//technologies//naval_production1.dds"    alwaystransparent = yes	}
-  SpriteType = { name = "GFX_chemical_white_p_technology_medium"      texturefile = "gfx//interface//technologies//naval_production1.dds"    alwaystransparent = yes	}
-  SpriteType = { name = "GFX_napalm_tech_medium"                      texturefile = "gfx//interface//technologies//naval_production1.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_chemical_warfare_tech_medium"              texturefile = "gfx//interface//technologies//chemical_warfare.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_simple_gasmasks_medium"                    texturefile = "gfx//interface//technologies//simple_gasmask.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_gasmask_training_medium"                   texturefile = "gfx//interface//technologies//gasmask_training.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_improved_gasmask_medium"                texturefile = "gfx//interface//technologies//improved_gasmask.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_advanced_filters_medium"                   texturefile = "gfx//interface//technologies//advanced_filters.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_gas_blue_cross_medium"                       texturefile = "gfx//interface//technologies//gas_attacks_blue1.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_gas_blue_cross2_medium"                      texturefile = "gfx//interface//technologies//gas_attacks_blue2.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_gas_green_cross_medium"                      texturefile = "gfx//interface//technologies//gas_attacks_green1.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_gas_green_cross2_medium"                     texturefile = "gfx//interface//technologies//gas_attacks_green2.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_gas_yellow_cross_medium"                     texturefile = "gfx//interface//technologies//gas_attacks_yellow1.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_gas_yellow_cross2_medium"                    texturefile = "gfx//interface//technologies//gas_attacks_yellow2.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_chemical_strat_bombing_medium"           texturefile = "gfx//interface//technologies//bombing_chemical_strat.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_chemical_tac_bombing_medium"             texturefile = "gfx//interface//technologies//bombing_chemical_tactical.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_chemical_white_p_technology_medium"      texturefile = "gfx//interface//technologies//white_p.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_napalm_tech_medium"                      texturefile = "gfx//interface//technologies//napalm.dds"    alwaystransparent = yes	}
 
-  SpriteType = { name = "GFX_tactic_prepare_gas_attack_medium"                      texturefile = "gfx//interface//technologies//naval_production1.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_officers_tech1_medium"                      texturefile = "gfx//interface//technologies//officer_tech1.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_officers_tech2_medium"                      texturefile = "gfx//interface//technologies//officer_tech2.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_officers_tech3_medium"                      texturefile = "gfx//interface//technologies//officer_tech3.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_flight_officers_tech1_medium"               texturefile = "gfx//interface//technologies//officer_tech_air1.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_flight_officers_training1_medium"           texturefile = "gfx//interface//technologies//officer_tech_air_training.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_flight_officers_honor1_medium"              texturefile = "gfx//interface//technologies//officer_tech_air_honor.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_flight_officers_honor2_medium"              texturefile = "gfx//interface//technologies//officer_tech_air_honor2.dds"    alwaystransparent = yes	}
+
+  spriteType = { name = "GFX_idea_civilian_truck_conversation"                 texturefile = "gfx/interface/ideas/FRA_motorized_focus.dds"  }
+  spriteType = { name = "GFX_report_event_civ_truck"                 texturefile = "gfx/event_pictures/report_event_civ_truck.dds"  }
+
+  SpriteType = { name = "GFX_press_tech1_medium"           texturefile = "gfx//interface//technologies//press_tech.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_press_media1_medium"             texturefile = "gfx//interface//technologies//press_tech2.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_press_media2_medium"      texturefile = "gfx//interface//technologies//press_tech_fist.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_press_censorship1_medium"                      texturefile = "gfx//interface//technologies//press_tech_crossed.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_press_mobilisation1_medium"                      texturefile = "gfx//interface//technologies//press_tech_warbonds.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_press_mobilisation2_medium"                      texturefile = "gfx//interface//technologies//press_tech_manpower.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_press_trucks1_medium"                      texturefile = "gfx//interface//technologies//press_tech_truck_cog.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_press_trucks2_medium"                      texturefile = "gfx//interface//technologies//press_tech_truck.dds"    alwaystransparent = yes	}
+
 
 }
