@@ -1,0 +1,28 @@
+#do you think you're smart?
+ideas = {
+
+	country = {
+
+    civilian_truck_conversation = {
+
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = yes
+      }
+
+      picture = civilian_truck_conversation
+
+      removal_cost = -1
+
+      equipment_bonus = {
+        motorized_equipment = {
+          build_cost_ic = -0.08 instant = yes
+        }
+      }
+    }
+
+  }
+}

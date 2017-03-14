@@ -12,7 +12,7 @@ spriteTypes = {
 
   spriteType = {
     name = "GFX_bureau_folder_tab"
-    textureFile = "gfx//interface//techtree_specialised_tab.dds"
+    textureFile = "gfx//interface//idea_political_tab.dds"
     noOfFrames = 2
   }
 

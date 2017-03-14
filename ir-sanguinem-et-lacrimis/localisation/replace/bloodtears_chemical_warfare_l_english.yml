@@ -2,38 +2,49 @@
 
 ## criminal
 
-SPECIALISED_TITLE_CHEMICAL:0 "CHEMICAL WARFARE"
+SPECIALISED_TITLE_CHEMICAL: "CHEMICAL WARFARE"
 
-chemical_warfare_tech:0 "Chemical Warfare"
-chemical_warfare_tech_desc:0 "One might say these times are dire enough to consider using these weapons once again. But if we decide to employ these weapons, there will be retaliation by our enemies and the international community.\n"
-chemical_technology_desc:0 "After the brutality, death and misery chemical warfare has brought upon the people during the Great War, most nations became very hesitant at employing these weapons of horror again; especially considering most leaders witnessed the torment of these weapons first hand.\n"
-chemical_ammo_subtitle1_label:0 "Chemical Ammunition"
-chemical_ammo_subtitle1_tt:0 "Chemical shells to attack the enemy with."
-chemical_incendiary_subtitle_label:0 "Incendiary Munition"
-chemical_incendiary_subtitle_tt:0 "Incendiary shells, bullets and bombs."
+chemical_warfare_tech: "Chemical Warfare"
+chemical_warfare_tech_desc: "One might say these times are dire enough to consider using these weapons once again. But if we decide to employ these weapons, there will be retaliation by our enemies and the international community.\n"
+chemical_technology_desc: "After the brutality, death and misery chemical warfare has brought upon the people during the Great War, most nations became very hesitant at employing these weapons of horror again; especially considering most leaders witnessed the torment of these weapons first hand.\n"
+chemical_ammo_subtitle1_label: "Chemical Ammunition"
+chemical_ammo_subtitle1_tt: "Chemical shells to attack the enemy with."
+chemical_incendiary_subtitle_label: "Incendiary Munition"
+chemical_incendiary_subtitle_tt: "Incendiary shells, bullets and bombs."
 
-chemical_warfare_ww1_stockpile:0 "We can re-activate our old stockpiles from the Great War"
+chemical_white_p_technology: "White Phosporous"
+chemical_white_p_technology_desc: "Don't feel like writing this now."
+napalm_tech: "Napalm"
+napalm_tech_desc: "Don't feel like writing this now."
 
-chemical_warfare_first_tt:0 "We are the first nation resorting to CW\n"
-chemical_warfare_accept_tt:0 "Someone else provoked the use of CW\n"
+gas_blue_cross: "Blue Cross"
+GER_gas_blue_cross: "Blaukreuz"
+gas_blue_cross_desc: "Blue Cross are chemical agents affecting the upper respiratory tract. Amongst the most common agents are diphenylchloroarsine and diphenylcyanoarsine. Agents such as this cause nausea, violent vomiting and even pulmonary edema (fluid buildup in the lungs). These gases are not inherintly lethal, but they help at exposing the enemy and hinder them at mounting a good defence. Blue Cross shells are mixed in with a high ratio of ordinary high-explosive shells, conceiling the gas and making it hard to differentiated such an attack with ordinary high-explosive shelling."
+gas_blue_cross2: "Blue Cross II"
+GER_gas_blue_cross2: "Blaukreuz Zwei"
+gas_blue_cross2_desc: "Improved lung irritants such as lewisite and better mixture, together with improvements in shell and delivery will further improve our irritants, increasing their power to errode the enemy's ability to put up a effective resistance."
 
-chemical_warfare.1.t:0 "Initiate Chemical Warfare"
+chemical_warfare_ww1_stockpile: "We can re-activate our old stockpiles from the Great War"
 
-chemical_warfare.2.t:0 "Retaliate to Chemical Warfare"
+chemical_warfare_first_tt: "We are the first nation resorting to CW\n"
+chemical_warfare_accept_tt: "Someone else provoked the use of CW\n"
+
+chemical_warfare.1.t: "Initiate Chemical Warfare"
+
+chemical_warfare.2.t: "Retaliate to Chemical Warfare"
 
 
-chemical_warfare_started:0 "First Nation using chemical warfare"
+chemical_warfare_started: "First Nation using chemical warfare"
 chemical_warfare_started_war: "Provoked the use of chemical weapons"
-chemical_warfare_war:0 "Used chemical weapons against us"
+chemical_warfare_war: "Used chemical weapons against us"
 
-
-tactic_prepare_gas_attack:0 "Prepare Gas Attack"
-tactic_cw_basic_attack:0 "Follow Up"
-tactic_blue_cross_attack:0 "Blue Cross Attack"
-tactic_blue_cross_attack_2:0 "Improved Blue Cross Attack"
-tactic_green_cross_attack:0 "Green Cross Attack"
-tactic_green_cross_attack_2:0 "Improved Green Cross Attack"
-tactic_gas_mask_defense:0 "Gas Mask Defense"
-tactic_gas_mask_defense_2:0 "Improved Gas Mask Defense"
-tactic_gas_mask_counter_attack:0 "Gas Counter-Attack"
-chemical_warfare:0 "Chemical Warfare"
+tactic_prepare_gas_attack: "Prepare Gas Attack"
+tactic_cw_basic_attack: "Follow Up"
+tactic_blue_cross_attack: "Blue Cross Attack"
+tactic_blue_cross_attack_2: "Improved Blue Cross Attack"
+tactic_green_cross_attack: "Green Cross Attack"
+tactic_green_cross_attack_2: "Improved Green Cross Attack"
+tactic_gas_mask_defense: "Gas Mask Defense"
+tactic_gas_mask_defense_2: "Improved Gas Mask Defense"
+tactic_gas_mask_counter_attack: "Gas Counter-Attack"
+chemical_warfare: "Chemical Warfare"

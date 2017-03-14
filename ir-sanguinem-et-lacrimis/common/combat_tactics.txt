@@ -924,6 +924,44 @@ tactic_green_cross_attack_2 = {
 	display_phase = chemical_warfare
   phase = close_combat
 
+	defender = -0.25
+}
+
+tactic_yellow_cross_attack = {
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = chemical_warfare
+	}
+
+	active = no
+
+	base = 4
+	picture = tactics_yellow_cross_attack
+	countered_by = tactic_gas_mask_defense
+
+  phase = close_combat
+	display_phase = chemical_warfare
+
+	defender = -0.25
+}
+
+tactic_yellow_cross_attack_2 = {
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = chemical_warfare
+	}
+
+	active = no
+
+	base = 3
+	picture = tactics_yellow_cross_attack_2
+	countered_by = tactic_gas_mask_defense_2
+
+	display_phase = chemical_warfare
+  phase = close_combat
+
 	combat_width = -0.25
 	defender = -0.25
 }

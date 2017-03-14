@@ -4016,6 +4016,7 @@ guiTypes = {
 				}	##	END FOLDER
 
 				##	START bureau Folder
+				## You can't drink just 6
 				containerWindowType = {
 							name = "bureau_folder"
 							position = { x=0 y=47 }
@@ -4040,19 +4041,19 @@ guiTypes = {
 							iconType = {
 								name ="chemical_tech_bg"
 								spriteType = "GFX_chemical_tech_bg"
-								position = { x=59 y=33 } ## x=85
+								position = { x= 65 y=33 }
 							}
 
 							iconType = {
 								name ="officers_tech_bg"
 								spriteType = "GFX_officers_tech_bg"
-								position = { x=1075 y=33 }
+								position = { x=975 y=33 }
 							}
 
 							iconType = {
 								name ="civilian_bureau_tech_bg"
 								spriteType = "GFX_civilian_bureau_tech_bg"
-								position = { x=1575 y=33 }
+								position = { x=1495 y=33 }
 							}
 
 							iconType = {
@@ -4080,7 +4081,7 @@ guiTypes = {
 
 							instantTextBoxType = {
 								name = "tactics_subtitle_officers"
-								position = { x = 850 y = 35 }
+								position = { x = 1040 y = 35 }
 								textureFile = ""
 								font = "hoi_22tech"
 								borderSize = {x = 0 y = 4}
@@ -4093,7 +4094,7 @@ guiTypes = {
 
 							instantTextBoxType = {
 								name = "tactics_subtitle_civilian"
-								position = { x = 1370 y = 35 }
+								position = { x = 1545 y = 35 }
 								textureFile = ""
 								font = "hoi_22tech"
 								borderSize = {x = 0 y = 4}
@@ -4113,7 +4114,7 @@ guiTypes = {
 								font = "hoi_20b"
 								borderSize = {x = 0 y = 4}
 								text = "chemical_technology_desc"
-								maxWidth = 550
+								maxWidth = 600
 								maxHeight = 122
 								format = center
 								Orientation = "UPPER_LEFT"
@@ -4121,12 +4122,12 @@ guiTypes = {
 
 							instantTextBoxType = {
 								name = "tactics_subtitle_officers_tech_desc"
-								position = { x = 800 y = 70 }
+								position = { x = 1050 y = 70 }
 								textureFile = ""
 								font = "hoi_20b"
 								borderSize = {x = 0 y = 4}
 								text = "OFFICERS_TECH_DESC"
-								maxWidth = 550
+								maxWidth = 350
 								maxHeight = 122
 								format = center
 								Orientation = "UPPER_LEFT"
@@ -4134,12 +4135,12 @@ guiTypes = {
 
 							instantTextBoxType = {
 								name = "tactics_subtitle_civilian_tech_desc"
-								position = { x = 1435 y = 70 }
+								position = { x = 1520 y = 70 }
 								textureFile = ""
 								font = "hoi_20b"
 								borderSize = {x = 0 y = 4}
 								text = "civilian_technology_desc"
-								maxWidth = 250
+								maxWidth = 450
 								maxHeight = 122
 								format = center
 								Orientation = "UPPER_LEFT"
@@ -4176,31 +4177,31 @@ guiTypes = {
 							}
 
 							instantTextBoxType = {
-								name = "amphibious_LT_subtitle"
-								position = { x = 950 y = 220 }
+								name = "flight_officers_subtitle"
+								position = { x = 980 y = 220 }
 								textureFile = ""
 								font = "hoi_22tech"
 								borderSize = {x = 0 y = 4}
-								text = "amphibious_LT_subtitle_label"
+								text = "flight_officers_subtitle_label"
 								maxWidth = 250
 								maxHeight = 122
 								format = center
 								Orientation = "UPPER_LEFT"
-								pdx_tooltip = "amphibious_LT_subtitle_TT"
+								pdx_tooltip = "flight_officers_subtitle_tt"
 							}
 
 							instantTextBoxType = {
-								name = "amphibious_MT_subtitle"
-								position = { x = 1220 y = 340 }
+								name = "officer_schools_subtitle"
+								position = { x = 1270 y = 135 }
 								textureFile = ""
 								font = "hoi_22tech"
 								borderSize = {x = 0 y = 4}
-								text = "amphibious_MT_subtitle_lable"
+								text = "officer_schools_subtitle_label"
 								maxWidth = 150
 								maxHeight = 122
 								format = center
 								Orientation = "UPPER_LEFT"
-								pdx_tooltip = "amphibious_MT_subtitle_TT"
+								pdx_tooltip = "officer_schools_subtitle_tt"
 							}
 
 							## Gridbox
@@ -4314,9 +4315,9 @@ guiTypes = {
 							}
 
 							gridboxtype = {
-								name = "officers_technology_tree"
-								position = { x=2570 y=172 }
-								size = { width = 850 height = 900 }
+								name = "officers_tech1_tree"
+								position = { x=970 y=172 }
+								size = { width = 510 height = 900 }
 								slotsize = { width=60 height= 60 }
 								format = "UP"
 
@@ -4328,9 +4329,9 @@ guiTypes = {
 							}
 
 							gridboxtype = {
-								name = "civilian_bureau_technology_tree"
-								position = { x=3420 y=172 }
-								size = { width = 280 height = 900 }
+								name = "press_tech1_tree"
+								position = { x=1480 y=172 }
+								size = { width = 520 height = 900 }
 								slotsize = { width=60 height= 60 }
 								format = "UP"
 
