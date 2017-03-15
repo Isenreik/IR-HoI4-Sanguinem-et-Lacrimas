@@ -868,7 +868,8 @@ tactic_blue_cross_attack = {
 
 	display_phase = chemical_warfare
 
-	defender = -0.25
+	defender = -0.10
+	attacker =  0.05
 }
 
 tactic_blue_cross_attack_2 = {
@@ -886,7 +887,8 @@ tactic_blue_cross_attack_2 = {
 
 	display_phase = chemical_warfare
 
-	defender = -0.25
+	defender = -0.15
+	attacker =  0.05
 }
 
 tactic_green_cross_attack = {
@@ -905,7 +907,7 @@ tactic_green_cross_attack = {
   phase = close_combat
 	display_phase = chemical_warfare
 
-	defender = -0.25
+	defender = -0.16
 }
 
 tactic_green_cross_attack_2 = {
@@ -924,7 +926,7 @@ tactic_green_cross_attack_2 = {
 	display_phase = chemical_warfare
   phase = close_combat
 
-	defender = -0.25
+	defender = -0.26
 }
 
 tactic_yellow_cross_attack = {
@@ -943,7 +945,7 @@ tactic_yellow_cross_attack = {
   phase = close_combat
 	display_phase = chemical_warfare
 
-	defender = -0.25
+	defender = -0.26
 }
 
 tactic_yellow_cross_attack_2 = {
@@ -962,8 +964,7 @@ tactic_yellow_cross_attack_2 = {
 	display_phase = chemical_warfare
   phase = close_combat
 
-	combat_width = -0.25
-	defender = -0.25
+	defender = -0.32
 }
 
 tactic_gas_mask_defense = {
