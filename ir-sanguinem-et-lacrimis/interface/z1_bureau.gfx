@@ -22,6 +22,10 @@ spriteTypes = {
   SpriteType = { name = "GFX_chemical_white_p_technology_medium"      texturefile = "gfx//interface//technologies//white_p.dds"    alwaystransparent = yes	}
   SpriteType = { name = "GFX_napalm_tech_medium"                      texturefile = "gfx//interface//technologies//napalm.dds"    alwaystransparent = yes	}
 
+  SpriteType = { name = "GFX_news_event_chemical_brit"                  texturefile = "gfx//event_pictures//news_event_chemical_brit.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_report_event_gas_ger"                      texturefile = "gfx//event_pictures//report_event_gas_ger.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_report_event_gas_ukf"                      texturefile = "gfx//event_pictures//report_event_gas_ukf.dds"    alwaystransparent = yes	}
+
   SpriteType = { name = "GFX_officers_tech1_medium"                      texturefile = "gfx//interface//technologies//officer_tech1.dds"    alwaystransparent = yes	}
   SpriteType = { name = "GFX_officers_tech2_medium"                      texturefile = "gfx//interface//technologies//officer_tech2.dds"    alwaystransparent = yes	}
   SpriteType = { name = "GFX_officers_tech3_medium"                      texturefile = "gfx//interface//technologies//officer_tech3.dds"    alwaystransparent = yes	}

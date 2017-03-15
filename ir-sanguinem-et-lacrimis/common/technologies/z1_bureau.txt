@@ -195,7 +195,7 @@ technologies = {
     on_research_complete = {
       set_rule = { can_use_kamikaze_pilots = yes }
     }
-    desc = "flight_officers_honor2_desc"
+    desc = "flight_officers_honor2_special"
 
     doctrine = yes
 		research_cost = 2
@@ -364,9 +364,9 @@ technologies = {
   press_trucks2 = {
 
     on_research_complete = {
-      country_event = { days = 1 id = press_tech_event.1 }
+      country_event = { hours = 2 id = press_tech_event.1 }
       set_country_flag = requested_civ_trucks
-      custom_effect_tooltip = press_trucks2_tt
+      #custom_effect_tooltip = press_trucks2_tt
     }
 
     desc = "press_trucks2_special_desc"

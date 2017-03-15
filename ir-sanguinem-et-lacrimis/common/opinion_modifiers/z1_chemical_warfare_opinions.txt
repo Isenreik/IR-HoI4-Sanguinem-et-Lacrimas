@@ -1,7 +1,7 @@
 opinion_modifiers = {
 
   chemical_warfare_started = {
-    value = -15
+    value = -10
   }
 
   chemical_warfare_started_war = {
