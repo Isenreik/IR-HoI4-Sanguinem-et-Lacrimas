@@ -848,7 +848,7 @@ tactic_cw_basic_attack = {
 	picture = attack
 
   phase = close_combat
-	countered_by = tactic_counterattack
+	countered_by = tactic_gas_mask_counter_attack
 
 	attacker = 0.05
 }
@@ -967,6 +967,30 @@ tactic_yellow_cross_attack_2 = {
 	defender = -0.32
 }
 
+tactic_chemical_attack_withdraw = {
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = chemical_warfare
+		OR = {
+			skill_advantage > 0
+			has_trait = trickster
+		}
+	}
+
+	active = yes
+
+	base = 2
+	picture = tactics_gas_mask
+	display_phase = chemical_warfare
+
+	picture = withdraw
+	phase = tactical_withdrawal
+
+	attacker = -0.20
+	defender = -0.10
+}
+
 tactic_gas_mask_defense = {
 	is_attacker = no
 	trigger = {
@@ -1002,7 +1026,7 @@ tactic_gas_mask_counter_attack = {
 	picture = tactics_gas_mask_counter
 
   display_phase = chemical_warfare
-  phase = close_combat
+  phase = no
 
 	defender =  0.15
 	attacker = -0.1
