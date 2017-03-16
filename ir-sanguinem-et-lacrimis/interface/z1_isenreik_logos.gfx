@@ -1,0 +1,5 @@
+spriteTypes = {
+
+  SpriteType = {    name = "GFX_isenreik_logo"    texturefile = "gfx//Isenreik_logo_128.dds" noOfFrames = 1}
+
+}
