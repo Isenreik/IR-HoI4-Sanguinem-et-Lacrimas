@@ -468,9 +468,12 @@ technologies = {
   napalm_tech = {
 
     air_cas_present_factor = 0.30
-    air_strategic_bomber_bombing_factor = 0.25
+    air_strategic_bomber_bombing_factor = 0.1
+    category_front_line = {
+      breakthrough = 0.02
+    }
 
-    research_cost = 1.8
+    research_cost = 2
     start_year = 1942
 
     folder = {
