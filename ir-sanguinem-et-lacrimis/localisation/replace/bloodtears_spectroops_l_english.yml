@@ -34,7 +34,7 @@ penal_technology2_label:0 "Mobilise criminals, dissidents, subversives and other
 
 penal_technology3:0 "Improved Penal Battalions"
 penal_technology3_short:0 "Improved Penal Battalions"
-penal_technology3_desc:0 "Improve our officers' abilities to commandeer our country's deplorable subjects and further incorporate penal battalions into the army structure.\n§YOnly available during war for Fascists and Communists!\n\n§!"
+penal_technology3_desc:0 "Improve our officers' abilities to command our country's deplorable subjects and further incorporate penal battalions into the army structure.\n§YOnly available during war for Fascists and Communists!\n\n§!"
 
 penals:0 "Penal Battalion"
 penals_desc:0 "Criminals, political opponents, degenerates, subversives and other undesirables forced to fight on the front lines."

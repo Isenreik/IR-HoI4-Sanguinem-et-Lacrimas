@@ -72,8 +72,8 @@ spriteTypes = {
   SpriteType = { name = "GFX_SAF_amphibious_mech_technology_2_medium"    texturefile = "gfx/interface/technologies/equipment/uk_amph_mech2.dds"  }
   SpriteType = { name = "GFX_RAJ_amphibious_mech_technology_2_medium"    texturefile = "gfx/interface/technologies/equipment/uk_amph_mech2.dds"  }
   # US
-  SpriteType = { name = "GFX_USA_amphibious_mech_technology_medium"      texturefile = "gfx/interface/technologies/equipment/us_amph_mech1.dds"  }
-  SpriteType = { name = "GFX_USA_amphibious_mech_technology_2_medium"    texturefile = "gfx/interface/technologies/equipment/us_amph_mech2.dds"  }
+  SpriteType = { name = "GFX_USA_amphibious_mech_technology_medium"      texturefile = "gfx/interface/technologies/equipment/usa_amph_mech1.dds"  }
+  SpriteType = { name = "GFX_USA_amphibious_mech_technology_2_medium"    texturefile = "gfx/interface/technologies/equipment/usa_amph_mech2.dds"  }
 
   ## amphibious light tank  -----------
 
@@ -86,7 +86,7 @@ spriteTypes = {
   SpriteType = { name = "GFX_ITA_light_tank_amphibious_tech_1_medium"    texturefile = "gfx/interface/technologies/ita_imp_light_tank.dds"  }
 
   SpriteType = { name = "GFX_SOV_light_tank_amphibious_tech_1_medium"    texturefile = "gfx/interface/technologies/equipment/sov_light_amphb_tank.dds"  } ##added
-  SpriteType = { name = "GFX_USA_light_tank_amphibious_tech_1_medium"    texturefile = "gfx/interface/technologies/equipment/us_improv_light_amphb_tank.dds"  } ##added
+  SpriteType = { name = "GFX_USA_light_tank_amphibious_tech_1_medium"    texturefile = "gfx/interface/technologies/equipment/usa_improv_light_amphb_tank.dds"  } ##added
   #Commonwealth
   SpriteType = { name = "GFX_ENG_light_tank_amphibious_tech_1_medium"    texturefile = "gfx/interface/technologies/equipment/uk_light_amphb_tank.dds"  }
   SpriteType = { name = "GFX_CAN_light_tank_amphibious_tech_1_medium"    texturefile = "gfx/interface/technologies/equipment/uk_light_amphb_tank.dds"  }
@@ -101,7 +101,7 @@ spriteTypes = {
   SpriteType = { name = "GFX_JAP_light_tank_amphibious_tech_2_medium"    texturefile = "gfx/interface/technologies/jap_adv_light_tank.dds"  }
   SpriteType = { name = "GFX_SOV_light_tank_amphibious_tech_2_medium"    texturefile = "gfx/interface/technologies/equipment/sov_adv_light_amphb_tank.dds"  }
   SpriteType = { name = "GFX_ITA_light_tank_amphibious_tech_2_medium"    texturefile = "gfx/interface/technologies/ita_adv_light_tank.dds"  }
-  SpriteType = { name = "GFX_USA_light_tank_amphibious_tech_2_medium"    texturefile = "gfx/interface/technologies/equipment/us_adv_light_amphb_tank.dds"  } #added
+  SpriteType = { name = "GFX_USA_light_tank_amphibious_tech_2_medium"    texturefile = "gfx/interface/technologies/equipment/usa_adv_light_amphb_tank.dds"  } #added
   #Commonwealth
   SpriteType = { name = "GFX_ENG_light_tank_amphibious_tech_2_medium"    texturefile = "gfx/interface/technologies/equipment/uk_imp_light_amphb_tank.dds"  }
   SpriteType = { name = "GFX_CAN_light_tank_amphibious_tech_2_medium"    texturefile = "gfx/interface/technologies/equipment/uk_imp_light_amphb_tank.dds"  }
@@ -130,8 +130,8 @@ spriteTypes = {
   SpriteType = { name = "GFX_ITA_medium_tank_amphibious_tech_1_medium"    texturefile = "gfx/interface/technologies/ita_imp_main_tank.dds"  }
   SpriteType = { name = "GFX_ITA_medium_tank_amphibious_tech_2_medium"    texturefile = "gfx/interface/technologies/ita_adv_main_tank.dds"  }
 
-  SpriteType = { name = "GFX_USA_medium_tank_amphibious_tech_1_medium"    texturefile = "gfx/interface/technologies/equipment/us_med_amphb_tank.dds"  } ##added
-  SpriteType = { name = "GFX_USA_medium_tank_amphibious_tech_2_medium"    texturefile = "gfx/interface/technologies/equipment/us_adv_med_amphb_tank.dds"  }
+  SpriteType = { name = "GFX_USA_medium_tank_amphibious_tech_1_medium"    texturefile = "gfx/interface/technologies/equipment/usa_med_amphb_tank.dds"  } ##added
+  SpriteType = { name = "GFX_USA_medium_tank_amphibious_tech_2_medium"    texturefile = "gfx/interface/technologies/equipment/usa_adv_med_amphb_tank.dds"  }
 
   SpriteType = { name = "GFX_naval_invasion_support_bg"    texturefile = "gfx//naval_invasion_support_bg.dds"  }
 
