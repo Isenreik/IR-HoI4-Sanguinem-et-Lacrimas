@@ -85,6 +85,14 @@ guiTypes = {
 			oversound = ui_menu_over
 			pdx_tooltip = "MENU_ISENREIK_INFO"
 		}
+		ButtonType = {
+			name = "sanguinem_logo_medium"
+			position = { x= -110 y = 150 }
+			quadTextureSprite ="GFX_sanguinem_logo"
+			clicksound = click_default
+			oversound = ui_menu_over
+			pdx_tooltip = "MENU_ISENREIK_BLOODTEARS"
+		}
 
 	}
 
