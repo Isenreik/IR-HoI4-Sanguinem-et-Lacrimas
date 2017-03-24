@@ -67,8 +67,6 @@ chemical_warfare.4.t: "Chemical Warfare Unleashed Once Again!"
 chemical_warfare.4.d: "Many in this world had decided to never again unleash the horrors of chemical warfare.\nHowever, it has come to the world's attention that [Root.GetName] decided that these weapons shall once again be employed. This will sour the relation between [Root.GetName] and the international community, but it seems that [Root.GetLeader] does not care about such repacussions.\n\nDiplomats around the world call this decision by [Root.GetLeader] a vile act against humanity. The world has just become a more dangerous and toxic place."
 chemical_warfare.4.a: "Pandora's box has been opened once more."
 
-chemical_warfare.5: "We are employing chemical weapons."
-
 chemical_warfare_started: "First Nation using chemical warfare"
 chemical_warfare_started_war: "Provoked the use of chemical weapons"
 chemical_warfare_war: "Used chemical weapons against us"

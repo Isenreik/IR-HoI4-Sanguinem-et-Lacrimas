@@ -2,14 +2,9 @@ on_actions = {
 
   on_declare_war = {
     effect = {
-      if = {
-        limit = {
-          ROOT = {
-            has_country_flag = uses_chemical_weapons
-          }
-        }
-        country_event = { id = chemical_warfare.5 days = 2}
-      }
+
+      country_event = { id = chemical_warfare.5 days = 2}
+
     }
   }
 
