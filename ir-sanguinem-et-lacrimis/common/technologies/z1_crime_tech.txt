@@ -9,8 +9,8 @@ technologies = {
 
 	criminal_technology = {
 
-		industrial_capacity_factory = 0.045
-		production_speed_buildings_factor = 0.02
+		industrial_capacity_factory = 0.05
+		production_speed_buildings_factor = 0.03
 
 		path = {
 			leads_to_tech = penal_technology
@@ -44,7 +44,7 @@ technologies = {
 	criminal_technology2 = {
 
 		industrial_capacity_factory = 0.1
-		production_speed_buildings_factor = 0.02
+		production_speed_buildings_factor = 0.05
 
 		research_cost = 1.5
 		start_year = 1936
@@ -121,7 +121,7 @@ technologies = {
   ## to the front
 	penal_technology = {
 
-		conscription_factor = 0.1
+		conscription_factor = 0.01
 
     path = {
       leads_to_tech = penal_technology2
@@ -330,7 +330,7 @@ technologies = {
 
   commissar_technology2 = {
 
-		conscription_factor = 0.07
+		conscription_factor = 0.015
 
     commissars = {
       max_organisation = 5

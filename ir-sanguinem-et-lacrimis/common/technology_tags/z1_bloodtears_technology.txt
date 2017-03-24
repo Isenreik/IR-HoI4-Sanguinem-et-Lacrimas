@@ -6,10 +6,13 @@ technology_categories = {
 	glider_tech
 	amphibious_tech
 	guided_missiles
+	chemical_warfare
+	bureau_tech
 }
 
 technology_folders = {
 
 	specialised_folder
+	bureau_folder
 
 }

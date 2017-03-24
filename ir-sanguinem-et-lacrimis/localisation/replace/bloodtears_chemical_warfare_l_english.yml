@@ -1,0 +1,86 @@
+﻿l_english:
+
+## criminal
+
+SPECIALISED_TITLE_CHEMICAL: "CHEMICAL WARFARE"
+
+chemical_warfare_tech: "Chemical Warfare"
+chemical_warfare_tech_desc: "One might say these times are dire enough to consider using these weapons once again. But if we decide to employ these weapons, there will be retaliation by our enemies and the international community.\n"
+chemical_technology_desc: "After the brutality, death and misery chemical warfare has brought upon the people during the Great War, most nations became very hesitant at employing these weapons of horror again; especially considering most leaders witnessed the torment of these weapons first hand.\n"
+chemical_ammo_subtitle1_label: "Chemical Ammunition"
+chemical_ammo_subtitle1_tt: "Chemical shells to attack the enemy with."
+chemical_incendiary_subtitle_label: "Incendiary Munition"
+chemical_incendiary_subtitle_tt: "Incendiary shells, bullets and bombs."
+
+gas_blue_cross: "Blue Cross"
+GER_gas_blue_cross: "Blaukreuz"
+gas_blue_cross_desc: "Blue Cross are chemical agents affecting the upper respiratory tract or general incapacitating agents. Amongst the most common agents are diphenylchloroarsine and diphenylcyanoarsine. Agents such as this cause nausea, violent vomiting and even pulmonary edema (fluid buildup in the lungs); while often not inherintly lethal, they help at exposing the enemy and hinder them at mounting a good defence. Blue Cross shells are mixed in with ordinary high-explosive shells, conceiling the gas and making it hard to differentiated such an attack from ordinary shelling."
+gas_blue_cross2: "Blue Cross II"
+GER_gas_blue_cross2: "Blaukreuz Zwei"
+gas_blue_cross2_desc: "More effective lung irritants such as lewisite, that also cause blistering, and improvements in mixture, together with improvements in shell and delivery will further improve our irritants, increasing their power to errode the enemy's ability to put up a effective resistance."
+
+gas_green_cross: "Green Cross"
+GER_gas_green_cross: "Grünkreuz"
+gas_green_cross_desc: "Green Cross agents were the cause of around 80% off all deaths from chemical warfare during the Great War. Green Cross agents are pulmonary agents such as phosgene/chlorine, trichloromethyl chloroformate and chloropicrin/nitrochloroform that destroy the lung-blood barrier resulting in Asphyxia."
+gas_green_cross2: "Green Cross II"
+GER_gas_green_cross2: "Grünkreuz Zwei"
+gas_green_cross2_desc: "Improvements in our pulmonary agents increased their toxicity and thus lethality. Agents such as disulfur decafluoride and acrolein are many times more toxic than phosgene."
+
+gas_yellow_cross: "Yellow Cross"
+GER_gas_yellow_cross: "Gelbkreuz"
+gas_yellow_cross_desc: "Yellow Cross agents are chemical agents that affect exposed surfaces of the victim's body, cuasing extensive blistering. The most common one used during the Great War was dichloroethylsulfide (sulfur mustard), but other nerve agents can fall into this category, too. These agents cause extreme and debilitating chemical burns all across the body and can penetrate wool and cotton. Further if inhaled, these nerve agents cause bleeding and blistering within the respiratory system, causing the lungs to fill with blood and exposed eyes result in temporary blindness."
+gas_yellow_cross2: "Yellow Cross II"
+GER_gas_yellow_cross2: "Gelbkreuz Zwei"
+gas_yellow_cross2_desc: "The lethality and toxicity of our nerve agents have been increased, making them deadlier then ever. New agents such as sarin and cyanogen chloride are new ways to debilitate or kill our enemies."
+
+simple_gasmasks: "Simple Gasmasks"
+simple_gasmasks_desc: "Simple gasmasks developed during the Great War. They may have many flaws, but they are the best we have for now. These masks can counter the gas employed during the Great War."
+gasmask_training: "Advanced Gas Mask Training"
+gasmask_training_desc: "Donning a gas mask quick and effectivly and engaging in combat with one on is no easy task. However, with better training our soldiers can become better at that task and even use their new-found skills to mount an unexpected counter-offensive."
+improved_gasmask: "Improved Gasmasks"
+improved_gasmask_desc: "These new improved gas masks are better at shielding the wearer from new and more harmful chemical attacks. New methods such as impregnation and better filtration methods should keep even the most toxic of gases from the wearer."
+advanced_filters: "Advanced Filters"
+advanced_filters_desc: "New advanced filters and improvements in usability make it much easier for our troops to engage in combat while wearing gas masks."
+chemical_strat_bombing: "Chemical Strategic Bombing"
+chemical_strat_bombing_desc: "Using chemical payloads we can \"disable\" the enemy's infrastructure and buildings more effectivly; forcing them to clean up the contamination will further slown down recovery."
+chemical_tac_bombing: "Chemical Tactical Bombing"
+chemical_tac_bombing_desc: "Equipping our bombers with lighter and smaller chemical payloads will allow us to shower the enemy in poison gas."
+chemical_white_p_technology: "White Phosporous"
+chemical_white_p_technology_desc: "Developed during the great war as a smoke generating, we can fully embrace the incendiary capabilities of white phosporous. We can use WP grenades for infantry, mortar and artillery shells and even tank shells. By changing the ordinance's charge composition, we can cause the incandescent particles by the initial explosion to be spread across a larger area; these particles stick to surfaces such as skin, causing deep burns to victims, but also tank armour and vision slits, emitting blinding smoke for the occupants of the hit vehicle."
+napalm_tech: "Napalm"
+napalm_tech_desc: "We have discovered that a gelly mixture of naphthenic and palmitic acids greatly increases the effectiveness of our incendiary weapons. We can use these mixtures in our vehicle and man-portable flamethrowers and we can use it to bomb enemy positions by planes."
+
+chemical_warfare_ww1_stockpile: "We can re-activate our old stockpiles from the Great War"
+
+chemical_warfare_first_tt: "We are the first nation resorting to CW\n"
+chemical_warfare_accept_tt: "Someone else provoked the use of CW\n"
+
+chemical_warfare.1.t: "Initiate Chemical Warfare"
+chemical_warfare.1.d: "The other nations showed refusal to use chemical weapons again after the horrors these weapons inflicted upon the world during the Great War.\n\nThat said, our generals understand that not using such a weapon is waste of a perfectly fine (and not to forget powerful) tool in our arsenal.\n\nThe so-called \"free world\" will greatly condemn the use of such weapons (even though most of them did not pause once to consider the morality on this topic when they used chemical weapons in the last war) and our neighbours will be concerned by this development, too.\n\nBut what does that matter if we have access to the most powerful type of arm humanity has created thus far?"
+chemical_warfare.1.a: "Our enemies beware, for we will show no mercy."
+
+chemical_warfare.2.t: "[Root.GetName]'s Answer to Chemical Warfare"
+chemical_warfare.2.d1: "We can not stand idly by in this arms race of chemical weapons; the enemy will give no quarter and neither shall we.\nThe humanists in country oppose such measures, and call it a terrible decision to employ these weapons of pure torment and agony on our foes. Our answer to them is; morality has to be put to rest in a fight for survival. If your family would be at risk to be gassed to death, would you not do whatever it takes?\n\nWe are only answering to what [chemical_warfare_starter.GetName] has started."
+chemical_warfare.2.a: "We didn't start this, and we can't ignore it any longer."
+
+chemical_warfare.4.t: "Chemical Warfare Unleashed Once Again!"
+chemical_warfare.4.d: "Many in this world had decided to never again unleash the horrors of chemical warfare.\nHowever, it has come to the world's attention that [Root.GetName] decided that these weapons shall once again be employed. This will sour the relation between [Root.GetName] and the international community, but it seems that [Root.GetLeader] does not care about such repacussions.\n\nDiplomats around the world call this decision by [Root.GetLeader] a vile act against humanity. The world has just become a more dangerous and toxic place."
+chemical_warfare.4.a: "Pandora's box has been opened once more."
+
+chemical_warfare_started: "First Nation using chemical warfare"
+chemical_warfare_started_war: "Provoked the use of chemical weapons"
+chemical_warfare_war: "Used chemical weapons against us"
+chemical_warfare_employed: "Using chemical weapons"
+
+tactic_prepare_gas_attack: "Prepare Gas Attack"
+tactic_cw_basic_attack: "Follow Up"
+tactic_blue_cross_attack: "Blue Cross Attack"
+tactic_blue_cross_attack_2: "Improved Blue Cross Attack"
+tactic_green_cross_attack: "Green Cross Attack"
+tactic_green_cross_attack_2: "Improved Green Cross Attack"
+tactic_yellow_cross_attack: "Yellow Cross Attack"
+tactic_yellow_cross_attack_2: "Improved Yellow Cross Attack"
+tactic_gas_mask_defense: "Gas Mask Defense"
+tactic_gas_mask_defense_2: "Improved Gas Mask Defense"
+tactic_gas_mask_counter_attack: "Gas Counter-Attack"
+chemical_warfare: "Chemical Warfare"

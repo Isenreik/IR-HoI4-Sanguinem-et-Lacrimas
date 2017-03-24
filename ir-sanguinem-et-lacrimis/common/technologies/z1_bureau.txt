@@ -1,0 +1,438 @@
+technologies = {
+
+@1939 = 0
+@1940 = 2
+@1941 = 4
+@1942 = 6
+
+@officers_main_row =  2
+@officers_left1top = -2
+@officers_left1-1  = -1
+@officers_left1-2  = -3
+
+#bureau
+
+  officers_tech1 = {
+
+    military_leader_cost_factor = -0.25
+
+    path = {
+      leads_to_tech = flight_officers_tech1
+      research_cost_coeff = 1
+    }
+    path = {
+      leads_to_tech = officers_tech2
+      research_cost_coeff = 1
+    }
+
+    doctrine = yes
+		research_cost = 2
+
+    folder = {
+      name = bureau_folder
+      position = { x = @officers_main_row y = 0 }
+    }
+
+    categories = {
+      bureau_tech
+    }
+
+    ai_will_do = {
+      factor = 2
+    }
+  }
+
+  officers_tech2 = {
+
+    army_leader_start_level = 1
+
+    path = {
+      leads_to_tech = officers_tech3
+      research_cost_coeff = 1
+    }
+
+    doctrine = yes
+		research_cost = 2
+
+    folder = {
+      name = bureau_folder
+      position = { x = @officers_main_row y = 2 }
+    }
+
+    categories = {
+      bureau_tech
+    }
+
+    ai_will_do = {
+      factor = 2
+    }
+  }
+
+  officers_tech3 = {
+
+    training_time_army_factor = -0.15
+
+    path = {
+      leads_to_tech = officers_tech3
+      research_cost_coeff = 1
+    }
+
+    doctrine = yes
+		research_cost = 2
+
+    folder = {
+      name = bureau_folder
+      position = { x = @officers_main_row y = 4 }
+    }
+
+    categories = {
+      bureau_tech
+    }
+
+    ai_will_do = {
+      factor = 2
+    }
+  }
+
+  flight_officers_tech1 = {
+
+    air_ace_generation_chance_factor = 0.05
+		air_interception_detect_factor = 0.10
+
+    path = {
+      leads_to_tech = flight_officers_honor1
+      research_cost_coeff = 1
+    }
+    path = {
+      leads_to_tech = flight_officers_training1
+      research_cost_coeff = 1
+    }
+
+    doctrine = yes
+		research_cost = 2
+
+    folder = {
+      name = bureau_folder
+      position = { x = @officers_left1top y = 2 }
+    }
+
+    categories = {
+      bureau_tech
+      air_doctrine
+    }
+
+    ai_will_do = {
+      factor = 2
+    }
+  }
+
+  flight_officers_training1 = {
+
+		air_superiority_efficiency = 0.1
+    category_fighter = {
+      air_agility = 0.1
+    }
+    category_heavy_fighter = {
+      air_agility = 0.1
+    }
+
+    XOR = {
+      flight_officers_honor1
+    }
+
+    doctrine = yes
+		research_cost = 2.2
+
+    folder = {
+      name = bureau_folder
+      position = { x = @officers_left1-1 y = 4 }
+    }
+
+    categories = {
+      bureau_tech
+      air_doctrine
+    }
+
+    ai_will_do = {
+      factor = 1.5
+    }
+  }
+
+  flight_officers_honor1 = {
+
+    air_ace_generation_chance_factor = 0.10
+		air_intercept_efficiency = 0.10
+
+    path = {
+      leads_to_tech = flight_officers_honor2
+      research_cost_coeff = 1
+    }
+
+    XOR = {
+      flight_officers_training1
+    }
+
+    doctrine = yes
+		research_cost = 2.2
+
+    folder = {
+      name = bureau_folder
+      position = { x = @officers_left1-2 y = 4 }
+    }
+
+    categories = {
+      bureau_tech
+      air_doctrine
+    }
+
+    ai_will_do = {
+      factor = 1.5
+    }
+  }
+
+  flight_officers_honor2 = {
+
+    on_research_complete = {
+      set_rule = { can_use_kamikaze_pilots = yes }
+    }
+    desc = "flight_officers_honor2_special"
+
+    doctrine = yes
+		research_cost = 2
+
+    folder = {
+      name = bureau_folder
+      position = { x = @officers_left1-2 y = 6 }
+    }
+
+    categories = {
+      bureau_tech
+      air_doctrine
+    }
+
+    ai_will_do = {
+      factor = 0.8
+    }
+  }
+
+#press
+@press_main_row   = -1
+@press_left1      = -3
+@press_right1     =  1
+@press_right2     =  3
+
+  press_tech1 = {
+
+  	political_power_factor = 0.1
+
+    path = {
+      leads_to_tech = press_censorship1
+      research_cost_coeff = 1
+    }
+    path = {
+      leads_to_tech = press_media1
+      research_cost_coeff = 1
+    }
+    path = {
+      leads_to_tech = press_trucks1
+      research_cost_coeff = 1
+    }
+    path = {
+      leads_to_tech = press_mobilisation1
+      research_cost_coeff = 1
+    }
+
+    doctrine = yes
+    research_cost = 2
+
+    folder = {
+      name = bureau_folder
+      position = { x = @press_main_row y = 0 }
+    }
+
+    categories = {
+      bureau_tech
+    }
+
+    ai_will_do = {
+      factor = 2
+    }
+  }
+
+  press_censorship1 = {
+
+    enemy_partisan_effect = -0.10
+    foreign_subversive_activites = -0.15
+
+    doctrine = yes
+    research_cost = 2
+
+    folder = {
+      name = bureau_folder
+      position = { x = @press_left1 y = 2 }
+    }
+
+    categories = {
+      bureau_tech
+    }
+
+    ai_will_do = {
+      factor = 2
+    }
+  }
+
+  press_media1 = {
+
+	  unity_factor = 0.025
+
+    doctrine = yes
+    research_cost = 2
+
+    path = {
+      leads_to_tech = press_media2
+      research_cost_coeff = 1
+    }
+
+    folder = {
+      name = bureau_folder
+      position = { x = @press_main_row y = 2 }
+    }
+
+    categories = {
+      bureau_tech
+    }
+
+    ai_will_do = {
+      factor = 2
+    }
+  }
+
+  press_media2 = {
+
+		drift_defence_factor = 0.1
+
+    doctrine = yes
+    research_cost = 2
+
+    folder = {
+      name = bureau_folder
+      position = { x = @press_main_row y = 4 }
+    }
+
+    categories = {
+      bureau_tech
+    }
+
+    ai_will_do = {
+      factor = 2
+    }
+  }
+
+  press_trucks1 = {
+
+	  on_research_complete = {
+      add_ideas = civilian_truck_conversation
+      custom_effect_tooltip = press_trucks1_tt
+    }
+
+    desc = "press_trucks1_special_desc"
+
+    doctrine = yes
+    research_cost = 2
+
+    dependencies = {	motorised_infantry = 1	}
+
+    path = {
+      leads_to_tech = press_trucks2
+      research_cost_coeff = 1
+    }
+
+    folder = {
+      name = bureau_folder
+      position = { x = @press_right1 y = 2 }
+    }
+
+    categories = {
+      bureau_tech
+    }
+
+    ai_will_do = {
+      factor = 2
+    }
+  }
+
+  press_trucks2 = {
+
+    on_research_complete = {
+      country_event = { hours = 2 id = press_tech_event.1 }
+      set_country_flag = requested_civ_trucks
+      #custom_effect_tooltip = press_trucks2_tt
+    }
+
+    desc = "press_trucks2_special_desc"
+
+    doctrine = yes
+    research_cost = 2
+
+    folder = {
+      name = bureau_folder
+      position = { x = @press_right1 y = 4 }
+    }
+
+    categories = {
+      bureau_tech
+    }
+
+    ai_will_do = {
+      factor = 2
+    }
+  }
+
+  press_mobilisation1 = {
+
+	  consumer_goods_factor = -0.03
+
+    doctrine = yes
+    research_cost = 2
+
+    path = {
+      leads_to_tech = press_mobilisation2
+      research_cost_coeff = 1
+    }
+
+    folder = {
+      name = bureau_folder
+      position = { x = @press_right2 y = 2 }
+    }
+
+    categories = {
+      bureau_tech
+    }
+
+    ai_will_do = {
+      factor = 2
+    }
+  }
+
+  press_mobilisation2 = {
+
+		conscription_factor = 0.01
+
+    doctrine = yes
+    research_cost = 2
+
+    folder = {
+      name = bureau_folder
+      position = { x = @press_right2 y = 4 }
+    }
+
+    categories = {
+      bureau_tech
+    }
+
+    ai_will_do = {
+      factor = 2
+    }
+  }
+
+}

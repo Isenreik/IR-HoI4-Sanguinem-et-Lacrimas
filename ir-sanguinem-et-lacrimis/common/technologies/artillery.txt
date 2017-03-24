@@ -1815,6 +1815,8 @@ technologies = {
 		army_bonus_air_superiority_factor = 0.2
 		air_nav_efficiency = 0.05
 
+		dependencies = { antitank3 = 1 }
+
 		research_cost = 1
 
 		start_year = 1943
@@ -1855,14 +1857,13 @@ technologies = {
 		categories = {
 			artillery
 			cat_anti_tank
+			rocketry
 		}
 	}
 
 	atgm_1 = {
+	#	enable_equipments = { mot_atgm_equipment_1 }
 
-	#	enable_equipments = {
-	#		mot_atgm_equipment_1
-	#	}
 		category_spat_armor = {
 			hard_attack = 0.25
 			ap_attack = 0.4
@@ -1881,11 +1882,6 @@ technologies = {
 		folder = {
 			name = artillery_folder
 			position = { x = @at_missile_row y = @1951 }
-		}
-
-		path = {
-			leads_to_tech = at_rocket3
-			research_cost_coeff = 1
 		}
 
 		ai_will_do = {
@@ -1914,6 +1910,8 @@ technologies = {
 		categories = {
 			artillery
 			cat_anti_tank
+			guided_missiles
+			rocketry
 		}
 	}
 
@@ -2158,6 +2156,7 @@ technologies = {
 
 		categories = {
 			artillery
+			rocketry
 		}
 	}
 
@@ -2262,6 +2261,7 @@ technologies = {
 		categories = {
 			artillery
 			rocketry
+			guided_missiles
 		}
 	}
 
@@ -2309,6 +2309,7 @@ technologies = {
 		categories = {
 			artillery
 			rocketry
+			guided_missiles
 		}
 	}
 
