@@ -94,6 +94,7 @@ guiTypes = {
 			clicksound = click_default
 			oversound = ui_menu_over
 			pdx_tooltip = "MENU_ISENREIK_INFO"
+			web_link = "https://twitter.com/IsenreikStudio"
 		}
 
 	}
