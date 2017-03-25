@@ -37,7 +37,7 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "sanguinem_logo_medium"
-			position = { x= 480 y = 20 }
+			position = { x= 480 y = 25 }
 			quadTextureSprite ="GFX_sanguinem_logo"
 			clicksound = click_default
 			oversound = ui_menu_over
