@@ -19,10 +19,10 @@ But I also wanted to make things more interesting than simply adding five [i]+10
 [*] Desert and jungle equipment and winter training for the troops.
 [*] Officer schools to improve your commanders.
 [*] Civilian press manipulation for the home-front; strengthen your government against foreign subversive activities or requisition civilian vehicles for the front.
-[*] Extensive research went into this to bring the most historicaly accurate experience, while still trying to maintain a balance and remain entertaining and familiar. From description to names, images and appropiate introductionary years.
+[*] Extensive research went into this to bring the most historically accurate experience, while still trying to maintain a balance and remain entertaining and familiar. From description to names, images and appropriate introductory years.
 [/list]
 
-I tried to make it balanced by using stats similar to other tech in the game. Is it actually balanced? I don't know but, I hope so. I did a SP playthrough with it and it seemed to be okay.
+I tried to make it balanced by using stats similar to other tech in the game. Is it actually balanced? I don't know but, I hope so. I did a SP play-through with it and it seemed to be okay.
 
 [img]https://github.com/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis/blob/master/readme-files/Header_compatibility.png?raw=true[/img]
 
@@ -64,11 +64,11 @@ While this is a one-man project, this does not mean I work in a vacuum by myself
 
 [img]https://github.com/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis/blob/master/readme-files/Header_misc.png?raw=true[/img]
 [i]"What does Sanguinem et Lacrimis even mean?"[/i]
-[indent]Sanguinem et Lacrimis means [i]Blood and Tears[/i]. The working title when I started this in january was "specialised troops". Since the mod became much more than just specialised troops, I decided to rename it to "Blood, Toil, Tears and Sweat" based on Winson Churchill's quote. But that was too much of a mouth-full, so I trimmed it down to "Blood and Tears" and translated it into latin because why the hell not.[/indent]
+[indent]Sanguinem et Lacrimis means [i]Blood and Tears[/i]. The working title when I started this in January was "specialised troops". Since the mod became much more than just specialised troops, I decided to rename it to "Blood, Toil, Tears and Sweat" based on Winston Churchill's quote. But that was too much of a mouth-full, so I trimmed it down to "Blood and Tears" and translated it into Latin because why the hell not.[/indent]
 [i]"Why did it take so long to make this mod? You said in January "coming soon", this is nearly three months later..."[/i]
 [indent]Yeah well, I had a very busy start of the year. And once march hit I was too busy [url=https://twitter.com/Araxiel/status/837863068520615936]hunting mecha dinosaurs[/url].[/indent]
 [i]"You announced mod XY a long time ago! Where is it?! I want it now! Why are you not giving it to me!"[/i]
-[indent]See the previous point. Also...making a good mod by myself takes time. I want shit to work, I want to have proper research done and well writen descriptions rooted in reality and history. But mostly I simply don't have enough time to create finished and polished mods. And finished and polished mods is the only thing I want to publish. I despise completely broken, unfinished, early access, pre-alpha mods, that barely work, have placeholder images and placeholder text everywhere and break the game. You only get one release; you should better make it good.
+[indent]See the previous point. Also...making a good mod by myself takes time. I want shit to work, I want to have proper research done and well written descriptions rooted in reality and history. But mostly I simply don't have enough time to create finished and polished mods. And finished and polished mods is the only thing I want to publish. I despise completely broken, unfinished, early access, pre-alpha mods, that barely work, have place-holder images and place-holder text everywhere and break the game. You only get one release; you should better make it good.
 So yeah; those other mods will come out when the clock strikes [url=https://developer.valvesoftware.com/wiki/Valve_Time]Valve Time[/url].[/indent]
 [right][img]https://github.com/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis/blob/master/readme-files/mini-caramel-hitler.gif?raw=true[/img][/right]
 
