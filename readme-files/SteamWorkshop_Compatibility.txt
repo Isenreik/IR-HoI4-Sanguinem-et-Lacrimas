@@ -1,0 +1,28 @@
+This is an ever-expanding list of mods that are indeed compatible with this or work well with it.
+
+[h1]Compatible Mods[/h1]
+:elindustry:
+These mods work fine together
+[list]
+[*] Araxiel's Bonus Research Slot
+[*] Guns Trucks
+[*] Minor Sprites
+[*] Battlesound - Sound Modification
+[/list]
+
+[h1]Semi-Compatible Mods[/h1]
+:elindustry:
+These mods work together, but there might be tiny conflicts (which you might not even notice as a player)
+[list]
+[*] Kaiserreich
+[/list]
+
+[h1]Non-Compatible Mods[/h1]
+:retreat:
+[list]
+[*] Araxiel's Arty Upgrades for SPs
+[*] Road to '56
+[*] Tech Tree Expansion
+[*] Millenium Dawn
+[*] Timeline of Iron
+[/list]
