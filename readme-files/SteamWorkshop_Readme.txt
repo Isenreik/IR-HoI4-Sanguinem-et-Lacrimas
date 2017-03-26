@@ -49,8 +49,8 @@ There should be no bugs; this mod is 99% done and ready to play. There should be
 [url=https://github.com/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis][img]https://github.com/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis/blob/master/readme-files/button_github.png?raw=true[/img][/url]
 [url=https://twitter.com/IsenreikStudio][img]https://github.com/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis/blob/master/readme-files/button_twitter.png?raw=true[/img][/url]
 
-[img]https://github.com/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis/blob/master/readme-files/button_found_problem.png?raw=true[/img]
-[url=https://gitreports.com/issue/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis][img]https://github.com/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis/blob/master/readme-files/button_open_up_new_issue_button.png?raw=true[/img][/url]
+[url=https://gitreports.com/issue/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis][img]https://github.com/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis/blob/master/readme-files/button_found_problem.png?raw=true[/img]
+[img]https://github.com/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis/blob/master/readme-files/button_open_up_new_issue_button.png?raw=true[/img][/url]
 [url=https://discord.gg/Y2hxcRZ][img]https://github.com/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis/blob/master/readme-files/button_join_the_discord_button.png?raw=true[/img][/url]
 
 [img]https://github.com/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis/blob/master/readme-files/Header_contribute.png?raw=true[/img][list]
