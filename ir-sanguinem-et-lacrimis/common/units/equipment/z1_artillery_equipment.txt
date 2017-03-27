@@ -9,6 +9,12 @@ railway_artillery_equipment = {
     infantry
   }
 
+  upgrades = {
+    general_reliability_upgrade
+    arty_gun_upgrade
+    general_cost_upgrade
+  }
+
   group_by = archetype
 
   interface_category = interface_category_land
@@ -57,8 +63,16 @@ railway_artillery_equipment = {
 
     interface_category = interface_category_land
 
+    upgrades = {
+			general_reliability_upgrade
+			general_cost_upgrade
+      sam_gun_upgrade
+		}
+
     #Misc Abilities
     reliability = 0.6
+
+    maximum_speed = 4
 
     #Space taken in convoy
     lend_lease_cost = 3
