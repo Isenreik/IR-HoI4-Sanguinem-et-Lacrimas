@@ -1,0 +1,498 @@
+technologies = {
+
+@1916 = 0
+@1917 = 2
+@1936 = 4
+@1938 = 6
+@1939 = 8
+@1942 = 10
+
+@left2_row  = -5
+@left1_row  = -4
+@middle_row = -3
+@right1_row = -2
+@right2_row = 0
+@right3_row = 2
+@right4_row = 4
+@white_p = 7
+
+  chemical_warfare_tech = {
+
+    enable_tactic = tactic_prepare_gas_attack
+                                                        #I know you are reading this
+    on_research_complete = {
+      if = {
+      	limit = {
+      		NOT = {	has_global_flag = chemical_warfare_activated }
+      	}
+      	custom_effect_tooltip = chemical_warfare_first_tt
+        country_event = { hours = 3 id = chemical_warfare.1 }  # be the first to kick it off
+        if = {
+          limit = {
+            is_major = yes
+          }
+          add_named_threat = { threat = 15 name = chemical_warfare_started }
+        }
+        if = {
+          limit = {
+            NOT = {	is_major = yes	}
+          }
+          add_named_threat = { threat = 10 name = chemical_warfare_started }
+        }
+      }
+      if = {
+      	limit = {
+      		has_global_flag = chemical_warfare_activated
+      	}
+      	custom_effect_tooltip = chemical_warfare_accept_tt
+        country_event = { hours = 3 id = chemical_warfare.2 } # someone already did it
+        if = {
+          limit = {
+            is_major = yes
+          }
+          add_named_threat = { threat = 10 name = chemical_warfare_employed }
+        }
+        if = {
+          limit = {
+            NOT = {	is_major = yes	}
+          }
+          add_named_threat = { threat = 5 name = chemical_warfare_employed }
+        }
+      }
+      if = {
+        limit = {
+            OR = {
+              original_tag = FRA
+              original_tag = ENG
+              original_tag = USA
+              original_tag = ITA
+              original_tag = GER
+              #minors
+              original_tag = AUS
+              original_tag = BUL
+              original_tag = TUR
+              original_tag = CAN
+              original_tag = AST
+              original_tag = NZL
+            }
+        }
+        hidden_effect = {
+          country_event = { days = 2 id = chemical_warfare.3 }                                        # I can see you
+        }
+        custom_effect_tooltip = chemical_warfare_ww1_stockpile
+      }
+    }
+                                                                #what do you think you're doing? Stealing my code?
+    path = {
+      leads_to_tech = simple_gasmasks
+      research_cost_coeff = 1
+    }
+    path = {
+      leads_to_tech = gas_blue_cross
+      research_cost_coeff = 1
+    }
+    path = {
+      leads_to_tech = gas_green_cross
+      research_cost_coeff = 1
+    }
+    path = {
+      leads_to_tech = gas_yellow_cross
+      research_cost_coeff = 1
+    }
+    path = {
+      leads_to_tech = chemical_strat_bombing
+      research_cost_coeff = 1
+    }
+
+    research_cost = 1
+    start_year = 1916
+
+    folder = {
+      name = bureau_folder
+      position = { x = @middle_row y = @1916 }
+    }
+
+    categories = {
+      chemical_warfare
+    }
+
+    ai_will_do = {
+      factor = 0.2
+      modifier = {
+				factor = 20
+				any_enemy_country = {
+          has_country_flag = uses_chemical_weapons
+        }
+			}
+      modifier = {
+				factor = 5
+        has_global_flag = chemical_warfare_activated
+			}
+    }
+  }
+
+  simple_gasmasks = {
+
+    enable_tactic = tactic_gas_mask_defense
+
+    path = {
+      leads_to_tech = improved_gasmask
+      research_cost_coeff = 1
+    }
+    path = {
+      leads_to_tech = gasmask_training
+      research_cost_coeff = 1
+    }
+
+    research_cost = 1.5
+    start_year = 1917
+
+    folder = {
+      name = bureau_folder
+      position = { x = @left1_row y = @1917 }
+    }
+
+    categories = {
+      chemical_warfare
+    }
+
+    ai_will_do = {
+      factor = 3
+      modifier = {
+				factor = 5
+				any_enemy_country = {
+          has_country_flag = uses_chemical_weapons
+        }
+			}
+    }
+  }
+
+  gasmask_training = {
+
+    category_light_infantry = {
+      defense = 0.04
+    }
+    enable_tactic = tactic_gas_mask_counter_attack
+
+    research_cost = 1.1
+    start_year = 1936
+
+    folder = {
+      name = bureau_folder
+      position = { x = @left2_row y = @1936 }
+    }
+
+    categories = {
+      chemical_warfare
+    }
+
+    ai_will_do = {
+      factor = 1.5
+    }
+  }
+
+  improved_gasmask = {
+
+    enable_tactic = tactic_gas_mask_defense_2
+
+    path = {
+      leads_to_tech = advanced_filters
+      research_cost_coeff = 1
+    }
+
+    research_cost = 1.4
+    start_year = 1939
+
+    folder = {
+      name = bureau_folder
+      position = { x = @left1_row y = @1939 }
+    }
+
+    categories = {
+      chemical_warfare
+    }
+
+    ai_will_do = {
+      factor = 1.5
+    }
+  }
+
+  advanced_filters = {
+
+    category_army = {
+      defense = 0.1
+    }
+		industry_air_damage_factor = -0.1
+
+    path = {
+      leads_to_tech = advanced_filters
+      research_cost_coeff = 1
+    }
+
+    research_cost = 1.2
+    start_year = 1942
+
+    folder = {
+      name = bureau_folder
+      position = { x = @left1_row y = @1942 }
+    }
+
+    categories = {
+      chemical_warfare
+    }
+
+    ai_will_do = {
+      factor = 1.5
+    }
+  }
+  #next time, just ask before poking your nose around here
+  gas_blue_cross = {
+
+    enable_tactic = tactic_blue_cross_attack
+
+    path = {
+      leads_to_tech = gas_blue_cross2
+      research_cost_coeff = 1
+    }
+
+    research_cost = 1.2
+    start_year = 1917
+
+    folder = {
+      name = bureau_folder
+      position = { x = @right1_row y = @1917 }
+    }
+
+    categories = {
+      chemical_warfare
+    }
+
+    ai_will_do = {
+      factor = 1.5
+    }
+  }
+
+  gas_blue_cross2 = {
+
+    enable_tactic = tactic_blue_cross_attack_2
+
+    research_cost = 1
+    start_year = 1936
+
+    folder = {
+      name = bureau_folder
+      position = { x = @right1_row y = @1936 }
+    }
+
+    categories = {
+      chemical_warfare
+    }
+
+    ai_will_do = {
+      factor = 1.5
+    }
+  }
+
+  gas_green_cross = {
+
+    enable_tactic = tactic_green_cross_attack
+
+    path = {
+      leads_to_tech = gas_green_cross2
+      research_cost_coeff = 1
+    }
+
+    research_cost = 1.5
+    start_year = 1917
+
+    folder = {
+      name = bureau_folder
+      position = { x = @right2_row y = @1917 }
+    }
+
+    categories = {
+      chemical_warfare
+    }
+
+    ai_will_do = {
+      factor = 1
+    }
+  }
+
+  gas_green_cross2 = {
+
+    enable_tactic = tactic_green_cross_attack_2
+
+    research_cost = 2
+    start_year = 1938
+
+    folder = {
+      name = bureau_folder
+      position = { x = @right2_row y = @1938 }
+    }
+
+    categories = {
+      chemical_warfare
+    }
+
+    ai_will_do = {
+      factor = 1
+    }
+  }
+
+  gas_yellow_cross = {
+
+    enable_tactic = tactic_yellow_cross_attack
+
+    path = {
+      leads_to_tech = gas_yellow_cross2
+      research_cost_coeff = 1
+    }
+
+    research_cost = 2
+    start_year = 1917
+
+    folder = {
+      name = bureau_folder
+      position = { x = @right3_row y = @1917 }
+    }
+
+    categories = {
+      chemical_warfare
+    }
+
+    ai_will_do = {
+      factor = 1
+    }
+  }
+
+  gas_yellow_cross2 = {
+
+    enable_tactic = tactic_yellow_cross_attack_2
+
+    research_cost = 2
+    start_year = 1939
+
+    folder = {
+      name = bureau_folder
+      position = { x = @right3_row y = @1939 }
+    }
+
+    categories = {
+      chemical_warfare
+    }
+
+    ai_will_do = {
+      factor = 1
+    }
+  }
+
+  chemical_strat_bombing = {
+
+    air_strategic_bomber_bombing_factor = 0.3
+
+    path = {
+      leads_to_tech = chemical_tac_bombing
+      research_cost_coeff = 1
+    }
+
+    research_cost = 1.6
+    start_year = 1936
+
+    folder = {
+      name = bureau_folder
+      position = { x = @right4_row y = @1936 }
+    }
+
+    categories = {
+      chemical_warfare
+    }
+
+    ai_will_do = {
+      factor = 1
+    }
+  }
+
+  chemical_tac_bombing = {
+
+    air_cas_present_factor = 0.20
+
+    research_cost = 1.6
+    start_year = 1938
+
+    folder = {
+      name = bureau_folder
+      position = { x = @right4_row y = @1938 }
+    }
+
+    categories = {
+      chemical_warfare
+    }
+
+    ai_will_do = {
+      factor = 1
+    }
+  }
+
+  chemical_white_p_technology = {
+
+    category_front_line = {
+      breakthrough = 0.05
+    }
+    category_artillery = {
+      breakthrough = 0.05
+    }
+
+    path = {
+      leads_to_tech = napalm_tech
+      research_cost_coeff = 1
+    }
+
+    research_cost = 2.2
+    start_year = 1916
+
+    folder = {
+      name = bureau_folder
+      position = { x = @white_p y = @1916 }
+    }
+
+    categories = {
+      chemical_warfare
+    }
+
+    ai_will_do = {
+      factor = 1.5
+    }
+  }
+
+  napalm_tech = {
+
+    air_cas_present_factor = 0.30
+    air_strategic_bomber_bombing_factor = 0.1
+    category_front_line = {
+      breakthrough = 0.02
+    }
+
+    research_cost = 2
+    start_year = 1942
+
+    folder = {
+      name = bureau_folder
+      position = { x = @white_p y = @1942 }
+    }
+
+    categories = {
+      chemical_warfare
+    }
+
+    ai_will_do = {
+      factor = 1
+
+      modifier = {
+        factor = 4
+        tag = USA
+      }
+    }
+  }
+
+}

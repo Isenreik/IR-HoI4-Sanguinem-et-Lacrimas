@@ -1,5 +1,8 @@
 ﻿l_english:
 
+specialised_folder:0 "Specialised"
+specialised_folder_desc:0 "Specialised troops, vehicles and support research."
+
 ## criminal
 
 SPECIALISED_TITLE_KITS:0 "SPECIALISED EQUIPMENT KITS"
@@ -19,6 +22,8 @@ criminal_technology3_short:0 "Improved Prison Labour"
 criminal_technology3_desc:0 "Our prison system will refine and further their involvement in the production of material towards the war effort.\n§YOnly available during war!§!"
 
 criminal_technology4:0 "Prison Labour Camps"
+criminal_technology4:0 "Gulags"
+criminal_technology4:0 "Forced Labour Camps"
 criminal_technology4_short:0 "Prison Labour Camps"
 criminal_technology4_desc:0 "Our undesirables shall be send to work camps to mine for our glorious nation's war machine.\n§YOnly available for Fascists and Communists!§!"
 
@@ -28,15 +33,19 @@ penal_technology_desc:0 "Give criminals a chance to redeem themselves through fr
 
 penal_technology2:0 "Penal Battalions"
 penal_technology2_short:0 "Penal Battalions"
-penal_technology2_desc:0 "Mobilise criminals, dissidents, subversives and other undesirables to serve the country once again in specialised battalions, if they want to or not.\n§YOnly available during war for Fascists and Communists!\n\n§!"
+penal_technology2_desc:0 "Mobilise criminals, dissidents, subversives, degenerates, disgraced officers and other undesirables to serve the country once again in specialised battalions, if they want to or not.\n§YOnly available during war for Fascists and Communists!\n\n§!"
+GER_penal_technology2:0 "Strafbattalione"
+SOV_penal_technology2:0 "Shtrafbats"
 
 penal_technology2_label:0 "Mobilise criminals, dissidents, subversives and other undesirables to serve the country once again in specialised battalions, if they want to or not."
 
 penal_technology3:0 "Improved Penal Battalions"
 penal_technology3_short:0 "Improved Penal Battalions"
-penal_technology3_desc:0 "Improve our officers' abilities to commandeer our country's deplorable subjects and further incorporate penal battalions into the army structure.\n§YOnly available during war for Fascists and Communists!\n\n§!"
+penal_technology3_desc:0 "Improve our officers' abilities to command our country's deplorable subjects and further incorporate penal battalions into the army structure.\n§YOnly available during war for Fascists and Communists!\n\n§!"
 
 penals:0 "Penal Battalion"
+GER_penals:0 "Strafbattalion"
+SOV_penals:0 "Shtrafbat"
 penals_desc:0 "Criminals, political opponents, degenerates, subversives and other undesirables forced to fight on the front lines."
 
 commissars:0 "Commissar Detachment"
@@ -54,10 +63,10 @@ commissar_technology2_desc:0 "Our barrier troops will be further integrated into
 
 SPECIALISED_TITLE_INVASION_SUPPORT:0 "IMPROVED AMPHIBIOUS UNITS"
 
-INVASION_SUPPORT_DESC:0 "With some adjustments our existing mechanized vehicles, light and medium tanks can be turned into specialised amphibious vehicles that will help our marines with naval invasions."
+INVASION_SUPPORT_DESC:0 "With some adjustments our existing mechanised vehicles, light and medium tanks can be turned into specialised amphibious vehicles that will help our marines with naval invasions."
 
-amphibious_mech_subtitle_label:0 "Mechanized Landing Vehicles"
-amphibious_mech_subtitle_TT:0 "These are amphibious versions of our mechanized vehicles."
+amphibious_mech_subtitle_label:0 "Mechanised Landing Vehicles"
+amphibious_mech_subtitle_TT:0 "These are amphibious versions of our mechanised vehicles."
 
 amphibious_LT_subtitle_label:0 "Amphibious Light Tanks"
 amphibious_LT_subtitle_TT:0 "These are amphibious versions of our light tanks."
@@ -65,7 +74,7 @@ amphibious_LT_subtitle_TT:0 "These are amphibious versions of our light tanks."
 amphibious_MT_subtitle_lable:0 "Amphibious Tanks"
 amphibious_MT_subtitle_TT:0 "These are amphibious versions of our medium tanks."
 
-amphibious_mech_vehicle:0 "Amphibious Mechanized"
+amphibious_mech_vehicle:0 "Amphibious Mechanised"
 amphibious_mech_vehicle_desc:0 "These are converted versions of our troop transporters that let our marines ride right up to the shore or through rivers and embark under supporting fire. It also means they can drive right through swamps without fear of getting stuck."
 amphibious_mech_vehicle_1:0 "Amphibious Vehicle"
 amphibious_mech_vehicle_1_short:0 "LCM"
@@ -90,13 +99,13 @@ medium_tank_amphibious_equipment:0 "Medium Amphibious Tank"
 
 medium_tank_amphibious_equipment_1:0 "Medium Amphibious Tank"
 medium_tank_amphibious_equipment_1_short:0 "Medium DD Tank"
-medium_tank_amphibious_equipment_1_desc:0 "Using special exhaust pipes and floatation devices, our medium tanks can swim over short distances and directly support our marines during a naval assault and beyond."
+medium_tank_amphibious_equipment_1_desc:0 "Using special exhaust pipes and flotation devices, our medium tanks can swim over short distances and directly support our marines during a naval assault and beyond."
 
 medium_tank_amphibious_equipment_2:0 "Adv. M/DD Tank"
 medium_tank_amphibious_equipment_2_short:0 "Adv. M/DD Tank"
-medium_tank_amphibious_equipment_2_desc:0 "Further improvements in our floatation technology and further integration with troop transport ships lets us deploy our advanced medium tanks across water."
+medium_tank_amphibious_equipment_2_desc:0 "Further improvements in our flotation technology and further integration with troop transport ships lets us deploy our advanced medium tanks across water."
 
-amphibious_mech_unit:0 "Mechanized Marines"
+amphibious_mech_unit:0 "Mechanised Marines"
 amphibious_mech_unit_desc:0 "Armoured infantry landing transportation."
 light_tank_amphibious_unit:0 "Amphibious Light Tanks"
 light_tank_amphibious_unit_desc:0 "Amphibious lightly armoured landing tanks."
@@ -111,12 +120,12 @@ USA_medium_tank_amphibious_equipment_1_short:0 "Sherman DD"
 USA_medium_tank_amphibious_equipment_1_short:0 "T20 DD"
 
 ENG_amphibious_mech_vehicle_1_short:0 "DUKW"
-ENG_amphibious_mech_vehicle_2_short:0 "Terrapine"
+ENG_amphibious_mech_vehicle_2_short:0 "Terrapin"
 ENG_light_tank_amphibious_equipment_1_short:0 "A4E3 L1E3"
 ENG_light_tank_amphibious_equipment_1_short:0 "A4E3 L2E1"
 
-GER_amphibious_mech_vehicle_1_short:0 "Landwasserchlepper"
-GER_amphibious_mech_vehicle_2_short:0 "Landwasserchlepper II"
+GER_amphibious_mech_vehicle_1_short:0 "Landwasserschlepper"
+GER_amphibious_mech_vehicle_2_short:0 "Landwasserschlepper II"
 
 SOV_light_tank_amphibious_equipment_1_short:0 "T37A"
 SOV_light_tank_amphibious_equipment_2_short:0 "T-40 Amphibious"
@@ -177,7 +186,7 @@ jungle_kit_1:0 "Jungle Equipment"
 jungle_kit_1_desc:0 "\nThis equipment and special training was designed to support the unwelcoming humid climate found in jungles. Using specialised equipment and dedicated tactics appropriate for jungle warfare, troops assigned with these company while improve their capabilities while fighting in jungle terrain. However, these special adaptations help little outside of the jungle and actually work as a detriment when fighting in other climates.\n§YOnly available for nations that own appropriate territory!\n\n§!"
 
 jungle_kit2_technology:0 "Improved Jungle Equipment"
-jungle_kit2_technology_desc:0 "Further improvements in tactics, logistics and equipment allows our designated jungle divisions to expand on their fighting capabilities in the treacherous rainforest.\n\n§!"
+jungle_kit2_technology_desc:0 "Further improvements in tactics, logistics and equipment allows our designated jungle divisions to expand on their fighting capabilities in the treacherous rain-forest.\n\n§!"
 jungle_kit2_RESEARCHED:0 "Increases Movement, Breakthrough and Defence"
 
 jungle_support:0 "Jungle Support Company"

@@ -1,0 +1,19 @@
+opinion_modifiers = {
+
+  chemical_warfare_started = {
+    value = -10
+  }
+
+  chemical_warfare_started_war = {
+    value = -40
+    months = 40
+		decay = 1
+  }
+
+  chemical_warfare_war = {
+    value = -15
+    months = 30
+		decay = 0.5
+  }
+
+}
