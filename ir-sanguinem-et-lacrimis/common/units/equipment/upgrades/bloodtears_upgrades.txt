@@ -87,5 +87,11 @@ upgrades = {
 		reliability = -0.05
 	}
 
+  inf_loading_mech = {
+		max_level = 5
+
+		cost = land				# This determies how much XP it will cost, controlled by defines, there are 3 cost types: air, land and naval
+		soft_attack = 0.02
+	}
 
 }
