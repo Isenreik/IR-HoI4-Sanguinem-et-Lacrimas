@@ -12,8 +12,8 @@ equipments = {
 
 		upgrades = {
 			general_reliability_upgrade
-			arty_gun_upgrade
 			general_cost_upgrade
+			arty_gun_upgrade
 		}
 
 		interface_category = interface_category_land

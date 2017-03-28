@@ -13,8 +13,8 @@ equipments = {
 
 		upgrades = {
 			general_reliability_upgrade
-			arty_at_gun_upgrade
 			general_cost_upgrade
+			arty_at_gun_upgrade
 		}
 
 		#speed
