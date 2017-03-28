@@ -1819,6 +1819,8 @@ technologies = {
 
 		research_cost = 1
 
+		dependencies = { antitank3 = 1 }
+
 		start_year = 1943
 
 		folder = {

@@ -4,6 +4,8 @@ railway_artillery_unit = {
   sprite = artillery
   map_icon_category = infantry
   priority = 150
+  active = yes
+  support_brigade = yes
 
   type = {
     artillery
@@ -16,10 +18,7 @@ railway_artillery_unit = {
     category_line_artillery
     category_artillery
   }
-
-	transport = railway_artillery_equipment
-  maximum_speed = 1
-
+  
   combat_width = 6
 
   manpower = 200

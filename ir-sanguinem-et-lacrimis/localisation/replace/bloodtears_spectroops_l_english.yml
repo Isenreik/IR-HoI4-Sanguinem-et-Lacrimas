@@ -117,7 +117,7 @@ USA_amphibious_mech_vehicle_2_short:0 "LVT-4 Water Buffalo"
 USA_light_tank_amphibious_equipment_1_short:0 "LVT(A)-1"
 USA_light_tank_amphibious_equipment_2_short:0 "LVT(A)-5"
 USA_medium_tank_amphibious_equipment_1_short:0 "Sherman DD"
-USA_medium_tank_amphibious_equipment_1_short:0 "T20 DD"
+USA_medium_tank_amphibious_equipment_2_short:0 "T20 DD"
 
 ENG_amphibious_mech_vehicle_1_short:0 "DUKW"
 ENG_amphibious_mech_vehicle_2_short:0 "Terrapin"
@@ -126,9 +126,16 @@ ENG_light_tank_amphibious_equipment_1_short:0 "A4E3 L2E1"
 
 GER_amphibious_mech_vehicle_1_short:0 "Landwasserschlepper"
 GER_amphibious_mech_vehicle_2_short:0 "Landwasserschlepper II"
+GER_light_tank_amphibious_equipment_1_short:0 "Schwimmpanzer II"
+GER_light_tank_amphibious_equipment_2_short:0 "Schwimmleopard"
+GER_medium_tank_amphibious_equipment_1_short:0 "Tauchpanzer IV"
+GER_medium_tank_amphibious_equipment_2_short:0 "Tauchpanther"
 
 SOV_light_tank_amphibious_equipment_1_short:0 "T37A"
 SOV_light_tank_amphibious_equipment_2_short:0 "T-40 Amphibious"
+
+JAP_medium_tank_amphibious_equipment_1_short:0 "Type 2 Ka-Mi"
+JAP_medium_tank_amphibious_equipment_2_short:0 "Type 3 Ka-Chi"
 
 ##Airborne gliders
 

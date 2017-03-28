@@ -8,6 +8,13 @@ equipments = {
       mechanized
     }
 
+		upgrades = {
+			general_reliability_upgrade
+			general_engine_upgrade
+			mech_armor_upgrade
+			mech_gun_upgrade
+		}
+
 		group_by = archetype
 
 		interface_category = interface_category_land
