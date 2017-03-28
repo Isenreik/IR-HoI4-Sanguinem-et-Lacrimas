@@ -3,7 +3,7 @@ upgrades = {
   general_reliability_upgrade = {
     max_level = 5
     cost = land
-    reliability = 0.1
+    reliability = 0.065
   }
   general_engine_upgrade = {
 		max_level = 3
