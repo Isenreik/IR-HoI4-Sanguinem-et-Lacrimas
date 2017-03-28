@@ -1,0 +1,41 @@
+This is an ever-expanding list of mods that are indeed compatible with this or work well with it.
+
+[h1]Compatible Mods[/h1]
+These mods work fine together
+:elindustry:
+[list]
+[*] [url=http://steamcommunity.com/sharedfiles/filedetails/?id=831536727]Araxiel's Bonus Research Slot[/url]
+[*] [url=http://steamcommunity.com/sharedfiles/filedetails/?id=842654684]Araxiel's Light Tank Improvements[/url]
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=885410896&searchtext=Guns+Trucks]Guns Trucks[/url]
+[*] Minor Sprites
+[*] Battlesound - Sound Modification
+[*] [url=http://steamcommunity.com/sharedfiles/filedetails/?id=818974838&searchtext=]Expanded National Laws[/url]
+[*] Destroy Faction With Members
+[*] Impassable Terrain by Yakez
+[*] More Variants
+[*] More Division Icons
+[*] [url=http://steamcommunity.com/sharedfiles/filedetails/?id=845592232&searchtext=]Eight Years' War of Resistance: An Asia Realism Project[/url]
+[*] Formable Nations
+[*] New Continuous Focuses
+[/list]
+
+[h1]Semi-Compatible Mods[/h1]
+These mods work together, but there might be tiny conflicts (which you might not even notice as a player)
+:reinforce:
+[list]
+[*] [url=http://steamcommunity.com/sharedfiles/filedetails/?id=809903394]Kaiserreich[/url]
+[*] [url=http://steamcommunity.com/sharedfiles/filedetails/?id=780512660]Araxiel's Signal Company Buff[/url]
+[*] Realistic Air Missions (LITE)
+[/list]
+
+[h1]Non-Compatible Mods[/h1]
+These mods are incompatible and will cause either this mod or the other mod to break or at the very least, be overwritten.
+:retreat:
+[list]
+[*] Araxiel's Arty Upgrades for SPs
+[*] Road to '56
+[*] Tech Tree Expansion
+[*] Millenium Dawn
+[*] Timeline of Iron
+[*] Realistic Air Missions v3.3
+[/list]

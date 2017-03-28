@@ -27,6 +27,8 @@ That said; most normal mods should work with this since they don't change techno
 
 There should be no bugs; this mod is 99% done and ready to play. There should be no broken icons or text.
 
+[url=http://steamcommunity.com/workshop/filedetails/discussion/891139945/135512625247774306/][img]https://github.com/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis/blob/master/readme-files/button_compatible.png?raw=true[/img][/url]
+
 [img]https://github.com/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis/blob/master/readme-files/Header_planned.png?raw=true[/img]
 
 [list]
@@ -47,8 +49,8 @@ There should be no bugs; this mod is 99% done and ready to play. There should be
 [url=https://github.com/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis][img]https://github.com/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis/blob/master/readme-files/button_github.png?raw=true[/img][/url]
 [url=https://twitter.com/IsenreikStudio][img]https://github.com/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis/blob/master/readme-files/button_twitter.png?raw=true[/img][/url]
 
-[img]https://github.com/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis/blob/master/readme-files/button_found_problem.png?raw=true[/img]
-[url=https://gitreports.com/issue/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis][img]https://github.com/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis/blob/master/readme-files/button_open_up_new_issue_button.png?raw=true[/img][/url]
+[url=https://gitreports.com/issue/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis][img]https://github.com/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis/blob/master/readme-files/button_found_problem.png?raw=true[/img]
+[img]https://github.com/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis/blob/master/readme-files/button_open_up_new_issue_button.png?raw=true[/img][/url]
 [url=https://discord.gg/Y2hxcRZ][img]https://github.com/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis/blob/master/readme-files/button_join_the_discord_button.png?raw=true[/img][/url]
 
 [img]https://github.com/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis/blob/master/readme-files/Header_contribute.png?raw=true[/img][list]
@@ -57,15 +59,13 @@ There should be no bugs; this mod is 99% done and ready to play. There should be
 [*] [img]https://www.shareicon.net/data/32x32/2015/09/02/94549_organization_448x512.png[/img] Want to work with me? I'm also always open to collaborate on projects or work together to merge mods or incorporate another mod. Simply drop by the Discord[img]https://www.shareicon.net/data/16x16/2016/10/18/844052_media_512x512.png[/img].
 [/list]
 
-[img]https://github.com/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis/blob/master/readme-files/Header_misc.png?raw=true[/img]
-[i]"What does Sanguinem et Lacrimis even mean?"[/i]
-Sanguinem et Lacrimis means [i]Blood and Tears[/i]. The working title when I started this in January was "specialised troops". Since the mod became much more than just specialised troops, I decided to rename it to "Blood, Toil, Tears and Sweat" based on Winston Churchill's quote. But that was too much of a mouth-full, so I trimmed it down to "Blood and Tears" and translated it into Latin because why the hell not.
-[i]"Why did it take so long to make this mod? You said in January "coming soon", this is nearly three months later..."[/i]
-Yeah well, I had a very busy start of the year. And once march hit I was too busy [url=https://twitter.com/Araxiel/status/837863068520615936]hunting mecha dinosaurs[/url].
-[i]"You announced mod XY a long time ago! Where is it?! I want it now! Why are you not giving it to me!"[/i]
-See the previous point. Also...making a good mod by myself takes time. I want shit to work, I want to have proper research done and well written descriptions rooted in reality and history. But mostly I simply don't have enough time to create finished and polished mods. And finished and polished mods is the only thing I want to publish. I despise completely broken, unfinished, early access, pre-alpha mods, that barely work, have place-holder images and place-holder text everywhere and break the game. You only get one release; you should better make it good.
-So yeah; those other mods will come out when the clock strikes [url=https://developer.valvesoftware.com/wiki/Valve_Time]Valve Time[/url].
-[img]https://github.com/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis/blob/master/readme-files/mini-caramel-hitler.gif?raw=true[/img]
+[url=http://steamcommunity.com/workshop/filedetails/discussion/891139945/135512625247739843/][img]https://github.com/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis/blob/master/readme-files/Header_misc.png?raw=true[/img]
+[b]See the following thread[/b][/url]
 
 [img]https://github.com/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis/blob/master/readme-files/Header_other_mods.png?raw=true[/img]
 [url=http://steamcommunity.com/sharedfiles/filedetails/?id=780512660][img]http://i.imgur.com/HjvGiAd.gif[/img][/url][url=http://steamcommunity.com/sharedfiles/filedetails/?id=831536727][img]http://i.imgur.com/eL91sme.gif[/img][/url][url=http://steamcommunity.com/sharedfiles/filedetails/?id=842654684][img]http://i.imgur.com/PDN680p.gif[/img][/url]
+
+
+
+
+[img]https://github.com/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis/blob/master/readme-files/mini-caramel-hitler.gif?raw=true[/img]
