@@ -114,6 +114,8 @@ technologies = {
 
     categories = {
       chemical_warfare
+      cat_superior_firepower
+      artillery
     }
 
     ai_will_do = {
@@ -144,6 +146,11 @@ technologies = {
         }
       }
     }
+
+    ai_research_weights = {
+      chemical_warfare = 2
+    }
+
   }
 
   simple_gasmasks = {
@@ -169,6 +176,7 @@ technologies = {
 
     categories = {
       chemical_warfare
+      land_doctrine
     }
 
     ai_will_do = {
@@ -199,16 +207,13 @@ technologies = {
 
     categories = {
       chemical_warfare
+      land_doctrine
     }
 
     ai_will_do = {
       factor = 4
     }
 
-    ai_research_weights = {
-      industry = 2.0
-      armor = 3.0
-    }
   }
 
   improved_gasmask = {
@@ -230,6 +235,7 @@ technologies = {
 
     categories = {
       chemical_warfare
+      land_doctrine
     }
 
     ai_will_do = {
@@ -264,6 +270,7 @@ technologies = {
 
     categories = {
       chemical_warfare
+      land_doctrine
     }
 
     ai_will_do = {
@@ -295,6 +302,8 @@ technologies = {
 
     categories = {
       chemical_warfare
+      artillery
+      land_doctrine
     }
 
     ai_will_do = {
@@ -316,6 +325,8 @@ technologies = {
 
     categories = {
       chemical_warfare
+      artillery
+      land_doctrine
     }
 
     ai_will_do = {
@@ -347,6 +358,8 @@ technologies = {
 
     categories = {
       chemical_warfare
+      artillery
+      land_doctrine
     }
 
     ai_will_do = {
@@ -368,6 +381,8 @@ technologies = {
 
     categories = {
       chemical_warfare
+      artillery
+      land_doctrine
     }
 
     ai_will_do = {
@@ -399,6 +414,8 @@ technologies = {
 
     categories = {
       chemical_warfare
+      artillery
+      land_doctrine
     }
 
     ai_will_do = {
@@ -420,6 +437,8 @@ technologies = {
 
     categories = {
       chemical_warfare
+      artillery
+      land_doctrine
     }
 
     ai_will_do = {
@@ -457,11 +476,6 @@ technologies = {
     ai_will_do = {
       factor = 2
     }
-    ai_research_weights = {
-			air_doctrine = -1.0
-			light_air = -2.0
-		}
-
   }
 
   chemical_tac_bombing = {
@@ -508,6 +522,8 @@ technologies = {
     }
 
     categories = {
+      land_doctrine
+      artillery
       chemical_warfare
     }
 
@@ -558,6 +574,11 @@ technologies = {
 			}
 
     }
+
+    ai_research_weights = {
+      chemical_warfare = 1.5
+    }
+
   }
 
 }
