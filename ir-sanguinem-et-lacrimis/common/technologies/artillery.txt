@@ -172,6 +172,11 @@ technologies = {
 				date > "1939.1.6"
 			}
 		}
+
+		ai_research_weights = {
+			artillery = 1.5
+		}
+
 	}
 
 	artillery2 = {
@@ -448,6 +453,7 @@ technologies = {
 
 		categories = {
 			rocketry
+			artillery
 		}
 	}
 
@@ -488,6 +494,7 @@ technologies = {
 
 		categories = {
 			rocketry
+			artillery
 		}
 	}
 
@@ -528,6 +535,7 @@ technologies = {
 
 		categories = {
 			rocketry
+			artillery
 		}
 	}
 
@@ -575,6 +583,7 @@ technologies = {
 		}
 		categories = {
 			rocketry
+			artillery
 		}
 
 		path = {
@@ -629,6 +638,7 @@ technologies = {
 
 		categories = {
 			artillery
+			cat_anti_air
 		}
 	}
 
@@ -663,6 +673,11 @@ technologies = {
 
 		categories = {
 			artillery
+			cat_anti_air
+		}
+
+		ai_research_weights = {
+			artillery = 1.5
 		}
 	}
 
@@ -752,6 +767,7 @@ technologies = {
 
 		categories = {
 			artillery
+			cat_anti_air
 		}
 	}
 
@@ -795,6 +811,7 @@ technologies = {
 
 		categories = {
 			artillery
+			cat_anti_air
 		}
 	}
 
@@ -832,6 +849,7 @@ technologies = {
 
 		categories = {
 			artillery
+			cat_anti_air
 		}
 
 		## ADDED
@@ -939,6 +957,11 @@ technologies = {
 		categories = {
 			artillery
 			cat_anti_tank
+		}
+
+		ai_research_weights = {
+			cat_anti_tank = 1.5
+			artillery = 1.2
 		}
 	}
 
@@ -1454,6 +1477,7 @@ technologies = {
 
 		categories = {
 			artillery
+			cat_anti_air
 		}
 	}
 
@@ -1514,6 +1538,10 @@ technologies = {
 			modifier = {
 				factor = 5
 				TAG = USA
+			}
+			modifier = {
+				factor = 3
+				TAG = ENG
 			}
 		}
 	}
@@ -1701,6 +1729,7 @@ technologies = {
 
 		categories = {
 			rocketry
+			artillery
 		}
 	}
 
@@ -1744,6 +1773,7 @@ technologies = {
 
 		categories = {
 			rocketry
+			artillery
 		}
 	}
 
@@ -1777,6 +1807,7 @@ technologies = {
 
 		categories = {
 			rocketry
+			artillery
 		}
 	}
 
@@ -1802,6 +1833,7 @@ technologies = {
 		categories = {
 			rocketry
 			mot_rockets
+			artillery
 		}
 	}
 
@@ -1847,11 +1879,11 @@ technologies = {
 			}
 
 			modifier = {
-				factor = 2.5
+				factor = 3
 				TAG = ENG
 			}
 			modifier = {
-				factor = 1.5
+				factor = 2
 				TAG = USA
 			}
 		}
@@ -1900,11 +1932,19 @@ technologies = {
 			}
 
 			modifier = {
-				factor = 2.5
+				factor = 3
 				TAG = ENG
 			}
 			modifier = {
-				factor = 1.5
+				factor = 3
+				TAG = AST
+			}
+			modifier = {
+				factor = 3.5
+				TAG = FRA
+			}
+			modifier = {
+				factor = 2
 				TAG = USA
 			}
 		}
@@ -1941,7 +1981,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 0.5
+			factor = 0.8
 
 			modifier = {
 				factor = 2
@@ -2001,6 +2041,7 @@ technologies = {
 
 		categories = {
 			artillery
+			cat_anti_air
 		}
 	}
 
@@ -2057,6 +2098,7 @@ technologies = {
 
 		categories = {
 			artillery
+			cat_anti_air
 		}
 	}
 
@@ -2115,9 +2157,11 @@ technologies = {
 
 		categories = {
 			artillery
+			cat_anti_air
 		}
 	}
 
+	#air-to-air
 	aam_tech1 = {
 
 		air_intercept_efficiency = 0.2
@@ -2157,8 +2201,8 @@ technologies = {
 		}
 
 		categories = {
-			artillery
 			rocketry
+			guided_missiles
 		}
 	}
 
@@ -2208,6 +2252,7 @@ technologies = {
 		categories = {
 			artillery
 			rocketry
+			cat_anti_air
 		}
 	}
 
@@ -2264,6 +2309,7 @@ technologies = {
 			artillery
 			rocketry
 			guided_missiles
+			cat_anti_air
 		}
 	}
 
@@ -2312,6 +2358,7 @@ technologies = {
 			artillery
 			rocketry
 			guided_missiles
+			cat_anti_air
 		}
 	}
 
