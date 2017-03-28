@@ -1014,7 +1014,7 @@ guiTypes = {
 		}
 
 		containerWindowType = {
-			name = "inf_loading_mech"
+			name = "inf_loading_upgrade"
 			position = { x = 409 y = 30 }
 			size = { width=100 height=60 }
 			clipping = no
