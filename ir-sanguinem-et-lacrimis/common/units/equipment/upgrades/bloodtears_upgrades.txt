@@ -47,10 +47,10 @@ upgrades = {
 		max_level = 5
 
 		cost = land
-		soft_attack = 0.04
-    defense = 0.02
-    breakthrough = 0.02
-		reliability = -0.05
+		soft_attack = 0.1
+    defense = 0.06
+    breakthrough = 0.1
+		reliability = -0.08
 	}
 
 	arty_at_gun_upgrade = {
@@ -94,6 +94,7 @@ upgrades = {
 
 		cost = land				# This determies how much XP it will cost, controlled by defines, there are 3 cost types: air, land and naval
 		soft_attack = 0.02
+    reliability = -0.02
 	}
 
 }
