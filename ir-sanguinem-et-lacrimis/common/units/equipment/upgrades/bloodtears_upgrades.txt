@@ -9,11 +9,13 @@ upgrades = {
 		max_level = 5
 		cost = land
 		maximum_speed = 0.03
+    reliability = -0.03
 	}
   general_cost_upgrade = {
     max_level = 5
     cost = land
-    build_cost_ic = -0.02
+    build_cost_ic = -0.03
+    reliability = -0.05
   }
 
 
@@ -87,7 +89,7 @@ upgrades = {
 		reliability = -0.05
 	}
 
-  inf_loading_mech = {
+  inf_loading_upgrade = {
 		max_level = 5
 
 		cost = land				# This determies how much XP it will cost, controlled by defines, there are 3 cost types: air, land and naval
