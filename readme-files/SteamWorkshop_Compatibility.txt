@@ -38,4 +38,5 @@ These mods are incompatible and will cause either this mod or the other mod to b
 [*] Millenium Dawn
 [*] Timeline of Iron
 [*] Realistic Air Missions v3.3
+[*] Black Ice
 [/list]
