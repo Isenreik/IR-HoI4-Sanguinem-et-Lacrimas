@@ -117,17 +117,32 @@ technologies = {
     }
 
     ai_will_do = {
-      factor = 0.2
+      factor = 0.5
       modifier = {
 				factor = 20
+        has_global_flag = chemical_warfare_activated
+			}
+      modifier = {
+				factor = 4
 				any_enemy_country = {
           has_country_flag = uses_chemical_weapons
         }
 			}
       modifier = {
-				factor = 5
-        has_global_flag = chemical_warfare_activated
-			}
+        factor = 1.5
+        OR = {
+          has_idea = sour_loser
+          has_idea = warrior_traditions_idea
+          has_idea = vittoria_mutilata
+        }
+      }
+      modifier = {
+        factor = 1.2
+        OR = {
+          has_idea = FRA_victors_of_wwi
+          has_idea = ENG_the_war_to_end_all_wars
+        }
+      }
     }
   }
 
@@ -157,9 +172,9 @@ technologies = {
     }
 
     ai_will_do = {
-      factor = 3
+      factor = 5
       modifier = {
-				factor = 5
+				factor = 4
 				any_enemy_country = {
           has_country_flag = uses_chemical_weapons
         }
@@ -187,7 +202,12 @@ technologies = {
     }
 
     ai_will_do = {
-      factor = 1.5
+      factor = 4
+    }
+
+    ai_research_weights = {
+      industry = 2.0
+      armor = 3.0
     }
   }
 
@@ -213,7 +233,12 @@ technologies = {
     }
 
     ai_will_do = {
-      factor = 1.5
+      factor = 3
+
+      modifier = {
+        factor = 5
+        date > "1939.1.1"
+      }
     }
   }
 
@@ -242,7 +267,12 @@ technologies = {
     }
 
     ai_will_do = {
-      factor = 1.5
+      factor = 3
+
+      modifier = {
+        factor = 4
+        date > "1942.1.6"
+      }
     }
   }
   #next time, just ask before poking your nose around here
@@ -268,7 +298,7 @@ technologies = {
     }
 
     ai_will_do = {
-      factor = 1.5
+      factor = 8
     }
   }
 
@@ -289,7 +319,12 @@ technologies = {
     }
 
     ai_will_do = {
-      factor = 1.5
+      factor = 2
+
+      modifier = {
+        factor = 5
+        date > "1936.1.6"
+      }
     }
   }
 
@@ -336,7 +371,12 @@ technologies = {
     }
 
     ai_will_do = {
-      factor = 1
+      factor = 2
+
+      modifier = {
+        factor = 5
+        date > "1938.1.6"
+      }
     }
   }
 
@@ -362,7 +402,7 @@ technologies = {
     }
 
     ai_will_do = {
-      factor = 1
+      factor = 2
     }
   }
 
@@ -383,13 +423,19 @@ technologies = {
     }
 
     ai_will_do = {
-      factor = 1
+      factor = 2
+
+      modifier = {
+        factor = 5
+        date > "1939.1.6"
+      }
+
     }
   }
 
   chemical_strat_bombing = {
 
-    air_strategic_bomber_bombing_factor = 0.3
+    air_strategic_bomber_bombing_factor = 0.2
 
     path = {
       leads_to_tech = chemical_tac_bombing
@@ -409,8 +455,13 @@ technologies = {
     }
 
     ai_will_do = {
-      factor = 1
+      factor = 2
     }
+    ai_research_weights = {
+			air_doctrine = -1.0
+			light_air = -2.0
+		}
+
   }
 
   chemical_tac_bombing = {
@@ -461,7 +512,16 @@ technologies = {
     }
 
     ai_will_do = {
-      factor = 1.5
+      factor = 2
+
+      modifier = {
+        factor = 5
+        tag = USA
+      }
+      modifier = {
+        factor = 4
+        tag = ENG
+      }
     }
   }
 
@@ -489,9 +549,14 @@ technologies = {
       factor = 1
 
       modifier = {
-        factor = 4
+        factor = 5
         tag = USA
       }
+      modifier = {
+				factor = 3
+				date > "1943.1.1"
+			}
+
     }
   }
 
