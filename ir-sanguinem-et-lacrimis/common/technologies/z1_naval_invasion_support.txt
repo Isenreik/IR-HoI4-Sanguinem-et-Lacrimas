@@ -36,6 +36,8 @@ technologies = {
 		}
 
 		categories = {
+  		naval_equipment
+			naval_equipment
 			cat_mechanized_equipment
 			motorized_equipment
 			infantry_tech
@@ -43,7 +45,27 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 0.5
+			factor = 1.5
+
+			modifier = {
+				factor = 4
+				tag = USA
+			}
+
+			modifier = {
+				factor = 1.5
+				tag = GER
+			}
+
+			modifier = {
+				factor = 1.7
+				tag = ENG
+			}
+
+			modifier = {
+				factor = 1.4
+				tag = JAP
+			}
 		}
 
 	}
@@ -84,13 +106,34 @@ technologies = {
 		}
 
 		categories = {
+  		naval_equipment
 			armor
 			cat_light_armor
 			tp_tech
 		}
 
 		ai_will_do = {
-			factor = 0.5
+			factor = 2
+
+			modifier = {
+				factor = 4
+				tag = USA
+			}
+
+			modifier = {
+				factor = 1.5
+				tag = GER
+			}
+
+			modifier = {
+				factor = 1.7
+				tag = ENG
+			}
+
+			modifier = {
+				factor = 1.4
+				tag = JAP
+			}
 		}
 
 	}
@@ -113,13 +156,34 @@ technologies = {
 		}
 
 		categories = {
+  		naval_equipment
 			armor
 			cat_light_armor
 			tp_tech
 		}
 
 		ai_will_do = {
-			factor = 0.5
+			factor = 1.5
+
+			modifier = {
+				factor = 4
+				tag = USA
+			}
+
+			modifier = {
+				factor = 1.5
+				tag = GER
+			}
+
+			modifier = {
+				factor = 1.7
+				tag = ENG
+			}
+
+			modifier = {
+				factor = 1.4
+				tag = JAP
+			}
 		}
 
 	}
@@ -142,6 +206,7 @@ technologies = {
 		}
 
 		categories = {
+  		naval_equipment
 			cat_mechanized_equipment
 			motorized_equipment
 			infantry_tech
@@ -149,7 +214,27 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 0.5
+			factor = 3
+
+			modifier = {
+				factor = 4
+				tag = USA
+			}
+
+			modifier = {
+				factor = 1.5
+				tag = GER
+			}
+
+			modifier = {
+				factor = 1.7
+				tag = ENG
+			}
+
+			modifier = {
+				factor = 1.4
+				tag = JAP
+			}
 		}
 
 	}
@@ -181,13 +266,29 @@ technologies = {
 		}
 
 		categories = {
+  		naval_equipment
 			armor
 			cat_medium_armor
 			tp_tech
 		}
 
 		ai_will_do = {
-			factor = 0.5
+			factor = 2
+
+			modifier = {
+				factor = 4
+				tag = USA
+			}
+
+			modifier = {
+				factor = 1.5
+				tag = GER
+			}
+
+			modifier = {
+				factor = 2
+				tag = JAP
+			}
 		}
 
 	}
@@ -209,13 +310,29 @@ technologies = {
 		}
 
 		categories = {
+  		naval_equipment
 			armor
 			cat_medium_armor
 			tp_tech
 		}
 
 		ai_will_do = {
-			factor = 0.5
+			factor = 2
+
+			modifier = {
+				factor = 4
+				tag = USA
+			}
+
+			modifier = {
+				factor = 1.5
+				tag = GER
+			}
+
+			modifier = {
+				factor = 2
+				tag = JAP
+			}
 		}
 
 	}
