@@ -2267,14 +2267,11 @@ technologies = {
 		ai_will_do = {
 			factor = 4
 		}
-		ai_research_weights = {
-			battleship = 1.5
-			cruiser = 1.0
-			carrier = 1.5
-		}
 
 		categories = {
 			industry
+			naval_equipment
+			construction_tech
 		}
 	}
 
@@ -2304,6 +2301,8 @@ technologies = {
 
 		categories = {
 			industry
+			naval_equipment
+			construction_tech
 		}
 	}
 
@@ -2333,6 +2332,8 @@ technologies = {
 
 		categories = {
 			industry
+			naval_equipment
+			construction_tech
 		}
 	}
 
