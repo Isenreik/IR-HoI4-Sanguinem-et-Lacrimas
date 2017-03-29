@@ -35,10 +35,22 @@ technologies = {
 
     categories = {
       bureau_tech
+      support_tech
+      infantry_tech
     }
 
     ai_will_do = {
-      factor = 2
+      factor = 1
+      modifier = {
+				factor = 2.5
+      	NOT = {
+        	is_major = yes
+        }
+			}
+      modifier = {
+				factor = 2.5
+        has_army_manpower = { size > 100000 }
+			}
     }
   }
 
@@ -61,10 +73,22 @@ technologies = {
 
     categories = {
       bureau_tech
+      support_tech
+      infantry_tech
     }
 
     ai_will_do = {
-      factor = 2
+      factor = 1.2
+      modifier = {
+				factor = 2.5
+      	NOT = {
+        	is_major = yes
+        }
+			}
+      modifier = {
+				factor = 2.5
+        has_army_manpower = { size > 100000 }
+			}
     }
   }
 
@@ -87,10 +111,11 @@ technologies = {
 
     categories = {
       bureau_tech
+      support_tech
     }
 
     ai_will_do = {
-      factor = 2
+      factor = 1.5
     }
   }
 
@@ -154,7 +179,19 @@ technologies = {
     }
 
     ai_will_do = {
-      factor = 1.5
+      factor = 1.6
+      modifier = {
+				factor = 3
+        tag = USA
+			}
+      modifier = {
+				factor = 1.5
+        tag = ENG
+			}
+      modifier = {
+				factor = 1.5
+        has_government = democratic
+			}
     }
   }
 
@@ -186,11 +223,25 @@ technologies = {
     }
 
     ai_will_do = {
-      factor = 1.5
+      factor = 1.6
+      modifier = {
+				factor = 2
+        tag = GER
+			}
+      modifier = {
+				factor = 2.5
+        tag = JAP
+			}
+      modifier = {
+				factor = 1.5
+        has_government = fascist
+			}
     }
   }
 
   flight_officers_honor2 = {
+
+    air_interception_detect_factor = 0.08
 
     on_research_complete = {
       set_rule = { can_use_kamikaze_pilots = yes }
@@ -211,7 +262,19 @@ technologies = {
     }
 
     ai_will_do = {
-      factor = 0.8
+      factor = 1.6
+      modifier = {
+				factor = 2
+        tag = GER
+			}
+      modifier = {
+				factor = 3
+        tag = JAP
+			}
+      modifier = {
+				factor = 2
+        has_government = fascist
+			}
     }
   }
 
@@ -252,6 +315,7 @@ technologies = {
 
     categories = {
       bureau_tech
+      industry
     }
 
     ai_will_do = {
@@ -274,6 +338,7 @@ technologies = {
 
     categories = {
       bureau_tech
+      industry
     }
 
     ai_will_do = {
@@ -300,6 +365,7 @@ technologies = {
 
     categories = {
       bureau_tech
+      industry
     }
 
     ai_will_do = {
@@ -321,6 +387,7 @@ technologies = {
 
     categories = {
       bureau_tech
+      industry
     }
 
     ai_will_do = {
@@ -354,6 +421,8 @@ technologies = {
 
     categories = {
       bureau_tech
+      industry
+      motorized_equipment
     }
 
     ai_will_do = {
@@ -381,6 +450,8 @@ technologies = {
 
     categories = {
       bureau_tech
+      industry
+      motorized_equipment
     }
 
     ai_will_do = {
@@ -407,6 +478,7 @@ technologies = {
 
     categories = {
       bureau_tech
+      industry
     }
 
     ai_will_do = {
@@ -428,6 +500,7 @@ technologies = {
 
     categories = {
       bureau_tech
+      industry
     }
 
     ai_will_do = {
