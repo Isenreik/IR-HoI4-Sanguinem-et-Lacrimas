@@ -37,7 +37,6 @@ technologies = {
 
 		categories = {
   		naval_equipment
-			naval_equipment
 			cat_mechanized_equipment
 			motorized_equipment
 			infantry_tech
