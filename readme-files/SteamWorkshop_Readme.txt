@@ -9,12 +9,13 @@ From amphibious tanks, to commandeering civilian vehicles all the way to chemica
 
 [*] Adds tons of research to the artillery folder; from railway guns, like the unused US M1920, to early SAM, such as the German Rheintochter, and early ATGMs, such as the French SS.10.
 [*] Includes [url=https://steamcommunity.com/sharedfiles/filedetails/?id=827398034]Araxiel's Arty Upgrades for SPs[/url].
+[*] Includes variant upgrades for all land-based equipment; from SAMs to Motorised.
 [*] Expands the industry folder into the early 50s and adds various specific construction buffs.
 [*] Amphibious tanks and APCs such as the American Sherman DD, the German Landwasserschlepper or the Japanese Type 2 Ka-Mi; historic equipment with images where applicable.
 [*] Glider tanks, such as the Mk VII Tetrarch.
 [*] Penal battalions and political commissar detachments for the [url=https://www.youtube.com/watch?v=kdOgvdbl314]Commulists[/url] and [url=https://twitter.com/prttybadtweeter/status/822620848897069056]Fascists[/url] amongst us.
-[*] Chemical Warfare mechanics: unleash this deadly weapon in combat and force the enemy to react, but beware of the diplomatic consequences; once the genie is out of the bottle it can't be put back in.
 [*] Desert and jungle equipment and winter training for the troops.
+[*] Chemical Warfare mechanics: unleash this deadly weapon in combat and force the enemy to react, but beware of the diplomatic consequences; once the genie is out of the bottle it can't be put back in.
 [*] Officer schools to improve your commanders.
 [*] Civilian press manipulation for the home-front; strengthen your government against foreign subversive activities or requisition civilian vehicles for the front.
 [*] Extensive research went into this to bring the most historically accurate experience, while still trying to maintain a balance and remain entertaining and familiar. From description to names, images and appropriate introductory years.
@@ -59,11 +60,11 @@ There should be no bugs; this mod is 99% done and ready to play. There should be
 [*] [img]https://www.shareicon.net/data/32x32/2015/09/02/94549_organization_448x512.png[/img] Want to work with me? I'm also always open to collaborate on projects or work together to merge mods or incorporate another mod. Simply drop by the Discord[img]https://www.shareicon.net/data/16x16/2016/10/18/844052_media_512x512.png[/img].
 [/list]
 
-[url=http://steamcommunity.com/workshop/filedetails/discussion/891139945/135512625247739843/][img]https://github.com/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis/blob/master/readme-files/Header_misc.png?raw=true[/img]
-[b]See the following thread[/b][/url]
-
 [img]https://github.com/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis/blob/master/readme-files/Header_other_mods.png?raw=true[/img]
 [url=http://steamcommunity.com/sharedfiles/filedetails/?id=780512660][img]http://i.imgur.com/HjvGiAd.gif[/img][/url][url=http://steamcommunity.com/sharedfiles/filedetails/?id=831536727][img]http://i.imgur.com/eL91sme.gif[/img][/url][url=http://steamcommunity.com/sharedfiles/filedetails/?id=842654684][img]http://i.imgur.com/PDN680p.gif[/img][/url]
+
+[url=http://steamcommunity.com/workshop/filedetails/discussion/891139945/135512625247739843/][img]https://github.com/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis/blob/master/readme-files/Header_misc.png?raw=true[/img]
+[b]See the following thread[/b][/url]
 
 
 
