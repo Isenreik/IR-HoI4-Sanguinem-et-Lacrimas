@@ -2293,11 +2293,6 @@ technologies = {
 		ai_will_do = {
 			factor = 4
 		}
-		ai_research_weights = {
-			battleship = 1.5
-			cruiser = 1.0
-			carrier = 1.5
-		}
 
 		categories = {
 			industry
@@ -2323,11 +2318,6 @@ technologies = {
 
 		ai_will_do = {
 			factor = 4
-		}
-		ai_research_weights = {
-			battleship = 1.5
-			cruiser = 1.0
-			carrier = 1.5
 		}
 
 		categories = {
