@@ -58,56 +58,6 @@ country_event = {
 			save_event_target_as = chem_wep_developer
 		}
 
-		random_list = {
-			65 = {
-				random_country = {
-					limit = {
-						is_major = yes
-						OR = {
-							has_government = communist
-							has_government = fascist
-						}
-						NOT = { has_country_flag = chem_wep_developer }
-						is_ai = yes
-					}
-					# effect
-					save_event_target_as = chem_wep_developer
-				}
-			}
-			15 = {
-				random_country = {
-					limit = {
-						is_major = yes
-						has_government = democratic
-						NOT = { has_country_flag = chem_wep_developer }
-						is_ai = yes
-					}
-					# effect
-					save_event_target_as = chem_wep_developer
-				}
-			}
-			10 = {
-				random_country = {
-					limit = {
-						is_major = yes
-						NOT = { has_country_flag = chem_wep_developer }
-						is_ai = yes
-					}
-					# effect
-					save_event_target_as = chem_wep_developer
-				}
-			}
-			10 = {
-				random_country = {
-					limit = {
-						NOT = { has_country_flag = chem_wep_developer }
-						is_ai = yes
-					}
-					save_event_target_as = chem_wep_developer
-				}
-			}
-		}
-
 		event_target:chem_wep_developer = {
 			set_country_flag = { flag = chem_wep_developer days = 600 }
 		}
@@ -126,6 +76,36 @@ country_event = {
 		name = chem_convention.1.a
 	}
 
+}
+
+# AI started researching
+country_event = {
+	id = chem_convention.5
+	title = chem_convention.5.t
+	desc = chem_convention.5.d
+	picture = GFX_report_event_gas_lab
+
+	trigger = {
+		any_country = {
+			is_researching_technology = chemical_warfare_tech
+			is_ai = yes
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 20
+		modifier = {
+			factor = 0.4
+			any_country = {
+				is_researching_technology = chemical_warfare_tech
+				is_neighbor_of = ROOT
+			}
+		}
+	}
+
+	option = {
+		name = chem_convention.5.a
+	}
 }
 
 # AI started researching
