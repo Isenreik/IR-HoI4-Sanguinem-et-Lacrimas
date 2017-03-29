@@ -25,6 +25,7 @@ spriteTypes = {
   SpriteType = { name = "GFX_news_event_chemical_brit"                  texturefile = "gfx//event_pictures//news_event_chemical_brit.dds"    alwaystransparent = yes	}
   SpriteType = { name = "GFX_report_event_gas_ger"                      texturefile = "gfx//event_pictures//report_event_gas_ger.dds"    alwaystransparent = yes	}
   SpriteType = { name = "GFX_report_event_gas_ukf"                      texturefile = "gfx//event_pictures//report_event_gas_ukf.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_report_event_gas_lab"                      texturefile = "gfx//event_pictures//report_event_gas_lab.dds"    alwaystransparent = yes	}
 
   SpriteType = { name = "GFX_officers_tech1_medium"                      texturefile = "gfx//interface//technologies//officer_tech1.dds"    alwaystransparent = yes	}
   SpriteType = { name = "GFX_officers_tech2_medium"                      texturefile = "gfx//interface//technologies//officer_tech2.dds"    alwaystransparent = yes	}
