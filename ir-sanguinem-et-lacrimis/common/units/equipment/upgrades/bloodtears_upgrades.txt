@@ -14,8 +14,8 @@ upgrades = {
   general_cost_upgrade = {
     max_level = 2
     cost = land
-    build_cost_ic = -0.025
-    reliability = -0.06
+    build_cost_ic = -0.02
+    reliability = -0.07
   }
 
 
@@ -40,7 +40,7 @@ upgrades = {
 		max_level = 3
 
 		cost = land
-		air_attack = 0.35
+		air_attack = 0.1
 		reliability = -0.06
 	}
   arty_aa_ground_upgrade = {
@@ -93,7 +93,7 @@ upgrades = {
 		max_level = 2
 
 		cost = land				# This determies how much XP it will cost, controlled by defines, there are 3 cost types: air, land and naval
-		soft_attack = 0.01
+		soft_attack = 0.015
     reliability = -0.02
 	}
 
