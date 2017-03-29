@@ -20,6 +20,14 @@ technologies = {
 
     enable_tactic = tactic_prepare_gas_attack
                                                         #I know you are reading this
+
+    allow = {
+      OR = {
+        NOT = { has_country_flag = ratified_chemical_ban }
+        has_country_flag = ratified_chemical_ban_exception
+      }
+    }
+
     on_research_complete = {
       if = {
       	limit = {
