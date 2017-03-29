@@ -147,6 +147,9 @@ glider_equipment_1_desc:0 "These larger gliders can bring in proper supplies and
 glider_equipment_desc:0 "These larger gliders can bring in proper supplies and even small vehicles along with our paratroopers."
 
 ENG_glider_equipment_1:0 "Hamilcar"
+USA_glider_equipment_1:0 "Waco CG-4"
+GER_glider_equipment_1:0 "Me 321"
+SOV_glider_equipment_1:0 "Ilyushin Il-32"
 
 glider_tank_equipment:0 "Glider Tank"
 glider_tank_equipment_1:0 "Glider Tank"
