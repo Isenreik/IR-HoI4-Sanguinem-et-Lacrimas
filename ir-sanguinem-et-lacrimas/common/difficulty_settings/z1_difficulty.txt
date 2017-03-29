@@ -1,0 +1,182 @@
+difficulty_settings = {
+
+	## added
+	## Commonwealth
+	difficulty_setting = {
+		key = "custom_diff_strong_common"
+		modifier = diff_strong_ai_generic
+		countries = { CAN NZL AST RAJ SAF MAL }
+		multiplier = 2.0
+	}
+	## Middle East
+	difficulty_setting = {
+		key = "custom_diff_strong_mideast"
+		modifier = diff_strong_ai_generic
+		countries = {
+			AFG
+			ARM
+			AZR
+			GEO
+			PER
+			IRQ
+			ISR
+			JOR
+			LEB
+			OMA
+			PAK
+			PAL
+			SYR
+			TUR
+			YEM
+		}
+		multiplier = 2.0
+	}
+	## Balkans
+	difficulty_setting = {
+		key = "custom_diff_strong_balkan"
+		modifier = diff_strong_ai_generic
+		countries = {
+			ALB
+			BUL
+			GRE
+			CRO
+			MNT
+			SER
+			YUG
+		}
+		multiplier = 2.0
+	}
+	## Eastern Europe
+	difficulty_setting = {
+		key = "custom_diff_strong_easteu"
+		modifier = diff_strong_ai_generic
+		countries = {
+			BLR
+			CZE
+			HUN
+			ROM
+			SLO
+			UKR
+		}
+		multiplier = 2.0
+	}
+	## Baltic
+	difficulty_setting = {
+		key = "custom_diff_strong_baltic"
+		modifier = diff_strong_ai_generic
+		countries = {
+			POL
+			EST
+			LAT
+			LIT
+		}
+		multiplier = 2.0
+	}
+	## Western Europe
+	difficulty_setting = {
+		key = "custom_diff_strong_westeu"
+		modifier = diff_strong_ai_generic
+		countries = {
+			AUS
+			BEL
+			DDR
+			IRE
+			LUX
+			HOL
+			POR
+			SPR
+			SWI
+			WGR
+		}
+		multiplier = 2.0
+	}
+	## Scandinavia
+	difficulty_setting = {
+		key = "custom_diff_strong_scan"
+		modifier = diff_strong_ai_generic
+		countries = {
+			DEN
+			FIN
+			ICE
+			NOR
+			SWE
+		}
+		multiplier = 2.0
+	}
+	## Latin America
+	difficulty_setting = {
+		key = "custom_diff_strong_latiname"
+		modifier = diff_strong_ai_generic
+		countries = {
+			BOL
+			BRA
+			CHL
+			COL
+			COS
+			CUB
+			DOM
+			ECU
+			ELS
+			GUA
+			HAI
+			HON
+			MEX
+			NIC
+			PAN
+			PAR
+			PRU
+			PHI
+			URG
+			VEN
+		}
+		multiplier = 2.0
+	}
+	## Africa
+	difficulty_setting = {
+		key = "custom_diff_strong_africa"
+		modifier = diff_strong_ai_generic
+		countries = {
+			BOT
+			ETH
+			LIB
+			MZB
+			COG
+			ZIM
+
+			EGY 	# middle east or not; good question
+			LBA
+		}
+		multiplier = 2.0
+	}
+	## Other Asia
+	difficulty_setting = {
+		key = "custom_diff_strong_otherasia"
+		modifier = diff_strong_ai_generic
+		countries = {
+			CAM
+			INS
+			KOR
+			LAO
+			SIA
+			VIN
+
+			MAN 		# Manchuko
+			GXC SHX XSM YUN #Chinese Warlords
+		}
+		multiplier = 2.0
+	}
+	## Central Asia
+	difficulty_setting = {
+		key = "custom_diff_strong_centralasia"
+		modifier = diff_strong_ai_generic
+		countries = {
+			BHU
+			MON
+			NEP
+			SIK
+			TAN
+			TIB
+		}
+		multiplier = 2.0
+	}
+}
