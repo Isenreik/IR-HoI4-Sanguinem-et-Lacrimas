@@ -42,7 +42,7 @@ country_event = {
 
 }
 
-##chemical_warfare accepted - first
+##chemical_warfare accepted
 country_event = {
 	id = chemical_warfare.2
 	title = chemical_warfare.2.t
@@ -138,6 +138,105 @@ country_event = {
 		name = chemical_warfare.5.a
 
 		add_opinion_modifier = { target = FROM modifier = chemical_warfare_war }
+	}
+
+	## chemical warfare developed
+	country_event = {
+		id = chemical_warfare.6
+		title = chemical_warfare.6.t
+		picture = GFX_report_event_gas_ukf
+
+		desc = chemical_warfare.2.d1
+
+		mean_time_to_happen = {
+			months = 10
+			modifier = {
+				factor = 0.7
+				has_global_flag = {
+					flag = chemical_weapons_development
+					value < 0
+				}
+			}
+			modifier = {
+				factor = 0.6
+				has_global_flag = {
+					flag = chemical_weapons_development
+					value < 1
+				}
+			}
+		}
+
+		immediate = {
+			random_list = {
+				65 = {
+					random_country = {
+						limit = {
+							is_major = yes
+							OR = {
+								has_government = communist
+								has_government = fascist
+							}
+							NOT = { has_country_flag = chem_wep_developer }
+						}
+						# effect
+						save_event_target_as = chem_wep_developer
+						set_country_flag = chem_wep_developer
+					}
+				}
+				15 = {
+					random_country = {
+						limit = {
+							is_major = yes
+							has_government = democratic
+							NOT = { has_country_flag = chem_wep_developer }
+						}
+						# effect
+						save_event_target_as = chem_wep_developer
+						set_country_flag = chem_wep_developer
+					}
+				}
+				10 = {
+					random_country = {
+						limit = {
+							is_major = yes
+							NOT = { has_country_flag = chem_wep_developer }
+						}
+						# effect
+						save_event_target_as = chem_wep_developer
+						set_country_flag = chem_wep_developer
+					}
+				}
+				10 = {
+					random_country = {
+						limit = {
+							NOT = { has_country_flag = chem_wep_developer }
+						}
+						save_event_target_as = chem_wep_developer
+						set_country_flag = chem_wep_developer
+					}
+				}
+			}
+		}
+
+		option = {
+			name = chemical_warfare.2.a
+
+			every_country = {
+				limit = {
+					has_war_with = ROOT
+				}
+				add_opinion_modifier = { target = ROOT modifier = chemical_warfare_started_war }
+			}
+			if = {
+				limit = {
+						has_government = democratic
+				}
+				add_national_unity = -0.02
+			}
+			set_country_flag = uses_chemical_weapons
+			modify_global_flag = { flag = nations_using_chem_warfare value = 1 }
+		}
+
 	}
 
 }
