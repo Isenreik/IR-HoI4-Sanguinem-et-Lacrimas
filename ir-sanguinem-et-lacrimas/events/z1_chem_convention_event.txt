@@ -1,0 +1,260 @@
+﻿add_namespace = chem_convention
+
+## chemical warfare development started
+country_event = {
+	id = chem_convention.1
+	title = chem_convention.1.t
+	picture = GFX_report_event_gas_lab
+
+	desc = chem_convention.1.d
+
+	hidden = yes
+
+	trigger = {
+		NOT = { has_global_flag = chem_convention_activated }
+		has_global_flag = {
+			flag = chemical_weapons_allowed_countries
+			value < 5
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 10
+		modifier = {
+			factor = 0.7
+			has_global_flag = {
+				flag = chemical_weapons_development_countries
+				value > 1
+			}
+		}
+		modifier = {
+			factor = 0.7
+			has_global_flag = {
+				flag = chemical_weapons_development_countries
+				value > 3
+			}
+		}
+		modifier = {
+			factor = 0.7
+			has_global_flag = {
+				flag = chemical_weapons_development_countries
+				value > 5
+			}
+		}
+		modifier = {
+			factor = 0.7
+			threat > 35
+		}
+	}
+
+	immediate = {
+
+		random_country = {
+			limit = {
+				NOT = { has_country_flag = chem_wep_developer }
+				is_ai = yes
+				is_major = yes
+			}
+			save_event_target_as = chem_wep_developer
+		}
+
+		random_list = {
+			65 = {
+				random_country = {
+					limit = {
+						is_major = yes
+						OR = {
+							has_government = communist
+							has_government = fascist
+						}
+						NOT = { has_country_flag = chem_wep_developer }
+						is_ai = yes
+					}
+					# effect
+					save_event_target_as = chem_wep_developer
+				}
+			}
+			15 = {
+				random_country = {
+					limit = {
+						is_major = yes
+						has_government = democratic
+						NOT = { has_country_flag = chem_wep_developer }
+						is_ai = yes
+					}
+					# effect
+					save_event_target_as = chem_wep_developer
+				}
+			}
+			10 = {
+				random_country = {
+					limit = {
+						is_major = yes
+						NOT = { has_country_flag = chem_wep_developer }
+						is_ai = yes
+					}
+					# effect
+					save_event_target_as = chem_wep_developer
+				}
+			}
+			10 = {
+				random_country = {
+					limit = {
+						NOT = { has_country_flag = chem_wep_developer }
+						is_ai = yes
+					}
+					save_event_target_as = chem_wep_developer
+				}
+			}
+		}
+
+		event_target:chem_wep_developer = {
+			set_country_flag = { flag = chem_wep_developer days = 600 }
+		}
+
+		modify_global_flag = { flag = chemical_weapons_development_countries value = 1 }
+
+		random_country = {
+			limit = {
+				NOT = { is_ai = yes }
+			}
+		country_event = { days = 2 id = chem_convention.2 }
+		}
+	}
+
+	option = {
+		name = chem_convention.1.a
+	}
+
+}
+
+# AI started researching
+country_event = {
+	id = chem_convention.5
+	title = chem_convention.5.t
+	desc = chem_convention.5.d
+	picture = GFX_report_event_gas_lab
+
+	trigger = {
+		any_country = {
+			is_researching_technology = chemical_warfare_tech
+			is_ai = yes
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 20
+		modifier = {
+			factor = 0.4
+			any_country = {
+				is_researching_technology = chemical_warfare_tech
+				is_neighbor_of = ROOT
+			}
+		}
+	}
+
+	option = {
+		name = chem_convention.5.a
+	}
+}
+
+
+## player answer
+country_event = {
+	id = chem_convention.2
+	title = chem_convention.2.t
+	picture = GFX_report_event_gas_lab
+
+	desc = chem_convention.2.d
+
+	is_triggered_only = yes
+
+	# we don't care
+	option = {
+		name = chem_convention.2.a
+
+		custom_effect_tooltip = chem_convention.2.a.tt
+
+		hidden_effect = {
+			event_target:chem_wep_developer = {
+				add_tech_bonus = {
+					name = dd_bonus
+					bonus = 0.25
+					uses = 1
+					category = chemical_warfare
+				}
+			}
+
+			modify_global_flag = { flag = chemical_weapons_allowed_countries value = 1 }
+			event_target:chem_wep_developer = {
+				add_named_threat = { threat = 2 name = chem_convention_development_threat }
+			}
+		}
+
+	}
+
+	# how dare they
+	option = {
+		name = chem_convention.2.b
+
+		custom_effect_tooltip = chem_convention.2.b.tt
+
+		event_target:chem_wep_developer = {
+			add_timed_idea = { idea = chem_reprimanded days = 400 }
+			add_opinion_modifier = { target = ROOT modifier = reprimanded_for_chem_weapons }
+		}
+
+	}
+
+	# call convention
+	option = {
+		name = chem_convention.2.c
+
+		trigger = {
+			has_global_flag = {
+				flag = chemical_weapons_development_countries
+				value < 2
+			}
+		}
+
+		custom_effect_tooltip = chem_convention.2.c.tt
+		hidden_effect = {
+			news_event = { days = 3 id = chem_convention.3 }
+		}
+		country_event = { months = 1 id = chem_convention.4 }
+
+	}
+
+}
+
+# news event
+news_event = {
+	id = chem_convention.3
+	title = chem_convention.3.t
+	desc = chem_convention.3.d
+	picture = GFX_news_event_chemical_brit
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = chem_convention.3.a
+	}
+}
+
+# convention
+country_event = {
+	id = chem_convention.4
+	title = chem_convention.4.t
+	desc = chem_convention.4.d
+	picture = GFX_report_event_gas_lab
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = chem_convention.4.a
+	}
+}
