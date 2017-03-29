@@ -16,4 +16,10 @@ opinion_modifiers = {
 		decay = 0.5
   }
 
+  reprimanded_for_chem_weapons = {
+    value = -10
+    months = 10
+		decay = 1
+  }
+
 }

@@ -13,4 +13,11 @@ on_actions = {
     }
   }
 
+  on_startup = {
+		effect = {
+      set_global_flag = { flag = chemical_weapons_development_countries value = 0 }
+      set_global_flag = { flag = chemical_weapons_allowed_countries value = 0 }
+		}
+	}
+
 }
