@@ -1,7 +1,7 @@
 This is an ever-expanding list of mods that are indeed compatible with this or work well with it.
 
 [h1]Compatible Mods[/h1]
-These mods work fine together
+These mods work fine together.
 :elindustry:
 [list]
 [*] [url=http://steamcommunity.com/sharedfiles/filedetails/?id=831536727]Araxiel's Bonus Research Slot[/url]
@@ -20,12 +20,13 @@ These mods work fine together
 [/list]
 
 [h1]Semi-Compatible Mods[/h1]
-These mods work together, but there might be tiny conflicts (which you might not even notice as a player)
+These mods work together, but there might be tiny conflicts (which you might not even notice as a player) or they are very likely to conflict in the near-future because of updates of this or the other mod.
 :reinforce:
 [list]
 [*] [url=http://steamcommunity.com/sharedfiles/filedetails/?id=809903394]Kaiserreich[/url]
 [*] [url=http://steamcommunity.com/sharedfiles/filedetails/?id=780512660]Araxiel's Signal Company Buff[/url]
 [*] Realistic Air Missions (LITE)
+[*] Expanded Engineering [technically compatible, but logically makes no sense; a lot of technologies are overlapping, such as proximity fuses or computer-assisted targeting; having both on most likely result in a really poor and really unbalanced experience]
 [/list]
 
 [h1]Non-Compatible Mods[/h1]
@@ -39,4 +40,5 @@ These mods are incompatible and will cause either this mod or the other mod to b
 [*] Timeline of Iron
 [*] Realistic Air Missions v3.3
 [*] Black Ice
+[*] Expert AI 2.0
 [/list]
