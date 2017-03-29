@@ -116,11 +116,10 @@ technologies = {
       chemical_warfare
       cat_superior_firepower
       artillery
-      land_doctrine
     }
 
     ai_will_do = {
-      factor = 0.02
+      factor = 1
       modifier = {
 				factor = 5
         has_global_flag = chemical_warfare_activated
