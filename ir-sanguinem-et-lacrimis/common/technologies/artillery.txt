@@ -174,7 +174,7 @@ technologies = {
 		}
 
 		ai_research_weights = {
-			artillery = 1.5
+			artillery = 2
 		}
 
 	}
