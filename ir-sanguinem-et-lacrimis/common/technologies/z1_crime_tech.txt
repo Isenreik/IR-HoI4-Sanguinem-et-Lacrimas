@@ -32,10 +32,26 @@ technologies = {
 
 		categories = {
 			crime_tech
+			industry
 		}
 
 		ai_will_do = {
 			factor = 1.5
+			modifier = {
+				factor = 2
+				OR = {
+					has_government = fascism
+					has_government = communism
+				}
+			}
+			modifier = {
+				factor = 0.7
+				has_government = democratic
+			}
+			modifier = {
+				factor = 1.4
+      	has_war = yes
+			}
 		}
 
 	}
@@ -65,6 +81,7 @@ technologies = {
 
 		categories = {
 			crime_tech
+			industry
 		}
 
     allow = {
@@ -77,8 +94,22 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1.5
+			modifier = {
+				factor = 2
+				OR = {
+					has_government = fascism
+					has_government = communism
+				}
+			}
+			modifier = {
+				factor = 0.7
+				has_government = democratic
+			}
+			modifier = {
+				factor = 1.4
+      	has_war = yes
+			}
 		}
-
 	}
 
   ## to the factories 2
@@ -102,6 +133,7 @@ technologies = {
 
 		categories = {
 			crime_tech
+			industry
 		}
 
     allow = {
@@ -114,6 +146,21 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1.5
+			modifier = {
+				factor = 2
+				OR = {
+					has_government = fascism
+					has_government = communism
+				}
+			}
+			modifier = {
+				factor = 0.6
+				has_government = democratic
+			}
+			modifier = {
+				factor = 1.4
+      	has_war = yes
+			}
 		}
 
 	}
@@ -151,24 +198,28 @@ technologies = {
 				}
 
     ai_will_do = {
-      factor = 0.5
+      factor = 0.8
 
       modifier = {
-				factor = 0.5
+				factor = 2
 				has_war = yes
 			}
       modifier = {
-				factor = 3
+				factor = 2
 				has_defensive_war = yes
 			}
       modifier = {
-        factor = 3
+        factor = 2
         tag = SOV
       }
       modifier = {
         factor = 3
         has_government = communism
       }
+			modifier = {
+				factor = 0.5
+				has_government = democratic
+			}
     }
 
   }
@@ -213,27 +264,26 @@ technologies = {
           has_war = yes
 				}
 
-    ai_will_do = {
-      factor = 0.5
+		ai_will_do = {
+		  factor = 0.8
 
-      modifier = {
-				factor = 0.5
+		  modifier = {
+				factor = 2
 				has_war = yes
 			}
-      modifier = {
+		  modifier = {
 				factor = 2
 				has_defensive_war = yes
 			}
-      modifier = {
-        factor = 4
-        tag = SOV
-      }
-      modifier = {
-        factor = 4
-        has_government = communism
-      }
-
-    }
+		  modifier = {
+		    factor = 2
+		    tag = SOV
+		  }
+		  modifier = {
+		    factor = 3
+		    has_government = communism
+		  }
+		}
 
   }
 
@@ -268,8 +318,25 @@ technologies = {
 				}
 
     ai_will_do = {
-      factor = 1
-    }
+		  factor = 0.8
+
+		  modifier = {
+				factor = 2
+				has_war = yes
+			}
+		  modifier = {
+				factor = 2
+				has_defensive_war = yes
+			}
+		  modifier = {
+		    factor = 2
+		    tag = SOV
+		  }
+		  modifier = {
+		    factor = 3
+		    has_government = communism
+		  }
+		}
 
   }
 
@@ -305,26 +372,26 @@ technologies = {
           }
 				}
 
-    ai_will_do = {
-      factor = 1
+				ai_will_do = {
+					factor = 0.8
 
-      modifier = {
-				factor = 0.5
-				has_war = yes
-			}
-      modifier = {
-				factor = 2
-				has_defensive_war = yes
-			}
-      modifier = {
-        factor = 3
-        tag = SOV
-      }
-      modifier = {
-        factor = 3
-        has_government = communism
-      }
-    }
+					modifier = {
+						factor = 2
+						has_war = yes
+					}
+					modifier = {
+						factor = 2
+						has_defensive_war = yes
+					}
+					modifier = {
+						factor = 2
+						tag = SOV
+					}
+					modifier = {
+						factor = 3
+						has_government = communism
+					}
+				}
 
   }
 
@@ -361,9 +428,26 @@ technologies = {
           }
 				}
 
-    ai_will_do = {
-      factor = 2
-    }
+				ai_will_do = {
+					factor = 0.8
+
+					modifier = {
+						factor = 2
+						has_war = yes
+					}
+					modifier = {
+						factor = 2
+						has_defensive_war = yes
+					}
+					modifier = {
+						factor = 2
+						tag = SOV
+					}
+					modifier = {
+						factor = 3
+						has_government = communism
+					}
+				}
 
   }
 
@@ -393,9 +477,13 @@ technologies = {
         }
 		}
 
-    ai_will_do = {
-      factor = 2
-    }
+		ai_will_do = {
+			factor = 1.5
+			modifier = {
+				factor = 2
+      	has_war = yes
+			}
+		}
 
 	}
 
