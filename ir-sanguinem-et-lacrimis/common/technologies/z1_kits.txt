@@ -42,7 +42,7 @@ technologies = {
     }
 
     ai_will_do = {
-      factor = 0
+      factor = 0.6
     }
 
 		allow = {
@@ -100,7 +100,7 @@ technologies = {
     }
 
     ai_will_do = {
-      factor = 0
+      factor = 0.6
     }
 
   }
@@ -135,7 +135,7 @@ technologies = {
     }
 
     ai_will_do = {
-      factor = 0
+      factor = 0.6
     }
 
 		dependencies = { tech_support = 1	}
@@ -165,7 +165,7 @@ technologies = {
 		jungle_support = {
 
 			max_organisation = 5
-			
+
 			jungle = {
 				defence = 0.15
 				attack = 0.1
@@ -196,7 +196,7 @@ technologies = {
     }
 
     ai_will_do = {
-      factor = 0
+      factor = 0.6
     }
 
   }
