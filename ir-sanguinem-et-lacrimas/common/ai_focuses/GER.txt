@@ -43,7 +43,7 @@ ai_focus_defense_GER = {
 		defensive = 5.0
 		radar_tech = 1.0
 		construction_tech = 2.0
-		artillery = 2.0
+		artillery = 4.0
 	}
 }
 
@@ -53,6 +53,7 @@ ai_focus_aggressive_GER = {
 		synth_resources = 1.0
 		motorized_equipment = 2.0
 		armor = 20.0
+		chemical_warfare = 1.8
 	}
 }
 
@@ -62,6 +63,7 @@ ai_focus_war_production_GER = {
 		construction_tech = 2.0
 		electronics = 2.0
 		computing_tech = 2.0
+		bureau_tech = 2.0
 	}
 }
 
@@ -87,6 +89,11 @@ ai_focus_military_advancements_GER = {
 		motorized_equipment = 4.0
 		nuclear = 100.0
 		night_vision = 5.0
+		crime_tech = 1
+		amphibious_tech = 2.5
+		glider_tech = 1.5
+		guided_missiles = 3
+		chemical_warfare = 1.7
 	}
 }
 
