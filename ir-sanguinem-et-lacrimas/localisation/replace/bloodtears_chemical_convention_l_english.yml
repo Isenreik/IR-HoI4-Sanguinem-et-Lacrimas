@@ -33,9 +33,9 @@ chem_convention.3.b: "We will ask the Communists."
 chem_convention.3.c: "We will ask the Fascists."
 chem_convention.3.d: "There is no one left to ask."
 
-chem_convention.4.t: "[FROM.GetNameDef] Asking For Our Support"
+chem_convention.4.t: "[From.GetNameDef] Asking For Our Support"
 chem_convention.4.desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia, est eu sagittis efficitur, odio sapien fermentum erat, ut consequat enim purus sed augue. Nunc at aliquam libero, vel egestas quam. Quisque odio massa, sodales at quam in, accumsan egestas tortor. Curabitur ex quam, tincidunt semper nunc ac, vulputate egestas urna. Praesent luctus sagittis nibh nec maximus. Aliquam a auctor massa, porta efficitur turpis. Etiam quis elit lacus. Phasellus vestibulum in lacus in placerat. Maecenas placerat viverra lectus quis vulputate. Praesent tincidunt purus eget erat molestie faucibus. Curabitur blandit sit amet augue a dignissim."
-chem_convention.4.a: "We will help [FROM.GetLeader]."
+chem_convention.4.a: "We will help [From.GetLeader]."
 chem_convention.4.b: "We will not help them."
 
 chem_convention.5.t: "No Help From Major Country"
