@@ -66,6 +66,25 @@ ideas = {
 
 	country = {
 
+		CW_protocol_exception = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+		}
+	}
+
+	country = {
+
 		CW_uses_CW_idea = {
 
 			allowed = {
@@ -83,5 +102,23 @@ ideas = {
 		}
 	}
 
+	country = {
+
+		CW_protocol_enforcer_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+		}
+	}
 
 }
