@@ -169,7 +169,6 @@ country_event = {
 			}
 			add_timed_idea = { idea = CW_protocol_exception days = 1100 }
 		}
-		clr_country_flag = cw_hesitation_flag
 
 		every_enemy_country = {
 			limit = {
@@ -634,7 +633,15 @@ country_event = {
 	desc = chem_convention.7.desc
 	picture = GFX_report_event_generic_rally2
 
-	is_triggered_only = yes
+	major = yes
+
+	trigger = {
+		has_global_flag = CW_calling_for_convention
+	}
+
+	mean_time_to_happen = {
+		months = 2
+	}
 
 	trigger = {
 		NOT = { has_country_flag = CW_voted }
@@ -644,18 +651,260 @@ country_event = {
 	option = {
 		name = chem_convention.7.a
 
+		add_ideas = CW_signatory_idea
+
+		if = {
+			limit = {
+				is_major = yes
+			}
+			add_named_threat = { threat = -1 name = chem_convention.signed }
+		}
+		if = {
+			limit = {
+				is_major = no
+			}
+			add_named_threat = { threat = -0.25 name = chem_convention.signed }
+		}
+
+		add_political_power = 25
+
 		set_country_flag = CW_voted
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 2
+				is_historic_good_guy = yes
+			}
+			modifier = {
+				factor = 1.5
+				is_major = no
+			}
+			modifier = {
+				factor = 1.5
+				any_country = {
+					is_major = yes
+					is_in_faction_with = ROOT
+				}
+			}
+			modifier = {
+				factor = 0.25
+				has_government = fascism
+			}
+		}
 	}
 	# sign with reservation
 	option = {
 		name = chem_convention.7.b
 
+		add_ideas = CW_signatory_reservation_idea
+
 		set_country_flag = CW_voted
+
+		add_political_power = 10
+
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 2
+				is_historic_good_guy = yes
+			}
+			modifier = {
+				factor = 1.5
+				is_major = no
+			}
+			modifier = {
+				factor = 2
+				any_country = {
+					is_major = yes
+					is_in_faction_with = ROOT
+				}
+			}
+		}
 	}
 	# refuse to sign
 	option = {
 		name = chem_convention.7.c
 
+		set_country_flag = CW_voted_refused
+
 		set_country_flag = CW_voted
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+			modifier = {
+				factor = 1.5
+				is_major = yes
+			}
+			modifier = {
+				factor = 3
+				any_country = {
+					is_major = yes
+					is_in_faction_with = ROOT
+					is_historic_bad_guy = yes
+				}
+			}
+			modifier = {
+				factor = 8
+				is_historic_bad_guy = yes
+			}
+			modifier = {
+				factor = 1.5
+				TAG = USA
+			}
+		}
+	}
+}
+
+# Should we help enforce the Geneva Protocol
+country_event = {
+	id = chem_convention.8
+	title = chem_convention.8.t
+	desc = chem_convention.8.desc
+	picture = GFX_report_event_generic_rally2
+
+	trigger = {
+		has_country_flag = CW_voted
+		is_historic_good_guy = yes
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	# Yes; a treaty without enforcement is powerless
+	option = {
+		name = chem_convention.8.a
+
+		add_ideas = CW_protocol_enforcer_idea
+
+		set_country_flag = CW_protocol_enforcer
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 2.5
+				is_major = yes
+			}
+			modifier = {
+				factor = 1.5
+				any_country = {
+					is_major = yes
+					is_in_faction_with = ROOT
+					is_historic_good_guy = yes
+				}
+			}
+			modifier = {
+				factor = 0.25
+				TAG = USA
+			}
+		}
+	}
+
+	# We will not fight in other nations' wars
+	option = {
+		name = chem_convention.8.b
+
+		ai_chance = {
+			factor = 3
+			modifier = {
+				factor = 5
+				is_major = no
+			}
+			modifier = {
+				factor = 1.5
+				any_country = {
+					is_major = yes
+					is_in_faction_with = ROOT
+					is_historic_good_guy = yes
+				}
+			}
+			modifier = {
+				factor = 2
+				is_historic_good_guy = yes
+			}
+			modifier = {
+				factor = 0.5
+				TAG = USA
+			}
+		}
+	}
+}
+
+# Country attacks signatory with CW; we are enforcer
+country_event = {
+	id = chem_convention.9
+	title = chem_convention.9.t
+	desc = chem_convention.9.desc
+	picture = GFX_report_event_generic_rally2
+
+	trigger = {
+		ROOT = {
+			has_idea = CW_protocol_enforcer_idea
+		}
+		any_country = {
+			has_idea = CW_uses_CW_idea
+			NOT = { has_idea = CW_protocol_exception }
+			has_war = yes
+			any_enemy_country = {
+				OR = {
+					has_idea = CW_signatory_idea
+					has_idea = CW_signatory_reservation_idea
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	# We uphold our guarantee
+	option = {
+		name = chem_convention.9.a
+
+		every_country = {
+			limit = {
+				has_idea = CW_uses_CW_idea
+				NOT = { has_idea = CW_protocol_exception }
+				has_war = yes
+				any_enemy_country = {
+					OR = {
+						has_idea = CW_signatory_idea
+						has_idea = CW_signatory_reservation_idea
+					}
+				}
+				NOT = { has_war_with = Root }
+				NOT = { has_war_together_with = ROOT }
+			}
+			random_enemy_country = {
+				limit = {
+					OR = {
+						has_idea = CW_signatory_idea
+						has_idea = CW_signatory_reservation_idea
+					}
+				}
+				save_event_target_as = CW_temp_victim
+			}
+			ROOT = {
+				add_to_war { targeted_alliance = event_target:CW_temp_victim enemy = PREV }
+			}
+		}
+
+	}
+
+	# We will not fight in other nations' wars
+	option = {
+		name = chem_convention.9.b
+
+		add_political_power = -150
+		add_popularity = { ideology  = democratic popularity = -0.10 }
+
+		remove_ideas = CW_protocol_enforcer_idea
+		set_country_flag = CW_betrayed_enforcer_status
 	}
 }
