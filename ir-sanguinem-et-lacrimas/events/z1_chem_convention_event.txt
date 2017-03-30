@@ -147,7 +147,7 @@ country_event = {
 			}
 			event_target:cw_world_police = {
 				hidden_effect = {
-					country_event = { days = 30 id = chem_convention.2 }
+					country_event = { days = 3 id = chem_convention.2 }
 				}
 			}
 			custom_effect_tooltip = chem_convention.1.b.tt
@@ -237,7 +237,7 @@ country_event = {
 			news_event = { days = 7 id = chem_convention.6 }
 			hidden_effect = {
 				every_country = {
-					country_event = { days = 30 id = chem_convention.7 }
+					country_event = { days = 3 id = chem_convention.7 }
 				}
 			}
 		}
@@ -361,7 +361,7 @@ country_event = {
 			news_event = { days = 7 id = chem_convention.6 }
 			hidden_effect = {
 				every_country = {
-					country_event = { days = 30 id = chem_convention.7 }
+					country_event = { days = 3 id = chem_convention.7 }
 				}
 			}
 		}
@@ -533,7 +533,7 @@ country_event = {
 			news_event = { days = 7 id = chem_convention.6 }
 			hidden_effect = {
 				every_country = {
-					country_event = { days = 30 id = chem_convention.7 }
+					country_event = { days = 3 id = chem_convention.7 }
 				}
 			}
 		}
