@@ -8,11 +8,13 @@
 # CW_asked_for_support_by_@ROOT
 # LN_league_disbanded
 # CW_calling_for_convention
+# CW_voted_refused
 
 # List of ideas:
 # CW_signatory_idea
 # CW_signatory_reservation_idea
 # CW_uses_CW_idea
+# CW_protocol_exception
 
 ## Military Staff Suggests Chemical Warfare
 country_event = {
@@ -165,7 +167,7 @@ country_event = {
 			limit = {
 				has_idea = CW_signatory_reservation_idea
 			}
-			country_event = { days = 2 id = chem_convention.9 }
+			add_timed_idea = { idea = CW_protocol_exception days = 1100 }
 		}
 		clr_country_flag = cw_hesitation_flag
 
@@ -224,7 +226,7 @@ country_event = {
 			factor = 1
 			modifier = {
 				factor = 4
-				is_good_guy = yes
+				is_historic_good_guy = yes
 			}
 			modifier = {
 				factor = 2
@@ -386,7 +388,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 2
-				is_good_guy = yes
+				is_historic_good_guy = yes
 			}
 			modifier = {
 				factor = 2
@@ -463,7 +465,7 @@ country_event = {
 			factor = 2
 			modifier = {
 				factor = 2
-				is_good_guy = yes
+				is_historic_good_guy = yes
 			}
 		}
 	}
@@ -611,20 +613,13 @@ news_event = {
 	picture = GFX_news_event_chemical_brit
 
 	major = yes
-	fire_only_once = yes
 
 	trigger = {
 		has_global_flag = CW_calling_for_convention
 	}
 
 	mean_time_to_happen = {
-		months = 1
-	}
-
-	immediate = {
-		every_country = {
-			country_event = { days = 15 id = chem_convention.7 }
-		}
+		days = 20
 	}
 
 	option = {
