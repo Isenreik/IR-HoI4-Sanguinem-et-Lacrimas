@@ -540,7 +540,7 @@ country_event = {
 	}
 	# we will not hlep
 	option = {
-		name = chem_convention.4.a
+		name = chem_convention.4.b
 		FROM = {
 			add_opinion_modifier = { target = ROOT modifier = CW_refused_support }
 			country_event = { days = 10 id = chem_convention.3 }
