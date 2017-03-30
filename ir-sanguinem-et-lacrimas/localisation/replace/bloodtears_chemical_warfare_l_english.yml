@@ -69,11 +69,6 @@ chemical_warfare.4.a: "Pandora's box has been opened once more."
 
 chemical_warfare.5: "We are employing chemical weapons."
 
-chemical_warfare_started: "First Nation using chemical warfare"
-chemical_warfare_started_war: "Provoked the use of chemical weapons"
-chemical_warfare_war: "Used chemical weapons against us"
-chemical_warfare_employed: "Using chemical weapons"
-
 tactic_prepare_gas_attack: "Prepare Gas Attack"
 tactic_cw_basic_attack: "Follow Up"
 tactic_blue_cross_attack: "Blue Cross Attack"
