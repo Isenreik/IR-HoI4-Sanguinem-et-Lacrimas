@@ -34,7 +34,7 @@ guiTypes = {
 			spriteType = "GFX_frontend_game_logo"
 			position = { x= 20 y = 20 }
 		}
-		
+
 		ButtonType = {
 			name = "sanguinem_logo_medium"
 			position = { x= 480 y = 25 }
@@ -42,7 +42,7 @@ guiTypes = {
 			clicksound = click_default
 			oversound = ui_menu_over
 			pdx_tooltip = "MENU_ISENREIK_BLOODTEARS"
-			web_link = "https://github.com/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis"
+			web_link = "http://steamcommunity.com/sharedfiles/filedetails/?id=891139945"
 		}
 
 	}
