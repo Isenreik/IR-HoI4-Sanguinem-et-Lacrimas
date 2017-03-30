@@ -28,7 +28,7 @@ ideas = {
 
 	country = {
 
-		chem_reprimanded = {
+		CW_signatory_idea = {
 
 			allowed = {
 				always = no
@@ -42,9 +42,46 @@ ideas = {
 
 			picture = generic_infantry_bonus
 
-			research_bonus = {
-				chemical_warfare = -0.75
-			}
 		}
 	}
+
+	country = {
+
+		CW_signatory_reservation_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+		}
+	}
+
+	country = {
+
+		CW_uses_CW_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+		}
+	}
+
+
 }

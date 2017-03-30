@@ -1,25 +1,27 @@
 opinion_modifiers = {
 
-  chemical_warfare_started = {
-    value = -10
-  }
-
-  chemical_warfare_started_war = {
-    value = -40
-    months = 40
-		decay = 1
-  }
-
-  chemical_warfare_war = {
+  CW_used_against_us = {
     value = -15
     months = 30
 		decay = 0.5
   }
 
-  reprimanded_for_chem_weapons = {
-    value = -10
-    months = 10
+  CW_reprimanded = {
+    value = -15
+    months = 30
 		decay = 1
+  }
+
+  CW_refused_support = {
+    value = -15
+    months = 15
+		decay = 1
+  }
+
+  CW_offered_support = {
+    value = 15
+    months = 30
+		decay = 0.5
   }
 
 }

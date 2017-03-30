@@ -1,10 +1,51 @@
 ﻿l_english:
 
-reprimanded_for_chem_weapons: "Reprimanded for wanting to develop chemical weapons."
-chem_reprimanded: "Reprimanded for chemical weapons."
-chemical_warfare_development_threat: "Developing chemical weapons."
-chemical_warfare_research: "Chemical Warfare Research"
+CW_uses_CW_idea: "Use Chemical Weapons"
+CW_signatory_idea: "Signed Geneva Protocol Reaffirmation"
+CW_signatory_reservation_idea: "Signed Geneva Protocol Reaffirmation with Reservations"
+cw_hesitation_flag: "Hesitation to use chemical weapons"
 
-chem_convention.2.d: "[chem_wep_developer.GetName] has started developing chemical weapons."
-chem_convention.2.a: "We do not care what other sovereigns are doing."
+CW_used_against_us: "Used chemical weapons against us"
+CW_reprimanded: "Reprimanded for using chemical weapon"
+
+chem_convention.1.t: "Military Staff Suggests Chemical Warfare"
+chem_convention.1.desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia, est eu sagittis efficitur, odio sapien fermentum erat, ut consequat enim purus sed augue. Nunc at aliquam libero, vel egestas quam. Quisque odio massa, sodales at quam in, accumsan egestas tortor. Curabitur ex quam, tincidunt semper nunc ac, vulputate egestas urna. Praesent luctus sagittis nibh nec maximus. Aliquam a auctor massa, porta efficitur turpis. Etiam quis elit lacus. Phasellus vestibulum in lacus in placerat. Maecenas placerat viverra lectus quis vulputate. Praesent tincidunt purus eget erat molestie faucibus. Curabitur blandit sit amet augue a dignissim."
+chem_convention.1.a: "Let's not make hasty decisions."
+chem_convention.1.a.tt: "Continue the status-quo and decide at a later point."
+chem_convention.1.b: "We have to use them before someone else uses them on us."
+chem_convention.1.b.tt: "This will most likely draw the attention of [cw_world_police.GetNameDef]."
+chem_convention.1.c: "We have to retaliate to chemical warfare being used against us!"
+chem_convention.1.d: "Chemical Warfare is a monster; let us slay it once and for all!"
+chem_convention.1.e: "To even suggest such actions is troubling."
+chem_convention.1.e.tt: "Unless you're being attacked, you will not be bothered again."
+
+
+chem_convention.2.t: "[From.GetName] Plans On Using Chemical Weapons"
+chem_convention.2.desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia, est eu sagittis efficitur, odio sapien fermentum erat, ut consequat enim purus sed augue. Nunc at aliquam libero, vel egestas quam. Quisque odio massa, sodales at quam in, accumsan egestas tortor. Curabitur ex quam, tincidunt semper nunc ac, vulputate egestas urna. Praesent luctus sagittis nibh nec maximus. Aliquam a auctor massa, porta efficitur turpis. Etiam quis elit lacus. Phasellus vestibulum in lacus in placerat. Maecenas placerat viverra lectus quis vulputate. Praesent tincidunt purus eget erat molestie faucibus. Curabitur blandit sit amet augue a dignissim."
+chem_convention.2.a: "We do not care what [From.GetLeader] is doing."
 chem_convention.2.b: "How dare they!"
+chem_convention.2.c: "We have to put an end to this."
+
+chem_convention.3.t: "Seeking Support of a Major Nation"
+chem_convention.3.desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia, est eu sagittis efficitur, odio sapien fermentum erat, ut consequat enim purus sed augue. Nunc at aliquam libero, vel egestas quam. Quisque odio massa, sodales at quam in, accumsan egestas tortor. Curabitur ex quam, tincidunt semper nunc ac, vulputate egestas urna. Praesent luctus sagittis nibh nec maximus. Aliquam a auctor massa, porta efficitur turpis. Etiam quis elit lacus. Phasellus vestibulum in lacus in placerat. Maecenas placerat viverra lectus quis vulputate. Praesent tincidunt purus eget erat molestie faucibus. Curabitur blandit sit amet augue a dignissim."
+chem_convention.3.a: "We will ask the Allies."
+chem_convention.3.b: "We will ask the Communists."
+chem_convention.3.c: "We will ask the Fascists."
+chem_convention.3.d: "There is no one left to ask."
+
+chem_convention.4.t: "[FROM.GetNameDef] Asking For Our Support"
+chem_convention.4.desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia, est eu sagittis efficitur, odio sapien fermentum erat, ut consequat enim purus sed augue. Nunc at aliquam libero, vel egestas quam. Quisque odio massa, sodales at quam in, accumsan egestas tortor. Curabitur ex quam, tincidunt semper nunc ac, vulputate egestas urna. Praesent luctus sagittis nibh nec maximus. Aliquam a auctor massa, porta efficitur turpis. Etiam quis elit lacus. Phasellus vestibulum in lacus in placerat. Maecenas placerat viverra lectus quis vulputate. Praesent tincidunt purus eget erat molestie faucibus. Curabitur blandit sit amet augue a dignissim."
+chem_convention.4.a: "We will help [FROM.GetLeader]."
+chem_convention.4.b: "We will not help them."
+
+chem_convention.5.t: "No Help From Major Country"
+chem_convention.5.desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia, est eu sagittis efficitur, odio sapien fermentum erat, ut consequat enim purus sed augue. Nunc at aliquam libero, vel egestas quam. Quisque odio massa, sodales at quam in, accumsan egestas tortor. Curabitur ex quam, tincidunt semper nunc ac, vulputate egestas urna. Praesent luctus sagittis nibh nec maximus. Aliquam a auctor massa, porta efficitur turpis. Etiam quis elit lacus. Phasellus vestibulum in lacus in placerat. Maecenas placerat viverra lectus quis vulputate. Praesent tincidunt purus eget erat molestie faucibus. Curabitur blandit sit amet augue a dignissim."
+chem_convention.5.a: "Those fools might have just doomed the world."
+
+chem_convention.6.t: "Convention To Reaffirm Geneva Protocol"
+chem_convention.6.desc: "Leaders from across the world have gathered in [FROM.Capital.GetName] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia, est eu sagittis efficitur, odio sapien fermentum erat, ut consequat enim purus sed augue. Nunc at aliquam libero, vel egestas quam. Quisque odio massa, sodales at quam in, accumsan egestas tortor. Curabitur ex quam, tincidunt semper nunc ac, vulputate egestas urna. Praesent luctus sagittis nibh nec maximus. Aliquam a auctor massa, porta efficitur turpis. Etiam quis elit lacus. Phasellus vestibulum in lacus in placerat. Maecenas placerat viverra lectus quis vulputate. Praesent tincidunt purus eget erat molestie faucibus. Curabitur blandit sit amet augue a dignissim."
+chem_convention.6.a: "This is an interesting development."
+
+chem_convention.got_ignored: "Started using chemical weapons unpunished."
+CW_refused_support: "Refused to support our proposal"
+CW_offered_support: "Offered to support our proposal"

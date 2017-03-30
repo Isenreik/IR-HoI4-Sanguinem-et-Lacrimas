@@ -1,217 +1,572 @@
 ﻿add_namespace = chem_convention
 
-## chemical warfare development started
+# List of Flags:
+# CW_global_chem_users
+# CW_hesitation_flag
+# CW_do_not_ask_again
+# CW_conference_over
+# CW_asked_for_support_by_@ROOT
+
+# List of ideas:
+# CW_signatory_idea
+# CW_signatory_reservation_idea
+# CW_uses_CW_idea
+
+## Military Staff Suggests Chemical Warfare
 country_event = {
 	id = chem_convention.1
 	title = chem_convention.1.t
 	picture = GFX_report_event_gas_lab
 
-	desc = chem_convention.1.d
-
-	hidden = yes
+	desc = chem_convention.1.desc
 
 	trigger = {
-		NOT = { has_global_flag = chem_convention_activated }
-		has_global_flag = {
-			flag = chemical_weapons_allowed_countries
-			value < 5
+		OR = {
+			OR = {
+				NOT = { has_idea = CW_signatory_idea }
+				NOT = { has_idea = CW_signatory_reservation_idea }
+				has_country_flag = CW_do_not_ask_again
+			}
+			AND = {
+				OR = {
+					has_idea = CW_signatory_reservation_idea
+					AND = {
+						has_country_flag = CW_do_not_ask_again
+						NOT = { has_idea = CW_signatory_idea }
+					}
+				}
+				any_enemy_country = {
+					has_idea = CW_uses_CW_idea
+				}
+			}
 		}
 	}
 
 	mean_time_to_happen = {
-		months = 10
+		days = 450
+
 		modifier = {
-			factor = 0.7
-			has_global_flag = {
-				flag = chemical_weapons_development_countries
-				value > 1
+			factor = 0.8
+			threat > 20
+		}
+		modifier = {
+			factor = 0.1
+			any_enemy_country = {
+				has_idea = CW_uses_CW_idea
 			}
 		}
 		modifier = {
-			factor = 0.7
-			has_global_flag = {
-				flag = chemical_weapons_development_countries
-				value > 3
-			}
+			factor = 0.5
+			has_war = yes
 		}
 		modifier = {
-			factor = 0.7
-			has_global_flag = {
-				flag = chemical_weapons_development_countries
-				value > 5
+			factor = 1.2
+			ROOT = {
+				OR = {
+					is_medium_victor_of_ww1 = yes
+					is_major_victor_of_ww1 = yes
+				}
 			}
 		}
-		modifier = {
-			factor = 0.7
-			threat > 35
-		}
+
 	}
 
 	immediate = {
-
-		random_country = {
+		# the chemical police
+		if = {
 			limit = {
-				NOT = { has_country_flag = chem_wep_developer }
-				is_ai = yes
-				is_major = yes
+				any_country = {
+					is_good_guy = yes
+					NOT = { TAG = ROOT }
+				}
 			}
-			save_event_target_as = chem_wep_developer
+			random_country = {
+				limit = {
+					is_good_guy = yes
+					NOT = { TAG = ROOT }
+				}
+				save_event_target_as = cw_world_police
+			}
 		}
-
-		event_target:chem_wep_developer = {
-			set_country_flag = { flag = chem_wep_developer days = 600 }
-		}
-
-		modify_global_flag = { flag = chemical_weapons_development_countries value = 1 }
-
-		random_country = {
+		if = {
 			limit = {
-				NOT = { is_ai = yes }
+				any_country = {
+					is_ai = no
+					is_good_guy = yes
+					NOT = { TAG = ROOT }
+				}
 			}
-		country_event = { days = 2 id = chem_convention.2 }
+			random_country = {
+				limit = {
+					is_ai = no
+					is_good_guy = yes
+					NOT = { TAG = ROOT }
+				}
+				save_event_target_as = cw_world_police
+			}
 		}
 	}
 
+	# let's not be hasty
 	option = {
 		name = chem_convention.1.a
-	}
 
-}
+		custom_effect_tooltip = chem_convention.1.a.tt
 
-# AI started researching
-country_event = {
-	id = chem_convention.5
-	title = chem_convention.5.t
-	desc = chem_convention.5.d
-	picture = GFX_report_event_gas_lab
-
-	trigger = {
-		any_country = {
-			is_researching_technology = chemical_warfare_tech
-			is_ai = yes
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 20
-		modifier = {
-			factor = 0.4
-			any_country = {
-				is_researching_technology = chemical_warfare_tech
-				is_neighbor_of = ROOT
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 5
+				is_major = no
+			}
+			modifier = {
+				factor = 5
+				has_war = yes
 			}
 		}
 	}
 
+	# We have to use them before someone else uses them on us.
 	option = {
-		name = chem_convention.5.a
-	}
-}
+		name = chem_convention.1.b
 
-# AI started researching
-country_event = {
-	id = chem_convention.5
-	title = chem_convention.5.t
-	desc = chem_convention.5.d
-	picture = GFX_report_event_gas_lab
-
-	trigger = {
-		any_country = {
-			is_researching_technology = chemical_warfare_tech
-			is_ai = yes
+		trigger = {
+			NOT = {
+				any_enemy_country = {
+					has_idea = CW_uses_CW_idea
+				}
+			}
 		}
-	}
 
-	mean_time_to_happen = {
-		days = 20
-		modifier = {
-			factor = 0.4
-			any_country = {
-				is_researching_technology = chemical_warfare_tech
-				is_neighbor_of = ROOT
+		modify_country_flag = { flag = CW_global_chem_users value = 1 }
+		clr_country_flag = cw_hesitation_flag
+
+		if = {
+			limit = {
+				event_target:cw_world_police = { exists = yes}
+			}
+			event_target:cw_world_police = {
+				hidden_effect = {
+					country_event = { days = 30 id = chem_convention.2 }
+				}
+			}
+			custom_effect_tooltip = chem_convention.1.b.tt
+		}
+
+		ai_chance = {
+			factor = 3
+			modifier = {
+				factor = 3
+				has_government = fascism
+			}
+			modifier = {
+				factor = 0.8
+				has_government = democratic
+			}
+			modifier = {
+				factor = 0.3
+				is_major = no
+			}
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
 			}
 		}
 	}
 
+	# We have to retaliate to CW!
 	option = {
-		name = chem_convention.5.a
+		name = chem_convention.1.c
+
+		trigger = {
+				any_enemy_country = {
+					has_idea = CW_uses_CW_idea
+				}
+		}
+
+		if {
+			limit = {
+				has_idea = CW_signatory_reservation_idea
+			}
+			country_event = { days = 2 id = chem_convention.9 }
+		}
+		clr_country_flag = cw_hesitation_flag
+
+		every_enemy_country = {
+			limit = {
+				has_idea = CW_uses_CW_idea
+			}
+			ROOT = {
+				add_opinion_modifier = { target = PREV modifier = CW_used_against_us }
+			}
+		}
+
+		ai_chance = {
+			factor = 6
+			modifier = {
+				factor = 3
+				has_government = fascism
+			}
+			modifier = {
+				factor = 3
+				has_defensive_war = yes
+			}
+		}
+	}
+
+	#	Chemical Warfare is a monster, let's defeat it once and for all!
+	option = {
+		name = chem_convention.1.d
+
+		trigger = {
+			threat < 30
+			NOT = { has_global_flag = CW_conference_over}
+			any_country = {
+				is_good_guy = yes
+			}
+		}
+
+		if {
+			limit = {
+				is_major = yes
+			}
+			news_event = { days = 7 id = chem_convention.6 }
+			hidden_effect = {
+				every_country = {
+					country_event = { days = 30 id = chem_convention.7 }
+				}
+			}
+		}
+		if {
+			limit = {
+				is_major = no
+			}
+			country_event = { days = 7 id = chem_convention.3 }
+		}
+
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 4
+				is_good_guy = yes
+			}
+			modifier = {
+				factor = 3
+				threat < 10
+			}
+			modifier = {
+				factor = 1.5
+				is_major = yes
+			}
+			modifier = {
+				factor = 0.35
+				is_major = no
+			}
+			modifier = {
+				factor = 0.2
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	# To even suggest such actions is troubling.
+	option = {
+		name = chem_convention.1.e
+
+		custom_effect_tooltip = chem_convention.1.e.tt
+		set_country_flag = CW_do_not_ask_again
+
+		ai_chance = {
+			factor = 0.1
+		}
 	}
 }
 
-
-## player answer
+#[GetName] Is Planning On Deploying CW
 country_event = {
 	id = chem_convention.2
 	title = chem_convention.2.t
 	picture = GFX_report_event_gas_lab
 
-	desc = chem_convention.2.d
+	desc = chem_convention.2.desc
 
-	is_triggered_only = yes
+  is_triggered_only = yes
 
-	# we don't care
+	# Let them do whatever they want.
 	option = {
 		name = chem_convention.2.a
 
-		custom_effect_tooltip = chem_convention.2.a.tt
-
-		hidden_effect = {
-			event_target:chem_wep_developer = {
-				add_tech_bonus = {
-					name = dd_bonus
-					bonus = 0.25
-					uses = 1
-					category = chemical_warfare
-				}
-			}
-
-			modify_global_flag = { flag = chemical_weapons_allowed_countries value = 1 }
-			event_target:chem_wep_developer = {
-				add_named_threat = { threat = 2 name = chem_convention_development_threat }
-			}
+		FROM = {
+			add_named_threat = { threat = 2 name = chem_convention.got_ignored }
 		}
 
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 5
+				has_opinion = { target = FROM value > 30 }
+			}
+		}
 	}
 
-	# how dare they
+	# How dare they!
 	option = {
 		name = chem_convention.2.b
 
-		custom_effect_tooltip = chem_convention.2.b.tt
-
-		event_target:chem_wep_developer = {
-			add_timed_idea = { idea = chem_reprimanded days = 400 }
-			add_opinion_modifier = { target = ROOT modifier = reprimanded_for_chem_weapons }
+		add_opinion_modifier = { target = FROM modifier = CW_reprimanded }
+		FROM = {
+			add_opinion_modifier = { target = ROOT modifier = CW_reprimanded }
 		}
 
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 5
+				has_opinion = { target = FROM value < 0 }
+			}
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				factor = 0.45
+				is_major = no
+			}
+			modifier = {
+				factor = 1.5
+				is_historical_focus_on = yes
+			}
+		}
 	}
 
-	# call convention
+	# We have to put an end to this.
 	option = {
 		name = chem_convention.2.c
 
 		trigger = {
 			has_global_flag = {
-				flag = chemical_weapons_development_countries
-				value < 2
+				flag = CW_global_chem_users
+				value > 4
 			}
 		}
 
-		custom_effect_tooltip = chem_convention.2.c.tt
-		hidden_effect = {
-			news_event = { days = 3 id = chem_convention.3 }
+		if {
+			limit = {
+				is_major = yes
+			}
+			news_event = { days = 7 id = chem_convention.6 }
+			hidden_effect = {
+				every_country = {
+					country_event = { days = 30 id = chem_convention.7 }
+				}
+			}
 		}
-		country_event = { months = 1 id = chem_convention.4 }
+		if {
+			limit = {
+				is_major = no
+			}
+			country_event = { days = 7 id = chem_convention.3 }
+		}
 
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 3
+				has_government = democratic
+			}
+			modifier = {
+				factor = 3
+				threat < 15
+			}
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				factor = 0.45
+				is_major = no
+			}
+			modifier = {
+				factor = 0.2
+				is_historical_focus_on = yes
+			}
+		}
+
+	}
+}
+
+#We need the support of a major country
+country_event = {
+	id = chem_convention.3
+	title = chem_convention.3.t
+	picture = GFX_report_event_generic_rally
+
+	desc = chem_convention.3.desc
+
+  is_triggered_only = yes
+
+	immediate = {
+		random_country = {
+			limit = {
+				has_government = democratic
+				is_major = yes
+				NOT = { has_country_flag = CW_asked_for_support_by_@ROOT}
+				has_opinion = { target = ROOT value > 0 }
+				NOT = { has_offensive_war_with = ROOT }
+			}
+			save_event_target_as = CW_major_support_giver_allies
+		}
+		random_country = {
+			limit = {
+				has_government = communism
+				is_major = yes
+				NOT = { has_country_flag = CW_asked_for_support_by_@ROOT}
+				has_opinion = { target = ROOT value > 0 }
+				NOT = { has_offensive_war_with = ROOT }
+			}
+			save_event_target_as = CW_major_support_giver_commis
+		}
+		random_country = {
+			limit = {
+				has_government = fascism
+				is_major = yes
+				NOT = { has_country_flag = CW_asked_for_support_by_@ROOT}
+				has_opinion = { target = ROOT value > 0 }
+				NOT = { has_offensive_war_with = ROOT }
+			}
+			save_event_target_as = CW_major_support_giver_axis
+		}
+	}
+
+	# We will ask the Allies
+	option = {
+		name = chem_convention.3.a
+
+		trigger = {
+			event_target:CW_major_support_giver_allies = { exists = yes}
+		}
+		event_target:CW_major_support_giver_allies = {
+			country_event = { days = 4 id = chem_convention.4 }
+			set_country_flag = CW_asked_for_support_by_@ROOT
+		}
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 2
+				is_good_guy = yes
+			}
+		}
+	}
+	# We will ask the Commis
+	option = {
+		name = chem_convention.3.b
+
+		trigger = {
+			event_target:CW_major_support_giver_commis = { exists = yes}
+		}
+		event_target:CW_major_support_giver_commis = {
+			country_event = { days = 4 id = chem_convention.4 }
+			set_country_flag = CW_asked_for_support_by_@ROOT
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 4
+				has_government = communism
+			}
+		}
+	}
+	# We will ask the Axis
+	option = {
+		name = chem_convention.3.c
+
+		trigger = {
+			event_target:CW_major_support_giver_axis = { exists = yes}
+		}
+		event_target:CW_major_support_giver_axis = {
+			country_event = { days = 4 id = chem_convention.4 }
+			set_country_flag = CW_asked_for_support_by_@ROOT
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 4
+				has_government = fascism
+			}
+		}
+	}
+	# nobody can help us
+	option = {
+		name = chem_convention.3.d
+
+		trigger = {
+			AND = {
+				event_target:CW_major_support_giver_allies = { exists = no }
+				event_target:CW_major_support_giver_commis = { exists = no }
+				event_target:CW_major_support_giver_axis = { exists = no }
+			}
+		}
+		country_event = { days = 1 id = chem_convention.5 }
 	}
 
 }
 
-# news event
+# [GetName] is asking for our support to ban CW
+country_event = {
+	id = chem_convention.4
+	title = chem_convention.4.t
+	desc = chem_convention.4.desc
+	picture = GFX_report_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	# we will hlep
+	option = {
+		name = chem_convention.4.a
+		FROM = {
+			add_opinion_modifier = { target = ROOT modifier = CW_offered_support }
+
+			news_event = { days = 7 id = chem_convention.6 }
+			hidden_effect = {
+				every_country = {
+					country_event = { days = 30 id = chem_convention.7 }
+				}
+			}
+		}
+	}
+	# we will not hlep
+	option = {
+		name = chem_convention.4.a
+		FROM = {
+			add_opinion_modifier = { target = ROOT modifier = CW_refused_support }
+			country_event = { days = 10 id = chem_convention.3 }
+		}
+	}
+}
+
+# Nobody wants to help us
+country_event = {
+	id = chem_convention.5
+	title = chem_convention.5.t
+	desc = chem_convention.5.desc
+	picture = GFX_report_event_generic_rally2
+
+	is_triggered_only = yes
+
+	option = {
+		name = chem_convention.5.a
+	}
+}
+
+# News: Convention to reaffirm Geneva Protocol
 news_event = {
-	id = chem_convention.3
-	title = chem_convention.3.t
-	desc = chem_convention.3.d
+	id = chem_convention.6
+	title = chem_convention.6.t
+	desc = chem_convention.6.desc
 	picture = GFX_news_event_chemical_brit
 
 	major = yes
@@ -219,22 +574,20 @@ news_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = chem_convention.3.a
+		name = chem_convention.6.a
 	}
 }
 
-# convention
+# Convention to reaffirm Geneva Protocol
 country_event = {
-	id = chem_convention.4
-	title = chem_convention.4.t
-	desc = chem_convention.4.d
-	picture = GFX_report_event_gas_lab
-
-	major = yes
+	id = chem_convention.7
+	title = chem_convention.7.t
+	desc = chem_convention.7.desc
+	picture = GFX_report_event_generic_rally2
 
 	is_triggered_only = yes
 
 	option = {
-		name = chem_convention.4.a
+		name = chem_convention.7.a
 	}
 }
