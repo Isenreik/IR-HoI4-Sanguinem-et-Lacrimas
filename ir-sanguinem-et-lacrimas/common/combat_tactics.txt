@@ -818,6 +818,7 @@ tactic_prepare_gas_attack = {
 	trigger = {
 		is_attacker = yes
 		phase = no
+		has_idea = CW_uses_CW_idea
 	}
 
 	active = no
@@ -858,6 +859,7 @@ tactic_blue_cross_attack = {
 	trigger = {
 		is_attacker = yes
 		phase = chemical_warfare
+		ROOT = { has_idea = CW_uses_CW_idea }
 	}
 
 	active = no
@@ -877,6 +879,7 @@ tactic_blue_cross_attack_2 = {
 	trigger = {
 		is_attacker = yes
 		phase = chemical_warfare
+		has_idea = CW_uses_CW_idea
 	}
 
 	active = no
@@ -896,6 +899,7 @@ tactic_green_cross_attack = {
 	trigger = {
 		is_attacker = yes
 		phase = chemical_warfare
+		has_idea = CW_uses_CW_idea
 	}
 
 	active = no
@@ -915,6 +919,7 @@ tactic_green_cross_attack_2 = {
 	trigger = {
 		is_attacker = yes
 		phase = chemical_warfare
+		has_idea = CW_uses_CW_idea
 	}
 
 	active = no
@@ -934,6 +939,7 @@ tactic_yellow_cross_attack = {
 	trigger = {
 		is_attacker = yes
 		phase = chemical_warfare
+		has_idea = CW_uses_CW_idea
 	}
 
 	active = no
@@ -953,6 +959,7 @@ tactic_yellow_cross_attack_2 = {
 	trigger = {
 		is_attacker = yes
 		phase = chemical_warfare
+		has_idea = CW_uses_CW_idea
 	}
 
 	active = no
