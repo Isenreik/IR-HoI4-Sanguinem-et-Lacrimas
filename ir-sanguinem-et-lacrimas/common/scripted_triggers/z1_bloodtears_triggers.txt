@@ -65,6 +65,12 @@ is_league_of_nations_1936 = {
 
 # League in 1936: Argentina, Australia, Belgium, Bolivia, the British Empire, Canada, Chile, China, Colombia, Cuba, Czechoslovakia, Denmark, El Salvador, France, Greece, Guatemala, Haiti, Honduras, India, Irish Free State, Ethiopia, Italy, Liberia, the Netherlands, New Zealand, Nicaragua, Norway, Panama, Persia/Iran, Peru, Poland, Portugal, Romania, Siam, Spain, Sweden, Switzerland, the Union of South Africa, Uruguay, Yugoslavia, Venezuela, Austria, Bulgaria, Finland, Luxembourg, Albania, Estonia, Latvia, Lithuania, Hungary, Ireland, the Dominican Republic, Mexico, Turkey, Iraq, the Union of Soviet Socialist Republics, Afghanistan, British Raj, Syria and Ecuador.
 
+is_league_member = {
+	has_country_flag = LN_league_member
+	exists = yes
+	compare_autonomy_state > autonomy_puppet
+}
+
 is_major_victor_of_ww1 = {
 	OR = {
 		tag = FRA
@@ -72,6 +78,7 @@ is_major_victor_of_ww1 = {
 		tag = USA
 		tag = ITA
 	}
+	compare_autonomy_state > autonomy_puppet
 }
 
 is_medium_victor_of_ww1 = {
@@ -84,6 +91,7 @@ is_medium_victor_of_ww1 = {
 		tag = YUG
 		tag = CZE
 	}
+	compare_autonomy_state > autonomy_puppet
 }
 
 is_small_victor_of_ww1 = {
@@ -103,6 +111,7 @@ is_small_victor_of_ww1 = {
 		tag = SIA
 		tag = URG
 	}
+	compare_autonomy_state > autonomy_puppet
 }
 
 is_victor_of_ww1 = {
@@ -157,6 +166,6 @@ is_good_guy = {
 			is_major_victor_of_ww1 = yes
 		}
 	}
-	is_puppet = no
+	compare_autonomy_state > autonomy_colony
 	exists = yes
 }
