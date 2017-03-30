@@ -154,12 +154,30 @@ is_victor_of_ww1 = {
 	}
 }
 
-is_good_guy = {
+is_historic_good_guy = {
 	AND = {
 		OR = {
 			has_government = democratic
 			has_government = neutrality
 			has_government = marxism		# the "good commies"
+		}
+		OR = {
+			is_medium_victor_of_ww1 = yes
+			is_major_victor_of_ww1 = yes
+		}
+	}
+	compare_autonomy_state > autonomy_colony
+	exists = yes
+}
+
+is_historic_bad_guy = {
+	AND = {
+		OR = {
+			has_government = fascism
+			AND = {
+				NOT = { has_government = marxism }	# the "good commies"
+				has_government = communism
+			}
 		}
 		OR = {
 			is_medium_victor_of_ww1 = yes
