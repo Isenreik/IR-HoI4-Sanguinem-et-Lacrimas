@@ -42,6 +42,7 @@ ideas = {
 							has_idea = CW_signatory_reservation_idea
 						}
 					}
+				}
 
 				on_add = {
 					custom_effect_tooltip = CW_use_cw_law.tt
