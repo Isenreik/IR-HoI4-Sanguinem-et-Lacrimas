@@ -13,7 +13,7 @@ ideas = {
         always = yes
       }
 
-      picture = civilian_truck_conversation
+      picture = generic_spidoor
 
       removal_cost = -1
 
@@ -23,10 +23,6 @@ ideas = {
         }
       }
     }
-
-  }
-
-	country = {
 
 		CW_signatory_idea = {
 
@@ -40,12 +36,9 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_infantry_bonus
+			picture = GFX_CW_signatory_idea
 
 		}
-	}
-
-	country = {
 
 		CW_signatory_reservation_idea = {
 
@@ -59,12 +52,9 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_infantry_bonus
+			picture = generic_spidoor
 
 		}
-	}
-
-	country = {
 
 		CW_protocol_exception = {
 
@@ -78,31 +68,9 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_infantry_bonus
+			picture = GFX_CW_protocol_exception
 
 		}
-	}
-
-	country = {
-
-		CW_uses_CW_idea = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-
-			picture = generic_infantry_bonus
-
-		}
-	}
-
-	country = {
 
 		CW_protocol_enforcer_idea = {
 
@@ -116,9 +84,27 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_infantry_bonus
+			picture = GFX_CW_protocol_enforcer_idea
 
 		}
+
+		## needs revisiting
+		CW_uses_cw_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_spidoor
+
+		}
+
 	}
 
 }

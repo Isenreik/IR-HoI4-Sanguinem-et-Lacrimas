@@ -1,0 +1,47 @@
+ideas = {
+
+	chemical_weapons_laws = {
+		law = yes
+
+		CW_use_cw_law = {
+
+			available = {
+				OR = {
+					NOT = { has_country_flag = CW_hesitation_flag }
+					has_country_flag = CW_protocol_exception
+				}
+			}
+
+			cost = 60
+			removal_cost = 25
+
+			cancel_if_invalid = yes
+
+			ai_will_do = {
+					factor = 3
+
+					modifier = {
+					factor = 2
+					has_war = yes
+					}
+				}
+		}
+
+		CW_not_use_cw_law = {
+
+			available = {
+				always = yes
+			}
+
+			cost = 60
+			removal_cost = 25
+
+			cancel_if_invalid = no
+
+			ai_will_do = {
+					factor = 3
+				}
+		}
+
+	}
+}
