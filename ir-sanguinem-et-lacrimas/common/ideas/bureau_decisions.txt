@@ -10,7 +10,9 @@ ideas = {
 					always = yes
 				}
 
-				custom_effect_tooltip = CW_stop_using_cw_law.tt
+				on_add = {
+					custom_effect_tooltip = CW_stop_using_cw_law.tt
+				}
 
 				cost = 40
 				removal_cost = -1
@@ -32,13 +34,18 @@ ideas = {
 				default = no
 
 				available = {
+					NOT = { has_country_flag = CW_hesitation_flag }
 					OR = {
-						NOT = { has_country_flag = CW_hesitation_flag }
-						has_country_flag = CW_protocol_exception
+						NOT = { has_idea = CW_signatory_idea }
+						AND = {
+							has_idea = CW_protocol_exception
+							has_idea = CW_signatory_reservation_idea
+						}
 					}
-				}
 
-				custom_effect_tooltip = CW_use_cw_law.tt
+				on_add = {
+					custom_effect_tooltip = CW_use_cw_law.tt
+				}
 
 				cost = 80
 				removal_cost = -1
