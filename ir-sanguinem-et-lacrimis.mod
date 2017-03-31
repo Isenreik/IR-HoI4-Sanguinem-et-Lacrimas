@@ -1,4 +1,4 @@
-name="IR Sanguinem et Lacrimis"
+name="IR Sanguinem et Lacrimis 1.3"
 path="mod/ir-sanguinem-et-lacrimis/"
 tags={
 	"Gameplay"
