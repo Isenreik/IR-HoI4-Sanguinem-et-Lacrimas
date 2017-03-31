@@ -9,7 +9,7 @@ CW_protocol_enforcer_idea: "Guarantees Geneva Protocol Enforcement"
 CW_protocol_enforcer_idea_desc: "[From.GetNameDef] guarantees the Geneva Protocol and will intervene if a nation decides to employ chemical weapons against a signatory."
 CW_protocol_exception: "Geneva Protocol Exception"
 
-cw_hesitation_flag: "Hesitation to use chemical weapons"
+CW_hesitation_flag: "Hesitation to use chemical weapons"
 
 CW_used_against_us: "Used chemical weapons against us"
 CW_reprimanded: "Reprimanded for using chemical weapon"
