@@ -85,7 +85,7 @@ technologies = {
             }
         }
         hidden_effect = {
-          country_event = { days = 2 id = chemical_warfare.3 }                                        # I can see you
+          country_event = { days = 2 id = chem_convention.30 }                                        # I can see you
         }
         custom_effect_tooltip = chemical_warfare_ww1_stockpile
       }
