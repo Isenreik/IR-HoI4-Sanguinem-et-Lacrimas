@@ -1,47 +1,59 @@
 ideas = {
+		bureau_chem_advisors = {
+			law = yes
 
-	chemical_weapons_laws = {
-		law = yes
+			CW_stop_using_cw_law = {
 
-		CW_use_cw_law = {
+				default = yes
 
-			available = {
-				OR = {
-					NOT = { has_country_flag = CW_hesitation_flag }
-					has_country_flag = CW_protocol_exception
+				available = {
+					always = yes
 				}
-			}
 
-			cost = 60
-			removal_cost = 25
+				custom_effect_tooltip = CW_stop_using_cw_law.tt
 
-			cancel_if_invalid = yes
+				cost = 40
+				removal_cost = -1
 
-			ai_will_do = {
+				cancel_if_invalid = yes
+
+				ai_will_do = {
 					factor = 3
 
 					modifier = {
-					factor = 2
-					has_war = yes
+						factor = 2
+						has_war = yes
 					}
 				}
-		}
-
-		CW_not_use_cw_law = {
-
-			available = {
-				always = yes
 			}
 
-			cost = 60
-			removal_cost = 25
+			CW_use_cw_law = {
 
-			cancel_if_invalid = no
+				default = no
 
-			ai_will_do = {
-					factor = 3
+				available = {
+					OR = {
+						NOT = { has_country_flag = CW_hesitation_flag }
+						has_country_flag = CW_protocol_exception
+					}
 				}
-		}
 
-	}
+				custom_effect_tooltip = CW_use_cw_law.tt
+
+				cost = 80
+				removal_cost = -1
+
+				cancel_if_invalid = yes
+
+				ai_will_do = {
+					factor = 3
+
+					modifier = {
+						factor = 2
+						has_war = yes
+					}
+				}
+			}
+
+		}
 }

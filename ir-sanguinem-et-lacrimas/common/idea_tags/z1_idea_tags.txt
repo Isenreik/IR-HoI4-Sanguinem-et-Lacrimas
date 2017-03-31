@@ -1,10 +1,11 @@
 idea_categories = {
+
 	bureau_laws = {
 
-		slot = chemical_weapons_laws
+		slot = bureau_chem_advisors
 
-		cost = 50
+		cost = 80
 		removal_cost = 0
-		
 	}
+
 }
