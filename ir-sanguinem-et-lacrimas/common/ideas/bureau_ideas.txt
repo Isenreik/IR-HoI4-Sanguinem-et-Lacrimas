@@ -1,4 +1,5 @@
 #do you think you're smart?
+
 ideas = {
 
 	country = {
@@ -12,8 +13,6 @@ ideas = {
       allowed_civil_war = {
         always = yes
       }
-
-      picture = generic_spidoor
 
       removal_cost = -1
 
