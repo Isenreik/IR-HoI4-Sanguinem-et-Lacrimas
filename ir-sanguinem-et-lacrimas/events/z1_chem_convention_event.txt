@@ -25,6 +25,8 @@ country_event = {
 	desc = chem_convention.1.desc
 
 	trigger = {
+		date > 1937.1.1
+		threat > 0.1
 		OR = {
 			OR = {
 				NOT = { has_idea = CW_signatory_idea }
@@ -44,7 +46,9 @@ country_event = {
 				}
 			}
 		}
+		has_country_flag = cw_hesitation_flag
 		compare_autonomy_state > autonomy_colony
+		has_tech = chemical_warfare_tech
 	}
 
 	mean_time_to_happen = {
@@ -52,7 +56,7 @@ country_event = {
 
 		modifier = {
 			factor = 0.8
-			threat > 20
+			threat > 0.35
 		}
 		modifier = {
 			factor = 0.1
@@ -87,7 +91,7 @@ country_event = {
 		custom_effect_tooltip = chem_convention.1.a.tt
 
 		ai_chance = {
-			factor = 1
+			factor = 3
 			modifier = {
 				factor = 5
 				is_major = no
@@ -95,6 +99,10 @@ country_event = {
 			modifier = {
 				factor = 5
 				has_war = yes
+			}
+			modifier = {
+				factor = 10
+				threat < 20
 			}
 		}
 	}
@@ -123,6 +131,7 @@ country_event = {
 			every_country = {
 				limit = {
 					is_league_member = yes
+					NOT = { TAG = ROOT }
 				}
 				country_event = { days = 3 id = chem_convention.2 } # debug-time
 			}
@@ -139,7 +148,7 @@ country_event = {
 				has_government = democratic
 			}
 			modifier = {
-				factor = 0.3
+				factor = 0.2
 				is_major = no
 			}
 			modifier = {
@@ -197,8 +206,8 @@ country_event = {
 		name = chem_convention.1.d
 
 		trigger = {
-			threat < 30
-			NOT = { has_global_flag = CW_conference_over }
+			threat < 0.3
+			NOT = { has_global_flag = CW_calling_for_convention }
 			NOT = { has_global_flag = LN_league_disbanded }
 			OR = {
 				is_league_member = yes
@@ -213,6 +222,7 @@ country_event = {
 			}
 			set_global_flag = CW_calling_for_convention
 			ROOT = { save_global_event_target_as = CW_convention_holder }
+			# custom tooltup
 		}
 		if {
 			limit = {
@@ -222,7 +232,7 @@ country_event = {
 		}
 
 		ai_chance = {
-			factor = 1
+			factor = 0.5
 			modifier = {
 				factor = 4
 				is_historic_good_guy = yes
@@ -363,6 +373,7 @@ country_event = {
 					}
 				}
 			}
+			NOT = { has_global_flag = CW_calling_for_convention }
 		}
 
 		if {
@@ -454,7 +465,10 @@ country_event = {
 		name = chem_convention.3.a
 
 		trigger = {
-			event_target:CW_major_support_giver_allies = { exists = yes}
+			event_target:CW_major_support_giver_allies = {
+				exists = yes
+				NOT = { has_country_flag = CW_asked_for_support_by_@ROOT }
+			}
 		}
 		event_target:CW_major_support_giver_allies = {
 			country_event = { days = 4 id = chem_convention.4 }
@@ -473,7 +487,10 @@ country_event = {
 		name = chem_convention.3.b
 
 		trigger = {
-			event_target:CW_major_support_giver_commis = { exists = yes}
+			event_target:CW_major_support_giver_commis = {
+				exists = yes
+				NOT = { has_country_flag = CW_asked_for_support_by_@ROOT }
+			}
 		}
 		event_target:CW_major_support_giver_commis = {
 			country_event = { days = 4 id = chem_convention.4 }
@@ -492,7 +509,10 @@ country_event = {
 		name = chem_convention.3.c
 
 		trigger = {
-			event_target:CW_major_support_giver_axis = { exists = yes}
+			event_target:CW_major_support_giver_axis = {
+				exists = yes
+				NOT = { has_country_flag = CW_asked_for_support_by_@ROOT }
+				}
 		}
 		event_target:CW_major_support_giver_axis = {
 			country_event = { days = 4 id = chem_convention.4 }
@@ -613,12 +633,18 @@ news_event = {
 
 	major = yes
 
+	is_triggered_only = yes
+
 	trigger = {
 		has_global_flag = CW_calling_for_convention
 	}
 
 	mean_time_to_happen = {
 		days = 20
+	}
+
+	immediate = {
+		set_global_flag = CW_news_over
 	}
 
 	option = {
@@ -634,17 +660,15 @@ country_event = {
 	picture = GFX_report_event_generic_rally2
 
 	major = yes
+	fire_only_once = yes
 
 	trigger = {
 		has_global_flag = CW_calling_for_convention
+		NOT = { has_country_flag = CW_voted }
 	}
 
 	mean_time_to_happen = {
-		months = 2
-	}
-
-	trigger = {
-		NOT = { has_country_flag = CW_voted }
+		months = 1
 	}
 
 	# sign
@@ -928,6 +952,27 @@ country_event = {
 			gas_green_cross = 1
 			gas_yellow_cross = 1
 			simple_gasmasks = 1
+			chemical_warfare_tech = 1
+		}
+	}
+
+	option = {
+		name = chem_convention.30.a
+	}
+
+}
+
+country_event = {
+	id = chem_convention.31
+	title = chem_convention.30.t
+	desc = chem_convention.30.d
+
+	hidden = yes
+  is_triggered_only = yes
+
+	immediate = {
+		set_technology  = {
+			criminal_technology = 0
 		}
 	}
 
