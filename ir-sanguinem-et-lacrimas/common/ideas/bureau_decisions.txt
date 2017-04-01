@@ -1,56 +1,20 @@
 ideas = {
-
 		bureau_chem_advisors = {
 			law = yes
 
-			# not using
-			CW_not_using_cw = {
+			CW_stop_using_cw_law = {
 
 				default = yes
 
-				on_add = {
-					custom_effect_tooltip = CW_not_using_cw.tt
-				}
-
-				cost = 60
-				removal_cost = -1
-
-				cancel_if_invalid = no
-
-				ai_will_do = {
-					factor = 3
-
-					modifier = {
-						factor = 2
-						has_war = yes
-					}
-				}
-
-			}
-
-			# using
-			CW_using_cw = {
-
-				default = no
-
 				available = {
-					OR = {
-						AND = {
-							has_idea_with_trait = CW_signatory_reservation_idea
-							has_idea_with_trait = CW_protocol_exception
-						}
-						OR = {
-							NOT = { has_idea_with_trait = CW_signatory_idea }
-							NOT = { has_country_flag = CW_hesitation_flag }
-						}
-					}
+					always = yes
 				}
 
 				on_add = {
-					custom_effect_tooltip = CW_using_cw.tt
+					custom_effect_tooltip = CW_stop_using_cw_law.tt
 				}
 
-				cost = 60
+				cost = 40
 				removal_cost = -1
 
 				cancel_if_invalid = yes
@@ -63,8 +27,40 @@ ideas = {
 						has_war = yes
 					}
 				}
+			}
 
-				picture = generic_spidoor
+			CW_use_cw_law = {
+
+				default = no
+
+				available = {
+					NOT = { has_country_flag = CW_hesitation_flag }
+					OR = {
+						NOT = { has_idea = CW_signatory_idea }
+						AND = {
+							has_idea = CW_protocol_exception
+							has_idea = CW_signatory_reservation_idea
+						}
+					}
+				}
+
+				on_add = {
+					custom_effect_tooltip = CW_use_cw_law.tt
+				}
+
+				cost = 80
+				removal_cost = -1
+
+				cancel_if_invalid = yes
+
+				ai_will_do = {
+					factor = 3
+
+					modifier = {
+						factor = 2
+						has_war = yes
+					}
+				}
 			}
 
 		}
