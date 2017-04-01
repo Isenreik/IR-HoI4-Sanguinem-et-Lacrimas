@@ -24,7 +24,7 @@ From amphibious tanks, to commandeering civilian vehicles all the way to chemica
 [img]https://github.com/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis/blob/master/readme-files/Header_compatibility.png?raw=true[/img]
 
 This mod greatly changes the technology folders. This means it's pretty much incompatible with any other mod that changes or adds technologies. Mods such as [i]The Road to 56[/i] do not work with this, and obvious mods like WW1 mods or [i]Millennium Dawn[/i] do not work with this either.
-That said; most normal mods should work with this since they don't change technologies, that even includes [i]Kaiserreich[/i] for example.
+That said; most normal mods should work with this since they don't change technologies.
 
 There should be no bugs; this mod is 99% done and ready to play. There should be no broken icons or text.
 
