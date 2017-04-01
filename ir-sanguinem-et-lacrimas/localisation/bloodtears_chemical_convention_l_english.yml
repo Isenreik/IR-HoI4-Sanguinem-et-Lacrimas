@@ -2,11 +2,11 @@
 
 CW_uses_CW_idea: "Use Chemical Weapons"
 CW_signatory_idea: "Signed Geneva Protocol Reaffirmation"
-CW_signatory_idea_desc: "[Root.GetNameDef] is a signatory of the Reaffirmation; [From.GetName] has completely ratified the treaty and will never resort to chemical weapons."
+CW_signatory_idea_desc: "Is signatory of the Reaffirmation. This nation has completely ratified the treaty and will never resort to chemical weapons."
 CW_signatory_reservation_idea: "Signed Geneva Protocol Reaffirmation with Reservations"
-CW_signatory_reservation_idea_desc: "[Root.GetNameDef] is a signatory of the Reaffirmation with a submitted reservation; the nation's reservation includes that the obligations of the treaty only apply to other parties that ratified the Reaffirmation. In essence [From.GetName] will only hold itself to the treaty if the opposing party does so, too."
+CW_signatory_reservation_idea_desc: "Is a signatory of the Reaffirmation with a submitted reservation; the nation's reservation includes that the obligations of the treaty only apply to other parties that ratified the Reaffirmation. In essence this nation will only hold itself to the treaty if the opposing party does so, too."
 CW_protocol_enforcer_idea: "Guarantees Geneva Protocol Enforcement"
-CW_protocol_enforcer_idea_desc: "[From.GetNameDef] guarantees the Geneva Protocol and will intervene if a nation decides to employ chemical weapons against a signatory."
+CW_protocol_enforcer_idea_desc: "Is guaranteeing tha the Geneva Protocol will be upheld and will intervene if a nation decides to employ chemical weapons against a signatory."
 CW_protocol_exception: "Geneva Protocol Exception"
 
 CW_hesitation_flag: "Hesitation to use chemical weapons"
@@ -24,7 +24,6 @@ chem_convention.1.c: "We have to retaliate to chemical warfare being used agains
 chem_convention.1.d: "Chemical Warfare is a monster; let us slay it once and for all!"
 chem_convention.1.e: "To even suggest such actions is troubling."
 chem_convention.1.e.tt: "Unless you're being attacked, you will not be bothered again."
-
 
 chem_convention.2.t: "[From.GetName] Plans On Using Chemical Weapons"
 chem_convention.2.desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia, est eu sagittis efficitur, odio sapien fermentum erat, ut consequat enim purus sed augue. Nunc at aliquam libero, vel egestas quam. Quisque odio massa, sodales at quam in, accumsan egestas tortor. Curabitur ex quam, tincidunt semper nunc ac, vulputate egestas urna. Praesent luctus sagittis nibh nec maximus. Aliquam a auctor massa, porta efficitur turpis. Etiam quis elit lacus. Phasellus vestibulum in lacus in placerat. Maecenas placerat viverra lectus quis vulputate. Praesent tincidunt purus eget erat molestie faucibus. Curabitur blandit sit amet augue a dignissim."
