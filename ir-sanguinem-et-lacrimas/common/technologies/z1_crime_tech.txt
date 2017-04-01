@@ -168,7 +168,7 @@ technologies = {
   ## to the front
 	penal_technology = {
 
-		conscription_factor = 0.01
+		conscription_factor = 0.005
 
     path = {
       leads_to_tech = penal_technology2
@@ -179,7 +179,7 @@ technologies = {
 			criminal_technology2
 		}
 
-    research_cost = 1.5
+    research_cost = 1
     start_year = 1939
 
     folder = {
@@ -198,7 +198,7 @@ technologies = {
 				}
 
     ai_will_do = {
-      factor = 0.8
+      factor = 0.7
 
       modifier = {
 				factor = 2
@@ -217,7 +217,7 @@ technologies = {
         has_government = communism
       }
 			modifier = {
-				factor = 0.5
+				factor = 0.25
 				has_government = democratic
 			}
     }
