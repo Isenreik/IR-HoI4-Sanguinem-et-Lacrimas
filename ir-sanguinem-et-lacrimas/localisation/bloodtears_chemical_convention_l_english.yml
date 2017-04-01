@@ -2,9 +2,9 @@
 
 CW_uses_CW_idea: "Use Chemical Weapons"
 CW_signatory_idea: "Signed Geneva Protocol Reaffirmation"
-CW_signatory_idea_desc: "[From.GetNameDef] is a signatory of the Reaffirmation; [From.GetName] has completely ratified the treaty and will never resort to chemical weapons."
+CW_signatory_idea_desc: "[Root.GetNameDef] is a signatory of the Reaffirmation; [From.GetName] has completely ratified the treaty and will never resort to chemical weapons."
 CW_signatory_reservation_idea: "Signed Geneva Protocol Reaffirmation with Reservations"
-CW_signatory_reservation_idea_desc: "[From.GetNameDef] is a signatory of the Reaffirmation with a submitted reservation; the nation's reservation includes that the obligations of the treaty only apply to other parties that ratified the Reaffirmation. In essence [From.GetName] will only hold itself to the treaty if the opposing party does so, too."
+CW_signatory_reservation_idea_desc: "[Root.GetNameDef] is a signatory of the Reaffirmation with a submitted reservation; the nation's reservation includes that the obligations of the treaty only apply to other parties that ratified the Reaffirmation. In essence [From.GetName] will only hold itself to the treaty if the opposing party does so, too."
 CW_protocol_enforcer_idea: "Guarantees Geneva Protocol Enforcement"
 CW_protocol_enforcer_idea_desc: "[From.GetNameDef] guarantees the Geneva Protocol and will intervene if a nation decides to employ chemical weapons against a signatory."
 CW_protocol_exception: "Geneva Protocol Exception"
