@@ -22,8 +22,7 @@ criminal_technology3_short:0 "Improved Prison Labour"
 criminal_technology3_desc:0 "Our prison system will refine and further their involvement in the production of material towards the war effort.\n§YOnly available during war!§!"
 
 criminal_technology4:0 "Prison Labour Camps"
-criminal_technology4:0 "Gulags"
-criminal_technology4:0 "Forced Labour Camps"
+SOV_criminal_technology4:0 "Gulags"
 criminal_technology4_short:0 "Prison Labour Camps"
 criminal_technology4_desc:0 "Our undesirables shall be send to work camps to mine for our glorious nation's war machine.\n§YOnly available for Fascists and Communists!§!"
 
