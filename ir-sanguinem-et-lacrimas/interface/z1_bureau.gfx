@@ -50,9 +50,9 @@ spriteTypes = {
   SpriteType = { name = "GFX_idea_CW_not_using_cw"                              texturefile = "gfx//interface//ideas//law_saintrommel.dds" }
   spriteType = { name = "GFX_idea_CW_using_cw"                                  texturefile = "gfx/interface/ideas/law_panzershrek.dds"  }
 
-  spriteType = { name = "GFX_idea_CW_signatory_idea"                                 texturefile = "gfx/interface/ideas/generic_spidoor.dds" }
-  spriteType = { name = "GFX_idea_CW_signatory_reservation_idea"                     texturefile = "gfx/interface/ideas/generic_spidoor.dds" }
-  spriteType = { name = "GFX_idea_CW_protocol_exception"                             texturefile = "gfx/interface/ideas/generic_spidoor.dds" }
-  spriteType = { name = "GFX_idea_CW_protocol_enforcer_idea"                         texturefile = "gfx/interface/ideas/generic_spidoor.dds" }
+  spriteType = { name = "GFX_idea_CW_signatory_idea"                                 texturefile = "gfx/interface/ideas/CW_signatory_idea.dds" }
+  spriteType = { name = "GFX_idea_CW_signatory_reservation_idea"                     texturefile = "gfx/interface/ideas/CW_signatory_reservation_idea.dds" }
+  spriteType = { name = "GFX_idea_CW_protocol_exception"                             texturefile = "gfx/interface/ideas/CW_protocol_exception.dds" }
+  spriteType = { name = "GFX_idea_CW_protocol_enforcer_idea"                         texturefile = "gfx/interface/ideas/CW_protocol_enforcer_idea.dds" }
 
 }
