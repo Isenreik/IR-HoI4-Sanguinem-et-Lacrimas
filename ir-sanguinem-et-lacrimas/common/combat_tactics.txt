@@ -818,7 +818,7 @@ tactic_prepare_gas_attack = {
 	trigger = {
 		is_attacker = yes
 		phase = no
-		FROM = { has_idea_with_trait = CW_using_cw }
+		OWNER = { has_country_flag = CW_using_cw_flag }
 	}
 
 	active = no
@@ -845,7 +845,7 @@ tactic_cw_basic_attack = {
 
 	active = yes
 
-	base = 5
+	base = 3
 	picture = attack
 
   phase = close_combat
@@ -859,12 +859,12 @@ tactic_blue_cross_attack = {
 	trigger = {
 		is_attacker = yes
 		phase = chemical_warfare
-		FROM = { has_idea_with_trait = CW_using_cw }
+		OWNER = { has_country_flag = CW_using_cw_flag }
 	}
 
 	active = no
 
-	base = 4
+	base = 3
 	picture = tactics_blue_cross_attack
 	countered_by = tactic_gas_mask_defense
 
@@ -879,12 +879,12 @@ tactic_blue_cross_attack_2 = {
 	trigger = {
 		is_attacker = yes
 		phase = chemical_warfare
-		has_idea_with_trait = CW_using_cw
+		OWNER = { has_country_flag = CW_using_cw_flag }
 	}
 
 	active = no
 
-	base = 3
+	base = 4
 	picture = tactics_blue_cross_attack_2
 	countered_by = tactic_gas_mask_defense_2
 
@@ -899,12 +899,12 @@ tactic_green_cross_attack = {
 	trigger = {
 		is_attacker = yes
 		phase = chemical_warfare
-		has_idea_with_trait = CW_using_cw
+		OWNER = { has_country_flag = CW_using_cw_flag }
 	}
 
 	active = no
 
-	base = 4
+	base = 3
 	picture = tactics_green_cross_attack
 	countered_by = tactic_gas_mask_defense
 
@@ -919,12 +919,12 @@ tactic_green_cross_attack_2 = {
 	trigger = {
 		is_attacker = yes
 		phase = chemical_warfare
-		has_idea_with_trait = CW_using_cw
+		OWNER = { has_country_flag = CW_using_cw_flag }
 	}
 
 	active = no
 
-	base = 3
+	base = 4
 	picture = tactics_green_cross_attack_2
 	countered_by = tactic_gas_mask_defense_2
 
@@ -939,12 +939,12 @@ tactic_yellow_cross_attack = {
 	trigger = {
 		is_attacker = yes
 		phase = chemical_warfare
-		has_idea_with_trait = CW_using_cw
+		OWNER = { has_country_flag = CW_using_cw_flag }
 	}
 
 	active = no
 
-	base = 4
+	base = 3
 	picture = tactics_yellow_cross_attack
 	countered_by = tactic_gas_mask_defense
 
@@ -959,12 +959,12 @@ tactic_yellow_cross_attack_2 = {
 	trigger = {
 		is_attacker = yes
 		phase = chemical_warfare
-		has_idea_with_trait = CW_using_cw
+		OWNER = { has_country_flag = CW_using_cw_flag }
 	}
 
 	active = no
 
-	base = 3
+	base = 4
 	picture = tactics_yellow_cross_attack_2
 	countered_by = tactic_gas_mask_defense_2
 
@@ -1029,7 +1029,7 @@ tactic_gas_mask_counter_attack = {
 
 	active = no
 
-	base = 2
+	base = 4
 	picture = tactics_gas_mask_counter
 
   display_phase = chemical_warfare
@@ -1048,7 +1048,7 @@ tactic_gas_mask_defense_2 = {
 
 	active = no
 
-	base = 2
+	base = 5
 	picture = tactics_gas_mask_2
 
   phase = no
