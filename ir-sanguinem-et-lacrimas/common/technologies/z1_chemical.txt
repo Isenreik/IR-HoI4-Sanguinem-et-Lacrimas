@@ -48,7 +48,7 @@ technologies = {
       research_cost_coeff = 1
     }
 
-    research_cost = 1
+    research_cost = 2
     start_year = 1916
 
     folder = {
@@ -65,8 +65,16 @@ technologies = {
     ai_will_do = {
       factor = 1
       modifier = {
-				factor = 5
-        has_global_flag = chemical_warfare_activated
+				factor = 2
+				has_government = fascism
+			}
+			modifier = {
+				factor = 1.5
+				has_government = democratic
+			}
+			modifier = {
+				factor = 0.2
+				is_major = no
 			}
       modifier = {
 				factor = 8
@@ -74,21 +82,6 @@ technologies = {
           has_country_flag = uses_chemical_weapons
         }
 			}
-      modifier = {
-        factor = 1.5
-        OR = {
-          has_idea = sour_loser
-          has_idea = warrior_traditions_idea
-          has_idea = vittoria_mutilata
-        }
-      }
-      modifier = {
-        factor = 1.2
-        OR = {
-          has_idea = FRA_victors_of_wwi
-          has_idea = ENG_the_war_to_end_all_wars
-        }
-      }
     }
 
     ai_research_weights = {
@@ -110,7 +103,7 @@ technologies = {
       research_cost_coeff = 1
     }
 
-    research_cost = 1.5
+    research_cost = 1.8
     start_year = 1917
 
     folder = {
@@ -124,7 +117,7 @@ technologies = {
     }
 
     ai_will_do = {
-      factor = 5
+      factor = 2.5
       modifier = {
 				factor = 4
 				any_enemy_country = {
@@ -141,7 +134,7 @@ technologies = {
     }
     enable_tactic = tactic_gas_mask_counter_attack
 
-    research_cost = 1.1
+    research_cost = 1.5
     start_year = 1936
 
     folder = {
@@ -155,7 +148,7 @@ technologies = {
     }
 
     ai_will_do = {
-      factor = 4
+      factor = 3
     }
 
   }
@@ -169,7 +162,7 @@ technologies = {
       research_cost_coeff = 1
     }
 
-    research_cost = 1.4
+    research_cost = 1.6
     start_year = 1939
 
     folder = {
@@ -183,7 +176,7 @@ technologies = {
     }
 
     ai_will_do = {
-      factor = 3
+      factor = 2
 
       modifier = {
         factor = 5
@@ -204,7 +197,7 @@ technologies = {
       research_cost_coeff = 1
     }
 
-    research_cost = 1.2
+    research_cost = 1.6
     start_year = 1942
 
     folder = {
@@ -218,7 +211,7 @@ technologies = {
     }
 
     ai_will_do = {
-      factor = 3
+      factor = 2
 
       modifier = {
         factor = 4
@@ -236,7 +229,7 @@ technologies = {
       research_cost_coeff = 1
     }
 
-    research_cost = 1.2
+    research_cost = 1.5
     start_year = 1917
 
     folder = {
@@ -251,7 +244,7 @@ technologies = {
     }
 
     ai_will_do = {
-      factor = 8
+      factor = 1
     }
   }
 
@@ -259,7 +252,7 @@ technologies = {
 
     enable_tactic = tactic_blue_cross_attack_2
 
-    research_cost = 1
+    research_cost = 2.2
     start_year = 1936
 
     folder = {
@@ -274,7 +267,7 @@ technologies = {
     }
 
     ai_will_do = {
-      factor = 2
+      factor = 1
 
       modifier = {
         factor = 5
@@ -292,7 +285,7 @@ technologies = {
       research_cost_coeff = 1
     }
 
-    research_cost = 1.5
+    research_cost = 1.9
     start_year = 1917
 
     folder = {
@@ -315,7 +308,7 @@ technologies = {
 
     enable_tactic = tactic_green_cross_attack_2
 
-    research_cost = 2
+    research_cost = 2.4
     start_year = 1938
 
     folder = {
@@ -330,7 +323,7 @@ technologies = {
     }
 
     ai_will_do = {
-      factor = 2
+      factor = 1
 
       modifier = {
         factor = 5
@@ -363,7 +356,7 @@ technologies = {
     }
 
     ai_will_do = {
-      factor = 2
+      factor = 1
     }
   }
 
@@ -371,7 +364,7 @@ technologies = {
 
     enable_tactic = tactic_yellow_cross_attack_2
 
-    research_cost = 2
+    research_cost = 2.6
     start_year = 1939
 
     folder = {
@@ -386,7 +379,7 @@ technologies = {
     }
 
     ai_will_do = {
-      factor = 2
+      factor = 1
 
       modifier = {
         factor = 5
@@ -472,7 +465,7 @@ technologies = {
     }
 
     ai_will_do = {
-      factor = 2
+      factor = 1
 
       modifier = {
         factor = 5
