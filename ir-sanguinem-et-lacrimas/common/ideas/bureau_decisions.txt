@@ -10,6 +10,7 @@ ideas = {
 
 				on_add = {
 					custom_effect_tooltip = CW_not_using_cw.tt
+					clr_country_flag = CW_using_cw_flag
 				}
 
 				cost = 60
@@ -36,11 +37,11 @@ ideas = {
 				available = {
 					OR = {
 						AND = {
-							has_idea_with_trait = CW_signatory_reservation_idea
-							has_idea_with_trait = CW_protocol_exception
+							has_country_flag = CW_signatory_reservation_idea_flag
+							has_country_flag = CW_protocol_exception_flag
 						}
 						AND = {
-							NOT = { has_idea_with_trait = CW_signatory_idea }
+							NOT = {	has_country_flag = CW_signatory_idea_flag }
 							NOT = { has_country_flag = CW_hesitation_flag }
 						}
 					}
@@ -48,6 +49,7 @@ ideas = {
 
 				on_add = {
 					custom_effect_tooltip = CW_using_cw.tt
+					set_country_flag = CW_using_cw_flag
 				}
 
 				cost = 60
@@ -64,7 +66,6 @@ ideas = {
 					}
 				}
 
-				picture = generic_spidoor
 			}
 
 		}

@@ -30,7 +30,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				always = no
+				always = yes
 			}
 
 			removal_cost = -1
@@ -46,7 +46,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				always = no
+				always = yes
 			}
 
 			removal_cost = -1
@@ -62,7 +62,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				always = no
+				always = yes
 			}
 
 			removal_cost = -1
@@ -78,29 +78,12 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				always = no
+				always = yes
 			}
 
 			removal_cost = -1
 
 			picture = GFX_CW_protocol_enforcer_idea
-
-		}
-
-		## needs revisiting
-		CW_uses_cw_idea = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-
-			picture = generic_spidoor
 
 		}
 
