@@ -4,8 +4,8 @@ idea_categories = {
 
 		slot = bureau_chem_advisors
 
-		cost = 80
-		removal_cost = 0
+		# cost = 60
+		removal_cost = -1
 	}
 
 }

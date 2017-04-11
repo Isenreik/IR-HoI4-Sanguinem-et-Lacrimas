@@ -37,6 +37,7 @@ on_actions = {
         }
         country_event = chem_convention.30
       }
+      set_global_flag = CW_global_ban_supporters
 		}
 	}
 
