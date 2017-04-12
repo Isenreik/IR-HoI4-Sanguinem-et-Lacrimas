@@ -27,7 +27,7 @@ country_event = {
 
 	trigger = {
 		date > 1937.1.1
-		threat > 0.1
+		threat > 0.06
 		OR = {
 			OR = {						# [has signatory] or [has signatory-reservation]
 				NOT = { has_country_flag = CW_signatory_idea_flag }
@@ -59,10 +59,10 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 600
+		days = 300
 
 		modifier = {
-			factor = 0.8
+			factor = 0.6
 			threat > 0.25
 		}
 		modifier = {
@@ -85,7 +85,7 @@ country_event = {
 			}
 		}
 		modifier = {
-			factor = 2.5
+			factor = 2
 			is_major = no
 		}
 
@@ -606,7 +606,7 @@ country_event = {
 				factor = 2
 				has_global_flag = {
 					flag = CW_global_ban_supporters
-					value < 4
+					value < 3
 				}
 			}
 			modifier = {
@@ -743,21 +743,21 @@ country_event = {
 				has_government = fascism
 			}
 			modifier = {
-				factor = 2
+				factor = 1.5
 				has_country_flag = CW_wants_to_ban
 			}
 			modifier = {
-				factor = 2
-				has_global_flag = {
-					flag = CW_global_ban_supporters
-					value < 4
-				}
-			}
-			modifier = {
-				factor = 2
+				factor = 1.5
 				has_global_flag = {
 					flag = CW_global_ban_supporters
 					value < 6
+				}
+			}
+			modifier = {
+				factor = 1.5
+				has_global_flag = {
+					flag = CW_global_ban_supporters
+					value < 10
 				}
 			}
 		}
@@ -799,17 +799,17 @@ country_event = {
 				has_country_flag = CW_wants_to_ban
 			}
 			modifier = {
-				factor = 2
-				has_global_flag = {
-					flag = CW_global_ban_supporters
-					value < 4
-				}
-			}
-			modifier = {
-				factor = 2
+				factor = 1.5
 				has_global_flag = {
 					flag = CW_global_ban_supporters
 					value < 6
+				}
+			}
+			modifier = {
+				factor = 1.5
+				has_global_flag = {
+					flag = CW_global_ban_supporters
+					value < 10
 				}
 			}
 		}
@@ -879,7 +879,7 @@ country_event = {
 		custom_effect_tooltip = chem_convention.8.a.tt
 		set_country_flag = CW_protocol_enforcer
 
-		add_named_threat = { threat = -5 name = chem_convention.enforced }
+		add_named_threat = { threat = -2.5 name = chem_convention.enforced }
 
 		set_country_flag = CW_voted_enforcement
 
@@ -902,21 +902,21 @@ country_event = {
 				TAG = USA
 			}
 			modifier = {
-				factor = 3
+				factor = 2
 				has_country_flag = CW_wants_to_ban
 			}
 			modifier = {
-				factor = 2
-				has_global_flag = {
-					flag = CW_global_ban_supporters
-					value < 7
-				}
-			}
-			modifier = {
-				factor = 2
+				factor = 1.5
 				has_global_flag = {
 					flag = CW_global_ban_supporters
 					value < 10
+				}
+			}
+			modifier = {
+				factor = 1.5
+				has_global_flag = {
+					flag = CW_global_ban_supporters
+					value < 15
 				}
 			}
 		}
@@ -929,13 +929,13 @@ country_event = {
 		set_country_flag = CW_voted_enforcement
 
 		ai_chance = {
-			factor = 3
+			factor = 5
 			modifier = {
 				factor = 5
 				is_major = no
 			}
 			modifier = {
-				factor = 0.5
+				factor = 0.8
 				is_historic_good_guy = yes
 			}
 			modifier = {

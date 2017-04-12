@@ -19,12 +19,7 @@ ideas = {
 				cancel_if_invalid = no
 
 				ai_will_do = {
-					factor = 3
-
-					modifier = {
-						factor = 2
-						has_war = yes
-					}
+					factor = 1
 				}
 
 			}
@@ -58,11 +53,17 @@ ideas = {
 				cancel_if_invalid = yes
 
 				ai_will_do = {
-					factor = 3
+					factor = 2
 
 					modifier = {
 						factor = 2
-						has_war = yes
+						enemies_strength_ratio > 1
+					}
+					modifier = {
+						factor = 5
+						any_enemy_country = {
+							has_country_flag = CW_using_cw_flag
+						}
 					}
 				}
 
