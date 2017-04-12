@@ -698,7 +698,10 @@ country_event = {
 	option = {
 		name = chem_convention.7.a
 
-		add_ideas = CW_signatory_idea
+		hidden_effect = {
+			add_ideas = CW_signatory_idea
+		}
+		custom_effect_tooltip = chem_convention.7.a.tt
 		set_country_flag = CW_signatory_idea_flag
 
 		if = {
@@ -763,7 +766,11 @@ country_event = {
 	option = {
 		name = chem_convention.7.b
 
-		add_ideas = CW_signatory_reservation_idea
+		hidden_effect = {
+			add_ideas = CW_signatory_idea
+		}
+		custom_effect_tooltip = chem_convention.7.b.tt
+
 		set_country_flag = CW_signatory_reservation_idea_flag
 
 		set_country_flag = CW_voted
@@ -866,7 +873,10 @@ country_event = {
 	option = {
 		name = chem_convention.8.a
 
-		add_ideas = CW_protocol_enforcer_idea
+		hidden_effect = {
+			add_ideas = CW_protocol_enforcer_idea
+		}
+		custom_effect_tooltip = chem_convention.8.a.tt
 		set_country_flag = CW_protocol_enforcer
 
 		add_named_threat = { threat = -5 name = chem_convention.enforced }
