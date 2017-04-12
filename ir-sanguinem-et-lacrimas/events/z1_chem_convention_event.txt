@@ -29,15 +29,15 @@ country_event = {
 		date > 1937.1.1
 		threat > 0.1
 		OR = {
-			OR = {
+			OR = {						# [has signatory] or [has signatory-reservation]
 				NOT = { has_country_flag = CW_signatory_idea_flag }
 				NOT = { has_country_flag = CW_signatory_reservation_idea_flag }
 				has_country_flag = CW_do_not_ask_again
 			}
-			AND = {
-				OR = {
+			AND = { 					# { [has do-not-ask and not signatory] or [signatory-reservation] } and [enemy using chem]
+				OR = { 					# [has do-not-ask and not signatory] or [signatory-reservation]
 					has_country_flag = CW_signatory_reservation_idea_flag
-					AND = {
+					AND = {				# has do-not-ask and not signatory
 						has_country_flag = CW_do_not_ask_again
 						NOT = { has_country_flag = CW_signatory_idea_flag }
 					}
@@ -45,6 +45,10 @@ country_event = {
 				any_enemy_country = {
 					has_country_flag = CW_using_cw_flag
 				}
+			}
+			AND = { 					# has do-not-ask and war
+				has_country_flag = CW_do_not_ask_again
+				has_war = yes
 			}
 		}
 		has_country_flag = cw_hesitation_flag
