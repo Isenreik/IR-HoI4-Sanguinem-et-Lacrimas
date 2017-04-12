@@ -47,8 +47,8 @@ spriteTypes = {
   SpriteType = { name = "GFX_press_trucks1_medium"                              texturefile = "gfx//interface//technologies//press_tech_truck_cog.dds"    alwaystransparent = yes	}
   SpriteType = { name = "GFX_press_trucks2_medium"                              texturefile = "gfx//interface//technologies//press_tech_truck.dds"    alwaystransparent = yes	}
 
-  SpriteType = { name = "GFX_idea_CW_not_using_cw"                              texturefile = "gfx//interface//ideas//law_saintrommel.dds" }
-  spriteType = { name = "GFX_idea_CW_using_cw"                                  texturefile = "gfx/interface/ideas/law_panzershrek.dds"  }
+  SpriteType = { name = "GFX_idea_CW_not_using_cw"                              texturefile = "gfx//interface//ideas//idea_law_not_use_chem_weapons.dds" }
+  spriteType = { name = "GFX_idea_CW_using_cw"                                  texturefile = "gfx/interface/ideas/idea_law_use_chem_weapons.dds"  }
 
   spriteType = { name = "GFX_idea_CW_signatory_idea"                                 texturefile = "gfx/interface/ideas/CW_signatory_idea.dds" }
   spriteType = { name = "GFX_idea_CW_signatory_reservation_idea"                     texturefile = "gfx/interface/ideas/CW_signatory_reservation_idea.dds" }
