@@ -1,0 +1,13 @@
+I just want to quickly say: Thanks to everyone for your support and your appreciation, it actually does mean a lot to me.
+[b]I do actually read every single comment.[/b]
+
+I would even respond directly and to pretty much every comment; if Steam's commenting system wouldn't be utter fucking shit. I mean for fuck sake, even in YouTube you can reply to individual comments and such...and YouTube is a pile of flaming trash.
+
+I'm looking in the issues that are mentioned by people; however most issues simply come from incompatibility with other activated mods. If I notice a popular mod, I'm doing a quick check if it's compatible or not and add it to the list.
+That said, unless you somehow send me an error.log and a list of active mods...I can't really do much. The mod by itself works 86% fine, and the missing something 14% are back-end things like AI. If you say "the artillery folder doesn't change" it can't be the mods fault.
+
+-----
+
+(there's also a fucking 1000 character limit...gods this comment system is broken ) 
+
+Now I'm working on 1.4 that introduces a lot of under-the-hood changes, greatly improves the AI integration, completely re-haules chemical warfare events (international voting on the Geneva Convention; the ability to research new chemical weapons but not deploying them to name a few), adds more images and names for equipment, gives difficulty sliders to minor nations, renames it into proper-latin (thanks Jimdude2435 you fucking cunt  ) and much more. So stay tuned and enjoy my mod; now and in the future. 

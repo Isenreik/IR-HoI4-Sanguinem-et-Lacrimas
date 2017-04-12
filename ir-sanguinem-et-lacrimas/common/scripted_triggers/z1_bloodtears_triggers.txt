@@ -1,0 +1,189 @@
+
+is_league_of_nations_1936 = {
+	OR = {
+		tag = FRA
+		tag = ENG
+		tag = ITA
+
+		tag = ARG
+		tag = AST
+		tag = BEL
+		tag = BOL
+		tag = CAN
+		tag = CHL
+		tag = CHI
+		tag = COL
+		tag = CUB
+		tag = CZE
+		tag = DEN
+		tag = ELS
+		tag = GRE
+		tag = GUA
+		tag = HAI
+		tag = HON
+		tag = RAJ
+		tag = IRE
+		tag = ETH
+		tag = LIB
+		tag = HOL
+		tag = NZL
+		tag = NIC
+		tag = NOR
+		tag = PAN
+		tag = PER
+		tag = PRU
+		tag = POL
+		tag = POR
+		tag = SIA
+		tag = ROM
+		tag = SPR
+		tag = SWE
+		tag = SWI
+		tag = SAF
+		tag = URG
+		tag = YUG
+		tag = VEN
+		tag = AUS
+		tag = BUL
+		tag = FIN
+		tag = LUX
+		tag = ALB
+		tag = EST
+		tag = LAT
+		tag = LIT
+		tag = HUN
+		tag = DOM
+		tag = MEX
+		tag = TUR
+		tag = IRQ
+		tag = SOV
+		tag = AFG
+		tag = SYR
+		tag = ECU
+	}
+}
+
+# League in 1936: Argentina, Australia, Belgium, Bolivia, the British Empire, Canada, Chile, China, Colombia, Cuba, Czechoslovakia, Denmark, El Salvador, France, Greece, Guatemala, Haiti, Honduras, India, Irish Free State, Ethiopia, Italy, Liberia, the Netherlands, New Zealand, Nicaragua, Norway, Panama, Persia/Iran, Peru, Poland, Portugal, Romania, Siam, Spain, Sweden, Switzerland, the Union of South Africa, Uruguay, Yugoslavia, Venezuela, Austria, Bulgaria, Finland, Luxembourg, Albania, Estonia, Latvia, Lithuania, Hungary, Ireland, the Dominican Republic, Mexico, Turkey, Iraq, the Union of Soviet Socialist Republics, Afghanistan, British Raj, Syria and Ecuador.
+
+is_league_member = {
+	has_country_flag = LN_league_member
+	exists = yes
+	compare_autonomy_state > autonomy_puppet
+}
+
+is_major_victor_of_ww1 = {
+	OR = {
+		tag = FRA
+		tag = ENG
+		tag = USA
+		tag = ITA
+	}
+	compare_autonomy_state > autonomy_puppet
+}
+
+is_medium_victor_of_ww1 = {
+	OR = {
+		tag = HOL
+		tag = BEL
+		tag = GRE
+		tag = POR
+		tag = ROM
+		tag = YUG
+		tag = CZE
+	}
+	compare_autonomy_state > autonomy_puppet
+}
+
+is_small_victor_of_ww1 = {
+	OR = {
+		tag = BOL
+		tag = BRA
+		tag = CHI
+		tag = CUB
+		tag = ECU
+		tag = GUA
+		tag = HAI
+		tag = HON
+		tag = LIB
+		tag = NIC
+		tag = PAN
+		tag = PRU
+		tag = SIA
+		tag = URG
+	}
+	compare_autonomy_state > autonomy_puppet
+}
+
+is_victor_of_ww1 = {
+	OR = {
+	  # 5 Votes
+	  tag = FRA
+	  tag = ENG
+
+	  # 4 Votes
+	  tag = USA
+
+	  # 3 Votes
+	  tag = POL
+	  tag = ITA
+
+	  # 2 Votes
+	  tag = HOL
+	  tag = BEL
+	  tag = GRE
+	  tag = POR
+	  tag = ROM
+	  tag = YUG
+	  tag = CZE
+
+	  #	1 Vote
+	  tag = BOL
+	  tag = BRA
+	  tag = CHI
+	  tag = CUB
+	  tag = ECU
+	  tag = GUA
+	  tag = HAI
+	  tag = HON
+	  tag = LIB
+	  tag = NIC
+	  tag = PAN   # Gives back error?
+	  tag = PRU
+	  tag = SIA
+	  tag = URG
+	}
+}
+
+is_historic_good_guy = {
+	AND = {
+		OR = {
+			has_government = democratic
+			has_government = neutrality
+			has_government = marxism		# the "good commies"
+		}
+		OR = {
+			is_medium_victor_of_ww1 = yes
+			is_major_victor_of_ww1 = yes
+		}
+	}
+	compare_autonomy_state > autonomy_colony
+	exists = yes
+}
+
+is_historic_bad_guy = {
+	AND = {
+		OR = {
+			has_government = fascism
+			AND = {
+				NOT = { has_government = marxism }	# the "good commies"
+				has_government = communism
+			}
+		}
+		OR = {
+			is_medium_victor_of_ww1 = yes
+			is_major_victor_of_ww1 = yes
+		}
+	}
+	compare_autonomy_state > autonomy_colony
+	exists = yes
+}

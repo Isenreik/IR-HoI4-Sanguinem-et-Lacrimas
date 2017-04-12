@@ -23,10 +23,11 @@ These mods work fine together.
 These mods work together, but there might be tiny conflicts (which you might not even notice as a player) or they are very likely to conflict in the near-future because of updates of this or the other mod.
 :reinforce:
 [list]
-[*] [url=http://steamcommunity.com/sharedfiles/filedetails/?id=809903394]Kaiserreich[/url]
+[*] [url=http://steamcommunity.com/sharedfiles/filedetails/?id=809903394]Kaiserreich[/url] [There are some incompatibilities between the two mods; nothing game-breaking, but various small issues can and will appear. In other words; not advised, but possible]
 [*] [url=http://steamcommunity.com/sharedfiles/filedetails/?id=780512660]Araxiel's Signal Company Buff[/url]
 [*] Realistic Air Missions (LITE)
 [*] Expanded Engineering [technically compatible, but logically makes no sense; a lot of technologies are overlapping, such as proximity fuses or computer-assisted targeting; having both on most likely result in a really poor and really unbalanced experience]
+[*] Vanilla+ [Overwrites the Vanilla+ tech-tree, but otherwise works]
 [/list]
 
 [h1]Non-Compatible Mods[/h1]

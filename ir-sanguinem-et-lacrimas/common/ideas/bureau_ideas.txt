@@ -1,4 +1,5 @@
 #do you think you're smart?
+
 ideas = {
 
 	country = {
@@ -6,14 +7,12 @@ ideas = {
     civilian_truck_conversation = {
 
       allowed = {
-        always = no
+        always = yes
       }
 
       allowed_civil_war = {
         always = yes
       }
-
-      picture = civilian_truck_conversation
 
       removal_cost = -1
 
@@ -24,27 +23,70 @@ ideas = {
       }
     }
 
-  }
-
-	country = {
-
-		chem_reprimanded = {
+		CW_signatory_idea = {
 
 			allowed = {
 				always = no
 			}
 
 			allowed_civil_war = {
-				always = no
+				always = yes
 			}
 
 			removal_cost = -1
 
-			picture = generic_infantry_bonus
+			picture = GFX_CW_signatory_idea
 
-			research_bonus = {
-				chemical_warfare = -0.75
-			}
 		}
+
+		CW_signatory_reservation_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_spidoor
+
+		}
+
+		CW_protocol_exception = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GFX_CW_protocol_exception
+
+		}
+
+		CW_protocol_enforcer_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GFX_CW_protocol_enforcer_idea
+
+		}
+
 	}
+
 }

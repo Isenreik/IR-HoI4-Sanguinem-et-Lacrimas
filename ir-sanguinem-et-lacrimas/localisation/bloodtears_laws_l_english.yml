@@ -1,0 +1,11 @@
+﻿l_english:
+
+bureau_laws: "Bureaus"
+bureau_chem_advisors: "Chemical Weapon Employment"
+CW_using_cw: "Employ CW"
+CW_using_cw.tt: "Our troops are allowed to use Chemical Weapons in battle.\n"
+CW_using_cw.TT_signed_exception: "We Signed with Reservation and those Reservations are in effect."
+CW_not_using_cw: "Don't Employ CW"
+CW_not_using_cw.tt: "Our troops are not allowed to use Chemical Weapons in battle.\n"
+
+chem_convention.enforced: "Pledged to enforce Geneva Protocol"
