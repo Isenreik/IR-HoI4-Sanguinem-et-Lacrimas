@@ -19,19 +19,16 @@ CW_used_against_us: "Used chemical weapons against us"
 CW_reprimanded: "Reprimanded for using chemical weapon"
 
 chem_convention.1.t: "Military Staff Suggests Chemical Warfare"
-
 chem_convention.1.desc: "Our generals and military staff have contemplated to activate our chemical weapon stockpiles. The world has seen what horror these weapons have inflicted upon the world when they were used during the great war, and thus a sizable faction within our army staff raises objection to the use of such weapons.\n\nIf we decide to employ chemical weapons against our enemies in an offensive manner, we won't be able to keep a secret for very long and some more liberal elements of the international community might denounce our us, while some nations might simply not care.\n\nWhile we might be able to evade the ire of other nations, or decide to simply not care, activating our chemical weapons could be a decisive boon for our troops. But we have to keep in mind such action will destabilise the balance of terror between our nations and our rival."
 chem_convention.1.a: "Let's not make hasty decisions."
 chem_convention.1.a.tt: "Continue the status-quo and let us decide at a later point."
 chem_convention.1.b: "We have to use them before someone else uses them on us."
-chem_convention.1.d: "Chemical Warfare is a monster; let us slay it once and for all!"
-chem_convention.1.e: "To even suggest such actions is troubling."
-chem_convention.1.e.tt: "Unless you're being attacked, you will not be bothered again."
+chem_convention.1.c: "Chemical Warfare is a monster; let us slay it once and for all!"
+chem_convention.1.d: "To even suggest such actions is troubling."
+chem_convention.1.d.tt: "Unless you're being attacked, you will not be bothered again."
 
 chem_convention.2.t: "[From.GetName] Plans On Using Chemical Weapons"
-
 chem_convention.2.desc: "It has come to our attention that [From.GetNameDef] has activated their chemical stockpile and plans on using it against their enemies.\n\nWe could denounce them and show our disdain for their use of such horrific weapons. Alternatively we could also stay out of this; should we really care about what other sovereigns are doing?"
-
 chem_convention.2.a: "We do not care what [From.GetLeader] is doing."
 chem_convention.2.b: "How dare they!"
 chem_convention.2.c: "We have to put an end to this."
@@ -49,7 +46,6 @@ chem_convention.4.a: "We will help [From.GetLeader]."
 chem_convention.4.b: "We will not help them."
 
 chem_convention.5.t: "No Help From Major Country"
-
 chem_convention.5.desc: "No major nation decided to support our cause. We fear that our calls for reconciliation and reaffirmation for the 1925 Geneva Protocol have fallen on deaf ears."
 chem_convention.5.a: "Those fools might have just doomed the world."
 
