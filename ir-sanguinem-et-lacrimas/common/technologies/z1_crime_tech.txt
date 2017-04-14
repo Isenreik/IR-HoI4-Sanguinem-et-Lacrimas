@@ -207,8 +207,7 @@ technologies = {
 				}
 				add_manpower = 20000
 			}
-				add_manpower = 8500
-			}
+			add_manpower = 8500
 		}
 
     path = {
