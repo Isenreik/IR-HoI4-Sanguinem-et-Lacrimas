@@ -20,6 +20,13 @@ ideas = {
 
 				ai_will_do = {
 					factor = 1
+					modifier = {
+						factor = 3
+						has_global_flag = {
+							flag = CW_enforcer_amount
+							value > 3
+						}
+					}
 				}
 
 			}
@@ -37,9 +44,11 @@ ideas = {
 						}
 						AND = {
 							NOT = {	has_country_flag = CW_signatory_idea_flag }
+							NOT = {	has_country_flag = CW_signatory_reservation_idea_flag }
 							NOT = { has_country_flag = CW_hesitation_flag }
 						}
 					}
+					compare_autonomy_state > autonomy_colony
 				}
 
 				on_add = {
