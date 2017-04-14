@@ -90,6 +90,7 @@ is_medium_victor_of_ww1 = {
 		tag = ROM
 		tag = YUG
 		tag = CZE
+		tag = POL
 	}
 	compare_autonomy_state > autonomy_puppet
 }
