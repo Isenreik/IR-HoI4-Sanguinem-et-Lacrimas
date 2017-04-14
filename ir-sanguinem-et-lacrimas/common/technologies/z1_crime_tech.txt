@@ -170,7 +170,45 @@ technologies = {
 
 		# Needs Revisit
 	  on_research_complete = {
-			add_manpower = 100000
+			if = {
+				limit= {
+					TAG = SOV
+				}
+				add_manpower = 50000
+			}
+			if = {
+				limit= {
+					is_major_victor_of_ww1 = yes
+				}
+				add_manpower = 20000
+			}
+			if = {
+				limit= {
+					is_medium_victor_of_ww1 = yes
+				}
+				add_manpower = 10000
+			}
+			if = {
+				limit= {
+					has_government = communism
+				}
+				add_manpower = 50000
+			}
+			if = {
+				limit= {
+					has_government = fascism
+				}
+				add_manpower = 20000
+			}
+			if = {
+				limit= {
+					is_historic_bad_guy = yes
+					NOT = { TAG = SOV }
+				}
+				add_manpower = 20000
+			}
+				add_manpower = 8500
+			}
 		}
 
     path = {
