@@ -10,7 +10,6 @@ on_actions = {
 		effect = {
       every_country = {
         set_country_flag = cw_hesitation_flag
-        set_global_flag = { flag = CW_global_chem_users value = 1 }
       }
       every_country = {
         limit = {
@@ -38,6 +37,8 @@ on_actions = {
         country_event = chem_convention.30
       }
       set_global_flag = CW_global_ban_supporters
+      set_global_flag = { flag = CW_global_chem_users value = 1 }
+      set_global_flag = CW_enforcer_amount
 		}
 	}
 

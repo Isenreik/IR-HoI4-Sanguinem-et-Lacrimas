@@ -82,6 +82,12 @@ technologies = {
           has_country_flag = uses_chemical_weapons
         }
 			}
+      modifier = {
+				factor = 0.1
+				any_enemy_country = {
+          has_country_flag = CW_signatory_idea_flag
+        }
+			}
     }
 
     ai_research_weights = {
@@ -245,6 +251,12 @@ technologies = {
 
     ai_will_do = {
       factor = 1
+      modifier = {
+				factor = 0.1
+				any_enemy_country = {
+          has_country_flag = CW_signatory_idea_flag
+        }
+			}
     }
   }
 
@@ -301,6 +313,12 @@ technologies = {
 
     ai_will_do = {
       factor = 1
+      modifier = {
+				factor = 0.1
+				any_enemy_country = {
+          has_country_flag = CW_signatory_idea_flag
+        }
+			}
     }
   }
 
@@ -329,6 +347,12 @@ technologies = {
         factor = 5
         date > "1938.1.6"
       }
+      modifier = {
+				factor = 0.1
+				any_enemy_country = {
+          has_country_flag = CW_signatory_idea_flag
+        }
+			}
     }
   }
 
@@ -357,6 +381,12 @@ technologies = {
 
     ai_will_do = {
       factor = 1
+      modifier = {
+				factor = 0.1
+				any_enemy_country = {
+          has_country_flag = CW_signatory_idea_flag
+        }
+			}
     }
   }
 
@@ -385,54 +415,12 @@ technologies = {
         factor = 5
         date > "1939.1.6"
       }
-
-    }
-  }
-
-  chemical_strat_bombing = {
-
-    air_strategic_bomber_bombing_factor = 0.2
-
-    path = {
-      leads_to_tech = chemical_tac_bombing
-      research_cost_coeff = 1
-    }
-
-    research_cost = 1.6
-    start_year = 1936
-
-    folder = {
-      name = bureau_folder
-      position = { x = @right4_row y = @1936 }
-    }
-
-    categories = {
-      chemical_warfare
-    }
-
-    ai_will_do = {
-      factor = 2
-    }
-  }
-
-  chemical_tac_bombing = {
-
-    air_cas_present_factor = 0.20
-
-    research_cost = 1.6
-    start_year = 1938
-
-    folder = {
-      name = bureau_folder
-      position = { x = @right4_row y = @1938 }
-    }
-
-    categories = {
-      chemical_warfare
-    }
-
-    ai_will_do = {
-      factor = 1
+      modifier = {
+				factor = 0.1
+				any_enemy_country = {
+          has_country_flag = CW_signatory_idea_flag
+        }
+			}
     }
   }
 

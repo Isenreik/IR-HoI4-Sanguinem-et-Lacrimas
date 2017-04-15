@@ -10,55 +10,34 @@ add_namespace = chem_convention
 # LN_league_disbanded
 # CW_calling_for_convention
 # CW_voted_refused
-
-# List of ideas:
+# CW_signatory_reservation_idea_flag
 # CW_signatory_idea
-# CW_signatory_reservation_idea
-# CW_uses_CW_idea
-# CW_protocol_exception
+# CW_protocol_exception_flag
 
 ## Military Staff Suggests Chemical Warfare
 country_event = {
 	id = chem_convention.1
 	title = chem_convention.1.t
-	picture = GFX_report_event_gas_lab
+	picture = GFX_report_event_gas_ukf
 
 	desc = chem_convention.1.desc
 
 	trigger = {
-		date > 1937.1.1
-		threat > 0.1
-		OR = {
-			OR = {
-				NOT = { has_country_flag = CW_signatory_idea_flag }
-				NOT = { has_country_flag = CW_signatory_reservation_idea_flag }
-				has_country_flag = CW_do_not_ask_again
-			}
-			AND = {
-				OR = {
-					has_country_flag = CW_signatory_reservation_idea_flag
-					AND = {
-						has_country_flag = CW_do_not_ask_again
-						NOT = { has_country_flag = CW_signatory_idea_flag }
-					}
-				}
-				any_enemy_country = {
-					has_country_flag = CW_using_cw_flag
-				}
-			}
-		}
-		has_country_flag = cw_hesitation_flag
+		date > 1936.6.1
+		threat > 0.06
 		compare_autonomy_state > autonomy_colony
 		has_tech = chemical_warfare_tech
 		NOT = { has_country_flag = CW_using_cw_flag }
 		NOT = { has_country_flag = CW_signatory_idea_flag }
+		NOT = { has_country_flag = CW_signatory_reservation_idea_flag }
+		NOT = { has_country_flag = CW_do_not_ask_again}
 	}
 
 	mean_time_to_happen = {
-		days = 600
+		days = 300
 
 		modifier = {
-			factor = 0.8
+			factor = 0.6
 			threat > 0.25
 		}
 		modifier = {
@@ -81,8 +60,15 @@ country_event = {
 			}
 		}
 		modifier = {
-			factor = 2.5
+			factor = 2
 			is_major = no
+		}
+		modifier = {
+			factor = 0.4
+			OR = {
+				TAG = JAP
+				TAG = ITA
+			}
 		}
 
 	}
@@ -100,11 +86,11 @@ country_event = {
 				is_major = no
 			}
 			modifier = {
-				factor = 5
+				factor = 4
 				has_war = yes
 			}
 			modifier = {
-				factor = 10
+				factor = 5
 				threat < 0.20
 			}
 		}
@@ -136,7 +122,7 @@ country_event = {
 					is_league_member = yes
 					NOT = { TAG = ROOT }
 				}
-				country_event = { id = chem_convention.2 days = 30 random = 20 } # debug-time
+				country_event = { id = chem_convention.2 days = 30 random = 20 }
 			}
 		}
 
@@ -151,11 +137,11 @@ country_event = {
 				has_government = democratic
 			}
 			modifier = {
-				factor = 0.2
+				factor = 0.6
 				is_major = no
 			}
 			modifier = {
-				factor = 2
+				factor = 3
 				has_war = yes
 			}
 			modifier = {
@@ -165,50 +151,10 @@ country_event = {
 		}
 	}
 
-	# We have to retaliate to CW!
-	option = {
-		name = chem_convention.1.c
-
-		trigger = {
-				any_enemy_country = {
-					has_country_flag = CW_using_cw_flag
-				}
-		}
-
-		if {
-			limit = {
-				has_country_flag = CW_signatory_reservation_idea_flag
-			}
-			add_timed_idea = { idea = CW_protocol_exception days = 1100 }
-			set_country_flag = { flag = CW_protocol_exception_flag days = 1105 value = 1 }
-		}
-
-		every_enemy_country = {
-			limit = {
-				has_country_flag = CW_using_cw_flag
-			}
-			ROOT = {
-				add_opinion_modifier = { target = PREV modifier = CW_used_against_us }
-			}
-		}
-
-		ai_chance = {
-			factor = 6
-			modifier = {
-				factor = 3
-				has_government = fascism
-			}
-			modifier = {
-				factor = 3
-				has_defensive_war = yes
-			}
-		}
-	}
-
 	#	Chemical Warfare is a monster, let's defeat it once and for all!
 	# Stop CW
 	option = {
-		name = chem_convention.1.d
+		name = chem_convention.1.c
 
 		trigger = {
 			threat < 0.2
@@ -265,9 +211,9 @@ country_event = {
 
 	# To even suggest such actions is troubling.
 	option = {
-		name = chem_convention.1.e
+		name = chem_convention.1.d
 
-		custom_effect_tooltip = chem_convention.1.e.tt
+		custom_effect_tooltip = chem_convention.1.d.tt
 		set_country_flag = CW_do_not_ask_again
 
 		ai_chance = {
@@ -280,7 +226,7 @@ country_event = {
 country_event = {
 	id = chem_convention.2
 	title = chem_convention.2.t
-	picture = GFX_report_event_gas_lab
+	picture = GFX_report_event_gas_ger
 
 	desc = chem_convention.2.desc
 
@@ -431,45 +377,47 @@ country_event = {
 country_event = {
 	id = chem_convention.3
 	title = chem_convention.3.t
-	picture = GFX_report_event_generic_rally
+	picture = GFX_report_event_league_paris
 
 	desc = chem_convention.3.desc
 
   is_triggered_only = yes
 
 	immediate = {
-		random_country = {
-			limit = {
-				has_government = democratic
-				is_major = yes
-				NOT = { has_country_flag = CW_asked_for_support_by_@ROOT}
-				OR = {
-					has_opinion = { target = ROOT value > 0 }
-					TAG = ENG
+		hidden_effect = {
+			random_country = {
+				limit = {
+					has_government = democratic
+					is_major = yes
+					NOT = { has_country_flag = CW_asked_for_support_by_@ROOT}
+					OR = {
+						has_opinion = { target = ROOT value > 0 }
+						TAG = ENG
+					}
+					NOT = { has_offensive_war_with = ROOT }
 				}
-				NOT = { has_offensive_war_with = ROOT }
+				save_event_target_as = CW_major_support_giver_allies
 			}
-			save_event_target_as = CW_major_support_giver_allies
-		}
-		random_country = {
-			limit = {
-				has_government = communism
-				is_major = yes
-				NOT = { has_country_flag = CW_asked_for_support_by_@ROOT}
-				has_opinion = { target = ROOT value > 0 }
-				NOT = { has_offensive_war_with = ROOT }
+			random_country = {
+				limit = {
+					has_government = communism
+					is_major = yes
+					NOT = { has_country_flag = CW_asked_for_support_by_@ROOT}
+					has_opinion = { target = ROOT value > 0 }
+					NOT = { has_offensive_war_with = ROOT }
+				}
+				save_event_target_as = CW_major_support_giver_commis
 			}
-			save_event_target_as = CW_major_support_giver_commis
-		}
-		random_country = {
-			limit = {
-				has_government = fascism
-				is_major = yes
-				NOT = { has_country_flag = CW_asked_for_support_by_@ROOT}
-				has_opinion = { target = ROOT value > 0 }
-				NOT = { has_offensive_war_with = ROOT }
+			random_country = {
+				limit = {
+					has_government = fascism
+					is_major = yes
+					NOT = { has_country_flag = CW_asked_for_support_by_@ROOT}
+					has_opinion = { target = ROOT value > 0 }
+					NOT = { has_offensive_war_with = ROOT }
+				}
+				save_event_target_as = CW_major_support_giver_axis
 			}
-			save_event_target_as = CW_major_support_giver_axis
 		}
 	}
 
@@ -562,6 +510,7 @@ country_event = {
 	# Stop CW
 	option = {
 		name = chem_convention.4.a
+
 		FROM = {
 			add_opinion_modifier = { target = ROOT modifier = CW_offered_support }
 
@@ -602,14 +551,14 @@ country_event = {
 				factor = 2
 				has_global_flag = {
 					flag = CW_global_ban_supporters
-					value < 4
+					value > 3
 				}
 			}
 			modifier = {
 				factor = 2
 				has_global_flag = {
 					flag = CW_global_ban_supporters
-					value < 6
+					value > 6
 				}
 			}
 		}
@@ -662,15 +611,11 @@ news_event = {
 	id = chem_convention.6
 	title = chem_convention.6.t
 	desc = chem_convention.6.desc
-	picture = GFX_news_event_chemical_brit
+	picture = GFX_news_event_league_1
 
 	major = yes
 
 	is_triggered_only = yes
-
-	immediate = {
-		set_global_flag = CW_news_over
-	}
 
 	option = {
 		name = chem_convention.6.a
@@ -682,7 +627,7 @@ country_event = {
 	id = chem_convention.7
 	title = chem_convention.7.t
 	desc = chem_convention.7.desc
-	picture = GFX_report_event_generic_rally2
+	picture = GFX_report_event_league_2
 
 	is_triggered_only = yes
 
@@ -694,7 +639,10 @@ country_event = {
 	option = {
 		name = chem_convention.7.a
 
-		add_ideas = CW_signatory_idea
+		hidden_effect = {
+			add_ideas = CW_signatory_idea
+		}
+		custom_effect_tooltip = chem_convention.7.a.tt
 		set_country_flag = CW_signatory_idea_flag
 
 		if = {
@@ -736,21 +684,21 @@ country_event = {
 				has_government = fascism
 			}
 			modifier = {
-				factor = 2
+				factor = 1.5
 				has_country_flag = CW_wants_to_ban
 			}
 			modifier = {
-				factor = 2
+				factor = 1.5
 				has_global_flag = {
 					flag = CW_global_ban_supporters
-					value < 4
+					value > 6
 				}
 			}
 			modifier = {
-				factor = 2
+				factor = 1.5
 				has_global_flag = {
 					flag = CW_global_ban_supporters
-					value < 6
+					value > 10
 				}
 			}
 		}
@@ -759,7 +707,11 @@ country_event = {
 	option = {
 		name = chem_convention.7.b
 
-		add_ideas = CW_signatory_reservation_idea
+		hidden_effect = {
+			add_ideas = CW_signatory_reservation_idea
+		}
+		custom_effect_tooltip = chem_convention.7.b.tt
+
 		set_country_flag = CW_signatory_reservation_idea_flag
 
 		set_country_flag = CW_voted
@@ -788,17 +740,17 @@ country_event = {
 				has_country_flag = CW_wants_to_ban
 			}
 			modifier = {
-				factor = 2
+				factor = 1.5
 				has_global_flag = {
 					flag = CW_global_ban_supporters
-					value < 4
+					value > 6
 				}
 			}
 			modifier = {
-				factor = 2
+				factor = 1.5
 				has_global_flag = {
 					flag = CW_global_ban_supporters
-					value < 6
+					value > 10
 				}
 			}
 		}
@@ -837,6 +789,13 @@ country_event = {
 				factor = 1.5
 				TAG = USA
 			}
+			modifier = {
+				factor = 1.8
+				OR = {
+					TAG = ITA
+					TAG = JAP
+				}
+			}
 		}
 	}
 }
@@ -846,7 +805,7 @@ country_event = {
 	id = chem_convention.8
 	title = chem_convention.8.t
 	desc = chem_convention.8.desc
-	picture = GFX_report_event_generic_rally2
+	picture = GFX_report_event_league_paris
 
 	trigger = {
 		has_country_flag = CW_voted
@@ -862,10 +821,14 @@ country_event = {
 	option = {
 		name = chem_convention.8.a
 
-		add_ideas = CW_protocol_enforcer_idea
+		hidden_effect = {
+			add_ideas = CW_protocol_enforcer_idea
+		}
+		custom_effect_tooltip = chem_convention.8.a.tt
 		set_country_flag = CW_protocol_enforcer
+		modify_global_flag = { flag = CW_enforcer_amount value = 1 }
 
-		add_named_threat = { threat = -5 name = chem_convention.enforced }
+		add_named_threat = { threat = -2.5 name = chem_convention.enforced }
 
 		set_country_flag = CW_voted_enforcement
 
@@ -888,21 +851,21 @@ country_event = {
 				TAG = USA
 			}
 			modifier = {
-				factor = 3
+				factor = 2
 				has_country_flag = CW_wants_to_ban
 			}
 			modifier = {
-				factor = 2
+				factor = 1.5
 				has_global_flag = {
 					flag = CW_global_ban_supporters
-					value < 7
+					value > 10
 				}
 			}
 			modifier = {
-				factor = 2
+				factor = 1.5
 				has_global_flag = {
 					flag = CW_global_ban_supporters
-					value < 10
+					value > 15
 				}
 			}
 		}
@@ -915,13 +878,13 @@ country_event = {
 		set_country_flag = CW_voted_enforcement
 
 		ai_chance = {
-			factor = 3
+			factor = 5
 			modifier = {
 				factor = 5
 				is_major = no
 			}
 			modifier = {
-				factor = 0.5
+				factor = 0.8
 				is_historic_good_guy = yes
 			}
 			modifier = {
@@ -937,7 +900,7 @@ country_event = {
 	id = chem_convention.9
 	title = chem_convention.9.t
 	desc = chem_convention.9.desc
-	picture = GFX_report_event_generic_rally2
+	picture = GFX_report_event_gas_jap
 
 	trigger = {
 		ROOT = {
@@ -1071,7 +1034,7 @@ country_event = {
 	id = chem_convention.10
 	title = chem_convention.10.t
 	desc = chem_convention.10.desc
-	picture = GFX_report_event_generic_rally2
+	picture = GFX_report_event_league_turnaround
 
 	is_triggered_only = yes
 
@@ -1084,16 +1047,101 @@ country_event = {
 
 		set_global_flag = CW_calling_for_convention
 		save_global_event_target_as = CW_convention_holder
-		news_event = { id = chem_convention.6 days = 10 random = 5 }
+		news_event = { id = chem_convention.6 days = 10 }
 		every_country = {
 			limit = {
 				compare_autonomy_state > autonomy_colony
 			}
-			country_event = { id = chem_convention.7 days = 30 random = 5 }
+			country_event = { id = chem_convention.7 days = 31 random = 3 }
 		}
 	}
 }
 
+#	get exception
+country_event = {
+	id = chem_convention.11
+	title = chem_convention.11.t
+	desc = chem_convention.11.desc
+	picture = GFX_report_event_gas_observers
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	trigger = {
+		compare_autonomy_state > autonomy_colony
+		has_tech = chemical_warfare_tech
+		NOT = { has_country_flag = CW_using_cw_flag }
+		has_country_flag = CW_signatory_reservation_idea_flag
+		any_enemy_country = {
+			has_country_flag = CW_using_cw_flag
+		}
+		NOT = { has_country_flag = CW_protocol_exception_flag }
+		NOT = { has_country_flag = CW_decided_to_be_better }
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_enemy_country  = {
+				limit = {
+					has_country_flag = CW_using_cw_flag
+				}
+				save_event_target_as = CW_temp_enemy_chemuser
+			}
+		}
+	}
+
+	# We have to retaliate to CW!
+	option = {
+		name = chem_convention.11.a
+
+		if {
+			limit = {
+				has_country_flag = CW_signatory_reservation_idea_flag
+			}
+			hidden_effect = {
+				add_timed_idea = { idea = CW_protocol_exception days = 1100 }
+			}
+			set_country_flag = { flag = CW_protocol_exception_flag days = 1105 value = 1 }
+		}
+
+		clr_country_flag = cw_hesitation_flag
+		custom_effect_tooltip = chem_convention.11.a.tt
+
+		every_enemy_country = {
+			limit = {
+				has_country_flag = CW_using_cw_flag
+			}
+			ROOT = {
+				add_opinion_modifier = { target = PREV modifier = CW_used_against_us }
+			}
+		}
+
+		ai_chance = {
+			factor = 8
+			modifier = {
+				factor = 1.5
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	# let us be the greater man
+	option = {
+		name = chem_convention.11.b
+
+		set_country_flag = { flag = CW_decided_to_be_better days = 600 value = 1 }
+
+		ai_chance = {
+			factor = 3
+			modifier = {
+				factor = 2
+				any_war_score < 30
+			}
+		}
+	}
+
+}
 
 ## 30s
 ##		 other events
@@ -1102,7 +1150,7 @@ country_event = {
 country_event = {
 	id = chem_convention.30
 	title = chem_convention.30.t
-	desc = chem_convention.30.d
+	desc = chem_convention.30.desc
 
 	hidden = yes
   is_triggered_only = yes
@@ -1131,7 +1179,7 @@ country_event = {
 country_event = {
 	id = chem_convention.100
 	title = chem_convention.100.t
-	desc = chem_convention.100.d
+	desc = chem_convention.100.desc
 
   is_triggered_only = yes
 
@@ -1158,20 +1206,15 @@ country_event = {
 country_event = {
 	id = chem_convention.101
 	title = chem_convention.101.t
-	desc = chem_convention.101.d
+	desc = chem_convention.101.desc
 
   is_triggered_only = yes
 
 	trigger = {
-		any_country = {
-			has_country_flag = CW_using_cw_flag
-			has_war = yes
-			any_enemy_country = {
-				OR = {
-					has_country_flag = CW_signatory_idea_flag
-					has_country_flag = CW_signatory_reservation_idea_flag
-				}
-			}
+		AND = {						# [not signatory] or [not signatory-reservation] or [do-not-ask]
+			NOT = { has_country_flag = CW_signatory_idea_flag }
+			NOT = { has_country_flag = CW_signatory_reservation_idea_flag }
+			has_country_flag = CW_do_not_ask_again
 		}
 	}
 
@@ -1184,17 +1227,21 @@ country_event = {
 country_event = {
 	id = chem_convention.102
 	title = chem_convention.102.t
-	desc = chem_convention.102.d
+	desc = chem_convention.102.desc
 
   is_triggered_only = yes
 
 	trigger = {
-		has_country_flag = CW_using_cw_flag
-		has_war = yes
-		any_enemy_country = {
-			OR = {
-				has_country_flag = CW_signatory_idea_flag
+		AND = { 					# { [has (do-not-ask) and (not signatory)] or [signatory-reservation] } and [enemy using chem]
+			OR = { 					# [has (do-not-ask) and (not signatory)] or [signatory-reservation]
 				has_country_flag = CW_signatory_reservation_idea_flag
+				AND = {				# has (do-not-ask) and (not signatory)
+					has_country_flag = CW_do_not_ask_again
+					NOT = { has_country_flag = CW_signatory_idea_flag }
+				}
+			}
+			any_enemy_country = {
+				has_country_flag = CW_using_cw_flag
 			}
 		}
 	}
@@ -1208,13 +1255,15 @@ country_event = {
 country_event = {
 	id = chem_convention.103
 	title = chem_convention.103.t
-	desc = chem_convention.103.d
+	desc = chem_convention.103.desc
 
   is_triggered_only = yes
 
 	trigger = {
-		any_country = {
-			has_country_flag = CW_using_cw_flag
+		AND = { 					# [has do-not-ask] and [war] and [not signatory]
+			has_country_flag = CW_do_not_ask_again
+			has_war = yes
+			NOT = { has_country_flag = CW_signatory_idea_flag }
 		}
 	}
 
