@@ -64,7 +64,7 @@ country_event = {
 			is_major = no
 		}
 		modifier = {
-			factor = 0.6
+			factor = 0.4
 			OR = {
 				TAG = JAP
 				TAG = ITA
