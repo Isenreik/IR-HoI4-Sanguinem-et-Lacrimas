@@ -1,0 +1,202 @@
+﻿add_namespace = prospecting
+
+##prospecting started
+country_event = {
+	id = prospecting.1
+	title = prospecting.1.title
+	desc = prospecting.1.desc
+	picture = GFX_report_event_civ_truck
+
+  is_triggered_only = yes
+
+	# prospect on core
+	option = {
+		name = prospecting.1.a
+
+		country_event = { id = prospecting.20 days = 30 }
+
+	}
+
+	# prospect on controlled
+	option = {
+		name = prospecting.1.b
+
+		country_event = { id = prospecting.30 days = 30 }
+
+	}
+
+	# prospect for puppet
+	option = {
+		name = prospecting.1.c
+
+		trigger = {
+			num_subjects > 0
+		}
+
+		country_event = { id = prospecting.40 days = 30 }
+
+	}
+
+}
+
+	# prospect on core
+country_event = {
+	id = prospecting.20
+	title = prospecting.20.title
+	desc = prospecting.20.desc
+	picture = GFX_report_event_civ_truck
+
+  is_triggered_only = yes
+
+	immediate = {
+		random_list = {
+			40 = {
+				set_country_flag = { flag = prospect_amount days = 140 value = 2 }
+			}
+			25 = {
+				set_country_flag = { flag = prospect_amount days = 140 value = 4 }
+			}
+			14 = {
+				set_country_flag = { flag = prospect_amount days = 140 value = 6 }
+			}
+			12 = {
+				set_country_flag = { flag = prospect_amount days = 140 value = 8 }
+			}
+			8 = {
+				set_country_flag = { flag = prospect_amount days = 140 value = 10 }
+			}
+			1 = {
+				set_country_flag = { flag = prospect_amount days = 140 value = 15 }
+			}
+		}
+	}
+
+	# prospect on core
+	option = {
+		name = prospecting.20.a
+
+		random_owned_state = {
+
+			if = {
+				limit = {
+					has_country_flag = {
+					flag = prospect_amount
+					value = 2
+					}
+				}
+				add_resource = {
+					type = steel
+					amount = 2
+					state = THIS
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = {
+					flag = prospect_amount
+					value = 4
+					}
+				}
+				add_resource = {
+					type = steel
+					amount = 4
+					state = THIS
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = {
+					flag = prospect_amount
+					value = 6
+					}
+				}
+				add_resource = {
+					type = steel
+					amount = 6
+					state = THIS
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = {
+					flag = prospect_amount
+					value = 8
+					}
+				}
+				add_resource = {
+					type = steel
+					amount = 8
+					state = THIS
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = {
+					flag = prospect_amount
+					value = 10
+					}
+				}
+				add_resource = {
+					type = steel
+					amount = 10
+					state = THIS
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = {
+					flag = prospect_amount
+					value = 15
+					}
+				}
+				add_resource = {
+					type = steel
+					amount = 15
+					state = THIS
+				}
+			}
+
+		}
+
+	}
+
+}
+
+
+#### AI event
+country_event = {
+	id = prospecting.60
+	title = prospecting.60.title
+	desc = prospecting.60.desc
+	picture = GFX_report_event_civ_truck
+
+	hidden = yes
+
+	trigger = {
+		is_ai = yes
+	}
+
+	mean_time_to_happen = {
+		days = 220
+
+		modifier = {
+			factor = 2.5
+			num_of_controlled_states < 5
+		}
+
+		modifier = {
+			factor = 2
+			num_of_controlled_states < 2
+		}
+
+	}
+
+	# prospect on core
+	option = {
+		name = prospecting.60.a
+
+		country_event = { id = prospecting.1 days = 2 }
+
+	}
+
+}
