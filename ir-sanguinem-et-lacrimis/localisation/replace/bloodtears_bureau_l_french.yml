@@ -1,0 +1,67 @@
+﻿l_french:
+
+bureau_folder: "Tactiques & Administration"
+bureau_folder_desc: "Tactiques variées et ministères civils."
+
+## Officiers
+
+tactics_TITLE_OFFICERS: "OFFICIERS & ENTRAÎNEMENT"
+OFFICERS_TECH_DESC: "Entraînement pour nos généraux et officiers afin de mieux les former au comandement de nos troupes."
+
+flight_officers_subtitle_label: "Écoles de vol"
+flight_officers_subtitle_tt: "Entraîne nos pilotes."
+officer_schools_subtitle_label: "Écoles d'officiers"
+officer_schools_subtitle_tt: "Training for our generals and officers to increase their ability to command our troops."
+
+officers_tech1: "École d'officiers de terrain"
+officers_tech1_desc: "Pendant longtemps, les officiers venaient de notre élite ou de notre noblesse. Mais si la dernière guerre nous a appris quelque chose, c'est que notre officier devra passer dans la boue avec le soldat de base. Si notre élite n'est pas prête à faire le sale boulot, quelqu'un de plus qualifié prendra sa place."
+officers_tech2: "Rotation du personnel"
+officers_tech2_desc: "Le fait d'avoir une variété de sous-officiers et d'autres personnels en collaboration avec notre état-major permettra à nos officiers de mieux comprendre les besoins de la ligne de front et aussi d'établir un lien plus fort entre les commandants et les unités militaires subalternes."
+officers_tech3: "Instructeurs vétérans"
+officers_tech3_desc: "Rappeler certains de nos sous-officiers les plus expérimentés de la ligne de front pourrait rendre les choses compliquées à court terme, mais ces anciens combattants aideraient nos recrues et amélioreraient grandement leur formation."
+flight_officers_tech1: "École de vol"
+flight_officers_tech1_desc: "L'aviation militaire représente l'avenir, et nous avons besoin de pilotes qualifiés pour en bénéficier. En adaptant nos écoles de vol aux besoins d'un champ de bataille en constante évolution, nous pouvons former de bien meilleurs pilotes, plus efficaces."
+flight_officers_training1: "Quota maximum de missions"
+flight_officers_training1_desc: "En fixant un quota supérieur à la quantité de missions de vol que nos pilotes sont autorisés à prendre, nous pouvons utiliser ces pilotes à la retraite pour en former de nouveaux, augmentant ainsi la compétence globale de notre force aérienne.\n\n"
+flight_officers_honor1: "Honneur ou mort"
+flight_officers_honor1_desc: "Nos as sont nos héros légendaires modernes, de grands guerriers représentant la volonté et la force de l'armée de l'air de notre nation. Quand les pilotes de l'ennemi entendent leurs noms, ils paniquent.\n\n"
+flight_officers_honor2: "Honneur dans la mort"
+flight_officers_honor2_desc: "Nos pilotes feront le sacrifice ultime pour la gloire de notre nation. Nos soldats sont censés affronter la mort, mais nos pilotes l'embrasseront."
+
+flight_officers_honor2_special: "Les attaques suicides contre les avions et les navires ennemis sont désormais autorisées."
+
+# Press Tech
+
+tactics_TITLE_civilian: "ADMINISTRATION CIVILE"
+civilian_technology_desc: "Nos ministères civils ainsi que la propagande peuvent nous aider à façonner notre population civile en un outil efficace contre nos ennemis."
+
+press_tech1: "Intégration de la presse"
+press_tech1_desc: "Notre presse peut servir l'État. Si nous laissons le public dans nos plans publiques et que nous donnons le bon tournant, nous pouvons diriger le soutien public (et la colère) là où nous le voulons, même si cela implique de mentir en utilisant des faits fabriqués de toutes pièces."
+
+press_censorship1: "Censure"
+press_censorship1_desc: "En censurant, nous pouvons supprimer les informations délicates et réduire les renseignements auxquels l'ennemi a accès et ainsi réduire leur influence. De tels efforts suivi de la mise en place d'une "peur des espions" dans notre population rendront également plus difficile pour les agents ennemis de travailler efficacement."
+
+press_media1: "Manipulation des médias"
+press_media1_desc: "Les médias devraient également être intégrés et rendre compte des grandes réalisations de notre pays. Si les faits sont vrais ou non n'est qu'un détail dont le public n'a à s'occuper."
+press_media2: "Suppression de l'opposition"
+press_media2_desc: "En censurant et en isolant nos adversaires politiques, nous pouvons garder les puissances étrangères et les idéologies hostiles à l'écart de toute influence ou corruption de notre nation."
+
+press_trucks1: "Conversion de camions civils"
+press_trucks1_desc: "Les camions civils peuvent facilement être réaménagés pour aider notre effort de guerre et être employés par notre armée. Cela nous permet d'utiliser des usines civiles d'automobiles pour produire des véhicules de qualité militaire."
+press_trucks1_tt: "Réduction des coûts de production pour l'équipement motorisé"
+press_trucks1_special_desc: "Confère l'Esprit National\"Conversion des Camions Civils\", qui diminue les coûts de production d'équipements motorisés"
+civilian_truck_conversation: "Conversion des Camions Civils"
+press_trucks2: "Mobilisation des véhicules civils"
+press_trucks2_desc: "Camions civils, camions militaires : plisser les yeux et vous ne remarquerez même pas la différence. il en va de même pour nos troupes."
+press_trucks2_special_desc: "\n\n\nNous allons demander à la population de\"donner\"leurs camions pour l'effort de guerre. Plus la nation sera industrialisée, plus des véhicules seront disponibles.\n\n"
+press_trucks2_tt: "Mobilisation des camions civils"
+press_tech_event.1.tt: "Il y aura sûrement des contestations...\n"
+
+press_tech_event.1.t: "Mobilisation des véhicules civils"
+press_tech_event.1.a: "Parfois, il faut faire des sacrifices pour le bien de tous."
+press_tech_event.1.d: "Nos gens ont pu être\"persuadés\" de donner leurs véhicules pour l'effort de guerre. Beaucoup ne sont pas vraiment enthousiastes, mais beaucoup comprennent la nécessité. Ces véhicules serviront bien notre cause.\n\nLe temps nous dira si cette décision était vraiment une bonne idée."
+
+press_mobilisation1: "Bons de guerre"
+press_mobilisation1_desc: "Nous pouvons utiliser la propagande pour persuader notre population de dépenser son argent dans des bons de guerre et ainsi financer notre industrie."
+press_mobilisation2: "Influence par la propagande"
+press_mobilisation2_desc: "Par le biais de la propagande, traiter les gens de "planqués" devrait les influencer pour rejoindre nos forces."

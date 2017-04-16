@@ -1,0 +1,120 @@
+﻿l_french:
+
+## Artillerie
+radar_aa_1:0 "Système de tir anti-aérien informatisé"
+GER_radar_aa_1:0 "Kommandogerät 40"
+radar_aa_1_desc:0 "Avec l'aide du développement des ordinateurs, nos prédicteurs auxiliaires peuvent devenir plus précis dans le calcul du mouvement des avions ennemis, améliorant ainsi les chances de les atteindre."
+
+radar_aa_2:0 "Radar intégré"
+radar_aa_2_desc:0 "En intégrant directement un radar aux prédicteurs auxiliaires, nos batteries anti-aériennes peuvent obtenir de meilleures interprétations de la distance des avions ennemis."
+GER_radar_aa_1:0 "Kommandogerät 40/42"
+
+radar_aa_3:0 "Roquettes de proximité"
+radar_aa_3_desc:0 "Avec nos radars intégrés, nous pouvons installer de meilleures roquettes de proximité. Cela signifie que notre charge sera moins susceptible de survoler ou même de passer à travers l'appareil ennemi sans exploser et de détoner aussi près que possible de l'avion, ce qui maximisera les dommages infligés."
+
+airburst_artillery:0 "Obus à fragmentation"
+airburst_artillery_desc:0 "Alors que les obus à fragmentation ont été délaissés depuis la dernière guerre mondiale, l'amélioration du détonateur permettra à nos obus d'exploser à une distance optimale d'environ 10 mètres au-dessus du sol, arrosant la position ennemie d'éclats."
+
+rocket_aa_tech_1:0 "Missile Sol-Air non guidé"
+rocket_aa_tech_1_desc:0 "Ces roquettes sol-air, équipées de charges à fragmentation, peuvent être utilisées pour compléter nos capacités anti-aériennes existantes pour l'interception à basse ou haute altitude sans pour autant perdre en précision vis-à-vis des batteries strandards."
+ENG_rocket_aa_tech_1:0 "Batterie Z"
+GER_rocket_aa_tech_1:0 "Taifun"
+USA_rocket_aa_tech_1:0 "Loki"
+
+railway_artillery_equipment:0 "Artillerie sur rails"
+railway_artillery_equipment_1:0 "Artillerie sur rails"
+railway_artillery_equipment_1_desc:0 "Utilisé durant la Grande Guerre, nous pouvons raviver les canons d'artillerie ferroviaire, ce qui nous permettra d'utiliser des canons massifs pour balayer nos ennemis. Ces mastodontes ont cependant un coût de production énorme, une très faible vitesse de déplacement et demandent un ravitaillement colossal."
+GER_railway_artillery_equipment_1:0 "Gustav"
+FRA_railway_artillery_equipment_1:0 "Mle 1870/93 sur chariot Schneider "
+ENG_railway_artillery_equipment_1:0 "Scene Shifter"
+USA_railway_artillery_equipment_1:0 "M1920"
+
+railway_artillery_unit:0 "Artillerie sur rails"
+railway_artillery_unit_desc:0 "Avec de tels pièces d'artillerie, nous pourrons pulvériser nos ennemis ! Ces mastodontes ont cependant un coût de production énorme, une très faible vitesse de déplacement et demandent un ravitaillement colossal."
+
+anti_air_equipment_4:0 "DCA moderne"
+anti_air_equipment_4_short:0 "DCA moderne"
+anti_air_equipment_4_desc:0 "Ces batteries anti-air moderne se voient dotées d'un radar de guidage, ces merveilles de la technologie moderne peuvent cibler les avions les plus récents, malgré leur rapidité et leur altitude, et les abattre avec précision. Ces canons sont l'avenir, contrairement à ces grosses fusées qui sont obsolètes et bien trop coûteuses."
+USA_anti_air_equipment_4_short:0 "M51 Skysweeper"
+
+aam_tech1:0 "Missiles Air-Air"
+aam_tech1_desc:0 "Avec ces missiles air-air révolutionnaires, nos soldats auront à idsposition une arme puissante pour faire face aux appareils ennemis, surtout ceux de grande taille."
+GER_aam_tech1:0 "Ruhrstahl X-4"
+EMG_aam_tech1:0 "Fairey Fireflash"
+USA_aam_tech1:0 "AIM-4 Falcon"
+SOV_aam_tech1:0 "K-5"
+
+guided_aa_unit_brigade:0 "Missiles Surface-Air"
+guided_aa_unit_brigade:0 "Support SAM"
+
+guided_aa_equipment_1:0 "Premiers Missiles Surface-Air "
+guided_aa_equipment_1_desc:0 "Ces missiles surface-air guidés sont beaucoup plus précis et puissants que notre ancienne DCA à obus. En outre, la production de ces missiles nécessite beaucoup de travail et des composants techniques qui ne sont pas encore facilement disponibles, ce qui rend la production en série relativement compliquée à mettre en place."
+GER_guided_aa_equipment_1:0 "Wasserfall"
+USA_guided_aa_equipment_1:0 "Nike Ajax"
+SOV_guided_aa_equipment_1:0 "S-25 Berkut"
+ENG_guided_aa_equipment_1:0 "Bloodhound"
+
+guided_aa_equipment_2:0 "Missiles Surface-Air"
+guided_aa_equipment_2_desc:0 ""Ces nouveaux missiles guidés représentent une grande amélioration par rapport à nos anciens missiles surface-air. Ces SAM améliorés sont commandés par radio et sont guidés vers leurs cibles en comparant la trajectoire du missile et celle de la cible sur un seul écran radar. Nous avons amélioré la production des composants électroniques nécessaires, ce qui facilite la construction des missiles."
+GER_guided_aa_equipment_2:0 "Rheintochter"
+USA_guided_aa_equipment_2:0 "Nike Ajax II"
+SOV_guided_aa_equipment_2:0 "S-75 Dvina"
+ENG_guided_aa_equipment_2:0 "Thunderbird"
+
+artillery6:0 "Frein de bouche et Récupérateur améliorés"
+artillery6_desc:0 "Une amélioration du frein de bouche et du récupérateur de nos canons réduira considérablement le recul généré lors d'un tir, permettant ainsi une meilleure précision et une meilleure cadence des tirs."
+
+artillery_equipment_4:0 "Artillerie Moderne"
+artillery_equipment_4_desc:0 "Les améliorations apportées aux mécanismes de chargement et de transport des obus, ainsi que l'augmentation de leur calibre, nous permettent d'acquérir des obusiers très avancés."
+
+artillery8:0 "Culasse Semi-Automatique"
+artillery8_desc:0 "Une culasse semi-automatique va grandement simplifier le rechargement de nos obusiers."
+
+ENG_rocket_artillery_equipment_2_short:0 "RP-3 HE/SAP \"Land-Mattress\""
+ENG_rocket_artillery_equipment_2:0 "RP-3 Hautement Explosif/Semi Perce-Blindage\"Land-Mattress\""
+
+rocket_artillery5:0 "Grain Encapsulé"
+rocket_artillery5_desc:0 "En installant un grain encapsulé, nous pouvons réduire la taille et le poids de nos fusées et donc augmenter leur portée et leur vitesse."
+
+rocket_artillery6:0 "Conception Avancée"
+rocket_artillery6_desc:0 "Des configurations spécialisées à double grain permettent une meilleure optimisation de la poussée, une augmentation de la portée et nous permettent d'utiliser des charges plus importantes et plus dévastatrices."
+
+rocket_artillery7:0 "Artillerie Lance-Roquettes Moderne"
+rocket_artillery7_desc:0 "En augmentant la quantité de rails et la charge de nos roquettes, nous pouvons encore augmenter la puissance de notre artillerie lance-roquettes."
+
+rocket_artillery_equipment_3:0 "Artillerie Lance-Roquettes Avancée"
+rocket_artillery_equipment_3_short:0 "Art. LR Moderne"
+rocket_artillery_equipment_3_desc:0 "Ces pièces d'artillerie modernes disposent une plus grande quantité de tubes sur des rails plus grands."
+GER_rocket_artillery_equipment_3:0 "30 cm Raketenwerfer 56"
+USA_rocket_artillery_equipment_3:0 "M17 \"Whizbang\""
+
+motorized_rocket_equipment_2:0 "Artillerie Lance-Roquettes Motorisée"
+motorized_rocket_equipment_2_short:0 "Modern Mot. R. Artillery"
+motorized_rocket_equipment_2_desc:0 "Cette artillerie motorisée moderne dispose d'une grande quantité de tubes lance-roquettes sur de grands rails."
+SOV_motorized_rocket_equipment_2:0 "BM-31-12"
+GER_motorized_rocket_equipment_2:0 "15cm Panzerwerfer 42"
+USA_motorized_rocket_equipment_2:0 "T40 \"Whizbang\""
+
+at_rocket1:0 "Roquettes Antichars"
+ENG_at_rocket1:0 "RP-3 \"Tulip\""
+at_rocket1_desc:0 "En utilisant l'effet Munroe développé avec des munitions HEAT, nos roquettes peuvent être utilisées pour percer le blindage des véhicules ennemis. De plus, ces roquettes peuvent être montées sur nos véhicules et nos chasseurs-bombardiers."
+
+antitank6:0 "Improved Muzzle Braker and Recuperator"
+antitank6_desc:0 "Further refining our guns' muzzle brake and recuperator will greatly reduce the amount of recoil our guns produce, thus allowing faster and more accurate firing."
+
+antitank7:0 "HESH"
+antitank7_desc:0 "En utilisant de nouvelles munitions HESH (obus à tête d'écrasement), nous avons trouvé une nouvelle façon de pénétrer le blindage des véhicules blindés ennemis."
+antitank7_fortbuster:0 "HESH perce-bunkers"
+antitank7_fortbuster_desc:0 "Les munitions HESH semblent aussi très efficaces contre des fortifications."
+antitank7_fortbuster_special_tooltip:0 "Augmente l'efficacité des canons antichars contre les fortifications"
+
+anti_tank_equipment_4:0 "Canon Antichars Moderne"
+anti_tank_equipment_4_short:0 "Canon AC Moderne"
+anti_tank_equipment_4_desc:0 "Augmenter considérablement la longueur du canon entraînera une plus grande pénétration et une augmentation des dommages."
+
+atgm_1:0 "Premiers Missiles Antichars Guidés"
+atgm_1_desc:0 "Nos premiers essais de missiles guidés ont mené au développement de missiles antichars guidés par câble. Ces missiles volumineux stabilisés par des ailerons sont équipés d'une puissante ogive HEAT ou HESH qui peut facilement détruire la plupart des véhicules blindés. De plus, son système de guidage manuel assure qu'il atteindra sa cible."
+ENG_atgm_1:0 "Malkara"
+AST_atgm_1:0 "Malkara"
+FRA_atgm_1:0 "SS.10"
+USA_atgm_1:0 "SSM-A-23 \"Dart\""
