@@ -1,6 +1,7 @@
 ﻿l_english:
 
 CW_uses_CW_idea: "Use Chemical Weapons"
+CW_using_cw.trigger_tt: "Our military staff approached us about employing chemical weapons and we allowed their use"
 CW_signatory_idea: "Signatory Geneva Protocol Reaffirmation"
 CW_signatory_idea_desc: "Is signatory of the Reaffirmation. This nation has completely ratified the treaty and will never resort to chemical weapons."
 CW_signatory_reservation_idea: "Signatory Geneva Protocol Reaffirmation with Reservations"
