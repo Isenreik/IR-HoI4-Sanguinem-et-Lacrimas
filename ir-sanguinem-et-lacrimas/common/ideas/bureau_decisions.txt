@@ -11,19 +11,20 @@ ideas = {
 				available = {
 					custom_trigger_tooltip = {
 						tooltip = prospecting_decision.trigger_tt
-						has_country_flag = can_prospect
-						NOT = { has_country_flag = cant_prospect }
+						AND = {
+							NOT = { has_country_flag = cant_prospect }
+							has_country_flag = can_prospect
+						}
 					}
 				}
 
 				on_add = {
 					custom_effect_tooltip = prospecting_decision.tt
 					country_event = { id = prospecting.1 days = 2 }
-					set_country_flag = { flag = cant_prospect days = 152 value = 1 }
 				}
 
 				cost = 80
-				removal_cost = -1
+				removal_cost = 0
 
 				cancel_if_invalid = yes
 
