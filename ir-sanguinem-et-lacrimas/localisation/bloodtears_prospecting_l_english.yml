@@ -1,0 +1,15 @@
+﻿l_english:
+
+prospecting.1.title: "Prospecting"
+prospecting.1.desc: "Where should we prospect?\n\n Needs Revisiting"
+prospecting.1.a: "On our own territory"
+prospecting.1.b: "On our controlled territory"
+prospecting.1.c: "On one of our puppets' territory"
+
+prospecting.2.title: "Prospecting in Europe"
+prospecting.2.desc: "Start prospecting\n\n Needs Revisiting"
+prospecting.2.a: "Start"
+
+prospecting_decision: "Start Prospecting"
+prospecting_decision.trigger_tt: "Is allowed to prospect."
+prospecting_decision.tt: "Find new resource deposits\n"

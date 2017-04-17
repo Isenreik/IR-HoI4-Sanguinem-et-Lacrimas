@@ -1,0 +1,82 @@
+ideas = {
+
+		bureau_chem_laws = {
+			law = yes
+
+			# not using
+			CW_not_using_cw = {
+
+				default = yes
+
+				on_add = {
+					custom_effect_tooltip = CW_not_using_cw.tt
+					clr_country_flag = CW_using_cw_flag
+				}
+
+				cost = 60
+				removal_cost = -1
+
+				cancel_if_invalid = no
+
+				ai_will_do = {
+					factor = 1
+					modifier = {
+						factor = 6
+						has_global_flag = {
+							flag = CW_enforcer_amount
+							value > 3
+						}
+					}
+				}
+
+			}
+
+			# using
+			CW_using_cw = {
+
+				default = no
+
+				available = {
+					OR = {
+						AND = {
+							has_country_flag = CW_signatory_reservation_idea_flag
+							has_country_flag = CW_protocol_exception_flag
+						}
+						AND = {
+							NOT = {	has_country_flag = CW_signatory_idea_flag }
+							NOT = {	has_country_flag = CW_signatory_reservation_idea_flag }
+							NOT = { has_country_flag = CW_hesitation_flag }
+						}
+					}
+					compare_autonomy_state > autonomy_colony
+				}
+
+				on_add = {
+					custom_effect_tooltip = CW_using_cw.tt
+					set_country_flag = CW_using_cw_flag
+				}
+
+				cost = 60
+				removal_cost = -1
+
+				cancel_if_invalid = yes
+
+				ai_will_do = {
+					factor = 2
+
+					modifier = {
+						factor = 2
+						enemies_strength_ratio > 1.2
+					}
+					modifier = {
+						factor = 5
+						any_enemy_country = {
+							has_country_flag = CW_using_cw_flag
+						}
+					}
+				}
+
+			}
+
+		}
+}
