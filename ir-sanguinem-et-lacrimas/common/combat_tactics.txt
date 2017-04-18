@@ -814,6 +814,8 @@ tactic_barrage = { #Superior firepower attacker tactic
 ########################################################################################
 ## Chemical warfare
 
+## L͇͔ͧͥ͐̂͆̽E̢̝͙̟̱̣͖͛̃ͨ̽̐ͧ̚̕Ả̧͚̙͙͖̲̟̫͕͂͐͘V̞̹̌ͯ͒̕Ḗ҉̶͙̰̝ ̆̄ͣ̃͘҉͉͚̩̞̣͓̺̙Ṋ̪̥̘̦̟̈́ͬ͒̂̏̏ͥ́Ò̬͕̜͉̠̈̓̏ͅW̨̯͖̬͍̱ͥ̑̚!̫̦̗͐ͫ̿̀̆͋ͨ
+
 tactic_prepare_gas_attack = {
 	is_attacker = yes
 	trigger = {
