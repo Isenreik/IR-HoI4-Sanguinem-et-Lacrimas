@@ -10,6 +10,7 @@ on_actions = {
 		effect = {
       every_country = {
         set_country_flag = cw_hesitation_flag
+        set_country_flag = can_prospect
       }
       every_country = {
         limit = {
