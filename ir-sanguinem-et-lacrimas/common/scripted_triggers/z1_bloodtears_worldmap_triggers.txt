@@ -1,0 +1,214 @@
+is_in_europe = {
+	is_on_continent = europe
+}
+is_in_africa = {
+	is_on_continent = africa
+}
+is_in_middle_east = {
+	is_on_continent = middle_east
+}
+is_in_south_america = {
+	is_on_continent = south_america
+}
+is_in_north_america = {
+	is_on_continent = north_america
+}
+is_in_asia = {
+	is_on_continent = asia
+}
+
+######################### Regions
+
+is_in_british_isles = {
+	OR = {
+		region = 1
+		region = 2
+		region = 3
+		region = 4
+	}
+}
+
+is_in_scandinavia = {
+	OR = {
+		region = 10	  # southern sweden
+		region = 11 	# southern norway
+		region = 12		# northern scandinavia
+		region = 13 	# finland
+		region = 161 	# iceland
+		state = 99 		# Jutland
+		state = 37		# sjaelland
+
+	}
+}
+
+is_in_baltics = {
+	region = 37	  # baltic states
+}
+
+is_in_germany = {
+	OR = {
+		region = 6	  # northwest germany
+		region = 7	  # western germany
+		region = 8	  # eastern germany
+	}
+}
+
+is_in_north_africa = {
+	OR = {
+		region = 127	  # sahara
+		region = 126	  # north africa
+		region = 128	  # egypt
+	}
+}
+
+is_in_indian_subcontinent = {
+	OR = {
+		region = 153	  # northern india
+		region = 31		  # southern india
+		region = 141	  # eastern india
+	}
+}
+is_in_central_asia = {
+	OR = {
+		region = 162	  # afghanistan
+		region = 146		# himalayas
+		region = 145	  # central asia
+		region = 152	  # central steppe
+		region = 136	  # great steppe
+	}
+}
+is_in_siberia = {
+	OR = {
+		region = 147	  # northern siberia
+		region = 149	  # eastern siberia
+		region = 151	  # western siberia
+		region = 148	  # Russian far east
+		region = 138	  # ural region
+		region = 14			# transurals
+	}
+}
+is_in_caucasus = {
+	OR = {
+		region = 134	  # caucasus
+		region = 135	  # kuban
+		region = 137	  # western steppe
+		region = 148	  # Russian far east
+		region = 138	  # ural region
+	}
+}
+is_in_western_russia = {
+	OR = {
+		region = 133	  # central russia
+		region = 40			# transvolga
+		region = 132		# northern front
+		region = 131		# belarus
+		region = 130		# ukrain
+	}
+}
+is_in_balkans = {
+	OR = {
+		region = 24		  # western balkans
+		region = 26		  # eastern balkans
+		region = 27		  # northern balkans
+	}
+}
+is_in_south_east_asia = {
+	OR = {
+		region = 142	  # south east asia
+		region = 158	  # sunda islands
+		region = 159	  # bornea
+		region = 160	  # phillipines
+		region = 93		  # java
+		region = 167	  # new genua
+		region = 83		  # soloman islands
+	}
+}
+is_in_oceania = {
+	OR = {
+		region = 156	  # australia
+		region = 157	  # new zealand
+		region = 167	  # new genua
+	}
+}
+is_in_japanese_islands = {
+	OR = {
+		region = 76	  	# east china sea
+		region = 154	  # home islands
+		region = 167	  # new genua
+		state = 525			# south korea
+		state = 527			# north korea
+	}
+}
+is_in_china = {
+	OR = {
+		region = 165	  # southern china
+		region = 164	  # eastern china
+		region = 144	  # western china
+		region = 143	  # northern china
+		region = 155	  # manchuria
+	}
+}
+
+# Climate ###############################################################
+has_hot_climate = {
+	OR = {
+		is_on_continent = africa
+		is_on_continent = middle_east
+		region = 153	  #northern india
+		region = 137	  #western steppe
+		region = 145	  #central asia
+		region = 144	  #western china
+		region = 152	  #central steppes
+		region = 156	  #australia
+		region = 119	  #south west
+		region = 118	  #westcoast
+		region = 123	  #mexico
+		region = 35	 		#south america
+	}
+}
+
+has_jungle_climate = {
+	OR = {
+		is_on_continent = south_america
+		region = 140		#sub saharan
+		region = 139		#south africa
+		region = 143		#eastern india
+		region = 142	  #south east asia
+		region = 158	  #sunda islands
+		region = 159	  #bornea
+		region = 160	  #phillipines
+		region = 93		  #java
+		region = 167	  #new genua
+		region = 83		  #soloman islands
+	}
+}
+
+has_cold_weather = {
+	OR = {
+		is_on_continent = europe
+		region = 121		#canada
+		region = 122		#canada
+		region = 118		#westcoast
+		region = 120		#centralus
+		region = 117	  #eastcoast
+		region = 35			#south america
+		region = 128		#northern south america
+		region = 150		#arctic russia
+		region = 147		#northern sibiria
+		region = 14			#transurals
+		region = 138	  #ural region
+		region = 40			#transvolga
+		region = 151		#western siberia
+		region = 149		#eastern siberia
+		region = 148	  #russia far east
+		region = 154		#homeislands
+		region = 137		#western steppe
+		region = 136		#great steppe
+		region = 162		#Afghanistan
+		region = 146		#himalayas
+		region = 152	  #centra steppes
+		region = 155		#manchuria
+		region = 33			#alaska
+		region = 36	  	#greenland
+	}
+}
