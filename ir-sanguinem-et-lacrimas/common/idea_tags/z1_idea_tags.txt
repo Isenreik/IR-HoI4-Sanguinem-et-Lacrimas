@@ -2,7 +2,8 @@ idea_categories = {
 
 	bureau_laws = {
 
-		slot = bureau_chem_advisors
+		slot = bureau_decisions
+		slot = bureau_chem_laws
 
 		# cost = 60
 		removal_cost = -1
