@@ -43,12 +43,12 @@ ideas = {
 							has_country_flag = CW_protocol_exception_flag
 						}
 						AND = {
-							NOT = {	has_country_flag = CW_signatory_idea_flag }
-							NOT = {	has_country_flag = CW_signatory_reservation_idea_flag }
 							custom_trigger_tooltip = {
 								tooltip = CW_using_cw.trigger_tt
 								NOT = { has_country_flag = CW_hesitation_flag }
 							}
+							NOT = {	has_country_flag = CW_signatory_idea_flag }
+							NOT = {	has_country_flag = CW_signatory_reservation_idea_flag }
 						}
 					}
 					compare_autonomy_state > autonomy_colony
