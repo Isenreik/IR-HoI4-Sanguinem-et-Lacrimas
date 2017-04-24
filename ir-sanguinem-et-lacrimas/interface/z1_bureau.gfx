@@ -61,4 +61,15 @@ spriteTypes = {
   spriteType = { name = "GFX_idea_CW_protocol_exception"                             texturefile = "gfx/interface/ideas/CW_protocol_exception.dds" }
   spriteType = { name = "GFX_idea_CW_protocol_enforcer_idea"                         texturefile = "gfx/interface/ideas/CW_protocol_enforcer_idea.dds" }
 
+  SpriteType = { name = "GFX_report_event_surveying_donkey"          texturefile = "gfx//event_pictures//report_event_surveying_donkey.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_report_event_surveying_mine_1"          texturefile = "gfx//event_pictures//report_event_surveying_mine_1.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_report_event_surveying_mine_2"          texturefile = "gfx//event_pictures//report_event_surveying_mine_2.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_report_event_surveying_mine_3"          texturefile = "gfx//event_pictures//report_event_surveying_mine_3.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_report_event_surveying_mine_4"          texturefile = "gfx//event_pictures//report_event_surveying_mine_4.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_report_event_surveying_mine_5"          texturefile = "gfx//event_pictures//report_event_surveying_mine_5.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_report_event_surveying_rubber"          texturefile = "gfx//event_pictures//report_event_surveying_rubber.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_report_event_surveying_oil"             texturefile = "gfx//event_pictures//report_event_surveying_oil.dds"    alwaystransparent = yes	}
+
+  SpriteType = { name = "GFX_idea_prospecting_decision"                              texturefile = "gfx//interface//ideas//law_prospecting.dds" }
+
 }
