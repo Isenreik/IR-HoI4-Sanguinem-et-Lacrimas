@@ -30,7 +30,8 @@ country_event = {
 		NOT = { has_country_flag = CW_using_cw_flag }
 		NOT = { has_country_flag = CW_signatory_idea_flag }
 		NOT = { has_country_flag = CW_signatory_reservation_idea_flag }
-		NOT = { has_country_flag = CW_do_not_ask_again}
+		NOT = { has_country_flag = CW_do_not_ask_again }
+		NOT = { has_country_flag = CW_not_yet }
 	}
 
 	mean_time_to_happen = {
@@ -78,6 +79,7 @@ country_event = {
 		name = chem_convention.1.a
 
 		custom_effect_tooltip = chem_convention.1.a.tt
+		set_country_flag = { flag = CW_not_yet days = 150 value = 1 }
 
 		ai_chance = {
 			factor = 3
@@ -108,7 +110,62 @@ country_event = {
 			}
 		}
 
+		custom_effect_tooltip = chem_convention.1.b.tt
 		add_named_threat = { threat = 1 name = chem_convention.removed_hesitation }
+
+		modify_global_flag = { flag = CW_global_chem_users value = 1 }
+		clr_country_flag = cw_hesitation_flag
+
+		if = {
+			limit = {
+				NOT = { has_global_flag = LN_league_disbanded }
+			}
+			every_country = {
+				limit = {
+					is_league_member = yes
+					NOT = { TAG = ROOT }
+				}
+				country_event = { id = chem_convention.2 days = 30 random = 20 }
+			}
+		}
+
+		ai_chance = {
+			factor = 3
+			modifier = {
+				factor = 3
+				has_government = fascism
+			}
+			modifier = {
+				factor = 0.8
+				has_government = democratic
+			}
+			modifier = {
+				factor = 0.6
+				is_major = no
+			}
+			modifier = {
+				factor = 3
+				has_war = yes
+			}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	# someone is using CW in a war against us and vote has not happened
+	option = {
+		name = chem_convention.1.e
+
+		trigger = {
+			any_enemy_country = {
+				has_country_flag = CW_using_cw_flag
+			}
+		}
+
+		custom_effect_tooltip = chem_convention.1.b.tt
+		add_named_threat = { threat = 0.5 name = chem_convention.removed_hesitation }
 
 		modify_global_flag = { flag = CW_global_chem_users value = 1 }
 		clr_country_flag = cw_hesitation_flag
