@@ -10,10 +10,20 @@ ideas = {
 
 				available = {
 					custom_trigger_tooltip = {
-						tooltip = prospecting_decision.trigger_tt
+						tooltip = prospecting_decision.trigger_tt1
+						AND = {
+							has_country_flag = can_prospect
+						}
+					}
+					custom_trigger_tooltip = {
+						tooltip = prospecting_decision.trigger_tt2
 						AND = {
 							NOT = { has_country_flag = cant_prospect }
-							has_country_flag = can_prospect
+						}
+					}
+					hidden_trigger = {
+						capital_scope = {
+							is_not_unimportant_speck = yes
 						}
 					}
 				}
