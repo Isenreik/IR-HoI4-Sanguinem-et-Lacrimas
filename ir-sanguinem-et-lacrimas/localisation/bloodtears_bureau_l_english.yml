@@ -3,6 +3,8 @@
 bureau_folder: "Tactics & Bureau"
 bureau_folder_desc: "Various tactics and civilian ministries."
 
+bureau_decisions: "Civilian Bureaus Decisions"
+
 ## Officers
 
 tactics_TITLE_OFFICERS: "OFFICERS & TRAINING"
@@ -55,7 +57,7 @@ press_trucks2: "Commandeer Civilian Vehicles"
 press_trucks2_desc: "Civilian trucks, military trucks; squint your eyes and you won't notice the difference; and hopefully our troops won't either."
 press_trucks2_special_desc: "\n\n\nWe will demand our civilian population to chip in and \"donate\" their civilian trucks and cars to the war effort.\n\nThe more industrialised our nation is, the more vehicles will be available for us."
 press_trucks2_tt: "Commandeer Civilian Vehicles"
-press_tech_event.1.tt: "There will most likely be a public backlash\n"
+press_tech_event.1.tt: "There will most likely be a public backlash.\n"
 
 press_tech_event.1.t: "Commandeer Civilian Vehicles"
 press_tech_event.1.a: "We all have to sacrifice for the greater good sometimes."
