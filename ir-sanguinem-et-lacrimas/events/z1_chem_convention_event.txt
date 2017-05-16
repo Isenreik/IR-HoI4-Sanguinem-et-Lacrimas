@@ -32,6 +32,7 @@ country_event = {
 		NOT = { has_country_flag = CW_signatory_reservation_idea_flag }
 		NOT = { has_country_flag = CW_do_not_ask_again }
 		NOT = { has_country_flag = CW_not_yet }
+		has_country_flag = CW_hesitation_flag
 	}
 
 	mean_time_to_happen = {
@@ -214,7 +215,7 @@ country_event = {
 		name = chem_convention.1.c
 
 		trigger = {
-			threat < 0.2
+			threat < 0.31
 			NOT = { has_global_flag = CW_calling_for_convention }
 			NOT = { has_global_flag = LN_league_disbanded }
 			OR = {
@@ -760,7 +761,7 @@ country_event = {
 			}
 			modifier = {
 				factor = -1.75
-				threat > 0.25
+				threat > 0.2
 			}
 		}
 	}
