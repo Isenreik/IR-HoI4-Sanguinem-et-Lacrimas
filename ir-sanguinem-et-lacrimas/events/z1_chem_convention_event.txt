@@ -715,7 +715,7 @@ country_event = {
 			add_named_threat = { threat = -0.25 name = chem_convention.signed }
 		}
 
-		add_political_power = 25
+		add_political_power = 85
 
 		set_country_flag = CW_voted
 

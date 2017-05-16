@@ -1,160 +1,404 @@
 ﻿add_namespace = prospecting
 
+
+ ### ¡ʌǝᴉɥ┴ ¡ʌǝᴉɥ┴ ¿ǝɹǝɥ noʎ ǝɹɐ ʎɥʍ
+
 ##prospecting started
 country_event = {
 	id = prospecting.1
 	title = prospecting.1.title
 	desc = prospecting.1.desc
-	picture = GFX_report_event_civ_truck
+	picture = GFX_report_event_surveying_donkey
+
+  trigger = {
+    capital_scope = {
+      is_not_unimportant_speck = yes
+    }
+  }
 
   is_triggered_only = yes
-
-	immediate = {
-		set_country_flag = { flag = cant_prospect days = 152 value = 1 }
-	}
 
 	# prospect on core
 	option = {
 		name = prospecting.1.a
 
-		country_event = { id = prospecting.2 days = 15 }
+		random_owned_controlled_state  = {
+      limit = {
+        is_not_unimportant_speck = yes
+        is_in_home_area = yes
+      }
+      prospecting_continents_chances = yes
+			set_state_flag = { flag = prospecting_state_@ROOT days = 30 value = 1 }
+		}
+
+		set_country_flag = { flag = cant_prospect days = 121 value = 1 }
+
+  	ai_chance = {
+      factor = 4
+    }
 
 	}
 
-	# prospect on controlled
+	# prospect in territories
 	option = {
 		name = prospecting.1.b
 
-		country_event = { id = prospecting.3 days = 30 }
+    trigger = {
+      any_state  = {
+        is_not_unimportant_speck = yes
+        is_controlled_by = ROOT
+        is_owned_by = ROOT
+        NOT = { is_in_home_area = yes }
+      }
+    }
+
+		random_owned_controlled_state  = {
+      limit = {
+        is_not_unimportant_speck = yes
+        NOT = { is_in_home_area = yes }
+      }
+      prospecting_continents_chances = yes
+			set_state_flag = { flag = prospecting_state_@ROOT days = 30 value = 1 }
+		}
+
+		set_country_flag = { flag = cant_prospect days = 121 value = 1 }
+
+  	ai_chance = {
+      factor = 3.5
+    }
 
 	}
 
-	# prospect for puppet
+  # prospect on controlled
 	option = {
 		name = prospecting.1.c
 
-		trigger = {
+    trigger = {
+      any_state  = {
+        is_not_unimportant_speck = yes
+        is_controlled_by = ROOT
+        NOT = { is_owned_by = ROOT }
+      }
+    }
+
+		random_state  = {
+      limit = {
+        is_not_unimportant_speck = yes
+        is_controlled_by = ROOT
+        NOT = { is_owned_by = ROOT }
+      }
+      prospecting_continents_chances = yes
+      set_state_flag = { flag = prospecting_state_@ROOT days = 30 value = 1 }
+		}
+
+		set_country_flag = { flag = cant_prospect days = 121 value = 1 }
+
+    ai_chance = {
+      factor = 1
+    }
+
+	}
+
+  # prospect on puppet
+	option = {
+		name = prospecting.1.d
+
+    trigger = {
 			num_subjects > 0
 		}
 
-		country_event = { id = prospecting.4 days = 30 }
+    random_country  = {
+      limit = {
+        is_subject_of = ROOT
+      }
+      add_opinion_modifier = { target = ROOT modifier = aided_prospecting_puppet.opinion }
+      if = {
+        limit = {
+          has_dlc = "Together for Victory"
+        }
+        add_autonomy_ratio = {
+          value = -0.04
+          localization = aided_prospecting_puppet.autonomy
+        }
+      }
+      random_owned_controlled_state  = {
+        limit = {
+          is_not_unimportant_speck = yes
+        }
+        prospecting_continents_chances = yes
+        set_state_flag = { flag = prospecting_state_@ROOT days = 30 value = 1 }
+      }
+    }
+
+		set_country_flag = { flag = cant_prospect days = 121 value = 1 }
+
+    ai_chance = {
+      factor = 2
+    }
 
 	}
 
 }
 
-# prospect on core
-country_event = {
-	id = prospecting.2
-	title = prospecting.2.title
-	desc = prospecting.2.desc
-	picture = GFX_report_event_civ_truck
-
-  is_triggered_only = yes
-
-	# prospect in Europe
-	option = {
-		name = prospecting.2.a
-
-		trigger = {
-			any_owned_state = {
-				is_on_continent = europe
-				is_controlled_by = ROOT
-			}
-		}
-
-		random_owned_controlled_state  = {
-			limit = {
-				is_on_continent = europe
-			}
-					save_event_target_as = prospecting.10 # Steel
-		}
-	}
-
-	# prospect in Africa
-	option = {
-		name = prospecting.2.b
-
-		trigger = {
-			any_owned_state = {
-				is_on_continent = africa
-				is_controlled_by = ROOT
-			}
-		}
-
-		random_owned_controlled_state  = {
-			limit = {
-				is_on_continent = africa
-			}
-
-		}
-
-			random_list = {
-				26 = {
-					country_event = { id = prospecting.10 days = 15 } # Steel
-				}
-				2 = {
-					state_event = { id = prospecting.11 days = 15 } # Aluminum
-				}
-				15 = {
-					state_event = { id = prospecting.12 days = 15 } # Chromium
-				}
-				10 = {
-					state_event = { id = prospecting.13 days = 15 } # Tungsten
-				}
-				35 = {
-					state_event = { id = prospecting.14 days = 15 } # Oil
-				}
-				12 = {
-					state_event = { id = prospecting.15 days = 15 } # Rubber
-				}
-			}
-		}
-	}
-
-
-}
+# 		#W̰͒͛̑ͬ͝ḥ̥ͭͩ̾ͩ̄ͪ̏͟y͍͇̻̝̥͓ͬͪ̿ͮ́̑̀ ̉͏a̶̪̱͚r̛̮̞̗̜̫͙͇ͣ͆̈ͯ̓ę͚̼̉͛ͦ̀̑̽ ̶͈͖̥̹̤̗̤̽ͤ͆ͤͩy̨̖̠̹̲̜͈̙̾̔͗̉̏̊ͮỏ̹͉͇̮̙͌ͬͧ́ũ̳̞̪̞̫̅̉́ ͥ͂ ̷̜̤̱͚̤̹̐s̵̼t̀ͧ̐̓̍́è̝̣͔̯̳͉̀̑ͦͧ̅a͔̦l̠̙̩͖̃̇i̪̥̒̿̋̀̀̆n͈͈̯̊͌̈̓͐̐͌́g̢̗̞ͦ̅̍ͧ̀̔̓ ̳ͪ̋͂ͧ̅f̢͕͉̠͈͙̭ͦ̑ͅr̸͕͕̥̦̪ͮ͗̊͒͒͑ͅo͖̝͈̳̮̙̊͊̆͆̈m̷͍̪̫͓̗̩̙ ͊ͩ̐͂̌͑̎҉͕̱̥̦̹m̤̗͇̫̘̥̹̂ͭ̌̓̐́ę̈!̃́͂̐̅̆̄͏͎̟̱͕̱̱̲
 
 ## 10s resources
 
-# Steel
-state_event = {
+# steel
+country_event = {
 	id = prospecting.10
 	title = prospecting.10.title
 	desc = prospecting.10.desc
-	picture = GFX_report_event_civ_truck
+	picture = GFX_report_event_surveying_mine_2
 
   is_triggered_only = yes
 
 	option = {
 		name = prospecting.10.a
 
-		random_list = {
-			40 = {
-				add_resource = { type = steel amount = 4 }
+		every_state = {
+			limit = {
+				has_state_flag = prospecting_state_@ROOT
 			}
-			25 = {
-				add_resource = { type = steel amount = 6 }
+			random_list = {
+				40 = {
+					add_resource = { type = steel amount = 4 }
+				}
+				25 = {
+					add_resource = { type = steel amount = 6 }
+				}
+				14 = {
+					add_resource = { type = steel amount = 8 }
+				}
+				12 = {
+					add_resource = { type = steel amount = 10 }
+				}
+				8 = {
+					add_resource = { type = steel amount = 12 }
+				}
+				1 = {
+					add_resource = { type = steel amount = 16 }
+				}
 			}
-			14 = {
-				add_resource = { type = steel amount = 8 }
-			}
-			12 = {
-				add_resource = { type = steel amount = 10 }
-			}
-			8 = {
-				add_resource = { type = steel amount = 12 }
-			}
-			1 = {
-				add_resource = { type = steel amount = 16 }
-			}
+
+			clr_state_flag = prospecting_state_@ROOT
 		}
 
 	}
 
 }
 
-#### AI event
+# aluminium
+country_event = {
+	id = prospecting.11
+	title = prospecting.11.title
+	desc = prospecting.11.desc
+	picture = GFX_report_event_surveying_mine_4
+
+  is_triggered_only = yes
+
+	option = {
+		name = prospecting.11.a
+
+		every_state = {
+			limit = {
+				has_state_flag = prospecting_state_@ROOT
+			}
+			random_list = {
+				40 = {
+					add_resource = { type = aluminium amount = 4 }
+				}
+				25 = {
+					add_resource = { type = aluminium amount = 6 }
+				}
+				14 = {
+					add_resource = { type = aluminium amount = 8 }
+				}
+				12 = {
+					add_resource = { type = aluminium amount = 10 }
+				}
+				8 = {
+					add_resource = { type = aluminium amount = 12 }
+				}
+				1 = {
+					add_resource = { type = aluminium amount = 16 }
+				}
+			}
+      clr_state_flag = prospecting_state_@ROOT
+		}
+	}
+
+}
+
+# chromium
+country_event = {
+	id = prospecting.12
+	title = prospecting.12.title
+	desc = prospecting.12.desc
+	picture = GFX_report_event_surveying_mine_1
+
+  is_triggered_only = yes
+
+	option = {
+		name = prospecting.12.a
+
+		every_state = {
+		  limit = {
+		    has_state_flag = prospecting_state_@ROOT
+		  }
+			random_list = {
+				40 = {
+					add_resource = { type = chromium amount = 4 }
+				}
+				25 = {
+					add_resource = { type = chromium amount = 6 }
+				}
+				14 = {
+					add_resource = { type = chromium amount = 8 }
+				}
+				12 = {
+					add_resource = { type = chromium amount = 10 }
+				}
+				8 = {
+					add_resource = { type = chromium amount = 12 }
+				}
+				1 = {
+					add_resource = { type = chromium amount = 16 }
+				}
+			}
+      clr_state_flag = prospecting_state_@ROOT
+		}
+	}
+
+}
+
+# tungsten
+country_event = {
+	id = prospecting.13
+	title = prospecting.13.title
+	desc = prospecting.13.desc
+	picture = GFX_report_event_surveying_mine_3
+
+  is_triggered_only = yes
+
+	option = {
+		name = prospecting.13.a
+
+		every_state = {
+		  limit = {
+		    has_state_flag = prospecting_state_@ROOT
+		  }
+			random_list = {
+				40 = {
+					add_resource = { type = tungsten amount = 4 }
+				}
+				25 = {
+					add_resource = { type = tungsten amount = 6 }
+				}
+				14 = {
+					add_resource = { type = tungsten amount = 8 }
+				}
+				12 = {
+					add_resource = { type = tungsten amount = 10 }
+				}
+				8 = {
+					add_resource = { type = tungsten amount = 12 }
+				}
+				1 = {
+					add_resource = { type = tungsten amount = 16 }
+				}
+			}
+      clr_state_flag = prospecting_state_@ROOT
+		}
+	}
+
+}
+# oil
+country_event = {
+	id = prospecting.14
+	title = prospecting.14.title
+	desc = prospecting.14.desc
+	picture = GFX_report_event_surveying_oil
+
+  is_triggered_only = yes
+
+	option = {
+		name = prospecting.14.a
+
+		every_state = {
+		  limit = {
+		    has_state_flag = prospecting_state_@ROOT
+		  }
+			random_list = {
+				40 = {
+					add_resource = { type = oil amount = 4 }
+				}
+				25 = {
+					add_resource = { type = oil amount = 6 }
+				}
+				14 = {
+					add_resource = { type = oil amount = 8 }
+				}
+				12 = {
+					add_resource = { type = oil amount = 10 }
+				}
+				8 = {
+					add_resource = { type = oil amount = 12 }
+				}
+				1 = {
+					add_resource = { type = oil amount = 16 }
+				}
+			}
+			clr_state_flag = prospecting_state_@ROOT
+		}
+	}
+
+}
+# rubber
+country_event = {
+	id = prospecting.15
+	title = prospecting.15.title
+	desc = prospecting.15.desc
+	picture = GFX_report_event_surveying_rubber
+
+  is_triggered_only = yes
+
+	option = {
+		name = prospecting.15.a
+
+		every_state = {
+		  limit = {
+		    has_state_flag = prospecting_state_@ROOT
+		  }
+			random_list = {
+				40 = {
+					add_resource = { type = rubber amount = 4 }
+				}
+				25 = {
+					add_resource = { type = rubber amount = 6 }
+				}
+				14 = {
+					add_resource = { type = rubber amount = 8 }
+				}
+				12 = {
+					add_resource = { type = rubber amount = 10 }
+				}
+				8 = {
+					add_resource = { type = rubber amount = 12 }
+				}
+				1 = {
+					add_resource = { type = rubber amount = 16 }
+				}
+			}
+      clr_state_flag = prospecting_state_@ROOT
+		}
+	}
+
+}
+
+##  Putting this on hold; CTD for no appereant fucking reason and impossible to find the problem.
+## MAybe have it be ONLY in capital scope?
+#### AI event v1
 country_event = {
 	id = prospecting.60
 	title = prospecting.60.title
@@ -165,10 +409,30 @@ country_event = {
 
 	trigger = {
 		is_ai = yes
+    NOT = { has_country_flag = cant_prospect }
+    has_country_flag = can_prospect
+    capital_scope = {
+      is_not_unimportant_speck = yes
+    }
+    OR = {
+      is_major = yes
+      # is_major_victor_of_ww1 = yes
+      # is_medium_victor_of_ww1 = yes
+    }
+    OR = {
+      # TAG = USA
+      # TAG = FRA
+      # TAG = ENG
+      # TAG = GER
+      # TAG = SOV
+      # TAG = ITA
+      # TAG = JAP
+    }
+    always = no   # turning it off for now
 	}
 
 	mean_time_to_happen = {
-		days = 220
+		days = 100
 
 		modifier = {
 			factor = 2.5
@@ -182,11 +446,31 @@ country_event = {
 
 	}
 
-	# prospect on core
 	option = {
 		name = prospecting.60.a
 
-		country_event = { id = prospecting.1 days = 2 }
+    country_event = { id = prospecting.1 days = 1 }
+
+    # DEBUG
+    # save_global_event_target_as = debug_ai_prospecting
+    # news_event = prospecting.61
+
+	}
+
+}
+
+#### AI debug event
+news_event = {
+	id = prospecting.61
+	title = prospecting.61.title
+	desc = prospecting.61.desc
+	picture = GFX_report_event_civ_truck
+
+	major = yes
+  is_triggered_only = yes
+
+	option = {
+		name = prospecting.61.a
 
 	}
 

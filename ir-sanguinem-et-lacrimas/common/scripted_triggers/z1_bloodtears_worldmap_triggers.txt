@@ -61,6 +61,17 @@ is_in_north_africa = {
 	}
 }
 
+is_in_south_africa = {
+	NOT = {
+		OR = {
+			region = 127	  # sahara
+			region = 126	  # north africa
+			region = 128	  # egypt
+		}
+	}
+	is_in_africa = yes
+}
+
 is_in_indian_subcontinent = {
 	OR = {
 		region = 153	  # northern india
@@ -146,6 +157,28 @@ is_in_china = {
 		region = 144	  # western china
 		region = 143	  # northern china
 		region = 155	  # manchuria
+	}
+}
+
+is_not_unimportant_speck = {
+	OR = {
+		is_on_continent = europe
+		is_on_continent = africa
+		is_on_continent = middle_east
+		is_on_continent = south_america
+		is_on_continent = north_america
+		is_on_continent = asia
+		is_in_oceania = yes
+	}
+	NOT = {	region = 88	} # Bering sea
+	NOT = {	region = 101	} # Bay of bengal
+	NOT = {	region = 60	} # West indian ocean
+	NOT = {	region = 85	} # South West indian ocean
+}
+
+is_oversea_territory = {
+	capital_scope = {
+
 	}
 }
 
