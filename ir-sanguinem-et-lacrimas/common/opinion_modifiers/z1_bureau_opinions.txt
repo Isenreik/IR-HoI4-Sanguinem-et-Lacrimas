@@ -1,0 +1,9 @@
+opinion_modifiers = {
+
+  aided_prospecting_puppet.opinion = {
+    value = 15
+    months = 15
+		decay = 1
+  }
+
+}

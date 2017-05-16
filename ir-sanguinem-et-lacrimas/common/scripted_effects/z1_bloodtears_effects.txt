@@ -1,1 +1,234 @@
+prospecting_continents_chances = {
 
+  if = {
+    limit = {
+      is_in_europe = yes
+      is_in_africa = no
+      is_in_asia = no
+    }
+    random_list = {
+      60 = { # steel
+        ROOT = { country_event = { id = prospecting.10 days = 15 } }
+      }
+      15 = { # aluminium
+        ROOT = { country_event = { id = prospecting.11 days = 15 } }
+      }
+      11 = { # chromium
+        ROOT = { country_event = { id = prospecting.12 days = 15 } }
+      }
+      11 = { # tungsten
+        ROOT = { country_event = { id = prospecting.13 days = 15 } }
+      }
+      3 = { # Oil
+        ROOT = { country_event = { id = prospecting.14 days = 15 } }
+      }
+      0 = { # Rubber
+        ROOT = { country_event = { id = prospecting.15 days = 15 } }
+      }
+    }
+  }
+  if = {
+    limit = {
+      is_in_north_africa = yes
+      is_in_south_africa = no
+      is_in_middle_east = no
+      is_in_europe = no
+    }
+    random_list = {
+      32 = { # steel
+        ROOT = { country_event = { id = prospecting.10 days = 15 } }
+      }
+      2 = { # aluminium
+        ROOT = { country_event = { id = prospecting.11 days = 15 } }
+      }
+      5 = { # chromium
+        ROOT = { country_event = { id = prospecting.12 days = 15 } }
+      }
+      5 = { # tungsten
+        ROOT = { country_event = { id = prospecting.13 days = 15 } }
+      }
+      56 = { # Oil
+        ROOT = { country_event = { id = prospecting.14 days = 15 } }
+      }
+      0 = { # Rubber
+        ROOT = { country_event = { id = prospecting.15 days = 15 } }
+      }
+    }
+  }
+  if = {
+    limit = {
+      is_in_south_africa = yes
+      is_in_north_africa = no
+      is_in_middle_east = no
+      is_in_europe = no
+    }
+    random_list = {
+      25 = { # steel
+        ROOT = { country_event = { id = prospecting.10 days = 15 } }
+      }
+      3 = { # aluminium
+        ROOT = { country_event = { id = prospecting.11 days = 15 } }
+      }
+      21 = { # chromium
+        ROOT = { country_event = { id = prospecting.12 days = 15 } }
+      }
+      11 = { # tungsten
+        ROOT = { country_event = { id = prospecting.13 days = 15 } }
+      }
+      15 = { # Oil
+        ROOT = { country_event = { id = prospecting.14 days = 15 } }
+      }
+      25 = { # Rubber
+        ROOT = { country_event = { id = prospecting.15 days = 15 } }
+      }
+    }
+  }
+  if = {
+    limit = {
+      is_in_middle_east = yes
+      is_in_south_africa = no
+      is_in_north_africa = no
+      is_in_europe = no
+    }
+    random_list = {
+      12 = { # steel
+        ROOT = { country_event = { id = prospecting.10 days = 15 } }
+      }
+      3 = { # aluminium
+        ROOT = { country_event = { id = prospecting.11 days = 15 } }
+      }
+      18 = { # chromium
+        ROOT = { country_event = { id = prospecting.12 days = 15 } }
+      }
+      2 = { # tungsten
+        ROOT = { country_event = { id = prospecting.13 days = 15 } }
+      }
+      65 = { # Oil
+        ROOT = { country_event = { id = prospecting.14 days = 15 } }
+      }
+      0 = { # Rubber
+        ROOT = { country_event = { id = prospecting.15 days = 15 } }
+      }
+    }
+  }
+  if = {
+    limit = {
+      OR = {
+        is_in_north_america = yes
+        is_in_oceania = yes
+      }
+      is_in_south_america = no
+    }
+    random_list = {
+      25 = { # steel
+        ROOT = { country_event = { id = prospecting.10 days = 15 } }
+      }
+      18 = { # aluminium
+        ROOT = { country_event = { id = prospecting.11 days = 15 } }
+      }
+      19 = { # chromium
+        ROOT = { country_event = { id = prospecting.12 days = 15 } }
+      }
+      20 = { # tungsten
+        ROOT = { country_event = { id = prospecting.13 days = 15 } }
+      }
+      18 = { # Oil
+        ROOT = { country_event = { id = prospecting.14 days = 15 } }
+      }
+      0 = { # Rubber
+        ROOT = { country_event = { id = prospecting.15 days = 15 } }
+      }
+    }
+  }
+  if = {
+    limit = {
+      is_in_south_america = yes
+      is_in_north_america = no
+    }
+    random_list = {
+      30 = { # steel
+        ROOT = { country_event = { id = prospecting.10 days = 15 } }
+      }
+      25 = { # aluminium
+        ROOT = { country_event = { id = prospecting.11 days = 15 } }
+      }
+      5 = { # chromium
+        ROOT = { country_event = { id = prospecting.12 days = 15 } }
+      }
+      13 = { # tungsten
+        ROOT = { country_event = { id = prospecting.13 days = 15 } }
+      }
+      15 = { # Oil
+        ROOT = { country_event = { id = prospecting.14 days = 15 } }
+      }
+      12 = { # Rubber
+        ROOT = { country_event = { id = prospecting.15 days = 15 } }
+      }
+    }
+  }
+  if = {
+    limit = {
+      is_in_asia = yes
+      NOT = {
+        OR = {
+          is_in_indian_subcontinent = yes
+          is_in_south_east_asia = yes
+        }
+      }
+      is_in_europe = no
+      is_in_middle_east = no
+      is_in_africa = no
+    }
+    random_list = {
+      33 = { # steel
+        ROOT = { country_event = { id = prospecting.10 days = 15 } }
+      }
+      17 = { # aluminium
+        ROOT = { country_event = { id = prospecting.11 days = 15 } }
+      }
+      17 = { # chromium
+        ROOT = { country_event = { id = prospecting.12 days = 15 } }
+      }
+      17 = { # tungsten
+        ROOT = { country_event = { id = prospecting.13 days = 15 } }
+      }
+      16 = { # Oil
+        ROOT = { country_event = { id = prospecting.14 days = 15 } }
+      }
+      0 = { # Rubber
+        ROOT = { country_event = { id = prospecting.15 days = 15 } }
+      }
+    }
+  }
+  if = {
+    limit = {
+      OR = {
+        is_in_indian_subcontinent = yes
+        is_in_south_east_asia = yes
+      }
+      is_in_europe = no
+      is_in_middle_east = no
+      is_in_africa = no
+    }
+    random_list = {
+      26 = { # steel
+        ROOT = { country_event = { id = prospecting.10 days = 15 } }
+      }
+      16 = { # aluminium
+        ROOT = { country_event = { id = prospecting.11 days = 15 } }
+      }
+      11 = { # chromium
+        ROOT = { country_event = { id = prospecting.12 days = 15 } }
+      }
+      11 = { # tungsten
+        ROOT = { country_event = { id = prospecting.13 days = 15 } }
+      }
+      8 = { # Oil
+        ROOT = { country_event = { id = prospecting.14 days = 15 } }
+      }
+      28 = { # Rubber
+        ROOT = { country_event = { id = prospecting.15 days = 15 } }
+      }
+    }
+  }
+}
