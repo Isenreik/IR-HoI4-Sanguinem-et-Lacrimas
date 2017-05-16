@@ -1,0 +1,77 @@
+## by Araxiel - original script do not steel
+
+spriteTypes = {
+
+  ## Images    -----------------------------------
+
+  SpriteType = { name = "GFX_night_vision3_medium"    texturefile = "gfx//interface//technologies//night_vision3.dds"    alwaystransparent = yes	}
+
+  SpriteType = { name = "GFX_mines_medium"      texturefile = "gfx//interface//technologies//mines_usa_1.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_mines_2_medium"    texturefile = "gfx//interface//technologies//mines_usa_2.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_mines_3_medium"    texturefile = "gfx//interface//technologies//mines_usa_3.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_mines_4_medium"    texturefile = "gfx//interface//technologies//mines_usa_4.dds"    alwaystransparent = yes	}
+
+  SpriteType = { name = "GFX_GER_mines_medium"      texturefile = "gfx//interface//technologies//mines_ger_1.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_GER_mines_2_medium"    texturefile = "gfx//interface//technologies//mines_ger_2.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_GER_mines_3_medium"    texturefile = "gfx//interface//technologies//mines_ger_3.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_GER_mines_4_medium"    texturefile = "gfx//interface//technologies//mines_ger_4.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_ITA_mines_medium"      texturefile = "gfx//interface//technologies//mines_ger_1.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_ITA_mines_2_medium"    texturefile = "gfx//interface//technologies//mines_ger_2.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_ITA_mines_3_medium"    texturefile = "gfx//interface//technologies//mines_ger_3.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_ITA_mines_4_medium"    texturefile = "gfx//interface//technologies//mines_ger_4.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_JAP_mines_medium"      texturefile = "gfx//interface//technologies//mines_ger_1.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_JAP_mines_2_medium"    texturefile = "gfx//interface//technologies//mines_ger_2.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_JAP_mines_3_medium"    texturefile = "gfx//interface//technologies//mines_ger_3.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_JAP_mines_4_medium"    texturefile = "gfx//interface//technologies//mines_ger_4.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_HUN_mines_medium"      texturefile = "gfx//interface//technologies//mines_ger_1.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_HUN_mines_2_medium"    texturefile = "gfx//interface//technologies//mines_ger_2.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_HUN_mines_3_medium"    texturefile = "gfx//interface//technologies//mines_ger_3.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_HUN_mines_4_medium"    texturefile = "gfx//interface//technologies//mines_ger_4.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_SOV_mines_medium"      texturefile = "gfx//interface//technologies//mines_sov_1.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_SOV_mines_2_medium"    texturefile = "gfx//interface//technologies//mines_sov_2.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_SOV_mines_3_medium"    texturefile = "gfx//interface//technologies//mines_sov_3.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_SOV_mines_4_medium"    texturefile = "gfx//interface//technologies//mines_sov_4.dds"    alwaystransparent = yes	}
+
+  SpriteType = { name = "GFX_mechanised_infantry4_medium"    texturefile = "gfx//interface//technologies//mechanized_equipment_3.dds"  alwaystransparent = yes	}
+  SpriteType = { name = "GFX_mechanised_infantry5_medium"    texturefile = "gfx//interface//technologies//equipment//apc_usa_1952.dds"  alwaystransparent = yes	}
+
+  SpriteType = { name = "GFX_mechanised_heavy_improvements_medium"    texturefile = "gfx//interface//technologies//apc_improvements.dds" alwaystransparent = yes	}
+
+  SpriteType = { name = "GFX_mechanised_heavy_infantry1_medium"    texturefile = "gfx//interface//technologies//equipment//apc_usa_1945.dds"  alwaystransparent = yes	}
+  SpriteType = { name = "GFX_mechanised_heavy_infantry2_medium"    texturefile = "gfx//interface//technologies//equipment//apc_usa_1959.dds"  alwaystransparent = yes	}
+  SpriteType = { name = "GFX_GER_mechanised_heavy_infantry1_medium"    texturefile = "gfx//interface//technologies//equipment//apc_ger_sdkfz-ausfB.dds"  alwaystransparent = yes	}
+  SpriteType = { name = "GFX_SOV_mechanised_heavy_infantry1_medium"    texturefile = "gfx//interface//technologies//equipment//apc_sov_1950.dds"  alwaystransparent = yes	}
+  SpriteType = { name = "GFX_ENG_mechanised_heavy_infantry1_medium"    texturefile = "gfx//interface//technologies//equipment//apc_uk_1956.dds"  alwaystransparent = yes	}
+  SpriteType = { name = "GFX_USA_mechanised_heavy_infantry1_medium"    texturefile = "gfx//interface//technologies//equipment//apc_usa_1952.dds"  alwaystransparent = yes	}
+
+  SpriteType = { name = "GFX_support_weapons_medium"    texturefile = "gfx//interface//technologies//equipment//heavy_weapon_equipment_1.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_support_weapons3_medium"   texturefile = "gfx//interface//technologies//equipment//heavy_weapon_equipment_2.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_support_weapons5_medium"   texturefile = "gfx//interface//technologies//equipment//heavy_weapon_equipment_3.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_support_weapons7_medium"   texturefile = "gfx//interface//technologies//equipment//heavy_weapon_equipment_4.dds"    alwaystransparent = yes	}
+
+  SpriteType = { name = "GFX_support_weapons2_medium"    texturefile = "gfx//interface//trulz//law_saintrommel.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_support_weapons4_medium"    texturefile = "gfx//interface//trulz//law_panzershrek.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_support_weapons6_medium"    texturefile = "gfx//interface//trulz//law_shores.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_support_weapons8_medium"    texturefile = "gfx//interface//trulz//law_angry.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_support_weapons9_medium"    texturefile = "gfx//interface//trulz//law_saintrommel.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_support_weapons10_medium"   texturefile = "gfx//interface//trulz//law_panzershrek.dds"    alwaystransparent = yes	}
+
+  SpriteType = { name = "GFX_modern_infantry_weapons2_medium"   texturefile = "gfx//interface//trulz//law_shores.dds"    alwaystransparent = yes	}
+
+  SpriteType = { name = "GFX_modern_infantry_weapons_medium"   texturefile = "gfx//interface//technologies//infantry2.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_modern_infantry_weapons3_medium"   texturefile = "gfx//interface//technologies//infantry3.dds"    alwaystransparent = yes	}
+
+  SpriteType = { name = "GFX_inf_antitank_weapons_medium"    texturefile = "gfx//interface//technologies//equipment//antitank_equipment_1.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_inf_antitank_weapons2_medium"   texturefile = "gfx//interface//technologies//equipment//antitank_equipment_2.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_inf_antitank_weapons4_medium"   texturefile = "gfx//interface//technologies//equipment//antitank_equipment_3.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_inf_antitank_weapons6_medium"   texturefile = "gfx//interface//technologies//equipment//antitank_equipment_4.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_inf_antitank_weapons7_medium"   texturefile = "gfx//interface//technologies//equipment//antitank_equipment_5.dds"    alwaystransparent = yes	}
+
+  SpriteType = { name = "GFX_inf_antitank_weapons3_medium"    texturefile = "gfx//interface//trulz//law_angry.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_inf_antitank_weapons5_medium"    texturefile = "gfx//interface//trulz//law_panzershrek.dds"    alwaystransparent = yes	}
+
+  SpriteType = { name = "GFX_urban_warfare1_medium"    texturefile = "gfx//interface//technologies//urban_warfare.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_urban_warfare2_medium"    texturefile = "gfx//interface//technologies//urban_warfare2.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_urban_warfare3_medium"    texturefile = "gfx//interface//technologies//urban_warfare3.dds"    alwaystransparent = yes	}
+
+}
