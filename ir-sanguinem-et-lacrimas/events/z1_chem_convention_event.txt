@@ -758,6 +758,10 @@ country_event = {
 					value > 10
 				}
 			}
+			modifier = {
+				factor = -1.75
+				threat > 0.25
+			}
 		}
 	}
 	# sign with reservation
