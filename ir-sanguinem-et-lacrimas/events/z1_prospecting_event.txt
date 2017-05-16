@@ -48,7 +48,7 @@ country_event = {
         is_not_unimportant_speck = yes
         is_controlled_by = ROOT
         is_owned_by = ROOT
-        is_in_home_area = no
+        NOT = { is_in_home_area = yes }
       }
     }
 
@@ -64,7 +64,7 @@ country_event = {
 		set_country_flag = { flag = cant_prospect days = 121 value = 1 }
 
   	ai_chance = {
-      factor = 4
+      factor = 3.5
     }
 
 	}
@@ -112,9 +112,14 @@ country_event = {
         is_subject_of = ROOT
       }
       add_opinion_modifier = { target = ROOT modifier = aided_prospecting_puppet.opinion }
-      add_autonomy_ratio = {
-        value = -0.04
-        localization = aided_prospecting_puppet.autonomy
+      if = {
+        limit = {
+          has_dlc = "Together for Victory"
+        }
+        add_autonomy_ratio = {
+          value = -0.04
+          localization = aided_prospecting_puppet.autonomy
+        }
       }
       random_owned_controlled_state  = {
         limit = {
@@ -128,7 +133,7 @@ country_event = {
 		set_country_flag = { flag = cant_prospect days = 121 value = 1 }
 
     ai_chance = {
-      factor = 1.5
+      factor = 2
     }
 
 	}
@@ -391,7 +396,9 @@ country_event = {
 
 }
 
-#### AI event
+##  Putting this on hold; CTD for no appereant fucking reason and impossible to find the problem.
+## MAybe have it be ONLY in capital scope?
+#### AI event v1
 country_event = {
 	id = prospecting.60
 	title = prospecting.60.title
@@ -412,6 +419,16 @@ country_event = {
       # is_major_victor_of_ww1 = yes
       # is_medium_victor_of_ww1 = yes
     }
+    OR = {
+      # TAG = USA
+      # TAG = FRA
+      # TAG = ENG
+      # TAG = GER
+      # TAG = SOV
+      # TAG = ITA
+      # TAG = JAP
+    }
+    always = no   # turning it off for now
 	}
 
 	mean_time_to_happen = {

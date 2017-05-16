@@ -170,6 +170,10 @@ is_not_unimportant_speck = {
 		is_on_continent = asia
 		is_in_oceania = yes
 	}
+	NOT = {	region = 88	} # Bering sea
+	NOT = {	region = 101	} # Bay of bengal
+	NOT = {	region = 60	} # West indian ocean
+	NOT = {	region = 85	} # South West indian ocean
 }
 
 is_oversea_territory = {
