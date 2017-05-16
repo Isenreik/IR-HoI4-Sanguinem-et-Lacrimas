@@ -42,11 +42,13 @@ press_tech1_desc: "Our press can serve our state. If we let the public in on our
 
 press_censorship1: "Censorship"
 press_censorship1_desc: "Using censorship we can suppress delicate information and reduce the intel the enemy's resistance has access to and thus reduce their power and impact on our troops. Further such efforts and instilling the fear of spies in our population will make it harder for actual hostile agents to work as effectively."
+press_opposition_surpression: "Opposition Suppression"
+press_opposition_surpression_desc: "By censoring and isolating our political opponents, we can keep foreign powers and hostile ideologies influence and corrupt our nation."
 
 press_media1: "Media Manipulation"
 press_media1_desc: "The media should further be integrated and report on our nation's grand achievements; if they are true or not is a detailed the public does not need to think about."
-press_media2: "Opposition Suppression"
-press_media2_desc: "By censoring and isolating our political opponents, we can keep foreign powers and hostile ideologies influence and corrupt our nation."
+press_media2: "Extended Power"
+press_media2_desc: "Needs to be written"
 
 press_trucks1: "Civilian Truck Conversation"
 press_trucks1_desc: "Civilian trucks and vehicles can easily be refitted to help our war effort and be employed by our army. This allows us to use civilian automotive plants to produce army-grade vehicles."

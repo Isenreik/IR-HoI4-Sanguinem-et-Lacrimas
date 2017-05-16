@@ -18,6 +18,11 @@ on_actions = {
         }
         set_country_flag = LN_league_member
       }
+      ## heavy weapons
+      every_country = {
+        set_technology = { support_weapons = 1 }
+        set_technology = { inf_antitank_weapons = 1 }
+      }
       every_country = {
         limit = {
           OR = {
