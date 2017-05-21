@@ -6,7 +6,7 @@
 ------------ | -------------
 [<img src="https://www.shareicon.net/data/128x128/2016/10/18/844052_media_512x512.png" alt="discord_logo" width="128"/>][1] | [Join the Discord Server][1]
 [<img src="https://www.shareicon.net/data/128x128/2015/09/02/94510_opened_448x512.png" alt="exclamation_mark" width="128"/>][2] | [Click here to open a new issue][2]
-[<img src="https://raw.githubusercontent.com/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis/master/readme-files/thumbnail-coming-soon.gif" alt="Steam Thumbnail" width="128"/>][3] | [Go to the Steam Workshop page of this mod][3]
+[<img src="https://raw.githubusercontent.com/Isenreik/HoI4-IR-Sanguinem-et-Lacrimas/master/readme-files/thumbnail_sang_max.gif" alt="Steam Thumbnail" width="128"/>][3] | [Go to the Steam Workshop page of this mod][3]
 [<img src="https://pbs.twimg.com/profile_images/629201391312105473/txI2nFBz.png" alt="paradox_logo" width="128"/>][4] | [Go to the related Paradox Plaza thread][4]
 
 ## What does this mod do?
@@ -30,6 +30,6 @@ Well, I can't really stop anyone from doing that. It's also not really an issue,
 
 [1]:https://discord.gg/7KQwR2x
 [2]:https://github.com/Araxiel/HoI4-Ara-SpecTroops/issues/new
-[3]:https://raw.githubusercontent.com/Araxiel/HoI4-IR-Sanguinem-et-Lacrimis/master/readme-files/thumbnail-coming-soon.gif
+[3]:http://steamcommunity.com/sharedfiles/filedetails/?id=891139945
 [4]:https://forum.paradoxplaza.com/forum/index.php
 [5]:https://forum.paradoxplaza.com/forum/index.php?members/araxiel.1078983/
