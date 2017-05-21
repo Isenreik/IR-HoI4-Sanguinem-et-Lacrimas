@@ -29,6 +29,7 @@ These mods work together, but there might be tiny conflicts (which you might not
 [*] Realistic Air Missions (LITE)
 [*] Expanded Engineering [technically compatible, but logically makes no sense; a lot of technologies are overlapping, such as proximity fuses or computer-assisted targeting; having both on most likely result in a really poor and really unbalanced experience]
 [*] Vanilla+ [Overwrites the Vanilla+ tech-tree, but otherwise works]
+[*] Aldebaran [The completely different map will break prospecting, but the mod as a whole should still work okay]
 [/list]
 
 [h1]Non-Compatible Mods[/h1]
