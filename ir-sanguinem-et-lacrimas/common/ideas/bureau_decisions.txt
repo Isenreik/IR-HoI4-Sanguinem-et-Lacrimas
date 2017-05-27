@@ -33,7 +33,17 @@ ideas = {
 					country_event = { id = prospecting.1 days = 2 }
 				}
 
-				cost = 80
+				cost = 100
+				removal_cost = 0
+
+				cancel_if_invalid = yes
+
+				ai_will_do = {
+					factor = 0
+				}
+
+			}
+
 				removal_cost = 0
 
 				cancel_if_invalid = yes

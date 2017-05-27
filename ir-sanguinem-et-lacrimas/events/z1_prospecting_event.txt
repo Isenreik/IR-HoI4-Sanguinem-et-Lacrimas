@@ -22,6 +22,7 @@ country_event = {
 	option = {
 		name = prospecting.1.a
 
+    custom_effect_tooltip = prospecting.1.a.tt
 		random_owned_controlled_state  = {
       limit = {
         is_not_unimportant_speck = yes
@@ -31,7 +32,7 @@ country_event = {
 			set_state_flag = { flag = prospecting_state_@ROOT days = 30 value = 1 }
 		}
 
-		set_country_flag = { flag = cant_prospect days = 121 value = 1 }
+		set_country_flag = { flag = cant_prospect days = 152 value = 1 }
 
   	ai_chance = {
       factor = 4
@@ -52,6 +53,7 @@ country_event = {
       }
     }
 
+    custom_effect_tooltip = prospecting.1.b.tt
 		random_owned_controlled_state  = {
       limit = {
         is_not_unimportant_speck = yes
@@ -61,7 +63,7 @@ country_event = {
 			set_state_flag = { flag = prospecting_state_@ROOT days = 30 value = 1 }
 		}
 
-		set_country_flag = { flag = cant_prospect days = 121 value = 1 }
+		set_country_flag = { flag = cant_prospect days = 91 value = 1 }
 
   	ai_chance = {
       factor = 3.5
@@ -81,6 +83,7 @@ country_event = {
       }
     }
 
+    custom_effect_tooltip = prospecting.1.c.tt
 		random_state  = {
       limit = {
         is_not_unimportant_speck = yes
@@ -91,7 +94,7 @@ country_event = {
       set_state_flag = { flag = prospecting_state_@ROOT days = 30 value = 1 }
 		}
 
-		set_country_flag = { flag = cant_prospect days = 121 value = 1 }
+		set_country_flag = { flag = cant_prospect days = 60 value = 1 }
 
     ai_chance = {
       factor = 1
@@ -107,10 +110,13 @@ country_event = {
 			num_subjects > 0
 		}
 
+    custom_effect_tooltip = prospecting.1.d.tt
+    
     random_country  = {
       limit = {
         is_subject_of = ROOT
       }
+
       add_opinion_modifier = { target = ROOT modifier = aided_prospecting_puppet.opinion }
       if = {
         limit = {
@@ -130,7 +136,7 @@ country_event = {
       }
     }
 
-		set_country_flag = { flag = cant_prospect days = 121 value = 1 }
+		set_country_flag = { flag = cant_prospect days = 76 value = 1 }
 
     ai_chance = {
       factor = 2
