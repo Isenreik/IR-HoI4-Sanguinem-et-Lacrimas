@@ -1642,7 +1642,7 @@ technologies = {
 
 		desc = "radar_construction_special_desc"
 
-		dependencies = { improved_decimetric_radar = 1 }
+		dependencies = { decimetric_radar = 1 }
 
 		research_cost = 1.6
 		start_year = 1939
@@ -1761,7 +1761,7 @@ technologies = {
 
 		desc = "radar_construction_special_desc"
 
-		dependencies = { improved_centimetric_radar = 1 }
+		dependencies = { centimetric_radar = 1 }
 
 		research_cost = 1.6
 		start_year = 1945

@@ -19,11 +19,11 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1941
+		start_year = 1940
 
 		folder = {
 			name = specialised_folder
-			position = { x = @first_row y = @1941 }
+			position = { x = @first_row y = @1940 }
 		}
 
 		categories = {
@@ -31,7 +31,7 @@ technologies = {
 			glider_tech
 		}
 
-    dependencies = { paratroopers2 = 1	}
+    dependencies = { paratroopers = 1	}
 
 		ai_will_do = {
 			factor = 1

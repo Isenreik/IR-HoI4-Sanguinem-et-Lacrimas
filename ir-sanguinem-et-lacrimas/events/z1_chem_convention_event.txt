@@ -760,7 +760,7 @@ country_event = {
 				}
 			}
 			modifier = {
-				factor = -1.75
+				factor = 0.25
 				threat > 0.2
 			}
 		}
