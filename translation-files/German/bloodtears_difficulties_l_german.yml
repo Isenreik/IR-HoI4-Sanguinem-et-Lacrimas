@@ -1,15 +1,15 @@
-﻿l_english:
+l_german:
 
 ## criminal
 
-custom_diff_strong_common: "Strengthen Commonwealth"
-custom_diff_strong_mideast: "Strengthen the Middle-East"
-custom_diff_strong_balkan: "Strengthen the Balkans"
-custom_diff_strong_easteu: "Strengthen Eastern Europe"
-custom_diff_strong_baltic: "Strengthen the Baltics"
-custom_diff_strong_westeu: "Strengthen Western Europe"
-custom_diff_strong_scan: "Strengthen Scandinavia"
-custom_diff_strong_latiname: "Strengthen Latin America"
-custom_diff_strong_africa: "Strengthen Africa"
-custom_diff_strong_otherasia: "Strengthen South-East Asia"
-custom_diff_strong_centralasia: "Strengthen Central Asia"
+custom_diff_strong_common: "Stärkung des Commonwealth"
+custom_diff_strong_mideast: "Stärkung des Nahen Ostens"
+custom_diff_strong_balkan: "Stärkung des Balkans"
+custom_diff_strong_easteu: "Stärkung Osteuropas"
+custom_diff_strong_baltic: "Stärkung der baltischen Länder"
+custom_diff_strong_westeu: "Stärkung Westeuropas"
+custom_diff_strong_scan: "Stärkung Skandinaviens"
+custom_diff_strong_latiname: "Stärkung Lateinamerikas"
+custom_diff_strong_africa: "Stärkung von Afrika"
+custom_diff_strong_otherasia: "Stärkung Südostasiens"
+custom_diff_strong_centralasia: "Stärkung Zentralasiens"
