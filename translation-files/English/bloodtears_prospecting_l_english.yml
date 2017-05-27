@@ -3,9 +3,13 @@
 prospecting.1.title: "Prospecting"
 prospecting.1.desc: "Our corps of engineers have a couple of places in mind that should be investigated."
 prospecting.1.a: "On our own territory"
+prospecting.1.a.tt: "We can't prospect again for §Y5 months§!.\n"
 prospecting.1.b: "On our oversea territory"
+prospecting.1.b.tt: "We can't prospect again for §Y3 months§!.\n"
 prospecting.1.c: "On our controlled territory"
+prospecting.1.c.tt: "We can't prospect again for §Y2 months§!.\n"
 prospecting.1.d: "On one of our subjects' territory"
+prospecting.1.d.tt: "We can't prospect again for §Y2½ months§!.\n"
 
 prospecting.2.title: "Commencing Prospecting"
 prospecting.2.desc: "Start prospecting"
@@ -35,7 +39,7 @@ aided_prospecting_puppet.autonomy: "Our overlord send prospectors"
 
 prospecting_decision: "Start Prospecting"
 prospecting_decision.trigger_tt1: "Is allowed to prospect."
-prospecting_decision.trigger_tt2: "Has not prospected in the last four months."
+prospecting_decision.trigger_tt2: "Has not recently prospected."
 prospecting_decision.tt: "Find new resource deposits\n"
 
 prospecting.61.title: "DEBUG AI does prospecting"
