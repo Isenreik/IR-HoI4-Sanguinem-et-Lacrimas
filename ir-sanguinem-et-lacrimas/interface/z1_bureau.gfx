@@ -41,7 +41,7 @@ spriteTypes = {
   SpriteType = { name = "GFX_flight_officers_honor1_medium"              texturefile = "gfx//interface//technologies//officer_tech_air_honor.dds"    alwaystransparent = yes	}
   SpriteType = { name = "GFX_flight_officers_honor2_medium"              texturefile = "gfx//interface//technologies//officer_tech_air_honor2.dds"    alwaystransparent = yes	}
 
-  spriteType = { name = "GFX_idea_civilian_truck_conversation"        texturefile = "gfx/interface/ideas/FRA_motorized_focus.dds"  }
+  spriteType = { name = "GFX_idea_civilian_truck_conversion"        texturefile = "gfx/interface/ideas/FRA_motorized_focus.dds"  }
   spriteType = { name = "GFX_report_event_civ_truck"                  texturefile = "gfx/event_pictures/report_event_civ_truck.dds"  }
 
   SpriteType = { name = "GFX_press_tech1_medium"                      texturefile = "gfx//interface//technologies//press_tech.dds"    alwaystransparent = yes	}

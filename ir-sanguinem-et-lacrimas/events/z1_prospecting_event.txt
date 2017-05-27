@@ -84,6 +84,7 @@ country_event = {
     }
 
     custom_effect_tooltip = prospecting.1.c.tt
+
 		random_state  = {
       limit = {
         is_not_unimportant_speck = yes
@@ -111,7 +112,7 @@ country_event = {
 		}
 
     custom_effect_tooltip = prospecting.1.d.tt
-    
+
     random_country  = {
       limit = {
         is_subject_of = ROOT

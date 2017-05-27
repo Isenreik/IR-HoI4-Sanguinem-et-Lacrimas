@@ -464,7 +464,7 @@ technologies = {
   press_trucks2 = {
 
     on_research_complete = {
-      add_ideas = civilian_truck_conversation
+      add_ideas = civilian_truck_conversion
       custom_effect_tooltip = press_trucks2_tt
     }
 

@@ -84,11 +84,11 @@ amphibious_mech_vehicle_2_short:0 "LVT"
 amphibious_mech_vehicle_2_desc:0 "These amphibious armoured troop transporters can carry soldiers and small vehicles, support infantry in combat and act as landing crafts all at the same time. They are a force to be reckoned with even outside of the water."
 
 light_tank_amphibious_equipment:0 "Light Amphibious Tank"
-light_tank_amphibious_equipment_desc:0 "Through a small conversation, our light tanks should be able to swim through the water for a short period of time. This means that during naval invasions, they can be deployed by transport ships in safety near shore and drive up the beach by themselves. Other than that, such ability will also be mighty useful crossing rivers and get around swamps without fear of getting stuck in the mud."
+light_tank_amphibious_equipment_desc:0 "Through a small conversion, our light tanks should be able to swim through the water for a short period of time. This means that during naval invasions, they can be deployed by transport ships in safety near shore and drive up the beach by themselves. Other than that, such ability will also be mighty useful crossing rivers and get around swamps without fear of getting stuck in the mud."
 
 light_tank_amphibious_equipment_1:0 "Amphibious Tank"
 light_tank_amphibious_equipment_1_short:0 "Amphibious Tank"
-light_tank_amphibious_equipment_1_desc:0 "Through a small conversation, our light tanks should be able to swim through the water for a short period of time. This means that during naval invasions, they can be deployed by transport ships in safety near shore and drive up the beach by themselves. Other than that, such ability will also be mighty useful crossing rivers and get around swamps without fear of getting stuck in the mud."
+light_tank_amphibious_equipment_1_desc:0 "Through a small conversion, our light tanks should be able to swim through the water for a short period of time. This means that during naval invasions, they can be deployed by transport ships in safety near shore and drive up the beach by themselves. Other than that, such ability will also be mighty useful crossing rivers and get around swamps without fear of getting stuck in the mud."
 
 light_tank_amphibious_equipment_2:0 "Advanced DD Tank"
 light_tank_amphibious_equipment_2_short:0 "Adv. DD Tank"

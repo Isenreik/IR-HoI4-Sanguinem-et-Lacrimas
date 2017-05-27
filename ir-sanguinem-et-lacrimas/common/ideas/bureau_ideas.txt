@@ -4,7 +4,7 @@ ideas = {
 
 	country = {
 
-    civilian_truck_conversation = {
+    civilian_truck_conversion = {
 
       allowed = {
         always = yes
