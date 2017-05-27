@@ -118,6 +118,7 @@ prospecting_continents_chances = {
         is_in_oceania = yes
       }
       is_in_south_america = no
+      NOT = { region = 163 } # New Guinea
     }
     random_list = {
       25 = { # steel

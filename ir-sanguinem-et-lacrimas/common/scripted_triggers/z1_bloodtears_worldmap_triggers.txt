@@ -170,10 +170,18 @@ is_not_unimportant_speck = {
 		is_on_continent = asia
 		is_in_oceania = yes
 	}
-	NOT = {	region = 88	} # Bering sea
-	NOT = {	region = 101	} # Bay of bengal
-	NOT = {	region = 60	} # West indian ocean
-	NOT = {	region = 85	} # South West indian ocean
+	NOT = {	region = 88	}		# Bering sea
+	NOT = {	region = 101 }	# Bay of bengal
+	NOT = {	region = 60	}		# West indian ocean
+	NOT = {	region = 85	}		# South West indian ocean
+	NOT = {	region = 48	}		# African Coast
+	NOT = {	region = 61	}		# Cap Verde Plain
+	NOT = {	region = 62	}		# Gulf of Gunea
+	NOT = {	state = 733	}		# Andaman
+	NOT = {	state = 99 }		# Far East Indian Ocean
+	NOT = {	state = 81 }		# Coral Sea
+	NOT = {	state = 97 }		# Eastern Micronesia
+	NOT = {	state = 47 }		# Iberian Coast
 }
 
 is_oversea_territory = {
