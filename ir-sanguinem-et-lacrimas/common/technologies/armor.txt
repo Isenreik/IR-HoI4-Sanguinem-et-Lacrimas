@@ -859,6 +859,10 @@ technologies = {
 			leads_to_tech = advanced_heavy_tank
 			research_cost_coeff = 0.9
 		}
+		path = {
+			leads_to_tech = late_light_tank
+			research_cost_coeff = 0.9
+		}
 
 		research_cost = 2
 		start_year = 1943
