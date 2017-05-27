@@ -42,7 +42,6 @@ equipments = {
 		resources = {
 			steel = 1
 		}
-
 	}
 
 	infantry_equipment_0 = {
@@ -51,8 +50,6 @@ equipments = {
 		priority = 05
 		visual_level = 0
 	}
-
-
 
 	# Regular infantry  1936
 	infantry_equipment_1 = {

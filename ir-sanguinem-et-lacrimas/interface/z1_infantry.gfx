@@ -49,12 +49,18 @@ spriteTypes = {
   SpriteType = { name = "GFX_support_weapons5_medium"   texturefile = "gfx//interface//technologies//equipment//heavy_weapon_equipment_3.dds"    alwaystransparent = yes	}
   SpriteType = { name = "GFX_support_weapons7_medium"   texturefile = "gfx//interface//technologies//equipment//heavy_weapon_equipment_4.dds"    alwaystransparent = yes	}
 
-  SpriteType = { name = "GFX_support_weapons2_medium"    texturefile = "gfx//interface//trulz//law_saintrommel.dds"    alwaystransparent = yes	}
-  SpriteType = { name = "GFX_support_weapons4_medium"    texturefile = "gfx//interface//trulz//law_panzershrek.dds"    alwaystransparent = yes	}
-  SpriteType = { name = "GFX_support_weapons6_medium"    texturefile = "gfx//interface//trulz//law_shores.dds"    alwaystransparent = yes	}
-  SpriteType = { name = "GFX_support_weapons8_medium"    texturefile = "gfx//interface//trulz//law_angry.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_support_weapons2_medium"    texturefile = "gfx//interface//technologies//support_weapons.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_support_weapons4_medium"    texturefile = "gfx//interface//technologies//support_weapons2.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_support_weapons6_medium"    texturefile = "gfx//interface//technologies//support_weapons3.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_support_weapons8_medium"    texturefile = "gfx//interface//technologies//support_weapons4.dds"    alwaystransparent = yes	}
   SpriteType = { name = "GFX_support_weapons9_medium"    texturefile = "gfx//interface//trulz//law_saintrommel.dds"    alwaystransparent = yes	}
   SpriteType = { name = "GFX_support_weapons10_medium"   texturefile = "gfx//interface//trulz//law_panzershrek.dds"    alwaystransparent = yes	}
+
+  SpriteType = {
+    name = "GFX_unit_extra_heavy_weapon_support_icon_medium"
+    texturefile = "gfx//interface//counters//divisions_large//unit_support_heavy_weapons.dds"
+    noOfFrames = 2
+  }
 
   SpriteType = { name = "GFX_modern_infantry_weapons2_medium"   texturefile = "gfx//interface//trulz//law_shores.dds"    alwaystransparent = yes	}
 
@@ -69,6 +75,8 @@ spriteTypes = {
 
   SpriteType = { name = "GFX_inf_antitank_weapons3_medium"    texturefile = "gfx//interface//trulz//law_angry.dds"    alwaystransparent = yes	}
   SpriteType = { name = "GFX_inf_antitank_weapons5_medium"    texturefile = "gfx//interface//trulz//law_panzershrek.dds"    alwaystransparent = yes	}
+
+
 
   SpriteType = { name = "GFX_urban_warfare1_medium"    texturefile = "gfx//interface//technologies//urban_warfare.dds"    alwaystransparent = yes	}
   SpriteType = { name = "GFX_urban_warfare2_medium"    texturefile = "gfx//interface//technologies//urban_warfare2.dds"    alwaystransparent = yes	}

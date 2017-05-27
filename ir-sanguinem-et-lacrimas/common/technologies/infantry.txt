@@ -1028,6 +1028,10 @@ technologies = {
 	##	1936
 	support_weapons2 = {
 
+		enable_subunits = {
+			extra_heavy_weapon_support
+		}
+
 		infantry = {
 			defense = 0.05
 			breakthrough = 0.05
