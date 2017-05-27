@@ -44,6 +44,30 @@ ideas = {
 
 			}
 
+			# health care
+			abolish_healtcare_decision = {
+
+				default = no
+
+				available = {
+					custom_trigger_tooltip = {
+						tooltip = abolish_healtcare_decision.trigger_tt1
+						AND = {
+							has_country_flag = has_healthcare
+						}
+					}
+				}
+
+				allowed = {
+					has_tech = press_health2
+				}
+
+				on_add = {
+					custom_effect_tooltip = abolish_healtcare_decision.tt
+					country_event = { id = press_tech_event.2 days = 2 }
+				}
+
+				cost = 200
 				removal_cost = 0
 
 				cancel_if_invalid = yes

@@ -283,6 +283,7 @@ technologies = {
 @press_left1      = -3
 @press_right1     =  1
 @press_right2     =  3
+@press_right3     =  5
 
   press_tech1 = {
 
@@ -302,6 +303,10 @@ technologies = {
     }
     path = {
       leads_to_tech = press_mobilisation1
+      research_cost_coeff = 1
+    }
+    path = {
+      leads_to_tech = press_health1
       research_cost_coeff = 1
     }
 
@@ -423,9 +428,9 @@ technologies = {
 
   press_trucks1 = {
 
-	  on_research_complete = {
-      add_ideas = civilian_truck_conversation
-      custom_effect_tooltip = press_trucks1_tt
+    on_research_complete = {
+      country_event = { hours = 2 id = press_tech_event.1 }
+      set_country_flag = requested_civ_trucks
     }
 
     desc = "press_trucks1_special_desc"
@@ -459,9 +464,8 @@ technologies = {
   press_trucks2 = {
 
     on_research_complete = {
-      country_event = { hours = 2 id = press_tech_event.1 }
-      set_country_flag = requested_civ_trucks
-      #custom_effect_tooltip = press_trucks2_tt
+      add_ideas = civilian_truck_conversation
+      custom_effect_tooltip = press_trucks2_tt
     }
 
     desc = "press_trucks2_special_desc"
@@ -514,7 +518,7 @@ technologies = {
 
   press_mobilisation2 = {
 
-		conscription_factor = 0.01
+		conscription_factor = 0.05
 
     doctrine = yes
     research_cost = 2
@@ -531,6 +535,57 @@ technologies = {
 
     ai_will_do = {
       factor = 2
+    }
+  }
+
+  press_health1 = {
+
+    MONTHLY_POPULATION = 0.15
+
+    doctrine = yes
+    research_cost = 2
+
+    path = {
+      leads_to_tech = press_health2
+      research_cost_coeff = 1
+    }
+
+    folder = {
+      name = bureau_folder
+      position = { x = @press_right3 y = 2 }
+    }
+
+    categories = {
+      bureau_tech
+      industry
+    }
+
+    ai_will_do = {
+      factor = 2
+    }
+  }
+
+  press_health2 = {
+
+    on_research_complete = {
+      add_ideas = extensive_healthcare_idea
+    }
+
+    doctrine = yes
+    research_cost = 2
+
+    folder = {
+      name = bureau_folder
+      position = { x = @press_right3 y = 4 }
+    }
+
+    categories = {
+      bureau_tech
+      industry
+    }
+
+    ai_will_do = {
+      factor = 1
     }
   }
 

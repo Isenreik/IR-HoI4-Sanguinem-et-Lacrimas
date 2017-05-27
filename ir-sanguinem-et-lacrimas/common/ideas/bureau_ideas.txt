@@ -23,6 +23,25 @@ ideas = {
       }
     }
 
+    extensive_healthcare_idea = {
+
+      allowed = {
+        always = yes
+      }
+
+      allowed_civil_war = {
+        always = yes
+      }
+
+      removal_cost = -1
+
+			modifier = {
+			  MONTHLY_POPULATION = 0.3
+				consumer_goods_factor = 0.15
+			}
+
+    }
+
 		CW_signatory_idea = {
 
 			allowed = {

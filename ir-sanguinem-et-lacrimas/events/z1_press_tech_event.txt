@@ -80,3 +80,21 @@ country_event = {
 	}
 
 }
+
+## abolish healthcare
+country_event = {
+	id = press_tech_event.2
+	title = press_tech_event.2.t
+	desc = press_tech_event.2.d
+	picture = GFX_report_event_civ_truck
+
+  is_triggered_only = yes
+
+	option = {
+		name = press_tech_event.2.a
+
+    # custom_effect_tooltip = press_tech_event.2.tt
+		remove_ideas = extensive_healthcare_idea
+
+	}
+}
