@@ -2,6 +2,8 @@ l_german:
 
 bureau_folder: "Taktik & Amt"
 bureau_folder_desc: "Verschiedene Taktiken und Zivilministerien."
+-
+-bureau_decisions: "Zivilamtentscheidungen"
 
 ## Officers
 
@@ -40,11 +42,13 @@ press_tech1_desc: "Unsere Presse kann unserem Staat dienen. Wenn wir die Öffent
 
 press_censorship1: "Zensur"
 press_censorship1_desc: "Mit der Zensur können wir empfindliche Informationen unterdrücken und die erhaltenen Informationen des Feindes reduzieren, also ihre Kraft und Einfluss auf unsere Truppen verringern. Weitere solcher Anstrengungen und die erhöhung der Angst vor Spionen im Volk wird es tatsächlichen Spionen schwerer machen, effizient zu arbeiten."
+press_opposition_surpression: "Oppositionsunterdrückung"
+press_opposition_surpression_desc: "Indem wir unsere politischen Gegner zensieren und isolieren, können wir fremde Mächte und feindliche Ideologien davon abhalten unsere Nation zu korrumpieren."
 
 press_media1: "Manipulierte Medien"
 press_media1_desc: "Die Medien sollen weiter integriert werden und über die großen Errungenschaften unserer Nation berichten. Ob Diese wahr sind, oder nicht, ist ein Detail, welches die Öffentlichkeit nicht wissen muss."
-press_media2: "Oppositionsunterdrückung"
-press_media2_desc: "Indem wir unsere politischen Gegner zensieren und isolieren, können wir fremde Mächte und feindliche Ideologien davon abhalten unsere Nation zu korrumpieren."
+press_media2: ""
+press_media2_desc: ""
 
 press_trucks1: "Umbau ziviler Lastwagen"
 press_trucks1_desc: "Zivile Lastwagen und Fahrzeuge können leicht umgebaut werden, um unseren Kriegsanstrengungen zu helfen und von unserer Armee eingesetzt zu werden. Dies ermöglicht es uns, zivile Automobil-Werke zu verwenden, um Armee-Fahrzeuge zu produzieren."
