@@ -1,5 +1,5 @@
-﻿l_english:
+l_german:
 
-category_spg_armor:0 "Self-Propelled Guns"
-category_spaa_armor:0 "Self-Propelled AA"
-category_spat_armor:0 "Tank Destroyers"
+category_spg_armor:0 "Selbstfahrlafette"
+category_spaa_armor:0 "Selbstfahrlafetten-FlAK"
+category_spat_armor:0 "Jagdpanzer"
