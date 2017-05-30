@@ -1,115 +1,115 @@
-﻿l_english:
+l_german:
 
-specialised_folder:0 "Specialised"
-specialised_folder_desc:0 "Specialised troops, vehicles and support research."
+specialised_folder:0 "Spezialisiert"
+specialised_folder_desc:0 "Spezialisierte Truppen, Fahrzeuge und Unterstützungsforschung."
 
 ## criminal
 
-SPECIALISED_TITLE_KITS:0 "SPECIALISED EQUIPMENT KITS"
+SPECIALISED_TITLE_KITS:0 "SPEZIALISIERTE AUSRÜSTUNGSMITTEL"
 
-SPECIALISED_TITLE_PENALS:0 "PENAL BATTALIONS & POLITICAL UNITS"
+SPECIALISED_TITLE_PENALS:0 "BEWÄHRUNGSBATAILLONE & POLITISCHE EINHEITEN"
 
-criminal_technology:0 "Criminals For The State"
-criminal_technology_short:0 "Criminals For The State"
-criminal_technology_desc:0 "Our criminals are sitting in their cells doing nothing useful. We should put their filthy hands to work."
+criminal_technology:0 "Kriminelle für den Staat"
+criminal_technology_short:0 "Kriminelle für den Staat"
+criminal_technology_desc:0 "Unsere Kriminellen sitzen in ihren Zellen und machen nichts. Wir sollten ihre schmutzigen Hände zum arbeiten bringen."
 
-criminal_technology2:0 "Send Them To The Factories!"
-criminal_technology2_short:0 "Send Them To The Factories!"
-criminal_technology2_desc:0 "Our criminals will be put to work in factories, helping produce equipment for the state.\n§YOnly available during war §!OR §Yfor Fascists and Communists!§!\n\n"
+criminal_technology2:0 "Schickt sie zu den Fabriken!"
+criminal_technology2_short:0 "Schickt sie zu den Fabriken!"
+criminal_technology2_desc:0 "Unsere Kriminellen werden in Fabriken arbeiten und helfen, Ausrüstung für den Staat zu produzieren.\n§YNur im Krieg verfügbar §!OR §YFür Faschisten und Kommunisten!§!\n\n"
 
-criminal_technology3:0 "Improved Prison Labour"
-criminal_technology3_short:0 "Improved Prison Labour"
-criminal_technology3_desc:0 "Our prison system will refine and further their involvement in the production of material towards the war effort.\n§YOnly available during war!§!"
+criminal_technology3:0 "Verbesserte Gefängnisarbeit"
+criminal_technology3_short:0 "Verbesserte Gefängnisarbeit"
+criminal_technology3_desc:0 "Unser Gefängnissystem wird sein Engagement in der Produktion von Material in Richtung der Kriegsanstrengungen verfeinern und weiterführen.\n§YNur im Krieg verfügbar!§!"
 
-criminal_technology4:0 "Prison Labour Camps"
+criminal_technology4:0 "Gefängnislager"
 SOV_criminal_technology4:0 "Gulags"
-criminal_technology4_short:0 "Prison Labour Camps"
-criminal_technology4_desc:0 "Our undesirables shall be send to work camps to mine for our glorious nation's war machine.\n§YOnly available for Fascists and Communists!§!"
+criminal_technology4_short:0 "Gefängnislager"
+criminal_technology4_desc:0 "Unsere Unerwünschten werden zu den Arbeitslagern geschickt, um zur Kriegsmaschine unserer herrlichen Nation zu gehören.\n§YNur für Faschisten und Kommunisten!§!"
 
-penal_technology:0 "Send Them To The Front!"
-penal_technology_short:0 "Send Them To The Front!"
-penal_technology_desc:0 "Give criminals a chance to redeem themselves through front-line service. Let them fight for their country and atone for their crimes.\n§YOnly available during war!\n\n§!"
+penal_technology:0 "Sendet sie an die Front!"
+penal_technology_short:0 "Sendet sie an die Front!"
+penal_technology_desc:0 "Geben Sie Verbrechern eine Chance, sich durch den Frontdienst zu erlösen. Lass sie für ihr Land kämpfen und für ihre Verbrechen sühnen.\n§YNur im Krieg verfügbar!\n\n§!"
 
-penal_technology2:0 "Penal Battalions"
-penal_technology2_short:0 "Penal Battalions"
-penal_technology2_desc:0 "Mobilise criminals, dissidents, subversives, degenerates, disgraced officers and other undesirables to serve the country once again in specialised battalions, if they want to or not.\n§YOnly available during war for Fascists and Communists!\n\n§!"
-GER_penal_technology2:0 "Strafbattalione"
+penal_technology2:0 "Bewährungsbataillone"
+penal_technology2_short:0 "Bewährungsbataillone"
+penal_technology2_desc:0 "Mobilisierung von Verbrechern, Dissidenten, Subversiven, Entarteten, schändlichen Offizieren und anderen Unerwünschten, um dem Land noch einmal in spezialisierten Bataillonen zu dienen, ob sie wollen oder nicht.\n§YNur im Krieg für Faschisten und Kommunisten!\n\n§!"
+GER_penal_technology2:0 "Bewährungsbataillone"
 SOV_penal_technology2:0 "Shtrafbats"
 
-penal_technology2_label:0 "Mobilise criminals, dissidents, subversives and other undesirables to serve the country once again in specialised battalions, if they want to or not."
+penal_technology2_label:0 "Mobilisierung von Verbrechern, Dissidenten, Subversiven, und anderen Unerwünschten, um dem Land noch einmal in spezialisierten Bataillonen zu dienen, ob sie wollen oder nicht."
 
-penal_technology3:0 "Improved Penal Battalions"
-penal_technology3_short:0 "Improved Penal Battalions"
-penal_technology3_desc:0 "Improve our officers' abilities to command our country's deplorable subjects and further incorporate penal battalions into the army structure.\n§YOnly available during war for Fascists and Communists!\n\n§!"
+penal_technology3:0 "Verbesserte Bewährungsbataillone"
+penal_technology3_short:0 "Verbesserte Bewährungsbataillone"
+penal_technology3_desc:0 "Verbessern Sie die Fähigkeiten unserer Offiziere, die bedauernswerten Gefangenen unseres Landes zu beherrschen und Bewährungsbataillone in die Armeestruktur aufzunehmen.\n§YNur im Krieg für Faschisten und Kommunisten!\n\n§!"
 
-penals:0 "Penal Battalion"
-GER_penals:0 "Strafbattalion"
+penals:0 "Bewährungsbataillon"
+GER_penals:0 "Bewährungsbataillon"
 SOV_penals:0 "Shtrafbat"
-penals_desc:0 "Criminals, political opponents, degenerates, subversives and other undesirables forced to fight on the front lines."
+penals_desc:0 "Kriminelle, politische Gegner, Degenerierte, Subversive und andere Unerwünschte gezwungen, an den Frontlinien zu kämpfen."
 
-commissars:0 "Commissar Detachment"
-commissars_desc:0 "These political commissars are determined to push their men to their limits and beyond in the name of the state. No quarter shall be given."
+commissars:0 "Kommissarabteilung"
+commissars_desc:0 "Diese politischen Kommissare sind entschlossen, ihre Männer an ihre Grenzen und darüber hinaus im Namen des Staates zu schieben. Es gibt keine Gnade."
 
-commissar_technology:0 "Commissars"
-commissar_technology_short:0 "Commissars"
-commissar_technology_desc:0 "Specialised officers will be able to be deployed to the front lines. These barrier troops are fervently loyal to the party and the cause and will motivate their men to be the same, by any means necessary.\n§YOnly available for Fascists and Communists!\n\n§!"
+commissar_technology:0 "Kommissare"
+commissar_technology_short:0 "Kommissare"
+commissar_technology_desc:0 "Spezialisierte Offiziere können an den Frontlinien eingesetzt werden. Diese Barrierentruppen sind der Partei und der Sache inbrünstig und werden ihre Männer dazu motivieren, mit allen notwendigen Mitteln genau so zu sein.\n§YNur für Faschisten und Kommunisten!\n\n§!"
 
-commissar_technology2:0 "Commissar Schools"
-commissar_technology2_short:0 "Commissar Schools"
-commissar_technology2_desc:0 "Our barrier troops will be further integrated into our army and their jurisdiction and power shall be expanded. The men shall either love them or fear them. Further, commissars will also be used for conscription purposes, encouraging people to volunteer to serve the state.\n§YOnly available for Fascists and Communists!\n\n§!"
+commissar_technology2:0 "Kommissarschulen"
+commissar_technology2_short:0 "Kommissarschulen"
+commissar_technology2_desc:0 "Unsere Barrierentruppen werden weiter in unsere Armee integriert und ihre Zuständigkeit und Macht wird erweitert. Die Männer sollen sie entweder lieben oder fürchten. Weiterhin werden Kommissare auch für Wehrpflichtzwecke verwendet und ermutigen die Menschen, freiwillig dem Staat zu dienen.\n§YNur für Faschisten und Kommunisten!\n\n§!"
 
 ## naval
 
-SPECIALISED_TITLE_INVASION_SUPPORT:0 "IMPROVED AMPHIBIOUS UNITS"
+SPECIALISED_TITLE_INVASION_SUPPORT:0 "VERBESSERTE AMPHIBISCHE EINHEITEN"
 
-INVASION_SUPPORT_DESC:0 "With some adjustments our existing mechanised vehicles, light and medium tanks can be turned into specialised amphibious vehicles that will help our marines with naval invasions."
+INVASION_SUPPORT_DESC:0 "Mit einigen Anpassungen können unsere bestehenden mechanisierten Fahrzeuge, leichte und mittlere Panzer in spezialisierte amphibische Fahrzeuge verwandelt werden, die unserer Marine mit ihren See-Invasionen helfen werden."
 
-amphibious_mech_subtitle_label:0 "Mechanised Landing Vehicles"
-amphibious_mech_subtitle_TT:0 "These are amphibious versions of our mechanised vehicles."
+amphibious_mech_subtitle_label:0 "Mechanisierte Landungsfahrzeuge"
+amphibious_mech_subtitle_TT:0 "Das sind amphibische Versionen unserer mechanisierten Fahrzeuge."
 
-amphibious_LT_subtitle_label:0 "Amphibious Light Tanks"
-amphibious_LT_subtitle_TT:0 "These are amphibious versions of our light tanks."
+amphibious_LT_subtitle_label:0 "Amphibische leichte Panzer"
+amphibious_LT_subtitle_TT:0 "Das sind amphibische Versionen unserer leichten Panzer."
 
-amphibious_MT_subtitle_lable:0 "Amphibious Tanks"
-amphibious_MT_subtitle_TT:0 "These are amphibious versions of our medium tanks."
+amphibious_MT_subtitle_lable:0 "Amphibische Panzer"
+amphibious_MT_subtitle_TT:0 "Das sind amphibische Versionen unserer mittleren Panzer."
 
-amphibious_mech_vehicle:0 "Amphibious Mechanised"
-amphibious_mech_vehicle_desc:0 "These are converted versions of our troop transporters that let our marines ride right up to the shore or through rivers and embark under supporting fire. It also means they can drive right through swamps without fear of getting stuck."
-amphibious_mech_vehicle_1:0 "Amphibious Vehicle"
-amphibious_mech_vehicle_1_short:0 "LCM"
-amphibious_mech_vehicle_1_desc:0 "These are converted versions of our troop transporters that let our marines ride right up to the shore or through rivers and embark under supporting fire. It also means they can drive right through swamps without fear of getting stuck."
+amphibious_mech_vehicle:0 "Amphibische mechanisierte Landungsfahrzeuge"
+amphibious_mech_vehicle_desc:0 "Dies sind umgewandelte Versionen unserer Truppentransporter, die unsere Marine bis zum Ufer oder durch Flüsse fahren lassen. Das bedeutet auch, dass sie direkt durch Sümpfe fahren können, ohne Angst haben zu müssen, stecken zu bleiben."
+amphibious_mech_vehicle_1:0 "Mechanisiertes Landungsfahrzeug"
+amphibious_mech_vehicle_1_short:0 "MLF"
+amphibious_mech_vehicle_1_desc:0 "Dies sind umgewandelte Versionen unserer Truppentransporter, die unsere Marine bis zum Ufer oder durch Flüsse fahren lassen. Das bedeutet auch, dass sie direkt durch Sümpfe fahren können, ohne Angst haben zu müssen, stecken zu bleiben."
 
-amphibious_mech_vehicle_2:0 "Tracked Landing Vehicle"
-amphibious_mech_vehicle_2_short:0 "LVT"
-amphibious_mech_vehicle_2_desc:0 "These amphibious armoured troop transporters can carry soldiers and small vehicles, support infantry in combat and act as landing crafts all at the same time. They are a force to be reckoned with even outside of the water."
+amphibious_mech_vehicle_2:0 "Amphibisches Raupenfahrzeug"
+amphibious_mech_vehicle_2_short:0 "ARF"
+amphibious_mech_vehicle_2_desc:0 "Diese amphibischen gepanzerten Truppentransporter können Soldaten und kleine Fahrzeuge tragen, Infanterie im Kampf unterstützen und gleichzeitig als Landungsfahrzeug fungieren. Sie sind eine Kraft, mit der auch außerhalb des Wassers zu rechnen ist."
 
-light_tank_amphibious_equipment:0 "Light Amphibious Tank"
-light_tank_amphibious_equipment_desc:0 "Through a small conversation, our light tanks should be able to swim through the water for a short period of time. This means that during naval invasions, they can be deployed by transport ships in safety near shore and drive up the beach by themselves. Other than that, such ability will also be mighty useful crossing rivers and get around swamps without fear of getting stuck in the mud."
+light_tank_amphibious_equipment:0 "Leichte amphibische Panzer"
+light_tank_amphibious_equipment_desc:0 "Durch eine kleine Veränderung können unsere leichten Panzer kurz durch das Wasser schwimmen. Das bedeutet, dass während See-Invasionen unsere Panzer selber an den Strand fahren können, nach dem sie von unseren Transportern in sicherer Distanz zur Küste abgesetzt wurden. Außerdem wird diese Fähigkeit sehr nützlich sein, wenn es darum geht, große Flüsse oder Sümpfe zu überqueren, ohne dabei stekcne zu bleiben."
 
-light_tank_amphibious_equipment_1:0 "Amphibious Tank"
-light_tank_amphibious_equipment_1_short:0 "Amphibious Tank"
-light_tank_amphibious_equipment_1_desc:0 "Through a small conversation, our light tanks should be able to swim through the water for a short period of time. This means that during naval invasions, they can be deployed by transport ships in safety near shore and drive up the beach by themselves. Other than that, such ability will also be mighty useful crossing rivers and get around swamps without fear of getting stuck in the mud."
+light_tank_amphibious_equipment_1:0 "Amphibischer Panzer"
+light_tank_amphibious_equipment_1_short:0 "Amphibischer Panzer"
+light_tank_amphibious_equipment_1_desc:0 "Durch eine kleine Veränderung können unsere leichten Panzer kurz durch das Wasser schwimmen. Das bedeutet, dass während See-Invasionen unsere Panzer selber an den Strand fahren können, nach dem sie von unseren Transportern in sicherer Distanz zur Küste abgesetzt wurden. Außerdem wird diese Fähigkeit sehr nützlich sein, wenn es darum geht, große Flüsse oder Sümpfe zu überqueren, ohne dabei stekcne zu bleiben."
 
-light_tank_amphibious_equipment_2:0 "Advanced DD Tank"
-light_tank_amphibious_equipment_2_short:0 "Adv. DD Tank"
-light_tank_amphibious_equipment_2_desc:0 "Our light duplex-drive tanks can further help our marines during landing operation."
+light_tank_amphibious_equipment_2:0 "Erweiterter Amphibienpanzer"
+light_tank_amphibious_equipment_2_short:0 "Erweiterter Amphibienpanzer"
+light_tank_amphibious_equipment_2_desc:0 "Unser leichter Duplex-Antrieb in unseren erweiterten Amphibienpanzern kann unserer Marine besser bei See-Invasionen helfen."
 
-medium_tank_amphibious_equipment:0 "Medium Amphibious Tank"
+medium_tank_amphibious_equipment:0 "Mittlere amphibische Panzer"
 
-medium_tank_amphibious_equipment_1:0 "Medium Amphibious Tank"
-medium_tank_amphibious_equipment_1_short:0 "Medium DD Tank"
-medium_tank_amphibious_equipment_1_desc:0 "Using special exhaust pipes and flotation devices, our medium tanks can swim over short distances and directly support our marines during a naval assault and beyond."
+medium_tank_amphibious_equipment_1:0 "Mittlerer amphibischer Panzer"
+medium_tank_amphibious_equipment_1_short:0 "Mittlerer amphibischer Panzer"
+medium_tank_amphibious_equipment_1_desc:0 "Durch das Nutzen von speziellen Auspuffrohren und Schwimgeräten können unseren mittleren Panzer unsere Marine bei See-Invasionen unterstützen und kurze Distanzen im Wasser zurücklegen. Des weiteren können sie danach unsere Infanterie weiterhin am Boden unterstützen."
 
-medium_tank_amphibious_equipment_2:0 "Adv. M/DD Tank"
-medium_tank_amphibious_equipment_2_short:0 "Adv. M/DD Tank"
-medium_tank_amphibious_equipment_2_desc:0 "Further improvements in our flotation technology and further integration with troop transport ships lets us deploy our advanced medium tanks across water."
+medium_tank_amphibious_equipment_2:0 "Erweiterter amphibischer mittlerer Panzer"
+medium_tank_amphibious_equipment_2_short:0 "Erw. amph. mittlerer Panzer"
+medium_tank_amphibious_equipment_2_desc:0 "Weitere Verbesserungen in unserer Schwimmtechnologie und weitere Integration in Truppentransporter lässt unsere neuesten mittleren Panzer über das Wasser besser eingesetzt werden."
 
-amphibious_mech_unit:0 "Mechanised Marines"
-amphibious_mech_unit_desc:0 "Armoured infantry landing transportation."
-light_tank_amphibious_unit:0 "Amphibious Light Tanks"
-light_tank_amphibious_unit_desc:0 "Amphibious lightly armoured landing tanks."
-medium_tank_amphibious_unit:0 "Amphibious Medium Tanks"
-medium_tank_amphibious_unit_desc:0 "Medium landing tanks can do almost any job."
+amphibious_mech_unit:0 "Mechanisierte Marine"
+amphibious_mech_unit_desc:0 "Gepanzerte Infanterie Landungstransporte."
+light_tank_amphibious_unit:0 "Amphibische leichte Panzer"
+light_tank_amphibious_unit_desc:0 "Amphibische, leicht gepanzerte Landungspanzer"
+medium_tank_amphibious_unit:0 "Amphibische mittlere Panzer"
+medium_tank_amphibious_unit_desc:0 "Mittlere Landungspanzer können fast jede Aufgabe bewälitgen."
 
 USA_amphibious_mech_vehicle_1_short:0 "LVT-1 Alligator"
 USA_amphibious_mech_vehicle_2_short:0 "LVT-4 Water Buffalo"
@@ -131,84 +131,84 @@ GER_medium_tank_amphibious_equipment_1_short:0 "Tauchpanzer IV"
 GER_medium_tank_amphibious_equipment_2_short:0 "Tauchpanther"
 
 SOV_light_tank_amphibious_equipment_1_short:0 "T37A"
-SOV_light_tank_amphibious_equipment_2_short:0 "T-40 Amphibious"
+SOV_light_tank_amphibious_equipment_2_short:0 "T-40 Amphibisch"
 
-JAP_medium_tank_amphibious_equipment_1_short:0 "Type 2 Ka-Mi"
-JAP_medium_tank_amphibious_equipment_2_short:0 "Type 3 Ka-Chi"
+JAP_medium_tank_amphibious_equipment_1_short:0 "Typ 2 Ka-Mi"
+JAP_medium_tank_amphibious_equipment_2_short:0 "Typ 3 Ka-Chi"
 
 ##Airborne gliders
 
-SPECIALISED_TITLE_airborne_support:0 "AIRBORN GLIDERS"
+SPECIALISED_TITLE_airborne_support:0 "LASTENSEGLER"
 
-glider_equipment:0 "Cargo Gliders"
-glider_equipment_1:0 "Cargo Gliders"
-glider_equipment_1_desc:0 "These larger gliders can bring in proper supplies and even small vehicles along with our paratroopers."
-glider_equipment_desc:0 "These larger gliders can bring in proper supplies and even small vehicles along with our paratroopers."
+glider_equipment:0 "Gleitsegler"
+glider_equipment_1:0 "Gleitsegler"
+glider_equipment_1_desc:0 "Diese größeren Segler können vernünftig Versorgung und sogar kleine Fahrzeuge mit unseren Fallschirmspringern mitbringen."
+glider_equipment_desc:0 "Diese größeren Segler können vernünftig Versorgung und sogar kleine Fahrzeuge mit unseren Fallschirmspringern mitbringen."
 
 ENG_glider_equipment_1:0 "Hamilcar"
 USA_glider_equipment_1:0 "Waco CG-4"
 GER_glider_equipment_1:0 "Me 321"
 SOV_glider_equipment_1:0 "Ilyushin Il-32"
 
-glider_tank_equipment:0 "Glider Tank"
-glider_tank_equipment_1:0 "Glider Tank"
-glider_tank_equipment_1_short:0 "Light Glider Tank"
-glider_tank_equipment_1_desc:0 "This light tank can be deployed from accompanied large, specially build gliders."
+glider_tank_equipment:0 "Seglerpanzer"
+glider_tank_equipment_1:0 "Seglerpanzer"
+glider_tank_equipment_1_short:0 "Leichter Seglerpanzer"
+glider_tank_equipment_1_desc:0 "Dieser leichte Panzer kann von, speziell dafür angefertigten, großen Seglern abgesetzt werden."
 
 ENG_glider_tank_equipment_1_short:0 "Tetrarch"
 USA_glider_tank_equipment_1_short:0 "M22 Locust"
 
-glider_tank:0 "Glider Tank Attachment"
-glider_tank_desc:0 "This light tank company can be deployed from accompanied large, specially build gliders and support airborne troops."
+glider_tank:0 "Seglerpanzerbegleitung"
+glider_tank_desc:0 "Diese leichte Panzerkompanie kann von, speziell dafür angefertigten, großen Seglern abgesetzt werden und unsere Fallschirmspringer unterstützen."
 
-cargo_glider_technology:0 "Cargo Gliders"
-cargo_glider_technology_desc:0 "These larger and specialised gliders can bring in proper supplies and even small vehicles along with our paratroopers."
+cargo_glider_technology:0 "Lastensegler"
+cargo_glider_technology_desc:0 "Diese größeren, spezielisierten Segler können vernünftig Versorgung und sogar kleine Fahrzeuge mit unseren Fallschirmspringern mitbringen."
 
-paratrooper_glider:0 "Cargo Gliders"
-paratrooper_glider_desc:0 "These larger and special gliders can bring in proper supplies and even small vehicles along with our paratroopers."
+paratrooper_glider:0 "Lastensegler"
+paratrooper_glider_desc:0 "Diese größeren, spezielisierten Segler können vernünftig Versorgung und sogar kleine Fahrzeuge mit unseren Fallschirmspringern mitbringen."
 
-glider_technology:0 "Gliders"
-glider_technology_desc:0 "With the use of large gliders, we can land entire platoons and even vehicles behind the enemy lines."
+glider_technology:0 "Gleiter"
+glider_technology_desc:0 "Mit der Benutzung von großen Gleitseglern können wir komplette Einsatztruppen und sogar Fahrzeuge hinter der feindlichen Linie absetzen."
 
 ##Kits
 
-SPECIALISED_TITLE_kits_support:0 "SPECIALISED CLIMATE EQUIPMENT"
-kits_technology_desc:0 "This specialised equipment encompass small modifications to existing weapons and vehicles or specialised transporters for harsh climates. This equipment will improve the combat effectiveness of our troops using them."
+SPECIALISED_TITLE_kits_support:0 "SPEZIALISIERTE KLIMAAUSRÜSTUNG"
+kits_technology_desc:0 "Diese spezialisierte Ausrüstung umfasst kleine Änderungen an bestehenden Waffen und Fahrzeugen oder spezialisierten Transportern für harte Klimate. Diese Ausrüstung wird die Kampfwirkung unserer Truppen verbessern."
 
-desert_kit_1:0 "Desert Equipment"
-desert_kit_1_desc:0 "\nEquipment doesn't like sand. It's coarse and rough and irritating and it gets everywhere. With small and specialised modifications delivered to our existing vehicles and weapons, we can increase their reliability and optimise their supply usage using dedicated training and tactics for the desert climate. However, these special adaptations help little outside of deserts and actually work as a detriment when fighting in other climates.\n§YOnly available for nations that own appropriate territory!\n\n§!"
+desert_kit_1:0 "Wüstenausrüstung"
+desert_kit_1_desc:0 "\nTechnik mag keinen Sand. Er ist grob, rau und irritierend und er sammelt sich überall. Mit kleinen und spezialisierten Modifikationen, die an unsere vorhandenen Fahrzeugen und Waffen durchgeführt werden, können wir ihre Zuverlässigkeit erhöhen und ihre Versorgungsnutzung durch engagiertes Training und Taktik für das Wüstenklima optimieren. Allerdings helfen diese speziellen Anpassungen wenig außerhalb der Wüsten und arbeiten tatsächlich als Nachteil beim Kämpfen in anderen Klimazonen.\n§YNur für Nationen verfügbar, die das bestimmte Territorium besitzen!\n\n§!"
 # desert_kit1_special_desc:0 "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGives bonuses towards Movement, Breakthrough and Defence in desert environments."
 
-desert_kit2_technology:0 "Improved Desert Equipment"
-desert_kit2_technology_desc:0 "Further improvements in tactics, logistics and equipment and improvements in the elimination process for unfit troops allows our designated desert divisions to expand on their fighting capabilities in the unforgiving desert sands. \n\n§!"
-desert_kit2_special_tooltip:0 "Increases Movement, Breakthrough and Defence"
-# desert_kit2_special_desc:0 "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFurther increases the bonus towards Movement, Breakthrough and Defence in desert environments for the Desert Support Company."
+desert_kit2_technology:0 "Verbesserte Wüstenausrüstung"
+desert_kit2_technology_desc:0 "Weitere Verbesserungen in der Taktik, Logistik, Ausrüstung und Verbesserungen beim Eliminierungsprozess für untaugliche Truppen ermöglichen es uns, die ausgewiesenen Wüstenabteilungen auf ihre Kampffähigkeiten im unversöhnlichen Wüstensand auszubilden. \n\n§!"
+desert_kit2_special_tooltip:0 "Erhöht Bewegung, Durchbruch und Verteidigung"
+# desert_kit2_special_desc:0 "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nErhöht den Bonus auf Bewegung, Durchbruch und Verteidigung in Wüstenumgebungen für die Wüstenkompanie."
 
-desert_kit:0 "Desert Equipment"
+desert_kit:0 "Wüstenausrüstung"
 
-desert_support:0 "Desert Support Company"
-desert_support_desc:0 "This special support company encompasses everything a division needs to dedicate combat in desert environments. It contains specialised logistic vehicles, training and deliveries of modifications for existing weapons and vehicles."
+desert_support:0 "Wüstenkompanie"
+desert_support_desc:0 "Diese spezielle Wüstenkompanie umfasst alles, was eine Abteilung braucht, um den Kampf der Wüstenumgebung zu widmen. Es enthält spezialisierte Logistikfahrzeuge, Schulungen und Lieferungen von Modifikationen für bestehende Waffen und Fahrzeuge."
 
-jungle_kit:0 "Jungle Equipment"
+jungle_kit:0 "Dschungelausrüstung"
 
-jungle_kit_1:0 "Jungle Equipment"
-jungle_kit_1_desc:0 "\nThis equipment and special training was designed to support the unwelcoming humid climate found in jungles. Using specialised equipment and dedicated tactics appropriate for jungle warfare, troops assigned with these company while improve their capabilities while fighting in jungle terrain. However, these special adaptations help little outside of the jungle and actually work as a detriment when fighting in other climates.\n§YOnly available for nations that own appropriate territory!\n\n§!"
+jungle_kit_1:0 "Dschungelausrüstung"
+jungle_kit_1_desc:0 "\nDiese Ausrüstung und spezielle Ausbildung wurde entworfen, um das unliebsame feuchte Klima in Dschungel zu annulieren. Mit spezialisierter Ausrüstung und Taktik, geeignet für den Dschungelkrieg, können unsere Truppen im Dschungel wesentlich besser kämpfen, allerdings erweist sich diese Ausrüstung in anderen Klimata als hinderlich.\n§YNur für Nationen verfügbar, die das bestimmte Territorium besitzen!\n\n§!"
 
-jungle_kit2_technology:0 "Improved Jungle Equipment"
-jungle_kit2_technology_desc:0 "Further improvements in tactics, logistics and equipment allows our designated jungle divisions to expand on their fighting capabilities in the treacherous rain-forest.\n\n§!"
-jungle_kit2_RESEARCHED:0 "Increases Movement, Breakthrough and Defence"
+jungle_kit2_technology:0 "Verbesserte Dschungelausrüstung"
+jungle_kit2_technology_desc:0 "Weitere Verbesserungen in der Taktik, Logistik und Ausrüstung ermöglichen unseren designierten Dschungelabteilungen, ihre Kampffähigkeiten im tückischen Regenwald zu erweitern.\n\n§!"
+jungle_kit2_RESEARCHED:0 "Erhöht Bewegung, Durchbruch und Verteidigung"
 
-jungle_support:0 "Jungle Support Company"
-jungle_support_desc:0 "This special support company encompasses everything a division needs to dedicate combat in jungle environments. It contains specialised logistic vehicles, training and deliveries of modifications for existing weapons and vehicles."
+jungle_support:0 "Dschungelkompanie"
+jungle_support_desc:0 "Diese spezielle Unterstützungsabteilung umfasst alles, was eine Abteilung braucht, um den Kampf der Dschungelumgebungen zu widmen. Sie enthält spezialisierte Logistikfahrzeuge, Schulungen und Lieferungen von Modifikationen für bestehende Waffen und Fahrzeuge."
 
-winter_kit_technology:0 "Winter Equipment"
-winter_kit_technology_desc:0 "This equipment and special training was designed to help out our troops during the cold winter. This means specialised vehicles using tracks and skis being given to our logistic companies and front-line troops during winter.\n§YOnly available for nations that own appropriate territory!\n\n§!"
+winter_kit_technology:0 "Winterausrüstung"
+winter_kit_technology_desc:0 "Diese Ausrüstung und spezielle Ausbildung wurde entwickelt, um unsere Truppen während des kalten Winters zu helfen. Das bedeutet, dass im Winter spezialisierte Fahrzeuge mit Ketten und Skiern unseren Logistikunternehmen und Fronttruppen gegeben werden.\n§YNur für Nationen verfügbar, die das bestimmte Territorium besitzen!\n\n§!"
 
-winter_kit2_technology:0 "Improved Winter Equipment"
-winter_kit2_technology_desc:0 "Further improvements in tactics, logistics and equipment allows our troops to expand on their fighting capabilities in the cold winter months.\n\n§!"
+winter_kit2_technology:0 "Verbesserte Winterausrüstung"
+winter_kit2_technology_desc:0 "Weitere Verbesserungen in Taktik, Logistik und Ausrüstung ermöglichen es unseren Truppen, ihre Kampffähigkeiten in den kalten Wintermonaten zu erweitern.\n\n§!"
 
-heat_kit_technology:0 "Heat Equipment"
-heat_kit_technology_desc:0 "While the heat of the desert can be excruciating, it's the cold of the desert night that proves great difficulties for on our soldiers. Improving and sending more blankets and similar equipment will help our soldiers out. On the other hand, the jungle days and nights are both hot and humid and riddled with insects; distributing mosquito nets and insect repellent will not only stop our soldiers from constantly scratching, but also will keep many diseases at bay."
+heat_kit_technology:0 "Hitzeschutzausrüstung"
+heat_kit_technology_desc:0 "Während die Hitze der Wüste quälend sein kann, ist es die Kälte der Wüstennacht, die für unsere Soldaten große Schwierigkeiten bereitet. Das Verbessern und Versenden von mehr Decken und ähnlichen Geräten hilft unseren Soldaten aus. Auf der anderen Seite sind die Dschungeltage und -nächte heiß und feucht und mit Insekten durchsetzt; Verteilung von Moskitonetzen und Insektenschutzmittel wird nicht nur unsere Soldaten davon abhalten, sich ständig zu kratzen, sondern auch viele Krankheiten in Schach halten."
 
-heat_kit2_technology:0 "Heat Equipment II"
-heat_kit2_technology_desc:0 "Improvements in our soldier uniforms and modifications to our vehicles fuel mixtures will help them to suffer less failures.\n\n§!"
+heat_kit2_technology:0 "Verbesserte Hitzeschutzausrüstung"
+heat_kit2_technology_desc:0 "Verbesserungen an unseren Soldatenuniformen und Änderungen an unserer Fahrzeugen Kraftstoffgemische helfen ihnen, weniger Ausfälle zu erleiden.\n\n§!"
