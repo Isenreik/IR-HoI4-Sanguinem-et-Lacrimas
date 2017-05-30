@@ -1,0 +1,93 @@
+﻿l_english:
+
+CW_uses_CW_idea: "Use Chemical Weapons"
+CW_using_cw.trigger_tt: "Our military staff §Yapproached us §!about employing chemical weapons and §Ywe approved their use§!."
+CW_signatory_idea: "Signatory Geneva Protocol Reaffirmation"
+CW_signatory_idea_desc: "Is signatory of the Reaffirmation. This nation has completely ratified the treaty and will never resort to chemical weapons."
+CW_signatory_reservation_idea: "Signatory Geneva Protocol Reaffirmation with Reservations"
+CW_signatory_reservation_idea_desc: "Is a signatory of the Reaffirmation with a submitted reservation; the nation's reservation includes that the obligations of the treaty only apply to other parties that ratified the Reaffirmation. In essence this nation will only hold itself to the treaty if the opposing party does so, too."
+CW_protocol_enforcer_idea: "Guarantees Geneva Protocol Enforcement"
+CW_protocol_enforcer_idea_desc: "Is guaranteeing that the Geneva Protocol will be upheld and will intervene if a nation decides to employ chemical weapons against a signatory."
+CW_protocol_exception: "Geneva Protocol Exception"
+
+CW_hesitation_flag: "Hesitation to use chemical weapons"
+CW_signatory_idea_flag: "Signatory of Geneva Protocol Reaffirmation"
+CW_signatory_reservation_idea_flag: "Signatory of Geneva Protocol Reaffirmation with Reservations"
+CW_protocol_exception_flag: "Geneva Protocol Exception"
+CW_using_cw_flag: "Use Chemical Weapons"
+
+CW_used_against_us: "Used chemical weapons against us"
+CW_reprimanded: "Reprimanded for using chemical weapon"
+
+chem_convention.1.t: "Military Staff Suggests Chemical Warfare"
+chem_convention.1.desc: "Our generals and military staff have contemplated to activate our chemical weapon stockpiles. The world has seen what horror these weapons have inflicted upon the world when they were used during the great war, and thus a sizable faction within our army staff raises objection to the use of such weapons.\n\nIf we decide to employ chemical weapons against our enemies in an offensive manner, we won't be able to keep a secret for very long and some more liberal elements of the international community might denounce our us, while some nations might simply not care.\n\nWhile we might be able to evade the ire of other nations, or decide to simply not care, activating our chemical weapons could be a decisive boon for our troops. But we have to keep in mind such action will destabilise the balance of terror between our nations and our rival."
+chem_convention.1.a: "Let's not make hasty decisions."
+chem_convention.1.a.tt: "Continue the status-quo and let us §Ydecide at a later point§!.\n"
+chem_convention.1.b: "We have to use them before someone else uses them on us."
+chem_convention.1.b.tt: "§YWe approve§! the potential use of chemical weapons.\n"
+chem_convention.1.c: "Chemical Warfare is a monster; let us slay it once and for all!"
+chem_convention.1.d: "To even suggest such actions is troubling."
+chem_convention.1.d.tt: "Unless you're being attacked, you will §Ynot be bothered again§!.\n"
+chem_convention.1.e: "We are not the only one using chemical weapons!"
+
+chem_convention.2.t: "[From.GetName] Plans On Using Chemical Weapons"
+chem_convention.2.desc: "It has come to our attention that [From.GetNameDef] has activated their chemical stockpile and plans on using it against their enemies.\n\nWe could denounce them and show our disdain for their use of such horrific weapons. Alternatively we could also stay out of this; should we really care about what other sovereigns are doing?"
+chem_convention.2.a: "We do not care what [From.GetLeader] is doing."
+chem_convention.2.b: "How dare they!"
+chem_convention.2.c: "We have to put an end to this."
+
+chem_convention.3.t: "Seeking Support of a Major Nation"
+chem_convention.3.desc: "While we have a voice in the international community, it would be foolish to claim our voice has the same weight as one of the more powerful nations. We can stomp our feet and demand people to listen, but it many others might simply scoff and continue whatever they are doing.\n\nHowever, if we could get one of the more powerful and influential nations on our side to back our cause, other will have to listen."
+chem_convention.3.a: "We will ask the Allies."
+chem_convention.3.b: "We will ask the Communists."
+chem_convention.3.c: "We will ask the Fascists."
+chem_convention.3.d: "There is no one left to ask."
+
+chem_convention.4.t: "[From.GetNameDef] Asking For Our Support"
+chem_convention.4.desc: "[From.GetName] has raised concerns about nations employing chemical weapons. They are seeking the support and backing of a major nation in an attempt to get the sovereigns of this world to the table and agree on a ban on chemical weapon usage.\n\nIn 1925 the nations got together and many agreed on the Geneva Protocol; an international agreement and understanding that chemical weapons should never be used again. But clearly, in recent years previous conventions have either been overthrown or ignored, and [From.GetName] wants the nations of this earth to remember what they agreed on a decade ago."
+chem_convention.4.a: "We will help [From.GetLeader]."
+chem_convention.4.b: "We will not help them."
+
+chem_convention.5.t: "No Help From Major Country"
+chem_convention.5.desc: "No major nation decided to support our cause. We fear that our calls for reconciliation and reaffirmation for the 1925 Geneva Protocol have fallen on deaf ears."
+chem_convention.5.a: "Those fools might have just doomed the world."
+
+chem_convention.6.t: "Convention To Reaffirm Geneva Protocol"
+chem_convention.6.desc: "More than a decade after the 1925 Geneva Conference for the Supervision of the International Traffic in Arms, nations from across the world have gathered on the behalf of [CW_convention_holder.GetNameDef] to once again discuss the Geneva Protocol.\n\nWhile it is generally understood that chemical weapons are pure weapons of torment, there are those that still believe that treaties and rules do not apply to them. [CW_convention_holder.GetNameDef] believes that coming together will show once and for all which countries are ready to be part of the international community and work within its rules, and which countries believe they are above this." #\n\nIf everything goes well, some of the more powerful nations might even be convinced to throw their full support behind this new agreement and decide to help enforce the Geneva Protocol.
+chem_convention.6.a: "This is a most interesting development."
+
+chem_convention.7.t: "Convention To Reaffirm Geneva Protocol"
+chem_convention.7.desc: "The Second Geneva Conference on the Supervision of the International Traffic in Arms has been convened by [CW_convention_holder.GetNameDef]. After many debates on the floor, our diplomats approach us wit three options:\n\nWe show the world our commitment and fully sign the treaty and pledge to never use chemical weapons, no matter the circumstances.\nAlternatively we can decide to sign the treaty, but hand in a reservation stating that if a nation decide to use chemical weapons against us first, we keep the right to retaliate with our own chemical weapons.\nLastly we can of course decide to abstain and refuse to sign this unenforceable piece of paper."
+chem_convention.7.a: "Sign."
+chem_convention.7.a.tt: "We will be a full signatory and pledge to §Ynever use chemical weapons§!, no matter the situation.\n"
+chem_convention.7.b: "Sign with reservation."
+chem_convention.7.b.tt: "We will reaffirm our pledge to not employ chemical weapons, §Yunless we are attacked with them§!.\n"
+chem_convention.7.c: "Refuse to sign."
+
+chem_convention.8.t: "Enforce the Geneva Protocol"
+chem_convention.8.desc: "One of the many shortcomings of international treaties is the difficulty to enforce them. As some nations in the recent past have demonstrated, a rule is only as powerful as the punishment that can follow if broken.\n\nSome nations have looked at our country and raised the suggestion if we could not put our weight behind this in the name of international peace.\n\nIf we decide to fully back this treaty with our military might, we will need to intervene if a country decides to employ chemical weapons against a signatory country."
+chem_convention.8.a: "A treaty without enforcement is powerless"
+chem_convention.8.a.tt: "We will be asked to §Yintervene§! if a non-signatory uses Chemical Weapons against a signatory.\n"
+chem_convention.8.b: "We will not fight in other nations' wars "
+
+chem_convention.9.t: "Enforce the Geneva Protocol"
+chem_convention.9.desc: "It has come to our attention that that [CW_temp_aggressor.GetName] is using chemical weapons against [CW_temp_victim.GetName].\n\nWe pledged to enforce the Geneva Protocol; the world is looking at us to keep our promise."
+chem_convention.9.a: "We will uphold our guarantee to the world!"
+chem_convention.9.b: "We will not fight in other nations' wars"
+
+chem_convention.10.t: "Call for Second Geneva Protocol Conference"
+chem_convention.10.desc: "We believe that the world has to come together to once and for all show their support against the use of chemical weapons.\n\nEvery sovereign nation has been invited to join the Second Geneva Conference on the Supervision of the International Traffic in Arms."
+chem_convention.10.a: "Let us bring the nations of the world together"
+
+chem_convention.11.t: "[CW_temp_enemy_chemuser.GetName] is using Chemical Weapons against us"
+chem_convention.11.desc: "In our war against [CW_temp_enemy_chemuser.GetNameDef], [CW_temp_enemy_chemuser.GetLeader] decided to use chemical weapons against our troops.\n\nWhen we decided to sign the Geneva Protocol Reaffirmation, we handed in a reservation stating that we keep the right to employ chemical weapons if our enemies are using them against us. This situation has arise, raising with it the question if we shall now answer their heinous attacks with our own chemical weapons."
+chem_convention.11.a: "We have to retaliate to chemical weapons being used against us!"
+chem_convention.11.a.tt: "For three years, we will be able to employ chemical weapons without breaking our obligations\n"
+chem_convention.11.b: "Let us be the greater man."
+
+
+chem_convention.removed_hesitation: "Plans on using chemical weapons"
+CW_refused_support: "Refused to support our proposal"
+CW_offered_support: "Offered to support our proposal"
+
+chem_convention.signed: "Signed reaffirmation to Geneva Protocol"
