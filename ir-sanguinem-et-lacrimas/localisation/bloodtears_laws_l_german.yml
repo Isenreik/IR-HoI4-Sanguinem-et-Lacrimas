@@ -1,11 +1,11 @@
-﻿l_english:
+l_german:
 
-bureau_laws: "Bureaus"
-bureau_chem_laws: "Chemical Weapon Employment"
-CW_using_cw: "Employ CW"
-CW_using_cw.tt: "Our troops are allowed to use Chemical Weapons in battle.\n"
-CW_using_cw.TT_signed_exception: "We Signed with Reservation and those Reservations are in effect."
-CW_not_using_cw: "Don't Employ CW"
-CW_not_using_cw.tt: "Our troops are not allowed to use Chemical Weapons in battle.\n"
+bureau_laws: "Ämter"
+bureau_chem_advisors: "Chemische Kampfmittelnutzung"
+CW_using_cw: "Benutze CK"
+CW_using_cw.tt: "Unsere Truppen dürfen chemische Kampfmittel im Kampf benutzen.\n"
+CW_using_cw.TT_signed_exception: "Wir unterschrieben mit Reservierung und diese Reservierungen sind in Kraft."
+CW_not_using_cw: "Benutze keine CK"
+CW_not_using_cw.tt: "Unsere Truppen dürfen keine chemische Kampfmittel im Kampf benutzen.\n"
 
-chem_convention.enforced: "Pledged to enforce Geneva Protocol"
+chem_convention.enforced: "Verpflichtet, das Genfer Protokoll zu erzwingen"
