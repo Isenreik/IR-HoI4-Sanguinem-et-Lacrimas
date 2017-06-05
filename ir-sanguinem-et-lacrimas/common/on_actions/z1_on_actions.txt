@@ -8,6 +8,10 @@ on_actions = {
 
   on_startup = {
 		effect = {
+
+      set_global_flag = has_sanglac
+      set_global_flag = has_sanglac_1.5
+
       every_country = {
         set_country_flag = cw_hesitation_flag
         set_country_flag = can_prospect
