@@ -1,6 +1,8 @@
 equipments = {
 
 	support_equipment = {
+			year = 1918
+			is_convertable = yes
 		is_archetype = yes
 		picture = archetype_support_equipment
 		is_buildable = no
@@ -30,6 +32,7 @@ equipments = {
 	}
 
 	support_equipment_1 = {
+			year = 1918
 		archetype = support_equipment
 		priority = 20
 	}

@@ -1,7 +1,9 @@
 equipments = {
 
 	mechanized_equipment = {
+			year = 1936
 		is_archetype = yes
+		is_convertable = yes
 		picture = archetype_motorized_equipment
 		is_buildable = no
 		type = {
@@ -46,13 +48,24 @@ equipments = {
 
 	# ~1941
 	mechanized_equipment_1 = {
+			year = 1941
 		archetype = mechanized_equipment
 		priority = 40
 		visual_level = 0
+
+		can_convert_from = {
+				medium_tank_equipment_1
+		}
 	}
 
 	# ~1943
 	mechanized_equipment_2 = {
+			year = 1943
+
+			can_convert_from = {
+					medium_tank_equipment_2
+			}
+
 		archetype = mechanized_equipment
 		parent = mechanized_equipment_1
 		priority = 40
@@ -79,6 +92,7 @@ equipments = {
 
 	# ~1945
 	mechanized_equipment_3 = {
+			year = 1943
 		archetype = mechanized_equipment
 		parent = mechanized_equipment_2
 		priority = 40
@@ -106,6 +120,7 @@ equipments = {
 	## added
 	# ~1950
 	mechanized_equipment_4 = {
+				year = 1950
 		archetype = mechanized_equipment
 		parent = mechanized_equipment_3
 		priority = 40
@@ -131,6 +146,7 @@ equipments = {
 	}
 	# ~1958
 	mechanized_equipment_5 = {
+				year = 1958
 		archetype = mechanized_equipment
 		parent = mechanized_equipment_4
 		priority = 40
@@ -157,6 +173,7 @@ equipments = {
 
 	## heavy
 	mechanized_heavy_equipment = {
+			year = 1947
 		is_archetype = yes
 		picture = archetype_motorized_equipment
 		is_buildable = no
@@ -201,12 +218,14 @@ equipments = {
 	}
 	# ~1947
 	mechanized_heavy_equipment_1 = {
+			year = 1947
 		archetype = mechanized_heavy_equipment
 		priority = 40
 		visual_level = 2
 	}
 	# ~1958
 	mechanized_heavy_equipment_2 = {
+			year = 1958
 		archetype = mechanized_heavy_equipment
 		parent = mechanized_heavy_equipment_1
 		priority = 40

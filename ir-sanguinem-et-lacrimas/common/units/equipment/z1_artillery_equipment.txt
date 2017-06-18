@@ -1,32 +1,35 @@
 equipments = {
 
-railway_artillery_equipment = {
-  is_archetype = yes
-  picture = archetype_railway_artillery_equipment
+  railway_artillery_equipment = {
+    year = 1939
 
-  type = {
-    artillery
-    infantry
+    is_archetype = yes
+    picture = archetype_railway_artillery_equipment
+
+    type = {
+      artillery
+      infantry
+    }
+
+    upgrades = {
+      general_reliability_upgrade
+      arty_gun_upgrade
+      general_cost_upgrade
+    }
+
+    group_by = archetype
+
+    interface_category = interface_category_land
+
+    #Misc Abilities
+    reliability = 0.7
+
+    #Space taken in convoy
+    lend_lease_cost = 20
   }
-
-  upgrades = {
-    general_reliability_upgrade
-    arty_gun_upgrade
-    general_cost_upgrade
-  }
-
-  group_by = archetype
-
-  interface_category = interface_category_land
-
-  #Misc Abilities
-  reliability = 0.7
-
-  #Space taken in convoy
-  lend_lease_cost = 20
-}
 
 	railway_artillery_equipment_1 = {
+    year = 1939
 		archetype = railway_artillery_equipment
 		priority = 10
 		visual_level = 1
@@ -53,6 +56,8 @@ railway_artillery_equipment = {
 	}
 
   guided_aa_equipment = {
+    year = 1947
+
     is_archetype = yes
     picture = archetype_anti_air_equipment
     type = {
@@ -98,12 +103,16 @@ railway_artillery_equipment = {
   }
 
   guided_aa_equipment_1 = {
+    year = 1947
+
     archetype = guided_aa_equipment
     priority = 80
     visual_level = 2
   }
 
   guided_aa_equipment_2 = {
+    year = 1951
+
     parent = guided_aa_equipment_1
     archetype = guided_aa_equipment
     priority = 80

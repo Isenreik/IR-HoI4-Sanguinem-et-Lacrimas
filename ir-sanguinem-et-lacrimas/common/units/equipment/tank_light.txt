@@ -3,6 +3,8 @@
 equipments = {
 
 	light_tank_equipment = {
+			year = 1934
+			is_convertable = yes
 		is_archetype = yes
 		is_buildable = no
 		picture = archetype_light_tank_equipment
@@ -47,6 +49,8 @@ equipments = {
 
 	# WW1 tank
 	gw_tank_equipment = {
+			year = 1914
+			is_convertable = yes
 		archetype = light_tank_equipment
 		priority = 5
 		visual_level = 0
@@ -73,6 +77,8 @@ equipments = {
 	}
 
 	light_tank_equipment_1 = {
+			year = 1934
+			is_convertable = yes
 		archetype = light_tank_equipment
 		parent = gw_tank_equipment
 		priority = 10
@@ -80,6 +86,8 @@ equipments = {
 	}
 
 	light_tank_equipment_2 = {
+			year = 1936
+			is_convertable = yes
 		archetype = light_tank_equipment
 		parent = light_tank_equipment_1
 		priority = 10
@@ -107,6 +115,8 @@ equipments = {
 	}
 
 	light_tank_equipment_3 = {
+			year = 1941
+			is_convertable = yes
 		archetype = light_tank_equipment
 		parent = light_tank_equipment_2
 		priority = 10
@@ -134,6 +144,8 @@ equipments = {
 	}
 
 	light_tank_artillery_equipment = {
+			year = 1934
+			is_convertable = yes
 		is_archetype = yes
 		picture = archetype_light_tank_equipment
 		is_buildable = no
@@ -179,6 +191,7 @@ equipments = {
 	}
 
 	light_tank_artillery_equipment_1 = {
+			year = 1934
 		archetype = light_tank_artillery_equipment
 		family = light_tank_equipment_1
 		priority = 20
@@ -187,6 +200,7 @@ equipments = {
 	}
 
 	light_tank_artillery_equipment_2 = {
+			year = 1936
 		archetype = light_tank_artillery_equipment
 		parent = light_tank_artillery_equipment_1
 		family = light_tank_equipment_2
@@ -214,6 +228,7 @@ equipments = {
 	}
 
 	light_tank_artillery_equipment_3 = {
+			year = 1941
 		archetype = light_tank_artillery_equipment
 		parent = light_tank_artillery_equipment_2
 		family = light_tank_equipment_3
@@ -242,6 +257,7 @@ equipments = {
 	}
 
 	light_tank_destroyer_equipment = {
+			year = 1934
 		is_archetype = yes
 		picture = archetype_light_tank_equipment
 		is_buildable = no
@@ -287,6 +303,7 @@ equipments = {
 	}
 
 	light_tank_destroyer_equipment_1 = {
+			year = 1934
 		archetype = light_tank_destroyer_equipment
 		family = light_tank_equipment_1
 		priority = 40
@@ -294,6 +311,7 @@ equipments = {
 	}
 
 	light_tank_destroyer_equipment_2 = {
+			year = 1936
 		archetype = light_tank_destroyer_equipment
 		parent = light_tank_destroyer_equipment_1
 		family = light_tank_equipment_2
@@ -323,6 +341,7 @@ equipments = {
 	}
 
 	light_tank_destroyer_equipment_3 = {
+			year = 1941
 		archetype = light_tank_destroyer_equipment
 		parent = light_tank_destroyer_equipment_2
 		family = light_tank_equipment_3
@@ -352,6 +371,7 @@ equipments = {
 
 
 	light_tank_aa_equipment = {
+			year = 1934
 		is_archetype = yes
 		picture = archetype_light_tank_equipment
 		is_buildable = no
@@ -396,6 +416,8 @@ equipments = {
 	}
 
 	light_tank_aa_equipment_1 = {
+			year = 1934
+
 		archetype = light_tank_aa_equipment
 		family = light_tank_equipment_1
 		priority = 30
@@ -404,6 +426,8 @@ equipments = {
 	}
 
 	light_tank_aa_equipment_2 = {
+		year = 1936
+
 		archetype = light_tank_aa_equipment
 		parent = light_tank_aa_equipment_1
 		family = light_tank_equipment_2
@@ -432,6 +456,8 @@ equipments = {
 	}
 
 	light_tank_aa_equipment_3 = {
+		year = 1941
+
 		archetype = light_tank_aa_equipment
 		parent = light_tank_aa_equipment_2
 		family = light_tank_equipment_3
@@ -463,6 +489,8 @@ equipments = {
 	### added
 
 	light_tank_equipment_4 = {
+		year = 1943
+
 		archetype = light_tank_equipment
 		parent = light_tank_equipment_3
 		priority = 10
@@ -490,6 +518,8 @@ equipments = {
 	}
 
 	light_tank_equipment_5 = {
+		year = 1947
+
 		archetype = light_tank_equipment
 		parent = light_tank_equipment_4
 		priority = 10
@@ -517,6 +547,8 @@ equipments = {
 	}
 
 	light_tank_artillery_equipment_4 = {
+		year = 1943
+
 		archetype = light_tank_artillery_equipment
 		parent = light_tank_artillery_equipment_3
 		family = light_tank_equipment_4
@@ -545,6 +577,8 @@ equipments = {
 	}
 
 	light_tank_artillery_equipment_5 = {
+		year = 1947
+
 		archetype = light_tank_artillery_equipment
 		parent = light_tank_artillery_equipment_4
 		family = light_tank_equipment_5
@@ -573,6 +607,8 @@ equipments = {
 	}
 
 	light_tank_destroyer_equipment_4 = {
+		year = 1943
+
 		archetype = light_tank_destroyer_equipment
 		parent = light_tank_destroyer_equipment_3
 		family = light_tank_equipment_4
@@ -601,6 +637,8 @@ equipments = {
 	}
 
 	light_tank_destroyer_equipment_5 = {
+		year = 1947
+
 		archetype = light_tank_destroyer_equipment
 		parent = light_tank_destroyer_equipment_4
 		family = light_tank_equipment_5
@@ -629,6 +667,8 @@ equipments = {
 	}
 
 	light_tank_aa_equipment_4 = {
+		year = 1943
+
 		archetype = light_tank_aa_equipment
 		parent = light_tank_aa_equipment_3
 		family = light_tank_equipment_4
@@ -657,6 +697,8 @@ equipments = {
 	}
 
 	light_tank_aa_equipment_5 = {
+		year = 1947
+
 		archetype = light_tank_aa_equipment
 		parent = light_tank_aa_equipment_4
 		family = light_tank_equipment_5
