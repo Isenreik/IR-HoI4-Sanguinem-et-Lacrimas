@@ -94,6 +94,10 @@ technologies = {
 			leads_to_tech = naval_production1
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = improved_equipment_conversion
+			research_cost_coeff = 1
+		}
 
 		research_cost = 1.5
 		start_year = 1937
@@ -319,9 +323,83 @@ technologies = {
 		}
 	}
 
+	#Conversion branch - Enabled in DoD
+	improved_equipment_conversion = {
+
+		equipment_conversion_speed = 0.40
+
+		allow_branch = {
+			has_dlc = "Death or Dishonor"
+		}
+
+		path = {
+			leads_to_tech = advanced_equipment_conversion
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1937
+
+		folder = {
+			name = industry_folder
+			position = { x = -2 y = 4 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 0
+				NOT = { has_government = fascism }
+			}
+		}
+
+		categories = {
+			industry
+		}
+	}
+
+	advanced_equipment_conversion = {
+
+		equipment_conversion_speed = 0.40
+
+		research_cost = 1.5
+		start_year = 1939
+
+		folder = {
+			name = industry_folder
+			position = { x = -2 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 0
+				NOT = { has_government = fascism }
+			}
+		}
+
+		categories = {
+			industry
+		}
+	}
+
+	###############
 	concentrated_industry = {
 
-		industrial_capacity_factory = 0.2
+		industrial_capacity_factory = 0.15
+		industrial_capacity_dockyard = 0.1
 		global_building_slots_factor = 0.20
 
 		path = {
@@ -341,7 +419,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 4
+			factor = 25
 
 			modifier = {
 				factor = 2
@@ -375,16 +453,6 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "1936.1.3"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1936.1.6"
-			}
-
-			modifier = {
-				factor = 5
 				date > "1937.1.1"
 			}
 		}
@@ -400,7 +468,8 @@ technologies = {
 
 	concentrated_industry2 = {
 
-		industrial_capacity_factory = 0.2
+		industrial_capacity_factory = 0.15
+		industrial_capacity_dockyard = 0.1
 		global_building_slots_factor = 0.20
 
 		path = {
@@ -417,22 +486,13 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 4
+			factor = 20
 
 			modifier = {
-				factor = 5
-				date > "1936.1.9"
-			}
-
-			modifier = {
-				factor = 5
+				factor = 10
 				date > "1937.1.1"
 			}
 
-			modifier = {
-				factor = 5
-				date > "1937.1.6"
-			}
 		}
 
 		categories = {
@@ -446,7 +506,8 @@ technologies = {
 
 	concentrated_industry3 = {
 
-		industrial_capacity_factory = 0.2
+		industrial_capacity_factory = 0.15
+		industrial_capacity_dockyard = 0.1
 		global_building_slots_factor = 0.20
 
 		path = {
@@ -463,21 +524,11 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 4
+			factor = 20
 
 			modifier = {
-				factor = 5
-				date > "1938.1.9"
-			}
-
-			modifier = {
-				factor = 5
+				factor = 10
 				date > "1939.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1939.1.6"
 			}
 		}
 
@@ -492,7 +543,8 @@ technologies = {
 
 	concentrated_industry4 = {
 
-		industrial_capacity_factory = 0.2
+		industrial_capacity_factory = 0.15
+		industrial_capacity_dockyard = 0.1
 		global_building_slots_factor = 0.20
 
 		path = {
@@ -509,21 +561,11 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 4
+			factor = 20
 
 			modifier = {
-				factor = 5
-				date > "1940.1.9"
-			}
-
-			modifier = {
-				factor = 5
+				factor = 10
 				date > "1941.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1941.1.6"
 			}
 		}
 
@@ -538,7 +580,8 @@ technologies = {
 
 	concentrated_industry5 = {
 
-		industrial_capacity_factory = 0.2
+		industrial_capacity_factory = 0.15
+		industrial_capacity_dockyard = 0.1
 		global_building_slots_factor = 0.20
 
 		research_cost = 2
@@ -563,13 +606,8 @@ technologies = {
 			}
 
 			modifier = {
-				factor = 5
+				factor = 20
 				date > "1943.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1943.1.6"
 			}
 		}
 
@@ -585,8 +623,10 @@ technologies = {
 	dispersed_industry = {
 
 		industrial_capacity_factory = 0.1
+		industrial_capacity_dockyard = 0.1
 		line_change_production_efficiency_factor = 0.1
 		production_factory_start_efficiency_factor = 0.05
+		equipment_conversion_speed = 0.20
 		industry_air_damage_factor = -0.1
 		global_building_slots_factor = 0.2
 
@@ -607,7 +647,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
+			factor = 25
 
 			modifier = {
 				factor = 2
@@ -641,16 +681,6 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "1936.1.3"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1936.1.6"
-			}
-
-			modifier = {
-				factor = 5
 				date > "1937.1.1"
 			}
 		}
@@ -667,6 +697,7 @@ technologies = {
 	dispersed_industry2 = {
 
 		industrial_capacity_factory = 0.1
+		industrial_capacity_dockyard = 0.1
 		line_change_production_efficiency_factor = 0.1
 		production_factory_start_efficiency_factor = 0.05
 		industry_air_damage_factor = -0.1
@@ -686,21 +717,11 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 4
+			factor = 20
 
 			modifier = {
-				factor = 5
-				date > "1936.1.9"
-			}
-
-			modifier = {
-				factor = 5
+				factor = 10
 				date > "1937.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1937.1.6"
 			}
 		}
 
@@ -716,6 +737,7 @@ technologies = {
 	dispersed_industry3 = {
 
 		industrial_capacity_factory = 0.1
+		industrial_capacity_dockyard = 0.1
 		line_change_production_efficiency_factor = 0.1
 		production_factory_start_efficiency_factor = 0.05
 		industry_air_damage_factor = -0.1
@@ -735,21 +757,11 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 4
+			factor = 20
 
 			modifier = {
-				factor = 5
-				date > "1938.1.9"
-			}
-
-			modifier = {
-				factor = 5
+				factor = 10
 				date > "1939.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1939.1.6"
 			}
 		}
 
@@ -765,6 +777,7 @@ technologies = {
 	dispersed_industry4 = {
 
 		industrial_capacity_factory = 0.1
+		industrial_capacity_dockyard = 0.1
 		line_change_production_efficiency_factor = 0.1
 		production_factory_start_efficiency_factor = 0.05
 		industry_air_damage_factor = -0.1
@@ -784,21 +797,11 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 4
+			factor = 20
 
 			modifier = {
-				factor = 5
-				date > "1940.1.9"
-			}
-
-			modifier = {
-				factor = 5
+				factor = 10
 				date > "1941.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1941.1.6"
 			}
 		}
 
@@ -814,11 +817,11 @@ technologies = {
 	dispersed_industry5 = {
 
 		industrial_capacity_factory = 0.1
+		industrial_capacity_dockyard = 0.1
 		line_change_production_efficiency_factor = 0.1
 		production_factory_start_efficiency_factor = 0.05
 		industry_air_damage_factor = -0.1
 		global_building_slots_factor = 0.2
-
 
 		research_cost = 2
 		start_year = 1943
@@ -834,21 +837,12 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 4
+			factor = 20
+
 
 			modifier = {
-				factor = 5
-				date > "1942.1.9"
-			}
-
-			modifier = {
-				factor = 5
+				factor = 10
 				date > "1943.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1943.1.6"
 			}
 		}
 
@@ -1050,6 +1044,7 @@ technologies = {
 	construction1 = {
 
 		production_speed_buildings_factor = 0.10
+		industry_repair_factor = 0.10
 
 		path = {
 			leads_to_tech = construction2
@@ -1144,6 +1139,7 @@ technologies = {
 	construction2 = {
 
 		production_speed_buildings_factor = 0.10
+		industry_repair_factor = 0.10
 
 		path = {
 			leads_to_tech = construction3
@@ -1239,7 +1235,8 @@ technologies = {
 
 	construction3 = {
 
-		industry_repair_factor = 0.5
+		production_speed_buildings_factor = 0.10
+		industry_repair_factor = 0.10
 
 		path = {
 			leads_to_tech = construction4
@@ -1347,6 +1344,7 @@ technologies = {
 	construction4 = {
 
 		production_speed_buildings_factor = 0.10
+		industry_repair_factor = 0.10
 
 		path = {
 			leads_to_tech = construction5
@@ -1442,6 +1440,7 @@ technologies = {
 	construction5 = {
 
 		production_speed_buildings_factor = 0.10
+		industry_repair_factor = 0.10
 
 		path = {
 			leads_to_tech = excavation5
@@ -1665,6 +1664,7 @@ technologies = {
 	construction6 = {
 
 		production_speed_buildings_factor = 0.10
+		industry_repair_factor = 0.10
 
 		path = {
 			leads_to_tech = excavation6
@@ -1783,7 +1783,8 @@ technologies = {
 
 	construction7 = {
 
-		industry_repair_factor = 0.5
+		production_speed_buildings_factor = 0.10
+		industry_repair_factor = 0.10
 
 		path = {
 			leads_to_tech = construction8
@@ -1902,6 +1903,7 @@ technologies = {
 	construction8 = {
 
 		production_speed_buildings_factor = 0.10
+		industry_repair_factor = 0.10
 
 		path = {
 			leads_to_tech = construction9
@@ -2019,6 +2021,7 @@ technologies = {
 	construction9 = {
 
 		production_speed_buildings_factor = 0.10
+		industry_repair_factor = 0.10
 
 		path = {
 			leads_to_tech = construction10
@@ -2136,6 +2139,7 @@ technologies = {
 	construction10 = {
 
 		production_speed_buildings_factor = 0.10
+		industry_repair_factor = 0.10
 
 		path = {
 			leads_to_tech = excavation10
@@ -2677,11 +2681,11 @@ technologies = {
 	dispersed_industry6 = {
 
 		industrial_capacity_factory = 0.1
+		industrial_capacity_dockyard = 0.1
 		line_change_production_efficiency_factor = 0.1
 		production_factory_start_efficiency_factor = 0.05
 		industry_air_damage_factor = -0.1
 		global_building_slots_factor = 0.2
-
 
 		research_cost = 2
 		start_year = 1945
