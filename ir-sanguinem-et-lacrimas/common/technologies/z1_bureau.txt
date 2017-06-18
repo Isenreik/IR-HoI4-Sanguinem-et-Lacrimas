@@ -15,6 +15,7 @@ technologies = {
   officers_tech1 = {
 
     military_leader_cost_factor = -0.25
+    political_advisor_cost_factor = -0.05
 
     path = {
       leads_to_tech = flight_officers_tech1
@@ -284,6 +285,7 @@ technologies = {
 @press_right1     =  1
 @press_right2     =  3
 @press_right3     =  5
+@press_right4     =  7
 
   press_tech1 = {
 
@@ -303,6 +305,10 @@ technologies = {
     }
     path = {
       leads_to_tech = press_mobilisation1
+      research_cost_coeff = 1
+    }
+    path = {
+      leads_to_tech = press_global_diplomacy
       research_cost_coeff = 1
     }
     path = {
@@ -523,9 +529,59 @@ technologies = {
     doctrine = yes
     research_cost = 2
 
+    path = {
+      leads_to_tech = press_mobilisation3
+      research_cost_coeff = 1
+    }
+
     folder = {
       name = bureau_folder
       position = { x = @press_right2 y = 4 }
+    }
+
+    categories = {
+      bureau_tech
+      industry
+    }
+
+    ai_will_do = {
+      factor = 2
+    }
+  }
+
+  press_mobilisation3 = {
+
+		non_core_manpower = 0.10
+
+    doctrine = yes
+    research_cost = 2
+
+    folder = {
+      name = bureau_folder
+      position = { x = @press_right2 y = 6 }
+    }
+
+    categories = {
+      bureau_tech
+      industry
+    }
+
+    ai_will_do = {
+      factor = 2
+    }
+  }
+
+  press_global_diplomacy = {
+
+	  autonomy_gain_global_factor = 0.10
+    guarantee_cost = -0.15
+
+    doctrine = yes
+    research_cost = 2
+
+    folder = {
+      name = bureau_folder
+      position = { x = @press_right3 y = 2 }
     }
 
     categories = {
@@ -552,7 +608,7 @@ technologies = {
 
     folder = {
       name = bureau_folder
-      position = { x = @press_right3 y = 2 }
+      position = { x = @press_right4 y = 2 }
     }
 
     categories = {
@@ -576,7 +632,7 @@ technologies = {
 
     folder = {
       name = bureau_folder
-      position = { x = @press_right3 y = 4 }
+      position = { x = @press_right4 y = 4 }
     }
 
     categories = {
