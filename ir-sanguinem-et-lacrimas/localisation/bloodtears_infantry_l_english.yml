@@ -70,6 +70,7 @@ modern_infantry_weapons2: "Improved Infantery Equipment IV"
 modern_infantry_weapons2_desc: "Needs to be written"
 
 extra_heavy_weapon_support: "Additional Heavy Weapons"
+extra_heavy_weapon_support_desc: "Deploy additional heavy support weapons such as heavy machine guns and mortars."
 extra_heavy_weapons_equipment_desc: "Deploy additional heavy support weapons such as heavy machine guns and mortars."
 
 heavy_weapons_equipment: "Heavy Support Weapons"

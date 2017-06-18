@@ -1,6 +1,8 @@
 equipments = {
 
 	amphibious_mech_vehicle = {
+		year = 1940
+
 		is_archetype = yes
 		picture = archetype_motorized_equipment
 		is_buildable = no
@@ -45,12 +47,24 @@ equipments = {
 	}
 
   amphibious_mech_vehicle_1 = {
+		year = 1940
+
 		archetype = amphibious_mech_vehicle
 		priority = 40
 		visual_level = 0
+
+		can_convert_from = {
+			mechanized_equipment_1
+		}
 	}
 
   amphibious_mech_vehicle_2 = {
+		year = 1943
+
+		can_convert_from = {
+			mechanized_equipment_2
+		}
+
     archetype = amphibious_mech_vehicle
     parent = amphibious_mech_vehicle_1
     priority = 40
@@ -83,6 +97,8 @@ equipments = {
   ## Amphibious Light tank
 
   light_tank_amphibious_equipment = {
+		year = 1942
+
 		is_archetype = yes
 		picture = archetype_light_tank_equipment
 		is_buildable = no
@@ -127,14 +143,22 @@ equipments = {
 	}
 
 	light_tank_amphibious_equipment_1 = {
+		year = 1943
 		archetype = light_tank_amphibious_equipment
 
 		priority = 20
 		visual_level = 1
 
+		can_convert_from = {
+			light_tank_equipment_2
+		}
 	}
 
 	light_tank_amphibious_equipment_2 = {
+		can_convert_from = {
+			light_tank_equipment_3
+		}
+
 		archetype = light_tank_amphibious_equipment
 		parent = light_tank_amphibious_equipment_1
 
@@ -168,6 +192,7 @@ equipments = {
   ## Medium
 
     medium_tank_amphibious_equipment = {
+				year = 1943
 
         is_archetype = yes
         picture = archetype_medium_tank_equipment
@@ -213,15 +238,25 @@ equipments = {
     }
 
     medium_tank_amphibious_equipment_1 = {
+			year = 1943
   		archetype = medium_tank_amphibious_equipment
 
   		priority = 40
   		visual_level = 1
 
+			can_convert_from = {
+				medium_tank_equipment_2
+			}
+
   	}
 
     # 1943
     medium_tank_amphibious_equipment_2 = {
+			year = 1944
+			can_convert_from = {
+				medium_tank_equipment_3
+			}
+
       archetype = medium_tank_amphibious_equipment
       parent = medium_tank_amphibious_equipment_1
       priority = 40
@@ -252,6 +287,9 @@ equipments = {
     ## Glider Tank
 
     glider_tank_equipment = {
+			year = 1943
+			is_convertable = yes
+
   		is_archetype = yes
   		picture = archetype_light_tank_equipment
   		is_buildable = no
@@ -296,16 +334,22 @@ equipments = {
   	}
 
   	glider_tank_equipment_1 = {
+			year = 1943
   		archetype = glider_tank_equipment
 
   		priority = 25
   		visual_level = 2
 
+			can_convert_from = {
+				light_tank_equipment_3
+			}
   	}
 
 	## Glider
 
 	glider_equipment = {
+		year = 1942
+
 		is_archetype = yes
 		picture = archetype_glider_equipment
 		is_buildable = no
@@ -337,6 +381,7 @@ equipments = {
 	}
 
 	glider_equipment_1 = {
+		year = 1942
 		archetype = glider_equipment
 		priority = 20
 	}

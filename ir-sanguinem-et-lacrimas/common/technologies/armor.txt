@@ -2042,6 +2042,11 @@ technologies = {
 			modern_tank_equipment_4
 		}
 
+		path = {
+			leads_to_tech = improved_cold_war_main_battle_tank
+			research_cost_coeff = 1
+		}
+
 		research_cost = 2
 		start_year = 1953
 
@@ -2072,6 +2077,86 @@ technologies = {
 		categories = {
 			armor
 			cat_medium_armor
+		}
+	}
+
+	improved_cold_war_main_battle_tank = {
+
+		enable_equipments = {
+			modern_tank_equipment_5
+		}
+
+		sub_technologies = {
+			improved_cold_war_td
+			improved_cold_war_spaa
+			improved_cold_war_spart
+		}
+
+		research_cost = 2
+		start_year = 1961
+
+		folder = {
+			name = armour_folder
+			position = { x = 2 y = 20 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 1.1
+				date > "1960.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1961.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1962.1.1"
+			}
+		}
+
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+
+	improved_cold_war_spart = {
+
+		enable_equipments = {
+			modern_tank_artillery_equipment_3
+		}
+
+		research_cost = 0.5
+		start_year = 1961
+  	ai_will_do = {
+			factor = 0.1
+		}
+
+		categories = {
+			armor
+		}
+	}
+
+	improved_cold_war_spaa = {
+
+		enable_equipments = {
+			modern_tank_aa_equipment_3
+		}
+
+		research_cost = 0.5
+		start_year = 1961
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		categories = {
+			armor
 		}
 	}
 }

@@ -1,6 +1,8 @@
 equipments = {
 
 	desert_kit = {
+		year = 1939
+
 		is_archetype = yes
 		picture = archetype_desert_kit_equipment
 		is_buildable = no
@@ -27,9 +29,16 @@ equipments = {
 	desert_kit_1 = {
 		archetype = desert_kit
 		priority = 20
+
+		year = 1939
+		can_convert_from = {
+	    support_equipment_1
+	  }
 	}
 
 	jungle_kit = {
+		year = 1939
+
 		is_archetype = yes
 		picture = archetype_desert_kit_equipment
 		is_buildable = no
@@ -56,6 +65,10 @@ equipments = {
 	jungle_kit_1 = {
 		archetype = jungle_kit
 		priority = 20
+
+		can_convert_from = {
+			support_equipment_1
+		}
 	}
 
 }

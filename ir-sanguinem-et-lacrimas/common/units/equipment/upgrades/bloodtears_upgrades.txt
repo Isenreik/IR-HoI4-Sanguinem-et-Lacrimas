@@ -23,7 +23,8 @@ upgrades = {
 		max_level = 2
 
 		cost = land				# This determies how much XP it will cost, controlled by defines, there are 3 cost types: air, land and naval
-		soft_attack = 0.025
+    defense = 1
+    breakthrough = 1
 		reliability = -0.06
 	}
 	mech_armor_upgrade = {

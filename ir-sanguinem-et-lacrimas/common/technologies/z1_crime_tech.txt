@@ -245,7 +245,7 @@ technologies = {
 				has_war = yes
 			}
       modifier = {
-				factor = 2
+				factor = 1.5
 				has_defensive_war = yes
 			}
       modifier = {
@@ -294,7 +294,6 @@ technologies = {
       infantry_tech
       cat_mass_assault
     }
-
 
     allow = {
           OR = {

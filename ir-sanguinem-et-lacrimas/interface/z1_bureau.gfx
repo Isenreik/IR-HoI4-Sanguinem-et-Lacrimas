@@ -51,6 +51,8 @@ spriteTypes = {
   SpriteType = { name = "GFX_press_opposition_surpression_medium"     texturefile = "gfx//interface//technologies//press_tech_fist.dds"    alwaystransparent = yes	}
   SpriteType = { name = "GFX_press_mobilisation1_medium"              texturefile = "gfx//interface//technologies//press_tech_warbonds.dds"    alwaystransparent = yes	}
   SpriteType = { name = "GFX_press_mobilisation2_medium"              texturefile = "gfx//interface//technologies//press_tech_manpower.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_press_mobilisation3_medium"              texturefile = "gfx//interface//technologies//press_tech_manpower.dds"    alwaystransparent = yes	}
+  SpriteType = { name = "GFX_press_global_diplomacy_medium"           texturefile = "gfx//interface//technologies//press_tech_manpower.dds"    alwaystransparent = yes	}
   SpriteType = { name = "GFX_press_trucks1_medium"                    texturefile = "gfx//interface//technologies//press_tech_truck_cog.dds"    alwaystransparent = yes	}
   SpriteType = { name = "GFX_press_trucks2_medium"                    texturefile = "gfx//interface//technologies//press_tech_truck.dds"    alwaystransparent = yes	}
   SpriteType = { name = "GFX_press_health1_medium"                    texturefile = "gfx//interface//trulz//law_saintrommel.dds"    alwaystransparent = yes	}

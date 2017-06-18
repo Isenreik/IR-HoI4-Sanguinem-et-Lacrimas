@@ -1,0 +1,19 @@
+﻿add_namespace = sanglac_event
+
+## abolish healthcare
+country_event = {
+	id = sanglac_event.1
+	title = sanglac_event.1.title
+	desc = sanglac_event.1.desc
+	picture = GFX_report_event_civ_truck
+
+  is_triggered_only = yes
+
+	option = {
+		name = sanglac_event.1.a
+
+    # custom_effect_tooltip = sanglac_event.1.tt
+		set_rule = { can_puppet = yes }
+
+	}
+}
