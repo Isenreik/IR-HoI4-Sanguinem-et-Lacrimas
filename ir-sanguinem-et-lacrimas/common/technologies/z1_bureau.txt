@@ -15,7 +15,7 @@ technologies = {
   officers_tech1 = {
 
     military_leader_cost_factor = -0.25
-    political_advisor_cost_factor = -0.05
+    political_advisor_cost_factor = -0.1
 
     path = {
       leads_to_tech = flight_officers_tech1
