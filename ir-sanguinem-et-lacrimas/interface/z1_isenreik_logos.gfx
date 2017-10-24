@@ -1,6 +1,9 @@
 spriteTypes = {
 
-  SpriteType = {    name = "GFX_isenreik_logo"    texturefile = "gfx//Isenreik_logo_128.dds" noOfFrames = 1}
-  SpriteType = {    name = "GFX_sanguinem_logo"    texturefile = "gfx//sanguinem_title_text.dds" noOfFrames = 1}
+  SpriteType = {    name = "GFX_isenreik_logo"    	texturefile = "gfx//Isenreik_logo_128.dds" noOfFrames = 1}
+  SpriteType = {    name = "GFX_sanguinem_logo"		texturefile = "gfx//sanguinem_title_text.dds" noOfFrames = 1}
 
+  spriteType = {	name = "GFX_default_fallback_texture"	texturefile = "gfx/thisisdog.dds" 	}
+  spriteType = {  	name = "GFX_dog"						texturefile = "gfx/thisisdog.dds"	}
+  
 }
