@@ -1,33 +1,39 @@
-﻿add_namespace = press_tech_event
+﻿add_namespace = criminal_tech_event
 
 ##press_tech_event started
 country_event = {
-	id = press_tech_event.1
-	title = press_tech_event.1.t
-	desc = press_tech_event.1.d
+	id = criminal_tech_event.1
+	title = criminal_tech_event.1.t
+	desc = criminal_tech_event.1.d
 	picture = GFX_report_event_civ_truck
 
   is_triggered_only = yes
 
 	option = {
-		name = press_tech_event.1.a
+		name = criminal_tech_event.1.a
 
 		modify_country_flag = { flag = requested_civ_trucks value = +1 }
-		set_country_flag = { flag = cant_commandeer_trucks days = 250 value = 1 }
+    custom_effect_tooltip = criminal_tech_event.1.tt
 
-    #hidden_effect = {
-			random_list = {
-        25 = {
-            add_timed_idea = { idea = commandeer_trucks_drawback.1 days = 200 }
+    hidden_effect = {
+      random_list = {
+        20 = {
+            add_national_unity = -0.00
         }
-        60 = {
-            add_timed_idea = { idea = commandeer_trucks_drawback.2 days = 200 }
+        55 = {
+        		add_national_unity = -0.01
         }
-        15 = {
-            add_timed_idea = { idea = commandeer_trucks_drawback.3 days = 200 }
+        10 = {
+        		add_national_unity = -0.02
+        }
+        10 = {
+        		add_national_unity = -0.03
+        }
+        5 = {
+        		add_national_unity = -0.04
         }
       }
-    #}
+    }
 
     if = {
       limit = {
@@ -73,22 +79,4 @@ country_event = {
 
 	}
 
-}
-
-## abolish healthcare
-country_event = {
-	id = press_tech_event.2
-	title = press_tech_event.2.t
-	desc = press_tech_event.2.d
-	picture = GFX_report_event_civ_truck
-
-  is_triggered_only = yes
-
-	option = {
-		name = press_tech_event.2.a
-
-    # custom_effect_tooltip = press_tech_event.2.tt
-		remove_ideas = extensive_healthcare_idea
-
-	}
 }

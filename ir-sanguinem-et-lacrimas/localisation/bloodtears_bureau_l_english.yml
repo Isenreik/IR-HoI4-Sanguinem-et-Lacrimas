@@ -32,6 +32,13 @@ flight_officers_honor2_desc: "Our pilots shall perform the ultimate sacrifice fo
 
 flight_officers_honor2_special: "\n\n\n\n\n\n\n\nAllows Kamikaze Strikes air missions, suicide attacks against enemy ships."
 
+officers_military_schools_army: "Expanded Military Academies"
+officers_military_schools_army_desc: "Needs writing."
+officers_military_schools_air: "Expanded Flight Academies"
+officers_military_schools_air_desc: "Needs writing."
+officers_military_schools_navy: "Expanded Naval Academies"
+officers_military_schools_navy_desc: "Needs writing."
+
 # Press Tech
 
 tactics_TITLE_civilian: "CIVILIAN BUREAU"

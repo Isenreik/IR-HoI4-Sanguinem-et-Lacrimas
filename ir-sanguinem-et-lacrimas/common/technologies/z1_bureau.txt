@@ -5,7 +5,8 @@ technologies = {
 @1941 = 4
 @1942 = 6
 
-@officers_main_row =  2
+@officers_main_row =  3
+@officers_main_left =  1
 @officers_left1top = -2
 @officers_left1-1  = -1
 @officers_left1-2  = -3
@@ -15,7 +16,12 @@ technologies = {
   officers_tech1 = {
 
     military_leader_cost_factor = -0.25
-    political_advisor_cost_factor = -0.1
+    political_advisor_cost_factor = -0.05
+    high_command_cost_factor = -0.05
+		air_chief_cost_factor = -0.05
+		army_chief_cost_factor = -0.05
+		navy_chief_cost_factor = -0.05
+    experience_gain_army_factor = 0.05
 
     path = {
       leads_to_tech = flight_officers_tech1
@@ -58,9 +64,20 @@ technologies = {
   officers_tech2 = {
 
     army_leader_start_level = 1
+    experience_gain_army_factor = 0.05
+    experience_gain_army_unit_factor = 0.10
+    high_command_cost_factor = -0.05
+		air_chief_cost_factor = -0.05
+		army_chief_cost_factor = -0.05
+		navy_chief_cost_factor = -0.05
 
     path = {
       leads_to_tech = officers_tech3
+      research_cost_coeff = 1
+    }
+
+    path = {
+      leads_to_tech = officers_military_schools_army
       research_cost_coeff = 1
     }
 
@@ -96,9 +113,19 @@ technologies = {
   officers_tech3 = {
 
     training_time_army_factor = -0.15
+    experience_gain_army_factor = 0.05
+    high_command_cost_factor = -0.05
+		air_chief_cost_factor = -0.05
+		army_chief_cost_factor = -0.05
+		navy_chief_cost_factor = -0.05
 
     path = {
-      leads_to_tech = officers_tech3
+      leads_to_tech = officers_military_schools_air
+      research_cost_coeff = 1
+    }
+
+    path = {
+      leads_to_tech = officers_military_schools_navy
       research_cost_coeff = 1
     }
 
@@ -120,10 +147,87 @@ technologies = {
     }
   }
 
+  officers_military_schools_army = {
+
+    experience_gain_army = 0.03
+    ## allows breakthroughs
+
+    doctrine = yes
+		research_cost = 2
+
+    folder = {
+      name = bureau_folder
+      position = { x = @officers_main_left y = 2 }
+    }
+
+    categories = {
+      bureau_tech
+      support_tech
+      infantry_tech
+    }
+
+    ai_will_do = {
+      factor = 2
+    }
+  }
+
+  officers_military_schools_air = {
+
+    experience_gain_air = 0.03
+    experience_gain_air_factor = 0.03
+    ## allows breakthroughs
+
+    doctrine = yes
+		research_cost = 2
+
+    folder = {
+      name = bureau_folder
+      position = { x = @officers_main_left y = 4 }
+    }
+
+    dependencies = { flight_officers_training1 = 1 }
+
+    categories = {
+      bureau_tech
+      support_tech
+      infantry_tech
+    }
+
+    ai_will_do = {
+      factor = 2
+    }
+  }
+
+  officers_military_schools_navy = {
+
+    experience_gain_navy = 0.03
+    experience_gain_navy_factor = 0.03
+    ## allows breakthroughs
+
+    doctrine = yes
+		research_cost = 2
+
+    folder = {
+      name = bureau_folder
+      position = { x = @officers_main_row y = 6 }
+    }
+
+    categories = {
+      bureau_tech
+      support_tech
+      infantry_tech
+    }
+
+    ai_will_do = {
+      factor = 2
+    }
+  }
+
   flight_officers_tech1 = {
 
     air_ace_generation_chance_factor = 0.05
 		air_interception_detect_factor = 0.10
+    experience_gain_air = 0.025
 
     path = {
       leads_to_tech = flight_officers_honor1
@@ -161,6 +265,7 @@ technologies = {
     category_heavy_fighter = {
       air_agility = 0.1
     }
+    experience_gain_air_factor = 0.03
 
     XOR = {
       flight_officers_honor1
@@ -200,6 +305,9 @@ technologies = {
 
     air_ace_generation_chance_factor = 0.10
 		air_intercept_efficiency = 0.10
+    air_interception_attack_factor = 0.02
+    air_interception_defence_factor = 0.02
+    air_interception_agility_factor = 0.02
 
     path = {
       leads_to_tech = flight_officers_honor2
@@ -242,7 +350,13 @@ technologies = {
 
   flight_officers_honor2 = {
 
+    # adds law to change kamikaze plane attacks
+
     air_interception_detect_factor = 0.08
+    air_interception_attack_factor = 0.05
+		air_interception_defence_factor = 0.05
+		air_interception_agility_factor = 0.05
+    experience_gain_air_factor = -0.1
 
     on_research_complete = {
       set_rule = { can_use_kamikaze_pilots = yes }
@@ -435,8 +549,7 @@ technologies = {
   press_trucks1 = {
 
     on_research_complete = {
-      country_event = { hours = 2 id = press_tech_event.1 }
-      set_country_flag = requested_civ_trucks
+      set_country_flag = allows_civ_truck_law
     }
 
     desc = "press_trucks1_special_desc"
@@ -498,6 +611,8 @@ technologies = {
   press_mobilisation1 = {
 
 	  consumer_goods_factor = -0.03
+		mobilization_laws_cost_factor = -0.02
+    economy_cost_factor = -0.05
 
     doctrine = yes
     research_cost = 2
@@ -525,6 +640,7 @@ technologies = {
   press_mobilisation2 = {
 
 		conscription_factor = 0.05
+    mobilization_laws_cost_factor = -0.03
 
     doctrine = yes
     research_cost = 2

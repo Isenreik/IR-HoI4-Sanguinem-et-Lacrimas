@@ -9,6 +9,7 @@ sub_units = {
     marines = yes
 
     priority = 610
+    ai_priority = 200
 		active = no
 
     type = {
