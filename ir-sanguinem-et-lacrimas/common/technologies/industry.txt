@@ -1541,7 +1541,7 @@ technologies = {
 
 		desc = "infrastructure_construction_special_desc"
 
-		research_cost = 1.6
+		research_cost = 1.4
 		start_year = 1936
 
 		categories = {
@@ -1566,7 +1566,7 @@ technologies = {
 
 		desc = "infrastructure_construction_special_desc"
 
-		research_cost = 1.6
+		research_cost = 1.4
 		start_year = 1941
 
 		categories = {
@@ -1591,7 +1591,7 @@ technologies = {
 
 		desc = "fort_construction_special_desc"
 
-		research_cost = 1.6
+		research_cost = 1.4
 		start_year = 1937
 
 		categories = {
@@ -1616,7 +1616,7 @@ technologies = {
 
 		desc = "fort_construction_special_desc"
 
-		research_cost = 1.6
+		research_cost = 1.4
 		start_year = 1943
 
 		categories = {
@@ -1643,7 +1643,7 @@ technologies = {
 
 		dependencies = { decimetric_radar = 1 }
 
-		research_cost = 1.6
+		research_cost = 1.4
 		start_year = 1939
 
 		categories = {
@@ -1763,7 +1763,7 @@ technologies = {
 
 		dependencies = { centimetric_radar = 1 }
 
-		research_cost = 1.6
+		research_cost = 1.4
 		start_year = 1945
 
 		categories = {
@@ -1882,7 +1882,7 @@ technologies = {
 
 		desc = "special_construction_special_desc"
 
-		research_cost = 1.6
+		research_cost = 1.4
 		start_year = 1947
 
 		categories = {
@@ -2000,7 +2000,7 @@ technologies = {
 
 		desc = "infrastructure_construction_special_desc"
 
-		research_cost = 1.6
+		research_cost = 1.4
 		start_year = 1949
 
 		categories = {
@@ -2118,7 +2118,7 @@ technologies = {
 
 		desc = "fort_construction_special_desc"
 
-		research_cost = 1.6
+		research_cost = 1.4
 		start_year = 1951
 
 		categories = {
@@ -2233,7 +2233,7 @@ technologies = {
 
 		desc = "special_construction_special_desc"
 
-		research_cost = 1.6
+		research_cost = 1.4
 		start_year = 1953
 
 		categories = {

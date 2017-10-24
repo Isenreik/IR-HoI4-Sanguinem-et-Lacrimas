@@ -30,7 +30,39 @@ ideas = {
 
 				on_add = {
 					custom_effect_tooltip = prospecting_decision.tt
-					country_event = { id = prospecting.1 days = 2 }
+					country_event = { id = prospecting.1 hours = 2 }
+				}
+
+				cost = 100
+				removal_cost = 0
+
+				cancel_if_invalid = yes
+
+				ai_will_do = {
+					factor = 0
+				}
+
+			}
+
+			# truck decision
+			commandeer_trucks_decision = {
+
+				default = no
+
+				available = {
+					custom_trigger_tooltip = {
+						tooltip = commandeer_trucks_decision.trigger_tt1
+						AND = {
+							NOT = { has_country_flag = cant_commandeer_trucks }
+						}
+					}
+					has_tech = press_trucks1
+				}
+
+				on_add = {
+					custom_effect_tooltip = commandeer_trucks_decision.tt
+					country_event = { hours = 2 id = press_tech_event.1 }
+					set_country_flag = requested_civ_trucks
 				}
 
 				cost = 100

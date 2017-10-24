@@ -11,6 +11,9 @@ technologies = {
 
 		industrial_capacity_factory = 0.05
 		production_speed_buildings_factor = 0.03
+	  on_research_complete = {
+			set_country_flag = criminals_in_factory
+		}
 
 		path = {
 			leads_to_tech = penal_technology
@@ -61,6 +64,9 @@ technologies = {
 
 		industrial_capacity_factory = 0.1
 		production_speed_buildings_factor = 0.05
+		on_research_complete = {
+			modify_country_flag = { flag = criminals_in_factory value = 1 }
+		}
 
 		research_cost = 1.5
 		start_year = 1936
@@ -117,6 +123,9 @@ technologies = {
 
 		industrial_capacity_factory = 0.1
 		production_speed_buildings_factor = 0.02
+		on_research_complete = {
+			modify_country_flag = { flag = criminals_in_factory value = 1 }
+		}
 
 		research_cost = 1.5
 		start_year = 1941
@@ -494,6 +503,9 @@ technologies = {
 	criminal_technology4 = {
 
 	  local_resources_factor = 0.06
+		on_research_complete = {
+			modify_country_flag = { flag = criminals_in_factory value = 1 }
+		}
 
 		research_cost = 1.5
 		start_year = 1942

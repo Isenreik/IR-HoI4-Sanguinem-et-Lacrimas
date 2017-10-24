@@ -68,7 +68,7 @@ is_league_of_nations_1936 = {
 is_league_member = {
 	has_country_flag = LN_league_member
 	exists = yes
-	compare_autonomy_state > autonomy_puppet
+	is_free_enough_to_politics = yes
 }
 
 is_major_victor_of_ww1 = {
@@ -78,7 +78,7 @@ is_major_victor_of_ww1 = {
 		tag = USA
 		tag = ITA
 	}
-	compare_autonomy_state > autonomy_puppet
+	is_free_enough_to_politics = yes
 }
 
 is_medium_victor_of_ww1 = {
@@ -92,7 +92,7 @@ is_medium_victor_of_ww1 = {
 		tag = CZE
 		tag = POL
 	}
-	compare_autonomy_state > autonomy_puppet
+	is_free_enough_to_politics = yes
 }
 
 is_small_victor_of_ww1 = {
@@ -112,7 +112,7 @@ is_small_victor_of_ww1 = {
 		tag = SIA
 		tag = URG
 	}
-	compare_autonomy_state > autonomy_puppet
+	is_free_enough_to_politics = yes
 }
 
 is_victor_of_ww1 = {
@@ -167,7 +167,7 @@ is_historic_good_guy = {
 			is_major_victor_of_ww1 = yes
 		}
 	}
-	compare_autonomy_state > autonomy_colony
+	is_free_enough_to_politics = yes
 	exists = yes
 }
 
@@ -185,6 +185,16 @@ is_historic_bad_guy = {
 			is_major_victor_of_ww1 = yes
 		}
 	}
-	compare_autonomy_state > autonomy_colony
+	is_free_enough_to_politics = yes
 	exists = yes
+}
+
+is_free_enough_to_politics = {
+	AND = {
+		NOT = { has_autonomy_state = autonomy_colony }
+		NOT = { has_autonomy_state = autonomy_integrated_puppet }
+		NOT = { has_autonomy_state = autonomy_puppet }
+		NOT = { has_autonomy_state = autonomy_reichskommissariat }
+		NOT = { has_autonomy_state = autonomy_reichsprotectorate }
+	}
 }

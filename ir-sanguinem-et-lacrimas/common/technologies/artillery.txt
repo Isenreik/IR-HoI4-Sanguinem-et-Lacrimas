@@ -1894,7 +1894,7 @@ technologies = {
 	}
 
 	atgm_1 = {
-	#	enable_equipments = { mot_atgm_equipment_1 }
+		#	enable_equipments = { mot_atgm_equipment_1 }
 
 		category_spat_armor = {
 			hard_attack = 0.25
