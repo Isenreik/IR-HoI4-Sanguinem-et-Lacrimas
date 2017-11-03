@@ -7,7 +7,6 @@
 [<img src="https://www.shareicon.net/data/128x128/2016/10/18/844052_media_512x512.png" alt="discord_logo" width="128"/>][1] | [Join the Discord Server][1]
 [<img src="https://www.shareicon.net/data/128x128/2015/09/02/94510_opened_448x512.png" alt="exclamation_mark" width="128"/>][2] | [Click here to open a new issue][2]
 [<img src="https://raw.githubusercontent.com/Isenreik/HoI4-IR-Sanguinem-et-Lacrimas/master/readme-files/thumbnail_sang_max.gif" alt="Steam Thumbnail" width="128"/>][3] | [Go to the Steam Workshop page of this mod][3]
-[<img src="https://pbs.twimg.com/profile_images/629201391312105473/txI2nFBz.png" alt="paradox_logo" width="128"/>][4] | [Go to the related Paradox Plaza thread][4]
 
 ## What does this mod do?
 It adds various types of new units and equipment to the game and expands researchable tech into the late-game years.  
