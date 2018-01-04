@@ -22,6 +22,7 @@ GER_rocket_aa_tech_1: "Taifun"
 USA_rocket_aa_tech_1: "Loki"
 
 railway_artillery_equipment: "Railway Artillery"
+railway_artillery_equipment_desc: $railway_artillery_equipment_1_desc$
 railway_artillery_equipment_1: "Railway Artillery"
 railway_artillery_equipment_1_desc: "Used in the Great War, we can revive railway artillery guns for this one, which will allowing us to create and use absolutely massive guns to obliterate our enemies. The greatest downside of these behemoths though is their production cost and further weaknesses are their very low speed and their enormous supply use."
 GER_railway_artillery_equipment_1: "Gustav"
@@ -46,6 +47,9 @@ SOV_aam_tech1: "K-5"
 
 guided_aa_unit_brigade: "Surface-To-Air Missile"
 guided_aa_unit: "Support SAM"
+
+guided_aa_equipment: "Surface-To-Air Missile"
+guided_aa_equipment_desc: "Guided surface-to-air missile are the newest weapons in combating enemy aircrafts from the ground."
 
 guided_aa_equipment_1: "Early SAM"
 guided_aa_equipment_1_desc: "These guided Surface-To-Air Missiles are much more accurate and powerful than our old shell-based AA. Using simple radio control manual command to line of sight systems, these missiles still need a lot of manual input. Further, the production of these missiles requires a lot of work and technical components that are not yet readily available, thus making mass-production relatively complicated to tried-and-true AA."
