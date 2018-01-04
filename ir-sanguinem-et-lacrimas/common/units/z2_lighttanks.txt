@@ -1,0 +1,340 @@
+## by Araxiel - original script do not steel
+## After much trying, I'm fucking giving up; I have to overwrite light tanks...no way around it
+
+sub_units = {
+
+	light_armor = {
+		sprite = light_armor
+		map_icon_category = armored
+		priority = 2501
+		ai_priority = 2000					
+		active = yes
+
+		type = {
+			armor
+		}
+		group = armor
+		
+		categories = {
+			category_tanks
+			category_front_line
+			category_all_armor
+			category_army
+		}
+
+		combat_width = 2
+
+		need = {
+			light_tank_equipment = 60
+		}
+		manpower = 500
+		max_organisation = 10
+		default_morale = 0.3
+		max_strength = 2
+		weight = 1
+		supply_consumption = 0.2
+
+		#Tanks are awesome
+		soft_attack = 0.5
+
+		recon = 0.2
+		training_time = 150
+
+		## Buffed
+		forest = {
+			attack = -0.1
+			movement = -0.2
+		}
+		mountain = 	{
+		  attack = -0.1
+		}
+		## Buffed
+		jungle = {
+			attack = -0.18
+			movement = -0.3
+		}
+		marsh = {
+		  attack = -0.1
+			movement = -0.1
+		}
+		## Buffed
+		urban = {
+			attack = -0.2
+			defence = -0.05
+		}
+		river = {
+			attack = -0.2
+			movement = -0.2
+		}
+		amphibious = {
+			attack = -0.4
+		}
+	}
+
+	light_sp_artillery_brigade = {
+		sprite = light_armor
+		map_icon_category = armored
+		priority = 1795
+		ai_priority = 100
+		active = yes
+
+		type = {
+			armor
+			anti_air
+		}
+		
+		group = armor
+
+		categories = {
+			category_all_armor
+			category_army
+		}	
+
+		combat_width = 2
+
+		need = {
+			light_tank_artillery_equipment = 50
+		}
+		manpower = 500
+		max_organisation = 0
+		default_morale = 0.1
+		max_strength = 0.6
+		weight = 1
+		supply_consumption = 0.4
+
+		recon = 0.1
+		training_time = 150
+
+		## Buffed
+		forest = {
+			attack = -0.1
+			movement = -0.2
+		}
+		mountain = 	{
+		  attack = -0.1
+		}
+		## Buffed
+		jungle = {
+			attack = -0.18
+			movement = -0.3
+		}
+		marsh = {
+		  attack = -0.1
+			movement = -0.1
+		}
+		## Buffed
+		urban = {
+			attack = -0.2
+			defence = -0.05
+		}
+		river = {
+			attack = -0.2
+			movement = -0.2
+		}
+		amphibious = {
+			attack = -0.4
+		}
+	}
+
+	light_sp_anti_air_brigade = {
+		sprite = light_armor
+		map_icon_category = armored
+		priority = 301
+		ai_priority = 100
+		active = yes
+
+		type = {
+			armor
+			anti_air
+		}
+
+		group = armor
+
+		categories = {
+			category_all_armor
+			category_army
+		}
+		
+		combat_width = 1
+
+		need = {
+			light_tank_aa_equipment = 15
+		}
+		manpower = 500
+		max_organisation = 0
+		default_morale = 0.1
+		max_strength = 0.6
+		weight = 1
+
+		supply_consumption = 0.1
+
+		#Tanks are awesome
+		soft_attack = 0.5
+
+		recon = 0.2
+		training_time = 150
+
+		## Buffed
+		forest = {
+			attack = -0.1
+			movement = -0.2
+		}
+		mountain = 	{
+			attack = -0.1
+		}
+		## Buffed
+		jungle = {
+			attack = -0.18
+			movement = -0.3
+		}
+		marsh = {
+			attack = -0.1
+			movement = -0.1
+		}
+		## Buffed
+		urban = {
+			attack = -0.2
+			defence = -0.05
+		}
+		river = {
+			attack = -0.2
+			movement = -0.2
+		}
+		amphibious = {
+			attack = -0.4
+		}
+	}
+
+	light_tank_destroyer_brigade = {
+		sprite = "light_armor"
+		map_icon_category = armored
+		priority = 1795
+		ai_priority = 100		
+		active = yes
+
+		type = {
+			armor
+			anti_tank
+		}
+
+		categories = {
+			category_front_line
+			category_all_armor
+			category_army
+		}
+		
+		group = armor
+
+		combat_width = 1
+
+		need = {
+			light_tank_destroyer_equipment = 30
+		}
+		manpower = 500
+		max_organisation = 0
+		default_morale = 0.3
+		max_strength = 0.6
+		weight = 1
+		supply_consumption = 0.2
+
+		recon = 0.1
+		training_time = 150
+
+		## Buffed
+		forest = {
+			attack = -0.1
+			movement = -0.2
+		}
+		mountain = 	{
+			attack = -0.1
+		}
+		## Buffed
+		jungle = {
+			attack = -0.18
+			movement = -0.3
+		}
+		marsh = {
+			attack = -0.1
+			movement = -0.1
+		}
+		## Buffed
+		urban = {
+			attack = -0.2
+			defence = -0.05
+		}
+		river = {
+			attack = -0.2
+			movement = -0.2
+		}
+		amphibious = {
+			attack = -0.4
+		}
+	}
+
+	cavalry = {
+		sprite = cavalry
+		map_icon_category = other
+		priority = 599
+		ai_priority = 200
+		active = yes
+		cavalry = yes
+
+		type = { infantry }
+		
+		categories = {
+			category_front_line
+			category_army
+		}
+		
+		group = mobile
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_organisation = 70
+		max_strength = 25
+		default_morale = 0.3
+		manpower = 1000
+
+		#Misc Abilities
+		maximum_speed = 0.6
+		training_time = 120		
+		weight = 0.5
+		
+		supply_consumption = 0.12
+
+		#Offensive Abilities
+		suppression = 2
+		recon = 0.2
+	
+		need = {
+			infantry_equipment = 120
+		}
+
+		forest = {
+			attack = -0.05
+		}
+
+		hills = {
+			attack = -0.05
+		}
+
+		mountain = {
+			attack = -0.1
+			movement = -0.05
+		}
+
+		jungle = {
+			attack = -0.1
+		}
+
+		urban = {
+			attack = -0.05
+		}
+
+		amphibious = {
+			attack = -0.4
+		}
+	}
+	
+}

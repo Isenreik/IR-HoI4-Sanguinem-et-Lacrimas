@@ -1888,6 +1888,105 @@ technologies = {
 		}
 	}
 
+	improved_modern_light_tank = {
+
+		enable_equipments = {
+			light_tank_equipment_6
+		}
+
+		research_cost = 2
+		start_year = 1961
+
+		folder = {
+			name = armour_folder
+			position = { x = -4 y = 20 }
+		}
+
+		sub_technologies = {
+			improved_modern_light_td
+			improved_modern_light_art
+			improved_modern_light_spaa
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 1.1
+				date > "1960.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1961.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1962.1.1"
+			}
+		}
+
+		categories = {
+			armor
+			cat_light_armor
+		}
+	}
+
+	improved_modern_light_td = {
+
+		enable_equipments = {
+			light_tank_destroyer_equipment_6
+		}
+
+		research_cost = 0.5
+		start_year = 1947
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		categories = {
+			armor
+		}
+	}
+
+	improved_modern_light_art = {
+
+		enable_equipments = {
+			light_tank_artillery_equipment_6
+		}
+
+		research_cost = 0.5
+		start_year = 1947
+
+		ai_will_do = {
+			factor = 0.1
+		}
+
+		categories = {
+			armor
+		}
+	}
+
+	improved_modern_light_spaa = {
+
+		enable_equipments = {
+			light_tank_aa_equipment_6
+		}
+
+		research_cost = 0.5
+		start_year = 1947
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		categories = {
+			armor
+		}
+	}
+
 
 	improved_main_battle_tank = {
 
