@@ -135,6 +135,131 @@ inf_at_upgrade: "AT Improvements"
 inf_at_upgrade_desc: "Improve the payload or other small modifications and adjustements to the AT weapons, resulting in better efficiency against vehicles for our infantry."
 
 ######################################################################################################
+################      Artillery Folder
+
+﻿l_english:
+
+## Artillery
+radar_aa_1: "Computerised AA Director"
+GER_radar_aa_1: "Kommandogerät 40"
+radar_aa_1_desc: "With the help of the development of electronic computers, our auxiliary predictors can become more precise in calculating the movement of enemy planes, improving hit rate."
+
+radar_aa_2: "Integrated Radar"
+radar_aa_2_desc: "By directly integrating a radar with the auxiliary predictors, our batteries can get even better readouts of the distance of enemy planes."
+GER_radar_aa_1: "Kommandogerät 40/42"
+
+radar_aa_3: "Proximity Fuze"
+radar_aa_3_desc: "With our integrated radars, we can set up better proximity fuzes. This means that our charge will be less likely to fly past or even through the plane without exploding and instead detonate as close as possible to the enemy aircraft, maximising damage."
+
+airburst_artillery: "Airburst Shells"
+airburst_artillery_desc: "While airburst shells have been around since the last World War, improving the fuze will allow our shells to explode at the optimal distance of about 10 metres above the ground, showering the enemy position with shrapnel."
+
+rocket_aa_tech_1: "Unguided Surface-To-Air Rocket"
+rocket_aa_tech_1_desc: "These Fin-stabilised Surface-To-Air rockets with shrapnel charges can be used to supplement our existing anti-air capabilities for both short-range interception and long-range attacks against far-away bombers, without loosing as much accuracy as a standard flak charge."
+ENG_rocket_aa_tech_1: "Z Battery"
+GER_rocket_aa_tech_1: "Taifun"
+USA_rocket_aa_tech_1: "Loki"
+
+railway_artillery_equipment: "Railway Artillery"
+railway_artillery_equipment_1: "Railway Artillery"
+railway_artillery_equipment_1_desc: "Used in the Great War, we can revive railway artillery guns for this one, which will allowing us to create and use absolutely massive guns to obliterate our enemies. The greatest downside of these behemoths though is their production cost and further weaknesses are their very low speed and their enormous supply use."
+GER_railway_artillery_equipment_1: "Gustav"
+FRA_railway_artillery_equipment_1: "Mle 1870/93 on Schneider carriage"
+ENG_railway_artillery_equipment_1: "Scene Shifter"
+USA_railway_artillery_equipment_1: "M1920"
+
+railway_artillery_unit: "Railway Artillery"
+railway_artillery_unit_desc: "These absolutely massive guns can obliterate our enemies. The greatest downside of these behemoths though is their production cost and further weaknesses are their very low speed and their enormous supply use."
+
+anti_air_equipment_4: "Modern Anti-Air"
+anti_air_equipment_4_short: "Modern Anti-Air"
+anti_air_equipment_4_desc: "These modern Anti-Air guns combine a gun laying radar, analog computer as director and an autoloader on a single carriage, these marvel of modern technology can target even the newest, fastest and highest planes and shoot them down with precision. These guns are the future, unlike those clunky and overpriced rockets."
+USA_anti_air_equipment_4_short: "M51 Skysweeper"
+
+aam_tech1: "Air-to-Air Missile"
+aam_tech1_desc: "With these revolutionary air-to-air missiles, our fighters will have a new and potentially powerful weapon to deal with other, especially larger, planes."
+GER_aam_tech1: "Ruhrstahl X-4"
+EMG_aam_tech1: "Fairey Fireflash"
+USA_aam_tech1: "AIM-4 Falcon"
+SOV_aam_tech1: "K-5"
+
+guided_aa_unit_brigade: "Surface-To-Air Missile"
+guided_aa_unit: "Support SAM"
+
+guided_aa_equipment_1: "Early SAM"
+guided_aa_equipment_1_desc: "These guided Surface-To-Air Missiles are much more accurate and powerful than our old shell-based AA. Using simple radio control manual command to line of sight systems, these missiles still need a lot of manual input. Further, the production of these missiles requires a lot of work and technical components that are not yet readily available, thus making mass-production relatively complicated to tried-and-true AA."
+GER_guided_aa_equipment_1: "Wasserfall"
+USA_guided_aa_equipment_1: "Nike Ajax"
+SOV_guided_aa_equipment_1: "S-25 Berkut"
+ENG_guided_aa_equipment_1: "Bloodhound"
+
+guided_aa_equipment_2: "SAM"
+guided_aa_equipment_2_desc: "These new guided missiles are a great improvement upon our earlier Surface-To-Air Missiles. These improved SAM use radio control for guidance and are guided towards their targets by comparing the returns of the missile and target on a single radar screen. We further refined the production of parts, making it easier to construct the missiles."
+GER_guided_aa_equipment_2: "Rheintochter"
+USA_guided_aa_equipment_2: "Nike Ajax II"
+SOV_guided_aa_equipment_2: "S-75 Dvina"
+ENG_guided_aa_equipment_2: "Thunderbird"
+
+artillery6: "Improved Muzzle Braker and Recuperator"
+artillery6_desc: "Further refining our guns' muzzle brake and recuperator will greatly reduce the amount of recoil our howitzer produce, thus allowing faster and more accurate firing."
+
+artillery_equipment_4: "Modern Artillery"
+artillery_equipment_4_desc: "Improvements in loading mechanisms and carriage together with an increase in calibre let us field state-of-the-art field howitzers."
+
+artillery8: "Semi-Automatic Breech"
+artillery8_desc: "A semi-automatic breech will greatly help with the reloading process"
+
+ENG_rocket_artillery_equipment_2_short: "RP-3 HE/SAP \"Land-Mattress\""
+ENG_rocket_artillery_equipment_2: "RP-3 High Explosive/Semi Armor-Piercing \"Land-Mattress\""
+
+rocket_artillery5: "Case-Bonded Grain"
+rocket_artillery5_desc: "Using a case-bonded grain, we can reduce the size and the weight of our rockets and thus increase range and speed."
+rocket_artillery6: "Advanced Rocket Design"
+rocket_artillery6_desc: "Specialized dual-grain configurations allow for more thrust optimization, further increasing range and allowing us to utilise a larger and more devastating charges. Additionally we can employ dual-motor rocket designs allowing our solid-fuel artillery rockets to reach great distances."
+rocket_artillery7: "Modern Rocket Artillery"
+rocket_artillery7_desc: "Increasing the amount of rails and the weight of our rockets, we can further increase the power of our rocket artillery"
+
+rocket_artillery_equipment_3: "Modern Rocket Artillery"
+rocket_artillery_equipment_3_short: "Modern R. Art."
+rocket_artillery_equipment_3_desc: "These modern artillery pieces field a greater amount of tubes on larger rails."
+GER_rocket_artillery_equipment_3: "30 cm Raketenwerfer 56"
+GER_rocket_artillery_equipment_3_short: "30 cm Raketenwerfer 56"
+USA_rocket_artillery_equipment_3: "M17 \"Whizbang\""
+USA_rocket_artillery_equipment_3_short: "M17 \"Whizbang\""
+
+motorized_rocket_equipment_2: "Modern Motorized Rocket Artillery"
+motorized_rocket_equipment_2_short: "Modern Mot. R. Artillery"
+motorized_rocket_equipment_2_desc: "These modern motorized artillery vehicles field a greater amount of tubes on larger rails."
+SOV_motorized_rocket_equipment_2: "BM-31-12"
+SOV_motorized_rocket_equipment_2_short: "BM-31-12"
+GER_motorized_rocket_equipment_2: "15cm Panzerwerfer 42"
+GER_motorized_rocket_equipment_2_short: "15cm Panzerwerfer 42"
+USA_motorized_rocket_equipment_2: "T40 \"Whizbang\""
+USA_motorized_rocket_equipment_2_short: "T40 \"Whizbang\""
+
+at_rocket1: "AT Rockets"
+ENG_at_rocket1: "RP-3 \"Tulip\""
+at_rocket1_desc: "Using the Munroe effect developed with HEAT rounds, our rockets can be used to puncture the armour of enemy vehicles. These rockets can be mounted on both vehicles and our fighter-bombers."
+
+antitank6: "Improved Muzzle Braker and Recuperator"
+antitank6_desc: "Further refining our guns' muzzle brake and recuperator will greatly reduce the amount of recoil our guns produce, thus allowing faster and more accurate firing."
+antitank7: "HESH"
+antitank7_desc: "Using new HESH (High Explosive Squash Head) shells, we found a new way to penetrate enemy armored vehicles."
+antitank7_fortbuster: "HESH Against Fortifications"
+antitank7_fortbuster_desc: "We realised that HESH works great against concrete fortifications."
+antitank7_fortbuster_special_tooltip: "Increases Fort Attack for AT-Guns"
+anti_tank_equipment_4: "Modern Anti-Tank Gun"
+anti_tank_equipment_4_short: "Modern AT Gun"
+anti_tank_equipment_4_desc: "Greatly increasing barrel length will result in greater penetration and increased damage."
+
+atgm_1: "Early ATGM"
+atgm_1_desc: "Our initial foray into guided missiles has led to the development of wire-guided anti-tank missiles. These bulky, fin-stabilised rockets are equipped with a powerful HEAT or HESH warhead that can easily destroy most armoured vehicles and it's manually operated guidance system ensures that it will find its target."
+ENG_atgm_1: "Malkara"
+AST_atgm_1: "Malkara"
+FRA_atgm_1: "SS.10"
+USA_atgm_1: "SSM-A-23 \"Dart\""
+
+######################################################################################################
 ################      Specialised Folder
 
 specialised_folder: "Specialised"
@@ -232,6 +357,7 @@ light_tank_amphibious_equipment_2_short: "Adv. DD Tank"
 light_tank_amphibious_equipment_2_desc: "Our light duplex-drive tanks can further help our marines during landing operation."
 
 medium_tank_amphibious_equipment: "Medium Amphibious Tank"
+medium_tank_amphibious_equipment_desc: "Through a small conversion, our medium tanks should be able to swim through the water for a short period of time. This means that during naval invasions, they can be deployed by transport ships in safety near shore and drive up the beach by themselves. Other than that, such ability will also be mighty useful crossing rivers and get around swamps without fear of getting stuck in the mud."
 
 medium_tank_amphibious_equipment_1: "Medium Amphibious Tank"
 medium_tank_amphibious_equipment_1_short: "Medium DD Tank"
@@ -258,6 +384,7 @@ glider_equipment_1_desc: "These larger gliders can bring in proper supplies and 
 glider_equipment_desc: "These larger gliders can bring in proper supplies and even small vehicles along with our paratroopers."
 
 glider_tank_equipment: "Glider Tank"
+glider_tank_equipment_desc: "This light tank can be deployed from accompanied large, specially build gliders."
 glider_tank_equipment_1: "Glider Tank"
 glider_tank_equipment_1_short: "Light Glider Tank"
 glider_tank_equipment_1_desc: "This light tank can be deployed from accompanied large, specially build gliders."
