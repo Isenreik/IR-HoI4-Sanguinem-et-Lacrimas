@@ -7,14 +7,10 @@ technology_categories = {
 	amphibious_tech
 	guided_missiles
 	cat_anti_air
-	chemical_warfare
 	bureau_tech
-
 }
 
 technology_folders = {
-
 	specialised_folder
 	bureau_folder
-
 }
