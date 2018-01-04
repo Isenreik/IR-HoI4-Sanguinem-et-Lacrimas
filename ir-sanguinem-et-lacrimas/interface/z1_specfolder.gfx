@@ -141,7 +141,7 @@ spriteTypes = {
   ## airborne support   -----------------------------------
 
   spriteType = { name = "GFX_unit_paratrooper_glider_icon_medium"		 textureFile = "gfx/interface/counters/divisions_large/unit_paratrooper_glider_icon.dds" noOfFrames = 2 }
-  spriteType = { name = "GFX_unit_paratrooper_glider_icon_medium_white" textureFile = "gfx/interface/counters/divisions_small/onmap_unit_paratrooper_glider_icons.dds" noOfFrames = 2 }
+  spriteType = { name = "GFX_unit_paratrooper_glider_icon_medium_white" textureFile = "gfx/interface/counters/divisions_small/onmap_unit_paratrooper_glider_icon.dds" noOfFrames = 2 }
 
   SpriteType = { name = "GFX_glider_technology_medium"    texturefile = "gfx//interface//technologies//glider_1.dds"    alwaystransparent = yes	}
   SpriteType = { name = "GFX_cargo_glider_technology_medium"    texturefile = "gfx//interface//technologies//equipment//cargo_glider_equipment.dds"    alwaystransparent = yes	}
