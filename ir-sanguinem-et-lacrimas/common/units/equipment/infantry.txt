@@ -4,7 +4,7 @@ equipments = {
 
 	infantry_equipment = {
 				year = 1918
-				
+
 		is_archetype = yes
 		picture = archetype_infantry_equipment
 		is_buildable = no
@@ -23,7 +23,8 @@ equipments = {
 
 		#Misc Abilities
 		reliability = 0.9
-		maximum_speed = 4
+		#speed
+		maximum_speed = 0.5
 
 		#Defensive Abilities
 		defense = 10
