@@ -1,4 +1,4 @@
-﻿l_english:
+l_german:
 
 CW_uses_CW_idea: "Use Chemical Weapons"
 CW_using_cw.trigger_tt: "Our military staff §Yapproached us §!about employing chemical weapons and §Ywe approved their use§!."
@@ -91,3 +91,74 @@ CW_refused_support: "Refused to support our proposal"
 CW_offered_support: "Offered to support our proposal"
 
 chem_convention.signed: "Signed reaffirmation to Geneva Protocol"
+
+
+########################################################################################################
+## chemical  Warfare
+
+bureau_chem_advisors: "Chemische Kampfmittelnutzung"
+CW_using_cw: "Benutze CK"
+CW_using_cw.tt: "Unsere Truppen dürfen chemische Kampfmittel im Kampf benutzen.\n"
+CW_using_cw.TT_signed_exception: "Wir unterschrieben mit Reservierung und diese Reservierungen sind in Kraft."
+CW_not_using_cw: "Benutze keine CK"
+CW_not_using_cw.tt: "Unsere Truppen dürfen keine chemische Kampfmittel im Kampf benutzen.\n"
+
+chem_convention.enforced: "Verpflichtet, das Genfer Protokoll zu erzwingen"
+
+SPECIALISED_TITLE_CHEMICAL: "CHEMIEKRIEG"
+
+tactic_prepare_gas_attack: "Gasangriff vorbereiten"
+tactic_cw_basic_attack: "Nachverfolgen"
+tactic_blue_cross_attack: "Blaukreuzangriff"
+tactic_blue_cross_attack_2: "Verbesserter Blaukreuzangriff"
+tactic_green_cross_attack: "Grünkreuzangriff"
+tactic_green_cross_attack_2: "Verbesserter Grünkreuzangriff"
+tactic_yellow_cross_attack: "Gelbkreuzangriff"
+tactic_yellow_cross_attack_2: "Verbesserter Gelbkreuzangriff"
+tactic_gas_mask_defense: "Gasmasken Verteidigung"
+tactic_gas_mask_defense_2: "Verbesserte Gasmaskenverteidigung"
+tactic_gas_mask_counter_attack: "Gasgegenangriff"
+tactic_chemical_attack_withdraw: "Rückzug aus CK Attacke"
+chemical_warfare: "Chemische Kriegsführung"
+
+chemical_warfare_tech: "Chemische Kriegsführung"
+chemical_warfare_tech_desc: "Man könnte sagen, diese Zeiten sind schrecklich genug, um diese Waffen wieder zu verwenden. Aber wenn wir uns entscheiden, diese Waffen einzusetzen, wird es eine Vergeltung durch unsere Feinde und die internationale Gemeinschaft geben.\n"
+chemical_technology_desc: "Nach der Brutalität, dem Tod und dem Elend, welcher die chemische Kriegsführung über die Menschen des ersten Weltkriegs brachte, zögern die meisten Nationen vor dem Einsetzen dieser Waffen des Horrors, besonders, da die meisten Führer die Qual dieser Waffen selbst erlebt haben. \n"
+chemical_ammo_subtitle1_label: "Chemische Munition"
+chemical_ammo_subtitle1_tt: "Chemische Geschosse, um den Feind anzugreifen."
+chemical_incendiary_subtitle_label: "Brandmunition"
+chemical_incendiary_subtitle_tt: "Brand-Geschosse, Kugeln und Bomben."
+
+gas_blue_cross: "Blaukreuz"
+GER_gas_blue_cross: "Blaukreuz"
+gas_blue_cross_desc: "Blaukreuz ist ein chemisches Mittel, welches die Atemwege betrifft und primitive Gasmasken umgehen konnte. Meistens handelte es sich dabei um die Stoffe Diphenylarsinchlorid und Diphenylarsincyanid. Diese verursachen Schwindel, krampfhaftes Übergeben und das Sammeln von Flüssigkeiten in den Lungen. Während dies meistens nicht komplett tödlich war, sorgte es dafür, dass Soldaten die Gasmasken absetzten, und somit ungeschützt waren. Die Geschosse, gefüllt mit diesem Gas, wurden mit normalen Hochexplosivgeschossen vermischt, damit es nicht von normalen Artillerieangriffen differenziert werden konnte.  "
+gas_blue_cross2: "Blaukreuz II"
+GER_gas_blue_cross2: "Blaukreuz Zwei"
+gas_blue_cross2_desc: "Effektivere Lungenreizstoffe wie Lewisit, die auch Blasenbildung verursachen, und Verbesserungen in der Mischung, zusammen mit Fortschritten für Geschosse und Verteilung werden die Kraft unserer Reizstoffe weiter erhöhen, um die Fähigkeit des Gegners, einen wirksamen Widerstand aufzubauen, zu erodieren."
+
+gas_green_cross: "Grünkreuz"
+GER_gas_green_cross: "Grünkreuz"
+gas_green_cross_desc: "Grünkreuzkampfmittel waren die Ursache von rund 80% aller Tode der chemischen Kriegsführung während des ersten Weltkrieges. Grünkreuz ist ein Lungenkampfstoff, bestehend aus Phosgen / Chlor, Trichlormethylchlorformiat und  Chlorpicrin / Nitrochloroform. Diese hatten die Aufgabe, die Lungenblutbarriere zu zerstören, was zu Asphyxie führt."
+gas_green_cross2: "Grünkreuz II"
+GER_gas_green_cross2: "Grünkreuz Zwei"
+gas_green_cross2_desc: "Verbesserungen in unseren Lungenmitteln erhöhten ihre Toxizität und damit die Letalität. Kampfmittel wie Disulfur-Decafluorid und Acrolein sind um ein Vielfaches toxischer als Phosgen."
+
+gas_yellow_cross: "Gelbkreuz"
+GER_gas_yellow_cross: "Gelbkreuz"
+gas_yellow_cross_desc: "Gelbkreuzkampfmittel betreffen freie und offene Oberflächen der Opfer, was ausgedehnte Blasenbildung verursacht. Der meistgenutzte Stoff dafür während des ersten Weltkriegs war Dichlorethylsulfid (Schwefel-Senf), aber auch andere Nervenkampfmittel können in diese Kategorie fallen. Diese Mittel verursachen extreme und schwächende, chemische Verbrennungen am ganzen Körper und können Wolle und Baumwolle durchdringen. Wenn sie eingeatmet werden, verursachen sie außerdem Blutungen und Blasenbildung innerhalb des Atmungssystems was dazu führt, dass sich die Lunge mit Blut füllt und man temporär erblindet."
+gas_yellow_cross2: "Gelbkreuz II"
+GER_gas_yellow_cross2: "Gelbkreuz Zwei"
+gas_yellow_cross2_desc: "Die Letalität und Toxizität unserer Nervenmittel wurden erhöht, so dass sie tödlicher sind als je zuvor. Neue Mittel wie Sarin und Cyanogenchlorid sind neue Wege, um unsere Feinde zu schwächen oder zu töten."
+
+simple_gasmasks: "Simple Gasmasken"
+simple_gasmasks_desc: "Einfache Gasmasken, die während des Großen Krieges entwickelt wurden. Sie können viele Mängel haben, aber sie sind die besten, die wir jetzt haben. Diese Masken können den beim Großen Krieg eingesetzten Gas entgegenwirken."
+gasmask_training: "Erweiterte Gasmaskenausbildung"
+gasmask_training_desc: "Das schnelle und effiziente Anlegen einer Gasmaske zusammen mit dem Angreifen einer Person ist keine einfache Aufgabe. Jedoch können unsere Soldaten darin ausgebildet werden, dies effiktiver zu vollziehen und so mit der eingesparten Zeit einen unerwarteten Gegenangriff auszuführen."
+improved_gasmask: "Verbesserte Gasmasken"
+improved_gasmask_desc: "Diese neuen, verbesserten Gasmasken sind besser darin, den Träger vor neuen und schädlicheren chemischen Angriffen zu schützen. Neue Methoden wie Imprägnierung und bessere Filtrationsmethoden sollten auch die giftigsten Gase dem Träger fern halten"
+advanced_filters: "Fortgeschrittene Filter"
+advanced_filters_desc: "Neue fortgeschrittene Filter und Verbesserungen in der Benutzerfreundlichkeit machen es viel einfacher für unsere Truppen, den Gegner beim Tragen von Gasmasken anzugreifen."
+chemical_white_p_technology: "Weißer Phosphor"
+chemical_white_p_technology_desc: "Entwickelt während des großen Krieges als Raucherzeugung, können wir die Brandfaktoren des weißen Phosphors nun vollständig ausnutzen.  Wir können WP-Granaten für Infanterie, Mörser, Artilleriegeschosse und sogar Panzergeschosse verwenden. Durch das Verändern der Ladungszusammensetzung von Geschossen können wir die brennenden Partikel durch die anfängliche Explosion über einen größeren Bereich verteilen. Diese Partikel haften an Oberflächen wie der Haut und verursachen tiefe Verbrennungen für die Opfer, aber schaden auch Fahrzeugpanzerung und Sichtchlitzen. Außerdem erzeugen sie blendenden Rauch für die Insassen des getroffenen Fahrzeugs."
+napalm_tech: "Napalm"
+napalm_tech_desc: "Wir haben entdeckt, dass eine Gelee-Mischung aus naphthenischen- und Palmitinsäuren die Wirksamkeit unserer Brandwaffen stark erhöht. Wir können diese Mischungen in unseren Fahrzeugen und tragbaren Flammenwerfern verwenden und wir können es benutzen, um feindliche Positionen durch Flugzeuge zu bombardieren."

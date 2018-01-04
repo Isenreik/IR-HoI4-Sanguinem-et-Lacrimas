@@ -1,0 +1,430 @@
+﻿l_english:
+
+######################################################################################################
+################      Infantry Folder
+
+night_vision3: "Night Vision III"
+night_vision3_desc: "Needs to be written"
+
+mines: "Mines"
+mines_desc: "Needs to be written"
+mines_2: "Mines II"
+mines_2_desc: "Needs to be written"
+mines_3: "Mines III"
+mines_3_desc: "Needs to be written"
+mines_4: "Mines IV"
+mines_4_desc: "Needs to be written"
+
+urban_warfare1: "Urban Warfare"
+urban_warfare1_desc: "Needs to be written"
+urban_warfare2: "Urban Warfare II"
+urban_warfare2_desc: "Needs to be written"
+urban_warfare3: "Urban Warfare III"
+urban_warfare3_desc: "Needs to be written"
+urban_warfare1.tt: "§G10% §!Attack and Defense"
+
+mechanized_equipment_4_short: "Mechanized IV"
+mechanized_equipment_4: "Mechanized Equipment IV"
+mechanized_equipment_4_desc: "Needs to be written"
+mechanized_equipment_5_short: "Mechanized V"
+mechanized_equipment_5: "Mechanized Equipment V"
+mechanized_equipment_5_desc: "Needs to be written"
+
+mechanised_heavy_improvements: "Heavy Mechanised Improvements"
+mechanised_heavy_improvements_desc: "Needs to be written"
+mechanized_heavy_equipment_1_short: "Heavy Mechanised"
+mechanized_heavy_equipment_1: "Heavy Mechanised Equipment"
+mechanized_heavy_equipment_1_desc: "Needs to be written"
+mechanized_heavy_equipment_2_short: "Heavy Mechanised II"
+mechanized_heavy_equipment_2: "Heavy Mechanised Equipment II"
+mechanized_heavy_equipment_2_desc: "Needs to be written"
+
+antitank_equipment: "Infantry Anti-Tank Weapons"
+antitank_equipment_desc: "Man-portable anti-tank weapons to give infantry a fighting chance against armoured hostiles."
+antitank_equipment_0_short: "Great War Anti-Tank"
+antitank_equipment_0: "Great War Anti-Tank Equipment"
+antitank_equipment_0_desc: "Needs to be written"
+antitank_equipment_1_short: "Anti-Tank I"
+antitank_equipment_1: "Anti-Tank Equipment I"
+antitank_equipment_1_desc: "Needs to be written"
+antitank_equipment_2_short: "Anti-Tank II"
+antitank_equipment_2: "Anti-Tank Equipment II"
+antitank_equipment_2_desc: "Needs to be written"
+antitank_equipment_3_short: "Anti-Tank III"
+antitank_equipment_3: "Anti-Tank Equipment III"
+antitank_equipment_3_desc: "Needs to be written"
+antitank_equipment_4_short: "Anti-Tank IV"
+antitank_equipment_4: "Anti-Tank Equipment IV"
+antitank_equipment_4_desc: "Needs to be written"
+
+inf_antitank_weapons3: "Improved Antitank Weapon Training"
+inf_antitank_weapons3_desc: "Needs to be written"
+inf_antitank_weapons5: "Advanced Antitank Weapon Training"
+inf_antitank_weapons5_desc: "Needs to be written"
+
+infantry_equipment_4: "Infantery Equipment IV"
+infantry_equipment_4_short: "Weapons IV"
+infantry_equipment_4_desc: "Needs to be written"
+infantry_equipment_5: "Infantery Equipment V"
+infantry_equipment_5_short: "Weapons V"
+infantry_equipment_5_desc: "Needs to be written"
+
+modern_infantry_weapons2: "Improved Infantery Equipment IV"
+modern_infantry_weapons2_desc: "Needs to be written"
+
+extra_heavy_weapon_support: "Additional Heavy Weapons"
+extra_heavy_weapon_support_desc: "Deploy additional heavy support weapons such as heavy machine guns and mortars."
+extra_heavy_weapons_equipment_desc: "Deploy additional heavy support weapons such as heavy machine guns and mortars."
+
+light_infantry: "Light Infantry"
+light_infantry_desc: "Light infantry not burdened by heavy weapons; faster to deploy, faster to die. Light infantry also encompasses irregular or militia outfits."
+
+heavy_weapons_equipment: "Heavy Support Weapons"
+heavy_weapons_equipment_desc: "Crew operated heavy support weapons such as heavy machine guns and mortars."
+heavy_weapons_equipment_0: "Great War Support Weapons"
+heavy_weapons_equipment_0_short: "Great War Support Weapons"
+heavy_weapons_equipment_0_desc: "Needs to be written 0"
+heavy_weapons_equipment_1: "Support Weapons"
+heavy_weapons_equipment_1_short: "Support Weapons"
+heavy_weapons_equipment_1_desc: "Needs to be written 1"
+heavy_weapons_equipment_2: "Support Weapons II"
+heavy_weapons_equipment_2_short: "Support Weapons II"
+heavy_weapons_equipment_2_desc: "Needs to be written 2"
+heavy_weapons_equipment_3: "Support Weapons III"
+heavy_weapons_equipment_3_short: "Support Weapons III"
+heavy_weapons_equipment_3_desc: "Needs to be written 3"
+
+support_weapons6: "Support Weapon Training"
+support_weapons6_desc: "Needs to be written"
+support_weapons8: "Improved Support Weapon Training"
+support_weapons8_desc: "Needs to be written"
+support_weapons9: "Advanced Support Weapon Training"
+support_weapons9_desc: "Needs to be written"
+support_weapons10: "Modern Support Weapon Training"
+support_weapons10_desc: "Needs to be written"
+
+general_reliability_upgrade: "Reliability"
+general_reliability_upgrade_desc: "Improving reliability leads to less wear-and-tear and the less broken equipment that needs to be replaced."
+general_cost_upgrade: "Retrench"
+general_cost_upgrade_desc: "By cutting corners and removing unnecessary or obsolete parts, we can reduce the production cost."
+general_engine_upgrade: "Engine"
+general_engine_upgrade: "More mobility give tactical and strategic advantages."
+mech_armor_upgrade: "Armour"
+mech_armor_upgrade_desc: "Better armor than your enemies can penetrate is a huge advantage to your divisions but is probably going to slow you down."
+mech_gun_upgrade: "Weapons"
+mech_gun_upgrade_desc: "Improving the small calibre on-board weapons will improve the firing power of the mechanised personnel carrier."
+arty_gun_upgrade: "Barrel"
+arty_gun_upgrade_desc: "Ensure that our artillery guns have massive firepower that will tear through any unarmoured enemies."
+arty_at_gun_upgrade: "Barrel"
+arty_at_gun_upgrade_desc: "Ensure that our anti-tank guns can defeat the latest enemy tanks."
+arty_aa_gun_upgrade: "AA Capabilities"
+arty_aa_gun_upgrade_desc: "Ensure that our Anti-Air Armament is able to shoot down the latest planes."
+sam_gun_upgrade: "Missiles"
+sam_gun_upgrade_desc: "Ensure that our missiles are able to shoot down the latest planes."
+arty_aa_ground_upgrade: "Ground-Attack"
+arty_aa_ground_upgrade_desc: "Improve the AA gun's ability to hit ground troops."
+arty_rocket_upgrade: "Rockets"
+arty_rocket_upgrade_desc: "Ensure that our rockets have massive firepower that will tear through any unarmoured enemies."
+inf_loading_upgrade: "Loading Mechanism"
+inf_loading_upgrade_desc: "Improve the loading of small arms by improving the loading mechanism and receivers or by improving magazines, resulting in better efficiency for our infantry."
+inf_mg_upgrade: "Machine Guns"
+inf_mg_upgrade_desc: "Improve loading mechanism, receivers or cooling mechanisms to increase the power of MGs."
+inf_mortar_upgrade: "Mortars"
+inf_mortar_upgrade_desc: "Improve mortar shells and other small modifications to our light support artillery equipment to increase the support for our infantry."
+inf_at_upgrade: "AT Improvements"
+inf_at_upgrade_desc: "Improve the payload or other small modifications and adjustements to the AT weapons, resulting in better efficiency against vehicles for our infantry."
+
+######################################################################################################
+################      Specialised Folder
+
+specialised_folder: "Specialised"
+specialised_folder_desc: "Specialised troops, vehicles and support research."
+
+SPECIALISED_TITLE_KITS: "SPECIALISED EQUIPMENT KITS"
+
+SPECIALISED_TITLE_PENALS: "PENAL BATTALIONS & POLITICAL UNITS"
+
+### Criminal
+
+criminal_technology: "Criminals For The State"
+criminal_technology_short: "Criminals For The State"
+criminal_technology_desc: "Our criminals are sitting in their cells doing nothing useful. We should put their filthy hands to work."
+
+criminal_technology2: "Send Them To The Factories!"
+criminal_technology2_short: "Send Them To The Factories!"
+criminal_technology2_desc: "Our criminals will be put to work in factories, helping produce equipment for the state.\n§YOnly available during war §!OR §Yfor Fascists and Communists!§!\n\n"
+
+criminal_technology3: "Improved Prison Labour"
+criminal_technology3_short: "Improved Prison Labour"
+criminal_technology3_desc: "Our prison system will refine and further their involvement in the production of material towards the war effort.\n§YOnly available during war!§!"
+
+criminal_technology4: "Prison Labour Camps"
+SOV_criminal_technology4: "Gulags"
+criminal_technology4_short: "Prison Labour Camps"
+criminal_technology4_desc: "Our undesirables shall be send to work camps to mine for our glorious nation's war machine.\n§YOnly available for Fascists and Communists!§!"
+
+penal_technology: "Send Them To The Front!"
+penal_technology_short: "Send Them To The Front!"
+penal_technology_desc: "Give criminals a chance to redeem themselves through front-line service. Let them fight for their country and atone for their crimes.\n§YOnly available during war!\n\n§!"
+
+penal_technology2: "Penal Battalions"
+penal_technology2_short: "Penal Battalions"
+penal_technology2_desc: "Mobilise criminals, dissidents, subversives, degenerates, disgraced officers and other undesirables to serve the country once again in specialised battalions, if they want to or not.\n§YOnly available during war for Fascists and Communists!\n\n§!"
+GER_penal_technology2: "Strafbattalione"
+SOV_penal_technology2: "Shtrafbats"
+
+penal_technology2_label: "Mobilise criminals, dissidents, subversives and other undesirables to serve the country once again in specialised battalions, if they want to or not."
+
+penal_technology3: "Improved Penal Battalions"
+penal_technology3_short: "Improved Penal Battalions"
+penal_technology3_desc: "Improve our officers' abilities to command our country's deplorable subjects and further incorporate penal battalions into the army structure.\n§YOnly available during war for Fascists and Communists!\n\n§!"
+
+penals: "Penal Battalion"
+GER_penals: "Strafbattalion"
+SOV_penals: "Shtrafbat"
+penals_desc: "Criminals, political opponents, degenerates, subversives and other undesirables forced to fight on the front lines."
+
+commissars: "Commissar Detachment"
+commissars_desc: "These political commissars are determined to push their men to their limits and beyond in the name of the state. No quarter shall be given."
+
+commissar_technology: "Commissars"
+commissar_technology_short: "Commissars"
+commissar_technology_desc: "Specialised officers will be able to be deployed to the front lines. These barrier troops are fervently loyal to the party and the cause and will motivate their men to be the same, by any means necessary.\n§YOnly available for Fascists and Communists!\n\n§!"
+
+commissar_technology2: "Commissar Schools"
+commissar_technology2_short: "Commissar Schools"
+commissar_technology2_desc: "Our barrier troops will be further integrated into our army and their jurisdiction and power shall be expanded. The men shall either love them or fear them. Further, commissars will also be used for conscription purposes, encouraging people to volunteer to serve the state.\n§YOnly available for Fascists and Communists!\n\n§!"
+
+## naval
+
+SPECIALISED_TITLE_INVASION_SUPPORT: "IMPROVED AMPHIBIOUS UNITS"
+
+INVASION_SUPPORT_DESC: "With some adjustments our existing mechanised vehicles, light and medium tanks can be turned into specialised amphibious vehicles that will help our marines with naval invasions."
+
+amphibious_mech_subtitle_label: "Mechanised Landing Vehicles"
+amphibious_mech_subtitle_TT: "These are amphibious versions of our mechanised vehicles."
+
+amphibious_LT_subtitle_label: "Amphibious Light Tanks"
+amphibious_LT_subtitle_TT: "These are amphibious versions of our light tanks."
+
+amphibious_MT_subtitle_lable: "Amphibious Tanks"
+amphibious_MT_subtitle_TT: "These are amphibious versions of our medium tanks."
+
+amphibious_mech_vehicle: "Amphibious Mechanised"
+amphibious_mech_vehicle_desc: "These are converted versions of our troop transporters that let our marines ride right up to the shore or through rivers and embark under supporting fire. It also means they can drive right through swamps without fear of getting stuck."
+amphibious_mech_vehicle_1: "Amphibious Vehicle"
+amphibious_mech_vehicle_1_short: "LCM"
+amphibious_mech_vehicle_1_desc: "These are converted versions of our troop transporters that let our marines ride right up to the shore or through rivers and embark under supporting fire. It also means they can drive right through swamps without fear of getting stuck."
+
+amphibious_mech_vehicle_2: "Tracked Landing Vehicle"
+amphibious_mech_vehicle_2_short: "LVT"
+amphibious_mech_vehicle_2_desc: "These amphibious armoured troop transporters can carry soldiers and small vehicles, support infantry in combat and act as landing crafts all at the same time. They are a force to be reckoned with even outside of the water."
+
+light_tank_amphibious_equipment: "Light Amphibious Tank"
+light_tank_amphibious_equipment_desc: "Through a small conversion, our light tanks should be able to swim through the water for a short period of time. This means that during naval invasions, they can be deployed by transport ships in safety near shore and drive up the beach by themselves. Other than that, such ability will also be mighty useful crossing rivers and get around swamps without fear of getting stuck in the mud."
+
+light_tank_amphibious_equipment_1: "Amphibious Tank"
+light_tank_amphibious_equipment_1_short: "Amphibious Tank"
+light_tank_amphibious_equipment_1_desc: "Through a small conversion, our light tanks should be able to swim through the water for a short period of time. This means that during naval invasions, they can be deployed by transport ships in safety near shore and drive up the beach by themselves. Other than that, such ability will also be mighty useful crossing rivers and get around swamps without fear of getting stuck in the mud."
+
+light_tank_amphibious_equipment_2: "Advanced DD Tank"
+light_tank_amphibious_equipment_2_short: "Adv. DD Tank"
+light_tank_amphibious_equipment_2_desc: "Our light duplex-drive tanks can further help our marines during landing operation."
+
+medium_tank_amphibious_equipment: "Medium Amphibious Tank"
+
+medium_tank_amphibious_equipment_1: "Medium Amphibious Tank"
+medium_tank_amphibious_equipment_1_short: "Medium DD Tank"
+medium_tank_amphibious_equipment_1_desc: "Using special exhaust pipes and flotation devices, our medium tanks can swim over short distances and directly support our marines during a naval assault and beyond."
+
+medium_tank_amphibious_equipment_2: "Adv. M/DD Tank"
+medium_tank_amphibious_equipment_2_short: "Adv. M/DD Tank"
+medium_tank_amphibious_equipment_2_desc: "Further improvements in our flotation technology and further integration with troop transport ships lets us deploy our advanced medium tanks across water."
+
+amphibious_mech_unit: "Mechanised Marines"
+amphibious_mech_unit_desc: "Armoured infantry landing transportation."
+light_tank_amphibious_unit: "Amphibious Light Tanks"
+light_tank_amphibious_unit_desc: "Amphibious lightly armoured landing tanks."
+medium_tank_amphibious_unit: "Amphibious Medium Tanks"
+medium_tank_amphibious_unit_desc: "Medium landing tanks can do almost any job."
+
+##Airborne gliders
+
+SPECIALISED_TITLE_airborne_support: "AIRBORN GLIDERS"
+
+glider_equipment: "Cargo Gliders"
+glider_equipment_1: "Cargo Gliders"
+glider_equipment_1_desc: "These larger gliders can bring in proper supplies and even small vehicles along with our paratroopers."
+glider_equipment_desc: "These larger gliders can bring in proper supplies and even small vehicles along with our paratroopers."
+
+glider_tank_equipment: "Glider Tank"
+glider_tank_equipment_1: "Glider Tank"
+glider_tank_equipment_1_short: "Light Glider Tank"
+glider_tank_equipment_1_desc: "This light tank can be deployed from accompanied large, specially build gliders."
+
+glider_tank: "Glider Tank Attachment"
+glider_tank_desc: "This light tank company can be deployed from accompanied large, specially build gliders and support airborne troops."
+
+cargo_glider_technology: "Cargo Gliders"
+cargo_glider_technology_desc: "These larger and specialised gliders can bring in proper supplies and even small vehicles along with our paratroopers."
+
+paratrooper_glider: "Cargo Gliders"
+paratrooper_glider_desc: "These larger and special gliders can bring in proper supplies and even small vehicles along with our paratroopers."
+
+glider_technology: "Gliders"
+glider_technology_desc: "With the use of large gliders, we can land entire platoons and even vehicles behind the enemy lines."
+
+##Kits
+
+SPECIALISED_TITLE_kits_support: "SPECIALISED CLIMATE EQUIPMENT"
+kits_technology_desc: "This specialised equipment encompass small modifications to existing weapons and vehicles or specialised transporters for harsh climates. This equipment will improve the combat effectiveness of our troops using them."
+
+desert_kit_1: "Desert Equipment"
+desert_kit_1_desc: "\nEquipment doesn't like sand. It's coarse and rough and irritating and it gets everywhere. With small and specialised modifications delivered to our existing vehicles and weapons, we can increase their reliability and optimise their supply usage using dedicated training and tactics for the desert climate. However, these special adaptations help little outside of deserts and actually work as a detriment when fighting in other climates.\n§YOnly available for nations that own appropriate territory!\n\n§!"
+# desert_kit1_special_desc: "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGives bonuses towards Movement, Breakthrough and Defence in desert environments."
+
+desert_kit2_technology: "Improved Desert Equipment"
+desert_kit2_technology_desc: "Further improvements in tactics, logistics and equipment and improvements in the elimination process for unfit troops allows our designated desert divisions to expand on their fighting capabilities in the unforgiving desert sands. \n\n§!"
+desert_kit2_special_tooltip: "Increases Movement, Breakthrough and Defence"
+# desert_kit2_special_desc: "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFurther increases the bonus towards Movement, Breakthrough and Defence in desert environments for the Desert Support Company."
+
+desert_kit: "Desert Equipment"
+
+desert_support: "Desert Support Company"
+desert_support_desc: "This special support company encompasses everything a division needs to dedicate combat in desert environments. It contains specialised logistic vehicles, training and deliveries of modifications for existing weapons and vehicles."
+
+jungle_kit: "Jungle Equipment"
+
+jungle_kit_1: "Jungle Equipment"
+jungle_kit_1_desc: "\nThis equipment and special training was designed to support the unwelcoming humid climate found in jungles. Using specialised equipment and dedicated tactics appropriate for jungle warfare, troops assigned with these company while improve their capabilities while fighting in jungle terrain. However, these special adaptations help little outside of the jungle and actually work as a detriment when fighting in other climates.\n§YOnly available for nations that own appropriate territory!\n\n§!"
+
+jungle_kit2_technology: "Improved Jungle Equipment"
+jungle_kit2_technology_desc: "Further improvements in tactics, logistics and equipment allows our designated jungle divisions to expand on their fighting capabilities in the treacherous rain-forest.\n\n§!"
+jungle_kit2_RESEARCHED: "Increases Movement, Breakthrough and Defence"
+
+jungle_support: "Jungle Support Company"
+jungle_support_desc: "This special support company encompasses everything a division needs to dedicate combat in jungle environments. It contains specialised logistic vehicles, training and deliveries of modifications for existing weapons and vehicles."
+
+winter_kit_technology: "Winter Equipment"
+winter_kit_technology_desc: "This equipment and special training was designed to help out our troops during the cold winter. This means specialised vehicles using tracks and skis being given to our logistic companies and front-line troops during winter.\n§YOnly available for nations that own appropriate territory!\n\n§!"
+
+winter_kit2_technology: "Improved Winter Equipment"
+winter_kit2_technology_desc: "Further improvements in tactics, logistics and equipment allows our troops to expand on their fighting capabilities in the cold winter months.\n\n§!"
+
+heat_kit_technology: "Heat Equipment"
+heat_kit_technology_desc: "While the heat of the desert can be excruciating, it's the cold of the desert night that proves great difficulties for on our soldiers. Improving and sending more blankets and similar equipment will help our soldiers out. On the other hand, the jungle days and nights are both hot and humid and riddled with insects; distributing mosquito nets and insect repellent will not only stop our soldiers from constantly scratching, but also will keep many diseases at bay."
+
+heat_kit2_technology: "Heat Equipment II"
+heat_kit2_technology_desc: "Improvements in our soldier uniforms and modifications to our vehicles fuel mixtures will help them to suffer less failures.\n\n§!"
+
+######################################################################################################
+################      Industry Folder
+
+ modifier_production_speed_infrastructure_factor: "§YInfrastructure§! construction speed"
+ modifier_production_speed_infrastructure_factor_desc: "Modifies the speed of Infrastructure construction."
+ modifier_production_speed_arms_factory_factor: "§YMilitary Factory§! construction speed"
+ modifier_production_speed_arms_factory_factor_desc: "Modifies the speed of Military Factory construction."
+ modifier_production_speed_industrial_complex_factor: "§YCivilian Factory§! construction speed"
+ modifier_production_speed_industrial_complex_factor_desc: "Modifies the speed of Civilian Factory."
+ modifier_production_speed_air_base_factor: "§YAir Base§! construction speed"
+ modifier_production_speed_air_base_factor_desc: "Modifies the speed of Air base construction."
+ modifier_production_speed_naval_base_factor: "§YNaval base§! construction speed"
+ modifier_production_speed_naval_base_factor_desc: "Modifies the speed of Naval base construction."
+ MODIFIER_PRODUCTION_SPEED_BUNKER_FACTOR: "§YLand Fort§! construction speed"
+ MODIFIER_PRODUCTION_SPEED_BUNKER_FACTOR_DESC: "Modifies the speed of Bunker construction."
+ modifier_production_speed_coastal_bunker_factor: "§YCoastal Fort§! construction speed"
+ modifier_production_speed_coastal_bunker_factor_desc: "Modifies the speed of Coastal bunker construction."
+ modifier_production_speed_dockyard_factor: "§YDockyard§! construction speed"
+ modifier_production_speed_dockyard_factor_desc: "Modifies the speed of Dockyard construction."
+ modifier_production_speed_anti_air_building_factor: "§YAnti Air§! construction speed"
+ modifier_production_speed_anti_air_building_factor_desc: "Modifies the speed of Anti air construction."
+ modifier_production_speed_synthetic_refinery_factor: "§YRefinery§! construction speed"
+ modifier_production_speed_synthetic_refinery_factor_desc: "Modifies the speed of Synthetic construction."
+ modifier_production_speed_radar_station_factor: "§YRadar Station§! construction speed"
+ modifier_production_speed_radar_station_factor_desc: "Modifies the speed of Radar Station construction."
+
+ concentrated_industry6: "Concentrated Industry VII"
+ concentrated_industry6_desc: "Having our workers settle directly next to our industrial centres, creating towns centred around factory complexes, will further increase our productivity."
+ dispersed_industry6: "Dispersed Industry VII"
+ dispersed_industry6_desc: "We can move entire factories and infrastructure network underground, thus shielding them from enemy air-raids."
+
+ factories_production1: "Advanced Industry I"
+ factories_production1_desc: "We reached our limits to specialise our industry based on our specific national needs, but we have to continue expanding it in more general terms to keep up with the ever increasing demand for equipment and goods."
+ factories_production2: "Advanced Industry II"
+ factories_production2_desc: "Further urbanising our provinces will allow us to build more industry."
+ factories_production3: "Advanced Industry III"
+ factories_production3_desc: "Planning for great construction projects of sprawling factory complexes will allow us to further expand our industrial capacity."
+ factories_production4: "Advanced Industry IV"
+ factories_production4_desc: "If we expand our infrastructure networks, we can expand our factories even to the most remote locations opening up even more potential industrial growth."
+
+ flexible_line2: "Improved Flexible Line"
+ flexible_line2_desc: "If we use exchangeable parts, we don't need to completely start from scratch and can use previously produced parts in this new production line."
+ flexible_line3: "Advanced Flexible Line"
+ flexible_line3_desc: "With the use of universal assembly lines, a change in production will not require a complete rebuild of our assembly lines\n\n"
+
+ streamlined_line2: "Improved Streamlined Line"
+ streamlined_line2_desc: "Further streamlining the process and integrating assembly lines, we can increase our production growth."
+ streamlined_line3: "Advanced Streamlined Line"
+ streamlined_line3_desc: "We can reach greater production growth if we inspect and adjust our production method after every few cycles and thus find bottlenecks faster.\n\n"
+
+ production_line1: "Improved Assembly Line Production"
+ production_line1_desc: "Expanding our use of assembly lines allows us to help produce equipment that our workers previously had to move around the factory by hand."
+ production_line2: "Advanced Assembly Line Production"
+ production_line2_desc: "While at first increasing regulations seems counter-productive, it has shown that workplace safety can go a long way and will yield a net-gain in the long-term."
+ production_line3: "Modern Production"
+ production_line3_desc: "Even better equipment and factory layout together with better equipment testing procedures will allow us to further ramp-up production."
+
+ naval_production1: "Basic Naval Production"
+ naval_production1_desc: "We can easily apply our improvements for equipment production towards improving our docks and increase naval production."
+ naval_production2: "Improved Naval Production"
+ naval_production2_desc: "Using the same servomechanisms used for land-based equipment, we can improve the output of our dockyards."
+ naval_production3: "Advanced Naval Production"
+ naval_production3_desc: "Increasing the amount of ship parts being assembled in factories using modern assembly lines will further speed up our ship production."
+ naval_production_special_desc: "\n\n\n\n\n\n\n                 §YNaval base§! Construction Speed ...........................+10%"
+
+ construction6: "Construction VI"
+ construction6_desc: "Planning large scale production projects and managing to execute them will pave the way to more and larger construction projects."
+ construction7: "Construction VII"
+ construction7_desc: "Incorporating many different types of civilian contractors for their expertise will help our construction efforts."
+ construction8: "Construction VIII"
+ construction8_desc: "Expanding our engineer corps towards civilian construction projects will help our construction efforts."
+ construction9: "Construction IX"
+ construction9_desc: "Advanced machinery will further our efficiency towards construction projects"
+ construction10: "Construction X"
+ construction10_desc: "Completely mobilising and incorporating all available construction companies will allow us to finish every type of construction effort in no time."
+
+ excavation6: "Excavation VI"
+ excavation6_desc: "Larger machines allow us to get more resources out of ground."
+ excavation7: "Excavation VII"
+ excavation7_desc: "Deep drilling technologies will give us access to pockets of resources that we couldn't access previously."
+ excavation8: "Excavation VIII"
+ excavation8_desc: "Advancements in supply lines will allow more and better quality material to get from where it is mined to where it is turned into weapons."
+ excavation9: "Excavation IX"
+ excavation9_desc: "Improved refining mechanisms will yield higher quality resources."
+ excavation10: "Excavation X"
+ excavation10_desc: "More effective mining processes will yield us more resources."
+
+ infrastructure_construction1: "Infrastructure Construction I"
+ infrastructure_construction1_desc: "Without good infrastructure our national goods and supplies will have troubles moving around the country and stifle our productivity."
+ infrastructure_construction2: "Infrastructure Construction II"
+ infrastructure_construction2_desc: "Using specialised machinery we can improve the speed of roads being build and train-tracks being laid."
+ infrastructure_construction3: "Infrastructure Construction III"
+ infrastructure_construction3_desc: "Modern motorways will not only help our citizens and products move around the nation quickly, but will also make troop deployments much faster."
+ infrastructure_construction_special_desc: "\n\n\n\n\n                 §YInfrastructure§! Construction Speed .................+10%\n                 §YAir Base§! Construction Speed ............................+10%"
+ fort_construction1: "Fort Construction I"
+ fort_construction1_desc: "We learnt from the Great War that well build concrete fortifications can make a great difference and make one soldier seem like 10."
+ fort_construction2: "Fort Construction II"
+ fort_construction2_desc: "Using Dragon's teeth and hedgehogs together with mixed minefields we can funnel the enemy into killing zones resulting in powerful defencive positions erected in mere days."
+ fort_construction3: "Fort Construction III"
+ fort_construction3_desc: "We have plenty of alt tank turrets that are either too old to be useful on the field or attached to broken down chassis. We can easily detach these turrets and put them to use on our defencive lines to create fast yet powerful defences."
+ fort_construction_special_desc: "\n\n\n\n\n                 §YLand Fort§! Construction Speed .........................+10%\n                 §YCoastal Fort§! Construction Speed .....................+10%"
+ radar_construction1: "Radar Construction I"
+ radar_construction1_desc: "The recently developed radars should be erected as fast as possible to help us intercept enemy planes."
+ radar_construction2: "Radar Construction II"
+ radar_construction2_desc: "With better coordination between the construction of our radar installation and our AA guns, we can more rapidly construct capable anti-air defences."
+ radar_construction_special_desc: "\n\n\n\n\n                 §YAnti Air§! Construction Speed .............................+10%\n                 §YRadar Station§! Construction Speed ....................+10%"
+ special_construction1: "Special Construction I"
+ special_construction1_desc: "While these types of projects are seen as a waste of time and resources for some, there is untapped potential that we might want to harness."
+ special_construction2: "Special Construction II"
+ special_construction2_desc: "If we can streamline the construction process for these fringe projects, then building them might be less of a waste of time and resources as it seems."
+ special_construction_special_desc: "\n\n\n\n\n                 §YRefinery§! Construction Speed ............................+15%\n                 §YRocket Site§! Construction Speed ........................+15%\n                 §YNuclear Reactor§! Construction Speed ...............+15%"

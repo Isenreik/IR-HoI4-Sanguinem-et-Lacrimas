@@ -1,7 +1,27 @@
 l_german:
 
+# main menu
+
+MENU_ISENREIK_INFO: "Isenreik Studio"
+MENU_ISENREIK_BLOODTEARS: "Sanguinem Et Lacrimas v1.4"
+
+custom_diff_strong_common: "Stärkung des Commonwealth"
+custom_diff_strong_mideast: "Stärkung des Nahen Ostens"
+custom_diff_strong_balkan: "Stärkung des Balkans"
+custom_diff_strong_easteu: "Stärkung Osteuropas"
+custom_diff_strong_baltic: "Stärkung der baltischen Länder"
+custom_diff_strong_westeu: "Stärkung Westeuropas"
+custom_diff_strong_scan: "Stärkung Skandinaviens"
+custom_diff_strong_latiname: "Stärkung Lateinamerikas"
+custom_diff_strong_africa: "Stärkung von Afrika"
+custom_diff_strong_otherasia: "Stärkung Südostasiens"
+custom_diff_strong_centralasia: "Stärkung Zentralasiens"
+
+
 bureau_folder: "Taktik & Amt"
 bureau_folder_desc: "Verschiedene Taktiken und Zivilministerien."
+
+bureau_laws: "Ämter"
 
 ## Officers
 

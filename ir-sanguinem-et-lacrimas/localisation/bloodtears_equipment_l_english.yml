@@ -1,5 +1,42 @@
 ﻿l_english:
 
+## Specialised
+
+USA_amphibious_mech_vehicle_1_short: "LVT-1 Alligator"
+USA_amphibious_mech_vehicle_2_short: "LVT-4 Water Buffalo"
+USA_light_tank_amphibious_equipment_1_short: "LVT(A)-1"
+USA_light_tank_amphibious_equipment_2_short: "LVT(A)-5"
+USA_medium_tank_amphibious_equipment_1_short: "Sherman DD"
+USA_medium_tank_amphibious_equipment_2_short: "T20 DD"
+
+ENG_amphibious_mech_vehicle_1_short: "DUKW"
+ENG_amphibious_mech_vehicle_2_short: "Terrapin"
+ENG_light_tank_amphibious_equipment_1_short: "A4E3 L1E3"
+ENG_light_tank_amphibious_equipment_1_short: "A4E3 L2E1"
+
+GER_amphibious_mech_vehicle_1_short: "Landwasserschlepper"
+GER_amphibious_mech_vehicle_2_short: "Landwasserschlepper II"
+GER_light_tank_amphibious_equipment_1_short: "Schwimmpanzer II"
+GER_light_tank_amphibious_equipment_2_short: "Schwimmleopard"
+GER_medium_tank_amphibious_equipment_1_short: "Tauchpanzer IV"
+GER_medium_tank_amphibious_equipment_2_short: "Tauchpanther"
+
+SOV_light_tank_amphibious_equipment_1_short: "T37A"
+SOV_light_tank_amphibious_equipment_2_short: "T-40 Amphibious"
+
+JAP_medium_tank_amphibious_equipment_1_short: "Type 2 Ka-Mi"
+JAP_medium_tank_amphibious_equipment_2_short: "Type 3 Ka-Chi"
+
+ENG_glider_equipment_1: "Hamilcar"
+USA_glider_equipment_1: "Waco CG-4"
+GER_glider_equipment_1: "Me 321"
+SOV_glider_equipment_1: "Ilyushin Il-32"
+
+ENG_glider_tank_equipment_1_short: "Tetrarch"
+USA_glider_tank_equipment_1_short: "M22 Locust"
+
+### tanks
+
 light_tank_equipment_4: "Late Light Tank"
 light_tank_equipment_4_short: "L. Tank IV"
 light_tank_equipment_4_desc: "Needs revisiting"
