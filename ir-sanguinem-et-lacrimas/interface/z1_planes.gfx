@@ -1,0 +1,45 @@
+spriteTypes = {
+
+  SpriteType = { name = "GFX_coastal_bomber1_medium" texturefile = "gfx/interface/technologies/equipment/coastal_bomber_equipment1.dds" }
+  SpriteType = { name = "GFX_coastal_bomber2_medium" texturefile = "gfx/interface/technologies/equipment/coastal_bomber_equipment2.dds" }
+  SpriteType = { name = "GFX_coastal_bomber3_medium" texturefile = "gfx/interface/technologies/equipment/coastal_bomber_equipment3.dds" }
+  SpriteType = { name = "GFX_USA_coastal_bomber1_medium" texturefile = "gfx/interface/technologies/equipment/usa_coastal_bomber_equipment1.dds" }  #PBY-5A Catalina
+
+  ## semi-WIP
+
+  SpriteType = { name = "GFX_autogyro_prototype_medium" texturefile = "gfx/interface/technologies/gyrocopter.dds" }
+
+  ### WIP
+
+  SpriteType = { name = "GFX_helicopters1_medium" texturefile = "gfx/interface/technologies/equipment/apc_ger_sdkfz-ausfB.dds" }
+  SpriteType = { name = "GFX_helicopters2_medium" texturefile = "gfx/interface/technologies/equipment/apc_ger_sdkfz-ausfB.dds" }
+  SpriteType = { name = "GFX_helicopters3_medium" texturefile = "gfx/interface/technologies/equipment/apc_ger_sdkfz-ausfB.dds" }
+
+  SpriteType = { name = "GFX_transport_plane1_medium" texturefile = "gfx/interface/technologies/transport_plane_equipment.dds" }
+  SpriteType = { name = "GFX_transport_plane2_medium" texturefile = "gfx/interface/technologies/transport_plane_equipment.dds" }
+  SpriteType = { name = "GFX_transport_plane3_medium" texturefile = "gfx/interface/technologies/transport_plane_equipment.dds" }
+  SpriteType = { name = "GFX_transport_plane4_medium" texturefile = "gfx/interface/technologies/transport_plane_equipment.dds" }
+  SpriteType = { name = "GFX_transport_plane5_medium" texturefile = "gfx/interface/technologies/transport_plane_equipment.dds" }
+
+  SpriteType = { name = "GFX_cv_fighter1_medium" texturefile = "gfx/interface/technologies/fighter1.dds" }
+  SpriteType = { name = "GFX_cv_fighter2_medium" texturefile = "gfx/interface/technologies/fighter2.dds" }
+  SpriteType = { name = "GFX_cv_fighter3_medium" texturefile = "gfx/interface/technologies/fighter3.dds" }
+
+  SpriteType = { name = "GFX_interceptor1_medium" texturefile = "gfx/interface/technologies/fighter1.dds" }
+  SpriteType = { name = "GFX_interceptor2_medium" texturefile = "gfx/interface/technologies/fighter2.dds" }
+  SpriteType = { name = "GFX_interceptor3_medium" texturefile = "gfx/interface/technologies/fighter3.dds" }
+
+  SpriteType = { name = "GFX_jet_fighter3_medium" texturefile = "gfx/interface/technologies/jet_fighter2.dds" }
+  SpriteType = { name = "GFX_jet_fighter4_medium" texturefile = "gfx/interface/technologies/jet_fighter2.dds" }
+
+  SpriteType = { name = "GFX_jet_cv_multirole1_medium" texturefile = "gfx/interface/technologies/jet_fighter2.dds" }
+  SpriteType = { name = "GFX_jet_cv_multirole2_medium" texturefile = "gfx/interface/technologies/jet_fighter2.dds" }
+
+  SpriteType = { name = "GFX_jet_multirole1_medium" texturefile = "gfx/interface/technologies/jet_fighter2.dds" }
+  SpriteType = { name = "GFX_jet_multirole2_medium" texturefile = "gfx/interface/technologies/jet_fighter2.dds" }
+  SpriteType = { name = "GFX_jet_multirole3_medium" texturefile = "gfx/interface/technologies/jet_fighter2.dds" }
+
+  SpriteType = { name = "GFX_jet_strategic_bomber2_medium" texturefile = "gfx/interface/technologies/jet_strategic_bomber1.dds" }
+  SpriteType = { name = "GFX_jet_strategic_bomber3_medium" texturefile = "gfx/interface/technologies/jet_strategic_bomber1.dds" }
+
+}
