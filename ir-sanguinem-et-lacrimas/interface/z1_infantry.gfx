@@ -56,11 +56,10 @@ spriteTypes = {
   SpriteType = { name = "GFX_support_weapons9_medium"    texturefile = "gfx//interface//trulz//law_saintrommel.dds"    alwaystransparent = yes	}
   SpriteType = { name = "GFX_support_weapons10_medium"   texturefile = "gfx//interface//trulz//law_panzershrek.dds"    alwaystransparent = yes	}
 
-  SpriteType = {
-    name = "GFX_unit_extra_heavy_weapon_support_icon_medium"
-    texturefile = "gfx//interface//counters//divisions_large//unit_support_heavy_weapons.dds"
-    noOfFrames = 2
-  }
+  SpriteType = { name = "GFX_unit_extra_heavy_weapon_support_icon_medium"  texturefile = "gfx//interface//counters//divisions_large//unit_support_heavy_weapons.dds"  noOfFrames = 2 }
+
+  SpriteType = { name = "GFX_unit_light_infantry_icon_medium"   texturefile = "gfx//interface//counters//divisions_large//unit_light_infantry_icon.dds"    noOfFrames = 2  }
+  spriteType = { name = "GFX_unit_light_infantry_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_light_infantry_icon.dds" noOfFrames = 2}
 
   SpriteType = { name = "GFX_modern_infantry_weapons2_medium"   texturefile = "gfx//interface//trulz//law_shores.dds"    alwaystransparent = yes	}
 
