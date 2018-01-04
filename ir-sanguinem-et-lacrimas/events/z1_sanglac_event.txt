@@ -10,10 +10,17 @@ country_event = {
   is_triggered_only = yes
 
 	option = {
-		name = sanglac_event.1.a
+		name = "can_puppet"
 
     # custom_effect_tooltip = sanglac_event.1.tt
 		set_rule = { can_puppet = yes }
+
+	}
+	option = {
+		name = "can_create_faction"
+
+    # custom_effect_tooltip = sanglac_event.1.tt
+		set_rule = { can_create_faction = yes }
 
 	}
 }

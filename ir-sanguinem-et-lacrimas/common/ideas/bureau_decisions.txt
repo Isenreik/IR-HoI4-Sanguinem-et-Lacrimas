@@ -60,7 +60,6 @@ ideas = {
 				}
 
 				on_add = {
-					custom_effect_tooltip = commandeer_trucks_decision.tt
 					country_event = { hours = 2 id = press_tech_event.1 }
 					set_country_flag = requested_civ_trucks
 				}

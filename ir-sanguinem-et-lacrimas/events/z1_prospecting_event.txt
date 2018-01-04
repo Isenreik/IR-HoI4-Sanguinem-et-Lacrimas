@@ -16,6 +16,10 @@ country_event = {
     }
   }
 
+	immediate = {
+		remove_ideas = prospecting_decision
+	}
+
   is_triggered_only = yes
 
 	# prospect on core
