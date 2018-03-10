@@ -1245,6 +1245,10 @@ technologies = {
 			defense = 0.02
 			breakthrough = 0.02
 		}
+		light_infantry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
 		mountaineers = {
 			defense = 0.03
 			breakthrough = 0.03
@@ -1363,6 +1367,10 @@ technologies = {
 			breakthrough = 0.05
 		}
 		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		light_infantry = {
 			defense = 0.02
 			breakthrough = 0.02
 		}
@@ -1487,6 +1495,10 @@ technologies = {
 			defense = 0.02
 			breakthrough = 0.02
 		}
+		light_infantry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
 		mountaineers = {
 			defense = 0.03
 			breakthrough = 0.03
@@ -1608,6 +1620,10 @@ technologies = {
 			defense = 0.02
 			breakthrough = 0.02
 		}
+		light_infantry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
 		mountaineers = {
 			defense = 0.03
 			breakthrough = 0.03
@@ -1681,6 +1697,10 @@ technologies = {
 			defense = 0.02
 			breakthrough = 0.02
 		}
+		light_infantry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
 		mountaineers = {
 			defense = 0.03
 			breakthrough = 0.03
@@ -1751,6 +1771,10 @@ technologies = {
 			breakthrough = 0.05
 		}
 		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		light_infantry = {
 			defense = 0.02
 			breakthrough = 0.02
 		}
@@ -2472,37 +2496,7 @@ technologies = {
 	## added
 	urban_warfare1 = {
 
-		infantry = {
-			urban = {
-				attack = 0.1
-				defence = 0.1
-			}
-		}
-		marine = {
-			urban = {
-				attack = 0.1
-				defence = 0.1
-			}
-		}
-		paratrooper = {
-			urban = {
-				attack = 0.1
-				defence = 0.1
-			}
-		}
-		cavalry = {
-			urban = {
-				attack = 0.1
-				defence = 0.1
-			}
-		}
-		motorized = {
-			urban = {
-				attack = 0.1
-				defence = 0.1
-			}
-		}
-		mechanized = {
+		category_all_infantry = {
 			urban = {
 				attack = 0.1
 				defence = 0.1
