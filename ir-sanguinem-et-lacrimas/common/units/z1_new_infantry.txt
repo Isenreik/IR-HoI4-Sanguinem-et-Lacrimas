@@ -1,4 +1,5 @@
 sub_units = {
+
   heavy_mechanized = {
     sprite = mechanized
     map_icon_category = infantry
@@ -77,102 +78,100 @@ sub_units = {
     amphibious = {
       attack = -0.45
     }
-
   }
 
-  ## extra heavy weapons
-  extra_heavy_weapon_support = {
-		sprite = infantry
-		map_icon_category = infantry
-		priority = 0
-		active = no
+  light_infantry = {
+    sprite = infantry
+    map_icon_category = infantry
 
-		type = {
-			infantry
-			support
-		}
+    priority = 600
+    ai_priority = 200
+    active = no
 
-		group = support
+    type = {
+      infantry
+    }
 
-		categories = {
-			category_support_battalions
-			category_army
-		}
+    group = infantry
 
-		combat_width = 0
+    categories = {
+      category_front_line
+      category_light_infantry
+      category_all_infantry
+      category_army
+    }
+
+    maximum_speed = 5
+
+    combat_width = 2
 
     #Size Definitions
-		max_strength = 2
-		max_organisation = 20
-		default_morale = 0.3
-		manpower = 500
-		training_time = 120
+    max_strength = 20
+    max_organisation = 50
+    default_morale = 0.2
+    manpower = 1000
 
-		#Misc Abilities
-		weight = 0.1
-		supply_consumption = 0.05
-		recon = 1
-		can_be_parachuted = yes
+    #Misc Abilities
+    training_time = 80
+    suppression = 0.5
+    weight = 0.3
 
-		# Support nerfs to combat abilities
-		defense = 0.5
-		breakthrough = -0.1
-		soft_attack = -0.3
-		hard_attack = -0.3
+    supply_consumption = 0.05
 
-		essential = {
-			heavy_weapons_equipment
-			support_equipment
-		}
+    need = {
+      infantry_equipment = 85
+    }
+  }
 
-		need = {
-			support_equipment = 5
-			heavy_weapons_equipment = 25
-		}
-	}
+  extra_heavy_weapon_support = {
+    sprite = infantry
+    map_icon_category = infantry
+    priority = 0
+    active = no
 
-  light_infantry = {
-		sprite = infantry
-		map_icon_category = infantry
+    type = {
+      infantry
+      support
+    }
 
-		priority = 600
-		ai_priority = 200
-		active = no
+    group = support
 
-		type = {
-			infantry
-		}
+    categories = {
+      category_support_battalions
+      category_army
+    }
 
-		group = infantry
+    combat_width = 0
 
-		categories = {
-			category_front_line
-			category_light_infantry
-			category_all_infantry
-			category_army
-		}
+    #Size Definitions
+    max_strength = 2
+    max_organisation = 20
+    default_morale = 0.3
+    manpower = 500
+    training_time = 120
 
-		maximum_speed = 5
+    #Misc Abilities
+    weight = 0.1
+    supply_consumption = 0.05
+    recon = 1
+    can_be_parachuted = yes
 
-		combat_width = 2
+    # Support nerfs to combat abilities
+    defense = 0.5
+    breakthrough = -0.1
+    soft_attack = -0.3
+    hard_attack = -0.3
 
-		#Size Definitions
-		max_strength = 20
-		max_organisation = 50
-		default_morale = 0.2
-		manpower = 1000
+    essential = {
+      heavy_weapons_equipment
+      support_equipment
+    }
 
-		#Misc Abilities
-		training_time = 80
-		suppression = 0.5
-		weight = 0.3
-
-		supply_consumption = 0.05
-
-		need = {
-			infantry_equipment = 85
-		}
-	}
+    need = {
+      support_equipment = 5
+      heavy_weapons_equipment = 25
+    }
+  }
 
   ## extra antitank weapons
 #  extra_antitank_support = {
