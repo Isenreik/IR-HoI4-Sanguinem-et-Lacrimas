@@ -1,0 +1,12 @@
+sub_units = {
+
+	interceptor = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { interceptor }
+		need = { interceptor_equipment = 1 }
+		categories = { category_fighter }
+	}
+
+}
