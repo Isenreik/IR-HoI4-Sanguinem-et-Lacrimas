@@ -85,18 +85,8 @@ technologies = {
 			}
 
 			modifier = {
-				factor = 5
+				factor = 10
 				date > "1936.1.3"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1936.1.6"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1937.1.1"
 			}
 		}
 	}
@@ -137,11 +127,20 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 2
 
 			modifier = {
-				factor = 2
-				date > "1938.1.6"
+				factor = 5
+
+				OR = {
+					tag = CHI
+					tag = PRC
+					tag = XSM
+					tag = SIK
+					tag = GXC
+					tag = SHX
+					tag = YUN
+				}
 			}
 
 			modifier = {
@@ -175,21 +174,11 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1.5
+			factor = 3
 
 			modifier = {
-				factor = 2
-				date > "1938.1.9"
-			}
-
-			modifier = {
-				factor = 2
+				factor = 10
 				date > "1939.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1939.1.6"
 			}
 		}
 	}
@@ -358,7 +347,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 2
 		start_year = 1946
 		folder = {
 			name = infantry_folder
@@ -516,7 +505,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 0.5
 
 			modifier = {
 				factor = 2
@@ -559,7 +548,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 0.5
 
 			modifier = {
 				factor = 2
@@ -583,6 +572,9 @@ technologies = {
 		paratrooper = {
 			max_organisation = 5
 		}
+		paratrooper_glider = {
+			max_organisation = 5
+		}
 
 		path = {
 			leads_to_tech = paratroopers4
@@ -601,7 +593,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 0.5
 
 			modifier = {
 				factor = 2
@@ -623,6 +615,11 @@ technologies = {
 	paratroopers4 = {
 
 		paratrooper = {
+			max_organisation = 5
+			soft_attack = 0.05
+			hard_attack = 0.05
+		}
+		paratrooper_glider = {
 			max_organisation = 5
 			soft_attack = 0.05
 			hard_attack = 0.05
@@ -695,15 +692,15 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 0.7
 
 			modifier = {
-				factor = 2
+				factor = 3
 				tag = USA
 			}
 
 			modifier = {
-				factor = 2
+				factor = 3
 				tag = JAP
 			}
 		}
@@ -733,15 +730,15 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 0.7
 
 			modifier = {
-				factor = 2
+				factor = 3
 				tag = USA
 			}
 
 			modifier = {
-				factor = 2
+				factor = 3
 				tag = JAP
 			}
 		}
@@ -750,6 +747,9 @@ technologies = {
 	marines3 = {
 
 		marine = {
+			max_organisation = 5
+		}
+		amphibious_mech_unit = {
 			max_organisation = 5
 		}
 
@@ -770,15 +770,15 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 0.7
 
 			modifier = {
-				factor = 2
+				factor = 3
 				tag = USA
 			}
 
 			modifier = {
-				factor = 2
+				factor = 3
 				tag = JAP
 			}
 		}
@@ -788,6 +788,10 @@ technologies = {
 	marines4 = {
 
 		marine = {
+			max_organisation = 5
+			hard_attack = 0.05
+		}
+		amphibious_mech_unit = {
 			max_organisation = 5
 			hard_attack = 0.05
 		}
@@ -809,15 +813,15 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 0.7
 
 			modifier = {
-				factor = 2
+				factor = 3
 				tag = USA
 			}
 
 			modifier = {
-				factor = 2
+				factor = 3
 				tag = JAP
 			}
 		}
@@ -825,9 +829,14 @@ technologies = {
 	marines5 = {
 
 		marine = {
-		max_organisation = 5
-		hard_attack = 0.05
-		soft_attack = 0.05
+			max_organisation = 5
+			hard_attack = 0.05
+			soft_attack = 0.05
+		}
+		amphibious_mech_unit = {
+			max_organisation = 5
+			hard_attack = 0.05
+			soft_attack = 0.05
 		}
 
 		research_cost = 2.0
@@ -842,15 +851,15 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 0.7
 
 			modifier = {
-				factor = 2
+				factor = 3
 				tag = USA
 			}
 
 			modifier = {
-				factor = 2
+				factor = 3
 				tag = JAP
 			}
 		}
@@ -892,7 +901,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 0.7
 		}
 	}
 
@@ -921,7 +930,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 0.7
 		}
 	}
 
@@ -949,7 +958,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 0.7
 		}
 	}
 
@@ -979,7 +988,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 0.7
 		}
 	}
 	tech_mountaineers5 = {
@@ -1002,7 +1011,213 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 0.7
+		}
+	}
+
+
+	tech_special_forces = {
+		category_special_forces = {
+			acclimatization_hot_climate_gain_factor = 0.05
+			acclimatization_cold_climate_gain_factor = 0.05
+		}
+
+		#dependencies = {
+		#	OR = {
+		#		marines = 1
+		#		paratrooper = 1
+		#		mountaineer = 1
+		#	}
+		#}
+
+		path = {
+			leads_to_tech = advanced_special_forces
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = improved_special_forces
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1938
+		folder = {
+			name = infantry_folder
+			position = { x = 1 y = @1938 }
+		}
+
+		categories = {
+			mountaineers_tech
+			marine_tech
+			para_tech
+		}
+
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+
+
+	advanced_special_forces = {
+		xor={
+			improved_special_forces
+		}
+
+		category_special_forces = {
+			max_organisation = 5
+			defense = 0.05
+		}
+
+		special_forces_training_time_factor = 0.1
+
+		path = {
+			leads_to_tech = extreme_environment_training
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @1940 }
+		}
+
+		categories = {
+			mountaineers_tech
+			marine_tech
+			para_tech
+		}
+
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+
+	improved_special_forces = {
+		xor={
+			advanced_special_forces
+		}
+
+		special_forces_cap = 0.05
+		special_forces_training_time_factor = -0.1
+
+		path = {
+			leads_to_tech = survival_training
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = @1940 }
+		}
+
+		categories = {
+			mountaineers_tech
+			marine_tech
+			para_tech
+		}
+
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+
+
+	extreme_environment_training = {
+
+		category_special_forces = {
+			acclimatization_hot_climate_gain_factor = 0.50
+			acclimatization_cold_climate_gain_factor = 0.50
+		}
+
+		special_forces_no_supply_grace = 48
+		special_forces_training_time_factor = 0.1
+
+		path = {
+			leads_to_tech = elite_forces
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @1942 }
+		}
+
+		categories = {
+			mountaineers_tech
+			marine_tech
+			para_tech
+		}
+
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+
+
+	survival_training = {
+
+		category_special_forces = {
+			acclimatization_hot_climate_gain_factor = 0.20
+			acclimatization_cold_climate_gain_factor = 0.20
+		}
+
+		special_forces_out_of_supply_factor = -0.1
+
+		path = {
+			leads_to_tech = elite_forces
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = @1942 }
+		}
+
+		categories = {
+			mountaineers_tech
+			marine_tech
+			para_tech
+		}
+
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+
+
+	elite_forces = {
+		category_special_forces = {
+			acclimatization_hot_climate_gain_factor = 0.20
+			acclimatization_cold_climate_gain_factor = 0.20
+			max_organisation = 5
+			soft_attack = 0.05
+		}
+
+		special_forces_no_supply_grace = 48
+
+		research_cost = 2
+		start_year = 1944
+		folder = {
+			name = infantry_folder
+			position = { x = 1 y = @1944 }
+		}
+
+		categories = {
+			mountaineers_tech
+			marine_tech
+			para_tech
+		}
+
+		ai_will_do = {
+			factor = 0.7
 		}
 	}
 
@@ -1212,7 +1427,19 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 15
 
+				OR = {
+					tag = CHI
+					tag = PRC
+					tag = XSM
+					tag = SIK
+					tag = GXC
+					tag = SHX
+					tag = YUN
+				}
+			}
 			modifier = {
 				factor = 2
 				date > "1937.1.1"
@@ -1257,6 +1484,14 @@ technologies = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
+		paratrooper_glider = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		amphibious_mech_unit = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
 		marine = {
 			defense = 0.03
 			breakthrough = 0.03
@@ -1289,6 +1524,19 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 
+			modifier = {
+				factor = 5
+
+				OR = {
+					tag = CHI
+					tag = PRC
+					tag = XSM
+					tag = SIK
+					tag = GXC
+					tag = SHX
+					tag = YUN
+				}
+			}
 			modifier = {
 				factor = 2
 				date > "1936.1.6"
@@ -1338,6 +1586,19 @@ technologies = {
 			factor = 1
 
 			modifier = {
+				factor = 5
+
+				OR = {
+					tag = CHI
+					tag = PRC
+					tag = XSM
+					tag = SIK
+					tag = GXC
+					tag = SHX
+					tag = YUN
+				}
+			}
+			modifier = {
 				factor = 2
 				date > "1938.1.6"
 			}
@@ -1379,6 +1640,14 @@ technologies = {
 			breakthrough = 0.03
 		}
 		paratrooper = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		paratrooper_glider = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		amphibious_mech_unit = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
@@ -1507,6 +1776,14 @@ technologies = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
+		paratrooper_glider = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		amphibious_mech_unit = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
 		marine = {
 			defense = 0.03
 			breakthrough = 0.03
@@ -1632,6 +1909,14 @@ technologies = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
+		paratrooper_glider = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		amphibious_mech_unit = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
 		marine = {
 			defense = 0.03
 			breakthrough = 0.03
@@ -1709,6 +1994,14 @@ technologies = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
+		paratrooper_glider = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		amphibious_mech_unit = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
 		marine = {
 			defense = 0.03
 			breakthrough = 0.03
@@ -1783,6 +2076,14 @@ technologies = {
 			breakthrough = 0.03
 		}
 		paratrooper = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		paratrooper_glider = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		amphibious_mech_unit = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
@@ -2401,6 +2702,9 @@ technologies = {
 		enable_equipments = {
 			mechanized_heavy_equipment_1
 		}
+		enable_subunits = {
+			heavy_mechanized
+		}
 
 		mechanized = {
 			breakthrough = 0.10
@@ -2544,37 +2848,7 @@ technologies = {
 	}
 	urban_warfare2 = {
 
-		infantry = {
-			urban = {
-				attack = 0.1
-				defence = 0.1
-			}
-		}
-		marine = {
-			urban = {
-				attack = 0.1
-				defence = 0.1
-			}
-		}
-		paratrooper = {
-			urban = {
-				attack = 0.1
-				defence = 0.1
-			}
-		}
-		cavalry = {
-			urban = {
-				attack = 0.1
-				defence = 0.1
-			}
-		}
-		motorized = {
-			urban = {
-				attack = 0.1
-				defence = 0.1
-			}
-		}
-		mechanized = {
+		category_all_infantry = {
 			urban = {
 				attack = 0.1
 				defence = 0.1
@@ -2622,37 +2896,7 @@ technologies = {
 	}
 	urban_warfare3 = {
 
-		infantry = {
-			urban = {
-				attack = 0.1
-				defence = 0.1
-			}
-		}
-		marine = {
-			urban = {
-				attack = 0.1
-				defence = 0.1
-			}
-		}
-		paratrooper = {
-			urban = {
-				attack = 0.1
-				defence = 0.1
-			}
-		}
-		cavalry = {
-			urban = {
-				attack = 0.1
-				defence = 0.1
-			}
-		}
-		motorized = {
-			urban = {
-				attack = 0.1
-				defence = 0.1
-			}
-		}
-		mechanized = {
+		category_all_infantry = {
 			urban = {
 				attack = 0.1
 				defence = 0.1
@@ -2697,6 +2941,12 @@ technologies = {
 	mines = {
 
 		infantry = {
+			defense = 0.05
+			fort = {
+				defence = 0.1
+			}
+		}
+		light_infantry = {
 			defense = 0.05
 			fort = {
 				defence = 0.1
@@ -2764,6 +3014,12 @@ technologies = {
 				defence = 0.1
 			}
 		}
+		light_infantry = {
+			defense = 0.05
+			fort = {
+				defence = 0.1
+			}
+		}
 		motorized = {
 			defense = 0.05
 			fort = {
@@ -2821,6 +3077,12 @@ technologies = {
 	mines_3 = {
 
 		infantry = {
+			defense = 0.05
+			fort = {
+				defence = 0.1
+			}
+		}
+		light_infantry = {
 			defense = 0.05
 			fort = {
 				defence = 0.1
@@ -2888,6 +3150,12 @@ technologies = {
 				defence = 0.1
 			}
 		}
+		light_infantry = {
+			defense = 0.05
+			fort = {
+				defence = 0.1
+			}
+		}
 		motorized = {
 			defense = 0.05
 			fort = {
@@ -2935,6 +3203,22 @@ technologies = {
 				factor = 1.5
 				date > "1955.1.1"
 			}
+		}
+	}
+
+	
+	######### FROM JAPANESE FOCUS ##########
+	bicycle_infantry = {
+
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_subunits = {
+			bicycle_battalion
 		}
 	}
 

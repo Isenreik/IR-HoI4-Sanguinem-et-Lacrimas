@@ -4,9 +4,8 @@ equipments = {
 	modern_tank_equipment = {
 			year = 1934
 
-		is_convertable = yes
-
 		is_archetype = yes
+		is_convertable = yes
 		picture = archetype_modern_tank_equipment
 		is_buildable = no
 		type = armor
@@ -32,7 +31,7 @@ equipments = {
 		armor_value = 130
 
 		#Offensive Abilities
-		soft_attack = 33
+		soft_attack = 40
 		hard_attack = 32
 		ap_attack = 131
 		air_attack = 0
@@ -61,9 +60,9 @@ equipments = {
 
 	modern_tank_artillery_equipment = {
 			year = 1934
-		is_convertable = yes
 
 		is_archetype = yes
+		is_convertable = yes
 		picture = archetype_modern_tank_equipment
 		is_buildable = no
 		family = modern_tank_equipment
@@ -94,7 +93,7 @@ equipments = {
 		armor_value = 90
 
 		#Offensive Abilities
-		soft_attack = 120
+		soft_attack = 80
 		hard_attack = 3
 		ap_attack = 10
 		air_attack = 0
@@ -122,9 +121,8 @@ equipments = {
 	modern_tank_destroyer_equipment = {
 		year = 1934
 
-		is_convertable = yes
-
 		is_archetype = yes
+		is_convertable = yes
 		picture = archetype_modern_tank_equipment
 		is_buildable = no
 		family = modern_tank_equipment
@@ -183,9 +181,8 @@ equipments = {
 	modern_tank_aa_equipment = {
 			year = 1934
 
-		is_convertable = yes
-
 		is_archetype = yes
+		is_convertable = yes
 		picture = archetype_modern_tank_equipment
 		is_buildable = no
 		family = modern_tank_equipment
@@ -264,7 +261,7 @@ equipments = {
 		armor_value = 130
 
 		#Offensive Abilities
-		soft_attack = 40
+		soft_attack = 47
 		hard_attack = 38
 		ap_attack = 140
 		air_attack = 0
@@ -301,7 +298,7 @@ equipments = {
 		armor_value = 135
 
 		#Offensive Abilities
-		soft_attack = 46
+		soft_attack = 53
 		hard_attack = 42
 		ap_attack = 145
 		air_attack = 0
@@ -338,7 +335,7 @@ equipments = {
 		armor_value = 142
 
 		#Offensive Abilities
-		soft_attack = 50
+		soft_attack = 57
 		hard_attack = 48
 		ap_attack = 150
 		air_attack = 0
@@ -375,7 +372,7 @@ equipments = {
 		armor_value = 150
 
 		#Offensive Abilities
-		soft_attack = 55
+		soft_attack = 62
 		hard_attack = 54
 		ap_attack = 160
 		air_attack = 0
@@ -415,7 +412,7 @@ equipments = {
 		armor_value = 110
 
 		#Offensive Abilities
-		soft_attack = 160
+		soft_attack = 105
 		hard_attack = 6
 		ap_attack = 16
 		air_attack = 0
@@ -449,7 +446,7 @@ equipments = {
 		armor_value = 120
 
 		#Offensive Abilities
-		soft_attack = 170
+		soft_attack = 155
 		hard_attack = 8
 		ap_attack = 17
 		air_attack = 0

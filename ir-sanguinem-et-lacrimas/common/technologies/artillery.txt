@@ -53,7 +53,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 2
 
 			modifier = {
 				factor = 2
@@ -100,7 +100,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 2
 
 			modifier = {
 				factor = 2
@@ -155,7 +155,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 2
 
 			modifier = {
 				factor = 2
@@ -222,7 +222,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 2
 
 			modifier = {
 				factor = 2
@@ -274,7 +274,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 2
 
 			modifier = {
 				factor = 2
@@ -311,7 +311,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 2
 
 		start_year = 1942
 
@@ -325,7 +325,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 2
 
 			modifier = {
 				factor = 2
@@ -377,7 +377,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 2
 
 			modifier = {
 				factor = 2
@@ -407,13 +407,13 @@ technologies = {
 
 		artillery_brigade = {
 			mountain = {
-				movement = 0.15 #If you change this - Change the custom tooltip too: RAJ_revive_the_screw_guns_effect
+				movement = 0.15 #If you change this - Change the custom tooltip too: RAJ_revive_the_screw_guns_effect ROM_modern_at_guns_tech_tt
 			}
 		}
 
 		anti_tank_brigade = {
 			mountain = {
-				movement = 0.15 #If you change this - Change the custom tooltip too: RAJ_revive_the_screw_guns_effect
+				movement = 0.15 #If you change this - Change the custom tooltip too: RAJ_revive_the_screw_guns_effect ROM_modern_at_guns_tech_tt
 			}
 		}
 	}
@@ -423,6 +423,10 @@ technologies = {
 		enable_equipments = {
 			rocket_artillery_equipment_1
 		}
+
+		#enable_subunits = {
+		#	rocket_artillery_brigade
+		#}
 
 		path = {
 			leads_to_tech = rocket_artillery2
@@ -620,6 +624,19 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 
+			modifier = {
+				factor = 0.5
+
+				OR = {
+					tag = CHI
+					tag = PRC
+					tag = XSM
+					tag = SIK
+					tag = GXC
+					tag = SHX
+					tag = YUN
+				}
+			}
 			modifier = {
 				factor = 2
 				date > "1937.1.1"
@@ -884,6 +901,19 @@ technologies = {
 			factor = 1
 
 			modifier = {
+				factor = 0.2
+
+				OR = {
+					tag = CHI
+					tag = PRC
+					tag = XSM
+					tag = SIK
+					tag = GXC
+					tag = SHX
+					tag = YUN
+				}
+			}
+			modifier = {
 				factor = 2
 				date > "1937.1.1"
 			}
@@ -896,6 +926,17 @@ technologies = {
 			modifier = {
 				factor = 5
 				date > "1939.1.1"
+			}
+			modifier = {
+				factor = 10
+				any_enemy_country = {
+					ROOT = {
+						estimated_intel_max_armor = {
+							tag = PREV
+							value > 30
+						}
+					}
+				}
 			}
 		}
 
@@ -942,7 +983,17 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
-
+			modifier = {
+				factor = 10
+				any_enemy_country = {
+					ROOT = {
+						estimated_intel_max_armor = {
+							tag = PREV
+							value > 30
+						}
+					}
+				}
+			}
 			modifier = {
 				factor = 2
 				date > "1939.1.6"
@@ -957,11 +1008,6 @@ technologies = {
 		categories = {
 			artillery
 			cat_anti_tank
-		}
-
-		ai_research_weights = {
-			cat_anti_tank = 1.5
-			artillery = 1.2
 		}
 	}
 
@@ -1020,6 +1066,17 @@ technologies = {
 			modifier = {
 				factor = 5
 				date > "1940.1.6"
+			}
+			modifier = {
+				factor = 10
+				any_enemy_country = {
+					ROOT = {
+						estimated_intel_max_armor = {
+							tag = PREV
+							value > 32
+						}
+					}
+				}
 			}
 		}
 
@@ -1081,6 +1138,17 @@ technologies = {
 				factor = 5
 				date > "1943.1.1"
 			}
+			modifier = {
+				factor = 10
+				any_enemy_country = {
+					ROOT = {
+						estimated_intel_max_armor = {
+							tag = PREV
+							value > 32
+						}
+					}
+				}
+			}
 		}
 
 		categories = {
@@ -1135,6 +1203,17 @@ technologies = {
 			modifier = {
 				factor = 5
 				date > "1943.1.1"
+			}
+			modifier = {
+				factor = 10
+				any_enemy_country = {
+					ROOT = {
+						estimated_intel_max_armor = {
+							tag = PREV
+							value > 35
+						}
+					}
+				}
 			}
 		}
 
@@ -1262,6 +1341,17 @@ technologies = {
 				factor = 5
 				date > "1946.1.1"
 			}
+			modifier = {
+				factor = 10
+				any_enemy_country = {
+					ROOT = {
+						estimated_intel_max_armor = {
+							tag = PREV
+							value > 32
+						}
+					}
+				}
+			}
 		}
 
 		categories = {
@@ -1319,6 +1409,17 @@ technologies = {
 			modifier = {
 				factor = 5
 				date > "1948.1.1"
+			}
+			modifier = {
+				factor = 10
+				any_enemy_country = {
+					ROOT = {
+						estimated_intel_max_armor = {
+							tag = PREV
+							value > 32
+						}
+					}
+				}
 			}
 		}
 
@@ -1438,6 +1539,17 @@ technologies = {
 			modifier = {
 				factor = 5
 				date > "1950.1.6"
+			}
+			modifier = {
+				factor = 10
+				any_enemy_country = {
+					ROOT = {
+						estimated_intel_max_armor = {
+							tag = PREV
+							value > 32
+						}
+					}
+				}
 			}
 		}
 
