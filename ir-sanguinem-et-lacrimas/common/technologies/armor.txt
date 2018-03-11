@@ -1791,6 +1791,89 @@ technologies = {
 	#######################################################################################################
 	## added
 
+	improved_super_heavy_tank = { #Maus II?
+
+		enable_equipments = {
+			super_heavy_tank_equipment_2
+		}
+
+		research_cost = 2.5
+		start_year = 1947
+		folder = {
+			name = armour_folder
+			position = { x = 8 y = 16 }
+		}
+
+		sub_technologies = {
+			improved_super_heavy_td
+			improved_super_heavy_art
+			improved_super_heavy_spaa
+		}
+
+		ai_will_do = {
+			factor = 0 # Deathshead cries on the inside
+		}
+
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+	}
+
+	super_heavy_td = {
+
+		enable_equipments = {
+			super_heavy_tank_destroyer_equipment_2
+		}
+
+		research_cost = 0.5
+		start_year = 1947
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		categories = {
+			armor
+		}
+	}
+
+	super_heavy_art = {
+
+		enable_equipments = {
+			super_heavy_tank_artillery_equipment_2
+		}
+
+		research_cost = 0.5
+		start_year = 1947
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		categories = {
+			armor
+		}
+	}
+
+	super_heavy_spaa = {
+
+		enable_equipments = {
+			super_heavy_tank_aa_equipment_2
+		}
+
+		research_cost = 0.5
+		start_year = 1943
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		categories = {
+			armor
+		}
+	}
+
 	late_light_tank = {
 
 		enable_equipments = {
