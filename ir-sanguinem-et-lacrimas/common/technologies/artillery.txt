@@ -360,6 +360,7 @@ technologies = {
 
 		research_cost = 1
 
+		## Just noticed: Appereantly vanilla was always 1943, did I change this on purpose or is it a typo?
 		start_year = 1945
 
 		path = {

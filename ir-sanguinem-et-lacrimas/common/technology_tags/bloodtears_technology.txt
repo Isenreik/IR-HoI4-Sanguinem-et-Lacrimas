@@ -8,6 +8,7 @@ technology_categories = {
 	guided_missiles
 	cat_anti_air
 	bureau_tech
+	helicopter_equipment
 }
 
 technology_folders = {

@@ -199,7 +199,6 @@ equipments = {
 		manpower = 80
 	}
 
-
 	transport_plane_equipment_1 = {
 		year = 1933
 

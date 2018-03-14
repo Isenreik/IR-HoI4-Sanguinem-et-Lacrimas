@@ -38,7 +38,6 @@ equipments = {
 
 		#Misc Abilities
 		reliability = 0.7
-		maximum_speed = 4
 
 		#Defensive Abilities
 		defense = @heavy_weapons_defense_0

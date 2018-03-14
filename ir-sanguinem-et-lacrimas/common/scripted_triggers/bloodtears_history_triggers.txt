@@ -188,13 +188,3 @@ is_historic_bad_guy = {
 	is_free_enough_to_politics = yes
 	exists = yes
 }
-
-is_free_enough_to_politics = {
-	AND = {
-		NOT = { has_autonomy_state = autonomy_colony }
-		NOT = { has_autonomy_state = autonomy_integrated_puppet }
-		NOT = { has_autonomy_state = autonomy_puppet }
-		NOT = { has_autonomy_state = autonomy_reichskommissariat }
-		NOT = { has_autonomy_state = autonomy_reichsprotectorate }
-	}
-}

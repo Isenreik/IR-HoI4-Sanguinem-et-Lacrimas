@@ -50,3 +50,4 @@ Temporary Items
 *.ffs_gui
 *.ffs_db
 ir-sanguinem-et-lacrimis/sync.ffs_db
+*.bak

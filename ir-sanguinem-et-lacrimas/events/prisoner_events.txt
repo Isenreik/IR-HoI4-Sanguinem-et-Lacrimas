@@ -1,0 +1,16 @@
+﻿add_namespace = criminal_tech_event
+
+##press_tech_event started
+country_event = {
+	id = criminal_tech_event.1
+	title = criminal_tech_event.1.t
+	desc = criminal_tech_event.1.d
+	picture = GFX_report_event_civ_truck
+
+  is_triggered_only = yes
+
+	option = {
+		name = criminal_tech_event.1.a
+	}
+
+}
