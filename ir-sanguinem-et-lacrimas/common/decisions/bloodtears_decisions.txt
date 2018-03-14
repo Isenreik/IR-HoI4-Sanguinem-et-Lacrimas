@@ -435,6 +435,7 @@ economy_decisions = {
     }
 
     complete_effect = {
+			custom_effect_tooltip = abolish_healthcare.tt
       set_country_flag = abolished_healthcare
       add_stability = -0.10
       clr_country_flag = activated_healthcare
@@ -451,7 +452,7 @@ propaganda_efforts = {
 
   propaganda_speech = {
 
-    icon = generic_industry
+    icon = generic_political_discourse
 
     cost = 50
     fire_only_once = no

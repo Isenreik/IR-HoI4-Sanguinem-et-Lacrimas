@@ -88,25 +88,6 @@ press_tech_event.1.tt: "There will most likely be a public backlash.\n"
 
 bureau_laws: "Bureaus"
 
-commandeer_trucks_decision: "Comandeer Civilian Vehicles"
-
-commandeer_trucks_drawback.1: "Slight Backlash"
-commandeer_trucks_drawback.2: "Medium Backlash"
-commandeer_trucks_drawback.3: "Big Backlash"
-commandeer_trucks_decision.trigger_tt1: "Has not recently comandeered trucks."
-commandeer_trucks_decision.tt: "Adds motorized equipment to the stockpile.\n"
-
-press_tech_event.1.t: "Commandeer Civilian Vehicles"
-press_tech_event.1.a: "We all have to sacrifice for the greater good sometimes."
-press_tech_event.1.d: "Our people were able to be \"persuaded\" to donate their vehicles to the war effort. Many are not happy about that, but many understand the need for it. We will put these trucks and cars too good use.\n\nTime will tell if this decision was truly a good idea."
-
-press_mobilisation1: "Refined War-Bond Drives"
-press_mobilisation1_desc: "We can use propaganda to persuade our population spend their money on war-bonds."
-press_mobilisation2: "Refined Mobilisation Drive"
-press_mobilisation2_desc: "Using propaganda, calling people wimps and cowards, we can get more people to join our forces."
-press_mobilisation3: "Colonial Recruitment"
-press_mobilisation3_desc: "Needs writing."
-
 press_global_diplomacy: "Diplomats Training"
 press_global_diplomacy_desc: "Needs writing."
 
@@ -115,7 +96,22 @@ press_health1_desc: "Needs to be written"
 press_health2: "Universal Healthcare"
 press_health2_desc: "Needs to be written"
 
-extensive_healthcare_idea: "Universale Healthcare"
+# Decisions
+comandeer_trucks_1: "Comandeer Civilian Vehicles"
+comandeer_trucks_1_desc: "Our people can be \"persuaded\" to donate their vehicles to the war effort. Many will not happy about that, but many will also understand the need for such measures. We shall put these trucks and cars too good use."
+comandeer_trucks_2: "Comandeer Civilian Vehicles II"
+comandeer_trucks_2_desc: "We have found more effective ways to \"persuaded\" our people to donate their vehicles to the war effort. Many will not happy about that, but many will also understand the need for such measures. We shall put these trucks and cars too good use."
+comandeer_boats: "Comandeer Civilian Ships"
+comandeer_boats_desc: "Our troops across the sea need supplies and transportation, but our military convoy ships are stretched thin. There are plenty of civilian vessels we could confiscate for the war effort and staff with our own sailors; fishing trawlers, sailing ships, tugboats, merchant ships...anything sea worth could do."
+comandeer_planes: "Comandeer Civilian Planes"
+comandeer_planes_desc: "There are some civilian passenger and transport planes we could confiscate and put to use to supply our troops with supplies."
+
+advanced_healthcare: "Advanced Healthcare"
+advanced_healthcare_desc: "With improvements, extension and optimization of our healthcare services, we can get more health and able bodies to show up at our recruitment stations."
+abolish_healthcare: "Reduce Healthcare"
+abolish_healthcare_desc: "Running a extensive social welfare system can get expensive; maybe it is time to go back to previous levels. Unfortunately the common people will not understand that this is all for the greater good."
+abolished_healthcare: "Reduced Healthcare"
+abolish_healthcare.tt: "Removes Healthcare Decision"
 
 # War Games
 
