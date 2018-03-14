@@ -677,8 +677,6 @@ research_category = {
 
     #days_remove = 100
 		days_remove = 2
-    #days_re_enable = 400
-    days_re_enable = 2
 
     allowed = {
       always = yes
@@ -696,7 +694,7 @@ research_category = {
 			custom_trigger_tooltip = {
 				tooltip = war_games_army_flexible.tt1
 				AND = {
-					check_variable = { land_doctrine > 4 }
+					check_variable = { land_doctrine > 3 }
 				}
 			}
 			custom_trigger_tooltip = {
@@ -720,7 +718,7 @@ research_category = {
     remove_effect = {
       hidden_effect = { war_games_army_flexible_effect_mobile_warfare = yes }
 			custom_effect_tooltip = war_games_army_flexible_mobile_warfare.tt2
-			set_country_flag = { flag = switched_land_doctrine_recently days = 120 }
+			set_country_flag = { flag = switched_land_doctrine_recently days = 120 value = 1 }
     }
 
     ai_will_do = {
@@ -735,8 +733,6 @@ research_category = {
 
     #days_remove = 100
 		days_remove = 2
-    #days_re_enable = 400
-    days_re_enable = 2
 
     allowed = {
       always = yes
@@ -754,7 +750,7 @@ research_category = {
 			custom_trigger_tooltip = {
 				tooltip = war_games_army_flexible.tt1
 				AND = {
-					check_variable = { land_doctrine > 4 }
+					check_variable = { land_doctrine > 3 }
 				}
 			}
 			custom_trigger_tooltip = {
@@ -778,7 +774,7 @@ research_category = {
     remove_effect = {
       hidden_effect = { war_games_army_flexible_effect_superior_firepower = yes }
 			custom_effect_tooltip = war_games_army_flexible_superior_firepower.tt2
-			set_country_flag = { flag = switched_land_doctrine_recently days = 120 }
+			set_country_flag = { flag = switched_land_doctrine_recently days = 120 value = 1 }
     }
 
     ai_will_do = {
@@ -793,8 +789,6 @@ research_category = {
 
     #days_remove = 100
 		days_remove = 2
-    #days_re_enable = 400
-    days_re_enable = 2
 
     allowed = {
       always = yes
@@ -812,7 +806,7 @@ research_category = {
 			custom_trigger_tooltip = {
 				tooltip = war_games_army_flexible.tt1
 				AND = {
-					check_variable = { land_doctrine > 4 }
+					check_variable = { land_doctrine > 3 }
 				}
 			}
 			custom_trigger_tooltip = {
@@ -836,7 +830,7 @@ research_category = {
     remove_effect = {
       hidden_effect = { war_games_army_flexible_effect_grand_battle_plan = yes }
 			custom_effect_tooltip = war_games_army_flexible_grand_battle_plan.tt2
-			set_country_flag = { flag = switched_land_doctrine_recently days = 120 }
+			set_country_flag = { flag = switched_land_doctrine_recently days = 120 value = 1 }
     }
 
     ai_will_do = {
@@ -851,8 +845,6 @@ research_category = {
 
     #days_remove = 100
 		days_remove = 2
-    #days_re_enable = 400
-    days_re_enable = 2
 
     allowed = {
       always = yes
@@ -870,7 +862,7 @@ research_category = {
 			custom_trigger_tooltip = {
 				tooltip = war_games_army_flexible.tt1
 				AND = {
-					check_variable = { land_doctrine > 4 }
+					check_variable = { land_doctrine > 3 }
 				}
 			}
 			custom_trigger_tooltip = {
@@ -894,7 +886,7 @@ research_category = {
     remove_effect = {
       hidden_effect = { war_games_army_flexible_effect_mass_assault = yes }
 			custom_effect_tooltip = war_games_army_flexible_mass_assault.tt2
-			set_country_flag = { flag = switched_land_doctrine_recently days = 120 }
+			set_country_flag = { flag = switched_land_doctrine_recently days = 120 value = 1 }
     }
 
     ai_will_do = {
