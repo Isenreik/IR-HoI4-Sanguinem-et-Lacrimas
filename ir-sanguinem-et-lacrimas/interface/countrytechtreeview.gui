@@ -355,10 +355,16 @@ guiTypes = {
 				format = "LEFT"
 			}
 
-			## added
 			gridboxtype = {
 				name = "urban_warfare1_tree"
 				position = { x = 140 y = 1410 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+
+			gridboxtype = {
+				name = "tech_special_forces_tree"
+				position = { x = 140 y = 1510 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
