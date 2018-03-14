@@ -10,7 +10,7 @@ war_games_army_flexible_effect_mobile_warfare = {
   }
   set_temp_variable = { bonus_amount = land_doctrine }
   add_to_temp_variable = { var = bonus_amount value = rng_value }
-  clamp_variable = {
+  clamp_temp_variable  = {
     var = bonus_amount
     min = 2
     max = 10
@@ -69,7 +69,8 @@ war_games_army_flexible_effect_superior_firepower = {
   }
   set_temp_variable = { bonus_amount = land_doctrine }
   add_to_temp_variable = { var = bonus_amount value = rng_value }
-  clamp_variable = {
+  ## no negatives
+  clamp_temp_variable  = {
     var = bonus_amount
     min = 2
     max = 10
@@ -128,7 +129,7 @@ war_games_army_flexible_effect_grand_battle_plan = {
   }
   set_temp_variable = { bonus_amount = land_doctrine }
   add_to_temp_variable = { var = bonus_amount value = rng_value }
-  clamp_variable = {
+  clamp_temp_variable  = {
     var = bonus_amount
     min = 2
     max = 10
@@ -187,7 +188,7 @@ war_games_army_flexible_effect_mass_assault = {
   }
   set_temp_variable = { bonus_amount = land_doctrine }
   add_to_temp_variable = { var = bonus_amount value = rng_value }
-  clamp_variable = {
+  clamp_temp_variable  = {
     var = bonus_amount
     min = 2
     max = 8
