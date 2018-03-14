@@ -79,7 +79,6 @@ sub_units = {
     amphibious = {
       attack = 0.45
     }
-
   }
 
   light_tank_amphibious_unit = {
