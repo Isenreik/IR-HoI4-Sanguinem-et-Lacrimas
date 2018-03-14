@@ -1,0 +1,140 @@
+#generates a random number between 1 and 9
+ir_generate_rng_10.1 = {
+  hidden_effect = {
+    random_list = {
+      1 = { set_temp_variable = { rng_value_10.1 = 1 } }
+      1 = { set_temp_variable = { rng_value_10.1 = 2 } }
+      1 = { set_temp_variable = { rng_value_10.1 = 3 } }
+      1 = { set_temp_variable = { rng_value_10.1 = 4 } }
+      1 = { set_temp_variable = { rng_value_10.1 = 5 } }
+      1 = { set_temp_variable = { rng_value_10.1 = 6 } }
+      1 = { set_temp_variable = { rng_value_10.1 = 7 } }
+      1 = { set_temp_variable = { rng_value_10.1 = 8 } }
+      1 = { set_temp_variable = { rng_value_10.1 = 9 } }
+    }
+  }
+}
+
+ir_generate_rng_10.2 = {
+  hidden_effect = {
+    random_list = {
+      1 = { set_temp_variable = { rng_value_10.2 = 1 } }
+      1 = { set_temp_variable = { rng_value_10.2 = 2 } }
+      1 = { set_temp_variable = { rng_value_10.2 = 3 } }
+      1 = { set_temp_variable = { rng_value_10.2 = 4 } }
+      1 = { set_temp_variable = { rng_value_10.2 = 5 } }
+      1 = { set_temp_variable = { rng_value_10.2 = 6 } }
+      1 = { set_temp_variable = { rng_value_10.2 = 7 } }
+      1 = { set_temp_variable = { rng_value_10.2 = 8 } }
+      1 = { set_temp_variable = { rng_value_10.2 = 9 } }
+    }
+  }
+}
+
+#generates a random number between 1 and 100
+ir_generate_rng_100 = {
+  hidden_effect = {
+    random_list = {
+      1 = { set_temp_variable = { rng_value_100 = 1 } }
+      1 = { set_temp_variable = { rng_value_100 = 2 } }
+      1 = { set_temp_variable = { rng_value_100 = 3 } }
+      1 = { set_temp_variable = { rng_value_100 = 4 } }
+      1 = { set_temp_variable = { rng_value_100 = 5 } }
+      1 = { set_temp_variable = { rng_value_100 = 6 } }
+      1 = { set_temp_variable = { rng_value_100 = 7 } }
+      1 = { set_temp_variable = { rng_value_100 = 8 } }
+      1 = { set_temp_variable = { rng_value_100 = 9 } }
+      1 = { set_temp_variable = { rng_value_100 = 10 } }
+      1 = { set_temp_variable = { rng_value_100 = 11 } }
+      1 = { set_temp_variable = { rng_value_100 = 12 } }
+      1 = { set_temp_variable = { rng_value_100 = 13 } }
+      1 = { set_temp_variable = { rng_value_100 = 14 } }
+      1 = { set_temp_variable = { rng_value_100 = 15 } }
+      1 = { set_temp_variable = { rng_value_100 = 16 } }
+      1 = { set_temp_variable = { rng_value_100 = 17 } }
+      1 = { set_temp_variable = { rng_value_100 = 18 } }
+      1 = { set_temp_variable = { rng_value_100 = 19 } }
+      1 = { set_temp_variable = { rng_value_100 = 20 } }
+      1 = { set_temp_variable = { rng_value_100 = 21 } }
+      1 = { set_temp_variable = { rng_value_100 = 22 } }
+      1 = { set_temp_variable = { rng_value_100 = 23 } }
+      1 = { set_temp_variable = { rng_value_100 = 24 } }
+      1 = { set_temp_variable = { rng_value_100 = 25 } }
+      1 = { set_temp_variable = { rng_value_100 = 26 } }
+      1 = { set_temp_variable = { rng_value_100 = 27 } }
+      1 = { set_temp_variable = { rng_value_100 = 28 } }
+      1 = { set_temp_variable = { rng_value_100 = 29 } }
+      1 = { set_temp_variable = { rng_value_100 = 30 } }
+      1 = { set_temp_variable = { rng_value_100 = 31 } }
+      1 = { set_temp_variable = { rng_value_100 = 32 } }
+      1 = { set_temp_variable = { rng_value_100 = 33 } }
+      1 = { set_temp_variable = { rng_value_100 = 34 } }
+      1 = { set_temp_variable = { rng_value_100 = 35 } }
+      1 = { set_temp_variable = { rng_value_100 = 36 } }
+      1 = { set_temp_variable = { rng_value_100 = 37 } }
+      1 = { set_temp_variable = { rng_value_100 = 38 } }
+      1 = { set_temp_variable = { rng_value_100 = 39 } }
+      1 = { set_temp_variable = { rng_value_100 = 40 } }
+      1 = { set_temp_variable = { rng_value_100 = 41 } }
+      1 = { set_temp_variable = { rng_value_100 = 42 } }
+      1 = { set_temp_variable = { rng_value_100 = 43 } }
+      1 = { set_temp_variable = { rng_value_100 = 44 } }
+      1 = { set_temp_variable = { rng_value_100 = 45 } }
+      1 = { set_temp_variable = { rng_value_100 = 46 } }
+      1 = { set_temp_variable = { rng_value_100 = 47 } }
+      1 = { set_temp_variable = { rng_value_100 = 48 } }
+      1 = { set_temp_variable = { rng_value_100 = 49 } }
+      1 = { set_temp_variable = { rng_value_100 = 50 } }
+      1 = { set_temp_variable = { rng_value_100 = 51 } }
+      1 = { set_temp_variable = { rng_value_100 = 52 } }
+      1 = { set_temp_variable = { rng_value_100 = 53 } }
+      1 = { set_temp_variable = { rng_value_100 = 54 } }
+      1 = { set_temp_variable = { rng_value_100 = 55 } }
+      1 = { set_temp_variable = { rng_value_100 = 56 } }
+      1 = { set_temp_variable = { rng_value_100 = 57 } }
+      1 = { set_temp_variable = { rng_value_100 = 58 } }
+      1 = { set_temp_variable = { rng_value_100 = 59 } }
+      1 = { set_temp_variable = { rng_value_100 = 60 } }
+      1 = { set_temp_variable = { rng_value_100 = 61 } }
+      1 = { set_temp_variable = { rng_value_100 = 62 } }
+      1 = { set_temp_variable = { rng_value_100 = 63 } }
+      1 = { set_temp_variable = { rng_value_100 = 64 } }
+      1 = { set_temp_variable = { rng_value_100 = 65 } }
+      1 = { set_temp_variable = { rng_value_100 = 66 } }
+      1 = { set_temp_variable = { rng_value_100 = 67 } }
+      1 = { set_temp_variable = { rng_value_100 = 68 } }
+      1 = { set_temp_variable = { rng_value_100 = 69 } }
+      1 = { set_temp_variable = { rng_value_100 = 70 } }
+      1 = { set_temp_variable = { rng_value_100 = 71 } }
+      1 = { set_temp_variable = { rng_value_100 = 72 } }
+      1 = { set_temp_variable = { rng_value_100 = 73 } }
+      1 = { set_temp_variable = { rng_value_100 = 74 } }
+      1 = { set_temp_variable = { rng_value_100 = 75 } }
+      1 = { set_temp_variable = { rng_value_100 = 76 } }
+      1 = { set_temp_variable = { rng_value_100 = 77 } }
+      1 = { set_temp_variable = { rng_value_100 = 78 } }
+      1 = { set_temp_variable = { rng_value_100 = 79 } }
+      1 = { set_temp_variable = { rng_value_100 = 80 } }
+      1 = { set_temp_variable = { rng_value_100 = 81 } }
+      1 = { set_temp_variable = { rng_value_100 = 82 } }
+      1 = { set_temp_variable = { rng_value_100 = 83 } }
+      1 = { set_temp_variable = { rng_value_100 = 84 } }
+      1 = { set_temp_variable = { rng_value_100 = 85 } }
+      1 = { set_temp_variable = { rng_value_100 = 86 } }
+      1 = { set_temp_variable = { rng_value_100 = 87 } }
+      1 = { set_temp_variable = { rng_value_100 = 88 } }
+      1 = { set_temp_variable = { rng_value_100 = 89 } }
+      1 = { set_temp_variable = { rng_value_100 = 90 } }
+      1 = { set_temp_variable = { rng_value_100 = 91 } }
+      1 = { set_temp_variable = { rng_value_100 = 92 } }
+      1 = { set_temp_variable = { rng_value_100 = 93 } }
+      1 = { set_temp_variable = { rng_value_100 = 94 } }
+      1 = { set_temp_variable = { rng_value_100 = 95 } }
+      1 = { set_temp_variable = { rng_value_100 = 96 } }
+      1 = { set_temp_variable = { rng_value_100 = 97 } }
+      1 = { set_temp_variable = { rng_value_100 = 98 } }
+      1 = { set_temp_variable = { rng_value_100 = 99 } }
+      1 = { set_temp_variable = { rng_value_100 = 100 } }
+    }
+  }
+}
