@@ -1,0 +1,28 @@
+﻿add_namespace = wargames_event
+
+##  wargames_event.10  - get starting doctrines amount
+country_event = {
+	id = wargames_event.10
+	title = wargames_event.10.t
+	desc = wargames_event.10.d
+	picture = GFX_report_event_ast_parliament_house
+
+  is_triggered_only = yes
+  hidden = yes
+
+  immediate = {
+		count_land_doctrines = yes
+    set_variable = { land_doctrine = land_doctrine_temp }
+    ## set the specific branch tech
+    if = { limit = { has_tech = mobile_warfare     } set_temp_variable = { var = land_doctrine_mobile_warfare     value = land_doctrine_temp } }
+    if = { limit = { has_tech = superior_firepower } set_temp_variable = { var = land_doctrine_superior_firepower value = land_doctrine_temp } }
+    if = { limit = { has_tech = trench_warfare     } set_temp_variable = { var = land_doctrine_trench_warfare     value = land_doctrine_temp } }
+    if = { limit = { has_tech = mass_assault       } set_temp_variable = { var = land_doctrine_mass_assault       value = land_doctrine_temp } }
+    recalc_land_doctrines_variables = yes
+	}
+
+	option = {
+		name = wargames_event.10.a
+
+	}
+}

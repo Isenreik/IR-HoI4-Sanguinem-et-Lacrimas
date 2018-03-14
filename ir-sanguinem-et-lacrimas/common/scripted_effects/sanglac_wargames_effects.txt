@@ -1,0 +1,321 @@
+war_games_army_flexible_effect_mobile_warfare = {
+
+  ## Reminder: Doctrine is 10 techs long
+  ## RNG
+  random_list = {
+    1 = { set_temp_variable = { rng_value = -2 } }
+    2 = { set_temp_variable = { rng_value = -3 } }
+    2 = { set_temp_variable = { rng_value = -4 } }
+    1 = { set_temp_variable = { rng_value = -5 } }
+  }
+  set_temp_variable = { bonus_amount = land_doctrine }
+  add_to_temp_variable = { var = bonus_amount value = rng_value }
+  clamp_variable = {
+    var = bonus_amount
+    min = 2
+    max = 10
+  }
+
+  print_variables = { file = wargames_dump text = war_games_army_flexible_effect_mobile_warfare_effect append = yes print_global = yes var_list = { rng_value land_doctrine bonus_amount } }
+
+  ## give bonuses based on amount
+  if = {
+    limit = { check_variable = { bonus_amount = 2 } }
+    add_tech_bonus = { bonus = 0.80 uses = 2 category = cat_mobile_warfare }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 3 } }
+    add_tech_bonus = { bonus = 0.80 uses = 3 category = cat_mobile_warfare }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 4 } }
+    add_tech_bonus = { bonus = 0.80 uses = 4 category = cat_mobile_warfare }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 5 } }
+    add_tech_bonus = { bonus = 0.80 uses = 5 category = cat_mobile_warfare }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 6 } }
+    add_tech_bonus = { bonus = 0.80 uses = 6 category = cat_mobile_warfare }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 7 } }
+    add_tech_bonus = { bonus = 0.80 uses = 7 category = cat_mobile_warfare }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 8 } }
+    add_tech_bonus = { bonus = 0.80 uses = 8 category = cat_mobile_warfare }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 9 } }
+    add_tech_bonus = { bonus = 0.80 uses = 9 category = cat_mobile_warfare }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 10 } }
+    add_tech_bonus = { bonus = 0.80 uses = 10 category = cat_mobile_warfare }
+  }
+}
+
+war_games_army_flexible_effect_superior_firepower = {
+
+  ## Reminder: Doctrine is 10 techs long
+  ## RNG
+  random_list = {
+    1 = { set_temp_variable = { rng_value = -2 } }
+    2 = { set_temp_variable = { rng_value = -3 } }
+    2 = { set_temp_variable = { rng_value = -4 } }
+    1 = { set_temp_variable = { rng_value = -5 } }
+  }
+  set_temp_variable = { bonus_amount = land_doctrine }
+  add_to_temp_variable = { var = bonus_amount value = rng_value }
+  clamp_variable = {
+    var = bonus_amount
+    min = 2
+    max = 10
+  }
+
+  print_variables = { file = wargames_dump text = war_games_army_flexible_effect_superior_firepower_effect append = yes print_global = yes var_list = { rng_value land_doctrine bonus_amount } }
+
+  ## give bonuses based on amount
+  if = {
+    limit = { check_variable = { bonus_amount = 2 } }
+    add_tech_bonus = { bonus = 0.80 uses = 2 category = cat_superior_firepower }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 3 } }
+    add_tech_bonus = { bonus = 0.80 uses = 3 category = cat_superior_firepower }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 4 } }
+    add_tech_bonus = { bonus = 0.80 uses = 4 category = cat_superior_firepower }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 5 } }
+    add_tech_bonus = { bonus = 0.80 uses = 5 category = cat_superior_firepower }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 6 } }
+    add_tech_bonus = { bonus = 0.80 uses = 6 category = cat_superior_firepower }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 7 } }
+    add_tech_bonus = { bonus = 0.80 uses = 7 category = cat_superior_firepower }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 8 } }
+    add_tech_bonus = { bonus = 0.80 uses = 8 category = cat_superior_firepower }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 9 } }
+    add_tech_bonus = { bonus = 0.80 uses = 9 category = cat_superior_firepower }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 10 } }
+    add_tech_bonus = { bonus = 0.80 uses = 10 category = cat_superior_firepower }
+  }
+}
+
+war_games_army_flexible_effect_grand_battle_plan = {
+
+  ## Reminder: Doctrine is 10 techs long
+  ## RNG
+  random_list = {
+    1 = { set_temp_variable = { rng_value = -2 } }
+    2 = { set_temp_variable = { rng_value = -3 } }
+    2 = { set_temp_variable = { rng_value = -4 } }
+    1 = { set_temp_variable = { rng_value = -5 } }
+  }
+  set_temp_variable = { bonus_amount = land_doctrine }
+  add_to_temp_variable = { var = bonus_amount value = rng_value }
+  clamp_variable = {
+    var = bonus_amount
+    min = 2
+    max = 10
+  }
+
+  print_variables = { file = wargames_dump text = war_games_army_flexible_effect_grand_battle_plan_effect append = yes print_global = yes var_list = { rng_value land_doctrine bonus_amount } }
+
+  ## give bonuses based on amount
+  if = {
+    limit = { check_variable = { bonus_amount = 2 } }
+    add_tech_bonus = { bonus = 0.80 uses = 2 category = cat_grand_battle_plan }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 3 } }
+    add_tech_bonus = { bonus = 0.80 uses = 3 category = cat_grand_battle_plan }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 4 } }
+    add_tech_bonus = { bonus = 0.80 uses = 4 category = cat_grand_battle_plan }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 5 } }
+    add_tech_bonus = { bonus = 0.80 uses = 5 category = cat_grand_battle_plan }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 6 } }
+    add_tech_bonus = { bonus = 0.80 uses = 6 category = cat_grand_battle_plan }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 7 } }
+    add_tech_bonus = { bonus = 0.80 uses = 7 category = cat_grand_battle_plan }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 8 } }
+    add_tech_bonus = { bonus = 0.80 uses = 8 category = cat_grand_battle_plan }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 9 } }
+    add_tech_bonus = { bonus = 0.80 uses = 9 category = cat_grand_battle_plan }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 10 } }
+    add_tech_bonus = { bonus = 0.80 uses = 10 category = cat_grand_battle_plan }
+  }
+}
+
+war_games_army_flexible_effect_mass_assault = {
+
+  ## Reminder: Doctrine is 10-8 techs long
+  ## RNG
+  random_list = {
+    1 = { set_temp_variable = { rng_value = -2 } }
+    2 = { set_temp_variable = { rng_value = -3 } }
+    2 = { set_temp_variable = { rng_value = -4 } }
+    1 = { set_temp_variable = { rng_value = -5 } }
+  }
+  set_temp_variable = { bonus_amount = land_doctrine }
+  add_to_temp_variable = { var = bonus_amount value = rng_value }
+  clamp_variable = {
+    var = bonus_amount
+    min = 2
+    max = 8
+  }
+
+  print_variables = { file = wargames_dump text = war_games_army_flexible_effect_mass_assault_effect append = yes print_global = yes var_list = { rng_value land_doctrine bonus_amount } }
+
+  ## give bonuses based on amount
+  if = {
+    limit = { check_variable = { bonus_amount = 2 } }
+    add_tech_bonus = { bonus = 0.80 uses = 2 category = cat_mass_assault }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 3 } }
+    add_tech_bonus = { bonus = 0.80 uses = 3 category = cat_mass_assault }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 4 } }
+    add_tech_bonus = { bonus = 0.80 uses = 4 category = cat_mass_assault }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 5 } }
+    add_tech_bonus = { bonus = 0.80 uses = 5 category = cat_mass_assault }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 6 } }
+    add_tech_bonus = { bonus = 0.80 uses = 6 category = cat_mass_assault }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 7 } }
+    add_tech_bonus = { bonus = 0.80 uses = 7 category = cat_mass_assault }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 8 } }
+    add_tech_bonus = { bonus = 0.80 uses = 8 category = cat_mass_assault }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 9 } }
+    add_tech_bonus = { bonus = 0.80 uses = 9 category = cat_mass_assault }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 10 } }
+    add_tech_bonus = { bonus = 0.80 uses = 10 category = cat_mass_assault }
+  }
+}
+
+count_land_doctrines = {
+
+  set_temp_variable = { land_doctrine_temp = 0 }
+  if = { limit = { has_tech = mobile_warfare } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = delay } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = elastic_defence } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = mobile_infantry } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = mass_motorization } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = mechanised_offensive } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = armored_spearhead } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = schwerpunk } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = blitzkrieg } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = kampfgruppe } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = firebrigades } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = backhand_blow } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = modern_blitzkrieg } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = volkssturm } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = nd_conscription } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = werwolf_guerillas } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = superior_firepower } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = sup_delay } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = mobile_defence } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = intergrated_support } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = regimental_combat_teams } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = dispersed_support } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = overwhelming_firepower } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = sup_mechanized_offensive } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = concentrated_fire_plans } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = combined_arms } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = tactical_control } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = air_land_battle } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = centralized_fire_control } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = forward_observers } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = advanced_firebases } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = shock_and_awe } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = trench_warfare } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = grand_battle_plan } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = prepared_defense } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = grand_assault } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = grand_mechanized_offensive } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = assault_concentration } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = branch_interoperation } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = assault_breakthrough } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = central_planning } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = c3i_theory } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = infantry_offensive } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = armored_operations } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = infiltration_assault } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = night_assault_tactics } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = attritional_containment } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = infiltration_in_depth } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = mass_assault } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = pocket_defence } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = defence_in_depth } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = large_front_operations } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = deep_operations } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = operational_concentration } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = vast_offensives } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = breakthrough_priority } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = mechanized_wave } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = continuous_offensive } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = peoples_army } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = human_infantry_offensive } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = large_front_offensive } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = human_wave_offensive } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = guerilla_warfare } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
+}
+
+recalc_land_doctrines_variables = {
+  set_variable = { land_doctrine_bonus_max = land_doctrine }
+  add_to_variable = { var = land_doctrine_bonus_max value = -2 }
+  set_variable = { land_doctrine_bonus_min = land_doctrine }
+  add_to_variable = { var = land_doctrine_bonus_min value = -5 }
+
+  clamp_variable = {
+    var = land_doctrine_bonus_max
+    min = 2
+    max = 10
+  }
+  clamp_variable = {
+    var = land_doctrine_bonus_min
+    min = 2
+    max = 10
+  }
+}

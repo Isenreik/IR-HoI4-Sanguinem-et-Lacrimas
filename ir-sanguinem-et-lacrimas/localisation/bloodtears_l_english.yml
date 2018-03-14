@@ -117,3 +117,41 @@ press_health2_desc: "Needs to be written"
 
 extensive_healthcare_idea: "Universale Healthcare"
 
+# War Games
+
+research_category: "Research"
+
+officers_war_games_1: "War Games"
+officers_war_games_1_desc: "Experience is the best teacher. We should analyze what we've learned."
+officers_war_games_1.desc: "\n\n\n\n\n\n\n\n\nAllows us to use the Expanded Military Theory decisions.\nThis allows us to put experience towards doctrinal research."
+officers_war_games_1.tt: "Allows us to use the §YExpanded Military Theory decisions§!."
+
+officers_war_games_2: "War Games II"
+officers_war_games_2_desc: "Experience has tought us that flexibility is a factor not to be underestimated."
+officers_war_games_2.desc: "\n\n\n\n\n\n\n\n\nAllows us to use the Flexible Land Doctrine decisions.\nThis allows us to put experience towards switching our military doctrine."
+officers_war_games_2.tt: "Allows us to use the §YFlexible Land Doctrine decisions§!."
+
+war_games_army: "Expanded Military Theory: Land Doctrine"
+war_games_army_desc: "We can focus on improving our combat doctrine using the experience we learned in the field."
+war_games_army.tt1: "Has not fully researched a Land Doctrine branch."
+war_games_navy: "Expanded Military Theory: Naval Doctrine"
+war_games_navy_desc: "We can focus on improving our combat doctrine using the experience we learned in the field."
+war_games_navy.tt1: "Has not fully researched a Naval Doctrine branch."
+war_games_air: "Expanded Military Theory: Air Doctrine"
+war_games_air_desc: "We can focus on improving our combat doctrine using the experience we learned in the field."
+war_games_air.tt1: "Has not fully researched a Air Doctrine branch."
+
+war_games_army_flexible.tt1: "Has at least §Y4§! land doctrines researched."
+war_games_army_flexible.tt2: "Has not switched land doctrines recently."
+war_games_army_flexible_mobile_warfare: "Flexible Land Doctrine: Mobile Warfare"
+war_games_army_flexible_mobile_warfare_desc: "Our needs on the battlefield have shifted and we need to adapt. An unaccommodating army is a doomed army.\nWe should shift towards a more mobile army.\n"
+war_games_army_flexible_mobile_warfare.tt2: "Will give us between §Y[?THIS.land_doctrine_bonus_min]-[?THIS.land_doctrine_bonus_max]§! research bonuses of 80% for: §YMobile Warfare Doctrine§!.\n"
+war_games_army_flexible_superior_firepower: "Flexible Land Doctrine: Superior Firepower"
+war_games_army_flexible_superior_firepower_desc: "Our needs on the battlefield have shifted and we need to adapt. An unaccommodating army is a doomed army.\nWe should shift towards a more pure firepower.\n"
+war_games_army_flexible_superior_firepower.tt2: "Will give us between §Y[?THIS.land_doctrine_bonus_min]-[?THIS.land_doctrine_bonus_max]§! research bonuses of 80% for: §YSuperior Firepower Doctrine§!.\n"
+war_games_army_flexible_grand_battle_plan: "Flexible Land Doctrine: Grand Battleplan"
+war_games_army_flexible_grand_battle_plan_desc: "Our needs on the battlefield have shifted and we need to adapt. An unaccommodating army is a doomed army.\nWe should shift towards a more cautious and preparation.\n"
+war_games_army_flexible_grand_battle_plan.tt2: "Will give us between §Y[?THIS.land_doctrine_bonus_min]-[?THIS.land_doctrine_bonus_max]§! research bonuses of 80% for: §YGrand Battleplan Doctrine§!.\n"
+war_games_army_flexible_mass_assault: "Flexible Land Doctrine: Mass Assault"
+war_games_army_flexible_mass_assault_desc: "Our needs on the battlefield have shifted and we need to adapt. An unaccommodating army is a doomed army.\nWe should shift towards mobilizing as many brave souls as possible.\n"
+war_games_army_flexible_mass_assault.tt2: "Will give us between §Y[?THIS.land_doctrine_bonus_min]-[?THIS.land_doctrine_bonus_max]§! research bonuses of 80% for: §YMass Assault Doctrine§!.\n"
