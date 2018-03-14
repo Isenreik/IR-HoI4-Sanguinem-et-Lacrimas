@@ -23,79 +23,79 @@ ideas = {
       }
     }
 
-    extensive_healthcare_idea = {
+#    extensive_healthcare_idea = {
+#
+#      allowed = {
+#        always = yes
+#      }
+#
+#      allowed_civil_war = {
+#        always = yes
+#      }
+#
+#      removal_cost = -1
+#
+#			modifier = {
+#			  MONTHLY_POPULATION = 0.35
+#				consumer_goods_factor = 0.06
+#			}
+#
+#    }
 
-      allowed = {
-        always = yes
-      }
-
-      allowed_civil_war = {
-        always = yes
-      }
-
-      removal_cost = -1
-
-			modifier = {
-			  MONTHLY_POPULATION = 0.35
-				consumer_goods_factor = 0.06
-			}
-
-    }
-
-    commandeer_trucks_drawback.1 = {
-
-      allowed = {
-        always = yes
-      }
-
-      allowed_civil_war = {
-        always = yes
-      }
-
-      removal_cost = -1
-
-			modifier = {
-				consumer_goods_factor = 0.03
-				unity_factor = -0.05
-			}
-
-    }
-    commandeer_trucks_drawback.2 = {
-
-      allowed = {
-        always = yes
-      }
-
-      allowed_civil_war = {
-        always = yes
-      }
-
-      removal_cost = -1
-
-			modifier = {
-				consumer_goods_factor = 0.05
-				unity_factor = -0.1
-			}
-
-    }
-    commandeer_trucks_drawback.3 = {
-
-      allowed = {
-        always = yes
-      }
-
-      allowed_civil_war = {
-        always = yes
-      }
-
-      removal_cost = -1
-
-			modifier = {
-				consumer_goods_factor = 0.08
-				unity_factor = -0.15
-			}
-
-    }
+#    commandeer_trucks_drawback.1 = {
+#
+#      allowed = {
+#        always = yes
+#      }
+#
+#      allowed_civil_war = {
+#        always = yes
+#      }
+#
+#      removal_cost = -1
+#
+#			modifier = {
+#				consumer_goods_factor = 0.03
+#				unity_factor = -0.05
+#			}
+#
+#    }
+#    commandeer_trucks_drawback.2 = {
+#
+#      allowed = {
+#        always = yes
+#      }
+#
+#      allowed_civil_war = {
+#        always = yes
+#      }
+#
+#      removal_cost = -1
+#
+#			modifier = {
+#				consumer_goods_factor = 0.05
+#				unity_factor = -0.1
+#			}
+#
+#    }
+#    commandeer_trucks_drawback.3 = {
+#
+#      allowed = {
+#        always = yes
+#      }
+#
+#      allowed_civil_war = {
+#        always = yes
+#      }
+#
+#      removal_cost = -1
+#
+#			modifier = {
+#				consumer_goods_factor = 0.08
+#				unity_factor = -0.15
+#			}
+#
+#    }
 
 		CW_signatory_idea = {
 
