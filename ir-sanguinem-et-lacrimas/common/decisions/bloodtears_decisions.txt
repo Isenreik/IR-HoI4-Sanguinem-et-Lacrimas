@@ -435,6 +435,7 @@ economy_decisions = {
     }
 
     complete_effect = {
+			custom_effect_tooltip = abolish_healthcare.tt
       set_country_flag = abolished_healthcare
       add_stability = -0.10
       clr_country_flag = activated_healthcare
@@ -451,7 +452,7 @@ propaganda_efforts = {
 
   propaganda_speech = {
 
-    icon = generic_industry
+    icon = generic_political_discourse
 
     cost = 50
     fire_only_once = no
@@ -491,7 +492,7 @@ propaganda_efforts = {
 research_category = {
   war_games_army = {
 
-    icon = generic_decision
+    icon = generic_tank
     cost = 25
     fire_only_once = no
 
@@ -507,8 +508,8 @@ research_category = {
     }
 
     available = {
-      has_army_experience > 100
-			#command_power > 10
+      has_army_experience > 150
+			command_power > 10
       has_tech = officers_war_games_1
 			custom_trigger_tooltip = {
 				tooltip = war_games_army.tt1
@@ -525,11 +526,17 @@ research_category = {
 	        }
 	      }
 			}
+			custom_trigger_tooltip = {
+				tooltip = war_games_army_flexible.tt2
+				AND = {
+					NOT = { has_country_flag = switched_land_doctrine_recently }
+				}
+			}
     }
 
     complete_effect = {
-      army_experience = -100
-			#add_command_power = -10
+      army_experience = -150
+			add_command_power = -10
     }
 
     modifier = {
@@ -550,7 +557,7 @@ research_category = {
   }
   war_games_navy = {
 
-    icon = generic_decision
+    icon = generic_naval
     cost = 25
     fire_only_once = no
 
@@ -566,8 +573,8 @@ research_category = {
     }
 
     available = {
-      has_navy_experience > 100
-			#command_power > 10
+      has_navy_experience > 150
+			command_power > 10
       has_tech = officers_war_games_1
 			custom_trigger_tooltip = {
 				tooltip = war_games_navy.tt1
@@ -589,11 +596,17 @@ research_category = {
 	        }
 	      }
 			}
+			custom_trigger_tooltip = {
+				tooltip = war_games_navy_flexible.tt2
+				AND = {
+					NOT = { has_country_flag = switched_naval_doctrine_recently }
+				}
+			}
     }
 
     complete_effect = {
-      navy_experience = -100
-			#add_command_power = -10
+      navy_experience = -150
+			add_command_power = -10
     }
 
     modifier = {
@@ -614,7 +627,7 @@ research_category = {
   }
   war_games_air = {
 
-    icon = generic_decision
+    icon = generic_air
     cost = 25
     fire_only_once = no
 
@@ -630,8 +643,8 @@ research_category = {
     }
 
     available = {
-      has_air_experience > 100
-			#command_power > 10
+      has_air_experience > 150
+			command_power > 10
       has_tech = officers_war_games_1
 			custom_trigger_tooltip = {
 				tooltip = war_games_air.tt1
@@ -646,11 +659,17 @@ research_category = {
 	        }
 	      }
 			}
+			custom_trigger_tooltip = {
+				tooltip = war_games_air_flexible.tt2
+				AND = {
+					NOT = { has_country_flag = switched_air_doctrine_recently }
+				}
+			}
     }
 
     complete_effect = {
-      air_experience = -100
-			#add_command_power = -10
+      air_experience = -150
+			add_command_power = -10
     }
 
     modifier = {
@@ -671,7 +690,7 @@ research_category = {
   }
   war_games_army_flexible_mobile_warfare = {
 
-    icon = generic_decision
+    icon = generic_tank
     cost = 50
     fire_only_once = no
 
@@ -688,8 +707,8 @@ research_category = {
     }
 
     available = {
-      has_army_experience > 100
-      #command_power > 40
+      has_army_experience > 150
+      command_power > 40
       has_tech = officers_war_games_2
 			custom_trigger_tooltip = {
 				tooltip = war_games_army_flexible.tt1
@@ -706,8 +725,9 @@ research_category = {
     }
 
     complete_effect = {
-      army_experience = -100
-      #add_command_power = -40
+      army_experience = -150
+      add_command_power = -40
+			set_country_flag = { flag = switched_land_doctrine_recently days = 350 value = 1 }
     }
 
     modifier = {
@@ -716,9 +736,8 @@ research_category = {
     }
 
     remove_effect = {
-      hidden_effect = { war_games_army_flexible_effect_mobile_warfare = yes }
-			custom_effect_tooltip = war_games_army_flexible_mobile_warfare.tt2
-			set_country_flag = { flag = switched_land_doctrine_recently days = 120 value = 1 }
+      hidden_effect = { war_games_army_flexible_mobile_warfare = yes }
+			custom_effect_tooltip = war_games_army_flexible_mobile_warfare.tt3
     }
 
     ai_will_do = {
@@ -727,7 +746,7 @@ research_category = {
   }
   war_games_army_flexible_superior_firepower = {
 
-    icon = generic_decision
+    icon = generic_tank
     cost = 50
     fire_only_once = no
 
@@ -744,8 +763,8 @@ research_category = {
     }
 
     available = {
-      has_army_experience > 100
-      #command_power > 40
+      has_army_experience > 150
+      command_power > 40
       has_tech = officers_war_games_2
 			custom_trigger_tooltip = {
 				tooltip = war_games_army_flexible.tt1
@@ -762,8 +781,9 @@ research_category = {
     }
 
     complete_effect = {
-      army_experience = -100
-      #add_command_power = -40
+      army_experience = -150
+      add_command_power = -40
+			set_country_flag = { flag = switched_land_doctrine_recently days = 350 value = 1 }
     }
 
     modifier = {
@@ -772,9 +792,9 @@ research_category = {
     }
 
     remove_effect = {
-      hidden_effect = { war_games_army_flexible_effect_superior_firepower = yes }
-			custom_effect_tooltip = war_games_army_flexible_superior_firepower.tt2
-			set_country_flag = { flag = switched_land_doctrine_recently days = 120 value = 1 }
+      hidden_effect = { war_games_army_flexible_superior_firepower = yes }
+			custom_effect_tooltip = war_games_army_flexible_superior_firepower.tt3
+			set_country_flag = { flag = switched_land_doctrine_recently days = 350 value = 1 }
     }
 
     ai_will_do = {
@@ -783,7 +803,7 @@ research_category = {
   }
   war_games_army_flexible_grand_battle_plan = {
 
-    icon = generic_decision
+    icon = generic_tank
     cost = 50
     fire_only_once = no
 
@@ -800,8 +820,8 @@ research_category = {
     }
 
     available = {
-      has_army_experience > 100
-      #command_power > 40
+      has_army_experience > 150
+      command_power > 40
       has_tech = officers_war_games_2
 			custom_trigger_tooltip = {
 				tooltip = war_games_army_flexible.tt1
@@ -818,8 +838,9 @@ research_category = {
     }
 
     complete_effect = {
-      army_experience = -100
-      #add_command_power = -40
+      army_experience = -150
+      add_command_power = -40
+			set_country_flag = { flag = switched_land_doctrine_recently days = 350 value = 1 }
     }
 
     modifier = {
@@ -828,9 +849,9 @@ research_category = {
     }
 
     remove_effect = {
-      hidden_effect = { war_games_army_flexible_effect_grand_battle_plan = yes }
-			custom_effect_tooltip = war_games_army_flexible_grand_battle_plan.tt2
-			set_country_flag = { flag = switched_land_doctrine_recently days = 120 value = 1 }
+      hidden_effect = { war_games_army_flexible_grand_battle_plan = yes }
+			custom_effect_tooltip = war_games_army_flexible_grand_battle_plan.tt3
+			set_country_flag = { flag = switched_land_doctrine_recently days = 350 value = 1 }
     }
 
     ai_will_do = {
@@ -839,7 +860,7 @@ research_category = {
   }
   war_games_army_flexible_mass_assault = {
 
-    icon = generic_decision
+    icon = generic_tank
     cost = 50
     fire_only_once = no
 
@@ -856,8 +877,8 @@ research_category = {
     }
 
     available = {
-      has_army_experience > 100
-      #command_power > 40
+      has_army_experience > 150
+      command_power > 40
       has_tech = officers_war_games_2
 			custom_trigger_tooltip = {
 				tooltip = war_games_army_flexible.tt1
@@ -874,8 +895,9 @@ research_category = {
     }
 
     complete_effect = {
-      army_experience = -100
-      #add_command_power = -40
+      army_experience = -150
+      add_command_power = -40
+			set_country_flag = { flag = switched_land_doctrine_recently days = 350 value = 1 }
     }
 
     modifier = {
@@ -884,9 +906,345 @@ research_category = {
     }
 
     remove_effect = {
-      hidden_effect = { war_games_army_flexible_effect_mass_assault = yes }
-			custom_effect_tooltip = war_games_army_flexible_mass_assault.tt2
-			set_country_flag = { flag = switched_land_doctrine_recently days = 120 value = 1 }
+      hidden_effect = { war_games_army_flexible_mass_assault = yes }
+			custom_effect_tooltip = war_games_army_flexible_mass_assault.tt3
+			set_country_flag = { flag = switched_land_doctrine_recently days = 350 value = 1 }
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+  war_games_navy_flexible_fleet_in_being = {
+
+    icon = generic_naval
+    cost = 50
+    fire_only_once = no
+
+    #days_remove = 100
+		days_remove = 2
+
+    allowed = {
+      always = yes
+    }
+
+    visible = {
+      has_tech = officers_war_games_2
+			NOT = {	has_tech = fleet_in_being }
+    }
+
+    available = {
+      has_navy_experience > 150
+      command_power > 40
+      has_tech = officers_war_games_2
+			custom_trigger_tooltip = {
+				tooltip = war_games_navy_flexible.tt1
+				AND = {
+					check_variable = { naval_doctrine > 3 }
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = war_games_navy_flexible.tt2
+				AND = {
+					NOT = { has_country_flag = switched_naval_doctrine_recently }
+				}
+			}
+    }
+
+    complete_effect = {
+      navy_experience = -150
+      add_command_power = -40
+    }
+
+    modifier = {
+      naval_coordination = -0.05
+      experience_gain_navy_factor = -0.5
+    }
+
+    remove_effect = {
+      hidden_effect = { war_games_navy_flexible_fleet_in_being = yes }
+			custom_effect_tooltip = war_games_navy_flexible_fleet_in_being.tt3
+			set_country_flag = { flag = switched_naval_doctrine_recently days = 350 value = 1 }
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+  war_games_navy_flexible_trade_interdiction = {
+
+    icon = generic_naval
+    cost = 50
+    fire_only_once = no
+
+    #days_remove = 100
+		days_remove = 2
+
+    allowed = {
+      always = yes
+    }
+
+    visible = {
+      has_tech = officers_war_games_2
+			NOT = {	has_tech = trade_interdiction }
+    }
+
+    available = {
+      has_navy_experience > 150
+      command_power > 40
+      has_tech = officers_war_games_2
+			custom_trigger_tooltip = {
+				tooltip = war_games_navy_flexible.tt1
+				AND = {
+					check_variable = { naval_doctrine > 3 }
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = war_games_navy_flexible.tt2
+				AND = {
+					NOT = { has_country_flag = switched_naval_doctrine_recently }
+				}
+			}
+    }
+
+    complete_effect = {
+      navy_experience = -150
+      add_command_power = -40
+    }
+
+    modifier = {
+      naval_coordination = -0.05
+      experience_gain_navy_factor = -0.5
+    }
+
+    remove_effect = {
+      hidden_effect = { war_games_navy_flexible_trade_interdiction = yes }
+			custom_effect_tooltip = war_games_navy_flexible_trade_interdiction.tt3
+			set_country_flag = { flag = switched_naval_doctrine_recently days = 350 value = 1 }
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+  war_games_navy_flexible_base_strike = {
+
+    icon = generic_naval
+    cost = 50
+    fire_only_once = no
+
+    #days_remove = 100
+		days_remove = 2
+
+    allowed = {
+      always = yes
+    }
+
+    visible = {
+      has_tech = officers_war_games_2
+			NOT = {	has_tech = base_strike }
+    }
+
+    available = {
+      has_navy_experience > 150
+      command_power > 40
+      has_tech = officers_war_games_2
+			custom_trigger_tooltip = {
+				tooltip = war_games_navy_flexible.tt1
+				AND = {
+					check_variable = { naval_doctrine > 3 }
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = war_games_navy_flexible.tt2
+				AND = {
+					NOT = { has_country_flag = switched_naval_doctrine_recently }
+				}
+			}
+    }
+
+    complete_effect = {
+      navy_experience = -150
+      add_command_power = -40
+    }
+
+    modifier = {
+      naval_coordination = -0.05
+      experience_gain_navy_factor = -0.5
+    }
+
+    remove_effect = {
+      hidden_effect = { war_games_navy_flexible_base_strike = yes }
+			custom_effect_tooltip = war_games_navy_flexible_base_strike.tt3
+			set_country_flag = { flag = switched_naval_doctrine_recently days = 350 value = 1 }
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+  war_games_air_flexible_strategic_destruction = {
+
+    icon = generic_air
+    cost = 50
+    fire_only_once = no
+
+    #days_remove = 100
+		days_remove = 2
+
+    allowed = {
+      always = yes
+    }
+
+    visible = {
+      has_tech = officers_war_games_2
+			NOT = {	has_tech = air_superiority }
+    }
+
+    available = {
+      has_air_experience > 150
+      command_power > 40
+      has_tech = officers_war_games_2
+			custom_trigger_tooltip = {
+				tooltip = war_games_air_flexible.tt1
+				AND = {
+					check_variable = { air_doctrine > 3 }
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = war_games_air_flexible.tt2
+				AND = {
+					NOT = { has_country_flag = switched_air_doctrine_recently }
+				}
+			}
+    }
+
+    complete_effect = {
+      air_experience = -150
+      add_command_power = -40
+    }
+
+    modifier = {
+      air_accidents_factor = 0.2
+      experience_gain_air_factor = -0.5
+    }
+
+    remove_effect = {
+      hidden_effect = { war_games_air_flexible_strategic_destruction = yes }
+			custom_effect_tooltip = war_games_air_flexible_strategic_destruction.tt3
+			set_country_flag = { flag = switched_air_doctrine_recently days = 350 value = 1 }
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+  war_games_air_flexible_battlefield_support = {
+
+    icon = generic_air
+    cost = 50
+    fire_only_once = no
+
+    #days_remove = 100
+		days_remove = 2
+
+    allowed = {
+      always = yes
+    }
+
+    visible = {
+      has_tech = officers_war_games_2
+			NOT = {	has_tech = formation_flying }
+    }
+
+    available = {
+      has_air_experience > 150
+      command_power > 40
+      has_tech = officers_war_games_2
+			custom_trigger_tooltip = {
+				tooltip = war_games_air_flexible.tt1
+				AND = {
+					check_variable = { air_doctrine > 3 }
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = war_games_air_flexible.tt2
+				AND = {
+					NOT = { has_country_flag = switched_air_doctrine_recently }
+				}
+			}
+    }
+
+    complete_effect = {
+      air_experience = -150
+      add_command_power = -40
+    }
+
+    modifier = {
+      air_accidents_factor = 0.2
+      experience_gain_air_factor = -0.5
+    }
+
+    remove_effect = {
+      hidden_effect = { war_games_air_flexible_battlefield_support = yes }
+			custom_effect_tooltip = war_games_air_flexible_battlefield_support.tt3
+			set_country_flag = { flag = switched_air_doctrine_recently days = 350 value = 1 }
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+  war_games_air_flexible_operational_integrity = {
+
+    icon = generic_air
+    cost = 50
+    fire_only_once = no
+
+    #days_remove = 100
+		days_remove = 2
+
+    allowed = {
+      always = yes
+    }
+
+    visible = {
+      has_tech = officers_war_games_2
+			NOT = {	has_tech = force_rotation }
+    }
+
+    available = {
+      has_air_experience > 150
+      command_power > 40
+      has_tech = officers_war_games_2
+			custom_trigger_tooltip = {
+				tooltip = war_games_air_flexible.tt1
+				AND = {
+					check_variable = { air_doctrine > 3 }
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = war_games_air_flexible.tt2
+				AND = {
+					NOT = { has_country_flag = switched_air_doctrine_recently }
+				}
+			}
+    }
+
+    complete_effect = {
+      air_experience = -150
+      add_command_power = -40
+    }
+
+    modifier = {
+      air_accidents_factor = 0.2
+      experience_gain_air_factor = -0.5
+    }
+
+    remove_effect = {
+      hidden_effect = { war_games_air_flexible_operational_integrity = yes }
+			custom_effect_tooltip = war_games_air_flexible_operational_integrity.tt3
+			set_country_flag = { flag = switched_air_doctrine_recently days = 350 value = 1 }
     }
 
     ai_will_do = {

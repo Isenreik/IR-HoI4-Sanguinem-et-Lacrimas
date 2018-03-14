@@ -1,4 +1,5 @@
-war_games_army_flexible_effect_mobile_warfare = {
+## land
+war_games_army_flexible_mobile_warfare = {
 
   ## Reminder: Doctrine is 10 techs long
   ## RNG
@@ -16,7 +17,7 @@ war_games_army_flexible_effect_mobile_warfare = {
     max = 10
   }
 
-  print_variables = { file = wargames_dump text = war_games_army_flexible_effect_mobile_warfare_effect append = yes print_global = yes var_list = { rng_value land_doctrine bonus_amount } }
+  print_variables = { file = wargames_dump text = war_games_army_flexible_mobile_warfare append = yes print_global = yes var_list = { rng_value land_doctrine bonus_amount } }
 
   ## give bonuses based on amount
   if = {
@@ -56,8 +57,7 @@ war_games_army_flexible_effect_mobile_warfare = {
     add_tech_bonus = { bonus = 0.75 uses = 10 category = cat_mobile_warfare }
   }
 }
-
-war_games_army_flexible_effect_superior_firepower = {
+war_games_army_flexible_superior_firepower = {
 
   ## Reminder: Doctrine is 10 techs long
   ## RNG
@@ -76,7 +76,7 @@ war_games_army_flexible_effect_superior_firepower = {
     max = 10
   }
 
-  print_variables = { file = wargames_dump text = war_games_army_flexible_effect_superior_firepower_effect append = yes print_global = yes var_list = { rng_value land_doctrine bonus_amount } }
+  print_variables = { file = wargames_dump text = war_games_army_flexible_superior_firepower append = yes print_global = yes var_list = { rng_value land_doctrine bonus_amount } }
 
   ## give bonuses based on amount
   if = {
@@ -116,8 +116,7 @@ war_games_army_flexible_effect_superior_firepower = {
     add_tech_bonus = { bonus = 0.75 uses = 10 category = cat_superior_firepower }
   }
 }
-
-war_games_army_flexible_effect_grand_battle_plan = {
+war_games_army_flexible_grand_battle_plan = {
 
   ## Reminder: Doctrine is 10 techs long
   ## RNG
@@ -135,7 +134,7 @@ war_games_army_flexible_effect_grand_battle_plan = {
     max = 10
   }
 
-  print_variables = { file = wargames_dump text = war_games_army_flexible_effect_grand_battle_plan_effect append = yes print_global = yes var_list = { rng_value land_doctrine bonus_amount } }
+  print_variables = { file = wargames_dump text = war_games_army_flexible_grand_battle_plan append = yes print_global = yes var_list = { rng_value land_doctrine bonus_amount } }
 
   ## give bonuses based on amount
   if = {
@@ -175,8 +174,7 @@ war_games_army_flexible_effect_grand_battle_plan = {
     add_tech_bonus = { bonus = 0.75 uses = 10 category = cat_grand_battle_plan }
   }
 }
-
-war_games_army_flexible_effect_mass_assault = {
+war_games_army_flexible_mass_assault = {
 
   ## Reminder: Doctrine is 10-8 techs long
   ## RNG
@@ -194,7 +192,7 @@ war_games_army_flexible_effect_mass_assault = {
     max = 8
   }
 
-  print_variables = { file = wargames_dump text = war_games_army_flexible_effect_mass_assault_effect append = yes print_global = yes var_list = { rng_value land_doctrine bonus_amount } }
+  print_variables = { file = wargames_dump text = war_games_army_flexible_mass_assault append = yes print_global = yes var_list = { rng_value land_doctrine bonus_amount } }
 
   ## give bonuses based on amount
   if = {
@@ -234,7 +232,6 @@ war_games_army_flexible_effect_mass_assault = {
     add_tech_bonus = { bonus = 0.75 uses = 10 category = cat_mass_assault }
   }
 }
-
 count_land_doctrines = {
 
   set_temp_variable = { land_doctrine_temp = 0 }
@@ -302,7 +299,6 @@ count_land_doctrines = {
   if = { limit = { has_tech = human_wave_offensive } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
   if = { limit = { has_tech = guerilla_warfare } add_to_temp_variable = { var = land_doctrine_temp value = 1 } }
 }
-
 recalc_land_doctrines_variables = {
   set_variable = { land_doctrine_bonus_max = land_doctrine }
   add_to_variable = { var = land_doctrine_bonus_max value = -2 }
@@ -316,6 +312,488 @@ recalc_land_doctrines_variables = {
   }
   clamp_variable = {
     var = land_doctrine_bonus_min
+    min = 2
+    max = 10
+  }
+}
+
+## naval
+war_games_navy_flexible_fleet_in_being = {
+
+  ## Reminder: Doctrine is 7 techs long on one side and 6 on the other side
+  ## RNG
+  random_list = {
+    1 = { set_temp_variable = { rng_value = -2 } }
+    2 = { set_temp_variable = { rng_value = -3 } }
+    2 = { set_temp_variable = { rng_value = -4 } }
+  }
+  set_temp_variable = { bonus_amount = naval_doctrine }
+  add_to_temp_variable = { var = bonus_amount value = rng_value }
+  ## no negatives
+  clamp_temp_variable  = {
+    var = bonus_amount
+    min = 2
+    max = 10
+  }
+
+  print_variables = { file = wargames_dump text = war_games_navy_flexible_effect_fleet_in_being append = yes print_global = yes var_list = { rng_value naval_doctrine bonus_amount } }
+
+  ## give bonuses based on amount
+  if = {
+    limit = { check_variable = { bonus_amount = 2 } }
+    add_tech_bonus = { bonus = 0.75 uses = 2 category = cat_fleet_in_being }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 3 } }
+    add_tech_bonus = { bonus = 0.75 uses = 3 category = cat_fleet_in_being }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 4 } }
+    add_tech_bonus = { bonus = 0.75 uses = 4 category = cat_fleet_in_being }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 5 } }
+    add_tech_bonus = { bonus = 0.75 uses = 5 category = cat_fleet_in_being }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 6 } }
+    add_tech_bonus = { bonus = 0.75 uses = 6 category = cat_fleet_in_being }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 7 } }
+    add_tech_bonus = { bonus = 0.75 uses = 7 category = cat_fleet_in_being }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 8 } }
+    add_tech_bonus = { bonus = 0.75 uses = 8 category = cat_fleet_in_being }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 9 } }
+    add_tech_bonus = { bonus = 0.75 uses = 9 category = cat_fleet_in_being }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 10 } }
+    add_tech_bonus = { bonus = 0.75 uses = 10 category = cat_fleet_in_being }
+  }
+}
+war_games_navy_flexible_trade_interdiction = {
+
+  ## Reminder: Doctrine is 6 techs long
+  ## RNG
+  random_list = {
+    1 = { set_temp_variable = { rng_value = -2 } }
+    2 = { set_temp_variable = { rng_value = -3 } }
+    1 = { set_temp_variable = { rng_value = -4 } }
+  }
+  set_temp_variable = { bonus_amount = naval_doctrine }
+  add_to_temp_variable = { var = bonus_amount value = rng_value }
+  ## no negatives
+  clamp_temp_variable  = {
+    var = bonus_amount
+    min = 2
+    max = 10
+  }
+
+  print_variables = { file = wargames_dump text = war_games_navy_flexible_effect_trade_interdiction append = yes print_global = yes var_list = { rng_value naval_doctrine bonus_amount } }
+
+  ## give bonuses based on amount
+  if = {
+    limit = { check_variable = { bonus_amount = 2 } }
+    add_tech_bonus = { bonus = 0.75 uses = 2 category = cat_trade_interdiction }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 3 } }
+    add_tech_bonus = { bonus = 0.75 uses = 3 category = cat_trade_interdiction }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 4 } }
+    add_tech_bonus = { bonus = 0.75 uses = 4 category = cat_trade_interdiction }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 5 } }
+    add_tech_bonus = { bonus = 0.75 uses = 5 category = cat_trade_interdiction }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 6 } }
+    add_tech_bonus = { bonus = 0.75 uses = 6 category = cat_trade_interdiction }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 7 } }
+    add_tech_bonus = { bonus = 0.75 uses = 7 category = cat_trade_interdiction }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 8 } }
+    add_tech_bonus = { bonus = 0.75 uses = 8 category = cat_trade_interdiction }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 9 } }
+    add_tech_bonus = { bonus = 0.75 uses = 9 category = cat_trade_interdiction }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 10 } }
+    add_tech_bonus = { bonus = 0.75 uses = 10 category = cat_trade_interdiction }
+  }
+}
+war_games_navy_flexible_base_strike = {
+
+  ## Reminder: Doctrine is 5 techs long on one side and 7 on the other side
+  ## RNG
+  random_list = {
+    1 = { set_temp_variable = { rng_value = -2 } }
+    2 = { set_temp_variable = { rng_value = -3 } }
+    2 = { set_temp_variable = { rng_value = -4 } }
+  }
+  set_temp_variable = { bonus_amount = naval_doctrine }
+  add_to_temp_variable = { var = bonus_amount value = rng_value }
+  ## no negatives
+  clamp_temp_variable  = {
+    var = bonus_amount
+    min = 2
+    max = 10
+  }
+
+  print_variables = { file = wargames_dump text = war_games_navy_flexible_effect_base_strike append = yes print_global = yes var_list = { rng_value naval_doctrine bonus_amount } }
+
+  ## give bonuses based on amount
+  if = {
+    limit = { check_variable = { bonus_amount = 2 } }
+    add_tech_bonus = { bonus = 0.75 uses = 2 category = cat_base_strike }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 3 } }
+    add_tech_bonus = { bonus = 0.75 uses = 3 category = cat_base_strike }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 4 } }
+    add_tech_bonus = { bonus = 0.75 uses = 4 category = cat_base_strike }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 5 } }
+    add_tech_bonus = { bonus = 0.75 uses = 5 category = cat_base_strike }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 6 } }
+    add_tech_bonus = { bonus = 0.75 uses = 6 category = cat_base_strike }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 7 } }
+    add_tech_bonus = { bonus = 0.75 uses = 7 category = cat_base_strike }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 8 } }
+    add_tech_bonus = { bonus = 0.75 uses = 8 category = cat_base_strike }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 9 } }
+    add_tech_bonus = { bonus = 0.75 uses = 9 category = cat_base_strike }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 10 } }
+    add_tech_bonus = { bonus = 0.75 uses = 10 category = cat_base_strike }
+  }
+}
+count_naval_doctrines = {
+
+  set_temp_variable = { naval_doctrine_temp = 0 }
+  if = { limit = { has_tech = fleet_in_being } add_to_temp_variable = { var = naval_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = battlefleet_concentration } add_to_temp_variable = { var = naval_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = subsidiary_carrier_role } add_to_temp_variable = { var = naval_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = hunter_killer_groups } add_to_temp_variable = { var = naval_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = floating_fortress } add_to_temp_variable = { var = naval_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = floating_airfield } add_to_temp_variable = { var = naval_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = grand_battlefleet } add_to_temp_variable = { var = naval_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = convoy_sailing } add_to_temp_variable = { var = naval_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = convoy_escorts } add_to_temp_variable = { var = naval_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = escort_carriers } add_to_temp_variable = { var = naval_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = integrated_convoy_defence } add_to_temp_variable = { var = naval_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = submarine_operations } add_to_temp_variable = { var = naval_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = undersea_blockade } add_to_temp_variable = { var = naval_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = convoy_interdiction } add_to_temp_variable = { var = naval_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = submarine_offensive } add_to_temp_variable = { var = naval_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = trade_interdiction } add_to_temp_variable = { var = naval_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = convoy_interdiction_ti } add_to_temp_variable = { var = naval_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = unrestricted_submarine_warfare } add_to_temp_variable = { var = naval_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = wolfpacks } add_to_temp_variable = { var = naval_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = advanced_submarine_warfare } add_to_temp_variable = { var = naval_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = combined_operations_raiding } add_to_temp_variable = { var = naval_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = raider_patrols } add_to_temp_variable = { var = naval_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = capital_ship_raiders } add_to_temp_variable = { var = naval_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = battlefleet_concentration_ti } add_to_temp_variable = { var = naval_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = floating_fortress_ti } add_to_temp_variable = { var = naval_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = floating_airfield_ti } add_to_temp_variable = { var = naval_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = carrier_operations } add_to_temp_variable = { var = naval_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = convoy_sailing_ti } add_to_temp_variable = { var = naval_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = subsidiary_carrier_role_ti } add_to_temp_variable = { var = naval_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = naval_air_operations } add_to_temp_variable = { var = naval_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = base_strike } add_to_temp_variable = { var = naval_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = carrier_primacy } add_to_temp_variable = { var = naval_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = carrier_task_forces } add_to_temp_variable = { var = naval_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = floating_airfield_bs } add_to_temp_variable = { var = naval_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = massed_strikes } add_to_temp_variable = { var = naval_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = floating_fortress_bs } add_to_temp_variable = { var = naval_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = carrier_battlegroups } add_to_temp_variable = { var = naval_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = submarine_operations_bs } add_to_temp_variable = { var = naval_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = undersea_blockade_bs } add_to_temp_variable = { var = naval_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = convoy_interdiction_bs } add_to_temp_variable = { var = naval_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = submarine_offensive_bs } add_to_temp_variable = { var = naval_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = convoy_escorts_bs } add_to_temp_variable = { var = naval_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = escort_patrols } add_to_temp_variable = { var = naval_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = convoy_sailing_bs } add_to_temp_variable = { var = naval_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = integrated_convoy_defence_bs } add_to_temp_variable = { var = naval_doctrine_temp value = 1 } }
+}
+recalc_naval_doctrines_variables = {
+  set_variable = { naval_doctrine_bonus_max = naval_doctrine }
+  add_to_variable = { var = naval_doctrine_bonus_max value = -2 }
+  set_variable = { naval_doctrine_bonus_min = naval_doctrine }
+  add_to_variable = { var = naval_doctrine_bonus_min value = -4 }
+
+  clamp_variable = {
+    var = naval_doctrine_bonus_max
+    min = 2
+    max = 10
+  }
+  clamp_variable = {
+    var = naval_doctrine_bonus_min
+    min = 2
+    max = 10
+  }
+}
+
+## air
+war_games_air_flexible_strategic_destruction = {
+
+  ## Reminder: Doctrine is 10 techs long
+  ## RNG
+  random_list = {
+    1 = { set_temp_variable = { rng_value = -2 } }
+    2 = { set_temp_variable = { rng_value = -3 } }
+    2 = { set_temp_variable = { rng_value = -4 } }
+    1 = { set_temp_variable = { rng_value = -5 } }
+  }
+  set_temp_variable = { bonus_amount = air_doctrine }
+  add_to_temp_variable = { var = bonus_amount value = rng_value }
+  ## no negatives
+  clamp_temp_variable  = {
+    var = bonus_amount
+    min = 2
+    max = 10
+  }
+
+  print_variables = { file = wargames_dump text = war_games_air_flexible_strategic_destruction append = yes print_global = yes var_list = { rng_value air_doctrine bonus_amount } }
+
+  ## give bonuses based on amount
+  if = {
+    limit = { check_variable = { bonus_amount = 2 } }
+    add_tech_bonus = { bonus = 0.75 uses = 2 category = cat_strategic_destruction }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 3 } }
+    add_tech_bonus = { bonus = 0.75 uses = 3 category = cat_strategic_destruction }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 4 } }
+    add_tech_bonus = { bonus = 0.75 uses = 4 category = cat_strategic_destruction }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 5 } }
+    add_tech_bonus = { bonus = 0.75 uses = 5 category = cat_strategic_destruction }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 6 } }
+    add_tech_bonus = { bonus = 0.75 uses = 6 category = cat_strategic_destruction }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 7 } }
+    add_tech_bonus = { bonus = 0.75 uses = 7 category = cat_strategic_destruction }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 8 } }
+    add_tech_bonus = { bonus = 0.75 uses = 8 category = cat_strategic_destruction }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 9 } }
+    add_tech_bonus = { bonus = 0.75 uses = 9 category = cat_strategic_destruction }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 10 } }
+    add_tech_bonus = { bonus = 0.75 uses = 10 category = cat_strategic_destruction }
+  }
+}
+war_games_air_flexible_battlefield_support = {
+
+  ## Reminder: Doctrine is 7 techs long
+  ## RNG
+  random_list = {
+    1 = { set_temp_variable = { rng_value = -2 } }
+    2 = { set_temp_variable = { rng_value = -3 } }
+    2 = { set_temp_variable = { rng_value = -4 } }
+    1 = { set_temp_variable = { rng_value = -5 } }
+  }
+  set_temp_variable = { bonus_amount = air_doctrine }
+  add_to_temp_variable = { var = bonus_amount value = rng_value }
+  ## no negatives
+  clamp_temp_variable  = {
+    var = bonus_amount
+    min = 2
+    max = 10
+  }
+
+  print_variables = { file = wargames_dump text = war_games_air_flexible_battlefield_support append = yes print_global = yes var_list = { rng_value air_doctrine bonus_amount } }
+
+  ## give bonuses based on amount
+  if = {
+    limit = { check_variable = { bonus_amount = 2 } }
+    add_tech_bonus = { bonus = 0.75 uses = 2 category = cat_battlefield_support }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 3 } }
+    add_tech_bonus = { bonus = 0.75 uses = 3 category = cat_battlefield_support }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 4 } }
+    add_tech_bonus = { bonus = 0.75 uses = 4 category = cat_battlefield_support }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 5 } }
+    add_tech_bonus = { bonus = 0.75 uses = 5 category = cat_battlefield_support }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 6 } }
+    add_tech_bonus = { bonus = 0.75 uses = 6 category = cat_battlefield_support }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 7 } }
+    add_tech_bonus = { bonus = 0.75 uses = 7 category = cat_battlefield_support }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 8 } }
+    add_tech_bonus = { bonus = 0.75 uses = 8 category = cat_battlefield_support }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 9 } }
+    add_tech_bonus = { bonus = 0.75 uses = 9 category = cat_battlefield_support }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 10 } }
+    add_tech_bonus = { bonus = 0.75 uses = 10 category = cat_battlefield_support }
+  }
+}
+war_games_air_flexible_operational_integrity = {
+
+  ## Reminder: Doctrine is 10 techs long
+  ## RNG
+  random_list = {
+    1 = { set_temp_variable = { rng_value = -2 } }
+    2 = { set_temp_variable = { rng_value = -3 } }
+    2 = { set_temp_variable = { rng_value = -4 } }
+    1 = { set_temp_variable = { rng_value = -5 } }
+  }
+  set_temp_variable = { bonus_amount = air_doctrine }
+  add_to_temp_variable = { var = bonus_amount value = rng_value }
+  ## no negatives
+  clamp_temp_variable  = {
+    var = bonus_amount
+    min = 2
+    max = 10
+  }
+
+  print_variables = { file = wargames_dump text = war_games_air_flexible_operational_integrity append = yes print_global = yes var_list = { rng_value air_doctrine bonus_amount } }
+
+  ## give bonuses based on amount
+  if = {
+    limit = { check_variable = { bonus_amount = 2 } }
+    add_tech_bonus = { bonus = 0.75 uses = 2 category = cat_operational_integrity }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 3 } }
+    add_tech_bonus = { bonus = 0.75 uses = 3 category = cat_operational_integrity }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 4 } }
+    add_tech_bonus = { bonus = 0.75 uses = 4 category = cat_operational_integrity }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 5 } }
+    add_tech_bonus = { bonus = 0.75 uses = 5 category = cat_operational_integrity }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 6 } }
+    add_tech_bonus = { bonus = 0.75 uses = 6 category = cat_operational_integrity }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 7 } }
+    add_tech_bonus = { bonus = 0.75 uses = 7 category = cat_operational_integrity }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 8 } }
+    add_tech_bonus = { bonus = 0.75 uses = 8 category = cat_operational_integrity }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 9 } }
+    add_tech_bonus = { bonus = 0.75 uses = 9 category = cat_operational_integrity }
+  }
+  if = {
+    limit = { check_variable = { bonus_amount = 10 } }
+    add_tech_bonus = { bonus = 0.75 uses = 10 category = cat_operational_integrity }
+  }
+}
+count_air_doctrines = {
+
+  set_temp_variable = { air_doctrine_temp = 0 }
+  if = { limit = { has_tech = air_superiority } add_to_temp_variable = { var = air_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = infrastructure_destruction } add_to_temp_variable = { var = air_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = home_defence } add_to_temp_variable = { var = air_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = naval_strike_tactics } add_to_temp_variable = { var = air_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = fighter_sweeps } add_to_temp_variable = { var = air_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = dogfighting_experience } add_to_temp_variable = { var = air_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = multialtitude_flying } add_to_temp_variable = { var = air_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = logistical_bombing } add_to_temp_variable = { var = air_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = night_bombing } add_to_temp_variable = { var = air_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = day_bombing } add_to_temp_variable = { var = air_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = massed_bomber_formations } add_to_temp_variable = { var = air_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = air_offense } add_to_temp_variable = { var = air_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = flying_fortress } add_to_temp_variable = { var = air_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = offensive_formations } add_to_temp_variable = { var = air_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = mass_destruction } add_to_temp_variable = { var = air_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = formation_flying } add_to_temp_variable = { var = air_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = dive_bombing } add_to_temp_variable = { var = air_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = direct_ground_support } add_to_temp_variable = { var = air_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = formation_fighting } add_to_temp_variable = { var = air_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = fighter_ace_initiative } add_to_temp_variable = { var = air_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = hunt_and_destroy } add_to_temp_variable = { var = air_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = combat_unit_destruction } add_to_temp_variable = { var = air_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = battlefield_support } add_to_temp_variable = { var = air_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = keypoint_bombing } add_to_temp_variable = { var = air_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = ground_support_integration } add_to_temp_variable = { var = air_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = naval_strike_torpedo_tactics } add_to_temp_variable = { var = air_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = strategic_destruction } add_to_temp_variable = { var = air_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = forward_interception } add_to_temp_variable = { var = air_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = force_rotation } add_to_temp_variable = { var = air_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = fighter_baiting } add_to_temp_variable = { var = air_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = low_echelon_support } add_to_temp_variable = { var = air_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = dispersed_fighting } add_to_temp_variable = { var = air_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = operational_destruction } add_to_temp_variable = { var = air_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = fighter_veteran_initiative } add_to_temp_variable = { var = air_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = naval_strike_torpedo_tactics_oi } add_to_temp_variable = { var = air_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = cas_veteran_initiative } add_to_temp_variable = { var = air_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = carousel_bombing } add_to_temp_variable = { var = air_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = infiltration_bombing } add_to_temp_variable = { var = air_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = air_skirmish } add_to_temp_variable = { var = air_doctrine_temp value = 1 } }
+  if = { limit = { has_tech = high_level_bombing } add_to_temp_variable = { var = air_doctrine_temp value = 1 } }
+}
+recalc_air_doctrines_variables = {
+  set_variable = { air_doctrine_bonus_max = air_doctrine }
+  add_to_variable = { var = air_doctrine_bonus_max value = -2 }
+  set_variable = { air_doctrine_bonus_min = air_doctrine }
+  add_to_variable = { var = air_doctrine_bonus_min value = -5 }
+
+  clamp_variable = {
+    var = air_doctrine_bonus_max
+    min = 2
+    max = 10
+  }
+  clamp_variable = {
+    var = air_doctrine_bonus_min
     min = 2
     max = 10
   }
