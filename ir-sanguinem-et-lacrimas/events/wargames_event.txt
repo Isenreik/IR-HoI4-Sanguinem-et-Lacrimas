@@ -11,6 +11,7 @@ country_event = {
   hidden = yes
 
   immediate = {
+		##### Land
 		count_land_doctrines = yes
     set_variable = { land_doctrine = land_doctrine_temp }
     ## set the specific branch tech
@@ -19,6 +20,22 @@ country_event = {
     if = { limit = { has_tech = trench_warfare     } set_temp_variable = { var = land_doctrine_trench_warfare     value = land_doctrine_temp } }
     if = { limit = { has_tech = mass_assault       } set_temp_variable = { var = land_doctrine_mass_assault       value = land_doctrine_temp } }
     recalc_land_doctrines_variables = yes
+		##### Naval
+		count_naval_doctrines = yes
+    set_variable = { naval_doctrine = naval_doctrine_temp }
+    ## set the specific branch tech
+		if = { limit = { has_tech = fleet_in_being     } set_temp_variable = { var = naval_doctrine_fleet_in_being     value = naval_doctrine_temp } }
+    if = { limit = { has_tech = trade_interdiction } set_temp_variable = { var = naval_doctrine_trade_interdiction value = naval_doctrine_temp } }
+    if = { limit = { has_tech = base_strike				 } set_temp_variable = { var = naval_doctrine_base_strike				 value = naval_doctrine_temp } }
+    recalc_naval_doctrines_variables = yes
+		##### Air
+		count_air_doctrines = yes
+    set_variable = { air_doctrine = air_doctrine_temp }
+    ## set the specific branch tech
+		if = { limit = { has_tech = air_superiority    } set_temp_variable = { var = air_doctrine_strategic_destruction value = air_doctrine_temp } }
+    if = { limit = { has_tech = formation_flying	 } set_temp_variable = { var = air_doctrine_battlefield_support		value = air_doctrine_temp } }
+    if = { limit = { has_tech = force_rotation		 } set_temp_variable = { var = air_doctrine_operational_integrity	value = air_doctrine_temp } }
+    recalc_air_doctrines_variables = yes
 	}
 
 	option = {
