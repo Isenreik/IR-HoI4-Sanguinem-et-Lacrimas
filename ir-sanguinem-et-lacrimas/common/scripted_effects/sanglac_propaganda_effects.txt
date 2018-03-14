@@ -1,0 +1,259 @@
+propaganda_speech_effect = {
+
+  ## improved tech: press_media1
+
+  if = {
+    limit = {
+      NOT = { has_tech = press_media1 }
+      has_war = no
+    }
+    # 66% good
+    # 33% bad
+    random_list = {
+      22 = {
+      custom_effect_tooltip = propaganda_speech.tt.good_political
+      hidden_effect = { propaganda_speech_effect_good_political = yes }
+      }
+      11 = {
+      custom_effect_tooltip = propaganda_speech.tt.bad_political
+      hidden_effect = { propaganda_speech_effect_good_political = yes }
+      }
+      22 = {
+        custom_effect_tooltip = propaganda_speech.tt.good_economy
+        hidden_effect = { propaganda_speech_effect_good_economy = yes }
+      }
+      11 = {
+        custom_effect_tooltip = propaganda_speech.tt.bad_economy
+        hidden_effect = { propaganda_speech_effect_bad_economy = yes }
+      }
+      22 = {
+        custom_effect_tooltip = propaganda_speech.tt.good_military
+        hidden_effect = { propaganda_speech_effect_good_military = yes }
+      }
+      11 = {
+        custom_effect_tooltip = propaganda_speech.tt.bad_military
+        hidden_effect = { propaganda_speech_effect_bad_military = yes }
+      }
+    }
+  }
+  if = {
+    limit = {
+      NOT = { has_tech = press_media1 }
+      has_war = yes
+    }
+    # 66% good
+    # 33% bad
+    random_list = {
+      16 = {
+      custom_effect_tooltip = propaganda_speech.tt.good_political
+      hidden_effect = { propaganda_speech_effect_good_political = yes }
+      }
+      8 = {
+      custom_effect_tooltip = propaganda_speech.tt.bad_political
+      hidden_effect = { propaganda_speech_effect_good_political = yes }
+      }
+      16 = {
+        custom_effect_tooltip = propaganda_speech.tt.good_economy
+        hidden_effect = { propaganda_speech_effect_good_economy = yes }
+      }
+      8 = {
+        custom_effect_tooltip = propaganda_speech.tt.bad_economy
+        hidden_effect = { propaganda_speech_effect_bad_economy = yes }
+      }
+      32 = {
+        custom_effect_tooltip = propaganda_speech.tt.good_military
+        hidden_effect = { propaganda_speech_effect_good_military = yes }
+      }
+      16 = {
+        custom_effect_tooltip = propaganda_speech.tt.bad_military
+        hidden_effect = { propaganda_speech_effect_bad_military = yes }
+      }
+    }
+  }
+
+  if = {
+    limit = {
+      has_tech = press_media1
+      has_war = no
+    }
+    # 80% good
+    # 20% bad
+    random_list = {
+      26 = {
+      custom_effect_tooltip = propaganda_speech.tt.good_political
+      hidden_effect = { propaganda_speech_effect_good_political = yes }
+      }
+      6 = {
+      custom_effect_tooltip = propaganda_speech.tt.bad_political
+      hidden_effect = { propaganda_speech_effect_good_political = yes }
+      }
+      26 = {
+        custom_effect_tooltip = propaganda_speech.tt.good_economy
+        hidden_effect = { propaganda_speech_effect_good_economy = yes }
+      }
+      6 = {
+        custom_effect_tooltip = propaganda_speech.tt.bad_economy
+        hidden_effect = { propaganda_speech_effect_bad_economy = yes }
+      }
+      26 = {
+        custom_effect_tooltip = propaganda_speech.tt.good_military
+        hidden_effect = { propaganda_speech_effect_good_military = yes }
+      }
+      6 = {
+        custom_effect_tooltip = propaganda_speech.tt.bad_military
+        hidden_effect = { propaganda_speech_effect_bad_military = yes }
+      }
+    }
+  }
+  if = {
+    limit = {
+      has_tech = press_media1
+      has_war = yes
+    }
+    # 80% good
+    # 20% bad
+    random_list = {
+      20 = {
+      custom_effect_tooltip = propaganda_speech.tt.good_political
+      hidden_effect = { propaganda_speech_effect_good_political = yes }
+      }
+      5 = {
+      custom_effect_tooltip = propaganda_speech.tt.bad_political
+      hidden_effect = { propaganda_speech_effect_good_political = yes }
+      }
+      20 = {
+        custom_effect_tooltip = propaganda_speech.tt.good_economy
+        hidden_effect = { propaganda_speech_effect_good_economy = yes }
+      }
+      5 = {
+        custom_effect_tooltip = propaganda_speech.tt.bad_economy
+        hidden_effect = { propaganda_speech_effect_bad_economy = yes }
+      }
+      40 = {
+        custom_effect_tooltip = propaganda_speech.tt.good_military
+        hidden_effect = { propaganda_speech_effect_good_military = yes }
+      }
+      10 = {
+        custom_effect_tooltip = propaganda_speech.tt.bad_military
+        hidden_effect = { propaganda_speech_effect_bad_military = yes }
+      }
+    }
+  }
+
+}
+
+# good political events
+propaganda_speech_effect_good_political = {
+
+  # events that can only fire in peace
+  if = {
+    limit = { has_war = no }
+    random_list = {
+      1 = { country_event = propaganda_speech_event.101 }
+      1 = { country_event = propaganda_speech_event.102 }
+    }
+  }
+  # events that can fire during war
+  else = {
+    random_list = {
+      1 = { country_event = propaganda_speech_event.101 }
+      1 = { country_event = propaganda_speech_event.102 }
+    }
+  }
+
+}
+
+# bad political events
+propaganda_speech_effect_bad_political = {
+
+  # events that can only fire in peace
+  if = {
+    limit = { has_war = no }
+    random_list = {
+      1 = { country_event = propaganda_speech_event.201 }
+    }
+  }
+  # events that can fire during war
+  else = {
+    random_list = {
+      1 = { country_event = propaganda_speech_event.201 }
+    }
+  }
+
+}
+
+propaganda_speech_effect_good_economy = {
+
+  # events that can only fire in peace
+  if = {
+    limit = { has_war = no }
+    random_list = {
+      1 = { country_event = propaganda_speech_event.301 }
+    }
+  }
+  # events that can fire during war
+  else = {
+    random_list = {
+      1 = { country_event = propaganda_speech_event.301 }
+    }
+  }
+
+}
+
+propaganda_speech_effect_bad_economy = {
+
+  # events that can only fire in peace
+  if = {
+    limit = { has_war = no }
+    random_list = {
+      1 = { country_event = propaganda_speech_event.401 }
+    }
+  }
+  # events that can fire during war
+  else = {
+    random_list = {
+      1 = { country_event = propaganda_speech_event.401 }
+    }
+  }
+
+}
+
+propaganda_speech_effect_good_military = {
+
+  # events that can only fire in peace
+  if = {
+    limit = { has_war = no }
+    random_list = {
+      1 = { country_event = propaganda_speech_event.501 }
+      1 = { country_event = propaganda_speech_event.502 }
+    }
+  }
+  # events that can fire during war
+  else = {
+    random_list = {
+      1 = { country_event = propaganda_speech_event.501 }
+      1 = { country_event = propaganda_speech_event.502 }
+    }
+  }
+
+}
+
+propaganda_speech_effect_bad_military = {
+
+  # events that can only fire in peace
+  if = {
+    limit = { has_war = no }
+    random_list = {
+      1 = { country_event = propaganda_speech_event.601 }
+      1 = { country_event = propaganda_speech_event.602 }
+    }
+  }
+  # events that can fire during war
+  else = {
+    random_list = {
+      1 = { country_event = propaganda_speech_event.601 }
+      1 = { country_event = propaganda_speech_event.602 }
+    }
+  }
+
+}

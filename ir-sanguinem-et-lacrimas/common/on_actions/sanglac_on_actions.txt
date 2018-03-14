@@ -1,0 +1,51 @@
+on_actions = {
+
+  on_declare_war = {
+    effect = {
+      # nothing
+    }
+  }
+
+  on_startup = {
+		effect = {
+
+      # versioning
+      set_global_flag = has_sanglac
+      set_global_flag = has_sanglac_2.0
+
+      ## set-ups
+      every_country = {
+        set_variable = { land_doctrine = 0 }
+        set_variable = { land_doctrine_mobile_warfare = 0 }
+        set_variable = { land_doctrine_superior_firepower = 0 }
+        set_variable = { land_doctrine_trench_warfare = 0 }
+        set_variable = { land_doctrine_mass_assault = 0 }
+        set_variable = { land_doctrine_bonus_min = 2 }
+        set_variable = { land_doctrine_bonus_max = 8 }
+        country_event = wargames_event.10
+      }
+      ## history flags
+      every_country = {
+        limit = {
+          is_league_of_nations_1936 = yes
+        }
+        set_country_flag = LN_league_member
+      }
+      ## basic tech
+      every_country = {
+        set_technology = { support_weapons = 1 }
+        set_technology = { inf_antitank_weapons = 1 }
+      }
+      every_country = {
+        limit = {
+          any_owned_state = {
+            air_base > 0
+          }
+        }
+        set_technology = { transport_plane1 = 1 }
+      }
+
+		}
+	}
+
+}

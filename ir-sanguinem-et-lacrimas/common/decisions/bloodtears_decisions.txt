@@ -1,0 +1,904 @@
+economy_decisions = {
+
+	comandeer_trucks_1 = {
+
+		icon = generic_industry
+
+    cost = 60
+    fire_only_once = no
+
+    days_re_enable = 120
+    days_remove = 50
+
+    allowed = {
+      always = yes
+    }
+
+    visible = {
+      has_tech = press_commandeer_civ_eq_1
+      NOT = { has_tech = press_commandeer_civ_eq_2 }
+    }
+
+    available = {
+      has_tech = press_commandeer_civ_eq_1
+      stockpile_ratio = {
+        archetype = motorized_equipment
+        ratio < 1
+      }
+      command_power > 25
+      has_war_support > 0.25
+      confiscating_trigger = yes
+    }
+
+    complete_effect = {
+      add_command_power = -25
+	  }
+
+		modifier = {
+			stability_weekly = -0.01
+      consumer_goods_factor = 0.08
+		}
+
+    remove_effect = {
+      if = {
+        limit = {
+          num_of_factories < 10
+        }
+        add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 350 }
+      }
+      if = {
+        limit = {
+          AND = {                    #between 10 and 24
+            num_of_factories > 9
+            num_of_factories < 25
+          }
+        }
+        add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 500 }
+      }
+      if = {
+        limit = {
+          AND = {                    #between 25 and 39
+            num_of_factories > 24
+            num_of_factories < 40
+          }
+        }
+        add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 850 }
+      }
+      if = {
+        limit = {
+          AND = {                    #between 40 and 54
+            num_of_factories > 39
+            num_of_factories < 55
+          }
+        }
+          add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 1250 }
+      }
+      if = {
+        limit = {
+          AND = {                    #larger than 55
+            num_of_factories > 54
+          }
+        }
+        add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 1750 }
+      }
+    }
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+        AND = {
+          stockpile_ratio = {
+            archetype = motorized_equipment
+            ratio < 0.25
+          }
+          has_stability > 0.65
+        }
+			}
+		}
+  }
+	comandeer_trucks_2 = {
+
+		icon = generic_industry
+
+    cost = 45
+    fire_only_once = no
+
+    days_re_enable = 100
+    days_remove = 40
+
+    allowed = {
+      always = yes
+    }
+
+    visible = {
+      has_tech = press_commandeer_civ_eq_2
+    }
+
+    available = {
+      has_tech = press_commandeer_civ_eq_2
+      stockpile_ratio = {
+        archetype = motorized_equipment
+        ratio < 1
+      }
+      command_power > 25
+      has_war_support > 0.25
+      confiscating_trigger = yes
+    }
+
+    complete_effect = {
+      add_command_power = -25
+	  }
+
+		modifier = {
+			stability_weekly = -0.01
+      consumer_goods_factor = 0.08
+		}
+
+    remove_effect = {
+      if = {
+        limit = {
+          num_of_factories < 10
+        }
+        add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 350 }
+      }
+      if = {
+        limit = {
+          AND = {                    #between 10 and 24
+            num_of_factories > 9
+            num_of_factories < 25
+          }
+        }
+        add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 500 }
+      }
+      if = {
+        limit = {
+          AND = {                    #between 25 and 39
+            num_of_factories > 24
+            num_of_factories < 40
+          }
+        }
+        add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 850 }
+      }
+      if = {
+        limit = {
+          AND = {                    #between 40 and 54
+            num_of_factories > 39
+            num_of_factories < 55
+          }
+        }
+          add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 1250 }
+      }
+      if = {
+        limit = {
+          AND = {                    #larger than 55
+            num_of_factories > 54
+          }
+        }
+        add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 1750 }
+      }
+    }
+
+    ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+        AND = {
+          stockpile_ratio = {
+            archetype = motorized_equipment
+            ratio < 0.25
+          }
+          has_stability > 0.65
+        }
+			}
+		}
+  }
+  comandeer_boats = {
+
+    icon = generic_industry
+
+    cost = 45
+    fire_only_once = no
+
+    days_re_enable = 420
+    days_remove = 40
+
+    allowed = {
+      always = yes
+    }
+
+    visible = {
+      has_tech = press_commandeer_civ_eq_2
+      any_owned_state = { is_coastal = yes }
+    }
+
+    available = {
+      has_tech = press_commandeer_civ_eq_2
+      command_power > 10
+      has_war_support > 0.25
+      confiscating_trigger = yes
+    }
+
+    complete_effect = {
+      add_command_power = -10
+    }
+
+    modifier = {
+      stability_weekly = -0.01
+      consumer_goods_factor = 0.05
+    }
+
+    remove_effect = {
+      if = {
+        limit = {
+          num_of_factories < 10
+        }
+        add_equipment_to_stockpile = { type = convoy_1 amount = 8 }
+      }
+      if = {
+        limit = {
+          AND = {                    #between 10 and 24
+            num_of_factories > 9
+            num_of_factories < 25
+          }
+        }
+        add_equipment_to_stockpile = { type = convoy_1 amount = 15 }
+      }
+      if = {
+        limit = {
+          AND = {                    #between 25 and 39
+            num_of_factories > 24
+            num_of_factories < 40
+          }
+        }
+        add_equipment_to_stockpile = { type = convoy_1 amount = 25 }
+      }
+      if = {
+        limit = {
+          AND = {                    #between 40 and 54
+            num_of_factories > 39
+            num_of_factories < 55
+          }
+        }
+        add_equipment_to_stockpile = { type = convoy_1 amount = 40 }
+      }
+      if = {
+        limit = {
+          AND = {                    #larger than 55
+            num_of_factories > 54
+          }
+        }
+        add_equipment_to_stockpile = { type = convoy_1 amount = 60 }
+      }
+    }
+
+    ai_will_do = {
+      factor = 1
+      modifier = {
+        factor = 10
+        AND = {
+          stockpile_ratio = {
+            archetype = convoy
+            ratio < 0.25
+          }
+          has_stability > 0.65
+        }
+      }
+    }
+  }
+	comandeer_planes = {
+
+		icon = generic_industry
+
+    cost = 30
+    fire_only_once = yes
+
+    days_remove = 40
+
+    allowed = {
+      always = yes
+    }
+
+    visible = {
+      has_tech = press_commandeer_civ_eq_2
+      any_owned_state = { air_base > 0 }
+    }
+
+    available = {
+      has_tech = press_commandeer_civ_eq_2
+      command_power > 10
+      has_war_support > 0.25
+      confiscating_trigger = yes
+    }
+
+    complete_effect = {
+      add_command_power = -10
+	  }
+
+		modifier = {
+			stability_weekly = -0.007
+      consumer_goods_factor = 0.05
+		}
+
+    remove_effect = {
+      if = {
+        limit = {
+          num_of_factories < 10
+        }
+        add_equipment_to_stockpile = { type = transport_plane_equipment_1 amount = 2 }
+      }
+      if = {
+        limit = {
+          AND = {                    #between 10 and 24
+            num_of_factories > 9
+            num_of_factories < 25
+          }
+        }
+        add_equipment_to_stockpile = { type = transport_plane_equipment_1 amount = 5 }
+      }
+      if = {
+        limit = {
+          AND = {                    #between 25 and 39
+            num_of_factories > 24
+            num_of_factories < 40
+          }
+        }
+        add_equipment_to_stockpile = { type = transport_plane_equipment_1 amount = 8 }
+      }
+      if = {
+        limit = {
+          AND = {                    #between 40 and 54
+            num_of_factories > 39
+            num_of_factories < 55
+          }
+        }
+          add_equipment_to_stockpile = { type = transport_plane_equipment_1 amount = 12 }
+      }
+      if = {
+        limit = {
+          AND = {                    #larger than 55
+            num_of_factories > 54
+          }
+        }
+        add_equipment_to_stockpile = { type = transport_plane_equipment_1 amount = 16 }
+      }
+      air_experience = 10
+    }
+
+    ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+        AND = {
+          stockpile_ratio = {
+            archetype = transport_plane_equipment
+            ratio < 0.25
+          }
+          has_stability > 0.65
+        }
+			}
+		}
+  }
+
+  advanced_healthcare = {
+
+    icon = generic_decision
+    cost = 60
+    fire_only_once = no
+
+    days_remove = -1
+
+    allowed = {
+      always = yes
+    }
+
+    visible = {
+      has_tech = press_health1
+    }
+
+    available = {
+      has_tech = press_health1
+    }
+
+    complete_effect = {
+      clr_country_flag = abolished_healthcare
+      set_country_flag = activated_healthcare
+	  }
+
+    modifier = {
+      stability_factor = 0.05
+      war_support_factor = 0.025
+      MONTHLY_POPULATION = 0.2
+      consumer_goods_factor = 0.02
+    }
+
+    remove = {
+      has_country_flag = abolished_healthcare
+    }
+
+    ai_will_do = {
+      factor = 1
+    }
+  }
+  abolish_healthcare = {
+
+    icon = generic_decision
+    cost = 100
+    fire_only_once = no
+
+    allowed = {
+      always = yes
+    }
+
+    visible = {
+      has_country_flag = activated_healthcare
+    }
+
+    complete_effect = {
+      set_country_flag = abolished_healthcare
+      add_stability = -0.10
+      clr_country_flag = activated_healthcare
+	  }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+}
+
+propaganda_efforts = {
+
+  propaganda_speech = {
+
+    icon = generic_industry
+
+    cost = 50
+    fire_only_once = no
+
+    days_re_enable = 35
+    days_remove = 15
+
+    allowed = {
+      always = yes
+    }
+
+    visible = {
+      has_tech = press_tech1
+    }
+
+    available = {
+      has_tech = press_tech1
+    }
+
+    complete_effect = {
+    }
+
+    modifier = {
+      political_power_factor = -0.1
+    }
+
+    remove_effect = {
+      propaganda_speech_effect = yes
+    }
+
+    ai_will_do = {
+      factor = 2
+    }
+  }
+}
+
+research_category = {
+  war_games_army = {
+
+    icon = generic_decision
+    cost = 25
+    fire_only_once = no
+
+    days_remove = 100
+    days_re_enable = 250
+
+    allowed = {
+      always = yes
+    }
+
+    visible = {
+      has_tech = officers_war_games_1
+    }
+
+    available = {
+      has_army_experience > 100
+			#command_power > 10
+      has_tech = officers_war_games_1
+			custom_trigger_tooltip = {
+				tooltip = war_games_army.tt1
+				NOT = {
+	        OR = {
+	          has_tech = werwolf_guerillas
+	          has_tech = modern_blitzkrieg
+	          has_tech = air_land_battle
+	          has_tech = shock_and_awe
+	          has_tech = c3i_theory
+	          has_tech = infiltration_in_depth
+	          has_tech = continuous_offensive
+	          has_tech = guerilla_warfare
+	        }
+	      }
+			}
+    }
+
+    complete_effect = {
+      army_experience = -100
+			#add_command_power = -10
+    }
+
+    modifier = {
+    }
+
+    remove_effect = {
+      random_list = {
+        1 = { add_tech_bonus = { bonus = 0.25 uses = 1 category = land_doctrine } }
+        1 = { add_tech_bonus = { bonus = 0.5 uses = 1 category = land_doctrine } }
+        1 = { add_tech_bonus = { bonus = 0.75 uses = 1 category = land_doctrine } }
+        1 = { add_tech_bonus = { bonus = 0.5 uses = 2 category = land_doctrine } }
+      }
+    }
+
+    ai_will_do = {
+      factor = 5
+    }
+  }
+  war_games_navy = {
+
+    icon = generic_decision
+    cost = 25
+    fire_only_once = no
+
+    days_remove = 100
+    days_re_enable = 250
+
+    allowed = {
+      always = yes
+    }
+
+    visible = {
+      has_tech = officers_war_games_1
+    }
+
+    available = {
+      has_navy_experience > 100
+			#command_power > 10
+      has_tech = officers_war_games_1
+			custom_trigger_tooltip = {
+				tooltip = war_games_navy.tt1
+				NOT = {
+	        OR = {
+	          AND = {
+							has_tech = grand_battlefleet
+							has_tech = submarine_offensive
+						}
+	          AND = {
+							has_tech = floating_airfield
+							has_tech = combined_operations_raiding
+						}
+	          AND = {
+							has_tech = integrated_convoy_defence
+							has_tech = submarine_offensive
+							has_tech = carrier_battlegroups
+						}
+	        }
+	      }
+			}
+    }
+
+    complete_effect = {
+      navy_experience = -100
+			#add_command_power = -10
+    }
+
+    modifier = {
+    }
+
+    remove_effect = {
+      random_list = {
+        1 = { add_tech_bonus = { bonus = 0.25 uses = 1 category = naval_doctrine } }
+        1 = { add_tech_bonus = { bonus = 0.5 uses = 1 category = naval_doctrine } }
+        1 = { add_tech_bonus = { bonus = 0.75 uses = 1 category = naval_doctrine } }
+        1 = { add_tech_bonus = { bonus = 0.5 uses = 2 category = naval_doctrine } }
+      }
+    }
+
+    ai_will_do = {
+      factor = 5
+    }
+  }
+  war_games_air = {
+
+    icon = generic_decision
+    cost = 25
+    fire_only_once = no
+
+    days_remove = 100
+    days_re_enable = 250
+
+    allowed = {
+      always = yes
+    }
+
+    visible = {
+      has_tech = officers_war_games_1
+    }
+
+    available = {
+      has_air_experience > 100
+			#command_power > 10
+      has_tech = officers_war_games_1
+			custom_trigger_tooltip = {
+				tooltip = war_games_air.tt1
+				NOT = {
+	        OR = {
+	          AND = {
+							has_tech = offensive_formations
+							has_tech = mass_destruction
+						}
+						has_tech = forward_interception
+						has_tech = high_level_bombing
+	        }
+	      }
+			}
+    }
+
+    complete_effect = {
+      air_experience = -100
+			#add_command_power = -10
+    }
+
+    modifier = {
+    }
+
+    remove_effect = {
+      random_list = {
+        1 = { add_tech_bonus = { bonus = 0.25 uses = 1 category = air_doctrine } }
+        1 = { add_tech_bonus = { bonus = 0.5 uses = 1 category = air_doctrine } }
+        1 = { add_tech_bonus = { bonus = 0.75 uses = 1 category = air_doctrine } }
+        1 = { add_tech_bonus = { bonus = 0.5 uses = 2 category = air_doctrine } }
+      }
+    }
+
+    ai_will_do = {
+      factor = 5
+    }
+  }
+  war_games_army_flexible_mobile_warfare = {
+
+    icon = generic_decision
+    cost = 50
+    fire_only_once = no
+
+    #days_remove = 100
+		days_remove = 2
+    #days_re_enable = 400
+    days_re_enable = 2
+
+    allowed = {
+      always = yes
+    }
+
+    visible = {
+      has_tech = officers_war_games_2
+			NOT = {	has_tech = mobile_warfare }
+    }
+
+    available = {
+      has_army_experience > 100
+      #command_power > 40
+      has_tech = officers_war_games_2
+			custom_trigger_tooltip = {
+				tooltip = war_games_army_flexible.tt1
+				AND = {
+					check_variable = { land_doctrine > 4 }
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = war_games_army_flexible.tt2
+				AND = {
+					NOT = { has_country_flag = switched_land_doctrine_recently }
+				}
+			}
+    }
+
+    complete_effect = {
+      army_experience = -100
+      #add_command_power = -40
+    }
+
+    modifier = {
+      army_org_Factor = -0.01
+      experience_gain_army_factor = -0.5
+    }
+
+    remove_effect = {
+      hidden_effect = { war_games_army_flexible_effect_mobile_warfare = yes }
+			custom_effect_tooltip = war_games_army_flexible_mobile_warfare.tt2
+			set_country_flag = { flag = switched_land_doctrine_recently days = 120 }
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+  war_games_army_flexible_superior_firepower = {
+
+    icon = generic_decision
+    cost = 50
+    fire_only_once = no
+
+    #days_remove = 100
+		days_remove = 2
+    #days_re_enable = 400
+    days_re_enable = 2
+
+    allowed = {
+      always = yes
+    }
+
+    visible = {
+      has_tech = officers_war_games_2
+			NOT = {	has_tech = superior_firepower }
+    }
+
+    available = {
+      has_army_experience > 100
+      #command_power > 40
+      has_tech = officers_war_games_2
+			custom_trigger_tooltip = {
+				tooltip = war_games_army_flexible.tt1
+				AND = {
+					check_variable = { land_doctrine > 4 }
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = war_games_army_flexible.tt2
+				AND = {
+					NOT = { has_country_flag = switched_land_doctrine_recently }
+				}
+			}
+    }
+
+    complete_effect = {
+      army_experience = -100
+      #add_command_power = -40
+    }
+
+    modifier = {
+      army_org_Factor = -0.01
+      experience_gain_army_factor = -0.5
+    }
+
+    remove_effect = {
+      hidden_effect = { war_games_army_flexible_effect_superior_firepower = yes }
+			custom_effect_tooltip = war_games_army_flexible_superior_firepower.tt2
+			set_country_flag = { flag = switched_land_doctrine_recently days = 120 }
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+  war_games_army_flexible_grand_battle_plan = {
+
+    icon = generic_decision
+    cost = 50
+    fire_only_once = no
+
+    #days_remove = 100
+		days_remove = 2
+    #days_re_enable = 400
+    days_re_enable = 2
+
+    allowed = {
+      always = yes
+    }
+
+    visible = {
+      has_tech = officers_war_games_2
+			NOT = {	has_tech = trench_warfare }
+    }
+
+    available = {
+      has_army_experience > 100
+      #command_power > 40
+      has_tech = officers_war_games_2
+			custom_trigger_tooltip = {
+				tooltip = war_games_army_flexible.tt1
+				AND = {
+					check_variable = { land_doctrine > 4 }
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = war_games_army_flexible.tt2
+				AND = {
+					NOT = { has_country_flag = switched_land_doctrine_recently }
+				}
+			}
+    }
+
+    complete_effect = {
+      army_experience = -100
+      #add_command_power = -40
+    }
+
+    modifier = {
+      army_org_Factor = -0.01
+      experience_gain_army_factor = -0.5
+    }
+
+    remove_effect = {
+      hidden_effect = { war_games_army_flexible_effect_grand_battle_plan = yes }
+			custom_effect_tooltip = war_games_army_flexible_grand_battle_plan.tt2
+			set_country_flag = { flag = switched_land_doctrine_recently days = 120 }
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+  war_games_army_flexible_mass_assault = {
+
+    icon = generic_decision
+    cost = 50
+    fire_only_once = no
+
+    #days_remove = 100
+		days_remove = 2
+    #days_re_enable = 400
+    days_re_enable = 2
+
+    allowed = {
+      always = yes
+    }
+
+    visible = {
+      has_tech = officers_war_games_2
+			NOT = {	has_tech = mass_assault }
+    }
+
+    available = {
+      has_army_experience > 100
+      #command_power > 40
+      has_tech = officers_war_games_2
+			custom_trigger_tooltip = {
+				tooltip = war_games_army_flexible.tt1
+				AND = {
+					check_variable = { land_doctrine > 4 }
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = war_games_army_flexible.tt2
+				AND = {
+					NOT = { has_country_flag = switched_land_doctrine_recently }
+				}
+			}
+    }
+
+    complete_effect = {
+      army_experience = -100
+      #add_command_power = -40
+    }
+
+    modifier = {
+      army_org_Factor = -0.01
+      experience_gain_army_factor = -0.5
+    }
+
+    remove_effect = {
+      hidden_effect = { war_games_army_flexible_effect_mass_assault = yes }
+			custom_effect_tooltip = war_games_army_flexible_mass_assault.tt2
+			set_country_flag = { flag = switched_land_doctrine_recently days = 120 }
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+}

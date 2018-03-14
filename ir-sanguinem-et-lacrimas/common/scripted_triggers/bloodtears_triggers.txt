@@ -1,0 +1,34 @@
+is_free_enough_to_politics = {
+	AND = {
+		NOT = { has_autonomy_state = autonomy_colony }
+		NOT = { has_autonomy_state = autonomy_integrated_puppet }
+		NOT = { has_autonomy_state = autonomy_puppet }
+		NOT = { has_autonomy_state = autonomy_reichskommissariat }
+		NOT = { has_autonomy_state = autonomy_reichsprotectorate }
+	}
+}
+
+confiscating_trigger = {
+	OR = {
+		has_government = fascism
+		has_government = communism
+		custom_trigger_tooltip = { tooltip = or_clarification_tooltip always = no }
+		AND = {
+			has_war = yes
+			any_enemy_country = {
+				ic_ratio = {
+					tag = ROOT
+					ratio > 0.4
+				}
+			}
+		}
+	}
+
+	if = {
+		limit = {
+			original_tag = HUN
+			has_dlc = "Death or Dishonor"
+		}
+		NOT = { has_idea = HUN_treaty_of_triannon }
+	}
+}
