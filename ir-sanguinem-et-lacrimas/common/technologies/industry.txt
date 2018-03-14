@@ -25,7 +25,7 @@ technologies = {
 
 	@synthetic_oil_row = 3
 	@synthetic_oil_row_left = 2
-	@synthetic_oil_row_right
+	@synthetic_oil_row_right = 4
 
 	@factories_production = 5
 
