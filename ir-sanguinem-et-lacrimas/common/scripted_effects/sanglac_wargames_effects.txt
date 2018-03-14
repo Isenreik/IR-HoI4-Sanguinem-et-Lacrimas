@@ -21,39 +21,39 @@ war_games_army_flexible_effect_mobile_warfare = {
   ## give bonuses based on amount
   if = {
     limit = { check_variable = { bonus_amount = 2 } }
-    add_tech_bonus = { bonus = 0.80 uses = 2 category = cat_mobile_warfare }
+    add_tech_bonus = { bonus = 0.75 uses = 2 category = cat_mobile_warfare }
   }
   if = {
     limit = { check_variable = { bonus_amount = 3 } }
-    add_tech_bonus = { bonus = 0.80 uses = 3 category = cat_mobile_warfare }
+    add_tech_bonus = { bonus = 0.75 uses = 3 category = cat_mobile_warfare }
   }
   if = {
     limit = { check_variable = { bonus_amount = 4 } }
-    add_tech_bonus = { bonus = 0.80 uses = 4 category = cat_mobile_warfare }
+    add_tech_bonus = { bonus = 0.75 uses = 4 category = cat_mobile_warfare }
   }
   if = {
     limit = { check_variable = { bonus_amount = 5 } }
-    add_tech_bonus = { bonus = 0.80 uses = 5 category = cat_mobile_warfare }
+    add_tech_bonus = { bonus = 0.75 uses = 5 category = cat_mobile_warfare }
   }
   if = {
     limit = { check_variable = { bonus_amount = 6 } }
-    add_tech_bonus = { bonus = 0.80 uses = 6 category = cat_mobile_warfare }
+    add_tech_bonus = { bonus = 0.75 uses = 6 category = cat_mobile_warfare }
   }
   if = {
     limit = { check_variable = { bonus_amount = 7 } }
-    add_tech_bonus = { bonus = 0.80 uses = 7 category = cat_mobile_warfare }
+    add_tech_bonus = { bonus = 0.75 uses = 7 category = cat_mobile_warfare }
   }
   if = {
     limit = { check_variable = { bonus_amount = 8 } }
-    add_tech_bonus = { bonus = 0.80 uses = 8 category = cat_mobile_warfare }
+    add_tech_bonus = { bonus = 0.75 uses = 8 category = cat_mobile_warfare }
   }
   if = {
     limit = { check_variable = { bonus_amount = 9 } }
-    add_tech_bonus = { bonus = 0.80 uses = 9 category = cat_mobile_warfare }
+    add_tech_bonus = { bonus = 0.75 uses = 9 category = cat_mobile_warfare }
   }
   if = {
     limit = { check_variable = { bonus_amount = 10 } }
-    add_tech_bonus = { bonus = 0.80 uses = 10 category = cat_mobile_warfare }
+    add_tech_bonus = { bonus = 0.75 uses = 10 category = cat_mobile_warfare }
   }
 }
 
@@ -80,39 +80,39 @@ war_games_army_flexible_effect_superior_firepower = {
   ## give bonuses based on amount
   if = {
     limit = { check_variable = { bonus_amount = 2 } }
-    add_tech_bonus = { bonus = 0.80 uses = 2 category = cat_superior_firepower }
+    add_tech_bonus = { bonus = 0.75 uses = 2 category = cat_superior_firepower }
   }
   if = {
     limit = { check_variable = { bonus_amount = 3 } }
-    add_tech_bonus = { bonus = 0.80 uses = 3 category = cat_superior_firepower }
+    add_tech_bonus = { bonus = 0.75 uses = 3 category = cat_superior_firepower }
   }
   if = {
     limit = { check_variable = { bonus_amount = 4 } }
-    add_tech_bonus = { bonus = 0.80 uses = 4 category = cat_superior_firepower }
+    add_tech_bonus = { bonus = 0.75 uses = 4 category = cat_superior_firepower }
   }
   if = {
     limit = { check_variable = { bonus_amount = 5 } }
-    add_tech_bonus = { bonus = 0.80 uses = 5 category = cat_superior_firepower }
+    add_tech_bonus = { bonus = 0.75 uses = 5 category = cat_superior_firepower }
   }
   if = {
     limit = { check_variable = { bonus_amount = 6 } }
-    add_tech_bonus = { bonus = 0.80 uses = 6 category = cat_superior_firepower }
+    add_tech_bonus = { bonus = 0.75 uses = 6 category = cat_superior_firepower }
   }
   if = {
     limit = { check_variable = { bonus_amount = 7 } }
-    add_tech_bonus = { bonus = 0.80 uses = 7 category = cat_superior_firepower }
+    add_tech_bonus = { bonus = 0.75 uses = 7 category = cat_superior_firepower }
   }
   if = {
     limit = { check_variable = { bonus_amount = 8 } }
-    add_tech_bonus = { bonus = 0.80 uses = 8 category = cat_superior_firepower }
+    add_tech_bonus = { bonus = 0.75 uses = 8 category = cat_superior_firepower }
   }
   if = {
     limit = { check_variable = { bonus_amount = 9 } }
-    add_tech_bonus = { bonus = 0.80 uses = 9 category = cat_superior_firepower }
+    add_tech_bonus = { bonus = 0.75 uses = 9 category = cat_superior_firepower }
   }
   if = {
     limit = { check_variable = { bonus_amount = 10 } }
-    add_tech_bonus = { bonus = 0.80 uses = 10 category = cat_superior_firepower }
+    add_tech_bonus = { bonus = 0.75 uses = 10 category = cat_superior_firepower }
   }
 }
 
@@ -139,39 +139,39 @@ war_games_army_flexible_effect_grand_battle_plan = {
   ## give bonuses based on amount
   if = {
     limit = { check_variable = { bonus_amount = 2 } }
-    add_tech_bonus = { bonus = 0.80 uses = 2 category = cat_grand_battle_plan }
+    add_tech_bonus = { bonus = 0.75 uses = 2 category = cat_grand_battle_plan }
   }
   if = {
     limit = { check_variable = { bonus_amount = 3 } }
-    add_tech_bonus = { bonus = 0.80 uses = 3 category = cat_grand_battle_plan }
+    add_tech_bonus = { bonus = 0.75 uses = 3 category = cat_grand_battle_plan }
   }
   if = {
     limit = { check_variable = { bonus_amount = 4 } }
-    add_tech_bonus = { bonus = 0.80 uses = 4 category = cat_grand_battle_plan }
+    add_tech_bonus = { bonus = 0.75 uses = 4 category = cat_grand_battle_plan }
   }
   if = {
     limit = { check_variable = { bonus_amount = 5 } }
-    add_tech_bonus = { bonus = 0.80 uses = 5 category = cat_grand_battle_plan }
+    add_tech_bonus = { bonus = 0.75 uses = 5 category = cat_grand_battle_plan }
   }
   if = {
     limit = { check_variable = { bonus_amount = 6 } }
-    add_tech_bonus = { bonus = 0.80 uses = 6 category = cat_grand_battle_plan }
+    add_tech_bonus = { bonus = 0.75 uses = 6 category = cat_grand_battle_plan }
   }
   if = {
     limit = { check_variable = { bonus_amount = 7 } }
-    add_tech_bonus = { bonus = 0.80 uses = 7 category = cat_grand_battle_plan }
+    add_tech_bonus = { bonus = 0.75 uses = 7 category = cat_grand_battle_plan }
   }
   if = {
     limit = { check_variable = { bonus_amount = 8 } }
-    add_tech_bonus = { bonus = 0.80 uses = 8 category = cat_grand_battle_plan }
+    add_tech_bonus = { bonus = 0.75 uses = 8 category = cat_grand_battle_plan }
   }
   if = {
     limit = { check_variable = { bonus_amount = 9 } }
-    add_tech_bonus = { bonus = 0.80 uses = 9 category = cat_grand_battle_plan }
+    add_tech_bonus = { bonus = 0.75 uses = 9 category = cat_grand_battle_plan }
   }
   if = {
     limit = { check_variable = { bonus_amount = 10 } }
-    add_tech_bonus = { bonus = 0.80 uses = 10 category = cat_grand_battle_plan }
+    add_tech_bonus = { bonus = 0.75 uses = 10 category = cat_grand_battle_plan }
   }
 }
 
@@ -198,39 +198,39 @@ war_games_army_flexible_effect_mass_assault = {
   ## give bonuses based on amount
   if = {
     limit = { check_variable = { bonus_amount = 2 } }
-    add_tech_bonus = { bonus = 0.80 uses = 2 category = cat_mass_assault }
+    add_tech_bonus = { bonus = 0.75 uses = 2 category = cat_mass_assault }
   }
   if = {
     limit = { check_variable = { bonus_amount = 3 } }
-    add_tech_bonus = { bonus = 0.80 uses = 3 category = cat_mass_assault }
+    add_tech_bonus = { bonus = 0.75 uses = 3 category = cat_mass_assault }
   }
   if = {
     limit = { check_variable = { bonus_amount = 4 } }
-    add_tech_bonus = { bonus = 0.80 uses = 4 category = cat_mass_assault }
+    add_tech_bonus = { bonus = 0.75 uses = 4 category = cat_mass_assault }
   }
   if = {
     limit = { check_variable = { bonus_amount = 5 } }
-    add_tech_bonus = { bonus = 0.80 uses = 5 category = cat_mass_assault }
+    add_tech_bonus = { bonus = 0.75 uses = 5 category = cat_mass_assault }
   }
   if = {
     limit = { check_variable = { bonus_amount = 6 } }
-    add_tech_bonus = { bonus = 0.80 uses = 6 category = cat_mass_assault }
+    add_tech_bonus = { bonus = 0.75 uses = 6 category = cat_mass_assault }
   }
   if = {
     limit = { check_variable = { bonus_amount = 7 } }
-    add_tech_bonus = { bonus = 0.80 uses = 7 category = cat_mass_assault }
+    add_tech_bonus = { bonus = 0.75 uses = 7 category = cat_mass_assault }
   }
   if = {
     limit = { check_variable = { bonus_amount = 8 } }
-    add_tech_bonus = { bonus = 0.80 uses = 8 category = cat_mass_assault }
+    add_tech_bonus = { bonus = 0.75 uses = 8 category = cat_mass_assault }
   }
   if = {
     limit = { check_variable = { bonus_amount = 9 } }
-    add_tech_bonus = { bonus = 0.80 uses = 9 category = cat_mass_assault }
+    add_tech_bonus = { bonus = 0.75 uses = 9 category = cat_mass_assault }
   }
   if = {
     limit = { check_variable = { bonus_amount = 10 } }
-    add_tech_bonus = { bonus = 0.80 uses = 10 category = cat_mass_assault }
+    add_tech_bonus = { bonus = 0.75 uses = 10 category = cat_mass_assault }
   }
 }
 
