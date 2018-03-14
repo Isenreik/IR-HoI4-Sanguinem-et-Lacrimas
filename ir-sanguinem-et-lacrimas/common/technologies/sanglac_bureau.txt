@@ -5,8 +5,14 @@ technologies = {
 @1941 = 4
 @1942 = 6
 
+@cost_weak      =  1.2
+@cost_average   =  1.6
+@cost_high      =  2
+@cost_higher    =  2.2
+
 @officers_main_row =   2
 @officers_right_1  =   4
+@officers_right_2  =   6
 @officers_main_left =  0
 @officers_left1top =  -3
 @officers_left1_1  =  -2
@@ -17,12 +23,13 @@ technologies = {
   officers_tech1 = {
 
     military_leader_cost_factor = -0.25
-    political_advisor_cost_factor = -0.05
-    high_command_cost_factor = -0.05
-		air_chief_cost_factor = -0.05
-		army_chief_cost_factor = -0.05
-		navy_chief_cost_factor = -0.05
-    experience_gain_army_factor = 0.05
+    political_advisor_cost_factor = -0.04
+    high_command_cost_factor = -0.04
+		air_chief_cost_factor = -0.04
+		army_chief_cost_factor = -0.04
+		navy_chief_cost_factor = -0.04
+    experience_gain_army_factor = 0.04
+    command_power_gain = 0.02
 
     path = {
       leads_to_tech = flight_officers_tech1
@@ -32,9 +39,13 @@ technologies = {
       leads_to_tech = officers_tech2
       research_cost_coeff = 1
     }
+    path = {
+      leads_to_tech = officers_war_games_1
+      research_cost_coeff = 1
+    }
 
-    doctrine = yes
-		research_cost = 2
+
+		research_cost = @cost_high
 
     folder = {
       name = bureau_folder
@@ -65,12 +76,13 @@ technologies = {
   officers_tech2 = {
 
     army_leader_start_level = 1
-    experience_gain_army_factor = 0.05
+    experience_gain_army_factor = 0.04
     experience_gain_army_unit_factor = 0.10
-    high_command_cost_factor = -0.05
-		air_chief_cost_factor = -0.05
-		army_chief_cost_factor = -0.05
-		navy_chief_cost_factor = -0.05
+    high_command_cost_factor = -0.04
+    air_chief_cost_factor = -0.04
+    army_chief_cost_factor = -0.04
+    navy_chief_cost_factor = -0.04
+    max_command_power = 5
 
     path = {
       leads_to_tech = officers_tech3
@@ -82,8 +94,8 @@ technologies = {
       research_cost_coeff = 1
     }
 
-    doctrine = yes
-		research_cost = 2
+
+		research_cost = @cost_high
 
     folder = {
       name = bureau_folder
@@ -114,11 +126,13 @@ technologies = {
   officers_tech3 = {
 
     training_time_army_factor = -0.15
-    experience_gain_army_factor = 0.05
-    high_command_cost_factor = -0.05
-		air_chief_cost_factor = -0.05
-		army_chief_cost_factor = -0.05
-		navy_chief_cost_factor = -0.05
+    experience_gain_army_factor = 0.04
+    high_command_cost_factor = -0.04
+    air_chief_cost_factor = -0.04
+    army_chief_cost_factor = -0.04
+    navy_chief_cost_factor = -0.04
+    command_power_gain = 0.01
+    max_command_power = 2
 
     path = {
       leads_to_tech = officers_military_schools_air
@@ -130,8 +144,8 @@ technologies = {
       research_cost_coeff = 1
     }
 
-    doctrine = yes
-		research_cost = 2
+
+		research_cost = @cost_high
 
     folder = {
       name = bureau_folder
@@ -148,13 +162,68 @@ technologies = {
     }
   }
 
+  officers_war_games_1 = {
+
+    on_research_complete = {
+      custom_effect_tooltip = officers_war_games_1.tt
+    }
+    desc = officers_war_games_1.desc
+    max_command_power = 2
+
+		research_cost = @cost_higher
+
+    path = {
+      leads_to_tech = officers_war_games_2
+      research_cost_coeff = 1
+    }
+
+    folder = {
+      name = bureau_folder
+      position = { x = @officers_right_2 y = 2 }
+    }
+
+    categories = {
+      bureau_tech
+      support_tech
+    }
+
+    ai_will_do = {
+      factor = 1.5
+    }
+  }
+
+  officers_war_games_2 = {
+
+    on_research_complete = {
+      custom_effect_tooltip = officers_war_games_2.tt
+    }
+    desc = officers_war_games_2.desc
+    max_command_power = 2
+
+		research_cost = @cost_higher
+
+    folder = {
+      name = bureau_folder
+      position = { x = @officers_right_2 y = 4 }
+    }
+
+    categories = {
+      bureau_tech
+      support_tech
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
   officers_military_schools_army = {
 
     experience_gain_army = 0.03
     ## allows breakthroughs
 
-    doctrine = yes
-		research_cost = 2
+
+		research_cost = @cost_high
 
     folder = {
       name = bureau_folder
@@ -178,8 +247,8 @@ technologies = {
     experience_gain_air_factor = 0.03
     ## allows breakthroughs
 
-    doctrine = yes
-		research_cost = 2
+
+		research_cost = @cost_high
 
     folder = {
       name = bureau_folder
@@ -203,8 +272,8 @@ technologies = {
     experience_gain_navy_factor = 0.03
     ## allows breakthroughs
 
-    doctrine = yes
-		research_cost = 2
+
+		research_cost = @cost_high
 
     folder = {
       name = bureau_folder
@@ -237,8 +306,8 @@ technologies = {
       research_cost_coeff = 1
     }
 
-    doctrine = yes
-		research_cost = 2
+
+		research_cost = @cost_high
 
     folder = {
       name = bureau_folder
@@ -275,8 +344,8 @@ technologies = {
       research_cost_coeff = 0.5
     }
 
-    doctrine = yes
-		research_cost = 2.2
+
+		research_cost = @cost_higher
 
     folder = {
       name = bureau_folder
@@ -322,8 +391,8 @@ technologies = {
       flight_officers_training1
     }
 
-    doctrine = yes
-		research_cost = 2.2
+
+		research_cost = @cost_higher
 
     folder = {
       name = bureau_folder
@@ -367,8 +436,8 @@ technologies = {
     }
     desc = "flight_officers_honor2_special"
 
-    doctrine = yes
-		research_cost = 2
+
+		research_cost = @cost_high
 
     folder = {
       name = bureau_folder
@@ -398,23 +467,23 @@ technologies = {
   }
 
 #press
-@press_main_row   = -4
-@press_left1      = -6
-@press_right1     = -2
-@press_right2     =  0
-@press_right3     =  2
-@press_right4     =  4
-
-@cost_weak      =  1.2
-@cost_average   =  1.6
-@cost_high      =  2
+@press_left1      = -4
+@press_main_row   = -2
+@press_right1     =  0
+@press_right2     =  2
+@press_right3     =  4
 
   press_tech1 = {
 
-  	political_power_factor = 0.15
+  	political_power_factor = 0.05
+    # allows simple versions of propaganda decisions
+    on_research_complete = {
+      custom_effect_tooltip = press_tech1.tt
+    }
+    desc = press_tech1.desc
 
     path = {
-      leads_to_tech = press_censorship1
+      leads_to_tech = press_opposition_surpression
       research_cost_coeff = 1
     }
     path = {
@@ -422,11 +491,7 @@ technologies = {
       research_cost_coeff = 1
     }
     path = {
-      leads_to_tech = press_trucks1
-      research_cost_coeff = 1
-    }
-    path = {
-      leads_to_tech = press_mobilisation1
+      leads_to_tech = press_commandeer_civ_eq_1
       research_cost_coeff = 1
     }
     path = {
@@ -438,8 +503,8 @@ technologies = {
       research_cost_coeff = 1
     }
 
-    doctrine = yes
-    research_cost = @cost_high
+
+    research_cost = @cost_average
 
     folder = {
       name = bureau_folder
@@ -456,18 +521,16 @@ technologies = {
     }
   }
 
-  press_censorship1 = {
+  press_opposition_surpression = {
 
-    enemy_partisan_effect = -0.10
-    foreign_subversive_activites = -0.15
-
-    doctrine = yes
-    research_cost = @cost_weak
-
-    path = {
-      leads_to_tech = press_opposition_surpression
-      research_cost_coeff = 1
+		# allows improved versions of (vanilla) supression decisions
+    on_research_complete = {
+      custom_effect_tooltip = press_opposition_surpression.tt
     }
+    desc = press_opposition_surpression.desc
+
+
+    research_cost = @cost_average
 
     folder = {
       name = bureau_folder
@@ -484,39 +547,16 @@ technologies = {
     }
   }
 
-  press_opposition_surpression = {
-
-		drift_defence_factor = 0.1
-
-    doctrine = yes
-    research_cost = @cost_weak
-
-    folder = {
-      name = bureau_folder
-      position = { x = @press_left1 y = 4 }
-    }
-
-    categories = {
-      bureau_tech
-      industry
-    }
-
-    ai_will_do = {
-      factor = 2
-    }
-  }
-
   press_media1 = {
 
-	  unity_factor = 0.025
-
-    doctrine = yes
-    research_cost = @cost_high
-
-    path = {
-      leads_to_tech = press_media2
-      research_cost_coeff = 1
+    # allows improved propaganda decisions
+    on_research_complete = {
+      custom_effect_tooltip = press_media1.tt
     }
+    desc = press_media1.desc
+
+
+    research_cost = @cost_average
 
     folder = {
       name = bureau_folder
@@ -533,44 +573,20 @@ technologies = {
     }
   }
 
-  press_media2 = {
+  press_commandeer_civ_eq_1 = {
 
-  	political_power_factor = 0.15
-
-    doctrine = yes
-    research_cost = @cost_high
-
-    folder = {
-      name = bureau_folder
-      position = { x = @press_main_row y = 4 }
-    }
-
-    categories = {
-      bureau_tech
-      industry
-    }
-
-    ai_will_do = {
-      factor = 2
-    }
-  }
-
-  press_trucks1 = {
-
+    # allows trucks comandeer decision
     on_research_complete = {
-      set_country_flag = allows_civ_truck_law
-      custom_effect_tooltip = press_trucks1_tt
+      custom_effect_tooltip = press_commandeer_civ_eq_1.tt
     }
+    desc = press_commandeer_civ_eq_1.desc
 
-    desc = "press_trucks1_special_desc"
-
-    doctrine = yes
-    research_cost = @cost_high
+    research_cost = @cost_average
 
     dependencies = {	motorised_infantry = 1	}
 
     path = {
-      leads_to_tech = press_trucks2
+      leads_to_tech = press_commandeer_civ_eq_2
       research_cost_coeff = 1
     }
 
@@ -586,19 +602,18 @@ technologies = {
     }
 
     ai_will_do = {
-      factor = 2
+      factor = 1
     }
   }
 
-  press_trucks2 = {
+  press_commandeer_civ_eq_2 = {
 
+    # allows vehicles comandeer decisions
     on_research_complete = {
-      add_ideas = civilian_truck_conversion
+      custom_effect_tooltip = press_commandeer_civ_eq_2.tt
     }
+    desc = press_commandeer_civ_eq_2.desc
 
-    desc = "press_trucks2_special_desc"
-
-    doctrine = yes
     research_cost = @cost_average
 
     folder = {
@@ -613,23 +628,39 @@ technologies = {
     }
 
     ai_will_do = {
-      factor = 2
+      factor = 1
     }
   }
 
-  press_mobilisation1 = {
+  press_global_diplomacy = {
 
-	  consumer_goods_factor = -0.03
-		mobilization_laws_cost_factor = -0.02
-    economy_cost_factor = -0.05
-
-    doctrine = yes
-    research_cost = @cost_high
-
-    path = {
-      leads_to_tech = press_mobilisation2
-      research_cost_coeff = 1
+    # allows different diplomatic missions decisions
+    on_research_complete = {
+      custom_effect_tooltip = press_commandeer_civ_eq_2.tt
     }
+    desc = press_commandeer_civ_eq_2.desc
+
+	  autonomy_gain_global_factor = 0.10
+    guarantee_cost = -0.15
+ 	  guarantee_tension = -0.15
+    trade_opinion_factor = 0.15
+    opinion_gain_monthly_factor = 0.1
+    opinion_gain_monthly_same_ideology_factor = 0.2
+    improve_relations_maintain_cost_factor = -0.35
+    enemy_justify_war_goal_time = 0.1
+    generate_wargoal_tension = -0.4
+    justify_war_goal_time = -0.25
+    join_faction_tension = -0.20
+    send_volunteer_size = 1
+    send_volunteer_divisions_required = -0.25
+    send_volunteers_tension = -0.20
+    lend_lease_tension = -0.20
+    subversive_activites_upkeep = -0.1
+    foreign_subversive_activites = -0.50
+    political_power_gain = 0.5
+
+
+    research_cost = @cost_average
 
     folder = {
       name = bureau_folder
@@ -646,63 +677,15 @@ technologies = {
     }
   }
 
-  press_mobilisation2 = {
+  press_health1 = {
 
-		conscription_factor = 0.05
-    mobilization_laws_cost_factor = -0.03
-
-    doctrine = yes
-    research_cost = @cost_high
-
-    path = {
-      leads_to_tech = press_mobilisation3
-      research_cost_coeff = 1
+    # allows healthcare decision
+    on_research_complete = {
+      custom_effect_tooltip = press_commandeer_civ_eq_1.tt
     }
+    desc = press_commandeer_civ_eq_1.desc
 
-    folder = {
-      name = bureau_folder
-      position = { x = @press_right2 y = 4 }
-    }
-
-    categories = {
-      bureau_tech
-      industry
-    }
-
-    ai_will_do = {
-      factor = 2
-    }
-  }
-
-  press_mobilisation3 = {
-
-		non_core_manpower = 0.10
-
-    doctrine = yes
-    research_cost = @cost_high
-
-    folder = {
-      name = bureau_folder
-      position = { x = @press_right2 y = 6 }
-    }
-
-    categories = {
-      bureau_tech
-      industry
-    }
-
-    ai_will_do = {
-      factor = 2
-    }
-  }
-
-  press_global_diplomacy = {
-
-	  autonomy_gain_global_factor = 0.10
-    guarantee_cost = -0.15
-
-    doctrine = yes
-    research_cost = @cost_weak
+    research_cost = @cost_average
 
     folder = {
       name = bureau_folder
@@ -716,57 +699,11 @@ technologies = {
 
     ai_will_do = {
       factor = 2
-    }
-  }
-
-  press_health1 = {
-
-    MONTHLY_POPULATION = 0.15
-
-    doctrine = yes
-    research_cost = @cost_average
-
-    path = {
-      leads_to_tech = press_health2
-      research_cost_coeff = 1
-    }
-
-    folder = {
-      name = bureau_folder
-      position = { x = @press_right4 y = 2 }
-    }
-
-    categories = {
-      bureau_tech
-      industry
-    }
-
-    ai_will_do = {
-      factor = 2
-    }
-  }
-
-  press_health2 = {
-
-    on_research_complete = {
-      add_ideas = extensive_healthcare_idea
-    }
-
-    doctrine = yes
-    research_cost = @cost_average
-
-    folder = {
-      name = bureau_folder
-      position = { x = @press_right4 y = 4 }
-    }
-
-    categories = {
-      bureau_tech
-      industry
-    }
-
-    ai_will_do = {
-      factor = 1
+      modifier = {
+        #Prio if low on manpower
+        factor = 10
+        manpower_per_military_factory <  700
+      }
     }
   }
 
