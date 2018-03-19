@@ -132,7 +132,7 @@ political_actions = {
       has_tech = press_opposition_surpression
 		}
 
-		remove = {
+		remove_trigger = {
 			hidden_trigger = {
 				has_government = fascism
 			}
@@ -183,7 +183,7 @@ political_actions = {
       has_tech = press_opposition_surpression
 		}
 
-		remove = {
+		remove_trigger = {
 			hidden_trigger = {
 				has_government = democratic
 			}
@@ -234,7 +234,7 @@ political_actions = {
       has_tech = press_opposition_surpression
 		}
 
-		remove = {
+		remove_trigger = {
 			hidden_trigger = {
 				has_government = communism
 			}

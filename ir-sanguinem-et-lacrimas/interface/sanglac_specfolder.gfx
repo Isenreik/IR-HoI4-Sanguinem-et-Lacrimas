@@ -11,16 +11,8 @@ spriteTypes = {
   SpriteType = {		name = "GFX_penal_technology_medium"		texturefile = "gfx//interface//technologies//peoples_army.dds"    alwaystransparent = yes	}
   SpriteType = {		name = "GFX_penal_technology2_medium"		texturefile = "gfx//interface//technologies//grand_assault.dds"		alwaystransparent = yes	}
   SpriteType = {		name = "GFX_penal_technology3_medium"		texturefile = "gfx//interface//technologies//guerilla_warfare.dds"		alwaystransparent = yes	}
-  SpriteType = {		name = "GFX_unit_penals_icon_medium"		texturefile = "gfx//interface//counters//divisions_large//unit_penals_icon.dds"		noOfFrames = 2	}
-  SpriteType = {		name = "GFX_unit_penals_icon_medium_white"		texturefile = "gfx//interface//counters//divisions_small//onmap_unit_penal_icon.dds"		noOfFrames = 2	}
   SpriteType = {		name = "GFX_commissar_technology_medium"		texturefile = "gfx//interface//technologies//human_wave_offensive.dds"    alwaystransparent = yes	}
   SpriteType = {    name = "GFX_commissar_technology2_medium"		texturefile = "gfx//interface//technologies//mass_assault.dds"    alwaystransparent = yes	}
-
-  SpriteType = {
-    name = "GFX_unit_commissars_icon_medium"
-    texturefile = "gfx//interface//counters//divisions_large//support_unit_commissars_icon.dds"
-    noOfFrames = 2
-  }
 
   ## Kits                -----------------------------------
 
@@ -28,12 +20,10 @@ spriteTypes = {
 
   SpriteType = {    name = "GFX_desert_kit_technology_medium"		texturefile = "gfx//interface//technologies//support_kits_desert.dds"  }
   SpriteType = {    name = "GFX_desert_kit2_technology_medium"		texturefile = "gfx//interface//technologies//tech_logistics_company2.dds"  }
-  SpriteType = {    name = "GFX_unit_desert_support_icon_medium"		texturefile = "gfx//interface//counters//divisions_large//support_desert_unit_company_icon.dds"		noOfFrames = 2  }
   SpriteType = {    name = "GFX_desert_kit_icon_medium"		texturefile = "gfx//interface//technologies//support_kits_desert.dds"  }
 
   SpriteType = {    name = "GFX_jungle_kit_technology_medium"		texturefile = "gfx//interface//technologies//support_kits_jungle.dds"  }
   SpriteType = {    name = "GFX_jungle_kit2_technology_medium"		texturefile = "gfx//interface//technologies//tech_logistics_company2.dds"  }
-  SpriteType = {    name = "GFX_unit_jungle_support_icon_medium"		texturefile = "gfx//interface//counters//divisions_large//support_jungle_unit_company_icon.dds"		noOfFrames = 2  }
   SpriteType = {    name = "GFX_jungle_kit_icon_medium"		texturefile = "gfx//interface//technologies//support_kits_jungle.dds"  }
 
   SpriteType = {    name = "GFX_winter_kit_technology_medium"		texturefile = "gfx//interface//technologies//winterkit_1.dds"  }
@@ -44,9 +34,6 @@ spriteTypes = {
 
   ## amphibious        -----------------------------------
   ## amphibious mech   -----------
-
-  spriteType = { name = "GFX_unit_amphibious_mech_unit_icon_medium"		 textureFile = "gfx/interface/counters/divisions_large/unit_mechanized_marines_icon.dds" noOfFrames = 2 }
-  spriteType = { name = "GFX_unit_amphibious_mech_unit_icon_medium_white"		 textureFile = "gfx/interface/counters/divisions_small/onmap_unit_mechanized_marines_icon.dds" noOfFrames = 2 }
 
   SpriteType = { name = "GFX_amphibious_mech_technology_medium"    texturefile = "gfx/interface/technologies/mechanized_equipment_1.dds"  }
   SpriteType = { name = "GFX_amphibious_mech_technology_2_medium"    texturefile = "gfx/interface/technologies/mechanized_equipment_2.dds"  }
@@ -77,9 +64,6 @@ spriteTypes = {
   SpriteType = { name = "GFX_USA_amphibious_mech_technology_2_medium"    texturefile = "gfx/interface/technologies/equipment/usa_amph_mech2.dds"  }
 
   ## amphibious light tank  -----------
-
-  spriteType = { name = "GFX_unit_light_tank_amphibious_unit_icon_medium"		 textureFile = "gfx/interface/counters/divisions_large/unit_amphibious_light_tank_icon.dds" noOfFrames = 2 }
-  spriteType = { name = "GFX_unit_light_tank_amphibious_unit_icon_medium_white"		 textureFile = "gfx/interface/counters/divisions_small/onmap_unit_amphibious_light_tank_icon.dds" noOfFrames = 2 }
 
   SpriteType = { name = "GFX_light_tank_amphibious_tech_1_medium"    texturefile = "gfx/interface/technologies/improved_light_tank.dds"  }
   SpriteType = { name = "GFX_FRA_light_tank_amphibious_tech_1_medium"    texturefile = "gfx/interface/technologies/fra_imp_light_tank.dds"  }
@@ -114,9 +98,6 @@ spriteTypes = {
 
   ## amphibious medium tank -----------
 
-  spriteType = { name = "GFX_unit_medium_tank_amphibious_unit_icon_medium"		 textureFile = "gfx/interface/counters/divisions_large/unit_amphibious_medium_tank_icon.dds" noOfFrames = 2 }
-  spriteType = { name = "GFX_unit_medium_tank_amphibious_unit_icon_medium_white" textureFile = "gfx/interface/counters/divisions_small/onmap_unit_amphibious_medium_tank_icon.dds" noOfFrames = 2 }
-
   SpriteType = { name = "GFX_medium_tank_amphibious_tech_1_medium"    texturefile = "gfx/interface/technologies/improved_medium_tank.dds"  }
   SpriteType = { name = "GFX_medium_tank_amphibious_tech_2_medium"    texturefile = "gfx/interface/technologies/advanced_medium_tank.dds"  }
 
@@ -140,9 +121,6 @@ spriteTypes = {
 
   ## airborne support   -----------------------------------
 
-  spriteType = { name = "GFX_unit_paratrooper_glider_icon_medium"		 textureFile = "gfx/interface/counters/divisions_large/unit_paratrooper_glider_icon.dds" noOfFrames = 2 }
-  spriteType = { name = "GFX_unit_paratrooper_glider_icon_medium_white" textureFile = "gfx/interface/counters/divisions_small/onmap_unit_paratrooper_glider_icon.dds" noOfFrames = 2 }
-
   SpriteType = { name = "GFX_glider_technology_medium"    texturefile = "gfx//interface//technologies//glider_1.dds"    alwaystransparent = yes	}
   SpriteType = { name = "GFX_cargo_glider_technology_medium"    texturefile = "gfx//interface//technologies//equipment//cargo_glider_equipment.dds"    alwaystransparent = yes	}
 
@@ -154,9 +132,6 @@ spriteTypes = {
   SpriteType = { name = "GFX_SOV_glider_tank_technology_medium"    texturefile = "gfx/interface/technologies/sov_adv_light_tank.dds"  }
   SpriteType = { name = "GFX_ITA_glider_tank_technology_medium"    texturefile = "gfx/interface/technologies/ita_adv_light_tank.dds"  }
   SpriteType = { name = "GFX_USA_glider_tank_technology_medium"    texturefile = "gfx/interface/technologies/usa_adv_light_tank.dds"  }
-
-  spriteType = { name = "GFX_unit_glider_tank_icon_medium"		 textureFile = "gfx/interface/counters/divisions_large/unit_glider_light_tank_icon.dds" noOfFrames = 2 }
-  spriteType = { name = "GFX_unit_glider_tank_icon_medium_white" textureFile = "gfx/interface/counters/divisions_small/onmap_unit_glider_light_tank_icon.dds" noOfFrames = 2 }
 
   SpriteType = { name = "GFX_airborne_glider_bg"    texturefile = "gfx//airborne_glider_bg.dds"  }
 

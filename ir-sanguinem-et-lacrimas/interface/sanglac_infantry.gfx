@@ -56,11 +56,6 @@ spriteTypes = {
   SpriteType = { name = "GFX_support_weapons9_medium"    texturefile = "gfx//interface//debug//law_saintrommel.dds"    alwaystransparent = yes	}
   SpriteType = { name = "GFX_support_weapons10_medium"   texturefile = "gfx//interface//debug//law_panzershrek.dds"    alwaystransparent = yes	}
 
-  SpriteType = { name = "GFX_unit_extra_heavy_weapon_support_icon_medium"  texturefile = "gfx//interface//counters//divisions_large//unit_support_heavy_weapons.dds"  noOfFrames = 2 }
-
-  SpriteType = { name = "GFX_unit_light_infantry_icon_medium"   texturefile = "gfx//interface//counters//divisions_large//unit_light_infantry_icon.dds"    noOfFrames = 2  }
-  spriteType = { name = "GFX_unit_light_infantry_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_light_infantry_icon.dds" noOfFrames = 2}
-
   SpriteType = { name = "GFX_modern_infantry_weapons2_medium"   texturefile = "gfx//interface//debug//law_shores.dds"    alwaystransparent = yes	}
 
   SpriteType = { name = "GFX_modern_infantry_weapons_medium"   texturefile = "gfx//interface//technologies//infantry2.dds"    alwaystransparent = yes	}
@@ -75,10 +70,10 @@ spriteTypes = {
   SpriteType = { name = "GFX_inf_antitank_weapons3_medium"    texturefile = "gfx//interface//debug//law_angry.dds"    alwaystransparent = yes	}
   SpriteType = { name = "GFX_inf_antitank_weapons5_medium"    texturefile = "gfx//interface//debug//law_panzershrek.dds"    alwaystransparent = yes	}
 
-
-
   SpriteType = { name = "GFX_urban_warfare1_medium"    texturefile = "gfx//interface//technologies//urban_warfare.dds"    alwaystransparent = yes	}
   SpriteType = { name = "GFX_urban_warfare2_medium"    texturefile = "gfx//interface//technologies//urban_warfare2.dds"    alwaystransparent = yes	}
   SpriteType = { name = "GFX_urban_warfare3_medium"    texturefile = "gfx//interface//technologies//urban_warfare3.dds"    alwaystransparent = yes	}
+
+  SpriteType = { name = "GFX_night_vision3_medium"    texturefile = "gfx//interface//technologies//night_vision3.dds"    alwaystransparent = yes	}
 
 }

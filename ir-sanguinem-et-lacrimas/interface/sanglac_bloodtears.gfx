@@ -83,5 +83,8 @@ spriteTypes = {
   }
 
   ## End of Icons
+  ## Decisions
+
+  spriteType = { name = "GFX_decision_engineers_supplies_decision" texturefile = "gfx/interface/decisions/decision_engineers_supplies_decision.dds" }
 
 }
