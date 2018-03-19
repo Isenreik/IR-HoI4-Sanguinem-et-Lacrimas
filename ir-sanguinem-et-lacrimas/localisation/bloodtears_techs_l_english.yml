@@ -167,8 +167,8 @@ FRA_railway_artillery_equipment_1: "Mle 1870/93 on Schneider carriage"
 ENG_railway_artillery_equipment_1: "Scene Shifter"
 USA_railway_artillery_equipment_1: "M1920"
 
-railway_artillery_unit: "Railway Artillery"
-railway_artillery_unit_desc: "These absolutely massive guns can obliterate our enemies. The greatest downside of these behemoths though is their production cost and further weaknesses are their very low speed and their enormous supply use."
+railway_artillery: "Railway Artillery"
+railway_artillery_desc: "These absolutely massive guns can obliterate our enemies. The greatest downside of these behemoths though is their production cost and further weaknesses are their very low speed and their enormous supply use."
 
 anti_air_equipment_4: "Modern Anti-Air"
 anti_air_equipment_4_short: "Modern Anti-Air"
@@ -182,8 +182,8 @@ EMG_aam_tech1: "Fairey Fireflash"
 USA_aam_tech1: "AIM-4 Falcon"
 SOV_aam_tech1: "K-5"
 
-guided_aa_unit_brigade: "Surface-To-Air Missile"
-guided_aa_unit: "Support SAM"
+guided_aa_brigade: "Surface-To-Air Missile"
+guided_aa: "Support SAM"
 
 guided_aa_equipment: "Surface-To-Air Missile"
 guided_aa_equipment_desc: "Guided surface-to-air missile are the newest weapons in combating enemy aircrafts from the ground."
@@ -369,12 +369,12 @@ medium_tank_amphibious_equipment_2: "Adv. M/DD Tank"
 medium_tank_amphibious_equipment_2_short: "Adv. M/DD Tank"
 medium_tank_amphibious_equipment_2_desc: "Further improvements in our flotation technology and further integration with troop transport ships lets us deploy our advanced medium tanks across water."
 
-amphibious_mech_unit: "Mechanised Marines"
-amphibious_mech_unit_desc: "Armoured infantry landing transportation."
-light_tank_amphibious_unit: "Amphibious Light Tanks"
-light_tank_amphibious_unit_desc: "Amphibious lightly armoured landing tanks."
-medium_tank_amphibious_unit: "Amphibious Medium Tanks"
-medium_tank_amphibious_unit_desc: "Medium landing tanks can do almost any job."
+amphibious_mech: "Mechanised Marines"
+amphibious_mech_desc: "Armoured infantry landing transportation."
+light_tank_amphibious: "Amphibious Light Tanks"
+light_tank_amphibious_desc: "Amphibious lightly armoured landing tanks."
+medium_tank_amphibious: "Amphibious Medium Tanks"
+medium_tank_amphibious_desc: "Medium landing tanks can do almost any job."
 
 ##Airborne gliders
 
