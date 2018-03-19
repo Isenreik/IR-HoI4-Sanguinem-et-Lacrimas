@@ -412,7 +412,7 @@ economy_decisions = {
       consumer_goods_factor = 0.02
     }
 
-    remove = {
+    remove_trigger = {
       has_country_flag = abolished_healthcare
     }
 
