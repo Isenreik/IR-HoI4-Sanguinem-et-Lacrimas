@@ -103,7 +103,7 @@ upgrades = {
 		max_level = 3
 
 		cost = land
-    defense = 1
+    defense = 0.8
 		soft_attack = 0.03
 		reliability = -0.045
 	}

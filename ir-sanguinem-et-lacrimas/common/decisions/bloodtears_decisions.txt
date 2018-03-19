@@ -35,7 +35,8 @@ economy_decisions = {
 	  }
 
 		modifier = {
-			stability_weekly = -0.01
+			stability_weekly = -0.004
+			war_support_weekly = -0.01
       consumer_goods_factor = 0.08
 		}
 
@@ -131,8 +132,9 @@ economy_decisions = {
 	  }
 
 		modifier = {
-			stability_weekly = -0.01
-      consumer_goods_factor = 0.08
+			stability_weekly = -0.003
+			war_support_weekly = -0.008
+      consumer_goods_factor = 0.07
 		}
 
     remove_effect = {
@@ -224,7 +226,8 @@ economy_decisions = {
     }
 
     modifier = {
-      stability_weekly = -0.01
+			stability_weekly = -0.003
+			war_support_weekly = -0.008
       consumer_goods_factor = 0.05
     }
 
@@ -316,7 +319,8 @@ economy_decisions = {
 	  }
 
 		modifier = {
-			stability_weekly = -0.007
+			stability_weekly = -0.001
+			war_support_weekly = -0.007
       consumer_goods_factor = 0.05
 		}
 
