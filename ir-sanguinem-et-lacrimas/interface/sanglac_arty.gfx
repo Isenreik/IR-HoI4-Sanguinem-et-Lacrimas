@@ -25,12 +25,7 @@ spriteTypes = {
   SpriteType = { name = "GFX_SOV_antiair6_medium"              texturefile = "gfx//interface//technologies//equipment//AA_4_commies.dds"    alwaystransparent = yes	}
 
   SpriteType = { name = "GFX_railway_artillery_tech_medium"              texturefile = "gfx//interface//technologies//equipment//railway_gun_equipment.dds"    alwaystransparent = yes	}
-  spriteType = { name = "GFX_unit_railway_artillery_unit_icon_medium"		 textureFile = "gfx/interface/counters/divisions_large/unit_railway_art_icon.dds" noOfFrames = 2 }
-  spriteType = { name = "GFX_unit_railway_artillery_unit_icon_medium_white"	 textureFile = "gfx/interface/counters/divisions_small/onmap_unit_railway_art_icon.dds" noOfFrames = 2 }
 
-  SpriteType = { name = "GFX_unit_guided_aa_unit_brigade_icon_medium"    textureFile = "gfx/interface/counters/divisions_large/unit_missile_AA_icon.dds" noOfFrames = 2 }
-  SpriteType = { name = "GFX_unit_guided_aa_unit_brigade_icon_medium_white"    textureFile = "gfx/interface/counters/divisions_small/onmap_unit_missile_AA_icon.dds" noOfFrames = 2 }
-  SpriteType = { name = "GFX_unit_guided_aa_unit_icon_medium"            textureFile = "gfx/interface/counters/divisions_large/unit_missile_AA_support_icon.dds" noOfFrames = 2 }
   SpriteType = { name = "GFX_guided_aa_1_medium"                         texturefile = "gfx//interface//technologies//equipment//guided_aa_equipment_1.dds"    alwaystransparent = yes	}
   SpriteType = { name = "GFX_guided_aa_2_medium"                         texturefile = "gfx//interface//technologies//equipment//guided_aa_equipment_2.dds"    alwaystransparent = yes	}
   SpriteType = { name = "GFX_ENG_guided_aa_2_medium"                     texturefile = "gfx//interface//technologies//equipment//guided_aa_equipment_2_allies.dds"    alwaystransparent = yes	}

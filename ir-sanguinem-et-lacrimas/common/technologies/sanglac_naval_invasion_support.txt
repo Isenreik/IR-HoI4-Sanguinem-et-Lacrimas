@@ -16,7 +16,7 @@ technologies = {
     }
 
     enable_subunits = {
-      amphibious_mech_unit
+      amphibious_mech
     }
 
     dependencies = { mechanised_infantry = 1	}
@@ -76,7 +76,7 @@ technologies = {
     }
 
     enable_subunits = {
-      light_tank_amphibious_unit
+      light_tank_amphibious
     }
 
     dependencies = { improved_light_tank = 1	}
@@ -245,7 +245,7 @@ technologies = {
     }
 
     enable_subunits = {
-      medium_tank_amphibious_unit
+      medium_tank_amphibious
     }
 
     dependencies = { improved_medium_tank = 1	}

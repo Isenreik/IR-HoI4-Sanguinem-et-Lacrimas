@@ -1,0 +1,66 @@
+## by Araxiel - original script do not steel
+
+spriteTypes = {
+
+  ## Infantry
+
+  SpriteType = { name = "GFX_unit_extra_heavy_weapon_support_icon_medium" texturefile = "gfx/interface/counters/divisions_large/unit_extra_heavy_weapon_support.dds" noOfFrames = 2 }
+  SpriteType = { name = "GFX_unit_light_infantry_icon_medium" texturefile = "gfx//interface//counters//divisions_large//unit_light_infantry_icon.dds" noOfFrames = 2 }
+  spriteType = { name = "GFX_unit_light_infantry_icon_medium_white" textureFile = "gfx/interface/counters/divisions_small/onmap_unit_light_infantry_icon.dds" noOfFrames = 2 }
+  spriteType = { name = "GFX_unit_light_infantry_icon_small" texturefile = "gfx/texticons/unit_light_infantry_icon_small.dds" legacy_lazy_load = no	noOfFrames = 2 }
+  spriteType = { name = "GFX_nato_unit_light_infantry_icon_small"	texturefile = "gfx/texticons/nato_unit_light_infantry_icon_small.dds"	legacy_lazy_load = no }
+
+  ## Penal
+
+  SpriteType = { name = "GFX_unit_commissars_icon_medium" texturefile = "gfx//interface//counters//divisions_large//support_unit_commissars_icon.dds" noOfFrames = 2 }
+  SpriteType = { name = "GFX_unit_penals_icon_medium" texturefile = "gfx//interface//counters//divisions_large//unit_penals_icon.dds" noOfFrames = 2 }
+  SpriteType = { name = "GFX_unit_penals_icon_medium_white" texturefile = "gfx//interface//counters//divisions_small//onmap_unit_penals_icon.dds" noOfFrames = 2 }
+  spriteType = { name = "GFX_unit_penals_icon_small" texturefile = "gfx/texticons/unit_penals_icon_small.dds" legacy_lazy_load = no noOfFrames = 2 }
+  spriteType = { name = "GFX_nato_unit_penals_icon_small"	texturefile = "gfx/texticons/nato_unit_penals_icon_small.dds" legacy_lazy_load = no }
+
+  ## Arty
+
+  spriteType = { name = "GFX_unit_railway_artillery_icon_medium"		 textureFile = "gfx/interface/counters/divisions_large/unit_railway_artillery_icon.dds" noOfFrames = 2 }
+  spriteType = { name = "GFX_unit_railway_artillery_icon_medium_white"	 textureFile = "gfx/interface/counters/divisions_small/onmap_unit_railway_artillery_icon.dds" noOfFrames = 2 }
+  spriteType = { name = "GFX_unit_railway_artillery_icon_small"	texturefile = "gfx/texticons/unit_railway_artillery_icon_small.dds"	legacy_lazy_load = no	noOfFrames = 2 }
+  spriteType = { name = "GFX_nato_unit_railway_artillery_icon_small" texturefile = "gfx/texticons/nato_unit_railway_artillery_icon_small.dds"	legacy_lazy_load = no	}
+
+  SpriteType = { name = "GFX_unit_guided_aa_brigade_icon_medium"    textureFile = "gfx/interface/counters/divisions_large/unit_missile_AA_icon.dds" noOfFrames = 2 }
+  SpriteType = { name = "GFX_unit_guided_aa_brigade_icon_medium_white"    textureFile = "gfx/interface/counters/divisions_small/onmap_unit_missile_AA_icon.dds" noOfFrames = 2 }
+  SpriteType = { name = "GFX_unit_guided_aa_icon_medium"            textureFile = "gfx/interface/counters/divisions_large/unit_missile_AA_support_icon.dds" noOfFrames = 2 }
+  spriteType = { name = "GFX_unit_guided_aa_icon_small"	texturefile = "gfx/texticons/unit_guided_aa_icon_small.dds" legacy_lazy_load = no noOfFrames = 2	}
+  spriteType = { name = "GFX_nato_unit_guided_aa_icon_small" texturefile = "gfx/texticons/nato_unit_guided_aa_icon_small.dds" legacy_lazy_load = no }
+
+  ## Kit Support
+
+  SpriteType = {    name = "GFX_unit_desert_support_icon_medium"	texturefile = "gfx//interface//counters//divisions_large//support_desert_unit_company_icon.dds"	noOfFrames = 2  }
+  SpriteType = {    name = "GFX_unit_jungle_support_icon_medium"	texturefile = "gfx//interface//counters//divisions_large//support_jungle_unit_company_icon.dds"	noOfFrames = 2  }
+
+  ## Invasion
+
+  spriteType = { name = "GFX_unit_amphibious_mech_icon_medium"		 textureFile = "gfx/interface/counters/divisions_large/unit_mechanized_marines_icon.dds" noOfFrames = 2 }
+  spriteType = { name = "GFX_unit_amphibious_mech_icon_medium_white"		 textureFile = "gfx/interface/counters/divisions_small/onmap_unit_mechanized_marines_icon.dds" noOfFrames = 2 }
+  spriteType = { name = "GFX_unit_amphibious_mech_icon_small"	texturefile = "gfx/texticons/unit_mechanized_marines_icon_small.dds"	legacy_lazy_load = no	noOfFrames = 2 }
+  spriteType = { name = "GFX_nato_unit_amphibious_mech_icon_small" texturefile = "gfx/texticons/nato_unit_mechanized_marines_icon_small.dds" legacy_lazy_load = no }
+
+  spriteType = { name = "GFX_unit_light_tank_amphibious_icon_medium"		 textureFile = "gfx/interface/counters/divisions_large/unit_amphibious_light_tank_icon.dds" noOfFrames = 2 }
+  spriteType = { name = "GFX_unit_light_tank_amphibious_icon_medium_white"		 textureFile = "gfx/interface/counters/divisions_small/onmap_unit_amphibious_light_tank_icon.dds" noOfFrames = 2 }
+  spriteType = { name = "GFX_unit_light_tank_amphibious_icon_small"	texturefile = "gfx/texticons/unit_light_tank_amphibious_small.dds" legacy_lazy_load = no noOfFrames = 2	}
+  spriteType = { name = "GFX_nato_unit_light_tank_amphibious_icon_small"	texturefile = "gfx/texticons/nato_unit_light_tank_amphibious_small.dds"	legacy_lazy_load = no }
+
+  spriteType = { name = "GFX_unit_medium_tank_amphibious_icon_medium"		 textureFile = "gfx/interface/counters/divisions_large/unit_amphibious_medium_tank_icon.dds" noOfFrames = 2 }
+  spriteType = { name = "GFX_unit_medium_tank_amphibious_icon_medium_white" textureFile = "gfx/interface/counters/divisions_small/onmap_unit_amphibious_medium_tank_icon.dds" noOfFrames = 2 }
+  spriteType = { name = "GFX_unit_medium_tank_amphibious_icon_small"	texturefile = "gfx/texticons/unit_medium_tank_amphibious_icon_small.dds"	legacy_lazy_load = no	noOfFrames = 2	}
+  spriteType = { name = "GFX_nato_unit_medium_tank_amphibious_icon_small"	texturefile = "gfx/texticons/nato_unit_medium_tank_amphibious_icon_small.dds"	legacy_lazy_load = no	}
+
+  spriteType = { name = "GFX_unit_paratrooper_glider_icon_medium"		 textureFile = "gfx/interface/counters/divisions_large/unit_paratrooper_glider_icon.dds" noOfFrames = 2 }
+  spriteType = { name = "GFX_unit_paratrooper_glider_icon_medium_white" textureFile = "gfx/interface/counters/divisions_small/onmap_unit_paratrooper_glider_icon.dds" noOfFrames = 2 }
+  spriteType = { name = "GFX_unit_paratrooper_glider_icon_small" texturefile = "gfx/texticons/unit_paratrooper_glider_icon_small.dds"	legacy_lazy_load = no	noOfFrames = 2	}
+  spriteType = { name = "GFX_nato_unit_paratrooper_glider_icon_small"	texturefile = "gfx/texticons/nato_unit_paratrooper_glider_icon_small.dds"	legacy_lazy_load = no	}
+
+  spriteType = { name = "GFX_unit_glider_tank_icon_medium"		 textureFile = "gfx/interface/counters/divisions_large/unit_glider_light_tank_icon.dds" noOfFrames = 2 }
+  spriteType = { name = "GFX_unit_glider_tank_icon_medium_white" textureFile = "gfx/interface/counters/divisions_small/onmap_unit_glider_light_tank_icon.dds" noOfFrames = 2 }
+  spriteType = { name = "GFX_unit_glider_tank_icon_small"	texturefile = "gfx/texticons/unit_glider_tank_icon_small.dds"	legacy_lazy_load = no	noOfFrames = 2 }
+  spriteType = { name = "GFX_nato_unit_glider_tank_icon_small"	texturefile = "gfx/texticons/nato_unit_glider_tank_icon_small.dds"	legacy_lazy_load = no }
+
+}

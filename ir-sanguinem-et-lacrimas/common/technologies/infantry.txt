@@ -749,7 +749,7 @@ technologies = {
 		marine = {
 			max_organisation = 5
 		}
-		amphibious_mech_unit = {
+		amphibious_mech = {
 			max_organisation = 5
 		}
 
@@ -791,7 +791,7 @@ technologies = {
 			max_organisation = 5
 			hard_attack = 0.05
 		}
-		amphibious_mech_unit = {
+		amphibious_mech = {
 			max_organisation = 5
 			hard_attack = 0.05
 		}
@@ -833,7 +833,7 @@ technologies = {
 			hard_attack = 0.05
 			soft_attack = 0.05
 		}
-		amphibious_mech_unit = {
+		amphibious_mech = {
 			max_organisation = 5
 			hard_attack = 0.05
 			soft_attack = 0.05
@@ -1488,7 +1488,7 @@ technologies = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
-		amphibious_mech_unit = {
+		amphibious_mech = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
@@ -1647,7 +1647,7 @@ technologies = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
-		amphibious_mech_unit = {
+		amphibious_mech = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
@@ -1780,7 +1780,7 @@ technologies = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
-		amphibious_mech_unit = {
+		amphibious_mech = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
@@ -1913,7 +1913,7 @@ technologies = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
-		amphibious_mech_unit = {
+		amphibious_mech = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
@@ -1998,7 +1998,7 @@ technologies = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
-		amphibious_mech_unit = {
+		amphibious_mech = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
@@ -2083,7 +2083,7 @@ technologies = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
-		amphibious_mech_unit = {
+		amphibious_mech = {
 			defense = 0.03
 			breakthrough = 0.03
 		}

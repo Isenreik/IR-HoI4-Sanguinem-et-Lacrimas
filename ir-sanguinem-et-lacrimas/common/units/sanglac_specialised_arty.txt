@@ -1,6 +1,6 @@
 sub_units = {
 
-railway_artillery_unit = {
+railway_artillery = {
   sprite = artillery
   map_icon_category = infantry
   priority = 150
@@ -69,7 +69,7 @@ railway_artillery_unit = {
   }
 }
 
-guided_aa_unit_brigade = {
+guided_aa_brigade = {
   sprite = infantry
   map_icon_category = infantry
   priority = 301
@@ -128,7 +128,7 @@ guided_aa_unit_brigade = {
   }
 }
 
-guided_aa_unit = {
+guided_aa = {
   sprite = infantry
   map_icon_category = infantry
   priority = 0

@@ -2,7 +2,7 @@
 
 sub_units = {
 
-  amphibious_mech_unit = {
+  amphibious_mech = {
     sprite = mechanized
     map_icon_category = infantry
 
@@ -81,7 +81,7 @@ sub_units = {
     }
   }
 
-  light_tank_amphibious_unit = {
+  light_tank_amphibious = {
 		sprite = light_armor
 		map_icon_category = armored
 		priority = 1501
@@ -146,7 +146,7 @@ sub_units = {
     }
 	}
 
-  medium_tank_amphibious_unit = {
+  medium_tank_amphibious = {
 		sprite = "medium_armor"
 		map_icon_category = armored
 		priority = 2502
