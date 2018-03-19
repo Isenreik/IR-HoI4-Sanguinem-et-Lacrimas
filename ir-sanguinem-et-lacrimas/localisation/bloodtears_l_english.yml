@@ -105,6 +105,8 @@ comandeer_boats: "Comandeer Civilian Ships"
 comandeer_boats_desc: "Our troops across the sea need supplies and transportation, but our military convoy ships are stretched thin. There are plenty of civilian vessels we could confiscate for the war effort and staff with our own sailors; fishing trawlers, sailing ships, tugboats, merchant ships...anything sea worth could do."
 comandeer_planes: "Comandeer Civilian Planes"
 comandeer_planes_desc: "There are some civilian passenger and transport planes we could confiscate and put to use to supply our troops with supplies."
+comandeer_bicycles: "Comandeer Bicycles"
+comandeer_bicycles_desc: "Mobility is key. Our forces will be equipped with bicycles, drastically improving our ability to maneuver divisions around."
 
 advanced_healthcare: "Advanced Healthcare"
 advanced_healthcare_desc: "With improvements, extension and optimization of our healthcare services, we can get more health and able bodies to show up at our recruitment stations."

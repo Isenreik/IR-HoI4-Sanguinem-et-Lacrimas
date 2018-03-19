@@ -383,6 +383,69 @@ economy_decisions = {
 			}
 		}
   }
+	comandeer_bicycles = {
+
+		icon = generic_industry
+
+    cost = 10
+    fire_only_once = yes
+
+    days_remove = 30
+
+    allowed = {
+      always = yes
+    }
+
+    visible = {
+      has_tech = press_commandeer_civ_eq_1
+      NOT = { has_focus_tree = japan_wtt_focus }
+      has_dlc = "Waking the Tiger"
+    }
+
+    available = {
+      has_tech = press_commandeer_civ_eq_1
+      command_power > 1
+      has_war_support > 0.05
+      OR = {
+				original_tag = FRA
+				original_tag = HOL
+				custom_trigger_tooltip = { tooltip = or_clarification_tooltip always = no }
+				AND = {
+					has_war = yes
+					any_enemy_country = {
+						ic_ratio = {
+							tag = ROOT
+							ratio > 0.1
+						}
+					}
+				}
+			}
+    }
+
+    complete_effect = {
+      add_command_power = -1
+	  }
+
+		modifier = {
+			stability_weekly = -0.001
+			war_support_weekly = -0.001
+		}
+
+    remove_effect = {
+			set_technology = { bicycle_infantry = 1 }
+    }
+
+		ai_will_do = {
+			factor = 0.1
+			modifier = {
+				factor = 1000
+				OR = {
+					original_tag = FRA
+					original_tag = HOL
+				}
+			}
+		}
+  }
 
   advanced_healthcare = {
 
@@ -494,6 +557,45 @@ propaganda_efforts = {
 }
 
 research_category = {
+	integrated_engineers_decision = {
+
+    icon = engineers_supplies_decision
+    cost = 5
+    fire_only_once = yes
+
+    days_remove = 100
+
+    allowed = {
+      always = yes
+    }
+
+    visible = {
+      has_tech = tech_engineers4
+    }
+
+    available = {
+      has_army_experience > 60
+			command_power > 5
+      has_tech = tech_engineers4
+    }
+
+    complete_effect = {
+      army_experience = -60
+			add_command_power = -5
+    }
+
+    modifier = {
+    }
+
+    remove_effect = {
+			set_technology = { tech_engineers_integrated = 1 }
+    }
+
+    ai_will_do = {
+      factor = 5
+    }
+  }
+	## War Games
   war_games_army = {
 
     icon = generic_tank
@@ -698,8 +800,7 @@ research_category = {
     cost = 50
     fire_only_once = no
 
-    #days_remove = 100
-		days_remove = 2
+    days_remove = 100
 
     allowed = {
       always = yes
@@ -754,8 +855,7 @@ research_category = {
     cost = 50
     fire_only_once = no
 
-    #days_remove = 100
-		days_remove = 2
+    days_remove = 100
 
     allowed = {
       always = yes
@@ -811,8 +911,7 @@ research_category = {
     cost = 50
     fire_only_once = no
 
-    #days_remove = 100
-		days_remove = 2
+    days_remove = 100
 
     allowed = {
       always = yes
@@ -868,8 +967,7 @@ research_category = {
     cost = 50
     fire_only_once = no
 
-    #days_remove = 100
-		days_remove = 2
+    days_remove = 100
 
     allowed = {
       always = yes
@@ -925,8 +1023,7 @@ research_category = {
     cost = 50
     fire_only_once = no
 
-    #days_remove = 100
-		days_remove = 2
+    days_remove = 100
 
     allowed = {
       always = yes
@@ -981,8 +1078,7 @@ research_category = {
     cost = 50
     fire_only_once = no
 
-    #days_remove = 100
-		days_remove = 2
+    days_remove = 100
 
     allowed = {
       always = yes
@@ -1037,8 +1133,7 @@ research_category = {
     cost = 50
     fire_only_once = no
 
-    #days_remove = 100
-		days_remove = 2
+    days_remove = 100
 
     allowed = {
       always = yes
@@ -1093,8 +1188,7 @@ research_category = {
     cost = 50
     fire_only_once = no
 
-    #days_remove = 100
-		days_remove = 2
+    days_remove = 100
 
     allowed = {
       always = yes
@@ -1149,8 +1243,7 @@ research_category = {
     cost = 50
     fire_only_once = no
 
-    #days_remove = 100
-		days_remove = 2
+    days_remove = 100
 
     allowed = {
       always = yes
@@ -1205,8 +1298,7 @@ research_category = {
     cost = 50
     fire_only_once = no
 
-    #days_remove = 100
-		days_remove = 2
+    days_remove = 100
 
     allowed = {
       always = yes
