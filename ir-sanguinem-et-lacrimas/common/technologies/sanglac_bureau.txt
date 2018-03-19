@@ -681,9 +681,9 @@ technologies = {
 
     # allows healthcare decision
     on_research_complete = {
-      custom_effect_tooltip = press_commandeer_civ_eq_1.tt
+      custom_effect_tooltip = press_health1.tt
     }
-    desc = press_commandeer_civ_eq_1.desc
+    desc = press_health1.desc
 
     research_cost = @cost_average
 
